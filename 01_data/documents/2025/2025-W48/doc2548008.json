@@ -1,0 +1,14 @@
+{
+  "context": "Humans naturally adapt to diverse environments by learning underlying rules across worlds with different dynamics, observations, and reward structures. In contrast, existing agents typically demonstrate improvements via self-evolving within a single domain, implicitly assuming a fixed environment distribution. Cross-environment learning has remained largely unmeasured: there is no standard collection of controllable, heterogeneous environments , nor a unified way to represent how agents learn. We address these gaps in two steps. First, we propose AutoEnv , an automated framework that treats environments as factorizable distributions over transitions, observations, and rewards, enabling low-cost (4.12 USD on average) generation of heterogeneous worlds. Using AutoEnv , we construct AutoEnv-36 , a dataset of 36 environments with 358 validated levels, on which seven language models achieve 12-49% normalized reward , demonstrating the challenge of AutoEnv-36 . Second, we formalize agent learning as a component-centric process driven by three stages of Selection , Optimization , and Evaluation applied to an improvable agent component. Using this formulation, we design eight learning methods and evaluate them on AutoEnv-36 . Empirically, the gain of any single learning method quickly decrease as the number of environments increases, revealing that fixed learning methods do not scale across heterogeneous environments . Environment-adaptive selection of learning methods substantially improves performance but exhibits diminishing returns as the method space expands. These results highlight both the necessity and the current limitations of agent learning for scalable cross-environment generalization, and position AutoEnv and AutoEnv-36 as a testbed for studying cross-environment agent learning. The code is avaiable at https://github.com/FoundationAgents/ AutoEnv .",
+  "metadata": {
+    "paper_name": "AutoEnv: Automated Environments for Measuring Cross-Environment Agent Learning",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19304",
+    "upvote": 88,
+    "tags": [
+      "learning",
+      "autoenv",
+      "environments"
+    ]
+  }
+}

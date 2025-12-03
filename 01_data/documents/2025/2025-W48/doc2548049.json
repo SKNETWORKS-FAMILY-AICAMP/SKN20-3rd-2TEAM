@@ -1,0 +1,14 @@
+{
+  "context": "Despite the remarkable success of Vision-Language Models (VLMs), their performance on a range of complex visual tasks is often hindered by a \" visual processing bottleneck \": a propensity to lose grounding in visual evidence and exhibit a deficit in contextualized visual experience during prolonged generation. Drawing inspiration from human cognitive memory theory, which distinguishes short-term visually-dominant memory and long-term semantically-dominant memory , we propose VisMem, a cognitively-aligned framework that equips VLMs with dynamic latent vision memories , a short-term module for fine-grained perceptual retention and a long-term module for abstract semantic consolidation . These memories are seamlessly invoked during inference, allowing VLMs to maintain both perceptual fidelity and semantic consistency across thinking and generation. Extensive experiments across diverse visual benchmarks for understanding, reasoning, and generation reveal that VisMem delivers a significant average performance boost of 11.8% relative to the vanilla model and outperforms all counterparts, establishing a new paradigm for latent-space memory enhancement . The code will be available: https://github.com/YU-deep/VisMem.git.",
+  "metadata": {
+    "paper_name": "VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models",
+    "github_url": "https://github.com/YU-deep/VisMem.git",
+    "huggingface_url": "https://huggingface.co/papers/2511.11007",
+    "upvote": 15,
+    "tags": [
+      "visual",
+      "term",
+      "memory"
+    ]
+  }
+}

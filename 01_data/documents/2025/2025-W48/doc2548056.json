@@ -1,0 +1,14 @@
+{
+  "context": "We address the task of multi-view image editing from sparse input views, where the inputs can be seen as a mix of images capturing the scene from different viewpoints. The goal is to modify the scene according to a textual instruction while preserving consistency across all views. Existing methods, based on per-scene neural fields or temporal attention mechanisms , struggle in this setting, often producing artifacts and incoherent edits. We propose InstructMix2Mix (I-Mix2Mix), a framework that distills the editing capabilities of a 2D diffusion model into a pretrained multi-view diffusion model , leveraging its data-driven 3D prior for cross-view consistency. A key contribution is replacing the conventional neural field consolidator in Score Distillation Sampling ( SDS ) with a multi-view diffusion student, which requires novel adaptations: incremental student updates across timesteps, a specialized teacher noise scheduler to prevent degeneration, and an attention modification that enhances cross-view coherence without additional cost. Experiments demonstrate that I-Mix2Mix significantly improves multi-view consistency while maintaining high per-frame edit quality.",
+  "metadata": {
+    "paper_name": "InstructMix2Mix: Consistent Sparse-View Editing Through Multi-View Model Personalization",
+    "github_url": "https://github.com/DanielGilo/instruct-mix2mix/tree/main",
+    "huggingface_url": "https://huggingface.co/papers/2511.14899",
+    "upvote": 11,
+    "tags": [
+      "view",
+      "multi view",
+      "multi"
+    ]
+  }
+}

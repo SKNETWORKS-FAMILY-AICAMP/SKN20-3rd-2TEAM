@@ -1,0 +1,14 @@
+{
+  "context": "We propose Terminal Velocity Matching (TVM), a generalization of flow matching that enables high- fid elity one- and few-step generative modeling. TVM models the transition between any two diffusion timesteps and regularizes its behavior at its terminal time rather than at the initial time. We prove that TVM provides an upper bound on the 2-Wasserstein distance between data and model distributions when the model is Lipschitz continuous . However, since Diffusion Transformers lack this property, we introduce minimal architectural changes that achieve stable, single-stage training. To make TVM efficient in practice, we develop a fused attention kernel that supports backward passes on Jacobian-Vector Products , which scale well with transformer architectures. On ImageNet-256x256 , TVM achieves 3.29 FID with a single function evaluation (NFE) and 1.99 FID with 4 NFEs. It similarly achieves 4.32 1-NFE FID and 2.94 4-NFE FID on ImageNet-512x512 , representing state-of-the-art performance for one/few-step models from scratch.",
+  "metadata": {
+    "paper_name": "Terminal Velocity Matching",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19797",
+    "upvote": 11,
+    "tags": [
+      "tvm",
+      "fid",
+      "nfe"
+    ]
+  }
+}

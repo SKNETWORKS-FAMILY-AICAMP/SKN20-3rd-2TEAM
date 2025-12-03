@@ -1,0 +1,14 @@
+{
+  "context": "Information-seeking is a core capability for AI agents, requiring them to gather and reason over tool-generated information across long trajectories. However, such multi-step information-seeking tasks remain challenging for agents backed by language models. While process reward models ( PRMs ) can guide agents by ranking candidate steps at test-time, existing PRMs , designed for short reasoning with binary judgment, cannot capture richer dimensions of information-seeking steps, such as tool interactions and reasoning over tool outputs, nor handle the rapidly growing context in long-horizon tasks. To address these limitations, we introduce PRInTS, a generative PRM trained with dual capabilities: (1) dense scoring based on the PRM's reasoning across multiple step quality dimensions (e.g., interpretation of tool outputs, tool call informativeness ) and (2) trajectory summarization that compresses the growing context while preserving essential information for step evaluation. Extensive evaluations across FRAMES , GAIA (levels 1-3), and WebWalkerQA (easy-hard) benchmarks on multiple models, along with ablations, reveal that best-of-n sampling with PRInTS enhances information-seeking abilities of open-source models as well as specialized agents , matching or surpassing the performance of frontier models with a much smaller backbone agent and outperforming other strong reward modeling baselines.",
+  "metadata": {
+    "paper_name": "PRInTS: Reward Modeling for Long-Horizon Information Seeking",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19314",
+    "upvote": 6,
+    "tags": [
+      "information",
+      "tool",
+      "models"
+    ]
+  }
+}

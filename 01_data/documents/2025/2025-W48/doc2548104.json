@@ -1,0 +1,14 @@
+{
+  "context": "Reinforcement Learning from Human Feedback (RLHF) is widely used for aligning large language models, yet practitioners face a persistent puzzle: improving safety often reduces fairness, scaling to diverse populations becomes computationally intractable, and making systems robust often amplifies majority biases. We formalize this tension as the Alignment Trilemma : no RLHF system can simultaneously achieve (i) epsilon-representativeness across diverse human values, (ii) polynomial tractability in sample and compute complexity, and (iii) delta-robustness against adversarial perturbations and distribution shift. Through a complexity-theoretic analysis integrating statistical learning theory and robust optimization , we prove that achieving both representativeness (epsilon <= 0.01) and robustness (delta <= 0.001) for global-scale populations requires Omega(2^{d_context}) operations, which is super-polynomial in the context dimensionality. We show that current RLHF implementations resolve this trilemma by sacrificing representativeness: they collect only 10^3--10^4 samples from homogeneous annotator pools while 10^7--10^8 samples are needed for true global representation. Our framework provides a unified explanation for documented RLHF pathologies including preference collapse , sycophancy , and systematic bias amplification . We conclude with concrete directions for navigating these fundamental trade-offs through strategic relaxations of alignment requirements.",
+  "metadata": {
+    "paper_name": "Position: The Complexity of Perfect AI Alignment -- Formalizing the RLHF Trilemma",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19504",
+    "upvote": 1,
+    "tags": [
+      "rlhf",
+      "10",
+      "representativeness"
+    ]
+  }
+}

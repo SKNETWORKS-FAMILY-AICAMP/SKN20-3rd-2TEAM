@@ -1,0 +1,14 @@
+{
+  "context": "Block-causal video generation faces a stark speed-quality trade-off: small 1.3B models manage only 16 FPS while large 14B models crawl at 4.5 FPS, forcing users to choose between responsiveness and quality. Block Cascading significantly mitigates this trade-off through training-free parallelization . Our key insight: future video blocks do not need fully denoised current blocks to begin generation. By starting block generation with partially denoised context from predecessors, we transform sequential pipelines into parallel cascades where multiple blocks denoise simultaneously. With 5 GPUs exploiting temporal parallelism , we achieve ~2x acceleration across all model scales: 1.3B models accelerate from 16 to 30 FPS, 14B models from 4.5 to 12.5 FPS. Beyond inference speed, Block Cascading eliminates overhead from KV-recaching (of ~200ms) during context switches for interactive generation . Extensive evaluations validated against multiple block-causal pipelines demonstrate no significant loss in generation quality when switching from block-causal to Block Cascading pipelines for inference. Project Page: https://hmrishavbandy.github.io/block_cascading_page/",
+  "metadata": {
+    "paper_name": "Block Cascading: Training Free Acceleration of Block-Causal Video Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.20426",
+    "upvote": 7,
+    "tags": [
+      "block",
+      "generation",
+      "fps"
+    ]
+  }
+}

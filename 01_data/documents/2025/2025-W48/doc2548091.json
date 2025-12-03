@@ -1,0 +1,14 @@
+{
+  "context": "Diffusion-based editing enables realistic modification of local image regions, making AI-generated content harder to detect. Existing AIGC detection benchmarks focus on classifying entire images, overlooking the localization of diffusion-based edits. We introduce DiffSeg30k , a publicly available dataset of 30k diffusion-edited images with pixel-level annotations , designed to support fine-grained detection. DiffSeg30k features: 1) In-the-wild images --we collect images or image prompts from COCO to reflect real-world content diversity; 2) Diverse diffusion models --local edits using eight SOTA diffusion models ; 3) Multi-turn editing --each image undergoes up to three sequential edits to mimic real-world sequential editing; and 4) Realistic editing scenarios--a vision-language model (VLM)-based pipeline automatically identifies meaningful regions and generates context-aware prompts covering additions, removals, and attribute changes. DiffSeg30k shifts AIGC detection from binary classification to semantic segmentation , enabling simultaneous localization of edits and identification of the editing models. We benchmark three baseline segmentation approaches, revealing significant challenges in semantic segmentation tasks, particularly concerning robustness to image distortions . Experiments also reveal that segmentation models, despite being trained for pixel-level localization, emerge as highly reliable whole-image classifiers of diffusion edits, outperforming established forgery classifiers while showing great potential in cross-generator generalization . We believe DiffSeg30k will advance research in fine-grained localization of AI-generated content by demonstrating the promise and limitations of segmentation-based methods. DiffSeg30k is released at: https://huggingface.co/datasets/Chaos2629/ Diffseg30k",
+  "metadata": {
+    "paper_name": "DiffSeg30k: A Multi-Turn Diffusion Editing Benchmark for Localized AIGC Detection",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19111",
+    "upvote": 3,
+    "tags": [
+      "diffseg30k",
+      "diffusion",
+      "segmentation"
+    ]
+  }
+}

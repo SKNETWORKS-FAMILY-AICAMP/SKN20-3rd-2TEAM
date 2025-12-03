@@ -1,0 +1,14 @@
+{
+  "context": "Memory is critical for AI agents, yet the widely-adopted static memory, aiming to create readily available memory in advance, is inevitably subject to severe information loss. To address this limitation, we propose a novel framework called general agentic memory ( GAM ). GAM follows the principle of \"just-in time (JIT) compilation\" where it focuses on creating optimized contexts for its client at runtime while keeping only simple but useful memory during the offline stage. To this end, GAM employs a duo-design with the following components. 1) Memorizer , which highlights key historical information using a lightweight memory, while maintaining complete historical information within a universal page-store . 2) Researcher , which retrieves and integrates useful information from the page-store for its online request guided by the pre-constructed memory. This design allows GAM to effectively leverage the agentic capabilities and test-time scalability of frontier large language models ( LLMs ), while also facilitating end-to-end performance optimization through reinforcement learning . In our experimental study, we demonstrate that GAM achieves substantial improvement on various memory-grounded task completion scenarios against existing memory systems.",
+  "metadata": {
+    "paper_name": "General Agentic Memory Via Deep Research",
+    "github_url": "https://github.com/VectorSpaceLab/general-agentic-memory",
+    "huggingface_url": "https://huggingface.co/papers/2511.18423",
+    "upvote": 150,
+    "tags": [
+      "memory",
+      "gam",
+      "information"
+    ]
+  }
+}

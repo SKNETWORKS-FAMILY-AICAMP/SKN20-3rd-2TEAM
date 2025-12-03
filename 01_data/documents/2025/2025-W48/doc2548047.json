@@ -1,0 +1,14 @@
+{
+  "context": "Step-by-step painting tutorials are vital for learning artistic techniques, but existing video resources (e.g., YouTube) lack interactivity and personalization. While recent generative models have advanced artistic image synthesis, they struggle to generalize across media and often show temporal or structural inconsistencies, hindering faithful reproduction of human creative workflows. To address this, we propose a unified framework for multi-media painting process generation with a semantics-driven style control mechanism that embeds multiple media into a diffusion models conditional space and uses cross-medium style augmentation . This enables consistent texture evolution and process transfer across styles. A reverse-painting training strategy further ensures smooth, human-aligned generation. We also build a large-scale dataset of real painting processes and evaluate cross-media consistency, temporal coherence, and final-image fidelity, achieving strong results on LPIPS , DINO , and CLIP metrics . Finally, our Perceptual Distance Profile (PDP) curve quantitatively models the creative sequence, i.e., composition, color blocking, and detail refinement, mirroring human artistic progression.",
+  "metadata": {
+    "paper_name": "Loomis Painter: Reconstructing the Painting Process",
+    "github_url": "https://github.com/Markus-Pobitzer/wlp",
+    "huggingface_url": "https://huggingface.co/papers/2511.17344",
+    "upvote": 15,
+    "tags": [
+      "media",
+      "painting",
+      "human"
+    ]
+  }
+}

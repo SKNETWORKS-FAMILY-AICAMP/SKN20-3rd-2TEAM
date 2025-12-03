@@ -1,0 +1,14 @@
+{
+  "context": "Obtaining the precise 3D motion of a table tennis ball from standard monocular videos is a challenging problem, as existing methods trained on synthetic data struggle to generalize to the noisy, imperfect ball and table detections of the real world. This is primarily due to the inherent lack of 3D ground truth trajectories and spin annotations for real-world video. To overcome this, we propose a novel two-stage pipeline that divides the problem into a front-end perception task and a back-end 2D-to-3D uplifting task. This separation allows us to train the front-end components with abundant 2D supervision from our newly created TTHQ dataset , while the back-end uplifting network is trained exclusively on physically-correct synthetic data . We specifically re-engineer the uplifting model to be robust to common real-world artifacts, such as missing detections and varying frame rates. By integrating a ball detector and a table keypoint detector , our approach transforms a proof-of-concept uplifting method into a practical, robust, and high-performing end-to-end application for 3D table tennis trajectory and spin analysis.",
+  "metadata": {
+    "paper_name": "Uplifting Table Tennis: A Robust, Real-World Application for 3D Trajectory and Spin Estimation",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.20250",
+    "upvote": 1,
+    "tags": [
+      "end",
+      "uplifting",
+      "3d"
+    ]
+  }
+}

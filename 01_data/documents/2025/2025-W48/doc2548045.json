@@ -1,0 +1,14 @@
+{
+  "context": "We investigate how well large language models ( LLMs ) generalize across different task difficulties , a key question for effective data curation and evaluation . Existing research is mixed regarding whether training on easier or harder data leads to better results, and whether those gains come on easier or harder test data. We address this question by conducting a systematic evaluation of LLMs ' generalization across models, datasets, and fine-grained groups of example difficulty. We rank examples in six datasets using the outputs of thousands of different LLMs and Item Response Theory ( IRT ), a well-established difficulty metric in educational testing. Unlike prior work, our difficulty ratings are therefore determined solely by the abilities of many different LLMs , excluding human opinions of difficulty. With a more objective, larger-scale, and finer-grained analysis, we show that cross-difficulty generalization is often limited; training on either easy or hard data cannot achieve consistent improvements across the full range of difficulties. These results show the importance of having a range of difficulties in both training and evaluation data for LLMs , and that taking shortcuts with respect to difficulty is risky.",
+  "metadata": {
+    "paper_name": "Revisiting Generalization Across Difficulty Levels: It's Not So Easy",
+    "github_url": "https://github.com/BatsResearch/Cross-Difficulty",
+    "huggingface_url": "https://huggingface.co/papers/2511.21692",
+    "upvote": 15,
+    "tags": [
+      "difficulty",
+      "llms",
+      "data"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "Reward feedback learning ( ReFL ) has proven effective for aligning image generation with human preferences. However, its extension to video generation faces significant challenges. Existing video reward models rely on vision-language models designed for pixel-space inputs, confining ReFL optimization to near-complete denoising steps after computationally expensive VAE decoding . This pixel-space approach incurs substantial memory overhead and increased training time, and its late-stage optimization lacks early-stage supervision, refining only visual quality rather than fundamental motion dynamics and structural coherence. In this work, we show that pre-trained video generation models are naturally suited for reward modeling in the noisy latent space , as they are explicitly designed to process noisy latent representations at arbitrary timesteps and inherently preserve temporal information through their sequential modeling capabilities. Accordingly, we propose Process Reward Feedback Learning ~( PRFL ), a framework that conducts preference optimization entirely in latent space , enabling efficient gradient backpropagation throughout the full denoising chain without VAE decoding . Extensive experiments demonstrate that PRFL significantly improves alignment with human preferences, while achieving substantial reductions in memory consumption and training time compared to RGB ReFL .",
+  "metadata": {
+    "paper_name": "Video Generation Models Are Good Latent Reward Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.21541",
+    "upvote": 41,
+    "tags": [
+      "space",
+      "reward",
+      "video"
+    ]
+  }
+}

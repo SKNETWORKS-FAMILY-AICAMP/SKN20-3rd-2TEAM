@@ -1,0 +1,14 @@
+{
+  "context": "Radiology plays an integral role in modern medicine, yet rising imaging volumes have far outpaced workforce growth. Foundation models offer a path toward assisting with the full spectrum of radiology tasks, but existing medical models remain limited: they process volumetric CT and MRI as low-fidelity 2D slices, discard critical grayscale contrast information, and lack evaluation frameworks that reflect real clinical practice. We introduce Pillar-0, a radiology foundation model pretrained on 42,990 abdomen-pelvis CTs, 86,411 chest CTs, 14,348 head CTs, and 11,543 breast MRI s from a large academic center, together with RATE , a scalable framework that extracts structured labels for 366 radiologic findings with near-perfect accuracy using LLMs. Across internal test sets of 14,230 abdomen-pelvis CTs, 10,646 chest CTs, 4,906 head CTs, and 1,585 breast MRI s, Pillar-0 establishes a new performance frontier, achieving mean AUROC s of 86.4, 88.0, 90.1, and 82.9, outperforming MedGemma (Google), MedImageInsight (Microsoft), Lingshu (Alibaba), and Merlin (Stanford) by 7.8-15.8 AUROC points and ranking best in 87.2\\% (319/366) tasks. Pillar-0 similarly outperforms all baselines in an external validation on the Stanford Abdominal CT dataset , including Merlin (82.2 vs 80.6 AUROC ). Pillar-0 extends to tasks beyond its pretraining, such as long-horizon lung cancer risk prediction , where it improves upon the state-of-the-art Sybil by 3.0 C-index points on NLST, and generalizes with gains of 5.9 (MGH) and 1.9 (CGMH). In brain hemorrhage detection , Pillar-0 obtained a >95 AUROC when using only 1/20th of the data of the next most sample efficient baseline. Pillar-0 and RATE together provide an open , clinically rigorous foundation for building high-performance radiology systems, enabling applications that were previously infeasible due to computational, data, and evaluation constraints.",
+  "metadata": {
+    "paper_name": "Pillar-0: A New Frontier for Radiology Foundation Models",
+    "github_url": "https://github.com/YalaLab/pillar-pretrain",
+    "huggingface_url": "https://huggingface.co/papers/2511.17803",
+    "upvote": 19,
+    "tags": [
+      "cts",
+      "pillar",
+      "radiology"
+    ]
+  }
+}

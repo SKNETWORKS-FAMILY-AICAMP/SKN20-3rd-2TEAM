@@ -1,0 +1,14 @@
+{
+  "context": "MLLMs exhibit strong reasoning on isolated queries, yet they operate de novo -- solving each problem independently and often repeating the same mistakes. Existing memory-augmented agents mainly store past trajectories for reuse. However, trajectory-based memory suffers from brevity bias , gradually losing essential domain knowledge. More critically, even in truly multimodal problem-solving settings, it records only a single-modality trace of past behavior, failing to preserve how visual attention and logical reasoning jointly contributed to the solution. This is fundamentally misaligned with human cognition: semantic memory is both multimodal and integrated, preserving visual and abstract knowledge through coordinated but distinct representational streams. We thus introduce ViLoMem , a dual-stream memory framework that constructs compact, schema-based memory . It separately encodes visual distraction patterns and logical reasoning errors , enabling MLLMs to learn from their successful and failed experiences. Following a grow-and-refine principle, the system incrementally accumulates and updates multimodal semantic knowledge -- preserving stable, generalizable strategies while avoiding catastrophic forgetting . Across six multimodal benchmarks, ViLoMem consistently improves pass@1 accuracy and substantially reduces repeated visual and logical errors. Ablations confirm the necessity of dual-stream memory with explicit distraction--hallucination separation, demonstrating the value of error-aware multimodal memory for lifelong and cross-domain agentic learning. Our project page will be available at https://weihao-bo.github.io/ViLoMeo-page.",
+  "metadata": {
+    "paper_name": "Agentic Learner with Grow-and-Refine Multimodal Semantic Memory",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.21678",
+    "upvote": 9,
+    "tags": [
+      "memory",
+      "multimodal",
+      "visual"
+    ]
+  }
+}

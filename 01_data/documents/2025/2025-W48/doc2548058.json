@@ -1,0 +1,14 @@
+{
+  "context": "We present One4D, a unified framework for 4D generation and reconstruction that produces dynamic 4D content as synchronized RGB frames and pointmaps . By consistently handling varying sparsities of conditioning frames through a Unified Masked Conditioning (UMC) mechanism, One4D can seamlessly transition between 4D generation from a single image, 4D reconstruction from a full video, and mixed generation and reconstruction from sparse frames. Our framework adapts a powerful video generation model for joint RGB and pointmap generation, with carefully designed network architectures. The commonly used diffusion finetuning strategies for depthmap or pointmap reconstruction often fail on joint RGB and pointmap generation, quickly degrading the base video model. To address this challenge, we introduce Decoupled LoRA Control (DLC) , which employs two modality-specific LoRA adapters to form decoupled computation branches for RGB frames and pointmaps , connected by lightweight, zero-initialized control links that gradually learn mutual pixel-level consistency. Trained on a mixture of synthetic and real 4D datasets under modest computational budgets, One4D produces high-quality RGB frames and accurate pointmaps across both generation and reconstruction tasks. This work represents a step toward general, high-quality geometry-based 4D world modeling using video diffusion models . Project page: https://mizhenxing.github.io/One4D",
+  "metadata": {
+    "paper_name": "One4D: Unified 4D Generation and Reconstruction via Decoupled LoRA Control",
+    "github_url": "https://github.com/MiZhenxing/One4D",
+    "huggingface_url": "https://huggingface.co/papers/2511.18922",
+    "upvote": 10,
+    "tags": [
+      "generation",
+      "4d",
+      "reconstruction"
+    ]
+  }
+}

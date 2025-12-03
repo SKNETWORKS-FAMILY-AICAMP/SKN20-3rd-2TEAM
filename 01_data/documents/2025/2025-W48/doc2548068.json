@@ -1,0 +1,14 @@
+{
+  "context": "We propose a fully data-driven approach to designing mutual information (MI) estimators. Since any MI estimator is a function of the observed sample from two random variables, we parameterize this function with a neural network ( MIST ) and train it end-to-end to predict MI values. Training is performed on a large meta-dataset of 625,000 synthetic joint distributions with known ground-truth MI. To handle variable sample sizes and dimensions, we employ a two-dimensional attention scheme ensuring permutation invariance across input samples. To quantify uncertainty, we optimize a quantile regression loss, enabling the estimator to approximate the sampling distribution of MI rather than return a single point estimate. This research program departs from prior work by taking a fully empirical route, trading universal theoretical guarantees for flexibility and efficiency. Empirically, the learned estimators largely outperform classical baselines across sample sizes and dimensions, including on joint distributions unseen during training. The resulting quantile-based intervals are well-calibrated and more reliable than bootstrap-based confidence intervals , while inference is orders of magnitude faster than existing neural baselines. Beyond immediate empirical gains, this framework yields trainable, fully differentiable estimators that can be embedded into larger learning pipelines. Moreover, exploiting MI's invariance to invertible transformations, meta-dataset s can be adapted to arbitrary data modalities via normalizing flows , enabling flexible training for diverse target meta-distributions.",
+  "metadata": {
+    "paper_name": "MIST: Mutual Information Via Supervised Training",
+    "github_url": "https://github.com/grgera/mist",
+    "huggingface_url": "https://huggingface.co/papers/2511.18945",
+    "upvote": 8,
+    "tags": [
+      "mi",
+      "sample",
+      "meta"
+    ]
+  }
+}

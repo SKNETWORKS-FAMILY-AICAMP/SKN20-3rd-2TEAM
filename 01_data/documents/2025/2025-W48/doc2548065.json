@@ -1,0 +1,14 @@
+{
+  "context": "Vision-Language Models (VLMs) still lack robustness in spatial intelligence, demonstrating poor performance on spatial understanding and reasoning tasks. We attribute this gap to the absence of a visual geometry learning process capable of reconstructing 3D space from 2D images. We present G^2VLM, a geometry grounded vision-language model that bridges two fundamental aspects of spatial intelligence: spatial 3D reconstruction and spatial understanding . G^2VLM natively leverages learned 3D visual geometry features to directly predict 3D attributes and enhance spatial reasoning tasks via in-context learning and interleaved reasoning . Our unified design is highly scalable for spatial understanding : it trains on abundant multi-view image and video data , while simultaneously leveraging the benefits of 3D visual priors that are typically only derived from hard-to-collect annotations. Experimental results demonstrate G^2VLM is proficient in both tasks, achieving comparable results to state-of-the-art feed-forward 3D reconstruction models and achieving better or competitive results across spatial understanding and reasoning tasks. By unifying a semantically strong VLM with low-level 3D vision tasks, we hope G^2VLM can serve as a strong baseline for the community and unlock more future applications, such as 3D scene editing.",
+  "metadata": {
+    "paper_name": "G^2VLM: Geometry Grounded Vision Language Model with Unified 3D Reconstruction and Spatial Reasoning",
+    "github_url": "https://github.com/InternRobotics/G2VLM",
+    "huggingface_url": "https://huggingface.co/papers/2511.21688",
+    "upvote": 8,
+    "tags": [
+      "spatial",
+      "3d",
+      "tasks"
+    ]
+  }
+}
