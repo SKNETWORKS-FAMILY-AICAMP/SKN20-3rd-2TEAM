@@ -1,0 +1,14 @@
+{
+  "context": "Deep research models perform multi-step research to produce long-form, well-attributed answers. However, most open deep research models are trained on easily verifiable short-form QA tasks via reinforcement learning with verifiable rewards (RLVR) , which does not extend to realistic long-form tasks. We address this with Reinforcement Learning with Evolving Rubrics (RLER) , in which we construct and maintain rubrics that co-evolve with the policy model during training; this allows the rubrics to incorporate information that the model has newly explored and to provide discriminative, on-policy feedback. Using RLER, we develop Deep Research Tulu (DR Tulu-8B) , the first open model that is directly trained for open-ended, long-form deep research . Across four long-form deep research benchmarks in science, healthcare and general domains, DR Tulu substantially outperforms existing open deep research models , and matches or exceeds proprietary deep research systems, while being significantly smaller and cheaper per query. To facilitate future research, we release all data, models, and code, including our new MCP-based agent infrastructure for deep research systems.",
+  "metadata": {
+    "paper_name": "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research",
+    "github_url": "https://github.com/rlresearch/dr-tulu",
+    "huggingface_url": "https://huggingface.co/papers/2511.19399",
+    "upvote": 53,
+    "tags": [
+      "research",
+      "deep research",
+      "deep"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "Despite advances, video diffusion transformers still struggle to generalize beyond their training length, a challenge we term video length extrapolation . We identify two failure modes: model-specific periodic content repetition and a universal quality degradation. Prior works attempt to solve repetition via positional encodings , overlooking quality degradation and achieving only limited extrapolation. In this paper, we revisit this challenge from a more fundamental view: attention maps , which directly govern how context influences outputs. We identify that both failure modes arise from a unified cause: attention dispersion , where tokens beyond the training window dilute learned attention patterns. This leads to quality degradation and repetition emerges as a special case when this dispersion becomes structured into periodic attention patterns, induced by harmonic properties of positional encodings . Building on this insight, we propose UltraViCo , a training-free, plug-and-play method that suppresses attention for tokens beyond the training window via a constant decay factor. By jointly addressing both failure modes, we outperform a broad set of baselines largely across models and extrapolation ratios, pushing the extrapolation limit from 2x to 4x. Remarkably, it improves Dynamic Degree and Imaging Quality by 233% and 40.5% over the previous best method at 4x extrapolation. Furthermore, our method generalizes seamlessly to downstream tasks such as controllable video synthesis and editing .",
+  "metadata": {
+    "paper_name": "UltraViCo: Breaking Extrapolation Limits in Video Diffusion Transformers",
+    "github_url": "https://github.com/thu-ml/DiT-Extrapolation",
+    "huggingface_url": "https://huggingface.co/papers/2511.20123",
+    "upvote": 15,
+    "tags": [
+      "attention",
+      "extrapolation",
+      "training"
+    ]
+  }
+}

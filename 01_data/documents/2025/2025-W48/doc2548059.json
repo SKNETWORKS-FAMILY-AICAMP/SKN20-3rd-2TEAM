@@ -1,0 +1,14 @@
+{
+  "context": "Multiple-choice question answering (MCQA) has been a popular format for evaluating and reinforcement fine-tuning (RFT) of modern multimodal language models . Its constrained output format allows for simplified, deterministic automatic verification . However, we find that the options may leak exploitable signals, which makes the accuracy metrics unreliable for indicating real capabilities and encourages explicit or implicit answer guessing behaviors during RFT. We propose ReVeL (Rewrite and Verify by LLM), a framework that rewrites multiple-choice questions into open-form questions while keeping answers verifiable whenever possible. The framework categorizes questions according to different answer types, apply different rewriting and verification schemes, respectively. When applied for RFT, we converted 20k MCQA examples and use GRPO to finetune Qwen2.5-VL models. Models trained on ReVeL - OpenQA match MCQA accuracy on multiple-choice benchmarks and improve OpenQA accuracy by about six percentage points, indicating better data efficiency and more robust reward signals than MCQA-based training. When used for evaluation, ReVeL also reveals up to 20 percentage points of score inflation in MCQA benchmarks (relative to OpenQA ), improves judging accuracy , and reduces both cost and latency. We will release code and data publicly.",
+  "metadata": {
+    "paper_name": "Beyond Multiple Choice: Verifiable OpenQA for Robust Vision-Language RFT",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.17405",
+    "upvote": 10,
+    "tags": [
+      "mcqa",
+      "accuracy",
+      "questions"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "This work presents Controllable Layer Decomposition ( CLD ), a method for achieving fine-grained and controllable multi-layer separation of raster images. In practical workflows, designers typically generate and edit each RGBA layer independently before compositing them into a final raster image. However, this process is irreversible: once composited, layer-level editing is no longer possible. Existing methods commonly rely on image matting and inpainting , but remain limited in controllability and segmentation precision. To address these challenges, we propose two key modules: LayerDecompose-DiT ( LD-DiT ), which decouples image elements into distinct layers and enables fine-grained control; and Multi-Layer Conditional Adapter ( MLCA ), which injects target image information into multi-layer tokens to achieve precise conditional generation . To enable a comprehensive evaluation, we build a new benchmark and introduce tailored evaluation metrics . Experimental results show that CLD consistently outperforms existing methods in both decomposition quality and controllability. Furthermore, the separated layers produced by CLD can be directly manipulated in commonly used design tools such as PowerPoint, highlighting its practical value and applicability in real-world creative workflows.",
+  "metadata": {
+    "paper_name": "Controllable Layer Decomposition for Reversible Multi-Layer Image Generation",
+    "github_url": "https://github.com/monkek123King/CLD",
+    "huggingface_url": "https://huggingface.co/papers/2511.16249",
+    "upvote": 8,
+    "tags": [
+      "layer",
+      "image",
+      "multi layer"
+    ]
+  }
+}

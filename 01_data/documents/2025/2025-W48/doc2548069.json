@@ -1,0 +1,14 @@
+{
+  "context": "Retrieval-augmented generation ( RAG ) enhances large language models (LLMs) with external knowledge but still suffers from long contexts and disjoint retrieval-generation optimization . In this work, we propose CLaRa ( Continuous Latent Reasoning ), a unified framework that performs embedding-based compression and joint optimization in a shared continuous space . To obtain semantically rich and retrievable compressed vectors, we introduce SCP , a key-preserving data synthesis framework using QA and paraphrase supervision . CLaRa then trains the reranker and generator end-to-end via a single language modeling loss, with gradients flowing through both modules using a differentiable top-k estimator . Theoretically, this unified optimization aligns retrieval relevance with answer quality. Experiments across multiple QA benchmarks show that CLaRa achieves state-of-the-art compression and reranking performance, often surpassing text-based fine-tuned baselines.",
+  "metadata": {
+    "paper_name": "CLaRa: Bridging Retrieval and Generation with Continuous Latent Reasoning",
+    "github_url": "https://github.com/apple/ml-clara",
+    "huggingface_url": "https://huggingface.co/papers/2511.18659",
+    "upvote": 8,
+    "tags": [
+      "retrieval",
+      "optimization",
+      "clara"
+    ]
+  }
+}

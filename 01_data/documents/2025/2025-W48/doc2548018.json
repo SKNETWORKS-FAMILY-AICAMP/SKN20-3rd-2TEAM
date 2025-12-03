@@ -1,0 +1,14 @@
+{
+  "context": "Preserving first-frame identity while ensuring precise motion control is a fundamental challenge in human image animation. The Image-to-Motion Binding process of the dominant Reference-to-Video (R2V) paradigm overlooks critical spatio-temporal misalignments common in real-world applications, leading to failures such as identity drift and visual artifacts. We introduce SteadyDancer, an Image-to-Video (I2V) paradigm-based framework that achieves harmonized and coherent animation and is the first to ensure first-frame preservation robustly. Firstly, we propose a Condition-Reconciliation Mechanism to harmonize the two conflicting conditions, enabling precise control without sacrificing fidelity. Secondly, we design Synergistic Pose Modulation Modules to generate an adaptive and coherent pose representation that is highly compatible with the reference image. Finally, we employ a Staged Decoupled-Objective Training Pipeline that hierarchically optimizes the model for motion fidelity , visual quality , and temporal coherence . Experiments demonstrate that SteadyDancer achieves state-of-the-art performance in both appearance fidelity and motion control, while requiring significantly fewer training resources than comparable methods.",
+  "metadata": {
+    "paper_name": "SteadyDancer: Harmonized and Coherent Human Image Animation with First-Frame Preservation",
+    "github_url": "https://github.com/MCG-NJU/SteadyDancer",
+    "huggingface_url": "https://huggingface.co/papers/2511.19320",
+    "upvote": 39,
+    "tags": [
+      "image",
+      "motion",
+      "control"
+    ]
+  }
+}

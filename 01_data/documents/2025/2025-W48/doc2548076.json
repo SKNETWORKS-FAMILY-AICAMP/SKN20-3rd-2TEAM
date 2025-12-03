@@ -1,0 +1,14 @@
+{
+  "context": "Task scheduling is critical for embodied AI, enabling agents to follow natural language instructions and execute actions efficiently in 3D physical worlds. However, existing datasets often simplify task planning by ignoring operations research (OR) knowledge and 3D spatial grounding. In this work, we propose Operations Research knowledge-based 3D Grounded Task Scheduling ( ORS3D ), a new task that requires the synergy of language understanding, 3D grounding , and efficiency optimization . Unlike prior settings, ORS3D demands that agents minimize total completion time by leveraging parallelizable subtasks , e.g., cleaning the sink while the microwave operates. To facilitate research on ORS3D , we construct ORS3D -60K, a large-scale dataset comprising 60K composite tasks across 4K real-world scenes. Furthermore, we propose GRANT , an embodied multi-modal large language model equipped with a simple yet effective scheduling token mechanism to generate efficient task schedules and grounded actions. Extensive experiments on ORS3D -60K validate the effectiveness of GRANT across language understanding, 3D grounding , and scheduling efficiency. The code is available at https://github.com/H-EmbodVis/ GRANT",
+  "metadata": {
+    "paper_name": "Cook and Clean Together: Teaching Embodied Agents for Parallel Task Execution",
+    "github_url": "https://github.com/H-EmbodVis/GRANT",
+    "huggingface_url": "https://huggingface.co/papers/2511.19430",
+    "upvote": 7,
+    "tags": [
+      "task",
+      "ors3d",
+      "3d"
+    ]
+  }
+}

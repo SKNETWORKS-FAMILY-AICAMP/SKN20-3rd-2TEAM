@@ -1,0 +1,14 @@
+{
+  "context": "Understanding text-rich videos requires reading small, transient textual cues that often demand repeated inspection. Yet most video QA models rely on single-pass perception over fixed frames , leading to hallucinations and failures on fine-grained evidence. Inspired by how humans pause, zoom, and re-read critical regions, we introduce Video-R4 (Reinforcing Text-Rich Video Reasoning with Visual Rumination ), a video reasoning LMM that performs visual rumination : iteratively selecting frames , zooming into informative regions, re-encoding retrieved pixels, and updating its reasoning state . We construct two datasets with executable rumination trajectories: Video-R4-CoT-17k for supervised practice and Video-R4-RL-30k for reinforcement learning. We propose a multi-stage rumination learning framework that progressively finetunes a 7B LMM to learn atomic and mixing visual operations via SFT and GRPO-based RL . Video-R4 -7B achieves state-of-the-art results on M4-ViteVQA and further generalizes to multi-page document QA , slides QA , and generic video QA , demonstrating that iterative rumination is an effective paradigm for pixel-grounded multimodal reasoning.",
+  "metadata": {
+    "paper_name": "Video-R4: Reinforcing Text-Rich Video Reasoning with Visual Rumination",
+    "github_url": "https://github.com/yunlong10/Video-R4",
+    "huggingface_url": "https://huggingface.co/papers/2511.17490",
+    "upvote": 21,
+    "tags": [
+      "video",
+      "rumination",
+      "video r4"
+    ]
+  }
+}

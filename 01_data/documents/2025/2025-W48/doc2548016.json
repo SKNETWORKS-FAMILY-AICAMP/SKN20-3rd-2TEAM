@@ -1,0 +1,14 @@
+{
+  "context": "World models serve as core simulators for fields such as agentic AI , embodied AI , and gaming , capable of generating long, physically realistic, and interactive high-quality videos. Moreover, scaling these models could unlock emergent capabilities in visual perception , understanding , and reasoning , paving the way for a new paradigm that moves beyond current LLM-centric vision foundation models. A key breakthrough empowering them is the semi-autoregressive ( block-diffusion ) decoding paradigm, which merges the strengths of diffusion and autoregressive methods by generating video tokens in block-applying diffusion within each block while conditioning on previous ones, resulting in more coherent and stable video sequences. Crucially, it overcomes limitations of standard video diffusion by reintroducing LLM-style KV Cache management , enabling efficient, variable-length, and high-quality generation.\n  Therefore, Inferix is specifically designed as a next-generation inference engine to enable immersive world synthesis through optimized semi-autoregressive decoding processes. This dedicated focus on world simulation distinctly sets it apart from systems engineered for high-concurrency scenarios (like vLLM or SGLang ) and from classic video diffusion models (such as xDiTs ). Inferix further enhances its offering with interactive video streaming and profiling , enabling real-time interaction and realistic simulation to accurately model world dynamics. Additionally, it supports efficient benchmarking through seamless integration of LV-Bench , a new fine-grained evaluation benchmark tailored for minute-long video generation scenarios. We hope the community will work together to advance Inferix and foster world model exploration.",
+  "metadata": {
+    "paper_name": "Inferix: A Block-Diffusion based Next-Generation Inference Engine for World Simulation",
+    "github_url": "https://github.com/alibaba-damo-academy/Inferix",
+    "huggingface_url": "https://huggingface.co/papers/2511.20714",
+    "upvote": 44,
+    "tags": [
+      "video",
+      "world",
+      "diffusion"
+    ]
+  }
+}

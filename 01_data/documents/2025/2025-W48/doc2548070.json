@@ -1,0 +1,14 @@
+{
+  "context": "Large language models (LLMs) solve complex problems yet fail on simpler variants, suggesting they achieve correct outputs through mechanisms fundamentally different from human reasoning. To understand this gap, we synthesize cognitive science research into a taxonomy of 28 cognitive elements spanning reasoning invariants , meta-cognitive controls , representations for organizing reasoning & knowledge, and transformation operations . We introduce a fine-grained evaluation framework and conduct the first large-scale empirical analysis of 192K traces from 18 models across text, vision, and audio, complemented by 54 human think-aloud traces , which we make publicly available. We find that models under-utilize cognitive elements correlated with success, narrowing to rigid sequential processing on ill-structured problems where diverse representations and meta-cognitive monitoring are critical. Human traces show more abstraction and conceptual processing , while models default to surface-level enumeration . Meta-analysis of 1.6K LLM reasoning papers reveals the research community concentrates on easily quantifiable elements (sequential organization: 55%, decomposition: 60%) but neglecting meta-cognitive controls ( self-awareness : 16%) that correlate with success. Models possess behavioral repertoires associated with success but fail to deploy them spontaneously. Leveraging these patterns, we develop test-time reasoning guidance that automatically scaffold successful structures, improving performance by up to 66.7% on complex problems. By establishing a shared vocabulary between cognitive science and LLM research, our framework enables systematic diagnosis of reasoning failures and principled development of models that reason through robust cognitive mechanisms rather than spurious shortcuts , while providing tools to test theories of human cognition at scale.",
+  "metadata": {
+    "paper_name": "Cognitive Foundations for Reasoning and Their Manifestation in LLMs",
+    "github_url": "https://github.com/pkargupta/cognitive_foundations/",
+    "huggingface_url": "https://huggingface.co/papers/2511.16660",
+    "upvote": 8,
+    "tags": [
+      "cognitive",
+      "reasoning",
+      "models"
+    ]
+  }
+}

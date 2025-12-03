@@ -1,0 +1,14 @@
+{
+  "context": "Vision Language Models ( VLMs ) perform well on standard video tasks but struggle with physics-driven reasoning involving motion dynamics and spatial interactions . This limitation reduces their ability to interpret real or AI-generated content (AIGC) videos and to generate physically consistent content. We present an approach that addresses this gap by translating physical-world context cues into interpretable representations aligned with VLMs ' perception, comprehension , and reasoning. We introduce MASS-Bench , a comprehensive benchmark consisting of 4,350 real-world and AIGC videos and 8,361 free-form video question-answering pairs focused on physics-related comprehension tasks, with detailed annotations including visual detections , sub-segment grounding , and full-sequence 3D motion tracking of entities. We further present MASS , a model-agnostic method that injects spatial-temporal signals into the VLM language space via depth-based 3D encoding and visual grounding , coupled with a motion tracker for object dynamics . To strengthen cross-modal alignment and reasoning, we apply reinforcement fine-tuning . Experiments and ablations show that our refined VLMs outperform comparable and larger baselines, as well as prior state-of-the-art models, by 8.7% and 6.0%, achieving performance comparable to close-source SoTA VLMs such as Gemini-2.5-Flash on physics reasoning and comprehension . These results validate the effectiveness of our approach.",
+  "metadata": {
+    "paper_name": "MASS: Motion-Aware Spatial-Temporal Grounding for Physics Reasoning and Comprehension in Vision-Language Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.18373",
+    "upvote": 5,
+    "tags": [
+      "vlms",
+      "reasoning",
+      "motion"
+    ]
+  }
+}

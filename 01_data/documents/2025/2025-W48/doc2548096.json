@@ -1,0 +1,14 @@
+{
+  "context": "Vision Foundation Models (VFMs) extract spatially downsampled representations , posing challenges for pixel-level tasks. Existing upsampling approaches face a fundamental trade-off: classical filters are fast and broadly applicable but rely on fixed forms, while modern upsamplers achieve superior accuracy through learnable, VFM-specific forms at the cost of retraining for each VFM. We introduce Neighborhood Attention Filtering (NAF) , which bridges this gap by learning adaptive spatial-and-content weights through Cross-Scale Neighborhood Attention and Rotary Position Embeddings (RoPE) , guided solely by the high-resolution input image. NAF operates zero-shot: it upsamples features from any VFM without retraining, making it the first VFM-agnostic architecture to outperform VFM-specific upsamplers and achieve state-of-the-art performance across multiple downstream tasks. It maintains high efficiency, scaling to 2K feature maps and reconstructing intermediate-resolution maps at 18 FPS. Beyond feature upsampling , NAF demonstrates strong performance on image restoration , highlighting its versatility. Code and checkpoints are available at https://github.com/valeoai/NAF.",
+  "metadata": {
+    "paper_name": "NAF: Zero-Shot Feature Upsampling via Neighborhood Attention Filtering",
+    "github_url": "https://github.com/valeoai/NAF",
+    "huggingface_url": "https://huggingface.co/papers/2511.18452",
+    "upvote": 2,
+    "tags": [
+      "vfm",
+      "naf",
+      "upsampling"
+    ]
+  }
+}

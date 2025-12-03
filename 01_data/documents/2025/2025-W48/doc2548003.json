@@ -1,0 +1,14 @@
+{
+  "context": "Recent advances in LLM-guided evolutionary computation , particularly AlphaEvolve (Novikov et al., 2025; Georgiev et al., 2025), have demonstrated remarkable success in discovering novel mathematical constructions and solving challenging optimization problems. However, the high-level descriptions in published work leave many implementation details unspecified, hindering reproducibility and further research. In this report we present GigaEvo, an extensible open-source framework that enables researchers to study and experiment with hybrid LLM-evolution approaches inspired by AlphaEvolve . Our system provides modular implementations of key components: MAP-Elites quality-diversity algorithms , asynchronous DAG-based evaluation pipelines, LLM-driven mutation operators with insight generation and bidirectional lineage tracking , and flexible multi-island evolutionary strategies . In order to assess reproducibility and validate our implementation we evaluate GigaEvo on challenging problems from the AlphaEvolve paper: Heilbronn triangle placement , circle packing in squares, and high-dimensional kissing numbers . The framework emphasizes modularity, concurrency, and ease of experimentation, enabling rapid prototyping through declarative configuration. We provide detailed descriptions of system architecture, implementation decisions, and experimental methodology to support further research in LLM driven evolutionary methods. The GigaEvo framework and all experimental code are available at https://github.com/AIRI-Institute/gigaevo-core.",
+  "metadata": {
+    "paper_name": "GigaEvo: An Open Source Optimization Framework Powered By LLMs And Evolution Algorithms",
+    "github_url": "https://github.com/FusionBrainLab/gigaevo-core",
+    "huggingface_url": "https://huggingface.co/papers/2511.17592",
+    "upvote": 116,
+    "tags": [
+      "llm",
+      "gigaevo",
+      "framework"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "Peer review is a cornerstone of scientific publishing, including at premier machine learning conferences such as ICLR . As submission volumes increase, understanding the nature and dynamics of the review process is crucial for improving its efficiency, effectiveness, and the quality of published papers. We present a large-scale analysis of the ICLR 2024 and 2025 peer review processes, focusing on before- and after-rebuttal scores and reviewer-author interactions. We examine review scores , author-reviewer engagement , temporal patterns in review submissions, and co-reviewer influence effects. Combining quantitative analyses with LLM-based categorization of review texts and rebuttal discussions, we identify common strengths and weaknesses for each rating group, as well as trends in rebuttal strategies that are most strongly associated with score changes . Our findings show that initial scores and the ratings of co-reviewers are the strongest predictors of score changes during the rebuttal, pointing to a degree of reviewer influence . Rebuttals play a valuable role in improving outcomes for borderline papers, where thoughtful author responses can meaningfully shift reviewer perspectives. More broadly, our study offers evidence-based insights to improve the peer review process, guiding authors on effective rebuttal strategies and helping the community design fairer and more efficient review processes. Our code and score changes data are available at https://github.com/papercopilot/ iclr -insights.",
+  "metadata": {
+    "paper_name": "Insights from the ICLR Peer Review and Rebuttal Process",
+    "github_url": "https://github.com/papercopilot/iclr-insights.",
+    "huggingface_url": "https://huggingface.co/papers/2511.15462",
+    "upvote": 6,
+    "tags": [
+      "review",
+      "reviewer",
+      "rebuttal"
+    ]
+  }
+}

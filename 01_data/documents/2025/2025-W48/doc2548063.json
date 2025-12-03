@@ -1,0 +1,14 @@
+{
+  "context": "Language understanding entails not just extracting the surface-level meaning of the linguistic input, but constructing rich mental models of the situation it describes. Here we propose that because processing within the brain's core language system is fundamentally limited, deeply understanding language requires exporting information from the language system to other brain regions that compute perceptual and motor representations, construct mental models, and store our world knowledge and autobiographical memories. We review the existing evidence for this hypothesis, and argue that recent progress in cognitive neuroscience provides both the conceptual foundation and the methods to directly test it, thus opening up a new strategy to reveal what it means, cognitively and neurally, to understand language.",
+  "metadata": {
+    "paper_name": "What does it mean to understand language?",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19757",
+    "upvote": 9,
+    "tags": [
+      "language",
+      "understanding",
+      "mental models"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "Progress in computer use agents (CUAs) has been constrained by the absence of large and high-quality datasets that capture how humans interact with a computer. While LLMs have thrived on abundant textual data, no comparable corpus exists for CUA trajectories . To address these gaps, we introduce FaraGen , a novel synthetic data generation system for multi-step web tasks . FaraGen can propose diverse tasks from frequently used websites, generate multiple solution attempts, and filter successful trajectories using multiple verifiers . It achieves high throughput, yield, and diversity for multi-step web tasks , producing verified trajectories at approximately $1 each. We use this data to train Fara-7B , a native CUA model that perceives the computer using only screenshots , executes actions via predicted coordinates , and is small enough to run on-device. We find that Fara-7B outperforms other CUA models of comparable size on benchmarks like WebVoyager , Online-Mind2Web , and WebTailBench -- our novel benchmark that better captures under-represented web tasks in pre-existing benchmarks. Furthermore, Fara-7B is competitive with much larger frontier models, illustrating key benefits of scalable data generation systems in advancing small efficient agentic models. We are making Fara-7B open-weight on Microsoft Foundry and HuggingFace, and we are releasing WebTailBench .",
+  "metadata": {
+    "paper_name": "Fara-7B: An Efficient Agentic Model for Computer Use",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19663",
+    "upvote": 8,
+    "tags": [
+      "fara",
+      "fara 7b",
+      "tasks"
+    ]
+  }
+}
