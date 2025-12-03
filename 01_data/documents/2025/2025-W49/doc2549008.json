@@ -1,0 +1,14 @@
+{
+  "context": "FINDER is a benchmark for deep research agents with standardized human-curated tasks and DEFT is a failure taxonomy revealing that DRAs struggle with evidence integration, verification, and reasoning-resilient planning. Deep Research Agents(DRAs) aim to automatically produce analyst-level reports through iterative informationretrievaland synthesis. However, most existing DRAs were validated on question-answering benchmarks, while research on generating comprehensive reports remains overlooked. Worse, current benchmarks for report synthesis suffer from task complexity and subjective metrics -- this fails to reflect user demands and limits the practical utility of generated reports. To address these gaps, we presentFine-grained DEepResearch bench(FINDER), an enhanced benchmark consisting of 100 human-curated research tasks with 419structured checklist itemsthat standardize report structure, analytical depth, and factual grounding. Based on approximately 1,000 reports produced by mainstream DRAs, we further proposeDeep rEsearch Failure Taxonomy(DEFT), the first failure taxonomy fordeep research agents. DEFT contains 14 fine-grainedfailure modesacrossreasoning,retrieval, andgeneration, and is built upon grounded theory with human-LLM co-annotating and inter-annotator reliability validation. Our experimental findings reveal that current DRAs struggle not with task comprehension but with evidence integration, verification, andreasoning-resilient planning. We present Finegrained DEepResearch bench (FINDER), an enhanced benchmark consisting of 100 human-curated research tasks with 419 structured checklist items that standardize report structure, analytical depth, and factual grounding. Based on approximately 1,000 reports produced by mainstream DRAs, we further propose Deep rEsearch Failure Taxonomy (DEFT), the first failure taxonomy for deep research agents. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "How Far Are We from Genuinely Useful Deep Research Agents?",
+    "github_url": "https://github.com/OPPO-PersonalAI/FINDER_DEFT",
+    "huggingface_url": "https://huggingface.co/papers/2512.01948",
+    "upvote": 0,
+    "tags": [
+      "research",
+      "dras",
+      "reports"
+    ]
+  }
+}

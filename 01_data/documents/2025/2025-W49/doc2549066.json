@@ -1,0 +1,14 @@
+{
+  "context": "ChronosObserver generates high-fidelity, 3D-consistent, and time-synchronized multi-view videos using a training-free approach that leverages World State Hyperspace and Hyperspace Guided Sampling. Although prevailing camera-controlled video generation models can produce cinematic results, lifting them directly to the generation of3D-consistentand high-fidelitytime-synchronizedmulti-view videosremains challenging, which is a pivotal capability for taming 4D worlds. Some works resort to data augmentation or test-time optimization, but these strategies are constrained by limited model generalization and scalability issues. To this end, we propose ChronosObserver, a training-free method includingWorld State Hyperspaceto represent the spatiotemporal constraints of a 4D world scene, andHyperspace Guided Samplingto synchronize the diffusion sampling trajectories of multiple views using the hyperspace. Experimental results demonstrate that our method achieves high-fidelity and3D-consistenttime-synchronizedmulti-view videosgeneration without training or fine-tuning fordiffusion models. Although prevailing camera-controlled video generation models can produce cinematic results, lifting them directly to the generation of 3D-consistent and high-fidelity time-synchronized multi-view videos remains challenging, which is a pivotal capability for taming 4D worlds. Some works resort to data augmentation or test-time optimization, but these strategies are constrained by limited model generalization and scalability issues. To this end, we propose ChronosObserver, a training-free method including World State Hyperspace to represent the spatiotemporal constraints of a 4D world scene, and Hyperspace Guided Sampling to synchronize the diffusion sampling trajectories of multiple views using the hyperspace. Experimental results demonstrate that our method achieves high-fidelity and 3D-consistent time-synchronized multi-view videos generation without training or fine-tuning for diffusion models.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "ChronosObserver: Taming 4D World with Hyperspace Diffusion Sampling",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.01481",
+    "upvote": 0,
+    "tags": [
+      "hyperspace",
+      "time",
+      "view"
+    ]
+  }
+}

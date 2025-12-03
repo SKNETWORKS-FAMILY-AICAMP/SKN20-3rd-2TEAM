@@ -1,0 +1,14 @@
+{
+  "context": "OralGPT-Omni, a dental-specialized multimodal large language model, enhances dental image analysis through TRACE-CoT reasoning supervision and achieves superior performance on MMOral-Uni benchmark compared to GPT-5. Multimodal Large Language Models(MLLMs) have exhibited immense potential across numerous medical specialties; yet, dentistry remains underexplored, in part due to limited domain-specific data, scarce dental expert annotations, insufficient modality-specific modeling, and challenges in reliability. In this paper, we present OralGPT-Omni, the firstdental-specialized MLLMdesigned for comprehensive and trustworthy analysis across diverse dental imaging modalities and clinical tasks. To explicitly capture dentists' diagnostic reasoning, we constructTRACE-CoT, a clinically groundedchain-of-thought datasetthat mirrors dental radiologists' decision-making processes. This reasoning supervision, combined with our proposedfour-stage training paradigm, substantially strengthens the model's capacity for dental image understanding and analysis. In parallel, we introduceMMOral-Uni, the firstunified multimodal benchmarkfordental image analysis. It comprises 2,809 open-ended question-answer pairs spanning five modalities and five tasks, offering a comprehensive evaluation suite to date forMLLMsin digital dentistry. OralGPT-Omni achieves an overall score of 51.84 on theMMOral-Unibenchmark and 45.31 on theMMOral-OPGbenchmark, dramatically outperforming the scores of GPT-5. Our work promotesintelligent dentistryand paves the way for future advances indental image analysis. All code, benchmark, and models will be made publicly available. Github:https://github.com/isbrycee/OralGPT  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "OralGPT-Omni: A Versatile Dental Multimodal Large Language Model",
+    "github_url": "https://github.com/isbrycee/OralGPT",
+    "huggingface_url": "https://huggingface.co/papers/2511.22055",
+    "upvote": 0,
+    "tags": [
+      "dental",
+      "analysis",
+      "oralgpt"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "A Mixture-of-Experts framework with adaptive routing among multiple YOLOv9-T experts improves object detection performance by achieving higher mAP and AR. This paper presents a novelMixture-of-Expertsframework for object detection, incorporatingadaptive routingamong multipleYOLOv9-Texperts to enabledynamic feature specializationand achieve highermean Average Precision(mAP) andAverage Recall(AR) compared to a singleYOLOv9-Tmodel. This paper presents a novel Mixture-of-Experts framework for object detection, incorporating adaptive routing among multiple YOLOv9-T experts to enable dynamic feature specialization and achieve higher mean Average Precision (mAP) and Average Recall (AR) compared to a single YOLOv9-T model. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "YOLO Meets Mixture-of-Experts: Adaptive Expert Routing for Robust Object Detection",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.13344",
+    "upvote": 0,
+    "tags": [
+      "paper",
+      "experts",
+      "object detection"
+    ]
+  }
+}

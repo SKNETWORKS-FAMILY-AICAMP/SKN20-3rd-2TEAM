@@ -1,0 +1,14 @@
+{
+  "context": "Fast3Dcache accelerates 3D diffusion model inference with minimal geometric quality degradation by using a geometry-aware caching framework with dynamic cache quotas and spatiotemporal stability criteria. Diffusion modelshave achieved impressivegenerative qualityacross modalities like 2D images, videos, and 3D shapes, but their inference remains computationally expensive due to theiterative denoising process. While recentcaching-based methodseffectively reuse redundant computations to speed up 2D and video generation, directly applying these techniques to 3Ddiffusion modelscan severely disruptgeometric consistency. In 3D synthesis, even minor numerical errors in cached latent features accumulate, causing structural artifacts and topological inconsistencies. To overcome this limitation, we propose Fast3Dcache, a training-free geometry-aware caching framework that accelerates 3D diffusion inference while preserving geometric fidelity. Our method introduces aPredictive Caching Scheduler Constraint(PCSC) to dynamically determine cache quotas according tovoxel stabilization patternsand aSpatiotemporal Stability Criterion(SSC) to select stable features for reuse based on velocity magnitude and acceleration criterion. Comprehensive experiments show that Fast3Dcache accelerates inference significantly, achieving up to a 27.12% speed-up and a 54.8% reduction in FLOPs, with minimal degradation in geometric quality as measured byChamfer Distance(2.48%) andF-Score(1.95%). Homepage:https://fast3dcache-agi.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Fast3Dcache: Training-free 3D Geometry Synthesis Acceleration",
+    "github_url": "https://github.com/Westlake-AGI-Lab/Fast3Dcache",
+    "huggingface_url": "https://huggingface.co/papers/2511.22533",
+    "upvote": 0,
+    "tags": [
+      "fast3dcache",
+      "3d",
+      "inference"
+    ]
+  }
+}

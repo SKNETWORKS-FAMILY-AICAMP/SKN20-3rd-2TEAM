@@ -1,0 +1,14 @@
+{
+  "context": "Xmodel-2.5, a 1.3-billion-parameter language model, uses maximal-update parameterization and a modified training curriculum to improve performance and efficiency, making it suitable for edge deployments. Large language models deliver strong reasoning and tool-use skills, yet their computational demands make them impractical for edge or cost-sensitive deployments. We present Xmodel-2.5, a 1.3-billion-parameter small language model designed as a drop-in agent core. Training withmaximal-update parameterization(μP) allows hyper-parameters tuned on a 20M-parameter proxy to transfer directly to the full model, even under the parameter-tiedtie-word-embeddingarchitecture. A 1.4T-token Warmup--Stable--Decay curriculum is used, and we further show that switching fromAdamWtoMuonduring the decay phase improves the 13-task reasoning average by 4.58\\,\\% while keeping every other hyper-parameter fixed, verifying that earlyAdamWstability can be paired with lateMuonsharpening for better downstream performance.FP8-mixed-precision trainingbalances accuracy and throughput. All checkpoints, recipes, and evaluation code are released under the Apache-2.0 license.https://huggingface.co/XiaoduoAILab/Xmodel-2.5 and https://huggingface.co/XiaoduoAILab/Xmodel-2.5-history (training checkpoints). Training code and evaluation harness: https://github.com/XiaoduoAILab/Xmodel-2.5. Xmodel-2.5 is a 1.3B-parameter small language model designed for efficient reasoning and agent deployment. It uses μP for hyperparameter transfer, a Warmup-Stable-Decay curriculum with 1.4T tokens, and a novel switch from AdamW to Muon during decay, boosting reasoning scores by 4.58%. With FP8 mixed precision and long-context support up to 16K, it achieves the second-best average in the 1–2B range on 13 reasoning benchmarks, using 25.7× less data than leading models. Code and weights are fully open-source. https://huggingface.co/XiaoduoAILab/Xmodel-2.5https://github.com/XiaoduoAILab/Xmodel-2.5Paper:https://arxiv.org/abs/2511.19496 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Xmodel-2.5: 1.3B Data-Efficient Reasoning SLM",
+    "github_url": "https://github.com/XiaoduoAILab/Xmodel-2.5",
+    "huggingface_url": "https://huggingface.co/papers/2511.19496",
+    "upvote": 0,
+    "tags": [
+      "xmodel",
+      "parameter",
+      "xiaoduoailab"
+    ]
+  }
+}

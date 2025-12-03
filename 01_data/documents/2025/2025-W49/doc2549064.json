@@ -1,0 +1,14 @@
+{
+  "context": "Systematic study of test-time scaling strategies in large language models reveals distinct performance trends based on problem difficulty, model type, and compute budget. Test-time scaling(TTS) -- thedynamic allocationof compute duringinference-- is a promising direction for improving reasoning inlarge language models(LLMs). However, a systematic comparison of well-knownTTSstrategies under identical conditions is missing, and the influence of model type and problem difficulty on performance remains unclear. To address these gaps, we conduct the first large-scale study ofTTS, spanning over thirty billion tokens generated using eight open-sourceLLMs(7B to 235B parameters), across four reasoning datasets. We observe three consistent trends: (1) no singleTTSstrategy universally dominates; (2) reasoning models exhibit distincttrace-quality patternsacross problem difficulty and trace length, formingshort-horizonandlong-horizoncategories; and (3) for a given model type, the optimalTTSperformance scales monotonically with compute budget. Based on these insights, we provide a practical recipe for selecting the bestTTSstrategy, considering problem difficulty, model type, and compute budget, providing a practical guide to effectiveinference-time scaling. Paper link:https://arxiv.org/pdf/2512.02008Github repo:https://github.com/Aradhye2002/art_of_tts This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "The Art of Scaling Test-Time Compute for Large Language Models",
+    "github_url": "https://github.com/Aradhye2002/art_of_tts",
+    "huggingface_url": "https://huggingface.co/papers/2512.02008",
+    "upvote": 0,
+    "tags": [
+      "type",
+      "paper",
+      "problem difficulty"
+    ]
+  }
+}
