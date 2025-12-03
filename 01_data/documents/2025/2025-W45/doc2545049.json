@@ -1,0 +1,14 @@
+{
+    "content": "Kinematify is an automated framework that synthesizes articulated objects from RGB images or textual descriptions, addressing challenges in inferring kinematic topologies and estimating joint parameters.\nA deep understanding of kinematic structures and movable components is essential for enabling robots to manipulate objects and model their own articulated forms. Such understanding is captured through articulated objects, which are essential for tasks such as physical simulation, motion planning, and policy learning. However, creating these models, particularly for objects with high degrees of freedom (DoF), remains a significant challenge. Existing methods typically rely on motion sequences or strong assumptions from hand-curated datasets, which hinders scalability. In this paper, we introduce Kinematify, an automated framework that synthesizes articulated objects directly from arbitrary RGB images or textual descriptions. Our method addresses two core challenges: (i) inferring kinematic topologies for high-DoF objects and (ii) estimating joint parameters from static geometry. To achieve this, we combine MCTS search for structural inference with geometry-driven optimization for joint reasoning, producing physically consistent and functionally valid descriptions. We evaluate Kinematify on diverse inputs from both synthetic and real-world environments, demonstrating improvements in registration and kinematic topology accuracy over prior work.",
+    "metadata": {
+        "paper_name": "Kinematify: Open-Vocabulary Synthesis of High-DoF Articulated Objects",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.01294",
+        "upvote": 13,
+        "tags": [
+            "objects",
+            "articulated",
+            "kinematic"
+        ]
+    }
+}

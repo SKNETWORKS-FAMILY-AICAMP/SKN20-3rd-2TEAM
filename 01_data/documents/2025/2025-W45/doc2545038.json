@@ -1,0 +1,14 @@
+{
+    "content": "HyperClick enhances GUI automation by calibrating confidence and reducing overconfidence through a dual reward mechanism and spatial confidence modeling.\nAutonomous Graphical User Interface (GUI) agents rely on accurate GUI grounding, which maps language instructions to on-screen coordinates, to execute user commands. However, current models, whether trained via supervised fine-tuning (SFT) or reinforcement fine-tuning (RFT), lack self-awareness of their capability boundaries, leading to overconfidence and unreliable predictions. We first systematically evaluate probabilistic and verbalized confidence in general and GUI-specific models, revealing a misalignment between confidence and actual accuracy, which is particularly critical in dynamic GUI automation tasks, where single errors can cause task failure. To address this, we propose HyperClick, a novel framework that enhances reliable GUI grounding through uncertainty calibration. HyperClick introduces a dual reward mechanism, combining a binary reward for correct actions with a truncated Gaussian-based spatial confidence modeling, calibrated using the Brier score. This approach jointly optimizes grounding accuracy and confidence reliability, fostering introspective self-criticism. Extensive experiments on seven challenge benchmarks show that HyperClick achieves state-of-the-art performance while providing well-calibrated confidence. By enabling explicit confidence calibration and introspective self-criticism, HyperClick reduces overconfidence and supports more reliable GUI automation.",
+    "metadata": {
+        "paper_name": "HyperClick: Advancing Reliable GUI Grounding via Uncertainty Calibration",
+        "github_url": "https://github.com/xiaomi-research/hyperclick",
+        "huggingface_url": "https://huggingface.co/papers/2510.27266",
+        "upvote": 20,
+        "tags": [
+            "confidence",
+            "gui",
+            "hyperclick"
+        ]
+    }
+}

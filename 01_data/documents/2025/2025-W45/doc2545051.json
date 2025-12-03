@@ -1,0 +1,14 @@
+{
+    "content": "A novel detection method based on multi-modal semantic perturbation is proposed to identify contaminated Vision-Language Models, demonstrating robustness across various contamination strategies.\nRecent advances in Vision-Language Models (VLMs) have achieved state-of-the-art performance on numerous benchmark tasks. However, the use of internet-scale, often proprietary, pretraining corpora raises a critical concern for both practitioners and users: inflated performance due to test-set leakage. While prior works have proposed mitigation strategies such as decontamination of pretraining data and benchmark redesign for LLMs, the complementary direction of developing detection methods for contaminated VLMs remains underexplored. To address this gap, we deliberately contaminate open-source VLMs on popular benchmarks and show that existing detection approaches either fail outright or exhibit inconsistent behavior. We then propose a novel simple yet effective detection method based on multi-modal semantic perturbation, demonstrating that contaminated models fail to generalize under controlled perturbations. Finally, we validate our approach across multiple realistic contamination strategies, confirming its robustness and effectiveness. The code and perturbed dataset will be released publicly.",
+    "metadata": {
+        "paper_name": "Contamination Detection for VLMs using Multi-Modal Semantic Perturbation",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.03774",
+        "upvote": 12,
+        "tags": [
+            "detection",
+            "contaminated",
+            "models"
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "content": "Research investigates how and when value alignment occurs during the post-training phase of LLMs, finding that supervised fine-tuning establishes values, while preference optimization has limited impact.\nAs LLMs occupy an increasingly important role in society, they are more and more confronted with questions that require them not only to draw on their general knowledge but also to align with certain human value systems. Therefore, studying the alignment of LLMs with human values has become a crucial field of inquiry. Prior work, however, mostly focuses on evaluating the alignment of fully trained models, overlooking the training dynamics by which models learn to express human values. In this work, we investigate how and at which stage value alignment arises during the course of a model's post-training. Our analysis disentangles the effects of post-training algorithms and datasets, measuring both the magnitude and time of value drifts during training. Experimenting with Llama-3 and Qwen-3 models of different sizes and popular supervised fine-tuning (SFT) and preference optimization datasets and algorithms, we find that the SFT phase generally establishes a model's values, and subsequent preference optimization rarely re-aligns these values. Furthermore, using a synthetic preference dataset that enables controlled manipulation of values, we find that different preference optimization algorithms lead to different value alignment outcomes, even when preference data is held constant. Our findings provide actionable insights into how values are learned during post-training and help to inform data curation, as well as the selection of models and algorithms for preference optimization to improve model alignment to human values.",
+    "metadata": {
+        "paper_name": "Value Drifts: Tracing Value Alignment During LLM Post-Training",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.26707",
+        "upvote": 12,
+        "tags": [
+            "values",
+            "preference",
+            "alignment"
+        ]
+    }
+}

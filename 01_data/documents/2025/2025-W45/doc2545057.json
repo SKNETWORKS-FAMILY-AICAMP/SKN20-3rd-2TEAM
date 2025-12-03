@@ -1,0 +1,14 @@
+{
+    "content": "MeasureBench evaluates vision-language models on reading measurements from images, revealing challenges in indicator localization and fine-grained spatial grounding.\nReading measurement instruments is effortless for humans and requires relatively little domain expertise, yet it remains surprisingly challenging for current vision-language models (VLMs) as we find in preliminary evaluation. In this work, we introduce MeasureBench, a benchmark on visual measurement reading covering both real-world and synthesized images of various types of measurements, along with an extensible pipeline for data synthesis. Our pipeline procedurally generates a specified type of gauge with controllable visual appearance, enabling scalable variation in key details such as pointers, scales, fonts, lighting, and clutter. Evaluation on popular proprietary and open-weight VLMs shows that even the strongest frontier VLMs struggle measurement reading in general. A consistent failure mode is indicator localization: models can read digits or labels but misidentify the key positions of pointers or alignments, leading to big numeric errors despite plausible textual reasoning. We have also conducted preliminary experiments with reinforcement learning over synthetic data, and find encouraging results on in-domain synthetic subset but less promising for real-world images. Our analysis highlights a fundamental limitation of current VLMs in fine-grained spatial grounding. We hope this resource can help future advances on visually grounded numeracy and precise spatial perception of VLMs, bridging the gap between recognizing numbers and measuring the world.",
+    "metadata": {
+        "paper_name": "Do Vision-Language Models Measure Up? Benchmarking Visual Measurement Reading with MeasureBench",
+        "github_url": "https://github.com/flageval-baai/MeasureBench",
+        "huggingface_url": "https://huggingface.co/papers/2510.26865",
+        "upvote": 11,
+        "tags": [
+            "vlms",
+            "reading",
+            "models"
+        ]
+    }
+}

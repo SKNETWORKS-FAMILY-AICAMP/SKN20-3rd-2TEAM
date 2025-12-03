@@ -1,0 +1,14 @@
+{
+    "content": "ToolScope, an agentic framework for multimodal large language models, enhances visual question answering by integrating external tools and achieving significant performance improvements across various benchmarks.\nRecently, large language models (LLMs) have demonstrated remarkable problem-solving capabilities by autonomously integrating with external tools for collaborative reasoning. However, due to the inherently complex and diverse nature of multimodal information, enabling multimodal large language models (MLLMs) to flexibly and efficiently utilize external tools during reasoning remains an underexplored challenge. In this work, we introduce ToolScope, an agentic framework designed to unify global planning with local multimodal perception, adopting a specialized Perceive tool to mitigates visual context degradation in long-horizon VQA task. ToolScope comprises three primary components: the Global Navigator, the Agentic Executor, and the Response Synthesizer. The Global Navigator functions as a \"telescope\", offering high-level strategic guidance. The Agentic Executor operates iteratively to augment MLLM with local perception through the integration of external tools-Search, Code, and Perceive. Finally, the Response Synthesizer consolidates and organizes the reasoning process into a coherent, user-friendly output. We evaluate ToolScope on four VQA benchmarks across diverse domains, including VQA 2.0, ScienceQA, MAT-Search and MathVista. It demonstrates strong generalization capabilities, achieving an average performance improvement of up to +6.69% across all datasets.",
+    "metadata": {
+        "paper_name": "ToolScope: An Agentic Framework for Vision-Guided and Long-Horizon Tool Use",
+        "github_url": "https://github.com/dengmengjie/ToolScope",
+        "huggingface_url": "https://huggingface.co/papers/2510.27363",
+        "upvote": 22,
+        "tags": [
+            "toolscope",
+            "agentic",
+            "multimodal"
+        ]
+    }
+}

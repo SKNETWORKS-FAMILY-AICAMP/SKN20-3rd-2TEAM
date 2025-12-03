@@ -1,0 +1,14 @@
+{
+    "content": "Sequential scaling in language model reasoning outperforms parallel scaling across multiple models and benchmarks, with inverse-entropy weighted voting further enhancing accuracy.\nWe revisit test-time scaling for language model reasoning and ask a fundamental question: at equal token budget and compute, is it better to run multiple independent chains in parallel, or to run fewer chains that iteratively refine through sequential steps? Through comprehensive evaluation across 5 state-of-the-art open source models and 3 challenging reasoning benchmarks, we find that sequential scaling where chains explicitly build upon previous attempts consistently outperforms the dominant parallel self-consistency paradigm in 95.6% of configurations with gains in accuracy upto 46.7%. Further, we introduce inverse-entropy weighted voting, a novel training-free method to further boost the accuracy of sequential scaling. By weighing answers in proportion to the inverse entropy of their reasoning chains, we increase our success rate over parallel majority and establish it as the optimal test-time scaling strategy. Our findings fundamentally challenge the parallel reasoning orthodoxy that has dominated test-time scaling since Wang et al.'s self-consistency decoding (Wang et al., 2022), positioning sequential refinement as the robust default for modern LLM reasoning and necessitating a paradigm shift in how we approach inference-time optimization.",
+    "metadata": {
+        "paper_name": "The Sequential Edge: Inverse-Entropy Voting Beats Parallel Self-Consistency at Matched Compute",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.02309",
+        "upvote": 4,
+        "tags": [
+            "scaling",
+            "reasoning",
+            "sequential"
+        ]
+    }
+}

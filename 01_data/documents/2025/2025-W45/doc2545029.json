@@ -1,0 +1,14 @@
+{
+    "content": "Spatial-SSRL, a self-supervised reinforcement learning paradigm, enhances spatial understanding in Large Vision-Language Models using verifiable signals from RGB or RGB-D images without human annotation.\nSpatial understanding remains a weakness of Large Vision-Language Models (LVLMs). Existing supervised fine-tuning (SFT) and recent reinforcement learning with verifiable rewards (RLVR) pipelines depend on costly supervision, specialized tools, or constrained environments that limit scale. We introduce Spatial-SSRL, a self-supervised RL paradigm that derives verifiable signals directly from ordinary RGB or RGB-D images. Spatial-SSRL automatically formulates five pretext tasks that capture 2D and 3D spatial structure: shuffled patch reordering, flipped patch recognition, cropped patch inpainting, regional depth ordering, and relative 3D position prediction. These tasks provide ground-truth answers that are easy to verify and require no human or LVLM annotation. Training on our tasks substantially improves spatial reasoning while preserving general visual capabilities. On seven spatial understanding benchmarks in both image and video settings, Spatial-SSRL delivers average accuracy gains of 4.63% (3B) and 3.89% (7B) over the Qwen2.5-VL baselines. Our results show that simple, intrinsic supervision enables RLVR at scale and provides a practical route to stronger spatial intelligence in LVLMs.",
+    "metadata": {
+        "paper_name": "Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning",
+        "github_url": "https://github.com/InternLM/Spatial-SSRL",
+        "huggingface_url": "https://huggingface.co/papers/2510.27606",
+        "upvote": 27,
+        "tags": [
+            "spatial",
+            "ssrl",
+            "rgb"
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "content": "Retaining and up-weighting moderately easy problems in RLVR pipelines for LLMs reduces output verbosity without explicit length penalization.\nLarge language models (LLMs) trained for step-by-step reasoning often become excessively verbose, raising inference cost. Standard Reinforcement Learning with Verifiable Rewards (RLVR) pipelines filter out ``easy'' problems for training efficiency, leaving the model to train primarily on harder problems that require longer reasoning chains. This skews the output length distribution upward, resulting in a model that conflates ``thinking longer'' with ``thinking better''. In this work, we show that retaining and modestly up-weighting moderately easy problems acts as an implicit length regularizer. Exposing the model to solvable short-chain tasks constrains its output distribution and prevents runaway verbosity. The result is \\emph{emergent brevity for free}: the model learns to solve harder problems without inflating the output length, despite the absence of any explicit length penalization. RLVR experiments using this approach on Qwen3-4B-Thinking-2507 (with a 16k token limit) achieve baseline pass@1 AIME25 accuracy while generating solutions that are, on average, nearly twice as short. The code is available at https://github.com/MBZUAI-Paris/Frugal-AI{GitHub}, with datasets and models on https://huggingface.co/collections/MBZUAI-Paris/k2-think-mini-68dcfa8b114686a4bd3dc2bc{Hugging Face}.",
+    "metadata": {
+        "paper_name": "Shorter but not Worse: Frugal Reasoning via Easy Samples as Length Regularizers in Math RLVR",
+        "github_url": "https://github.com/MBZUAI-Paris/Frugal-AI-Math",
+        "huggingface_url": "https://huggingface.co/papers/2511.01937",
+        "upvote": 12,
+        "tags": [
+            "problems",
+            "length",
+            "output"
+        ]
+    }
+}

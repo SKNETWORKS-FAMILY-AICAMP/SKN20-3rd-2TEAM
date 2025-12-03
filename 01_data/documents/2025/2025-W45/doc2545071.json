@@ -1,0 +1,14 @@
+{
+    "content": "A Unified Diffusion VLA and Joint Discrete Denoising Diffusion Process (JD3P) model integrates multiple modalities through a synchronous denoising process, achieving state-of-the-art performance in vision-language-action tasks with faster inference.\nVision-language-action (VLA) models aim to understand natural language instructions and visual observations and to execute corresponding actions as an embodied agent. Recent work integrates future images into the understanding-acting loop, yielding unified VLAs that jointly understand, generate, and act -- reading text and images and producing future images and actions. However, these models either rely on external experts for modality unification or treat image generation and action prediction as separate processes, limiting the benefits of direct synergy between these tasks. Our core philosophy is to optimize generation and action jointly through a synchronous denoising process, where the iterative refinement enables actions to evolve from initialization, under constant and sufficient visual guidance. We ground this philosophy in our proposed Unified Diffusion VLA and Joint Discrete Denoising Diffusion Process (JD3P), which is a joint diffusion process that integrates multiple modalities into a single denoising trajectory to serve as the key mechanism enabling understanding, generation, and acting to be intrinsically synergistic. Our model and theory are built on a unified tokenized space of all modalities and a hybrid attention mechanism. We further propose a two-stage training pipeline and several inference-time techniques that optimize performance and efficiency. Our approach achieves state-of-the-art performance on benchmarks such as CALVIN, LIBERO, and SimplerEnv with 4times faster inference than autoregressive methods, and we demonstrate its effectiveness through in-depth analysis and real-world evaluations. Our project page is available at https://irpn-eai.github.io/UD-VLA.github.io/.",
+    "metadata": {
+        "paper_name": "Unified Diffusion VLA: Vision-Language-Action Model via Joint Discrete Denoising Diffusion Process",
+        "github_url": "https://github.com/OpenHelix-Team/UD-VLA",
+        "huggingface_url": "https://huggingface.co/papers/2511.01718",
+        "upvote": 6,
+        "tags": [
+            "diffusion",
+            "denoising",
+            "process"
+        ]
+    }
+}

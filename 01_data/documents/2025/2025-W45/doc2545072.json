@@ -1,0 +1,14 @@
+{
+    "content": "TransferEngine provides a uniform interface for flexible point-to-point communication in large language models, supporting disaggregated inference, reinforcement learning, and Mixture-of-Experts routing across different hardware.\nEmerging Large Language Model (LLM) system patterns, such as disaggregated inference, Mixture-of-Experts (MoE) routing, and asynchronous reinforcement fine-tuning, require flexible point-to-point communication beyond simple collectives. Existing implementations are locked to specific Network Interface Controllers (NICs), hindering integration into inference engines and portability across hardware providers. We present TransferEngine, which bridges the functionality of common NICs to expose a uniform interface. TransferEngine exposes one-sided WriteImm operations with a ImmCounter primitive for completion notification, without ordering assumptions of network transport, transparently managing multiple NICs per GPU. We demonstrate peak throughput of 400 Gbps on both NVIDIA ConnectX-7 and AWS Elastic Fabric Adapter (EFA). We showcase TransferEngine through three production systems: (1) KvCache transfer for disaggregated inference with dynamic scaling, (2) RL weight updates achieving 1.3 seconds for trillion-parameter models, and (3) MoE dispatch/combine implementation exceeding DeepEP decode latency on ConnectX-7, with the first viable latencies on EFA. We demonstrate that our portable point-to-point communication complements collectives while avoiding lock-in.",
+    "metadata": {
+        "paper_name": "RDMA Point-to-Point Communication for LLM Systems",
+        "github_url": "https://github.com/perplexityai/pplx-garden",
+        "huggingface_url": "https://huggingface.co/papers/2510.27656",
+        "upvote": 6,
+        "tags": [
+            "point",
+            "transferengine",
+            "inference"
+        ]
+    }
+}

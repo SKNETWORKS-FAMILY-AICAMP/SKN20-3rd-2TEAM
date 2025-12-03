@@ -1,0 +1,14 @@
+{
+    "content": "Evaluation of agent-based systems reveals a collaboration gap where solo-performing models degrade in pairings, suggesting the need for collaboration-aware evaluation and training strategies.\nThe trajectory of AI development suggests that we will increasingly rely on agent-based systems composed of independently developed agents with different information, privileges, and tools. The success of these systems will critically depend on effective collaboration among these heterogeneous agents, even under partial observability. Despite intense interest, few empirical studies have evaluated such agent-agent collaboration at scale. We propose a collaborative maze-solving benchmark that (i) isolates collaborative capabilities, (ii) modulates problem complexity, (iii) enables scalable automated grading, and (iv) imposes no output-format constraints, preserving ecological plausibility. Using this framework, we evaluate 32 leading open- and closed-source models in solo, homogeneous, and heterogeneous pairings. Our results reveal a \"collaboration gap\": models that perform well solo often degrade substantially when required to collaborate. Collaboration can break down dramatically; for instance, small distilled models that solve mazes well alone may fail almost completely in certain pairings. We find that starting with the stronger agent often improves outcomes, motivating a \"relay inference\" approach where the stronger agent leads before handing off to the weaker one, closing much of the gap. Our findings argue for (1) collaboration-aware evaluation, (2) training strategies developed to enhance collaborative capabilities, and (3) interaction design that reliably elicits agents' latent skills, guidance that applies to AI-AI and human-AI collaboration.",
+    "metadata": {
+        "paper_name": "The Collaboration Gap",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.02687",
+        "upvote": 21,
+        "tags": [
+            "collaboration",
+            "agent",
+            "models"
+        ]
+    }
+}

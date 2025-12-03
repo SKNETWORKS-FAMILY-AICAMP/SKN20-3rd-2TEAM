@@ -1,0 +1,14 @@
+{
+    "content": "PHUMA, a large-scale and physically reliable humanoid locomotion dataset, improves motion imitation by addressing physical artifacts in human video data.\nMotion imitation is a promising approach for humanoid locomotion, enabling agents to acquire humanlike behaviors. Existing methods typically rely on high-quality motion capture datasets such as AMASS, but these are scarce and expensive, limiting scalability and diversity. Recent studies attempt to scale data collection by converting large-scale internet videos, exemplified by Humanoid-X. However, they often introduce physical artifacts such as floating, penetration, and foot skating, which hinder stable imitation. In response, we introduce PHUMA, a Physically-grounded HUMAnoid locomotion dataset that leverages human video at scale, while addressing physical artifacts through careful data curation and physics-constrained retargeting. PHUMA enforces joint limits, ensures ground contact, and eliminates foot skating, producing motions that are both large-scale and physically reliable. We evaluated PHUMA in two sets of conditions: (i) imitation of unseen motion from self-recorded test videos and (ii) path following with pelvis-only guidance. In both cases, PHUMA-trained policies outperform Humanoid-X and AMASS, achieving significant gains in imitating diverse motions. The code is available at https://davian-robotics.github.io/PHUMA.",
+    "metadata": {
+        "paper_name": "PHUMA: Physically-Grounded Humanoid Locomotion Dataset",
+        "github_url": "https://github.com/davian-robotics/PHUMA",
+        "huggingface_url": "https://huggingface.co/papers/2510.26236",
+        "upvote": 28,
+        "tags": [
+            "phuma",
+            "scale",
+            "humanoid"
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "content": "MME-CC is a vision-grounded benchmark that evaluates multimodal large language models' cognitive capacity across spatial, geometric, and knowledge-based reasoning tasks, revealing weaknesses in spatial and geometric reasoning.\nAs reasoning models scale rapidly, the essential role of multimodality in human cognition has come into sharp relief, driving a growing need to probe vision-centric cognitive behaviors. Yet, existing multimodal benchmarks either overemphasize textual reasoning or fall short of systematically capturing vision-centric cognitive behaviors, leaving the cognitive capacity of MLLMs insufficiently assessed. To address this limitation, we introduce MME-CC (Multi-Modal Evaluation benchmark of Cognitive Capacity), a vision-grounded benchmark that organizes 11 representative reasoning tasks into three fundamental categories of visual information: spatial, geometric, and knowledge-based reasoning, and provides fine-grained analyses of MLLMs' cognitive capacity across these dimensions. Based on MME-CC, we conduct extensive experiments over 16 representative MLLMs. Our study reveals that closed-source models currently lead overall (e.g., 42.66 for Gemini-2.5-Pro vs. 30.45 for GLM-4.5V), while spatial and geometric reasoning remain broadly weak (less than or equal to 30%). We further identify common error patterns, including orientation mistakes, fragile cross-view identity persistence, and poor adherence to counterfactual instructions, and observe that Chain-of-Thought typically follows a three-stage process (extract -> reason -> verify) with heavy reliance on visual extraction. We hope this work catalyzes a shift toward treating the cognitive capacity of MLLMs as central to both evaluation and model design.",
+    "metadata": {
+        "paper_name": "MME-CC: A Challenging Multi-Modal Evaluation Benchmark of Cognitive Capacity",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.03146",
+        "upvote": 7,
+        "tags": [
+            "cognitive",
+            "reasoning",
+            "capacity"
+        ]
+    }
+}

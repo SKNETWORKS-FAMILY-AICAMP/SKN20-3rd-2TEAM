@@ -1,0 +1,14 @@
+{
+    "content": "AyurParam-2.9B, a domain-specialized bilingual language model fine-tuned for Ayurveda, outperforms other models in its size class and demonstrates competitive performance on specialized medical knowledge tasks.\nCurrent large language models excel at broad, general-purpose tasks, but consistently underperform when exposed to highly specialized domains that require deep cultural, linguistic, and subject-matter expertise. In particular, traditional medical systems such as Ayurveda embody centuries of nuanced textual and clinical knowledge that mainstream LLMs fail to accurately interpret or apply. We introduce AyurParam-2.9B, a domain-specialized, bilingual language model fine-tuned from Param-1-2.9B using an extensive, expertly curated Ayurveda dataset spanning classical texts and clinical guidance. AyurParam's dataset incorporates context-aware, reasoning, and objective-style Q&A in both English and Hindi, with rigorous annotation protocols for factual precision and instructional clarity. Benchmarked on BhashaBench-Ayur, AyurParam not only surpasses all open-source instruction-tuned models in its size class (1.5--3B parameters), but also demonstrates competitive or superior performance compared to much larger models. The results from AyurParam highlight the necessity for authentic domain adaptation and high-quality supervision in delivering reliable, culturally congruent AI for specialized medical knowledge.",
+    "metadata": {
+        "paper_name": "AyurParam: A State-of-the-Art Bilingual Language Model for Ayurveda",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.02374",
+        "upvote": 3,
+        "tags": [
+            "ayurparam",
+            "specialized",
+            "models"
+        ]
+    }
+}

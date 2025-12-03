@@ -1,0 +1,14 @@
+{
+    "content": "Jr. AI Scientist, an autonomous AI system, mimics novice researcher workflows to generate scientifically valuable papers, outperforming fully automated systems but with identified limitations and risks.\nUnderstanding the current capabilities and risks of AI Scientist systems is essential for ensuring trustworthy and sustainable AI-driven scientific progress while preserving the integrity of the academic ecosystem. To this end, we develop Jr. AI Scientist, a state-of-the-art autonomous AI scientist system that mimics the core research workflow of a novice student researcher: Given the baseline paper from the human mentor, it analyzes its limitations, formulates novel hypotheses for improvement, validates them through rigorous experimentation, and writes a paper with the results. Unlike previous approaches that assume full automation or operate on small-scale code, Jr. AI Scientist follows a well-defined research workflow and leverages modern coding agents to handle complex, multi-file implementations, leading to scientifically valuable contributions. For evaluation, we conducted automated assessments using AI Reviewers, author-led evaluations, and submissions to Agents4Science, a venue dedicated to AI-driven scientific contributions. The findings demonstrate that Jr. AI Scientist generates papers receiving higher review scores than existing fully automated systems. Nevertheless, we identify important limitations from both the author evaluation and the Agents4Science reviews, indicating the potential risks of directly applying current AI Scientist systems and key challenges for future research. Finally, we comprehensively report various risks identified during development. We hope these insights will deepen understanding of current progress and risks in AI Scientist development.",
+    "metadata": {
+        "paper_name": "Jr. AI Scientist and Its Risk Report: Autonomous Scientific Exploration from a Baseline Paper",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.04583",
+        "upvote": 1,
+        "tags": [
+            "scientist",
+            "risks",
+            "systems"
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "content": "M-Solomon, a multimodal embedder, adaptively augments queries using a Multimodal LLM, improving performance and reducing embedding latency compared to baselines.\nQuery augmentation makes queries more meaningful by appending further information to the queries to find relevant documents. Current studies have proposed Large Language Model (LLM)-based embedders, which learn representation for embedding and generation for query augmentation in a multi-task manner by leveraging the generative capabilities of LLM. During inference, these jointly trained embedders have conducted query augmentation followed by embedding, showing effective results. However, augmenting every query leads to substantial embedding latency and query augmentation can be detrimental to performance for some queries. Also, previous methods have not been explored in multimodal environments. To tackle these problems, we propose M-Solomon, a universal multimodal embedder that can adaptively determine when to augment queries. Our approach first divides the queries of the training datasets into two groups at the dataset level. One includes queries that require augmentation and the other includes queries that do not. Then, we introduces a synthesis process that generates appropriate augmentations for queries that require them by leveraging a powerful Multimodal LLM (MLLM). Next, we present adaptive query augmentation. Through this step, M-Solomon can conduct query augmentation only when necessary by learning to generate synthetic augmentations with the prefix /augment for queries that demand them and to generate the simple string /embed for others. Experimental results showed that M-Solomon not only surpassed the baseline without augmentation by a large margin but also outperformed the baseline that always used augmentation, providing much faster embedding latency.",
+    "metadata": {
+        "paper_name": "Let Multimodal Embedders Learn When to Augment Query via Adaptive Query Augmentation",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.02358",
+        "upvote": 3,
+        "tags": [
+            "queries",
+            "augmentation",
+            "query"
+        ]
+    }
+}

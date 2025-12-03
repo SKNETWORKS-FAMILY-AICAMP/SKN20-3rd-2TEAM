@@ -1,0 +1,14 @@
+{
+    "content": "A perspectivist annotation scheme for the HCRC MapTask corpus reveals how understanding emerges, diverges, and repairs in collaborative dialogue, highlighting the role of multiplicity discrepancies in referential misalignment.\nCollaborative dialogue relies on participants incrementally establishing common ground, yet in asymmetric settings they may believe they agree while referring to different entities. We introduce a perspectivist annotation scheme for the HCRC MapTask corpus (Anderson et al., 1991) that separately captures speaker and addressee grounded interpretations for each reference expression, enabling us to trace how understanding emerges, diverges, and repairs over time. Using a scheme-constrained LLM annotation pipeline, we obtain 13k annotated reference expressions with reliability estimates and analyze the resulting understanding states. The results show that full misunderstandings are rare once lexical variants are unified, but multiplicity discrepancies systematically induce divergences, revealing how apparent grounding can mask referential misalignment. Our framework provides both a resource and an analytic lens for studying grounded misunderstanding and for evaluating (V)LLMs' capacity to model perspective-dependent grounding in collaborative dialogue.",
+    "metadata": {
+        "paper_name": "Grounded Misunderstandings in Asymmetric Dialogue: A Perspectivist Annotation Scheme for MapTask",
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.03718",
+        "upvote": 3,
+        "tags": [
+            "annotation",
+            "scheme",
+            "understanding"
+        ]
+    }
+}
