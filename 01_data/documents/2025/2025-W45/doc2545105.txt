@@ -1,0 +1,14 @@
+page_content:
+A fine-tuning strategy called BOB improves synthetic data quality for low-shot fine-grained classification by conditioning on class-agnostic attributes and marginalizing them during generation.
+Text-to-image (T2I) models are increasingly used for synthetic dataset generation, but generating effective synthetic training data for classification remains challenging. Fine-tuning a T2I model with a few real examples can help improve the quality of synthetic training data; however, it may also cause overfitting and reduce diversity in the generated samples. We propose a fine-tuning strategy BOB (BeyondOBjects) to mitigate these concerns for fine-grained classification. Given a small set of real examples, we first extract class-agnostic attributes such as scene background and object pose. We then explicitly condition on these attributes during fine-tuning of the T2I model and marginalize them out during generation. This design mitigates overfitting, preserves the T2I model's generative prior, reduces estimation errors, and further minimizes unintended inter-class associations. Extensive experiments across multiple T2I models, backbones, and datasets show that our method achieves state-of-the-art performance in low-shot fine-grained classification when augmented with synthetic data. Concretely, BOB outperforms DataDream by 7.4% on the Aircraft dataset (from 50.0% to 57.4% when fine-tuning a CLIP classifier with five real images augmented with 100 synthetic images). In three of the four benchmarks, fine-tuning downstream models with 5 real images augmented with BOB achieves better performance than fine-tuning with 10 real images. Collectively, BOB outperforms prior art in 18 of 24 experimental settings, with 2+% accuracy improvements in 14 of these settings.
+
+MetaData:
+{
+    "papername": "Beyond Objects: Contextual Synthetic Data Generation for Fine-Grained Classification",
+    "github_url": "https://github.com/princetonvisualai/BeyondObjects",
+    "huggingface_url": "https://huggingface.co/papers/2510.24078",
+    "upvote": 1,
+    "tag1": "fine",
+    "tag2": "tuning",
+    "tag3": "synthetic"
+}

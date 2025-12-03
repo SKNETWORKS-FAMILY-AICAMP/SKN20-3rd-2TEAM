@@ -1,0 +1,14 @@
+page_content:
+Viewpoint Learning enhances the spatial reasoning capabilities of Multimodal Large Language Models using a two-stage fine-tuning strategy and a hybrid cold-start initialization method, improving performance on both in-domain and out-of-domain 3D reasoning tasks.
+Recent advances in Multimodal Large Language Models (MLLMs) have significantly improved 2D visual understanding, prompting interest in their application to complex 3D reasoning tasks. However, it remains unclear whether these models can effectively capture the detailed spatial information required for robust real-world performance, especially cross-view consistency, a key requirement for accurate 3D reasoning. Considering this issue, we introduce Viewpoint Learning, a task designed to evaluate and improve the spatial reasoning capabilities of MLLMs. We present the Viewpoint-100K dataset, consisting of 100K object-centric image pairs with diverse viewpoints and corresponding question-answer pairs. Our approach employs a two-stage fine-tuning strategy: first, foundational knowledge is injected to the baseline MLLM via Supervised Fine-Tuning (SFT) on Viewpoint-100K, resulting in significant improvements across multiple tasks; second, generalization is enhanced through Reinforcement Learning using the Group Relative Policy Optimization (GRPO) algorithm on a broader set of questions. Additionally, we introduce a hybrid cold-start initialization method designed to simultaneously learn viewpoint representations and maintain coherent reasoning thinking. Experimental results show that our approach significantly activates the spatial reasoning ability of MLLM, improving performance on both in-domain and out-of-domain reasoning tasks. Our findings highlight the value of developing foundational spatial skills in MLLMs, supporting future progress in robotics, autonomous systems, and 3D scene understanding.
+
+MetaData:
+{
+    "papername": "Actial: Activate Spatial Reasoning Ability of Multimodal Large Language Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.01618",
+    "upvote": 9,
+    "tag1": "reasoning",
+    "tag2": "viewpoint",
+    "tag3": "spatial"
+}

@@ -1,0 +1,14 @@
+page_content:
+Introducing synthetic fallacy data through MisSynth enhances the zero-shot classification performance of large language models in detecting scientific misinformation.
+Health-related misinformation is very prevalent and potentially harmful. It is difficult to identify, especially when claims distort or misinterpret scientific findings. We investigate the impact of synthetic data generation and lightweight fine-tuning techniques on the ability of large language models (LLMs) to recognize fallacious arguments using the MISSCI dataset and framework. In this work, we propose MisSynth, a pipeline that applies retrieval-augmented generation (RAG) to produce synthetic fallacy samples, which are then used to fine-tune an LLM model. Our results show substantial accuracy gains with fine-tuned models compared to vanilla baselines. For instance, the LLaMA 3.1 8B fine-tuned model achieved an over 35% F1-score absolute improvement on the MISSCI test split over its vanilla baseline. We demonstrate that introducing synthetic fallacy data to augment limited annotated resources can significantly enhance zero-shot LLM classification performance on real-world scientific misinformation tasks, even with limited computational resources. The code and synthetic dataset are available on https://github.com/mxpoliakov/MisSynth.
+
+MetaData:
+{
+    "papername": "MisSynth: Improving MISSCI Logical Fallacies Classification with Synthetic Data",
+    "github_url": "https://github.com/mxpoliakov/MisSynth",
+    "huggingface_url": "https://huggingface.co/papers/2510.26345",
+    "upvote": 2,
+    "tag1": "synthetic",
+    "tag2": "fine",
+    "tag3": "fallacy"
+}

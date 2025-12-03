@@ -1,0 +1,14 @@
+page_content:
+Trove is an open-source retrieval toolkit that streamlines data management and experimentation with efficient on-the-fly processing and customizable components.
+We introduce Trove, an easy-to-use open-source retrieval toolkit that simplifies research experiments without sacrificing flexibility or speed. For the first time, we introduce efficient data management features that load and process (filter, select, transform, and combine) retrieval datasets on the fly, with just a few lines of code. This gives users the flexibility to easily experiment with different dataset configurations without the need to compute and store multiple copies of large datasets. Trove is highly customizable: in addition to many built-in options, it allows users to freely modify existing components or replace them entirely with user-defined objects. It also provides a low-code and unified pipeline for evaluation and hard negative mining, which supports multi-node execution without any code changes. Trove's data management features reduce memory consumption by a factor of 2.6. Moreover, Trove's easy-to-use inference pipeline incurs no overhead, and inference times decrease linearly with the number of available nodes. Most importantly, we demonstrate how Trove simplifies retrieval experiments and allows for arbitrary customizations, thus facilitating exploratory research.
+
+MetaData:
+{
+    "papername": "Trove: A Flexible Toolkit for Dense Retrieval",
+    "github_url": "https://github.com/BatsResearch/trove",
+    "huggingface_url": "https://huggingface.co/papers/2511.01857",
+    "upvote": 10,
+    "tag1": "trove",
+    "tag2": "retrieval",
+    "tag3": "data"
+}

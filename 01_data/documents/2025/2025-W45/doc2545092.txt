@@ -1,0 +1,14 @@
+page_content:
+SAIL-RL enhances multimodal large language models' reasoning capabilities through a dual reward system, improving benchmarks and reducing hallucinations.
+We introduce SAIL-RL, a reinforcement learning (RL) post-training framework that enhances the reasoning capabilities of multimodal large language models (MLLMs) by teaching them when and how to think. Existing approaches are limited by outcome-only supervision, which rewards correct answers without ensuring sound reasoning, and by uniform thinking strategies, which often lead to overthinking on simple tasks and underthinking on complex ones. SAIL-RL addresses these challenges with a dual reward system: the Thinking Reward, which evaluates reasoning quality through factual grounding, logical coherence, and answer consistency, and the Judging Reward, which adaptively determines whether deep reasoning or direct answering is appropriate. Experiments on the state-of-the-art SAIL-VL2 show that SAIL-RL improves reasoning and multimodal understanding benchmarks at both 4B and 8B scales, achieving competitive performance against commercial closed-source models such as GPT-4o, and substantially reduces hallucinations, establishing it as a principled framework for building more reliable and adaptive MLLMs. The code will be available at https://github.com/BytedanceDouyinContent/SAIL-RL.
+
+MetaData:
+{
+    "papername": "SAIL-RL: Guiding MLLMs in When and How to Think via Dual-Reward RL Tuning",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.02280",
+    "upvote": 3,
+    "tag1": "sail",
+    "tag2": "reasoning",
+    "tag3": "reward"
+}

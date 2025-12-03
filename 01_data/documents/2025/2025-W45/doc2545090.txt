@@ -1,0 +1,14 @@
+page_content:
+LiveSecBench is a continuously updated safety benchmark for Chinese-language LLMs, evaluating them across six critical dimensions including legality, ethics, factuality, privacy, adversarial robustness, and reasoning safety.
+In this work, we propose LiveSecBench, a dynamic and continuously updated safety benchmark specifically for Chinese-language LLM application scenarios. LiveSecBench evaluates models across six critical dimensions (Legality, Ethics, Factuality, Privacy, Adversarial Robustness, and Reasoning Safety) rooted in the Chinese legal and social frameworks. This benchmark maintains relevance through a dynamic update schedule that incorporates new threat vectors, such as the planned inclusion of Text-to-Image Generation Safety and Agentic Safety in the next update. For now, LiveSecBench (v251030) has evaluated 18 LLMs, providing a landscape of AI safety in the context of Chinese language. The leaderboard is publicly accessible at https://livesecbench.intokentech.cn/.
+
+MetaData:
+{
+    "papername": "LiveSecBench: A Dynamic and Culturally-Relevant AI Safety Benchmark for LLMs in Chinese Context",
+    "github_url": "https://github.com/ydli-ai/LiveSecBench",
+    "huggingface_url": "https://huggingface.co/papers/2511.02366",
+    "upvote": 3,
+    "tag1": "safety",
+    "tag2": "livesecbench",
+    "tag3": "chinese"
+}

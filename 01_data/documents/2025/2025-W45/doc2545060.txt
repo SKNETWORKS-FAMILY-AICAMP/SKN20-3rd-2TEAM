@@ -1,0 +1,14 @@
+page_content:
+UniPruneBench is a unified benchmark for evaluating visual token pruning in multimodal LLMs, providing standardized protocols and system-level metrics to assess performance across various tasks and models.
+Large multimodal models (LMMs) often suffer from severe inference inefficiency due to the large number of visual tokens introduced by image encoders. While recent token compression methods, such as pruning and merging, have shown promise in reducing redundancy, their evaluation remains fragmented and inconsistent. In this work, we present UniPruneBench, a unified and extensible benchmark for visual token pruning in multimodal LLMs. UniPruneBench provides standardized protocols across six ability dimensions and ten datasets, covering ten representative compression algorithms and three families of LMMs (LLaVA-v1.5, Intern-VL3, and Qwen2.5-VL). Beyond task accuracy, it incorporates system-level metrics such as runtime and prefilling latency to provide a holistic view. Our experiments uncover several key findings: (1) random pruning is a surprisingly strong baseline, (2) no single method consistently outperforms others across scenarios, (3) pruning sensitivity varies significantly across tasks, with OCR being most vulnerable, and (4) pruning ratio is the dominant factor governing performance degradation. We believe UniPruneBench will serve as a reliable foundation for future research on efficient multimodal modeling.
+
+MetaData:
+{
+    "papername": "Can Visual Input Be Compressed? A Visual Token Compression Benchmark for Large Multimodal Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.02650",
+    "upvote": 9,
+    "tag1": "pruning",
+    "tag2": "uniprunebench",
+    "tag3": "multimodal"
+}

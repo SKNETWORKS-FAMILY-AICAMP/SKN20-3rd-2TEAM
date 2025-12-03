@@ -1,0 +1,14 @@
+page_content:
+The framework π<sub>RL</sub> uses reinforcement learning to train flow-based Vision-Language-Action models, addressing challenges with intractable action log-likelihoods and achieving significant performance improvements over supervised fine-tuning.
+Vision-Language-Action (VLA) models enable robots to understand and perform complex tasks from multimodal input. Although recent work explores using reinforcement learning (RL) to automate the laborious data collection process in scaling supervised fine-tuning (SFT), applying large-scale RL to flow-based VLAs (e.g., pi_0, pi_{0.5}) remains challenging due to intractable action log-likelihoods from iterative denoising. We address this challenge with pi_{RL}, an open-source framework for training flow-based VLAs in parallel simulation. pi_{RL} implements two RL algorithms: (1) {Flow-Noise} models the denoising process as a discrete-time MDP with a learnable noise network for exact log-likelihood computation. (2) {Flow-SDE} integrates denoising with agent-environment interaction, formulating a two-layer MDP that employs ODE-to-SDE conversion for efficient RL exploration. We evaluate pi_{RL} on LIBERO and ManiSkill benchmarks. On LIBERO, pi_{RL} boosts few-shot SFT models pi_0 and pi_{0.5} from 57.6% to 97.6% and from 77.1% to 98.3%, respectively. In ManiSkill, we train pi_{RL} in 320 parallel environments, improving pi_0 from 41.6% to 85.7% and pi_{0.5} from 40.0% to 84.8% across 4352 pick-and-place tasks, demonstrating scalable multitask RL under heterogeneous simulation. Overall, pi_{RL} achieves significant performance gains and stronger generalization over SFT-models, validating the effectiveness of online RL for flow-based VLAs.
+
+MetaData:
+{
+    "papername": "π_RL: Online RL Fine-tuning for Flow-based Vision-Language-Action Models",
+    "github_url": "https://github.com/RLinf/RLinf",
+    "huggingface_url": "https://huggingface.co/papers/2510.25889",
+    "upvote": 63,
+    "tag1": "pi_",
+    "tag2": "flow",
+    "tag3": "models"
+}

@@ -1,0 +1,14 @@
+page_content:
+A hybrid safety detection framework combining formal verification and VLM-based contextual assessment improves the detection of unsafe operations in mobile agents.
+Computer-using agents powered by Vision-Language Models (VLMs) have demonstrated human-like capabilities in operating digital environments like mobile platforms. While these agents hold great promise for advancing digital automation, their potential for unsafe operations, such as system compromise and privacy leakage, is raising significant concerns. Detecting these safety concerns across the vast and complex operational space of mobile environments presents a formidable challenge that remains critically underexplored. To establish a foundation for mobile agent safety research, we introduce MobileRisk-Live, a dynamic sandbox environment accompanied by a safety detection benchmark comprising realistic trajectories with fine-grained annotations. Built upon this, we propose OS-Sentinel, a novel hybrid safety detection framework that synergistically combines a Formal Verifier for detecting explicit system-level violations with a VLM-based Contextual Judge for assessing contextual risks and agent actions. Experiments show that OS-Sentinel achieves 10%-30% improvements over existing approaches across multiple metrics. Further analysis provides critical insights that foster the development of safer and more reliable autonomous mobile agents.
+
+MetaData:
+{
+    "papername": "OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid Validation in Realistic Workflows",
+    "github_url": "https://github.com/OS-Copilot/OS-Sentinel",
+    "huggingface_url": "https://huggingface.co/papers/2510.24411",
+    "upvote": 70,
+    "tag1": "safety",
+    "tag2": "mobile",
+    "tag3": "detection"
+}

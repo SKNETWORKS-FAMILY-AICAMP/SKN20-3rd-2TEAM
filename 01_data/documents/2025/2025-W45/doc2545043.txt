@@ -1,0 +1,14 @@
+page_content:
+Orion-MSP, a tabular in-context learning architecture, addresses limitations in current models by incorporating multi-scale processing, block-sparse attention, and a Perceiver-style memory, achieving state-of-the-art performance on diverse benchmarks.
+Tabular data remain the predominant format for real-world applications. Yet, developing effective neural models for tabular data remains challenging due to heterogeneous feature types and complex interactions occurring at multiple scales. Recent advances in tabular in-context learning (ICL), such as TabPFN and TabICL, have achieved state-of-the-art performance comparable to gradient-boosted trees (GBTs) without task-specific fine-tuning. However, current architectures exhibit key limitations: (1) single-scale feature processing that overlooks hierarchical dependencies, (2) dense attention with quadratic scaling in table width, and (3) strictly sequential component processing that prevents iterative representation refinement and cross-component communication. To address these challenges, we introduce Orion-MSP, a tabular ICL architecture featuring three key innovations: (1) multi-scale processing to capture hierarchical feature interactions; (2) block-sparse attention combining windowed, global, and random patterns for scalable efficiency and long-range connectivity; and (3) a Perceiver-style memory enabling safe bidirectional information flow across components. Across diverse benchmarks, Orion-MSP matches or surpasses state-of-the-art performance while scaling effectively to high-dimensional tables, establishing a new standard for efficient tabular in-context learning. The model is publicly available at https://github.com/Lexsi-Labs/Orion-MSP .
+
+MetaData:
+{
+    "papername": "Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.02818",
+    "upvote": 15,
+    "tag1": "tabular",
+    "tag2": "orion",
+    "tag3": "msp"
+}

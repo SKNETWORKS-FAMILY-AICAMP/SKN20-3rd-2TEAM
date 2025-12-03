@@ -1,0 +1,14 @@
+page_content:
+A unified reinforcement learning controller integrates visual perception and motion control for humanoid robots in soccer, using Adversarial Motion Priors and an encoder-decoder architecture to achieve reactive and coherent behaviors.
+Humanoid soccer poses a representative challenge for embodied intelligence, requiring robots to operate within a tightly coupled perception-action loop. However, existing systems typically rely on decoupled modules, resulting in delayed responses and incoherent behaviors in dynamic environments, while real-world perceptual limitations further exacerbate these issues. In this work, we present a unified reinforcement learning-based controller that enables humanoid robots to acquire reactive soccer skills through the direct integration of visual perception and motion control. Our approach extends Adversarial Motion Priors to perceptual settings in real-world dynamic environments, bridging motion imitation and visually grounded dynamic control. We introduce an encoder-decoder architecture combined with a virtual perception system that models real-world visual characteristics, allowing the policy to recover privileged states from imperfect observations and establish active coordination between perception and action. The resulting controller demonstrates strong reactivity, consistently executing coherent and robust soccer behaviors across various scenarios, including real RoboCup matches.
+
+MetaData:
+{
+    "papername": "Learning Vision-Driven Reactive Soccer Skills for Humanoid Robots",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.03996",
+    "upvote": 3,
+    "tag1": "perception",
+    "tag2": "motion",
+    "tag3": "soccer"
+}
