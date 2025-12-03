@@ -138,22 +138,25 @@ def fetch_paper_details(paper_url: str, paper_title: str) -> Optional[Dict] :
         github_url = github_link['href'] if github_link else ""
 
         # Upvote 추출
+        # XPath: /html/body/div/main/div/section[1]/div/div[1]/div[3]/div/a/div/div
+        # outerHTML: <div class="font-semibold text-orange-500">-</div>
+        # upvote가 0이면 '-'로 표시됨
         upvote = 0
-        # 다양한 방법으로 upvote 추출 시도
-        upvote_candidates = [
-            soup.select_one('div[class*="upvote"]')
-            , soup.select_one('button[class*="like"]')
-            , soup.select_one('div[class*="vote"]')
-        ]
 
-        for elem in upvote_candidates :
-            if elem :
-                text = elem.get_text(strip = True)
+        # font-semibold 클래스를 가진 div 요소에서 upvote 추출
+        upvote_elem = soup.select_one('div.font-semibold.text-orange-500')
+
+        if upvote_elem :
+            text = upvote_elem.get_text(strip = True)
+
+            # '-'는 upvote가 0임을 의미
+            if text == '-' :
+                upvote = 0
+            else :
                 # 숫자만 추출
                 digits = ''.join(filter(str.isdigit, text))
-                if digits:
+                if digits :
                     upvote = int(digits)
-                    break
 
         return {
             "abstract": abstract
@@ -252,40 +255,39 @@ def save_document_json(paper_data: Dict, week_str: str, index: int) -> tuple[str
     return doc_id, doc_filename
 
 # Step 5: CSV 메타데이터 저장
-# 사용 안 함
-# def save_metadata_csv(papers_data: List[Dict], week_str: str) -> str :
-#     """
-#     수집된 논문 메타데이터를 CSV 인덱스로 저장
+def save_metadata_csv(papers_data: List[Dict], week_str: str) -> str :
+    """
+    수집된 논문 메타데이터를 CSV 인덱스로 저장
 
-#     Args:
-#         papers_data: 논문 데이터 리스트
-#         week_str: 주차 문자열
+    Args:
+        papers_data: 논문 데이터 리스트
+        week_str: 주차 문자열
 
-#     Returns:
-#         CSV 파일 경로
-#     """
-#     csv_records = []
+    Returns:
+        CSV 파일 경로
+    """
+    csv_records = []
 
-#     for paper in papers_data :
-#         csv_records.append({
-#             'doc_id': paper['doc_id']
-#             , 'paper_name': paper['metadata']['paper_name']
-#             , 'doc_file': f"{paper['doc_id']}.json"
-#             , 'github_url': paper['metadata']['github_url']
-#             , 'huggingface_url': paper['metadata']['huggingface_url']
-#             , 'upvote': paper['metadata']['upvote']
-#             , 'tags': json.dumps(paper['metadata']['tags'], ensure_ascii = False)
-#         })
+    for paper in papers_data :
+        csv_records.append({
+            'doc_id': paper['doc_id']
+            , 'paper_name': paper['metadata']['paper_name']
+            , 'doc_file': f"{paper['doc_id']}.json"
+            , 'github_url': paper['metadata']['github_url']
+            , 'huggingface_url': paper['metadata']['huggingface_url']
+            , 'upvote': paper['metadata']['upvote']
+            , 'tags': json.dumps(paper['metadata']['tags'], ensure_ascii = False)
+        })
 
-#     df = pd.DataFrame(csv_records)
+    df = pd.DataFrame(csv_records)
 
-#     # 연도 추출
-#     year = week_str[:4]
-#     csv_path = f"././01_data/documents/{year}/{week_str}/docs_info.csv"
-#     df.to_csv(csv_path, index = False, encoding = 'utf-8-sig')
+    # 연도 추출
+    year = week_str[:4]
+    csv_path = f"././01_data/documents/{year}/{week_str}/docs_info.csv"
+    df.to_csv(csv_path, index = False, encoding = 'utf-8-sig')
 
-#     logging.info(f"[SUCCESS] CSV 저장 완료: {csv_path} ({len(csv_records)}개 논문)")
-#     return csv_path
+    logging.info(f"[SUCCESS] CSV 저장 완료: {csv_path} ({len(csv_records)}개 논문)")
+    return csv_path
 
 # 메인 크롤링 함수
 def crawl_weekly_papers(year: int = None, week: int = None) -> None :
@@ -335,26 +337,24 @@ def crawl_weekly_papers(year: int = None, week: int = None) -> None :
             doc_id, doc_filename = save_document_json(details, week_str, idx)
 
             # CSV용 데이터 저장
-            # 사용 안 함
-            # saved_papers.append({
-            #     'doc_id': doc_id
-            #     , 'context': details['abstract']
-            #     , 'metadata': {
-            #         'paper_name': details['title']
-            #         , 'github_url': details['github_url']
-            #         , 'huggingface_url': details['huggingface_url']
-            #         , 'upvote': details['upvote']
-            #         , 'tags': keywords
-            #     }
-            # })
+            saved_papers.append({
+                'doc_id': doc_id
+                , 'context': details['abstract']
+                , 'metadata': {
+                    'paper_name': details['title']
+                    , 'github_url': details['github_url']
+                    , 'huggingface_url': details['huggingface_url']
+                    , 'upvote': details['upvote']
+                    , 'tags': keywords
+                }
+            })
 
             # 요청 간 딜레이 (Rate Limiting 방지)
             time.sleep(1)
 
         # 4. CSV 메타데이터 저장
-        # 사용 안 함
-        # if saved_papers :
-        #     save_metadata_csv(saved_papers, week_str)
+        if saved_papers :
+            save_metadata_csv(saved_papers, week_str)
 
         # 5. 통계 출력
         elapsed_time = time.time() - start_time
