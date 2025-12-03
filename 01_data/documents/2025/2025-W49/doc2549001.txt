@@ -1,6 +1,3 @@
-Paper Name:
-{papername}
-
 Context:
 {page_content}
 
