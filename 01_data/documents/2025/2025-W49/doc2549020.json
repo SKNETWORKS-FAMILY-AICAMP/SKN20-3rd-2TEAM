@@ -1,0 +1,14 @@
+{
+  "context": "MultiShotMaster extends a single-shot model with novel RoPE variants for flexible and controllable multi-shot video generation, addressing data scarcity with an automated annotation pipeline. Current video generation techniques excel at single-shot clips but struggle to produce narrative multi-shot videos, which require flexible shot arrangement, coherent narrative, and controllability beyond text prompts. To tackle these challenges, we propose MultiShotMaster, a framework for highly controllable multi-shot video generation. We extend a pretrained single-shot model by integrating two novel variants ofRoPE. First, we introduceMulti-Shot Narrative RoPE, which applies explicit phase shift at shot transitions, enabling flexible shot arrangement while preserving the temporal narrative order. Second, we designSpatiotemporal Position-Aware RoPEto incorporatereference tokensand grounding signals, enabling spatiotemporal-grounded reference injection. In addition, to overcome data scarcity, we establish an automated data annotation pipeline to extract multi-shot videos, captions,cross-shot grounding signalsandreference images. Our framework leverages the intrinsic architectural properties to support multi-shot video generation, featuringtext-driven inter-shot consistency, customized subject withmotion control, andbackground-driven customized scene. Both shot count and duration are flexibly configurable. Extensive experiments demonstrate the superior performance and outstanding controllability of our framework. The first controllable multi-shot video generation framework that supports text-driven inter-shot consistency, customized subject with motion control, and background-driven customized scene. Both shot counts and shot durations are variable. ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "MultiShotMaster: A Controllable Multi-Shot Video Generation Framework",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.03041",
+    "upvote": 27,
+    "tags": [
+      "shot",
+      "multi",
+      "multi shot"
+    ]
+  }
+}

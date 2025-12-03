@@ -1,0 +1,14 @@
+{
+  "context": "An end-to-end differentiable inverse graphics framework recovers force representations from video observations, enabling physics-based video generation and editing. A longstanding goal in computer vision is to model motions from videos, while the representations behind motions, i.e. the invisible physicalinteractionsthat cause objects to deform and move, remain largely unexplored. In this paper, we study how to recover the invisible forces from visual observations, e.g., estimating the wind field by observing a leaf falling to the ground. Our key innovation is an end-to-end differentiableinverse graphics framework, which jointly modelsobject geometry,physical properties, andinteractionsdirectly from videos. Throughbackpropagation, our approach enables the recovery offorce representationsfrom object motions. We validate our method on both synthetic and real-world scenarios, and the results demonstrate its ability to infer plausible force fields from videos. Furthermore, we show the potential applications of our approach, includingphysics-based video generationandediting. We hope our approach sheds light on understanding and modeling the physical process behind pixels, bridging the gap between vision and physics. Please check more video results in our https://chaoren2357.github.io/seeingthewind/{project page}. TL;DR Seeing Wind: Differentiable Framework for Force Estimation & Video Editing This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Seeing the Wind from a Falling Leaf",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.00762",
+    "upvote": 2,
+    "tags": [
+      "video",
+      "paper",
+      "end"
+    ]
+  }
+}

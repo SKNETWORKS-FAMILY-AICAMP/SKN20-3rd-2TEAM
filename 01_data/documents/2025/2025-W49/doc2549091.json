@@ -1,0 +1,14 @@
+{
+  "context": "FedRE, a federated learning framework, uses entangled representations and labels to enhance performance, privacy, and reduce communication overhead in model-heterogeneous environments. Federated learning(FL) enables collaborative training across clients without compromising privacy. While most existing FL methods assume homogeneous model architectures, client heterogeneity in data and resources renders this assumption impractical, motivatingmodel-heterogeneous FL. To address this problem, we propose Federated Representation Entanglement (FedRE), a framework built upon a novel form of client knowledge termedentangled representation. In FedRE, each client aggregates its local representations into a singleentangled representationusing normalized random weights and applies the same weights to integrate the correspondingone-hot label encodingsinto theentangled-label encoding. Those are then uploaded to the server to train aglobal classifier. During training, eachentangled representationis supervised across categories via itsentangled-label encoding, while random weights are resampled each round to introduce diversity, mitigating theglobal classifier'soverconfidenceand promoting smootherdecision boundaries. Furthermore, each client uploads a single cross-categoryentangled representationalong with itsentangled-label encoding, mitigating the risk ofrepresentation inversion attacksand reducingcommunication overhead. Extensive experiments demonstrate that FedRE achieves an effective trade-off among model performance, privacy protection, andcommunication overhead. The codes are available at https://github.com/AIResearch-Group/FedRE. Proposes FedRE, a model-heterogeneous FL framework that leverages entangled representations to balance performance, privacy, and communication efficiency. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "FedRE: A Representation Entanglement Framework for Model-Heterogeneous Federated Learning",
+    "github_url": "https://github.com/AIResearch-Group/FedRE",
+    "huggingface_url": "https://huggingface.co/papers/2511.22265",
+    "upvote": 1,
+    "tags": [
+      "fedre",
+      "model",
+      "privacy"
+    ]
+  }
+}

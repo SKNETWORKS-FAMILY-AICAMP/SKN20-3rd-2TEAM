@@ -1,0 +1,14 @@
+{
+  "context": "Click2Graph is an interactive framework for panoptic video scene graph generation that combines user cues with dynamic interaction discovery and semantic classification for precise and controllable scene understanding. State-of-the-artVideo Scene Graph Generation(VSGG) systems provide structured visual understanding but operate as closed, feed-forward pipelines with no ability to incorporate human guidance. In contrast,promptable segmentation modelssuch asSAM2enable preciseuser interactionbut lack semantic or relational reasoning. We introduce Click2Graph, the first interactive framework forPanoptic Video Scene Graph Generation(PVSG) that unifiesvisual promptingwith spatial, temporal, and semantic understanding. From a single user cue, such as a click or bounding box, Click2Graph segments and tracks the subject across time, autonomously discovers interacting objects, and predicts <subject, object, predicate> triplets to form a temporally consistentscene graph. Our framework introduces two key components: aDynamic Interaction Discovery Modulethat generates subject-conditioned object prompts, and aSemantic Classification Headthat performs joint entity and predicate reasoning. Experiments on theOpenPVSG benchmarkdemonstrate that Click2Graph establishes a strong foundation for user-guidedPVSG, showing how human prompting can be combined with panoptic grounding and relational inference to enable controllable and interpretable video scene understanding. Click2Graph is a framework that introduces the first interactive approach to Panoptic Video Scene Graph Generation (PVSG). Current video understanding systems are typically fully automated, meaning users cannot correct errors or guide the focus, while interactive tools like SAM2 handle segmentation but lack semantic understanding (knowing what an object is or how it interacts). This method bridges that gap by allowing a user to provide a single visual cue, such as a click on a subject. The system then segments and tracks that subject across the video, automatically discovers other objects it is interacting with, and generates a structured scene graph describing the relationship (e.g., \"person holding cup\"). ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Click2Graph: Interactive Panoptic Video Scene Graphs from a Single Click",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.15948",
+    "upvote": 0,
+    "tags": [
+      "scene",
+      "video",
+      "graph"
+    ]
+  }
+}

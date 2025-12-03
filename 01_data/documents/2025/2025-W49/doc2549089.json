@@ -1,0 +1,14 @@
+{
+  "context": "IndicParam benchmark evaluates multiple-choice question performance of LLMs across 11 Indic languages, revealing limitations in cross-lingual transfer and grammatical proficiency. Whilelarge language modelsexcel on high-resource multilingual tasks, low- and extremely low-resource Indic languages remain severely under-evaluated. We present IndicParam, ahuman-curated benchmarkof over 13,000multiple-choice questionscovering 11 such languages (Nepali, Gujarati, Marathi, Odia as low-resource; Dogri, Maithili, Rajasthani, Sanskrit, Bodo, Santali, Konkani as extremely low-resource) plus Sanskrit-English code-mixed set. We evaluated 19 LLMs, both proprietary and open-weights, which reveals that even the top-performing GPT-5 reaches only 45.0% average accuracy, followed by DeepSeek-3.2 (43.1) and Claude-4.5 (42.7). We additionally label each question asknowledge-orientedorpurely linguisticto discriminate factual recall from grammatical proficiency. Further, we assess the ability of LLMs to handle diverse question formats-such aslist-based matching,assertion-reason pairs, andsequence ordering-alongside conventionalmultiple-choice questions. IndicParam provides insights into limitations of cross-lingual transfer and establishes a challenging benchmark for Indic languages. The dataset is available at https://huggingface.co/datasets/bharatgenai/IndicParam. Scripts to run benchmark are present at https://github.com/ayushbits/IndicParam. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "IndicParam: Benchmark to evaluate LLMs on low-resource Indic Languages",
+    "github_url": "https://github.com/ayushbits/IndicParam",
+    "huggingface_url": "https://huggingface.co/papers/2512.00333",
+    "upvote": 1,
+    "tags": [
+      "indicparam",
+      "resource",
+      "low"
+    ]
+  }
+}

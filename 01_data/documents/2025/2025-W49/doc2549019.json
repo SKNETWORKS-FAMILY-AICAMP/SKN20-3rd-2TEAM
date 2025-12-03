@@ -1,0 +1,14 @@
+{
+  "context": "A simulation framework enhances autonomous driving systems by generating diverse driving scenarios, improving robustness and generalization through co-training with real-world data. Achieving fully autonomous driving systems requires learning rational decisions in a wide span of scenarios, including safety-critical and out-of-distribution ones. However, such cases are underrepresented in real-world corpus collected by human experts. To complement for the lack of data diversity, we introduce a novel and scalable simulation framework capable of synthesizing massive unseen states upon existing driving logs. Our pipeline utilizes advancedneural renderingwith areactive environmentto generate high-fidelitymulti-view observationscontrolled by the perturbedego trajectory. Furthermore, we develop apseudo-expert trajectory generationmechanism for these newly simulated states to provide action supervision. Upon the synthesized data, we find that a simpleco-training strategyon both real-world and simulated samples can lead to significant improvements in bothrobustnessandgeneralizationfor variousplanning methodson challenging real-world benchmarks, up to +6.8EPDMSonnavhardand +2.9 onnavtest. More importantly, suchpolicy improvementscales smoothly by increasingsimulation dataonly, even without extrareal-world datastreaming in. We further reveal several crucial findings of such a sim-real learning system, which we termSimScale, including the design of pseudo-experts and the scaling properties for different policy architectures. Oursimulation dataand code would be released.  📜 [technical report] 🏠 [project page] 📑 [github] ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "SimScale: Learning to Drive via Real-World Simulation at Scale",
+    "github_url": "https://github.com/OpenDriveLab/SimScale",
+    "huggingface_url": "https://huggingface.co/papers/2511.23369",
+    "upvote": 29,
+    "tags": [
+      "world",
+      "real",
+      "real world"
+    ]
+  }
+}

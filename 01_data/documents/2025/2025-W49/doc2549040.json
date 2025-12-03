@@ -1,0 +1,14 @@
+{
+  "context": "Current multilingual text-to-image models often generate culturally neutral or English-biased images, and two proposed alignment strategies improve cultural consistency without compromising fidelity and diversity. Multilingualtext-to-image(T2I) models have advanced rapidly in terms ofvisual realismandsemantic alignment, and are now widely utilized. Yet outputs vary across cultural contexts: because language carriescultural connotations, images synthesized from multilingual prompts should preserve cross-lingualcultural consistency. We conduct a comprehensive analysis showing that current T2I models often produce culturally neutral or English-biased results under multilingual prompts. Analyses of two representative models indicate that the issue stems not from missingcultural knowledgebut from insufficient activation ofculture-related representations. We propose aprobing methodthat localizes culture-sensitive signals to a small set of neurons in a few fixed layers. Guided by this finding, we introduce two complementary alignment strategies: (1)inference-time cultural activationthat amplifies the identified neurons without backbone fine-tuned; and (2)layer-targeted cultural enhancementthat updates only culturally relevant layers. Experiments on ourCultureBenchdemonstrate consistent improvements over strong baselines incultural consistencywhile preserving fidelity and diversity. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Where Culture Fades: Revealing the Cultural Gap in Text-to-Image Generation",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.17282",
+    "upvote": 13,
+    "tags": [
+      "cultural",
+      "models",
+      "paper"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "A survey examines deep learning-based super-resolution techniques in MRI, addressing challenges and providing resources for generating high-resolution images from low-resolution scans. High-resolution (HR) magnetic resonance imaging (MRI) is crucial for many clinical and research applications. However, achieving it remains costly and constrained by technical trade-offs and experimental limitations.Super-resolution(SR) presents a promising computational approach to overcome these challenges by generating HR images from more affordable low-resolution (LR) scans, potentially improving diagnostic accuracy and efficiency without requiring additional hardware. This survey reviews recent advances inMRISR techniques, with a focus ondeep learning(DL) approaches. It examines DL-basedMRISR methods from the perspectives of computer vision,computational imaging,inverse problems, and MR physics, covering theoretical foundations, architectural designs, learning strategies,benchmark datasets, and performance metrics. We propose a systematic taxonomy to categorize these methods and present an in-depth study of both established and emerging SR techniques applicable toMRI, considering unique challenges in clinical and research contexts. We also highlight open challenges and directions that the community needs to address. Additionally, we provide a collection of essential open-access resources, tools, and tutorials, available on our GitHub: https://github.com/mkhateri/Awesome-MRI-Super-Resolution.\n  IEEE keywords:MRI,Super-Resolution,Deep Learning,Computational Imaging, Inverse Problem, Survey. This survey explores MRI super-resolution through computer vision, computational imaging, inverse problems, and MR physics, covering theoretical foundations, model architectures, learning strategies, benchmark datasets, performance metrics, and a systematic taxonomy of DL-based methods, along with open challenges and future research directions. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "MRI Super-Resolution with Deep Learning: A Comprehensive Survey",
+    "github_url": "https://github.com/mkhateri/Awesome-MRI-Super-Resolution",
+    "huggingface_url": "https://huggingface.co/papers/2511.16854",
+    "upvote": 0,
+    "tags": [
+      "resolution",
+      "super",
+      "mri"
+    ]
+  }
+}

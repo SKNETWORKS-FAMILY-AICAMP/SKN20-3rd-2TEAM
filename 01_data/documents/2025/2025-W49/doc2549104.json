@@ -1,0 +1,14 @@
+{
+  "context": "A cluster-based frame selection strategy groups visually similar frames to create more representative and balanced dataset partitions, reducing information leakage in video-derived frames datasets. We propose acluster-based frame selectionstrategy to mitigateinformation leakageinvideo-derived frames datasets. By grouping visually similar frames before splitting into training, validation, and test sets, the method produces more representative, balanced, and reliable dataset partitions. We propose a cluster-based frame selection strategy to mitigate information leakage in video-derived frames datasets. By grouping visually similar frames before splitting into training, validation, and test sets, the method produces more representative, balanced, and reliable dataset partitions. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Find the Leak, Fix the Split: Cluster-Based Method to Prevent Leakage in Video-Derived Datasets",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.13944",
+    "upvote": 0,
+    "tags": [
+      "frames",
+      "similar",
+      "similar frames"
+    ]
+  }
+}

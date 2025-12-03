@@ -1,0 +1,14 @@
+{
+  "context": "A novel vision-language model, CauSight, performs visual causal discovery by inferring cause-and-effect relationships in images, outperforming GPT-4.1 with a significant performance boost. Causal thinking enables humans to understand not just what is seen, but why it happens. To replicate this capability in modern AI systems, we introduce the task ofvisual causal discovery. It requires models to infer cause-and-effect relations among visual entities across diverse scenarios instead of merely perceiving their presence. To this end, we first construct theVisual Causal Graph dataset(VCG-32K), a large-scale collection of over 32,000 images annotated with entity-level causal graphs, and further developCauSight, a novel vision-language model to performvisual causal discoverythrough causally aware reasoning. Our training recipe integrates three components: (1) training data curation fromVCG-32K, (2)Tree-of-Causal-Thought(ToCT) for synthesizingreasoning trajectories, and (3)reinforcement learningwith a designedcausal rewardto refine the reasoning policy. Experiments show thatCauSightoutperforms GPT-4.1 onvisual causal discovery, achieving over a threefold performance boost (21% absolute gain). Our code, model, and dataset are fully open-sourced at project page: https://github.com/OpenCausaLab/CauSight. We are excited to share our recent work on VLM reasoning titled \"CauSight: Learning to Supersense for Visual Causal Discovery\". Paper:https://arxiv.org/abs/2512.01827Github:https://github.com/OpenCausaLab/CauSightModel:https://huggingface.co/OpenCausaLab/CauSightDataset:https://huggingface.co/datasets/OpenCausaLab/VCG-32K This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "CauSight: Learning to Supersense for Visual Causal Discovery",
+    "github_url": "https://github.com/OpenCausaLab/CauSight",
+    "huggingface_url": "https://huggingface.co/papers/2512.01827",
+    "upvote": 3,
+    "tags": [
+      "causal",
+      "https",
+      "paper"
+    ]
+  }
+}

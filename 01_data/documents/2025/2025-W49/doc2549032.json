@@ -1,0 +1,14 @@
+{
+  "context": "An end-to-end framework, ViSAudio, generates high-quality binaural audio from silent video by employing conditional flow matching and a dual-branch architecture, outperforming existing methods in spatial immersion and consistency. Despite progress in video-to-audio generation, the field focuses predominantly on mono output, lacking spatial immersion. Existing binaural approaches remain constrained by a two-stage pipeline that first generates mono audio and then performs spatialization, often resulting in error accumulation and spatio-temporal inconsistencies. To address this limitation, we introduce the task of end-to-endbinaural spatial audio generationdirectly from silent video. To support this task, we present theBiAudio dataset, comprising approximately 97K video-binaural audio pairs spanning diverse real-world scenes and camera rotation trajectories, constructed through a semi-automated pipeline. Furthermore, we propose ViSAudio, an end-to-end framework that employsconditional flow matchingwith adual-branch audio generation architecture, where two dedicated branches model the audio latent flows. Integrated with aconditional spacetime module, it balances consistency between channels while preserving distinctive spatial characteristics, ensuring precisespatio-temporal alignmentbetween audio and the input video. Comprehensive experiments demonstrate that ViSAudio outperforms existing state-of-the-art methods across both objective metrics and subjective evaluations, generating high-quality binaural audio with spatial immersion that adapts effectively to viewpoint changes, sound-source motion, and diverse acoustic environments. Project website: https://kszpxxzmc.github.io/ViSAudio-project. Website:https://kszpxxzmc.github.io/ViSAudio-project/Paper:https://arxiv.org/abs/2512.03036Code:https://github.com/kszpxxzmc/ViSAudio ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "ViSAudio: End-to-End Video-Driven Binaural Spatial Audio Generation",
+    "github_url": "https://github.com/kszpxxzmc/ViSAudio",
+    "huggingface_url": "https://huggingface.co/papers/2512.03036",
+    "upvote": 18,
+    "tags": [
+      "audio",
+      "visaudio",
+      "spatial"
+    ]
+  }
+}

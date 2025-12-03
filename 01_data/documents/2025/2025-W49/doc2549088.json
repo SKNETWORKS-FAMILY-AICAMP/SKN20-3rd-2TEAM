@@ -1,0 +1,14 @@
+{
+  "context": "DreamingComics uses a diffusion-transformer model and region-aware positional encoding to enhance story visualization with improved layout control, character consistency, and style similarity. Current story visualization methods tend to position subjects solely by text and face challenges in maintaining artistic consistency. To address these limitations, we introduce DreamingComics, a layout-aware story visualization framework. We build upon a pretrainedvideo diffusion-transformer(DiT) model, leveraging itsspatiotemporal priorsto enhance identity and style consistency. For layout-based position control, we proposeRegionalRoPE, aregion-aware positional encodingscheme that re-indexes embeddings based on the target layout. Additionally, we introduce amasked condition lossto further constrain each subject's visual features to their designated region. To infer layouts from natural language scripts, we integrate anLLM-based layout generatortrained to producecomic-style layouts, enabling flexible and controllable layout conditioning. We present a comprehensive evaluation of our approach, showing a 29.2% increase incharacter consistencyand a 36.2% increase instyle similaritycompared to previous methods, while displaying highspatial accuracy. Our project page is available at https://yj7082126.github.io/dreamingcomics/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "DreamingComics: A Story Visualization Pipeline via Subject and Layout Customized Generation using Video Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.01686",
+    "upvote": 1,
+    "tags": [
+      "layout",
+      "visualization",
+      "story"
+    ]
+  }
+}
