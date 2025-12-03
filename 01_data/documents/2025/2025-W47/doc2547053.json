@@ -1,0 +1,14 @@
+{
+  "context": "We present MHR, aparametric human body modelthat combines thedecoupled skeleton/shapeparadigm ofATLASwith a flexible, modern rig andpose corrective systeminspired by theMomentum library. Our model enables expressive, anatomically plausible human animation, supportingnon-linear pose correctives, and is designed for robust integration inAR/VRandgraphics pipelines.",
+  "metadata": {
+    "paper_name": "MHR: Momentum Human Rig",
+    "github_url": "https://github.com/facebookresearch/MHR",
+    "huggingface_url": "https://huggingface.co/papers/2511.15586",
+    "upvote": "13",
+    "tags": [
+      "human",
+      "anatomically",
+      "andpose"
+    ]
+  }
+}

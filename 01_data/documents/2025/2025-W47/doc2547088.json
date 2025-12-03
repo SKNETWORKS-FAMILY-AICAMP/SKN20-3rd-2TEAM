@@ -1,0 +1,14 @@
+{
+  "context": "Chaos Engineering(CE) is an engineering technique aimed at improving theresilienceof distributed systems. It involves intentionally injecting faults into a system to test itsresilience, uncover weaknesses, and address them before they cause failures in production. Recent CE tools automate the execution of predefined CE experiments. However, planning such experiments and improving the system based on the experimental results still remain manual. These processes are labor-intensive and require multi-domain expertise. To address these challenges and enable anyone to build resilient systems at low cost, this paper proposes ChaosEater, a system that automates the entire CE cycle withLarge Language Models(LLMs). It predefines an agentic workflow according to a systematic CE cycle and assigns subdivided processes within the workflow to LLMs. ChaosEater targets CE for software systems built onKubernetes. Therefore, the LLMs in ChaosEater complete CE cycles throughsoftware engineering tasks, including requirement definition, code generation, testing, and debugging. We evaluate ChaosEater through case studies on small- and large-scaleKubernetessystems. The results demonstrate that it consistently completes reasonable CE cycles with significantly low time and monetary costs. Its cycles are also qualitatively validated by human engineers and LLMs.",
+  "metadata": {
+    "paper_name": "LLM-Powered Fully Automated Chaos Engineering: Towards Enabling Anyone to Build Resilient Software Systems at Low Cost",
+    "github_url": "https://github.com/ntt-dkiku/chaos-eater",
+    "huggingface_url": "https://huggingface.co/papers/2511.07865",
+    "upvote": "3",
+    "tags": [
+      "ce",
+      "chaoseater",
+      "llms"
+    ]
+  }
+}

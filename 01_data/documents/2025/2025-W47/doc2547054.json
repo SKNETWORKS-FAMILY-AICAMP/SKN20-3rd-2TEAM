@@ -1,0 +1,14 @@
+{
+  "context": "Multimodal large language models (MLLMs) have achieved remarkable progress in vision-language tasks, but they continue to struggle withspatial understanding. Existing spatialMLLMsoften rely on explicit3D inputsorarchitecture-specific modifications, and remain constrained bylarge-scale datasetsorsparse supervision. To address these limitations, we introduceSpatialThinker, a 3D-aware MLLM trained with RL to integrate structuredspatial groundingwith multi-step reasoning. The model simulates human-like spatial perception by constructing ascene graphof task-relevant objects and spatial relations, and reasoning towards an answer via densespatial rewards.SpatialThinkerconsists of two key contributions: (1) adata synthesis pipelinethat generatesSTVQA-7K, a high-quality spatial VQA dataset, and (2)online RLwith amulti-objective dense spatial rewardenforcingspatial grounding.SpatialThinker-7B outperforms supervised fine-tuning and the sparse RL baseline onspatial understandingand real-world VQA benchmarks, nearly doubling the base-model gain compared to sparse RL, and surpassing GPT-4o. These results showcase the effectiveness of combining spatial supervision withreward-aligned reasoningin enabling robust 3Dspatial understandingwith limited data and advancingMLLMstowards human-levelvisual reasoning.",
+  "metadata": {
+    "paper_name": "SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards",
+    "github_url": "https://github.com/hunarbatra/SpatialThinker",
+    "huggingface_url": "https://huggingface.co/papers/2511.07403",
+    "upvote": "13",
+    "tags": [
+      "spatial",
+      "reasoning",
+      "rl"
+    ]
+  }
+}

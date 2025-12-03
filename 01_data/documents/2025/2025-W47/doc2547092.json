@@ -1,0 +1,14 @@
+{
+  "context": "Aslarge language models(LLMs) evolve into sophisticatedautonomous agentscapable of complexsoftware development tasks, evaluating their real-world capabilities becomes critical. While existing benchmarks like LoCoBench~qiu2025locobench assess long-context code understanding, they focus on single-turn evaluation and cannot capture the multi-turn interactive nature, tool usage patterns, and adaptive reasoning required by real-world coding agents. We introduceLoCoBench-Agent, a comprehensive evaluation framework specifically designed to assess LLM agents in realistic, long-context software engineering workflows. Our framework extends LoCoBench's 8,000 scenarios intointeractive agent environments, enabling systematic evaluation ofmulti-turn conversations,tool usage efficiency,error recovery, andarchitectural consistencyacross extended development sessions. We also introduce an evaluation methodology with 9 metrics across comprehension and efficiency dimensions. Our framework provides agents with 8 specialized tools (file operations, search, code analysis) and evaluates them acrosscontext lengthsranging from 10K to 1M tokens, enabling precise assessment oflong-context performance. Through systematic evaluation of state-of-the-art models, we reveal several key findings: (1) agents exhibit remarkable long-context robustness; (2)comprehension-efficiency trade-offexists with negative correlation, where thorough exploration increases comprehension but reduces efficiency; and (3)conversation efficiencyvaries dramatically across models, with strategic tool usage patterns differentiating high-performing agents. As the first long-context LLM agent benchmark for software engineering,LoCoBench-Agentestablishes a rigorous foundation for measuring agent capabilities, identifying performance gaps, and advancing autonomous software development at scale.",
+  "metadata": {
+    "paper_name": "LoCoBench-Agent: An Interactive Benchmark for LLM Agents in Long-Context Software Engineering",
+    "github_url": "https://github.com/SalesforceAIResearch/LoCoBench-Agent",
+    "huggingface_url": "https://huggingface.co/papers/2511.13998",
+    "upvote": "2",
+    "tags": [
+      "agents",
+      "context",
+      "evaluation"
+    ]
+  }
+}

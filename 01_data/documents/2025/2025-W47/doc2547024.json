@@ -1,0 +1,14 @@
+{
+  "context": "Despite remarkable progress,multimodal foundation modelsstill exhibit surprising deficiencies inspatial intelligence. In this work, we explore scaling upmultimodal foundation modelsto cultivatespatial intelligencewithin theSenseNova-SIfamily, built upon established multimodal foundations includingvisual understanding models(i.e., Qwen3-VL and InternVL3) andunified understanding and generation models(i.e., Bagel). We take a principled approach to constructing high-performing and robustspatial intelligenceby systematically curatingSenseNova-SI-8M: eight million diverse data samples under a rigorous taxonomy ofspatial capabilities.SenseNova-SIdemonstrates unprecedented performance across a broad range ofspatial intelligencebenchmarks: 68.7% onVSI-Bench, 43.3% onMMSI, 85.6% onMindCube, 54.6% onViewSpatial, and 50.1% onSITE, while maintaining strong general multimodal understanding (e.g., 84.9% onMMBench-En). More importantly, we analyze the impact of data scaling, discuss early signs of emergent generalization capabilities enabled by diverse data training, analyze the risk of overfitting and language shortcuts, present a preliminary study onspatial chain-of-thought reasoning, and validate the potential downstream application.SenseNova-SIis an ongoing project, and this report will be updated continuously. All newly trainedmultimodal foundation modelsare publicly released to facilitate further research in this direction.",
+  "metadata": {
+    "paper_name": "Scaling Spatial Intelligence with Multimodal Foundation Models",
+    "github_url": "https://github.com/OpenSenseNova/SenseNova-SI",
+    "huggingface_url": "https://huggingface.co/papers/2511.13719",
+    "upvote": "43",
+    "tags": [
+      "data",
+      "foundation",
+      "multimodal"
+    ]
+  }
+}

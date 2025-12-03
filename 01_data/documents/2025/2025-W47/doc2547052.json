@@ -1,0 +1,14 @@
+{
+  "context": "The rapid advancement ofLarge Language Models(LLMs) has led to performance saturation on many established benchmarks, questioning their ability to distinguish frontier models. Concurrently, existing high-difficulty benchmarks often suffer from narrow disciplinary focus, oversimplified answer formats, and vulnerability to data contamination, creating a fidelity gap with real-worldscientific inquiry. To address these challenges, we introduceATLAS(AGI-Oriented TestbedforLogical Applicationin Science), a large-scale, high-difficulty, and cross-disciplinary evaluation suite composed of approximately 800 original problems. Developed bydomain experts(PhD-level and above),ATLASspans seven core scientific fields: mathematics, physics, chemistry, biology, computer science, earth science, and materials science. Its key features include: (1) High Originality and Contamination Resistance, with all questions newly created or substantially adapted to prevent test data leakage; (2) Cross-Disciplinary Focus, designed to assess models' ability to integrate knowledge and reason across scientific domains; (3) High-Fidelity Answers, prioritizing complex, open-ended answers involvingmulti-step reasoningandLaTeX-formatted expressionsover simple multiple-choice questions; and (4) Rigorous Quality Control, employing a multi-stage process ofexpert peer reviewandadversarial testingto ensure question difficulty, scientific value, and correctness. We also propose a robust evaluation paradigm using a panel ofLLM judgesfor automated, nuanced assessment of complex answers. Preliminary results on leading models demonstrateATLAS's effectiveness in differentiating their advanced scientific reasoning capabilities. We plan to developATLASinto a long-term, open, community-driven platform to provide a reliable \"ruler\" for progress toward Artificial General Intelligence.",
+  "metadata": {
+    "paper_name": "ATLAS: A High-Difficulty, Multidisciplinary Benchmark for Frontier Scientific Reasoning",
+    "github_url": null,
+    "huggingface_url": "https://huggingface.co/papers/2511.14366",
+    "upvote": "14",
+    "tags": [
+      "high",
+      "models",
+      "science"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "Training a family oflarge language modelstargeting multiple scales and deployment objectives is prohibitively expensive, requiring separate training runs for each different size. Recent work onmodel compressionthroughpruningandknowledge distillationhas reduced this cost; however, this process still incurs hundreds of billions of tokens worth of training cost per compressed model. In this paper, we present Nemotron Elastic, a framework for building reasoning-oriented LLMs, includinghybrid Mamba-Attention architectures, that embed multiplenested submodelswithin a singleparent model, each optimized for different deployment configurations and budgets. Each of these submodels shares weights with theparent modeland can be extracted zero-shot during deployment without additional training or fine-tuning. We enable this functionality through anend-to-end trained router, tightly coupled to atwo-stage training curriculumdesigned specifically for reasoning models. We additionally introducegroup-aware SSM elastificationthat preserves Mamba's structural constraints,heterogeneous MLP elastification,normalized MSE-based layer importancefor improved depth selection, andknowledge distillationenabling simultaneousmulti-budget optimization. We apply Nemotron Elastic to theNemotron Nano V2 12B model, simultaneously producing a 9B and a 6B model using only 110B training tokens; this results in over 360x cost reduction compared to training model families from scratch, and around 7x compared to SoTA compression techniques. Each of the nested models performs on par or better than the SoTA in accuracy. Moreover, unlike other compression methods, the nested capability of our approach allows having a many-in-one reasoning model that has constant deployment memory against the number of models in the family.",
+  "metadata": {
+    "paper_name": "Nemotron Elastic: Towards Efficient Many-in-One Reasoning LLMs",
+    "github_url": null,
+    "huggingface_url": "https://huggingface.co/papers/2511.16664",
+    "upvote": "24",
+    "tags": [
+      "training",
+      "model",
+      "deployment"
+    ]
+  }
+}

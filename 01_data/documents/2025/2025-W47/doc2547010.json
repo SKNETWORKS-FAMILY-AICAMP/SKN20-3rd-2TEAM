@@ -1,0 +1,14 @@
+{
+  "context": "Rotary Position Embedding (RoPE)inTransformer modelshas inherent limits that weaken length extrapolation. We reinterpret theattention mapwithpositional encodingas a noisy feature map, and proposeDenoising Positional Encoding (DoPE), a training-free method based ontruncated matrix entropyto detect outlier frequency bands in the feature map. Leveraging the noise characteristics of the feature map, we further reparameterize it with a parameter-freeGaussian distributionto achieve robust extrapolation. Our method theoretically reveals the underlying cause of theattention sink phenomenonand its connection totruncated matrix entropy. Experiments onneedle-in-a-haystackandmany-shot in-context learningtasks demonstrate that DoPE significantly improvesretrieval accuracyandreasoning stabilityacross extended contexts (up to 64K tokens). The results show that the denoising strategy for positional embeddings effectively mitigates attention sinks and restores balanced attention patterns, providing a simple yet powerful solution for improvinglength generalization. Our project page is Project: https://The-physical-picture-of-LLMs.github.io",
+  "metadata": {
+    "paper_name": "DoPE: Denoising Rotary Position Embedding",
+    "github_url": null,
+    "huggingface_url": "https://huggingface.co/papers/2511.09146",
+    "upvote": "91",
+    "tags": [
+      "feature",
+      "map",
+      "attention"
+    ]
+  }
+}

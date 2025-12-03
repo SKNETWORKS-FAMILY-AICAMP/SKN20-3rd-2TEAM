@@ -1,0 +1,14 @@
+{
+  "context": "Enabling agentic AI systems to adapt their problem-solving approaches based on post-training interactions remains a fundamental challenge. While systems that update and maintain a memory at inference time have been proposed, existing designs only steer the system by modifying textual input to a language model or agent, which means that they cannot change sampling parameters, remove tools, modify system prompts, or switch between agentic and workflow paradigms. On the other hand, systems that adapt more flexibly require offline optimization and remain static once deployed. We present Experience-Guided Reasoner (EGuR), which generates tailored strategies -- complete computational procedures involvingLLMcalls, tools, sampling parameters, andcontrol logic-- dynamically at inference time based on accumulated experience. We achieve this using anLLM-basedmeta-strategy-- a strategy that outputs strategies -- enabling adaptation of all strategy components (prompts, sampling parameters, tool configurations, andcontrol logic). EGuR operates through two components: a Guide generates multiplecandidate strategiesconditioned on the current problem andstructured memoryof past experiences, while a Consolidator integratesexecution feedbackto improve future strategy generation. This produces complete, ready-to-run strategies optimized for each problem, which can be cached, retrieved, and executed as needed without wasting resources. Across five challenging benchmarks (AIME 2025,3-SAT, and threeBig Bench Extra Hard tasks), EGuR achieves up to 14% accuracy improvements over the strongest baselines while reducing computational costs by up to 111x, with both metrics improving as the system gains experience.",
+  "metadata": {
+    "paper_name": "Experience-Guided Adaptation of Inference-Time Reasoning Strategies",
+    "github_url": null,
+    "huggingface_url": "https://huggingface.co/papers/2511.11519",
+    "upvote": "3",
+    "tags": [
+      "strategy",
+      "egur",
+      "experience"
+    ]
+  }
+}

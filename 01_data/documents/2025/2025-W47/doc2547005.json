@@ -1,0 +1,14 @@
+{
+  "context": "Reinforcement fine-tuning(RFT), a two-stage framework consisting ofsupervised fine-tuning(SFT) andreinforcement learning(RL) has shown promising results on improvingreasoningability oflarge language models(LLMs). Yet extending RFT tolarge video language models(LVLMs) remains challenging. We proposeVideoP2R, a novel process-aware video RFT framework that enhances videoreasoningby modelingperceptionandreasoningas distinct processes. In the SFT stage, we develop a three-step pipeline to generateVideoP2R-CoT-162K, a high-quality, process-awarechain-of-thought(CoT) dataset forperceptionandreasoning. In the RL stage, we introduce a novelprocess-aware group relative policy optimization(PA-GRPO) algorithm that supplies separate rewards forperceptionandreasoning. Extensive experiments show thatVideoP2Rachieves state-of-the-art (SotA) performance on six out of seven videoreasoningand understanding benchmarks. Ablation studies further confirm the effectiveness of our process-aware modeling andPA-GRPOand demonstrate that model'sperceptionoutput is information-sufficient for downstreamreasoning.",
+  "metadata": {
+    "paper_name": "VIDEOP2R: Video Understanding from Perception to Reasoning",
+    "github_url": null,
+    "huggingface_url": "https://huggingface.co/papers/2511.11113",
+    "upvote": "110",
+    "tags": [
+      "aware",
+      "process",
+      "rft"
+    ]
+  }
+}

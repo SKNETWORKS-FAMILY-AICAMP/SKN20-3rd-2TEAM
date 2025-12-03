@@ -1,0 +1,14 @@
+{
+  "context": "Recent advances inreasoning modelshave demonstrated remarkable success in text and vision domains through extendedchain-of-thought deliberation. However, a perplexing phenomenon persists inaudio language models: they consistently perform better with minimal or no reasoning, raising a fundamental question - can audio intelligence truly benefit from deliberate thinking? We introduceStep-Audio-R1, the firstaudio reasoningmodel that successfully unlocks reasoning capabilities in the audio domain. Through our proposedModality-Grounded Reasoning Distillation(MGRD) framework,Step-Audio-R1learns to generate audio-relevant reasoning chains that genuinely ground themselves inacoustic featuresrather than hallucinating disconnected deliberations. Our model exhibits strongaudio reasoningcapabilities, surpassing Gemini 2.5 Pro and achieving performance comparable to the state-of-the-art Gemini 3 Pro across comprehensiveaudio understandingandreasoning benchmarksspanningspeech,environmental sounds, andmusic. These results demonstrate that reasoning is a transferable capability across modalities when appropriately anchored, transforming extended deliberation from a liability into a powerful asset for audio intelligence. By establishing the first successfulaudio reasoningmodel,Step-Audio-R1opens new pathways toward building trulymultimodal reasoning systemsthat think deeply across all sensory modalities.",
+  "metadata": {
+    "paper_name": "Step-Audio-R1 Technical Report",
+    "github_url": "https://github.com/stepfun-ai/Step-Audio-R1",
+    "huggingface_url": "https://huggingface.co/papers/2511.15848",
+    "upvote": "51",
+    "tags": [
+      "audio",
+      "reasoning",
+      "deliberation"
+    ]
+  }
+}

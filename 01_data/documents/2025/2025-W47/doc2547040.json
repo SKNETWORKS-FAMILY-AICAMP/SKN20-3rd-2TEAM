@@ -1,0 +1,14 @@
+{
+  "context": "The discovery of novelIonic Liquids (ILs)is hindered by critical challenges in property prediction, including limited data, poor model accuracy, and fragmented workflows. Leveraging the power ofLarge Language Models (LLMs), we introduce AIonopedia, to the best of our knowledge, the first LLM agent for IL discovery. Powered by an LLM-augmentedmultimodal domain foundation modelfor ILs, AIonopedia enables accurateproperty predictionsand incorporates ahierarchical search architectureformolecular screeninganddesign. Trained and evaluated on a newly curated and comprehensive ILdataset, our model delivers superior performance. Complementing these results, evaluations on literature-reported systems indicate that the agent can perform effective IL modification. Moving beyond offline tests, the practical efficacy was further confirmed through real-worldwet-lab validation, in which the agent demonstrated exceptionalgeneralization capabilitieson challenging out-of-distribution tasks, underscoring its ability to accelerate real-world IL discovery.",
+  "metadata": {
+    "paper_name": "AIonopedia: an LLM agent orchestrating multimodal learning for ionic liquid discovery",
+    "github_url": null,
+    "huggingface_url": "https://huggingface.co/papers/2511.11257",
+    "upvote": "24",
+    "tags": [
+      "agent",
+      "discovery",
+      "il"
+    ]
+  }
+}

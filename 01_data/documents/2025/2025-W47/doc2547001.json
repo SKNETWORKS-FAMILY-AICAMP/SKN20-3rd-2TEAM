@@ -1,0 +1,14 @@
+{
+  "context": "This report introduces Kandinsky 5.0, a family of state-of-the-artfoundation modelsfor high-resolution image and10-second video synthesis. The framework comprises three core line-up of models: Kandinsky 5.0 Image Lite - a line-up of 6B parameterimage generation models, Kandinsky 5.0 Video Lite - a fast and lightweight 2B parameter text-to-video andimage-to-video models, and Kandinsky 5.0 Video Pro - 19B parameter models that achieves superior video generation quality. We provide a comprehensive review of the data curation lifecycle - including collection, processing, filtering and clustering - for themulti-stage training pipelinethat involves extensivepre-trainingand incorporatesquality-enhancement techniquessuch asself-supervised fine-tuning(SFT) andreinforcement learning(RL)-based post-training. We also present novel architectural, training, andinference optimizationsthat enable Kandinsky 5.0 to achieve high generation speeds and state-of-the-art performance across various tasks, as demonstrated byhuman evaluation. As a large-scale, publicly availablegenerative framework, Kandinsky 5.0 leverages the full potential of itspre-trainingand subsequent stages to be adapted for a wide range of generative applications. We hope that this report, together with the release of ouropen-source codeandtraining checkpoints, will substantially advance the development and accessibility of high-quality generative models for the research community.",
+  "metadata": {
+    "paper_name": "Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation",
+    "github_url": "https://github.com/kandinskylab/kandinsky-5",
+    "huggingface_url": "https://huggingface.co/papers/2511.14993",
+    "upvote": "219",
+    "tags": [
+      "kandinsky",
+      "video",
+      "models"
+    ]
+  }
+}

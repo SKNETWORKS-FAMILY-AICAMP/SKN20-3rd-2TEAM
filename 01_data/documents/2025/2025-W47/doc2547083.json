@@ -1,0 +1,14 @@
+{
+  "context": "Human emotions are difficult to convey through words and are often abstracted in the process; however, electroencephalogram (EEG) signals can offer a more direct lens into emotional brain activity. Recent studies show that deep learning models can process these signals to perform emotion recognition with high accuracy. However, many existing approaches overlook the dynamic interplay between distinct brain regions, which can be crucial to understanding how emotions unfold and evolve over time, potentially aiding in more accurate emotion recognition. To address this, we proposeRBTransformer, aTransformer-based neural networkarchitecture that modelsinter-cortical neural dynamicsof the brain inlatent spaceto better capture structured neural interactions for effective EEG-based emotion recognition. First, the EEG signals are converted intoBand Differential Entropy (BDE) tokens, which are then passed throughElectrode Identity embeddingsto retain spatial provenance. These tokens are processed through successiveinter-cortical multi-head attention blocksthat construct an electrode x electrode attention matrix, allowing the model to learn the inter-cortical neural dependencies. The resulting features are then passed through aclassification headto obtain the final prediction. We conducted extensive experiments, specifically under subject-dependent settings, on the SEED, DEAP, andDREAMER datasets, over all three dimensions,Valence,Arousal, andDominance(for DEAP and DREAMER), under both binary and multi-class classification settings. The results demonstrate that the proposedRBTransformeroutperforms all previous state-of-the-art methods across all three datasets, over all three dimensions under both classification settings. The source code is available at: https://github.com/nnilayy/RBTransformer.",
+  "metadata": {
+    "paper_name": "A Brain Wave Encodes a Thousand Tokens: Modeling Inter-Cortical Neural Interactions for Effective EEG-based Emotion Recognition",
+    "github_url": "https://github.com/nnilayy/rbtransformer",
+    "huggingface_url": "https://huggingface.co/papers/2511.13954",
+    "upvote": "3",
+    "tags": [
+      "neural",
+      "brain",
+      "cortical"
+    ]
+  }
+}

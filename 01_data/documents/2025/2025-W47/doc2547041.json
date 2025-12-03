@@ -1,0 +1,14 @@
+{
+  "context": "We open-source MiMo-Embodied, the firstcross-embodied foundation modelto successfully integrate and achieve state-of-the-art performance in both Autonomous Driving and Embodied AI. MiMo-Embodied sets new records across 17 embodied AI benchmarks inTask Planning,Affordance PredictionandSpatial Understanding, while also excelling in 12 autonomous driving benchmarks acrossEnvironmental Perception,Status Prediction, andDriving Planning. Across these tasks, MiMo-Embodied significantly outperforms existing open-source, closed-source, and specialized baselines. Our results indicate that throughmulti-stage learning,curated data construction, andCoT/RL fine-tuning, these two domains exhibit strongpositive transferand mutually reinforce one another. We provide a detailed analysis of our model design and training methodologies to facilitate further research. Code and models are available at https://github.com/XiaomiMiMo/MiMo-Embodied.",
+  "metadata": {
+    "paper_name": "MiMo-Embodied: X-Embodied Foundation Model Technical Report",
+    "github_url": "https://github.com/XiaomiMiMo/MiMo-Embodied",
+    "huggingface_url": "https://huggingface.co/papers/2511.16518",
+    "upvote": "23",
+    "tags": [
+      "embodied",
+      "mimo",
+      "source"
+    ]
+  }
+}
