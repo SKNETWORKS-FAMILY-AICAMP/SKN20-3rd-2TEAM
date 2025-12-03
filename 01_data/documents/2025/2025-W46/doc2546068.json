@@ -1,0 +1,14 @@
+{
+  "context": "A framework for evaluating diversity in text-to-image models through human assessment and systematic analysis of image embeddings.\nAI-generated summary\nDespite advances in generation quality, current text-to-image (T2I) models often lack diversity, generating homogeneous outputs. This work introduces a framework to address the need for robust diversity evaluation in T2I models. Our framework systematically assesses diversity by evaluating individual concepts and their relevant factors of variation. Key contributions include: (1) a novel human evaluation template for nuanced diversity assessment; (2) a curated prompt set covering diverse concepts with their identified factors of variation (e.g. prompt: An image of an apple, factor of variation: color); and (3) a methodology for comparing models in terms of human annotations via binomial tests. Furthermore, we rigorously compare various image embeddings for diversity measurement. Notably, our principled approach enables ranking of T2I models by diversity, identifying categories where they particularly struggle. This research offers a robust methodology and insights, paving the way for improvements in T2I model diversity and metric development.",
+  "metadata": {
+    "paper_name": "Benchmarking Diversity in Image Generation via Attribute-Conditional Human Evaluation",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.10547",
+    "upvote": 0,
+    "tags": [
+      "diversity",
+      "image",
+      "models"
+    ]
+  }
+}

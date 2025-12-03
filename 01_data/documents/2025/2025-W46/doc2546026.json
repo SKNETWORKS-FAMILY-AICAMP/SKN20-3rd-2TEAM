@@ -1,0 +1,14 @@
+{
+  "context": "PhysWorld integrates video generation and physical world modeling to enable accurate robotic manipulation from visual demonstrations without real robot data.\nAI-generated summary\nWe introduce PhysWorld, a framework that enables robot learning from video generation through physical world modeling. Recent video generation models can synthesize photorealistic visual demonstrations from language commands and images, offering a powerful yet underexplored source of training signals for robotics. However, directly retargeting pixel motions from generated videos to robots neglects physics, often resulting in inaccurate manipulations. PhysWorld addresses this limitation by coupling video generation with physical world reconstruction. Given a single image and a task command, our method generates task-conditioned videos and reconstructs the underlying physical world from the videos, and the generated video motions are grounded into physically accurate actions through object-centric residual reinforcement learning with the physical world model. This synergy transforms implicit visual guidance into physically executable robotic trajectories, eliminating the need for real robot data collection and enabling zero-shot generalizable robotic manipulation. Experiments on diverse real-world tasks demonstrate that PhysWorld substantially improves manipulation accuracy compared to previous approaches. Visit https://pointscoder.github.io/PhysWorld_Web/{the project webpage} for details.",
+  "metadata": {
+    "paper_name": "Robot Learning from a Physical World Model",
+    "github_url": "https://github.com/PointsCoder/OpenReal2Sim",
+    "huggingface_url": "https://huggingface.co/papers/2511.07416",
+    "upvote": 0,
+    "tags": [
+      "world",
+      "video",
+      "physical"
+    ]
+  }
+}

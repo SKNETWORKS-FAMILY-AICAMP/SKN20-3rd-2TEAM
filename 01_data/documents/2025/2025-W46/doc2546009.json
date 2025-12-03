@@ -1,0 +1,14 @@
+{
+  "context": "IterResearch, an iterative deep-research paradigm, improves long-horizon reasoning by reformulating it as a Markov Decision Process with strategic workspace reconstruction and Efficiency-Aware Policy Optimization, achieving better performance and interaction scaling compared to existing agents.\nAI-generated summary\nRecent advances in deep-research agents have shown promise for autonomous knowledge construction through dynamic reasoning over external sources. However, existing approaches rely on a mono-contextual paradigm that accumulates all information in a single, expanding context window, leading to context suffocation and noise contamination that limit their effectiveness on long-horizon tasks. We introduce IterResearch, a novel iterative deep-research paradigm that reformulates long-horizon research as a Markov Decision Process with strategic workspace reconstruction. By maintaining an evolving report as memory and periodically synthesizing insights, our approach preserves consistent reasoning capacity across arbitrary exploration depths. We further develop Efficiency-Aware Policy Optimization (EAPO), a reinforcement learning framework that incentivizes efficient exploration through geometric reward discounting and enables stable distributed training via adaptive downsampling. Extensive experiments demonstrate that IterResearch achieves substantial improvements over existing open-source agents with average +14.5pp across six benchmarks and narrows the gap with frontier proprietary systems. Remarkably, our paradigm exhibits unprecedented interaction scaling, extending to 2048 interactions with dramatic performance gains (from 3.5\\% to 42.5\\%), and serves as an effective prompting strategy, improving frontier models by up to 19.2pp over ReAct on long-horizon tasks. These findings position IterResearch as a versatile solution for long-horizon reasoning, effective both as a trained agent and as a prompting paradigm for frontier models.",
+  "metadata": {
+    "paper_name": "IterResearch: Rethinking Long-Horizon Agents via Markovian State Reconstruction",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.07327",
+    "upvote": 0,
+    "tags": [
+      "paradigm",
+      "long",
+      "horizon"
+    ]
+  }
+}

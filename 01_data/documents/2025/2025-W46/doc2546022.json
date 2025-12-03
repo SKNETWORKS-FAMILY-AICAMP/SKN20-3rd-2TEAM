@@ -1,0 +1,14 @@
+{
+  "context": "VeriCoT, a neuro-symbolic method, formalizes and verifies logical arguments in Chain-of-Thought reasoning to improve the reliability and accuracy of LLMs.\nAI-generated summary\nLLMs can perform multi-step reasoning through Chain-of-Thought (CoT), but they cannot reliably verify their own logic. Even when they reach correct answers, the underlying reasoning may be flawed, undermining trust in high-stakes scenarios. To mitigate this issue, we introduce VeriCoT, a neuro-symbolic method that extracts and verifies formal logical arguments from CoT reasoning. VeriCoT formalizes each CoT reasoning step into first-order logic and identifies premises that ground the argument in source context, commonsense knowledge, or prior reasoning steps. The symbolic representation enables automated solvers to verify logical validity while the NL premises allow humans and systems to identify ungrounded or fallacious reasoning steps. Experiments on the ProofWriter, LegalBench, and BioASQ datasets show VeriCoT effectively identifies flawed reasoning, and serves as a strong predictor of final answer correctness. We also leverage VeriCoT's verification signal for (1) inference-time self-reflection, (2) supervised fine-tuning (SFT) on VeriCoT-distilled datasets and (3) preference fine-tuning (PFT) with direct preference optimization (DPO) using verification-based pairwise rewards, further improving reasoning validity and accuracy.",
+  "metadata": {
+    "paper_name": "VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical Consistency Checks",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.04662",
+    "upvote": 0,
+    "tags": [
+      "reasoning",
+      "vericot",
+      "symbolic"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "The CC30k dataset, comprising citation contexts labeled with reproducibility-oriented sentiments, enhances the accuracy of large language models in predicting the reproducibility of machine learning papers.\nAI-generated summary\nSentiments about the reproducibility of cited papers in downstream literature offer community perspectives and have shown as a promising signal of the actual reproducibility of published findings. To train effective models to effectively predict reproducibility-oriented sentiments and further systematically study their correlation with reproducibility, we introduce the CC30k dataset, comprising a total of 30,734 citation contexts in machine learning papers. Each citation context is labeled with one of three reproducibility-oriented sentiment labels: Positive, Negative, or Neutral, reflecting the cited paper's perceived reproducibility or replicability. Of these, 25,829 are labeled through crowdsourcing, supplemented with negatives generated through a controlled pipeline to counter the scarcity of negative labels. Unlike traditional sentiment analysis datasets, CC30k focuses on reproducibility-oriented sentiments, addressing a research gap in resources for computational reproducibility studies. The dataset was created through a pipeline that includes robust data cleansing, careful crowd selection, and thorough validation. The resulting dataset achieves a labeling accuracy of 94%. We then demonstrated that the performance of three large language models significantly improves on the reproducibility-oriented sentiment classification after fine-tuning using our dataset. The dataset lays the foundation for large-scale assessments of the reproducibility of machine learning papers. The CC30k dataset and the Jupyter notebooks used to produce and analyze the dataset are publicly available at https://github.com/lamps-lab/CC30k .",
+  "metadata": {
+    "paper_name": "CC30k: A Citation Contexts Dataset for Reproducibility-Oriented Sentiment Analysis",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.07790",
+    "upvote": 0,
+    "tags": [
+      "reproducibility",
+      "dataset",
+      "oriented"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "A new framework, DynaAct, automatically constructs a compact action space using large language models and submodular functions to enhance sequential reasoning in complex problem-solving scenarios, improving performance while maintaining efficiency.\nAI-generated summary\nIn modern sequential decision-making systems, the construction of an optimal candidate action space is critical to efficient inference. However, existing approaches either rely on manually defined action spaces that lack scalability or utilize unstructured spaces that render exhaustive search computationally prohibitive. In this paper, we propose a novel framework named DynaAct for automatically constructing a compact action space to enhance sequential reasoning in complex problem-solving scenarios. Our method first estimates a proxy for the complete action space by extracting general sketches observed in a corpus covering diverse complex reasoning problems using large language models. We then formulate a submodular function that jointly evaluates candidate actions based on their utility to the current state and their diversity, and employ a greedy algorithm to select an optimal candidate set. Extensive experiments on six diverse standard benchmarks demonstrate that our approach significantly improves overall performance, while maintaining efficient inference without introducing substantial latency. The implementation is available at https://github.com/zhaoxlpku/DynaAct.",
+  "metadata": {
+    "paper_name": "DynaAct: Large Language Model Reasoning with Dynamic Action Spaces",
+    "github_url": "https://github.com/zhaoxlpku/DynaAct",
+    "huggingface_url": "https://huggingface.co/papers/2511.08043",
+    "upvote": 0,
+    "tags": [
+      "action",
+      "space",
+      "dynaact"
+    ]
+  }
+}

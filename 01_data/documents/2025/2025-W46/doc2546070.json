@@ -1,0 +1,14 @@
+{
+  "context": "VADER, an LLM-driven framework, enhances video anomaly understanding by integrating keyframe object relations and visual cues to provide detailed, causally grounded descriptions and robust question answering.\nAI-generated summary\nVideo anomaly understanding (VAU) aims to provide detailed interpretation and semantic comprehension of anomalous events within videos, addressing limitations of traditional methods that focus solely on detecting and localizing anomalies. However, existing approaches often neglect the deeper causal relationships and interactions between objects, which are critical for understanding anomalous behaviors. In this paper, we propose VADER, an LLM-driven framework for Video Anomaly unDErstanding, which integrates keyframe object Relation features with visual cues to enhance anomaly comprehension from video. Specifically, VADER first applies an Anomaly Scorer to assign per-frame anomaly scores, followed by a Context-AwarE Sampling (CAES) strategy to capture the causal context of each anomalous event. A Relation Feature Extractor and a COntrastive Relation Encoder (CORE) jointly model dynamic object interactions, producing compact relational representations for downstream reasoning. These visual and relational cues are integrated with LLMs to generate detailed, causally grounded descriptions and support robust anomaly-related question answering. Experiments on multiple real-world VAU benchmarks demonstrate that VADER achieves strong results across anomaly description, explanation, and causal reasoning tasks, advancing the frontier of explainable video anomaly analysis.",
+  "metadata": {
+    "paper_name": "VADER: Towards Causal Video Anomaly Understanding with Relation-Aware Large Language Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.07299",
+    "upvote": 0,
+    "tags": [
+      "anomaly",
+      "video",
+      "vader"
+    ]
+  }
+}

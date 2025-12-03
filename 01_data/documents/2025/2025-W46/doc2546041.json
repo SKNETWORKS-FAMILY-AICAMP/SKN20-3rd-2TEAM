@@ -1,0 +1,14 @@
+{
+  "context": "WebVIA is an agentic framework for generating executable and interactive UI code from design mockups, improving stability and accuracy over existing models.\nAI-generated summary\nUser interface (UI) development requires translating design mockups into functional code, a process that remains repetitive and labor-intensive. While recent Vision-Language Models (VLMs) automate UI-to-Code generation, they generate only static HTML/CSS/JavaScript layouts lacking interactivity. To address this, we propose WebVIA, the first agentic framework for interactive UI-to-Code generation and validation. The framework comprises three components: 1) an exploration agent to capture multi-state UI screenshots; 2) a UI2Code model that generates executable interactive code; 3) a validation module that verifies the interactivity. Experiments demonstrate that WebVIA-Agent achieves more stable and accurate UI exploration than general-purpose agents (e.g., Gemini-2.5-Pro). In addition, our fine-tuned WebVIA-UI2Code models exhibit substantial improvements in generating executable and interactive HTML/CSS/JavaScript code, outperforming their base counterparts across both interactive and static UI2Code benchmarks. Our code and models are available at https://zheny2751-dotcom.github.io/webvia.github.io/{https://webvia.github.io}.",
+  "metadata": {
+    "paper_name": "WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation",
+    "github_url": "https://github.com/zheny2751-dotcom/WebVIA",
+    "huggingface_url": "https://huggingface.co/papers/2511.06251",
+    "upvote": 0,
+    "tags": [
+      "code",
+      "webvia",
+      "interactive"
+    ]
+  }
+}

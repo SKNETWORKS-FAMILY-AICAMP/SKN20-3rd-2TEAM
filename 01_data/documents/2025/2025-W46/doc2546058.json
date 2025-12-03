@@ -1,0 +1,14 @@
+{
+  "context": "SynthAgent is a synthetic supervision framework that refines both tasks and trajectories to improve data quality and enhance web agent adaptation to new websites.\nAI-generated summary\nWeb agents struggle to adapt to new websites due to the scarcity of environment specific tasks and demonstrations. Recent works have explored synthetic data generation to address this challenge, however, they suffer from data quality issues where synthesized tasks contain hallucinations that cannot be executed, and collected trajectories are noisy with redundant or misaligned actions. In this paper, we propose SynthAgent, a fully synthetic supervision framework that aims at improving synthetic data quality via dual refinement of both tasks and trajectories. Our approach begins by synthesizing diverse tasks through categorized exploration of web elements, ensuring efficient coverage of the target environment. During trajectory collection, we refine tasks when conflicts with actual observations are detected, mitigating hallucinations while maintaining task consistency. After collection, we conduct trajectory refinement with a global context to mitigate potential noise or misalignments. Finally, we fine-tune open-source web agents on the refined synthetic data to adapt them to the target environment. Experimental results demonstrate that SynthAgent outperforms existing synthetic data methods, validating the importance of high-quality synthetic supervision. The code will be publicly available at https://github.com/aiming-lab/SynthAgent.",
+  "metadata": {
+    "paper_name": "Adapting Web Agents with Synthetic Supervision",
+    "github_url": "https://github.com/aiming-lab/SynthAgent",
+    "huggingface_url": "https://huggingface.co/papers/2511.06101",
+    "upvote": 0,
+    "tags": [
+      "synthetic",
+      "tasks",
+      "data"
+    ]
+  }
+}

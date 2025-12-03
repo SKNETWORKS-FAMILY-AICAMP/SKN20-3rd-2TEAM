@@ -1,0 +1,14 @@
+{
+  "context": "NINJA, a jailbreak attack method, appends benign content to harmful goals in long-context language models, increasing attack success rates and revealing vulnerabilities in these models.\nAI-generated summary\nRecent advances in long-context language models (LMs) have enabled million-token inputs, expanding their capabilities across complex tasks like computer-use agents. Yet, the safety implications of these extended contexts remain unclear. To bridge this gap, we introduce NINJA (short for Needle-in-haystack jailbreak attack), a method that jailbreaks aligned LMs by appending benign, model-generated content to harmful user goals. Critical to our method is the observation that the position of harmful goals play an important role in safety. Experiments on standard safety benchmark, HarmBench, show that NINJA significantly increases attack success rates across state-of-the-art open and proprietary models, including LLaMA, Qwen, Mistral, and Gemini. Unlike prior jailbreaking methods, our approach is low-resource, transferable, and less detectable. Moreover, we show that NINJA is compute-optimal -- under a fixed compute budget, increasing context length can outperform increasing the number of trials in best-of-N jailbreak. These findings reveal that even benign long contexts -- when crafted with careful goal positioning -- introduce fundamental vulnerabilities in modern LMs.",
+  "metadata": {
+    "paper_name": "Jailbreaking in the Haystack",
+    "github_url": "https://github.com/AR-FORUM/NINJA_Attack",
+    "huggingface_url": "https://huggingface.co/papers/2511.04707",
+    "upvote": 0,
+    "tags": [
+      "ninja",
+      "attack",
+      "models"
+    ]
+  }
+}

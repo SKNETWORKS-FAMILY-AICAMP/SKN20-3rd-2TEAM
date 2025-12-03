@@ -1,0 +1,14 @@
+{
+  "context": "LLMs struggle to authentically portray morally ambiguous or villainous characters due to safety alignment, as evidenced by the Moral RolePlay benchmark.\nAI-generated summary\nLarge Language Models (LLMs) are increasingly tasked with creative generation, including the simulation of fictional characters. However, their ability to portray non-prosocial, antagonistic personas remains largely unexamined. We hypothesize that the safety alignment of modern LLMs creates a fundamental conflict with the task of authentically role-playing morally ambiguous or villainous characters. To investigate this, we introduce the Moral RolePlay benchmark, a new dataset featuring a four-level moral alignment scale and a balanced test set for rigorous evaluation. We task state-of-the-art LLMs with role-playing characters from moral paragons to pure villains. Our large-scale evaluation reveals a consistent, monotonic decline in role-playing fidelity as character morality decreases. We find that models struggle most with traits directly antithetical to safety principles, such as ``Deceitful'' and ``Manipulative'', often substituting nuanced malevolence with superficial aggression. Furthermore, we demonstrate that general chatbot proficiency is a poor predictor of villain role-playing ability, with highly safety-aligned models performing particularly poorly. Our work provides the first systematic evidence of this critical limitation, highlighting a key tension between model safety and creative fidelity. Our benchmark and findings pave the way for developing more nuanced, context-aware alignment methods.",
+  "metadata": {
+    "paper_name": "Too Good to be Bad: On the Failure of LLMs to Role-Play Villains",
+    "github_url": "https://github.com/Tencent/digitalhuman/tree/main/RolePlay_Villain",
+    "huggingface_url": "https://huggingface.co/papers/2511.04962",
+    "upvote": 0,
+    "tags": [
+      "safety",
+      "llms",
+      "characters"
+    ]
+  }
+}

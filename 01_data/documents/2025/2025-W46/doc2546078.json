@@ -1,0 +1,14 @@
+{
+  "context": "HAFixAgent, a history-aware bug-fixing agent, improves automated program repair by incorporating repository history, enhancing effectiveness and efficiency for complex multi-hunk bugs.\nAI-generated summary\nAutomated program repair (APR) has recently shifted toward large language models and agent-based systems, yet most systems rely on local snapshot context, overlooking repository history. Prior work shows that repository history helps repair single-line bugs, since the last commit touching the buggy line is often the bug-introducing one. In this paper, we investigate whether repository history can also improve agentic APR systems at scale, especially for complex multi-hunk bugs. We present HAFixAgent, a History-Aware Bug-Fixing Agent that injects blame-derived repository heuristics into its repair loop. A preliminary study of all 854 real-world bugs from Defects4J motivates our design, showing that bug-relevant history is both widely available and highly concentrated. Empirical comparison of HAFixAgent with two state-of-the-art baselines shows: (1) Effectiveness: HAFixAgent significantly improves over the agent-based baseline (by 212.3%) and the multi-hunk baseline (by 29.9%). (2) Efficiency: history does not significantly increase agent steps and keeps token costs comparable, with notably lower median costs for complex multi-file-multi-hunk bugs. (3) Practicality: combining different historical heuristics repairs more bugs, offering a clear cost-benefit trade-off. HAFixAgent offers a practical recipe for history-aware agentic APR: ground the agent in version control history, prioritize diff-based historical context, and integrate complementary heuristics when needed.",
+  "metadata": {
+    "paper_name": "HAFixAgent: History-Aware Automated Program Repair Agent",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.01047",
+    "upvote": 0,
+    "tags": [
+      "history",
+      "agent",
+      "bugs"
+    ]
+  }
+}

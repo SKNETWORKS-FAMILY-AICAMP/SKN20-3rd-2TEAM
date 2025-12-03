@@ -1,0 +1,14 @@
+{
+  "context": "HaluMem, a benchmark for evaluating memory hallucinations in AI systems, identifies and analyzes hallucinations across memory extraction, updating, and question answering stages using large-scale human-AI interaction datasets.\nAI-generated summary\nMemory systems are key components that enable AI systems such as LLMs and AI agents to achieve long-term learning and sustained interaction. However, during memory storage and retrieval, these systems frequently exhibit memory hallucinations, including fabrication, errors, conflicts, and omissions. Existing evaluations of memory hallucinations are primarily end-to-end question answering, which makes it difficult to localize the operational stage within the memory system where hallucinations arise. To address this, we introduce the Hallucination in Memory Benchmark (HaluMem), the first operation level hallucination evaluation benchmark tailored to memory systems. HaluMem defines three evaluation tasks (memory extraction, memory updating, and memory question answering) to comprehensively reveal hallucination behaviors across different operational stages of interaction. To support evaluation, we construct user-centric, multi-turn human-AI interaction datasets, HaluMem-Medium and HaluMem-Long. Both include about 15k memory points and 3.5k multi-type questions. The average dialogue length per user reaches 1.5k and 2.6k turns, with context lengths exceeding 1M tokens, enabling evaluation of hallucinations across different context scales and task complexities. Empirical studies based on HaluMem show that existing memory systems tend to generate and accumulate hallucinations during the extraction and updating stages, which subsequently propagate errors to the question answering stage. Future research should focus on developing interpretable and constrained memory operation mechanisms that systematically suppress hallucinations and improve memory reliability.",
+  "metadata": {
+    "paper_name": "HaluMem: Evaluating Hallucinations in Memory Systems of Agents",
+    "github_url": "https://github.com/MemTensor/HaluMem",
+    "huggingface_url": "https://huggingface.co/papers/2511.03506",
+    "upvote": 0,
+    "tags": [
+      "memory",
+      "hallucinations",
+      "halumem"
+    ]
+  }
+}

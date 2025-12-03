@@ -1,0 +1,14 @@
+{
+  "context": "Reinforcement learning enhances language models' ability to recall hierarchical knowledge without degrading memorized facts, as evidenced by improved performance on structured prompting and deep-retrieval tasks.\nAI-generated summary\nReinforcement learning (RL) is often credited with improving language model reasoning and generalization at the expense of degrading memorized knowledge. We challenge this narrative by observing that RL-enhanced models consistently outperform their base and supervised fine-tuned (SFT) counterparts on pure knowledge recall tasks, particularly those requiring traversal of hierarchical, structured knowledge (e.g., medical codes). We hypothesize these gains stem not from newly acquired data, but from improved procedural skills in navigating and searching existing knowledge hierarchies within the model parameters. To support this hypothesis, we show that structured prompting, which explicitly guides SFTed models through hierarchical traversal, recovers most of the performance gap (reducing 24pp to 7pp on MedConceptsQA for DeepSeek-V3/R1). We further find that while prompting improves final-answer accuracy, RL-enhanced models retain superior ability to recall correct procedural paths on deep-retrieval tasks. Finally our layer-wise internal activation analysis reveals that while factual representations (e.g., activations for the statement \"code 57.95 refers to urinary infection\") maintain high cosine similarity between SFT and RL models, query representations (e.g., \"what is code 57.95\") diverge noticeably, indicating that RL primarily transforms how models traverse knowledge rather than the knowledge representation itself.",
+  "metadata": {
+    "paper_name": "Reinforcement Learning Improves Traversal of Hierarchical Knowledge in LLMs",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.05933",
+    "upvote": 0,
+    "tags": [
+      "knowledge",
+      "models",
+      "recall"
+    ]
+  }
+}

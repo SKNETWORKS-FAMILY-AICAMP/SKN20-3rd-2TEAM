@@ -1,0 +1,14 @@
+{
+  "context": "A multi-agent framework enhances conversational quality by refining responses through agents responsible for factuality, personalization, and coherence, outperforming existing methods on challenging datasets.\nAI-generated summary\nLarge Language Models (LLMs) have demonstrated remarkable success in conversational systems by generating human-like responses. However, they can fall short, especially when required to account for personalization or specific knowledge. In real-life settings, it is impractical to rely on users to detect these errors and request a new response. One way to address this problem is to refine the response before returning it to the user. While existing approaches focus on refining responses within a single LLM, this method struggles to consider diverse aspects needed for effective conversations. In this work, we propose refining responses through a multi-agent framework, where each agent is assigned a specific role for each aspect. We focus on three key aspects crucial to conversational quality: factuality, personalization, and coherence. Each agent is responsible for reviewing and refining one of these aspects, and their feedback is then merged to improve the overall response. To enhance collaboration among them, we introduce a dynamic communication strategy. Instead of following a fixed sequence of agents, our approach adaptively selects and coordinates the most relevant agents based on the specific requirements of each query. We validate our framework on challenging conversational datasets, demonstrating that ours significantly outperforms relevant baselines, particularly in tasks involving knowledge or user's persona, or both.",
+  "metadata": {
+    "paper_name": "Adaptive Multi-Agent Response Refinement in Conversational Systems",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.08319",
+    "upvote": 0,
+    "tags": [
+      "agent",
+      "conversational",
+      "refining"
+    ]
+  }
+}

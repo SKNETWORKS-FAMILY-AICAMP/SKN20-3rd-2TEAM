@@ -1,0 +1,14 @@
+{
+  "context": "Transformer-based uncertainty quantification heads improve step-level reasoning verification in LLMs by estimating uncertainty from internal states, offering a lightweight and scalable alternative to existing methods.\nAI-generated summary\nSolving complex tasks usually requires LLMs to generate long multi-step reasoning chains. Previous work has shown that verifying the correctness of individual reasoning steps can further improve the performance and efficiency of LLMs on such tasks and enhance solution interpretability. However, existing verification approaches, such as Process Reward Models (PRMs), are either computationally expensive, limited to specific domains, or require large-scale human or model-generated annotations. Thus, we propose a lightweight alternative for step-level reasoning verification based on data-driven uncertainty scores. We train transformer-based uncertainty quantification heads (UHeads) that use the internal states of a frozen LLM to estimate the uncertainty of its reasoning steps during generation. The approach is fully automatic: target labels are generated either by another larger LLM (e.g., DeepSeek R1) or in a self-supervised manner by the original model itself. UHeads are both effective and lightweight, containing less than 10M parameters. Across multiple domains, including mathematics, planning, and general knowledge question answering, they match or even surpass the performance of PRMs that are up to 810x larger. Our findings suggest that the internal states of LLMs encode their uncertainty and can serve as reliable signals for reasoning verification, offering a promising direction toward scalable and generalizable introspective LLMs.",
+  "metadata": {
+    "paper_name": "Reasoning with Confidence: Efficient Verification of LLM Reasoning Steps via Uncertainty Heads",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.06209",
+    "upvote": 0,
+    "tags": [
+      "uncertainty",
+      "reasoning",
+      "llms"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "Diffusion-SDPO improves text-to-image generation quality by adaptively scaling the loser gradient in preference optimization, ensuring the preferred output's error does not increase.\nAI-generated summary\nText-to-image diffusion models deliver high-quality images, yet aligning them with human preferences remains challenging. We revisit diffusion-based Direct Preference Optimization (DPO) for these models and identify a critical pathology: enlarging the preference margin does not necessarily improve generation quality. In particular, the standard Diffusion-DPO objective can increase the reconstruction error of both winner and loser branches. Consequently, degradation of the less-preferred outputs can become sufficiently severe that the preferred branch is also adversely affected even as the margin grows. To address this, we introduce Diffusion-SDPO, a safeguarded update rule that preserves the winner by adaptively scaling the loser gradient according to its alignment with the winner gradient. A first-order analysis yields a closed-form scaling coefficient that guarantees the error of the preferred output is non-increasing at each optimization step. Our method is simple, model-agnostic, broadly compatible with existing DPO-style alignment frameworks and adds only marginal computational overhead. Across standard text-to-image benchmarks, Diffusion-SDPO delivers consistent gains over preference-learning baselines on automated preference, aesthetic, and prompt alignment metrics. Code is publicly available at https://github.com/AIDC-AI/Diffusion-SDPO.",
+  "metadata": {
+    "paper_name": "Diffusion-SDPO: Safeguarded Direct Preference Optimization for Diffusion Models",
+    "github_url": "https://github.com/AIDC-AI/Diffusion-SDPO",
+    "huggingface_url": "https://huggingface.co/papers/2511.03317",
+    "upvote": 0,
+    "tags": [
+      "diffusion",
+      "preference",
+      "sdpo"
+    ]
+  }
+}

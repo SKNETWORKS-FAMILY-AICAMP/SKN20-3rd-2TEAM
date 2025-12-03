@@ -1,0 +1,14 @@
+{
+  "context": "The study identifies and defends against adversarial attacks in decentralized Group Relative Policy Optimization (GRPO) for Large Language Models (LLMs), demonstrating attack success rates of up to 100% and proposing effective defense mechanisms.\nAI-generated summary\nGroup Relative Policy Optimization (GRPO) has demonstrated great utilization in post-training of Large Language Models (LLMs). In GRPO, prompts are answered by the model and, through reinforcement learning, preferred completions are learnt. Owing to the small communication volume, GRPO is inherently suitable for decentralised training as the prompts can be concurrently answered by multiple nodes and then exchanged in the forms of strings. In this work, we present the first adversarial attack in decentralised GRPO. We demonstrate that malicious parties can poison such systems by injecting arbitrary malicious tokens in benign models in both out-of-context and in-context attacks. Using empirical examples of math and coding tasks, we show that adversarial attacks can easily poison the benign nodes, polluting their local LLM post-training, achieving attack success rates up to 100% in as few as 50 iterations. We propose two ways to defend against these attacks, depending on whether all users train the same model or different models. We show that these defenses can achieve stop rates of up to 100%, making the attack impossible.",
+  "metadata": {
+    "paper_name": "Hail to the Thief: Exploring Attacks and Defenses in Decentralised GRPO",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.09780",
+    "upvote": 0,
+    "tags": [
+      "grpo",
+      "attacks",
+      "models"
+    ]
+  }
+}

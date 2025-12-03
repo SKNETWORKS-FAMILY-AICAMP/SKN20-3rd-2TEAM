@@ -1,0 +1,14 @@
+{
+  "context": "Refining textual embeddings with average-pooled visual features improves visual grounding and reduces hallucinations in LVLM architectures.\nAI-generated summary\nIn this work, we identify an inherent bias in prevailing LVLM architectures toward the language modality, largely resulting from the common practice of simply appending visual embeddings to the input text sequence. To address this, we propose a simple yet effective method that refines textual embeddings by integrating average-pooled visual features. Our approach demonstrably improves visual grounding and significantly reduces hallucinations on established benchmarks. While average pooling offers a straightforward, robust, and efficient means of incorporating visual information, we believe that more sophisticated fusion methods could further enhance visual grounding and cross-modal alignment. Given that the primary focus of this work is to highlight the modality imbalance and its impact on hallucinations -- and to show that refining textual embeddings with visual information mitigates this issue -- we leave exploration of advanced fusion strategies for future work.",
+  "metadata": {
+    "paper_name": "Towards Mitigating Hallucinations in Large Vision-Language Models by Refining Textual Embeddings",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.05017",
+    "upvote": 0,
+    "tags": [
+      "visual",
+      "embeddings",
+      "textual"
+    ]
+  }
+}

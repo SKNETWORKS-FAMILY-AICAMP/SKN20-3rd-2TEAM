@@ -1,0 +1,14 @@
+{
+  "context": "Superpositional Gradient Descent, a quantum-inspired optimizer, improves convergence and reduces final loss in large language model training compared to AdamW.\nAI-generated summary\nLarge language models (LLMs) are increasingly trained with classical optimization techniques like AdamW to improve convergence and generalization. However, the mechanisms by which quantum-inspired methods enhance classical training remain underexplored. We introduce Superpositional Gradient Descent (SGD), a novel optimizer linking gradient updates with quantum superposition by injecting quantum circuit perturbations. We present a mathematical framework and implement hybrid quantum-classical circuits in PyTorch and Qiskit. On synthetic sequence classification and large-scale LLM fine-tuning, SGD converges faster and yields lower final loss than AdamW. Despite promising results, scalability and hardware constraints limit adoption. Overall, this work provides new insights into the intersection of quantum computing and deep learning, suggesting practical pathways for leveraging quantum principles to control and enhance model behavior.",
+  "metadata": {
+    "paper_name": "Superpositional Gradient Descent: Harnessing Quantum Principles for Model Training",
+    "github_url": "https://github.com/The-Aqua-Labs/Superpositional-Gradient-Descent",
+    "huggingface_url": "https://huggingface.co/papers/2511.01918",
+    "upvote": 0,
+    "tags": [
+      "quantum",
+      "gradient",
+      "large"
+    ]
+  }
+}

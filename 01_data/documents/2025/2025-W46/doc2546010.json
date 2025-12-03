@@ -1,0 +1,14 @@
+{
+  "context": "MADD, a multi-agent system integrating large language models and specialized models, streamlines hit identification in early drug discovery with superior performance and accessibility.\nAI-generated summary\nHit identification is a central challenge in early drug discovery, traditionally requiring substantial experimental resources. Recent advances in artificial intelligence, particularly large language models (LLMs), have enabled virtual screening methods that reduce costs and improve efficiency. However, the growing complexity of these tools has limited their accessibility to wet-lab researchers. Multi-agent systems offer a promising solution by combining the interpretability of LLMs with the precision of specialized models and tools. In this work, we present MADD, a multi-agent system that builds and executes customized hit identification pipelines from natural language queries. MADD employs four coordinated agents to handle key subtasks in de novo compound generation and screening. We evaluate MADD across seven drug discovery cases and demonstrate its superior performance compared to existing LLM-based solutions. Using MADD, we pioneer the application of AI-first drug design to five biological targets and release the identified hit molecules. Finally, we introduce a new benchmark of query-molecule pairs and docking scores for over three million compounds to contribute to the agentic future of drug design.",
+  "metadata": {
+    "paper_name": "MADD: Multi-Agent Drug Discovery Orchestra",
+    "github_url": "https://github.com/sb-ai-lab/MADD",
+    "huggingface_url": "https://huggingface.co/papers/2511.08217",
+    "upvote": 0,
+    "tags": [
+      "madd",
+      "drug",
+      "models"
+    ]
+  }
+}

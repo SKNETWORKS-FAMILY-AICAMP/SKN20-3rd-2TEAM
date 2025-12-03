@@ -1,0 +1,14 @@
+{
+  "context": "LUT-LLM, an FPGA accelerator, improves LLM inference efficiency by shifting computation to memory-based operations, achieving lower latency and higher energy efficiency compared to GPUs.\nAI-generated summary\nThe rapid progress of large language models (LLMs) has advanced numerous applications, yet efficient single-batch inference remains vital for on-device intelligence. While FPGAs offer fine-grained data control and high energy efficiency, recent GPU optimizations have narrowed their advantage, especially under arithmetic-based computation. To overcome this, we leverage FPGAs' abundant on-chip memory to shift LLM inference from arithmetic- to memory-based computation through table lookups. We present LUT-LLM, the first FPGA accelerator enabling 1B+ LLM inference via vector-quantized memory operations. Our analysis identifies activation-weight co-quantization as the most effective scheme, supported by (1) bandwidth-aware parallel centroid search, (2) efficient 2D table lookups, and (3) a spatial-temporal hybrid design minimizing data caching. Implemented on an AMD V80 FPGA for a customized Qwen 3 1.7B model, LUT-LLM achieves 1.66x lower latency than AMD MI210 and 1.72x higher energy efficiency than NVIDIA A100, scaling to 32B models with 2.16x efficiency gain over A100.",
+  "metadata": {
+    "paper_name": "LUT-LLM: Efficient Large Language Model Inference with Memory-based Computations on FPGAs",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.06174",
+    "upvote": 0,
+    "tags": [
+      "llm",
+      "efficiency",
+      "inference"
+    ]
+  }
+}

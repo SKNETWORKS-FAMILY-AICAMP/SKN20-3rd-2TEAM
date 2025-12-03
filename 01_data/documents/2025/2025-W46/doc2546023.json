@@ -1,0 +1,14 @@
+{
+  "context": "LMT, a suite of large-scale multilingual translation models, addresses challenges in multilingual machine translation through strategic downsampling and parallel multilingual prompting, achieving state-of-the-art performance across 60 languages.\nAI-generated summary\nLarge language models have significantly advanced Multilingual Machine Translation (MMT), yet the broad language coverage, consistent translation quality, and English-centric bias remain open challenges. To address these challenges, we introduce LMT, a suite of Large-scale Multilingual Translation models centered on both Chinese and English, covering 60 languages and 234 translation directions. During development, we identify a previously overlooked phenomenon of directional degeneration, where symmetric multi-way fine-tuning data overemphasize reverse directions (X to En/Zh), leading to excessive many-to-one mappings and degraded translation quality. We propose Strategic Downsampling, a simple yet effective method to mitigate this degeneration. In addition, we design Parallel Multilingual Prompting (PMP), which leverages typologically related auxiliary languages to enhance cross-lingual transfer. Through rigorous data curation and refined adaptation strategies, LMT achieves SOTA performance among models of comparable language coverage, with our 4B model (LMT-60-4B) surpassing the much larger Aya-101-13B and NLLB-54B models by a substantial margin. We release LMT in four sizes (0.6B/1.7B/4B/8B) to catalyze future research and provide strong baselines for inclusive, scalable, and high-quality MMT \\href{https://github.com/NiuTrans/LMT{https://github.com/NiuTrans/LMT}}.",
+  "metadata": {
+    "paper_name": "Beyond English: Toward Inclusive and Scalable Multilingual Machine Translation with LLMs",
+    "github_url": "https://github.com/NiuTrans/LMT",
+    "huggingface_url": "https://huggingface.co/papers/2511.07003",
+    "upvote": 0,
+    "tags": [
+      "lmt",
+      "translation",
+      "multilingual"
+    ]
+  }
+}

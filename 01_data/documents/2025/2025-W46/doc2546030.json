@@ -1,0 +1,14 @@
+{
+  "context": "A novel video self-supervised reinforcement learning framework, VideoSSR, enhances MLLM performance across various video understanding tasks by leveraging intrinsic video information.\nAI-generated summary\nReinforcement Learning with Verifiable Rewards (RLVR) has substantially advanced the video understanding capabilities of Multimodal Large Language Models (MLLMs). However, the rapid progress of MLLMs is outpacing the complexity of existing video datasets, while the manual annotation of new, high-quality data remains prohibitively expensive. This work investigates a pivotal question: Can the rich, intrinsic information within videos be harnessed to self-generate high-quality, verifiable training data? To investigate this, we introduce three self-supervised pretext tasks: Anomaly Grounding, Object Counting, and Temporal Jigsaw. We construct the Video Intrinsic Understanding Benchmark (VIUBench) to validate their difficulty, revealing that current state-of-the-art MLLMs struggle significantly on these tasks. Building upon these pretext tasks, we develop the VideoSSR-30K dataset and propose VideoSSR, a novel video self-supervised reinforcement learning framework for RLVR. Extensive experiments across 17 benchmarks, spanning four major video domains (General Video QA, Long Video QA, Temporal Grounding, and Complex Reasoning), demonstrate that VideoSSR consistently enhances model performance, yielding an average improvement of over 5\\%. These results establish VideoSSR as a potent foundational framework for developing more advanced video understanding in MLLMs. The code is available at https://github.com/lcqysl/VideoSSR.",
+  "metadata": {
+    "paper_name": "VideoSSR: Video Self-Supervised Reinforcement Learning",
+    "github_url": "https://github.com/lcqysl/VideoSSR",
+    "huggingface_url": "https://huggingface.co/papers/2511.06281",
+    "upvote": 0,
+    "tags": [
+      "video",
+      "videossr",
+      "self"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "KL-Adaptive Stability Sampling (KLASS) accelerates diffusion-based generation by identifying stable predictions, achieving significant speedups and quality improvements across various domains.\nAI-generated summary\nMasked diffusion models have demonstrated competitive results on various tasks including language generation. However, due to its iterative refinement process, the inference is often bottlenecked by slow and static sampling speed. To overcome this problem, we introduce `KL-Adaptive Stability Sampling' (KLASS), a fast yet effective sampling method that exploits token-level KL divergence to identify stable, high-confidence predictions. By unmasking multiple tokens in each iteration without any additional model training, our approach speeds up generation significantly while maintaining sample quality. On reasoning benchmarks, KLASS achieves up to 2.78times wall-clock speedups while improving performance over standard greedy decoding, attaining state-of-the-art results among diffusion-based samplers. We further validate KLASS across diverse domains, including text, image, and molecular generation, showing its effectiveness as a broadly applicable sampler across different models.",
+  "metadata": {
+    "paper_name": "KLASS: KL-Guided Fast Inference in Masked Diffusion Models",
+    "github_url": "https://github.com/shkim0116/KLASS",
+    "huggingface_url": "https://huggingface.co/papers/2511.05664",
+    "upvote": 0,
+    "tags": [
+      "sampling",
+      "klass",
+      "generation"
+    ]
+  }
+}

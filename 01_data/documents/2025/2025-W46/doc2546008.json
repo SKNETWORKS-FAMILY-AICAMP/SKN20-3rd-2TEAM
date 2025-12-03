@@ -1,0 +1,14 @@
+{
+  "context": "PAN, a general, interactable, and long-horizon world model, predicts future world states using a Generative Latent Prediction (GLP) architecture that combines autoregressive latent dynamics with a video diffusion decoder, enabling detailed, long-term, and coherent video simulation.\nAI-generated summary\nA world model enables an intelligent agent to imagine, predict, and reason about how the world evolves in response to its actions, and accordingly to plan and strategize. While recent video generation models produce realistic visual sequences, they typically operate in the prompt-to-full-video manner without causal control, interactivity, or long-horizon consistency required for purposeful reasoning. Existing world modeling efforts, on the other hand, often focus on restricted domains (e.g., physical, game, or 3D-scene dynamics) with limited depth and controllability, and struggle to generalize across diverse environments and interaction formats. In this work, we introduce PAN, a general, interactable, and long-horizon world model that predicts future world states through high-quality video simulation conditioned on history and natural language actions. PAN employs the Generative Latent Prediction (GLP) architecture that combines an autoregressive latent dynamics backbone based on a large language model (LLM), which grounds simulation in extensive text-based knowledge and enables conditioning on language-specified actions, with a video diffusion decoder that reconstructs perceptually detailed and temporally coherent visual observations, to achieve a unification between latent space reasoning (imagination) and realizable world dynamics (reality). Trained on large-scale video-action pairs spanning diverse domains, PAN supports open-domain, action-conditioned simulation with coherent, long-term dynamics. Extensive experiments show that PAN achieves strong performance in action-conditioned world simulation, long-horizon forecasting, and simulative reasoning compared to other video generators and world models, taking a step towards general world models that enable predictive simulation of future world states for reasoning and acting.",
+  "metadata": {
+    "paper_name": "PAN: A World Model for General, Interactable, and Long-Horizon World Simulation",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.09057",
+    "upvote": 0,
+    "tags": [
+      "world",
+      "video",
+      "long"
+    ]
+  }
+}

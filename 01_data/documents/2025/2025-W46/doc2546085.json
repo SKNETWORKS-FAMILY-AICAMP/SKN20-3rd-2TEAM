@@ -1,0 +1,14 @@
+{
+  "context": "MuSc-V2 framework improves zero-shot anomaly detection by leveraging mutual scoring and similarity aggregation in both 2D and 3D data, achieving significant performance gains over existing benchmarks.\nAI-generated summary\nZero-shot anomaly classification (AC) and segmentation (AS) methods aim to identify and outline defects without using any labeled samples. In this paper, we reveal a key property that is overlooked by existing methods: normal image patches across industrial products typically find many other similar patches, not only in 2D appearance but also in 3D shapes, while anomalies remain diverse and isolated. To explicitly leverage this discriminative property, we propose a Mutual Scoring framework (MuSc-V2) for zero-shot AC/AS, which flexibly supports single 2D/3D or multimodality. Specifically, our method begins by improving 3D representation through Iterative Point Grouping (IPG), which reduces false positives from discontinuous surfaces. Then we use Similarity Neighborhood Aggregation with Multi-Degrees (SNAMD) to fuse 2D/3D neighborhood cues into more discriminative multi-scale patch features for mutual scoring. The core comprises a Mutual Scoring Mechanism (MSM) that lets samples within each modality to assign score to each other, and Cross-modal Anomaly Enhancement (CAE) that fuses 2D and 3D scores to recover modality-specific missing anomalies. Finally, Re-scoring with Constrained Neighborhood (RsCon) suppresses false classification based on similarity to more representative samples. Our framework flexibly works on both the full dataset and smaller subsets with consistently robust performance, ensuring seamless adaptability across diverse product lines. In aid of the novel framework, MuSc-V2 achieves significant performance improvements: a +23.7% AP gain on the MVTec 3D-AD dataset and a +19.3% boost on the Eyecandies dataset, surpassing previous zero-shot benchmarks and even outperforming most few-shot methods. The code will be available at The code will be available at https://github.com/HUST-SLOW/MuSc-V2{https://github.com/HUST-SLOW/MuSc-V2}.",
+  "metadata": {
+    "paper_name": "MuSc-V2: Zero-Shot Multimodal Industrial Anomaly Classification and Segmentation with Mutual Scoring of Unlabeled Samples",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.10047",
+    "upvote": 0,
+    "tags": [
+      "musc",
+      "shot",
+      "scoring"
+    ]
+  }
+}

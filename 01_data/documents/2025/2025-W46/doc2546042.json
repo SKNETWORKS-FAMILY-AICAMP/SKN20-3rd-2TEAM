@@ -1,0 +1,14 @@
+{
+  "context": "A proposed Mathematical Self-Evolving framework iteratively refines multimodal large language models through inference, reflection, and reward-based feedback, achieving superior performance in mathematical reasoning tasks compared to existing models.\nAI-generated summary\nMultimodal large language models (MLLMs) have demonstrated remarkable capabilities in vision-language answering tasks. Despite their strengths, these models often encounter challenges in achieving complex reasoning tasks such as mathematical problem-solving. Previous works have focused on fine-tuning on specialized mathematical datasets. However, these datasets are typically distilled directly from teacher models, which capture only static reasoning patterns and leaving substantial gaps compared to student models. This reliance on fixed teacher-derived datasets not only restricts the model's ability to adapt to novel or more intricate questions that extend beyond the confines of the training data, but also lacks the iterative depth needed for robust generalization. To overcome these limitations, we propose \\method, a Mathematical Self-Evolving framework for MLLMs. In contrast to traditional one-shot fine-tuning paradigms, \\method iteratively refines the model through cycles of inference, reflection, and reward-based feedback. Specifically, we leverage iterative fine-tuning by incorporating correct reasoning paths derived from previous-stage inference and integrating reflections from a specialized Outcome Reward Model (ORM). To verify the effectiveness of \\method, we evaluate it on a suite of challenging benchmarks, demonstrating significant performance gains over backbone models. Notably, our experimental results on MathVL-test surpass the leading open-source multimodal mathematical reasoning model QVQ. Our code and models are available at https://zheny2751\\allowbreak-dotcom.github.io/\\allowbreak MathSE.github.io/.",
+  "metadata": {
+    "paper_name": "MathSE: Improving Multimodal Mathematical Reasoning via Self-Evolving Iterative Reflection and Reward-Guided Fine-Tuning",
+    "github_url": "https://github.com/zheny2751-dotcom/MathSE",
+    "huggingface_url": "https://huggingface.co/papers/2511.06805",
+    "upvote": 0,
+    "tags": [
+      "models",
+      "mathematical",
+      "reasoning"
+    ]
+  }
+}

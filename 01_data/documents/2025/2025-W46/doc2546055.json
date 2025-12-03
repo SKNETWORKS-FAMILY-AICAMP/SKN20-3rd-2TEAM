@@ -1,0 +1,14 @@
+{
+  "context": "RLoop, a self-improving framework using iterative policy initialization and Rejection-sampling Fine-Tuning, mitigates overfitting and enhances generalization in Reinforcement Learning for Verifiable Rewards.\nAI-generated summary\nWhile Reinforcement Learning for Verifiable Rewards (RLVR) is powerful for training large reasoning models, its training dynamics harbor a critical challenge: RL overfitting, where models gain training rewards but lose generalization. Our analysis reveals this is driven by policy over-specialization and catastrophic forgetting of diverse solutions generated during training. Standard optimization discards this valuable inter-step policy diversity. To address this, we introduce RLoop, a self-improving framework built on iterative policy initialization. RLoop transforms the standard training process into a virtuous cycle: it first uses RL to explore the solution space from a given policy, then filters the successful trajectories to create an expert dataset. This dataset is used via Rejection-sampling Fine-Tuning (RFT) to refine the initial policy, creating a superior starting point for the next iteration. This loop of exploration and exploitation via iterative re-initialization effectively converts transient policy variations into robust performance gains. Our experiments show RLoop mitigates forgetting and substantially improves generalization, boosting average accuracy by 9% and pass@32 by over 15% compared to vanilla RL.",
+  "metadata": {
+    "paper_name": "RLoop: An Self-Improving Framework for Reinforcement Learning with Iterative Policy Initialization",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.04285",
+    "upvote": 0,
+    "tags": [
+      "policy",
+      "training",
+      "rloop"
+    ]
+  }
+}

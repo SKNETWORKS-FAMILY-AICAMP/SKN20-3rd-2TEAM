@@ -1,0 +1,14 @@
+{
+  "context": "MVU-Eval is a comprehensive benchmark for evaluating multi-video understanding in Multimodal Large Language Models, addressing gaps in existing single-video benchmarks and highlighting performance discrepancies in real-world applications.\nAI-generated summary\nThe advent of Multimodal Large Language Models (MLLMs) has expanded AI capabilities to visual modalities, yet existing evaluation benchmarks remain limited to single-video understanding, overlooking the critical need for multi-video understanding in real-world scenarios (e.g., sports analytics and autonomous driving). To address this significant gap, we introduce MVU-Eval, the first comprehensive benchmark for evaluating Multi-Video Understanding for MLLMs. Specifically, our MVU-Eval mainly assesses eight core competencies through 1,824 meticulously curated question-answer pairs spanning 4,959 videos from diverse domains, addressing both fundamental perception tasks and high-order reasoning tasks. These capabilities are rigorously aligned with real-world applications such as multi-sensor synthesis in autonomous systems and cross-angle sports analytics. Through extensive evaluation of state-of-the-art open-source and closed-source models, we reveal significant performance discrepancies and limitations in current MLLMs' ability to perform understanding across multiple videos. The benchmark will be made publicly available to foster future research.",
+  "metadata": {
+    "paper_name": "MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs",
+    "github_url": "https://github.com/NJU-LINK/MVU-Eval",
+    "huggingface_url": "https://huggingface.co/papers/2511.07250",
+    "upvote": 0,
+    "tags": [
+      "video",
+      "understanding",
+      "multi"
+    ]
+  }
+}

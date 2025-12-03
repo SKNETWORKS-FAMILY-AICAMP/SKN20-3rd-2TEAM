@@ -1,0 +1,14 @@
+{
+  "context": "Omni-AVSR is a unified audio-visual LLM that efficiently supports ASR, VSR, and AVSR through multi-granularity training and parameter-efficient adaptation, achieving high accuracy with reduced resource use.\nAI-generated summary\nLarge language models (LLMs) have recently achieved impressive results in speech recognition across multiple modalities, including Auditory Speech Recognition (ASR), Visual Speech Recognition (VSR), and Audio-Visual Speech Recognition (AVSR). Despite this progress, current LLM-based approaches typically address each task independently, training separate models that raise computational and deployment resource use while missing potential cross-task synergies. They also rely on fixed-rate token compression, which restricts flexibility in balancing accuracy with efficiency. These limitations highlight the need for a unified framework that can support ASR, VSR, and AVSR while enabling elastic inference. To this end, we present Omni-AVSR, a unified audio-visual LLM that combines efficient multi-granularity training with parameter-efficient adaptation. Specifically, we adapt the matryoshka representation learning paradigm to efficiently train across multiple audio and visual granularities, reducing its inherent training resource use. Furthermore, we explore three LoRA-based strategies for adapting the backbone LLM, balancing shared and task-specific specialization. Experiments on LRS2 and LRS3 show that Omni-AVSR achieves comparable or superior accuracy to state-of-the-art baselines while training a single model at substantially lower training and deployment resource use. The model also remains robust under acoustic noise, and we analyze its scaling behavior as LLM size increases, providing insights into the trade-off between performance and efficiency.",
+  "metadata": {
+    "paper_name": "Omni-AVSR: Towards Unified Multimodal Speech Recognition with Large Language Models",
+    "github_url": "https://github.com/umbertocappellazzo/Omni-AVSR",
+    "huggingface_url": "https://huggingface.co/papers/2511.07253",
+    "upvote": 0,
+    "tags": [
+      "avsr",
+      "training",
+      "visual"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "DigiData and DigiData-Bench advance mobile control agents by providing a diverse, high-quality dataset and dynamic evaluation protocols, respectively.\nAI-generated summary\nAI agents capable of controlling user interfaces have the potential to transform human interaction with digital devices. To accelerate this transformation, two fundamental building blocks are essential: high-quality datasets that enable agents to achieve complex and human-relevant goals, and robust evaluation methods that allow researchers and practitioners to rapidly enhance agent performance. In this paper, we introduce DigiData, a large-scale, high-quality, diverse, multi-modal dataset designed for training mobile control agents. Unlike existing datasets, which derive goals from unstructured interactions, DigiData is meticulously constructed through comprehensive exploration of app features, resulting in greater diversity and higher goal complexity. Additionally, we present DigiData-Bench, a benchmark for evaluating mobile control agents on real-world complex tasks. We demonstrate that the commonly used step-accuracy metric falls short in reliably assessing mobile control agents and, to address this, we propose dynamic evaluation protocols and AI-powered evaluations as rigorous alternatives for agent assessment. Our contributions aim to significantly advance the development of mobile control agents, paving the way for more intuitive and effective human-device interactions.",
+  "metadata": {
+    "paper_name": "DigiData: Training and Evaluating General-Purpose Mobile Control Agents",
+    "github_url": "https://github.com/facebookresearch/digidata",
+    "huggingface_url": "https://huggingface.co/papers/2511.07413",
+    "upvote": 0,
+    "tags": [
+      "agents",
+      "digidata",
+      "mobile"
+    ]
+  }
+}
