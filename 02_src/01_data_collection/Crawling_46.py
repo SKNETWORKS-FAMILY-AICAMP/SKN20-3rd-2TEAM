@@ -267,7 +267,7 @@ class HFWeeklyCrawler:
             upvote = 0
             try:
                 # 정확한 선택자: <div class="font-semibold text-orange-500">117</div>
-                upvote_elem = self.driver.find_element(By.CSS_SELECTOR, "div.font-semibold.text-orange-500")
+                upvote_elem = self.driver.find_element(By.CSS_SELECTOR, "body > div > main > div > section.pt-8.border-gray-100.md\:col-span-5.pt-6.lg\:pt-28.pb-24.md\:pl-6.md\:border-l > div.hidden.flex-wrap.items-start.gap-2.md\:flex > div > div > a > div > div")
                 upvote_text = upvote_elem.text.strip()
                 # 숫자만 추출
                 numbers = re.findall(r'\d+', upvote_text)
@@ -414,7 +414,7 @@ def main():
     """메인 실행 함수"""
     # 크롤러 초기화 (headless=False로 설정하면 브라우저 창이 보임)
     crawler = HFWeeklyCrawler(
-        base_dir="SKN20-3rd-2TEAM/01_data/documents",
+        base_dir="01_data/documents/2025/2025-W46",
         headless=True  # False로 변경하면 브라우저 창이 표시됨
     )
     

@@ -4,7 +4,7 @@
     "paper_name": "RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments",
     "github_url": "https://github.com/Zhiyuan-Zeng/RLVE",
     "huggingface_url": "https://huggingface.co/papers/2511.07317",
-    "upvote": 0,
+    "upvote": 13,
     "tags": [
       "rlve",
       "environments",

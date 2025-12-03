@@ -4,7 +4,7 @@
     "paper_name": "LoopTool: Closing the Data-Training Loop for Robust LLM Tool Calls",
     "github_url": "https://github.com/Rednote-ExperienceAI-Lab/LoopTool",
     "huggingface_url": "https://huggingface.co/papers/2511.09148",
-    "upvote": 0,
+    "upvote": 16,
     "tags": [
       "data",
       "looptool",

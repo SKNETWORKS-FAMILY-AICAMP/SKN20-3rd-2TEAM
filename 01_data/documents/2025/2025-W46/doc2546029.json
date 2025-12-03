@@ -4,7 +4,7 @@
     "paper_name": "Routing Manifold Alignment Improves Generalization of Mixture-of-Experts LLMs",
     "github_url": "https://github.com/tianyi-lab/RoMA",
     "huggingface_url": "https://huggingface.co/papers/2511.07419",
-    "upvote": 0,
+    "upvote": 25,
     "tags": [
       "routing",
       "moe",

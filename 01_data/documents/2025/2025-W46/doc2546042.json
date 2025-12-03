@@ -4,7 +4,7 @@
     "paper_name": "MathSE: Improving Multimodal Mathematical Reasoning via Self-Evolving Iterative Reflection and Reward-Guided Fine-Tuning",
     "github_url": "https://github.com/zheny2751-dotcom/MathSE",
     "huggingface_url": "https://huggingface.co/papers/2511.06805",
-    "upvote": 0,
+    "upvote": 12,
     "tags": [
       "models",
       "mathematical",

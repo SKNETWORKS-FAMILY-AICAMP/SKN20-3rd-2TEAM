@@ -4,7 +4,7 @@
     "paper_name": "HAFixAgent: History-Aware Automated Program Repair Agent",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.01047",
-    "upvote": 0,
+    "upvote": 3,
     "tags": [
       "history",
       "agent",

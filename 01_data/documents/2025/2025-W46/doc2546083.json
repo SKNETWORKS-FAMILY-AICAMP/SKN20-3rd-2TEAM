@@ -4,7 +4,7 @@
     "paper_name": "Omni-AVSR: Towards Unified Multimodal Speech Recognition with Large Language Models",
     "github_url": "https://github.com/umbertocappellazzo/Omni-AVSR",
     "huggingface_url": "https://huggingface.co/papers/2511.07253",
-    "upvote": 0,
+    "upvote": 2,
     "tags": [
       "avsr",
       "training",

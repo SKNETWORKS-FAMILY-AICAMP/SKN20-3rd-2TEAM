@@ -4,7 +4,7 @@
     "paper_name": "LUT-LLM: Efficient Large Language Model Inference with Memory-based Computations on FPGAs",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.06174",
-    "upvote": 0,
+    "upvote": 5,
     "tags": [
       "llm",
       "efficiency",

@@ -4,7 +4,7 @@
     "paper_name": "MuSc-V2: Zero-Shot Multimodal Industrial Anomaly Classification and Segmentation with Mutual Scoring of Unlabeled Samples",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.10047",
-    "upvote": 0,
+    "upvote": 1,
     "tags": [
       "musc",
       "shot",

@@ -4,7 +4,7 @@
     "paper_name": "WMPO: World Model-based Policy Optimization for Vision-Language-Action Models",
     "github_url": "https://github.com/WM-PO/WMPO",
     "huggingface_url": "https://huggingface.co/papers/2511.09515",
-    "upvote": 0,
+    "upvote": 16,
     "tags": [
       "wmpo",
       "policy",

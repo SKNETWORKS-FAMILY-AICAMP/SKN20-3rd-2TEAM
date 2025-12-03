@@ -4,7 +4,7 @@
     "paper_name": "SofT-GRPO: Surpassing Discrete-Token LLM Reinforcement Learning via Gumbel-Reparameterized Soft-Thinking Policy Optimization",
     "github_url": "https://github.com/zz1358m/SofT-GRPO-master/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.06411",
-    "upvote": 0,
+    "upvote": 16,
     "tags": [
       "soft",
       "thinking",

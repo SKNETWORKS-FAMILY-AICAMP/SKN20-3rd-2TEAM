@@ -4,7 +4,7 @@
     "paper_name": "RLoop: An Self-Improving Framework for Reinforcement Learning with Iterative Policy Initialization",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.04285",
-    "upvote": 0,
+    "upvote": 7,
     "tags": [
       "policy",
       "training",

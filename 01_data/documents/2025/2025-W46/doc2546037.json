@@ -4,7 +4,7 @@
     "paper_name": "Teaching Pretrained Language Models to Think Deeper with Retrofitted Recurrence",
     "github_url": "https://github.com/mcleish7/retrofitting-recurrence",
     "huggingface_url": "https://huggingface.co/papers/2511.07384",
-    "upvote": 0,
+    "upvote": 16,
     "tags": [
       "recurrent",
       "models",

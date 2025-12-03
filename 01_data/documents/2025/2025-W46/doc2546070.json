@@ -4,7 +4,7 @@
     "paper_name": "VADER: Towards Causal Video Anomaly Understanding with Relation-Aware Large Language Models",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07299",
-    "upvote": 0,
+    "upvote": 4,
     "tags": [
       "anomaly",
       "video",

@@ -4,7 +4,7 @@
     "paper_name": "Black-Box On-Policy Distillation of Large Language Models",
     "github_url": "https://github.com/microsoft/LMOps/tree/main/gad",
     "huggingface_url": "https://huggingface.co/papers/2511.10643",
-    "upvote": 0,
+    "upvote": 46,
     "tags": [
       "distillation",
       "gad",

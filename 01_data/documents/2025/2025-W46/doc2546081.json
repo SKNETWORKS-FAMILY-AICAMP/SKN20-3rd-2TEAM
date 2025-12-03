@@ -4,7 +4,7 @@
     "paper_name": "BiCA: Effective Biomedical Dense Retrieval with Citation-Aware Hard Negatives",
     "github_url": "https://github.com/NiravBhattLab/BiCA",
     "huggingface_url": "https://huggingface.co/papers/2511.08029",
-    "upvote": 0,
+    "upvote": 2,
     "tags": [
       "hard",
       "negatives",

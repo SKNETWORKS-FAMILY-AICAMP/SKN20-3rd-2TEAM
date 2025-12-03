@@ -4,7 +4,7 @@
     "paper_name": "Too Good to be Bad: On the Failure of LLMs to Role-Play Villains",
     "github_url": "https://github.com/Tencent/digitalhuman/tree/main/RolePlay_Villain",
     "huggingface_url": "https://huggingface.co/papers/2511.04962",
-    "upvote": 0,
+    "upvote": 52,
     "tags": [
       "safety",
       "llms",

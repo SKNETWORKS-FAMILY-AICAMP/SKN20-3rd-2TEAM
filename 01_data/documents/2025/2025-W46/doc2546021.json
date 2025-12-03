@@ -4,7 +4,7 @@
     "paper_name": "KLASS: KL-Guided Fast Inference in Masked Diffusion Models",
     "github_url": "https://github.com/shkim0116/KLASS",
     "huggingface_url": "https://huggingface.co/papers/2511.05664",
-    "upvote": 0,
+    "upvote": 35,
     "tags": [
       "sampling",
       "klass",

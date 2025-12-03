@@ -4,7 +4,7 @@
     "paper_name": "Reasoning with Confidence: Efficient Verification of LLM Reasoning Steps via Uncertainty Heads",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.06209",
-    "upvote": 0,
+    "upvote": 17,
     "tags": [
       "uncertainty",
       "reasoning",
