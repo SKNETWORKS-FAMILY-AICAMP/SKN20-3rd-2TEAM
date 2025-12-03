@@ -1,14 +1,14 @@
 {
-    "content": "UniLumos, a unified relighting framework, enhances physical plausibility by integrating RGB-space geometry feedback into a flow matching backbone, achieving state-of-the-art results with improved consistency and speed.\nRelighting is a crucial task with both practical demand and artistic value, and recent diffusion models have shown strong potential by enabling rich and controllable lighting effects. However, as they are typically optimized in semantic latent space, where proximity does not guarantee physical correctness in visual space, they often produce unrealistic results, such as overexposed highlights, misaligned shadows, and incorrect occlusions. We address this with UniLumos, a unified relighting framework for both images and videos that brings RGB-space geometry feedback into a flow matching backbone. By supervising the model with depth and normal maps extracted from its outputs, we explicitly align lighting effects with the scene structure, enhancing physical plausibility. Nevertheless, this feedback requires high-quality outputs for supervision in visual space, making standard multi-step denoising computationally expensive. To mitigate this, we employ path consistency learning, allowing supervision to remain effective even under few-step training regimes. To enable fine-grained relighting control and supervision, we design a structured six-dimensional annotation protocol capturing core illumination attributes. Building upon this, we propose LumosBench, a disentangled attribute-level benchmark that evaluates lighting controllability via large vision-language models, enabling automatic and interpretable assessment of relighting precision across individual dimensions. Extensive experiments demonstrate that UniLumos achieves state-of-the-art relighting quality with significantly improved physical consistency, while delivering a 20x speedup for both image and video relighting. Code is available at https://github.com/alibaba-damo-academy/Lumos-Custom.",
-    "metadata": {
-        "paper_name": "UniLumos: Fast and Unified Image and Video Relighting with Physics-Plausible Feedback",
-        "github_url": "https://github.com/alibaba-damo-academy/Lumos-Custom",
-        "huggingface_url": "https://huggingface.co/papers/2511.01678",
-        "upvote": 34,
-        "tags": [
-            "relighting",
-            "space",
-            "physical"
-        ]
-    }
+  "context": "UniLumos, a unified relighting framework, enhances physical plausibility by integrating RGB-space geometry feedback into a flow matching backbone, achieving state-of-the-art results with improved consistency and speed.\nRelighting is a crucial task with both practical demand and artistic value, and recent diffusion models have shown strong potential by enabling rich and controllable lighting effects. However, as they are typically optimized in semantic latent space, where proximity does not guarantee physical correctness in visual space, they often produce unrealistic results, such as overexposed highlights, misaligned shadows, and incorrect occlusions. We address this with UniLumos, a unified relighting framework for both images and videos that brings RGB-space geometry feedback into a flow matching backbone. By supervising the model with depth and normal maps extracted from its outputs, we explicitly align lighting effects with the scene structure, enhancing physical plausibility. Nevertheless, this feedback requires high-quality outputs for supervision in visual space, making standard multi-step denoising computationally expensive. To mitigate this, we employ path consistency learning, allowing supervision to remain effective even under few-step training regimes. To enable fine-grained relighting control and supervision, we design a structured six-dimensional annotation protocol capturing core illumination attributes. Building upon this, we propose LumosBench, a disentangled attribute-level benchmark that evaluates lighting controllability via large vision-language models, enabling automatic and interpretable assessment of relighting precision across individual dimensions. Extensive experiments demonstrate that UniLumos achieves state-of-the-art relighting quality with significantly improved physical consistency, while delivering a 20x speedup for both image and video relighting. Code is available at https://github.com/alibaba-damo-academy/Lumos-Custom.",
+  "metadata": {
+    "paper_name": "UniLumos: Fast and Unified Image and Video Relighting with Physics-Plausible Feedback",
+    "github_url": "https://github.com/alibaba-damo-academy/Lumos-Custom",
+    "huggingface_url": "https://huggingface.co/papers/2511.01678",
+    "upvote": 34,
+    "tags": [
+      "relighting",
+      "space",
+      "physical"
+    ]
+  }
 }

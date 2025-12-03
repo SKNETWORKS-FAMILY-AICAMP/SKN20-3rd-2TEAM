@@ -1,14 +1,14 @@
 {
-    "content": "RiddleBench, a benchmark of 1,737 puzzles, reveals fundamental weaknesses in state-of-the-art language models, including hallucination cascades and poor self-correction, highlighting the need for more robust reasoning capabilities.\nLarge Language Models have demonstrated strong performance on many established reasoning benchmarks. However, these benchmarks primarily evaluate structured skills like quantitative problem-solving, leaving a gap in assessing flexible, multifaceted reasoning abilities that are central to human intelligence. These abilities require integrating logical deduction with spatial awareness and constraint satisfaction, which current evaluations do not measure well. To address this, we introduce RiddleBench, a benchmark of 1,737 challenging puzzles in English designed to probe these core reasoning capabilities. Evaluation of state-of-the-art models on RiddleBench shows fundamental weaknesses. Even top proprietary models like Gemini 2.5 Pro, o3, and Claude 4 Sonnet achieve accuracy just above 60% (60.30%, 63.37%, and 63.16%). Analysis further reveals deep failures, including hallucination cascades (accepting flawed reasoning from other models) and poor self-correction due to a strong self-confirmation bias. Their reasoning is also fragile, with performance degrading significantly when constraints are reordered or irrelevant information is introduced. RiddleBench functions as a diagnostic tool for these issues and as a resource for guiding the development of more robust and reliable language models.",
-    "metadata": {
-        "paper_name": "RiddleBench: A New Generative Reasoning Benchmark for LLMs",
-        "github_url": "",
-        "huggingface_url": "https://huggingface.co/papers/2510.24932",
-        "upvote": 5,
-        "tags": [
-            "models",
-            "reasoning",
-            "riddlebench"
-        ]
-    }
+  "context": "RiddleBench, a benchmark of 1,737 puzzles, reveals fundamental weaknesses in state-of-the-art language models, including hallucination cascades and poor self-correction, highlighting the need for more robust reasoning capabilities.\nLarge Language Models have demonstrated strong performance on many established reasoning benchmarks. However, these benchmarks primarily evaluate structured skills like quantitative problem-solving, leaving a gap in assessing flexible, multifaceted reasoning abilities that are central to human intelligence. These abilities require integrating logical deduction with spatial awareness and constraint satisfaction, which current evaluations do not measure well. To address this, we introduce RiddleBench, a benchmark of 1,737 challenging puzzles in English designed to probe these core reasoning capabilities. Evaluation of state-of-the-art models on RiddleBench shows fundamental weaknesses. Even top proprietary models like Gemini 2.5 Pro, o3, and Claude 4 Sonnet achieve accuracy just above 60% (60.30%, 63.37%, and 63.16%). Analysis further reveals deep failures, including hallucination cascades (accepting flawed reasoning from other models) and poor self-correction due to a strong self-confirmation bias. Their reasoning is also fragile, with performance degrading significantly when constraints are reordered or irrelevant information is introduced. RiddleBench functions as a diagnostic tool for these issues and as a resource for guiding the development of more robust and reliable language models.",
+  "metadata": {
+    "paper_name": "RiddleBench: A New Generative Reasoning Benchmark for LLMs",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.24932",
+    "upvote": 5,
+    "tags": [
+      "models",
+      "reasoning",
+      "riddlebench"
+    ]
+  }
 }

@@ -1,14 +1,14 @@
 {
-    "content": "A comprehensive comparison of low-precision floating-point and integer quantization in large language models reveals that fine-grained integer formats, especially MXINT8, offer superior accuracy and efficiency over floating-point formats in many cases.\nModern AI hardware, such as Nvidia's Blackwell architecture, is increasingly embracing low-precision floating-point (FP) formats to handle the pervasive activation outliers in Large Language Models (LLMs). Despite this industry trend, a unified comparison of FP and integer (INT) quantization across varying granularities has been missing, leaving algorithm and hardware co-design without clear guidance. This paper fills that gap by systematically investigating the trade-offs between FP and INT formats. We reveal a critical performance crossover: while FP excels in coarse-grained quantization, the comparison at fine-grained (block-wise) levels is more nuanced. Our comprehensive comparison demonstrates that for popular 8-bit fine-grained formats (e.g., MX with block size 32), MXINT8 is superior to its FP counterpart in both algorithmic accuracy and hardware efficiency. However, for 4-bit formats, FP (e.g., MXFP4, NVFP4) often holds an accuracy advantage , though we show that NVINT4 can surpass NVFP4 when outlier-mitigation techniques like Hadamard rotation are applied. We also introduce a symmetric clipping method that resolves gradient bias in fine-grained low-bit INT training, enabling nearly lossless performance for MXINT8 training. These findings challenge the current hardware trajectory, demonstrating that a one-size-fits-all FP approach is suboptimal and advocating that fine-grained INT formats, particularly MXINT8, offer a better balance of accuracy, power, and efficiency for future AI accelerators.",
-    "metadata": {
-        "paper_name": "INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats",
-        "github_url": "https://github.com/ChenMnZ/INT_vs_FP",
-        "huggingface_url": "https://huggingface.co/papers/2510.25602",
-        "upvote": 75,
-        "tags": [
-            "formats",
-            "grained",
-            "fine"
-        ]
-    }
+  "context": "A comprehensive comparison of low-precision floating-point and integer quantization in large language models reveals that fine-grained integer formats, especially MXINT8, offer superior accuracy and efficiency over floating-point formats in many cases.\nModern AI hardware, such as Nvidia's Blackwell architecture, is increasingly embracing low-precision floating-point (FP) formats to handle the pervasive activation outliers in Large Language Models (LLMs). Despite this industry trend, a unified comparison of FP and integer (INT) quantization across varying granularities has been missing, leaving algorithm and hardware co-design without clear guidance. This paper fills that gap by systematically investigating the trade-offs between FP and INT formats. We reveal a critical performance crossover: while FP excels in coarse-grained quantization, the comparison at fine-grained (block-wise) levels is more nuanced. Our comprehensive comparison demonstrates that for popular 8-bit fine-grained formats (e.g., MX with block size 32), MXINT8 is superior to its FP counterpart in both algorithmic accuracy and hardware efficiency. However, for 4-bit formats, FP (e.g., MXFP4, NVFP4) often holds an accuracy advantage , though we show that NVINT4 can surpass NVFP4 when outlier-mitigation techniques like Hadamard rotation are applied. We also introduce a symmetric clipping method that resolves gradient bias in fine-grained low-bit INT training, enabling nearly lossless performance for MXINT8 training. These findings challenge the current hardware trajectory, demonstrating that a one-size-fits-all FP approach is suboptimal and advocating that fine-grained INT formats, particularly MXINT8, offer a better balance of accuracy, power, and efficiency for future AI accelerators.",
+  "metadata": {
+    "paper_name": "INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats",
+    "github_url": "https://github.com/ChenMnZ/INT_vs_FP",
+    "huggingface_url": "https://huggingface.co/papers/2510.25602",
+    "upvote": 75,
+    "tags": [
+      "formats",
+      "grained",
+      "fine"
+    ]
+  }
 }

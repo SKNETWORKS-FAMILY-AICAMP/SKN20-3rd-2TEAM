@@ -1,14 +1,14 @@
 {
-    "content": "This paper develops a semantic information theory framework for large language models, focusing on token-level semantic embedding and information-theoretic measures to understand and analyze model architectures and performance.\nLarge language models (LLMs) have demonstrated remarkable capabilities in numerous real-world applications. While the vast majority of research conducted from an experimental perspective is progressing rapidly, it demands substantial computational power, data, and other resources. Therefore, how to open the black-box of LLMs from a theoretical standpoint has become a critical challenge. This paper takes the theory of rate-distortion function, directed information, and Granger causality as its starting point to investigate the information-theoretic principles behind LLMs, leading to the development of semantic information theory for LLMs, where the fundamental unit is token, rather than bits that lacks any semantic meaning. By defining the probabilistic model of LLMs, we discuss structure-agnostic information-theoretic measures, such as the directed rate-distortion function in pre-training, the directed rate-reward function in post-training, and the semantic information flow in inference phase. This paper also delves deeply into the theory of token-level semantic embedding and the information-theoretically optimal vectorization method. Thereafter, we propose a general definition of autoregression LLM, where the Transformer architecture and its performance such as ELBO, generalization error bound, memory capacity, and semantic information measures can be derived theoretically. Other architectures, such as Mamba/Mamba2 and LLaDA, are also discussed in our framework. Consequently, this paper provides a theoretical framework for understanding LLMs from the perspective of semantic information theory, which also offers the necessary theoretical tools for further in-depth research.",
-    "metadata": {
-        "paper_name": "Forget BIT, It is All about TOKEN: Towards Semantic Information Theory for LLMs",
-        "github_url": "",
-        "huggingface_url": "https://huggingface.co/papers/2511.01202",
-        "upvote": 5,
-        "tags": [
-            "information",
-            "semantic",
-            "llms"
-        ]
-    }
+  "context": "This paper develops a semantic information theory framework for large language models, focusing on token-level semantic embedding and information-theoretic measures to understand and analyze model architectures and performance.\nLarge language models (LLMs) have demonstrated remarkable capabilities in numerous real-world applications. While the vast majority of research conducted from an experimental perspective is progressing rapidly, it demands substantial computational power, data, and other resources. Therefore, how to open the black-box of LLMs from a theoretical standpoint has become a critical challenge. This paper takes the theory of rate-distortion function, directed information, and Granger causality as its starting point to investigate the information-theoretic principles behind LLMs, leading to the development of semantic information theory for LLMs, where the fundamental unit is token, rather than bits that lacks any semantic meaning. By defining the probabilistic model of LLMs, we discuss structure-agnostic information-theoretic measures, such as the directed rate-distortion function in pre-training, the directed rate-reward function in post-training, and the semantic information flow in inference phase. This paper also delves deeply into the theory of token-level semantic embedding and the information-theoretically optimal vectorization method. Thereafter, we propose a general definition of autoregression LLM, where the Transformer architecture and its performance such as ELBO, generalization error bound, memory capacity, and semantic information measures can be derived theoretically. Other architectures, such as Mamba/Mamba2 and LLaDA, are also discussed in our framework. Consequently, this paper provides a theoretical framework for understanding LLMs from the perspective of semantic information theory, which also offers the necessary theoretical tools for further in-depth research.",
+  "metadata": {
+    "paper_name": "Forget BIT, It is All about TOKEN: Towards Semantic Information Theory for LLMs",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.01202",
+    "upvote": 5,
+    "tags": [
+      "information",
+      "semantic",
+      "llms"
+    ]
+  }
 }

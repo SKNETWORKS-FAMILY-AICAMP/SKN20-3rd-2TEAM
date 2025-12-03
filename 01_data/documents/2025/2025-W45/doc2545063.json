@@ -1,14 +1,14 @@
 {
-    "content": "LTD-Bench evaluates large language models' spatial reasoning by requiring them to generate visual outputs, revealing significant limitations in their ability to map language to spatial concepts.\nCurrent evaluation paradigms for large language models (LLMs) represent a critical blind spot in AI research--relying on opaque numerical metrics that conceal fundamental limitations in spatial reasoning while providing no intuitive understanding of model capabilities. This deficiency creates a dangerous disconnect between reported performance and practical abilities, particularly for applications requiring physical world understanding. We introduce LTD-Bench, a breakthrough benchmark that transforms LLM evaluation from abstract scores to directly observable visual outputs by requiring models to generate drawings through dot matrices or executable code. This approach makes spatial reasoning limitations immediately apparent even to non-experts, bridging the fundamental gap between statistical performance and intuitive assessment. LTD-Bench implements a comprehensive methodology with complementary generation tasks (testing spatial imagination) and recognition tasks (assessing spatial perception) across three progressively challenging difficulty levels, methodically evaluating both directions of the critical language-spatial mapping. Our extensive experiments with state-of-the-art models expose an alarming capability gap: even LLMs achieving impressive results on traditional benchmarks demonstrate profound deficiencies in establishing bidirectional mappings between language and spatial concept--a fundamental limitation that undermines their potential as genuine world models. Furthermore, LTD-Bench's visual outputs enable powerful diagnostic analysis, offering a potential approach to investigate model similarity.",
-    "metadata": {
-        "paper_name": "LTD-Bench: Evaluating Large Language Models by Letting Them Draw",
-        "github_url": "",
-        "huggingface_url": "https://huggingface.co/papers/2511.02347",
-        "upvote": 8,
-        "tags": [
-            "spatial",
-            "language",
-            "models"
-        ]
-    }
+  "context": "LTD-Bench evaluates large language models' spatial reasoning by requiring them to generate visual outputs, revealing significant limitations in their ability to map language to spatial concepts.\nCurrent evaluation paradigms for large language models (LLMs) represent a critical blind spot in AI research--relying on opaque numerical metrics that conceal fundamental limitations in spatial reasoning while providing no intuitive understanding of model capabilities. This deficiency creates a dangerous disconnect between reported performance and practical abilities, particularly for applications requiring physical world understanding. We introduce LTD-Bench, a breakthrough benchmark that transforms LLM evaluation from abstract scores to directly observable visual outputs by requiring models to generate drawings through dot matrices or executable code. This approach makes spatial reasoning limitations immediately apparent even to non-experts, bridging the fundamental gap between statistical performance and intuitive assessment. LTD-Bench implements a comprehensive methodology with complementary generation tasks (testing spatial imagination) and recognition tasks (assessing spatial perception) across three progressively challenging difficulty levels, methodically evaluating both directions of the critical language-spatial mapping. Our extensive experiments with state-of-the-art models expose an alarming capability gap: even LLMs achieving impressive results on traditional benchmarks demonstrate profound deficiencies in establishing bidirectional mappings between language and spatial concept--a fundamental limitation that undermines their potential as genuine world models. Furthermore, LTD-Bench's visual outputs enable powerful diagnostic analysis, offering a potential approach to investigate model similarity.",
+  "metadata": {
+    "paper_name": "LTD-Bench: Evaluating Large Language Models by Letting Them Draw",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.02347",
+    "upvote": 8,
+    "tags": [
+      "spatial",
+      "language",
+      "models"
+    ]
+  }
 }

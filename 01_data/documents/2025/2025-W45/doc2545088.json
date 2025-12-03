@@ -1,14 +1,14 @@
 {
-    "content": "BRAINS, a system using Large Language Models, effectively detects and monitors Alzheimer's disease by integrating cognitive assessments and case retrieval.\nAs the global burden of Alzheimer's disease (AD) continues to grow, early and accurate detection has become increasingly critical, especially in regions with limited access to advanced diagnostic tools. We propose BRAINS (Biomedical Retrieval-Augmented Intelligence for Neurodegeneration Screening) to address this challenge. This novel system harnesses the powerful reasoning capabilities of Large Language Models (LLMs) for Alzheimer's detection and monitoring. BRAINS features a dual-module architecture: a cognitive diagnostic module and a case-retrieval module. The Diagnostic Module utilizes LLMs fine-tuned on cognitive and neuroimaging datasets -- including MMSE, CDR scores, and brain volume metrics -- to perform structured assessments of Alzheimer's risk. Meanwhile, the Case Retrieval Module encodes patient profiles into latent representations and retrieves similar cases from a curated knowledge base. These auxiliary cases are fused with the input profile via a Case Fusion Layer to enhance contextual understanding. The combined representation is then processed with clinical prompts for inference. Evaluations on real-world datasets demonstrate BRAINS effectiveness in classifying disease severity and identifying early signs of cognitive decline. This system not only shows strong potential as an assistive tool for scalable, explainable, and early-stage Alzheimer's disease detection, but also offers hope for future applications in the field.",
-    "metadata": {
-        "paper_name": "BRAINS: A Retrieval-Augmented System for Alzheimer's Detection and Monitoring",
-        "github_url": "",
-        "huggingface_url": "https://huggingface.co/papers/2511.02490",
-        "upvote": 3,
-        "tags": [
-            "alzheimer",
-            "module",
-            "brains"
-        ]
-    }
+  "context": "BRAINS, a system using Large Language Models, effectively detects and monitors Alzheimer's disease by integrating cognitive assessments and case retrieval.\nAs the global burden of Alzheimer's disease (AD) continues to grow, early and accurate detection has become increasingly critical, especially in regions with limited access to advanced diagnostic tools. We propose BRAINS (Biomedical Retrieval-Augmented Intelligence for Neurodegeneration Screening) to address this challenge. This novel system harnesses the powerful reasoning capabilities of Large Language Models (LLMs) for Alzheimer's detection and monitoring. BRAINS features a dual-module architecture: a cognitive diagnostic module and a case-retrieval module. The Diagnostic Module utilizes LLMs fine-tuned on cognitive and neuroimaging datasets -- including MMSE, CDR scores, and brain volume metrics -- to perform structured assessments of Alzheimer's risk. Meanwhile, the Case Retrieval Module encodes patient profiles into latent representations and retrieves similar cases from a curated knowledge base. These auxiliary cases are fused with the input profile via a Case Fusion Layer to enhance contextual understanding. The combined representation is then processed with clinical prompts for inference. Evaluations on real-world datasets demonstrate BRAINS effectiveness in classifying disease severity and identifying early signs of cognitive decline. This system not only shows strong potential as an assistive tool for scalable, explainable, and early-stage Alzheimer's disease detection, but also offers hope for future applications in the field.",
+  "metadata": {
+    "paper_name": "BRAINS: A Retrieval-Augmented System for Alzheimer's Detection and Monitoring",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.02490",
+    "upvote": 3,
+    "tags": [
+      "alzheimer",
+      "module",
+      "brains"
+    ]
+  }
 }

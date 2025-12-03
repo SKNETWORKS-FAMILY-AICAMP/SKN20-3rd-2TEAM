@@ -1,14 +1,14 @@
 {
-    "content": "A comprehensive analysis of multimodal Rotary Positional Embedding (RoPE) leads to the proposal of Multi-Head RoPE (MHRoPE) and MRoPE-Interleave (MRoPE-I), which improve multimodal understanding in vision-language models.\nMultimodal position encoding is essential for vision-language models, yet there has been little systematic investigation into multimodal position encoding. We conduct a comprehensive analysis of multimodal Rotary Positional Embedding (RoPE) by examining its two core components: position design and frequency allocation. Through extensive experiments, we identify three key guidelines: positional coherence, full frequency utilization, and preservation of textual priors-ensuring unambiguous layout, rich representation, and faithful transfer from the pre-trained LLM. Based on these insights, we propose Multi-Head RoPE (MHRoPE) and MRoPE-Interleave (MRoPE-I), two simple and plug-and-play variants that require no architectural changes. Our methods consistently outperform existing approaches across diverse benchmarks, with significant improvements in both general and fine-grained multimodal understanding. Code will be avaliable at https://github.com/JJJYmmm/Multimodal-RoPEs.",
-    "metadata": {
-        "paper_name": "Revisiting Multimodal Positional Encoding in Vision-Language Models",
-        "github_url": "",
-        "huggingface_url": "https://huggingface.co/papers/2510.23095",
-        "upvote": 20,
-        "tags": [
-            "multimodal",
-            "rope",
-            "mrope"
-        ]
-    }
+  "context": "A comprehensive analysis of multimodal Rotary Positional Embedding (RoPE) leads to the proposal of Multi-Head RoPE (MHRoPE) and MRoPE-Interleave (MRoPE-I), which improve multimodal understanding in vision-language models.\nMultimodal position encoding is essential for vision-language models, yet there has been little systematic investigation into multimodal position encoding. We conduct a comprehensive analysis of multimodal Rotary Positional Embedding (RoPE) by examining its two core components: position design and frequency allocation. Through extensive experiments, we identify three key guidelines: positional coherence, full frequency utilization, and preservation of textual priors-ensuring unambiguous layout, rich representation, and faithful transfer from the pre-trained LLM. Based on these insights, we propose Multi-Head RoPE (MHRoPE) and MRoPE-Interleave (MRoPE-I), two simple and plug-and-play variants that require no architectural changes. Our methods consistently outperform existing approaches across diverse benchmarks, with significant improvements in both general and fine-grained multimodal understanding. Code will be avaliable at https://github.com/JJJYmmm/Multimodal-RoPEs.",
+  "metadata": {
+    "paper_name": "Revisiting Multimodal Positional Encoding in Vision-Language Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.23095",
+    "upvote": 20,
+    "tags": [
+      "multimodal",
+      "rope",
+      "mrope"
+    ]
+  }
 }
