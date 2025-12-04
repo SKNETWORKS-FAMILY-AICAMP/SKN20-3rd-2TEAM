@@ -510,21 +510,22 @@ def crawl_weekly_papers(year: int, week: int):
 if __name__ == "__main__":
     """메인 실행 함수"""
     # 로깅 설정
+    log_dir = "././01_data/logs"
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s [%(levelname)s] %(message)s',
         handlers=[
             # 로그 파일 이름은 datetime 사용
-            logging.FileHandler(f'crawling_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log', encoding='utf-8'),
+            logging.FileHandler(f"{log_dir}/crawling_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log", encoding='utf-8'),
             logging.StreamHandler()
         ]
     )
 
     # 크롤링 실행 (예시: 2025년 48주차)
     try:
-        crawl_weekly_papers(year=2025, week=48)
+        crawl_weekly_papers(year=2025, week=45)
     except Exception as e:
-        logging.error(f"[ERROR] W{48:02d} 크롤링 실패: {e})
+        logging.error(f"[ERROR] W{45:02d} 크롤링 실패: {e}")
 
     # 최신 데이터 크롤링 실행
     # 배치 돌 때 사용
