@@ -1,14 +1,14 @@
 {
-  "context": "AthenaBench, an enhanced benchmark for evaluating LLMs in CTI, reveals limitations in reasoning capabilities of current models, especially for tasks like threat actor attribution and risk mitigation.\nLarge Language Models (LLMs) have demonstrated strong capabilities in natural language reasoning, yet their application to Cyber Threat Intelligence (CTI) remains limited. CTI analysis involves distilling large volumes of unstructured reports into actionable knowledge, a process where LLMs could substantially reduce analyst workload. CTIBench introduced a comprehensive benchmark for evaluating LLMs across multiple CTI tasks. In this work, we extend CTIBench by developing AthenaBench, an enhanced benchmark that includes an improved dataset creation pipeline, duplicate removal, refined evaluation metrics, and a new task focused on risk mitigation strategies. We evaluate twelve LLMs, including state-of-the-art proprietary models such as GPT-5 and Gemini-2.5 Pro, alongside seven open-source models from the LLaMA and Qwen families. While proprietary LLMs achieve stronger results overall, their performance remains subpar on reasoning-intensive tasks, such as threat actor attribution and risk mitigation, with open-source models trailing even further behind. These findings highlight fundamental limitations in the reasoning capabilities of current LLMs and underscore the need for models explicitly tailored to CTI workflows and automation.",
+  "context": "AthenaBench, an enhanced benchmark for evaluating LLMs in CTI, reveals limitations in reasoning capabilities of current models, especially for tasks like threat actor attribution and risk mitigation. Large Language Models(LLMs) have demonstrated strong capabilities in natural\nlanguage reasoning, yet their application toCyber Threat Intelligence(CTI)\nremains limited.CTIanalysis involves distilling large volumes of unstructured\nreports into actionable knowledge, a process where LLMs could substantially\nreduce analyst workload.CTIBenchintroduced a comprehensive benchmark for\nevaluating LLMs across multipleCTItasks. In this work, we extendCTIBenchby\ndevelopingAthenaBench, an enhanced benchmark that includes an improved dataset\ncreation pipeline,duplicate removal, refinedevaluation metrics, and a new\ntask focused onrisk mitigation strategies. We evaluate twelve LLMs, including\nstate-of-the-art proprietary models such asGPT-5andGemini-2.5 Pro, alongside\nseven open-source models from theLLaMAandQwenfamilies. While proprietary\nLLMs achieve stronger results overall, their performance remains subpar on\nreasoning-intensive tasks, such as threat actor attribution and risk\nmitigation, with open-source models trailing even further behind. These\nfindings highlight fundamental limitations in the reasoning capabilities of\ncurrent LLMs and underscore the need for models explicitly tailored toCTIworkflows and automation. This is the updated version of our work onCTIBench, NeurIPS 2024. It includes an additional task, improved data construction pipeline, and more recent datasets with refined evaluation. Code and dataset:https://github.com/Athena-Software-Group/athenabench Please use this version of the dataset going forward. ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "AthenaBench: A Dynamic Benchmark for Evaluating LLMs in Cyber Threat Intelligence",
+    "paper_name": "AthenaBench: A Dynamic Benchmark for Evaluating LLMs in Cyber Threat\n  Intelligence",
     "github_url": "https://github.com/Athena-Software-Group/athenabench",
     "huggingface_url": "https://huggingface.co/papers/2511.01144",
-    "upvote": 3,
+    "upvote": 0,
     "tags": [
-      "llms",
-      "models",
-      "cti"
+      "llm",
+      "reasoning",
+      "benchmark"
     ]
   }
 }

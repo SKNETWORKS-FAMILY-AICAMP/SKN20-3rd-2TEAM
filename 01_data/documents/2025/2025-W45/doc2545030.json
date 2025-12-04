@@ -1,14 +1,14 @@
 {
-  "context": "Nemotron Nano V2 VL, a hybrid Mamba-Transformer LLM, improves document and video understanding through enhanced architecture and token reduction techniques.\nWe introduce Nemotron Nano V2 VL, the latest model of the Nemotron vision-language series designed for strong real-world document understanding, long video comprehension, and reasoning tasks. Nemotron Nano V2 VL delivers significant improvements over our previous model, Llama-3.1-Nemotron-Nano-VL-8B, across all vision and text domains through major enhancements in model architecture, datasets, and training recipes. Nemotron Nano V2 VL builds on Nemotron Nano V2, a hybrid Mamba-Transformer LLM, and innovative token reduction techniques to achieve higher inference throughput in long document and video scenarios. We are releasing model checkpoints in BF16, FP8, and FP4 formats and sharing large parts of our datasets, recipes and training code.",
+  "context": "Nemotron Nano V2 VL, a hybrid Mamba-Transformer LLM, improves document and video understanding through enhanced architecture and token reduction techniques. We introduce Nemotron Nano V2 VL, the latest model of the Nemotron\nvision-language series designed for strong real-world document understanding,\nlong video comprehension, and reasoning tasks. Nemotron Nano V2 VL delivers\nsignificant improvements over our previous model,\nLlama-3.1-Nemotron-Nano-VL-8B, across all vision and text domains through major\nenhancements in model architecture, datasets, and training recipes. Nemotron\nNano V2 VL builds on Nemotron Nano V2, a hybridMamba-TransformerLLM, and\ninnovativetoken reduction techniquesto achieve higher inference throughput in\nlong document and video scenarios. We are releasing model checkpoints inBF16,FP8, andFP4formats and sharing large parts of our datasets, recipes and\ntraining code. NVIDIA Nemotron Nano V2 VL This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
     "paper_name": "NVIDIA Nemotron Nano V2 VL",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.03929",
-    "upvote": 26,
+    "upvote": 0,
     "tags": [
-      "nemotron",
-      "nano",
-      "model"
+      "nemotron nano",
+      "keyword2",
+      "keyword3"
     ]
   }
 }
