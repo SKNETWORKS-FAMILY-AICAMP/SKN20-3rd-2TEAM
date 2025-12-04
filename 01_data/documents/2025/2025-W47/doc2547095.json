@@ -1,0 +1,14 @@
+{
+  "context": "We perform a thorough analysis of the formal and informal statements in the miniF2F benchmark from the perspective of an AI system that is tasked to participate in a math Olympiad consisting of the problems in miniF2F. In such setting, the model has to read and comprehend the problems in natural language, formalize them in Lean language, then proceed with proving the problems, and it will get credit for each problem if the formal proof corresponds to the original informal statement presented to the model. Our evaluation results reveal that the best accuracy of such pipeline can be about 36% using the SoTA models in the literature, considerably lower than the individual SoTA accuracies, 97% and 69% reported in the autoformalization and theorem proving literature. Analyzing the failure modes, we trace back a considerable portion of this drop to discrepancies between the formal and informal statements for more than half of the problems in miniF2F. We proceed with correcting all the errors, discrepancies and simplifications in formal and informal statements, and present the miniF2F-v2 with fully verified formal and informal statements and proofs. Evaluating the full theorem proving pipeline on miniF2F-v2 leads to the best accuracy of 70%, a significant improvement from the 40% on the original miniF2F, yet indicating considerable misalignment between the autoformalization models and theorem provers. Our deep analysis suggests that a higher quality benchmark can help the community better evaluate progress in the field of formal reasoning and also better diagnose the failure and success modes of autoformalization and theorem proving models. Our dataset is available at https://github.com/roozbeh-yz/miniF2F_v2. Dataset is also available here:https://github.com/roozbeh-yz/miniF2F_v2 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "miniF2F-Lean Revisited: Reviewing Limitations and Charting a Path Forward",
+    "github_url": "https://github.com/roozbeh-yz/miniF2F_v2",
+    "huggingface_url": "https://huggingface.co/papers/2511.03108",
+    "upvote": 2,
+    "tags": [
+      "formal",
+      "informal statement",
+      "keyword3"
+    ]
+  }
+}

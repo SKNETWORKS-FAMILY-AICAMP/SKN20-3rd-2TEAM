@@ -1,0 +1,14 @@
+{
+  "context": "FlashVGGT uses descriptor-based attention to efficiently perform 3D reconstruction from multi-view images, significantly reducing inference time and improving scalability compared to VGGT. 3D reconstruction from multi-view images is a core challenge in computer vision. Recently,feed-forward methodshave emerged as efficient and robust alternatives to traditional per-scene optimization techniques. Among them, state-of-the-art models like theVisual Geometry Grounding Transformer (VGGT)leverage fullself-attentionover all image tokens to capture global relationships. However, this approach suffers from poor scalability due to the quadratic complexity ofself-attentionand the large number of tokens generated in long image sequences. In this work, we introduce FlashVGGT, an efficient alternative that addresses this bottleneck through adescriptor-based attentionmechanism. Instead of applying dense global attention across all tokens, FlashVGGT compresses spatial information from each frame into a compact set ofdescriptor tokens. Global attention is then computed ascross-attentionbetween the full set of image tokens and this smaller descriptor set, significantly reducing computational overhead. Moreover, the compactness of the descriptors enablesonline inferenceover long sequences via achunk-recursive mechanismthat reuses cached descriptors from previous chunks. Experimental results show that FlashVGGT achieves reconstruction accuracy competitive with VGGT while reducing inference time to just 9.3% of VGGT for 1,000 images, and scaling efficiently to sequences exceeding 3,000 images. Our project page is available at https://wzpscott.github.io/flashvggt_page/. TLDR: Accelerate VGGT with more efficient global attention for ~10x faster inference on 1K images and scaling to 3K+ images. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "FlashVGGT: Efficient and Scalable Visual Geometry Transformers with Compressed Descriptor Attention",
+    "github_url": "https://github.com/wzpscott/flashvggt",
+    "huggingface_url": "https://huggingface.co/papers/2512.01540",
+    "upvote": 2,
+    "tags": [
+      "image",
+      "token",
+      "vggt"
+    ]
+  }
+}

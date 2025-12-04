@@ -1,0 +1,14 @@
+{
+  "context": "A framework combining Determinantal Point Processes and Group Relative Policy Optimization enhances diversity in text-to-video generation without compromising quality. While recenttext-to-video (T2V) diffusion modelshave achieved impressive quality and prompt alignment, they often produce low-diversity outputs when sampling multiple videos from a single text prompt. We tackle this challenge by formulating it as aset-level policy optimizationproblem, with the goal of training a policy that can cover the diverse range of plausible outcomes for a given prompt. To address this, we introduce DPP-GRPO, a novel framework fordiverse video generationthat combinesDeterminantal Point Processes (DPPs)andGroup Relative Policy Optimization (GRPO)theories to enforce explicit reward on diverse generations. Our objective turns diversity into an explicit signal by imposing diminishing returns on redundant samples (via DPP) while supplies groupwise feedback over candidate sets (via GRPO). Our framework is plug-and-play and model-agnostic, and encourages diverse generations acrossvisual appearance,camera motions, andscene structurewithout sacrificing prompt fidelity or perceptual quality. We implement our method on WAN and CogVideoX, and show that our method consistently improves video diversity on state-of-the-art benchmarks such asVBench,VideoScore, and human preference studies. Moreover, we release our code and a new benchmark dataset of 30,000 diverse prompts to support future research. https://diverse-video.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Diverse Video Generation with Determinantal Point Process-Guided Policy Optimization",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.20647",
+    "upvote": 2,
+    "tags": [
+      "video",
+      "diverse",
+      "prompt"
+    ]
+  }
+}

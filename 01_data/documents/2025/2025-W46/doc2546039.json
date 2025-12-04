@@ -1,0 +1,14 @@
+{
+  "context": "AlphaResearch, an autonomous research agent, discovers new algorithms in open-ended problems with a dual research environment, achieving competitive performance against human researchers in a benchmark competition. Large language models have made significant progress in complex but easy-to-verify problems, yet they still struggle with discovering the unknown. In this paper, we presentAlphaResearch, an autonomous research agent designed to discover new algorithms on open-ended problems. To synergize the feasibility and innovation of the discovery process, we construct a noveldual research environmentby combining the execution-based verify andsimulated real-world peer reviewenvironment.AlphaResearchdiscovers new algorithm by iteratively running the following steps: (1) propose new ideas (2) verify the ideas in thedual research environment(3) optimize the research proposals for better performance. To promote a transparent evaluation process, we constructAlphaResearchComp, a new evaluation benchmark that includes an eightopen-ended algorithmic problemscompetition, with each problem carefully curated and verified through executable pipelines, objective metrics, and reproducibility checks.AlphaResearchgets a 2/8 win rate in head-to-head comparison with human researchers, demonstrate the possibility of acceleratingalgorithm discoverywith LLMs. Notably, the algorithm discovered byAlphaResearchon the ``packing circles'' problem achieves the best-of-known performance, surpassing the results of human researchers and strong baselines from recent work (e.g.,AlphaEvolve). Additionally, we conduct a comprehensive analysis of the remaining challenges of the 6/8 failure cases, providing valuable insights for future research. https://github.com/answers111/alpha-research This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "AlphaResearch: Accelerating New Algorithm Discovery with Language Models",
+    "github_url": "https://github.com/answers111/alpha-research",
+    "huggingface_url": "https://huggingface.co/papers/2511.08522",
+    "upvote": 15,
+    "tags": [
+      "research",
+      "new",
+      "problem"
+    ]
+  }
+}

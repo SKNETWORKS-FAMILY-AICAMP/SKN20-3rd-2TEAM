@@ -1,0 +1,14 @@
+{
+  "context": "A generative approach extracts motion patterns from video models, embeds them into a latent space, and uses neural key point trajectories to generate diverse 3D motions from a single image. We present DIMO, agenerative approachcapable of generating diverse 3D\nmotions for arbitrary objects from a single image. The core idea of our work is\nto leverage the rich priors in well-trainedvideo modelsto extract the common\nmotion patterns and then embed them into a shared low-dimensionallatent space.\nSpecifically, we first generate multiple videos of the same object with diverse\nmotions. We then embed each motion into a latent vector and train a sharedmotion decoderto learn the distribution of motions represented by a structured\nand compact motion representation, i.e.,neural key point trajectories. Thecanonical 3D Gaussiansare then driven by these key points and fused to model\nthe geometry and appearance. During inference time with learnedlatent space,\nwe can instantly sample diverse3D motionsin a single-forward pass and support\nseveral interesting applications including3D motion interpolationandlanguage-guided motion generation. Our project page is available at\nhttps://linzhanm.github.io/dimo. We present DIMO, a generative approach capable of generating diverse 3D motions for arbitrary objects from a single image. The core idea of our work is to leverage the rich priors in well-trained video models to extract the common motion patterns and then embed them into a shared low-dimensional latent space. Specifically, we first generate multiple videos of the same object with diverse motions. We then embed each motion into a latent vector and train a shared motion decoder to learn the distribution of motions represented by a structured and compact motion representation, i.e., neural key point trajectories. The canonical 3D Gaussians are then driven by these key points and fused to model the geometry and appearance. During inference time with learned latent space, we can instantly sample diverse 3D motions in a single-forward pass and support several interesting applications including 3D motion interpolation and language-guided motion generation. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "DIMO: Diverse 3D Motion Generation for Arbitrary Objects",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.07409",
+    "upvote": 4,
+    "tags": [
+      "diverse motion",
+      "keyword2",
+      "keyword3"
+    ]
+  }
+}

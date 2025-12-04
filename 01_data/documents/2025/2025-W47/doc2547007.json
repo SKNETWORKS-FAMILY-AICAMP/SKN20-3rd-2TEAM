@@ -1,0 +1,14 @@
+{
+  "context": "Agent0, a self-evolving framework utilizing multi-step co-evolution and tool integration, enhances LLM reasoning capabilities without human-curated data. Large Language Model (LLM)Agents, often trained withReinforcement Learning (RL), are constrained by a dependency on human-curated data, limiting scalability and tethering AI to human knowledge. Existingself-evolution frameworksoffer an alternative but are typically restricted by the model's inherent capabilities and single-round interactions, hindering the development of complex curricula involving tool use or dynamic reasoning. We introduce Agent0, a fully autonomous framework that evolves high-performing agents without external data throughmulti-step co-evolutionand seamlesstool integration. Agent0 establishes a symbiotic competition between two agents initialized from the same base LLM: acurriculum agentthat proposes increasingly challenging frontier tasks, and anexecutor agentthat learns to solve them. We integrate external tools to enhance the executor's problem-solving capacity; this improvement, in turn, pressures thecurriculum agentto construct more complex, tool-aware tasks. Through this iterative process, Agent0 establishes a self-reinforcing cycle that continuously produces high-quality curricula. Empirically, Agent0 substantially boosts reasoning capabilities, improving the Qwen3-8B-Base model by 18% onmathematical reasoningand 24% ongeneral reasoning benchmarks. Code is available at https://github.com/aiming-lab/Agent0. Agent0 is a fully autonomous framework that evolves high-performing agents from scratch without relying on any human-curated data. It employs a symbiotic competition between a Curriculum Agent (proposing tasks) and an Executor Agent (solving tasks with tools), driving a self-reinforcing cycle of improvement. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reasoning There already is a self evolving agent called Agent Zero - agent-zero.ai ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning",
+    "github_url": "https://github.com/aiming-lab/Agent0",
+    "huggingface_url": "https://huggingface.co/papers/2511.16043",
+    "upvote": 103,
+    "tags": [
+      "agent",
+      "tool",
+      "reasoning"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "BioBench is an open ecology vision benchmark that addresses the limitations of ImageNet-1K accuracy for scientific imagery by evaluating models on a diverse set of ecological tasks and modalities. ImageNet-1Klinear-probe transfer accuracyremains the default proxy forvisual representation quality, yet it no longer predicts performance on scientific imagery. Across 46 modern vision model checkpoints, ImageNet top-1 accuracy explains only 34% of variance onecology tasksand mis-ranks 30% of models above 75% accuracy. We presentBioBench, an open ecology vision benchmark that captures what ImageNet misses.BioBenchunifies 9 publicly released,application-driven tasks, 4taxonomic kingdoms, and 6acquisition modalities(drone RGB,web video,micrographs,in-situandspecimen photos,camera-trap frames), totaling 3.1M images. A single Python API downloads data, fits lightweight classifiers to frozen backbones, and reportsclass-balanced macro-F1(plus domain metrics for FishNet and FungiCLEF);ViT-L modelsevaluate in 6 hours on an A6000 GPU.BioBenchprovides new signal for computer vision in ecology and a template recipe for building reliable AI-for-science benchmarks in any domain. Code and predictions are available at https://github.com/samuelstevens/biobenchand results at https://samuelstevens.me/biobench. Across 46 modern vision transformer checkpoints, ImageNet top-1 accuracy explains only 34% of variance on ecology tasks andmis-ranks 30% of models above 75% accuracy(emphasis mine) Interactive results for all models and tasks are here:https://samuelstevens.me/biobench/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "BioBench: A Blueprint to Move Beyond ImageNet for Scientific ML Benchmarks",
+    "github_url": "https://github.com/samuelstevens/biobench",
+    "huggingface_url": "https://huggingface.co/papers/2511.16315",
+    "upvote": 2,
+    "tags": [
+      "accuracy",
+      "imagenet",
+      "vision"
+    ]
+  }
+}

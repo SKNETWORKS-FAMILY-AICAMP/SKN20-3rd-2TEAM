@@ -1,0 +1,14 @@
+{
+  "context": "ARC-Chapter is a large-scale video chaptering model that improves performance through extensive training data and a new evaluation metric, demonstrating superior results and transferability. The proliferation of hour-long videos (e.g., lectures, podcasts, documentaries) has intensified demand for efficient content structuring. However, existing approaches are constrained by small-scale training with annotations that are typical short and coarse, restricting generalization to nuanced transitions in long videos. We introduce ARC-Chapter, the first large-scalevideo chapteringmodel trained on over million-level long video chapters, featuring bilingual, temporally grounded, and hierarchical chapter annotations. To achieve this goal, we curated a bilingual English-Chinese chapter dataset via a structured pipeline that unifiesASR transcripts,scene texts,visual captionsintomulti-level annotations, from short title to long summaries. We demonstrate clear performance improvements with data scaling, both in data volume and label intensity. Moreover, we design a new evaluation metric termedGRACE, which incorporates many-to-one segment overlaps and semantic similarity, better reflecting real-world chaptering flexibility. Extensive experiments demonstrate that ARC-Chapter establishes a new state-of-the-art by a significant margin, outperforming the previous best by 14.0% inF1 scoreand 11.3% inSODA score. Moreover, ARC-Chapter shows excellent transferability, improving the state-of-the-art on downstream tasks likedense video captioningon YouCook2. ARC-Chapter is a large-scale model from Tencent ARC Lab for deep video understanding and structured chapter generation. ARC-Chapter automatically analyzes videos that have a clear narrative or semantic structure, segmenting them into meaningful chapters, identifying precise timestamps, and generating summaries for each part. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "ARC-Chapter: Structuring Hour-Long Videos into Navigable Chapters and Hierarchical Summaries",
+    "github_url": "https://github.com/TencentARC/ARC-Chapter",
+    "huggingface_url": "https://huggingface.co/papers/2511.14349",
+    "upvote": 16,
+    "tags": [
+      "chapter",
+      "arc",
+      "video"
+    ]
+  }
+}

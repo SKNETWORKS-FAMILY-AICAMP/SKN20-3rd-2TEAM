@@ -1,0 +1,14 @@
+{
+  "context": "GR-RL enhances a vision-language-action policy for long-horizon dexterous manipulation through a multi-stage training pipeline that filters, augments, and refines demonstrations using reinforcement learning. We present GR-RL, a robotic learning framework that turns a generalistvision-language-action (VLA) policyinto a highly capable specialist for long-horizondexterous manipulation. Assuming the optimality of human demonstrations is core to existing VLA policies. However, we claim that in highly dexterous and precise manipulation tasks, human demonstrations are noisy and suboptimal. GR-RL proposes a multi-stage training pipeline that filters, augments, and reinforces the demonstrations byreinforcement learning. First, GR-RL learns a vision-language-conditionedtask progress, filters the demonstration trajectories, and only keeps the transitions that contribute positively to the progress. Specifically, we show that by directly applyingoffline RLwithsparse reward, the resulting Q-values can be treated as a robust progress function. Next, we introducemorphological symmetry augmentationthat greatly improves the generalization and performance of GR-RL. Lastly, to better align the VLA policy with its deployment behaviors for high-precision control, we performonline RLby learning alatent space noise predictor. With this pipeline, GR-RL is, to our knowledge, the first learning-based policy that can autonomously lace up a shoe by threading shoelaces through multiple eyelets with an 83.3% success rate, a task requiringlong-horizon reasoning,millimeter-level precision, andcompliant soft-body interaction. We hope GR-RL provides a step toward enabling generalist robot foundations models to specialize into reliable real-world experts. Our VLA-RL model that learns to lace up your shoes :) good job! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.01801",
+    "upvote": 22,
+    "tags": [
+      "demonstration",
+      "learning",
+      "policy"
+    ]
+  }
+}

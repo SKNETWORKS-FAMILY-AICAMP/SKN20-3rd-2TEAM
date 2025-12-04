@@ -1,0 +1,14 @@
+{
+  "context": "Bridge Models, instantiated as Vision Bridge Transformer (ViBT), efficiently translate data through direct modeling of input-to-output trajectories, achieving robust performance in image and video editing tasks at large scales. We introduceVision Bridge Transformer (ViBT), a large-scale instantiation ofBrownian Bridge Modelsdesigned for conditional generation. Unlike traditionaldiffusion modelsthat transform noise into data, Bridge Models directly model the trajectory between inputs and outputs, creating an efficientdata-to-data translationparadigm. By scaling these models to 20B and 1.3B parameters, we demonstrate their effectiveness for image and video translation tasks. To support this scale, we adopt a Transformer architecture and propose avariance-stabilized velocity-matching objectivefor robust training. Together, these advances highlight the power of scaling Bridge Models for instruction-based image editing and complex video translation. 🚀 ViBT: The First Vision Bridge Transformer at 20B ParametersOpen-source • Data-to-Data Translation • Built for the Next Generation of Conditional Vision Models Project Page:https://yuanshi9815.github.io/ViBT_homepage/Paper:https://arxiv.org/abs/2511.23199Code:https://github.com/Yuanshi9815/ViBTHF Demo:https://huggingface.co/spaces/Yuanshi/ViBTHF Model:https://huggingface.co/Yuanshi/ViBT  Let's go ! Look very similar to LBM You are right! I guess we’re building on the same Brownian Bridge model paradigm to learn the distribution. The difference is on thescaling: stabilized training objective, a much larger model with transformers, and more complex tasks. There’s a huge opportunity for bridge models. I guess more will come soon. 🔍 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Vision Bridge Transformer at Scale",
+    "github_url": "https://github.com/Yuanshi9815/ViBT",
+    "huggingface_url": "https://huggingface.co/papers/2511.23199",
+    "upvote": 40,
+    "tags": [
+      "bridge",
+      "http",
+      "transformer"
+    ]
+  }
+}

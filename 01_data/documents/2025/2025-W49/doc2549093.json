@@ -1,0 +1,14 @@
+{
+  "context": "VisualSync aligns unposed, unsynchronized videos using multi-view dynamics and epipolar constraints, outperforming existing methods with millisecond accuracy. Today, people can easily record memorable moments, ranging from concerts, sports events, lectures, family gatherings, and birthday parties with multiple consumer cameras. However, synchronizing these cross-camera streams remains challenging. Existing methods assume controlled settings, specific targets, manual correction, or costly hardware. We present VisualSync, an optimization framework based onmulti-view dynamicsthat aligns unposed, unsynchronized videos at millisecond accuracy. Our key insight is that any moving 3D point, when co-visible in two cameras, obeysepipolar constraintsonce properly synchronized. To exploit this, VisualSync leverages off-the-shelf3D reconstruction,feature matching, anddense trackingto extracttracklets,relative poses, andcross-view correspondences. It then jointly minimizes the epipolar error to estimate each camera's time offset. Experiments on four diverse, challenging datasets show that VisualSync outperforms baseline methods, achieving an median synchronization error below 50 ms. VisualSync (NeurIPS 2025) aligns unsynchronized multi-view videos by matching object motion with epipolar cues.  The synchronized outputs can benefit dynamic reconstruction, novel view synthesis, and multi-view data engines. Project Page:https://stevenlsw.github.io/visualsync/Code:https://github.com/stevenlsw/visualsync This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Visual Sync: Multi-Camera Synchronization via Cross-View Object Motion",
+    "github_url": "https://github.com/stevenlsw/visualsync",
+    "huggingface_url": "https://huggingface.co/papers/2512.02017",
+    "upvote": 3,
+    "tags": [
+      "visualsync",
+      "view",
+      "camera"
+    ]
+  }
+}

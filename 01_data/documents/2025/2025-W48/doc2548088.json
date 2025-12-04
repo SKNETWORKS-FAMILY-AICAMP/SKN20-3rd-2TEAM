@@ -1,0 +1,14 @@
+{
+  "context": "A two-stage pipeline with a front-end perception task and a back-end 2D-to-3D uplifting task is proposed for accurate 3D motion analysis of a table tennis ball using monocular video. Obtaining the precise3D motionof a table tennis ball from standardmonocular videosis a challenging problem, as existing methods trained on synthetic data struggle to generalize to the noisy, imperfect ball and table detections of the real world. This is primarily due to the inherent lack of 3D ground truth trajectories and spin annotations for real-world video. To overcome this, we propose a novel two-stage pipeline that divides the problem into afront-end perceptiontask and a back-end2D-to-3D upliftingtask. This separation allows us to train the front-end components with abundant 2D supervision from our newly createdTTHQ dataset, while the back-end uplifting network is trained exclusively onphysically-correct synthetic data. We specifically re-engineer the uplifting model to be robust to common real-world artifacts, such as missing detections and varying frame rates. By integrating aball detectorand atable keypoint detector, our approach transforms a proof-of-concept uplifting method into a practical, robust, and high-performing end-to-end application for 3D table tennis trajectory and spin analysis. The authors present a robust end-to-end pipeline for analyzing table tennis matches, which can, for the first time, derive the precise 3D trajectory and spin of the ball directly from common TV broadcasts. The solution overcomes the central problem of missing 3D ground truth using a two-stage framework: Due to architectural adaptations, such as a time-proportional Positional Embedding, the pipeline is extremely robust against real-world problems like variable frame rates and faulty detections.This work represents a practical, ready-to-use tool for detailed technique and performance analysis in table tennis sports. More paper details are given athttps://kiedani.github.io/WACV2026/index.html This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Uplifting Table Tennis: A Robust, Real-World Application for 3D Trajectory and Spin Estimation",
+    "github_url": "https://github.com/KieDani/UpliftingTableTennis",
+    "huggingface_url": "https://huggingface.co/papers/2511.20250",
+    "upvote": 4,
+    "tags": [
+      "end",
+      "table tennis",
+      "keyword3"
+    ]
+  }
+}
