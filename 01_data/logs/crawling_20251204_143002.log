@@ -1,0 +1,10 @@
+2025-12-04 14:30:02,728 [INFO] 
+============================================================
+2025-12-04 14:30:02,729 [INFO] [START] 2025-W48 크롤링 시작
+2025-12-04 14:30:02,729 [INFO] ============================================================
+2025-12-04 14:30:02,729 [INFO] [FETCH] Weekly 페이지 요청: https://huggingface.co/papers/week/2025-W48
+2025-12-04 14:30:02,729 [INFO] [HTTP] GET https://huggingface.co/papers/week/2025-W48 (try 1/5, sleep 10.0s)
+2025-12-04 14:30:12,991 [WARNING] [HTTP] 429 Too Many Requests for https://huggingface.co/papers/week/2025-W48 (try 1/5), wait 20.0s and retry
+2025-12-04 14:30:12,992 [INFO] [HTTP] GET https://huggingface.co/papers/week/2025-W48 (try 2/5, sleep 20.0s)
+2025-12-04 14:30:33,256 [WARNING] [HTTP] 429 Too Many Requests for https://huggingface.co/papers/week/2025-W48 (try 2/5), wait 40.0s and retry
+2025-12-04 14:30:33,257 [INFO] [HTTP] GET https://huggingface.co/papers/week/2025-W48 (try 3/5, sleep 40.0s)

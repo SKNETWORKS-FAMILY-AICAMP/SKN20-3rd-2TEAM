@@ -1,0 +1,29 @@
+2025-12-04 14:32:07,788 [INFO] 
+============================================================
+2025-12-04 14:32:07,789 [INFO] [START] 2025-W48 크롤링 시작
+2025-12-04 14:32:07,789 [INFO] ============================================================
+2025-12-04 14:32:07,790 [INFO] [FETCH] Weekly 페이지 요청: https://huggingface.co/papers/week/2025-W48
+2025-12-04 14:32:09,394 [INFO] [SUCCESS] 논문 105개 발견
+2025-12-04 14:32:09,395 [INFO] 
+[1/105] 처리 중: ROOT: Robust Orthogonalized Optimizer for Neural Network Training
+2025-12-04 14:32:12,512 [INFO] [KEYWORDS_RAW] ['robust', 'robustness', 'training'] (lemmatized)
+2025-12-04 14:32:12,513 [INFO] [KEYWORDS_FILTERED] ['robust', 'robustness', 'training'] (중복 제거 완료)
+2025-12-04 14:32:12,513 [INFO]   [KEYWORDS] ['robust', 'robustness', 'training']
+2025-12-04 14:32:12,515 [INFO] [SAVED] doc2548001.json
+2025-12-04 14:32:12,515 [INFO]   [SUCCESS] doc2548001 저장 완료
+2025-12-04 14:32:12,516 [INFO] 
+[2/105] 처리 중: General Agentic Memory Via Deep Research
+2025-12-04 14:32:13,664 [INFO] [KEYWORDS_RAW] ['memory', 'information', 'agentic'] (lemmatized)
+2025-12-04 14:32:13,665 [INFO] [KEYWORDS_FILTERED] ['memory', 'information', 'agentic'] (중복 제거 완료)
+2025-12-04 14:32:13,665 [INFO]   [KEYWORDS] ['memory', 'information', 'agentic']
+2025-12-04 14:32:13,667 [INFO] [SAVED] doc2548002.json
+2025-12-04 14:32:13,667 [INFO]   [SUCCESS] doc2548002 저장 완료
+2025-12-04 14:32:13,668 [INFO] 
+[3/105] 처리 중: GigaEvo: An Open Source Optimization Framework Powered By LLMs And Evolution Algorithms
+2025-12-04 14:32:15,653 [INFO] [KEYWORDS_RAW] ['gigaevo', 'llm', 'framework'] (lemmatized)
+2025-12-04 14:32:15,653 [INFO] [KEYWORDS_FILTERED] ['gigaevo', 'llm', 'framework'] (중복 제거 완료)
+2025-12-04 14:32:15,653 [INFO]   [KEYWORDS] ['gigaevo', 'llm', 'framework']
+2025-12-04 14:32:15,655 [INFO] [SAVED] doc2548003.json
+2025-12-04 14:32:15,655 [INFO]   [SUCCESS] doc2548003 저장 완료
+2025-12-04 14:32:15,655 [INFO] 
+[4/105] 처리 중: Latent Collaboration in Multi-Agent Systems
