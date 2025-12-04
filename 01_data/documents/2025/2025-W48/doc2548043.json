@@ -1,14 +1,14 @@
 {
-  "context": "Diffusion Transformers have demonstrated remarkable capabilities in visual synthesis , yet they often struggle with high-level semantic reasoning and long-horizon planning . This limitation frequently leads to visual hallucinations and mis-alignments with user instructions, especially in scenarios involving complex scene understanding, human-object interactions, multi-stage actions, and in-context motion reasoning. To address these challenges, we propose Plan-X, a framework that explicitly enforces high-level semantic planning to instruct video generation process. At its core lies a Semantic Planner , a learnable multimodal language model that reasons over the user's intent from both text prompts and visual context, and autoregressively generates a sequence of text-grounded spatio-temporal semantic tokens . These semantic tokens, complementary to high-level text prompt guidance, serve as structured \"semantic sketches\" over time for the video diffusion model , which has its strength at synthesizing high-fidelity visual details. Plan-X effectively integrates the strength of language models in multimodal in-context reasoning and planning, together with the strength of diffusion models in photorealistic video synthesis . Extensive experiments demonstrate that our framework substantially reduces visual hallucinations and enables fine-grained, instruction-aligned video generation consistent with multimodal context.",
+  "context": "UltraViCo addresses video length extrapolation by suppressing attention dispersion, improving quality and reducing repetition beyond training length. Despite advances,video diffusion transformersstill struggle to generalize beyond their training length, a challenge we termvideo length extrapolation. We identify two failure modes: model-specific periodic content repetition and a universal quality degradation. Prior works attempt to solve repetition viapositional encodings, overlooking quality degradation and achieving only limited extrapolation. In this paper, we revisit this challenge from a more fundamental view:attention maps, which directly govern how context influences outputs. We identify that both failure modes arise from a unified cause:attention dispersion, where tokens beyond the training window dilute learned attention patterns. This leads to quality degradation and repetition emerges as a special case when this dispersion becomes structured into periodic attention patterns, induced by harmonic properties ofpositional encodings. Building on this insight, we proposeUltraViCo, a training-free, plug-and-play method that suppresses attention for tokens beyond the training window via a constant decay factor. By jointly addressing both failure modes, we outperform a broad set of baselines largely across models and extrapolation ratios, pushing the extrapolation limit from 2x to 4x. Remarkably, it improvesDynamic DegreeandImaging Qualityby 233% and 40.5% over the previous best method at 4x extrapolation. Furthermore, our method generalizes seamlessly to downstream tasks such ascontrollable video synthesisandediting. Achieving 3x to 4x video DiT length extrapolation in a plug-and-play way! Paper:https://arxiv.org/abs/2511.20123 Project Page:https://thu-ml.github.io/UltraViCo.github.io/ Code:https://github.com/thu-ml/DiT-Extrapolation This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Plan-X: Instruct Video Generation via Semantic Planning",
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.17986",
+    "paper_name": "UltraViCo: Breaking Extrapolation Limits in Video Diffusion Transformers",
+    "github_url": "https://github.com/thu-ml/DiT-Extrapolation",
+    "huggingface_url": "https://huggingface.co/papers/2511.20123",
     "upvote": 16,
     "tags": [
-      "semantic",
-      "visual",
-      "video"
+      "extrapolation",
+      "attention",
+      "length"
     ]
   }
 }

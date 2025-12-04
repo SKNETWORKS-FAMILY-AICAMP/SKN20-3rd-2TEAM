@@ -1,14 +1,14 @@
 {
-  "context": "Progress in computer use agents (CUAs) has been constrained by the absence of large and high-quality datasets that capture how humans interact with a computer. While LLMs have thrived on abundant textual data, no comparable corpus exists for CUA trajectories . To address these gaps, we introduce FaraGen , a novel synthetic data generation system for multi-step web tasks . FaraGen can propose diverse tasks from frequently used websites, generate multiple solution attempts, and filter successful trajectories using multiple verifiers . It achieves high throughput, yield, and diversity for multi-step web tasks , producing verified trajectories at approximately $1 each. We use this data to train Fara-7B , a native CUA model that perceives the computer using only screenshots , executes actions via predicted coordinates , and is small enough to run on-device. We find that Fara-7B outperforms other CUA models of comparable size on benchmarks like WebVoyager , Online-Mind2Web , and WebTailBench -- our novel benchmark that better captures under-represented web tasks in pre-existing benchmarks. Furthermore, Fara-7B is competitive with much larger frontier models, illustrating key benefits of scalable data generation systems in advancing small efficient agentic models. We are making Fara-7B open-weight on Microsoft Foundry and HuggingFace, and we are releasing WebTailBench .",
+  "context": "G$^2$VLM integrates 3D geometry learning with vision-language models to enhance spatial understanding and reasoning, outperforming existing models in these tasks. Vision-Language Models (VLMs) still lack robustness in spatial intelligence, demonstrating poor performance onspatial understandingand reasoning tasks. We attribute this gap to the absence of a visual geometry learning process capable of reconstructing 3D space from 2D images. We present G^2VLM, ageometry grounded vision-language modelthat bridges two fundamental aspects of spatial intelligence:spatial 3D reconstructionandspatial understanding. G^2VLM natively leverages learned 3D visual geometry features to directly predict 3D attributes and enhancespatial reasoningtasks viain-context learningandinterleaved reasoning. Our unified design is highly scalable forspatial understanding: it trains on abundantmulti-view imageandvideo data, while simultaneously leveraging the benefits of3D visual priorsthat are typically only derived from hard-to-collect annotations. Experimental results demonstrate G^2VLM is proficient in both tasks, achieving comparable results to state-of-the-artfeed-forward 3D reconstruction modelsand achieving better or competitive results acrossspatial understandingand reasoning tasks. By unifying a semantically strong VLM with low-level 3D vision tasks, we hope G^2VLM can serve as a strong baseline for the community and unlock more future applications, such as 3D scene editing. 🚀 Introducing G2VLM: Geometry Grounded Vision Language Model with Unified 3D Reconstruction and Spatial Reasoning This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Fara-7B: An Efficient Agentic Model for Computer Use",
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.19663",
+    "paper_name": "G^2VLM: Geometry Grounded Vision Language Model with Unified 3D Reconstruction and Spatial Reasoning",
+    "github_url": "https://github.com/InternRobotics/G2VLM",
+    "huggingface_url": "https://huggingface.co/papers/2511.21688",
     "upvote": 8,
     "tags": [
-      "fara",
-      "fara 7b",
-      "tasks"
+      "reasoning",
+      "spatial",
+      "vision"
     ]
   }
 }

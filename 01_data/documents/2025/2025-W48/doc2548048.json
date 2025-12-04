@@ -1,14 +1,14 @@
 {
-  "context": "This study presents PARROT ( Persuasion and Agreement Robustness Rating of Output Truth ), a robustness focused framework designed to measure the degradation in accuracy that occurs under social pressure exerted on users through authority and persuasion in large language models ( LLMs ) the phenomenon of sycophancy (excessive conformity). PARROT (i) isolates causal effects by comparing the neutral version of the same question with an authoritatively false version using a double-blind evaluation , (ii) quantifies confidence shifts toward the correct and imposed false responses using log-likelihood-based calibration tracking, and (iii) systematically classifies failure modes (e.g., robust correct, sycophantic agreement, reinforced error, stubborn error, self-correction, etc.) using an eight-state behavioral taxonomy . We evaluated 22 models using 1,302 MMLU-style multiple-choice questions across 13 domains and domain-specific authority templates. Findings show marked heterogeneity: advanced models (e.g., GPT-5, GPT-4.1, Claude Sonnet 4.5) exhibit low \" follow rates \" (leq 11%, GPT-5: 4\\%) and minimal accuracy loss, while older/smaller models show severe epistemic collapse (GPT-4: 80\\%, Qwen 2.5-1.5B: 94\\%). The danger is not limited to response changes; weak models reduce confidence in the correct response while increasing confidence in the imposed incorrect response. While international law and global knowledge at the domain level exhibit high fragility, elementary mathematics is relatively resilient. Consequently, we argue that the goal of \" resistance to overfitting pressure \" should be addressed as a primary objective alongside accuracy, harm avoidance, and privacy for safe deployment in the real world.",
+  "context": "A unified framework using diffusion models with semantic control and cross-medium style augmentation generates consistent and high-fidelity multi-media painting processes, supported by a comprehensive dataset and evaluation metrics. Step-by-step painting tutorials are vital for learning artistic techniques, but existing video resources (e.g., YouTube) lack interactivity and personalization. While recent generative models have advanced artistic image synthesis, they struggle to generalize across media and often show temporal or structural inconsistencies, hindering faithful reproduction of human creative workflows. To address this, we propose a unified framework for multi-media painting process generation with asemantics-driven style controlmechanism that embeds multiple media into adiffusion modelsconditional space and usescross-medium style augmentation. This enables consistenttexture evolutionandprocess transferacross styles. Areverse-painting training strategyfurther ensures smooth, human-aligned generation. We also build a large-scale dataset of real painting processes and evaluate cross-media consistency, temporal coherence, and final-image fidelity, achieving strong results onLPIPS,DINO, andCLIP metrics. Finally, ourPerceptual Distance Profile (PDP)curve quantitatively models the creative sequence, i.e., composition, color blocking, and detail refinement, mirroring human artistic progression. Project Page:https://markus-pobitzer.github.io/lplp/GitHub:https://github.com/Markus-Pobitzer/wlp This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Parrot: Persuasion and Agreement Robustness Rating of Output Truth -- A Sycophancy Robustness Benchmark for LLMs",
-    "github_url": "https://github.com/YusufCelebii/PARROT",
-    "huggingface_url": "https://huggingface.co/papers/2511.17220",
+    "paper_name": "Loomis Painter: Reconstructing the Painting Process",
+    "github_url": "https://github.com/Markus-Pobitzer/wlp",
+    "huggingface_url": "https://huggingface.co/papers/2511.17344",
     "upvote": 15,
     "tags": [
-      "models",
-      "using",
-      "gpt"
+      "medium",
+      "painting",
+      "style"
     ]
   }
 }

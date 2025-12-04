@@ -1,14 +1,14 @@
 {
-  "context": "Instruction-guided image editing offers an intuitive way for users to edit images with natural language. However, diffusion-based editing models often struggle to accurately interpret complex user instructions, especially those involving compositional relationships, contextual cues, or referring expressions, leading to edits that drift semantically or fail to reflect the intended changes. We tackle this problem by proposing MIRA (Multimodal Iterative Reasoning Agent), a lightweight, plug-and-play multimodal reasoning agent that performs editing through an iterative perception-reasoning-action loop , effectively simulating multi-turn human-model interaction processes. Instead of issuing a single prompt or static plan, MIRA predicts atomic edit instructions step by step, using visual feedback to make its decisions. Our 150K multimodal tool-use dataset , MIRA-Editing , combined with a two-stage SFT + GRPO training pipeline , enables MIRA to perform reasoning and editing over complex editing instructions. When paired with open-source image editing models such as Flux.1-Kontext , Step1X-Edit , and Qwen-Image-Edit , MIRA significantly improves both semantic consistency and perceptual quality , achieving performance comparable to or exceeding proprietary systems such as GPT-Image and Nano-Banana .",
+  "context": "ReVeL, a framework that converts multiple-choice questions to open-form questions, improves data efficiency and robustness in fine-tuning multimodal language models and reveals score inflation in MCQA benchmarks. Multiple-choice question answering(MCQA) has been a popular format for evaluating andreinforcement fine-tuning(RFT) of modernmultimodal language models. Its constrained output format allows for simplified, deterministicautomatic verification. However, we find that the options may leak exploitable signals, which makes the accuracy metrics unreliable for indicating real capabilities and encourages explicit or implicit answer guessing behaviors during RFT. We proposeReVeL(Rewrite and Verify by LLM), a framework that rewrites multiple-choice questions intoopen-form questionswhile keeping answers verifiable whenever possible. The framework categorizes questions according to different answer types, apply different rewriting and verification schemes, respectively. When applied for RFT, we converted 20k MCQA examples and useGRPOto finetuneQwen2.5-VLmodels. Models trained onReVeL-OpenQAmatch MCQA accuracy on multiple-choice benchmarks and improveOpenQAaccuracy by about six percentage points, indicating better data efficiency and more robust reward signals than MCQA-based training. When used for evaluation,ReVeLalso reveals up to 20 percentage points ofscore inflationin MCQA benchmarks (relative toOpenQA), improvesjudging accuracy, and reduces both cost and latency. We will release code and data publicly. project page:https://flageval-baai.github.io/ReVeL/  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "MIRA: Multimodal Iterative Reasoning Agent for Image Editing",
+    "paper_name": "Beyond Multiple Choice: Verifiable OpenQA for Robust Vision-Language RFT",
     "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.21087",
-    "upvote": 9,
+    "huggingface_url": "https://huggingface.co/papers/2511.17405",
+    "upvote": 10,
     "tags": [
-      "editing",
-      "mira",
-      "image"
+      "mcqa",
+      "question",
+      "choice"
     ]
   }
 }
