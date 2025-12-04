@@ -204,14 +204,14 @@ def init_models() -> Dict[str, any]:
 
     # 7. E5-Mistral / Jina-embeddings (Jina v2, v3)
     try:
-        models["E5-Mistral"] = HuggingFaceEmbeddings(
-            model_name="jinaai/jina-embeddings-v3-mistral",
+        models["E5-Base"] = HuggingFaceEmbeddings(
+            model_name="intfloat/e5-base-v2",
             model_kwargs={'device': 'cpu'},
             encode_kwargs={'normalize_embeddings': True}
         )
-        logger.info("✓ E5-Mistral 로딩 완료")
+        logger.info("✓ E5-Base 로딩 완료")
     except Exception as e:
-        logger.error(f"✗ E5-Mistral 로딩 실패: {e}")
+        logger.error(f"✗ E5-Base 로딩 실패: {e}")
 
     # 8. paraphrase-multilingual-mpnet-base-v2 (768 dim, 다국어 지원)
     try:
