@@ -38,14 +38,15 @@ HEADERS = {
 
 def get_with_retry(
     url: str,
-    max_retries: int = 6,
-    initial_wait: float = 1.0,   # 처음엔 빠르게
-    backoff: float = 1.8,        # 최대 1.8배씩 증가
-    timeout: float = 12.0
+    max_retries: int = 6,      
+    initial_wait: float = 2.0, # 첫 실패 이후 대기
+    backoff: float = 6.0,
+    timeout: float = 12.0,
 ):
     wait = initial_wait
 
     for attempt in range(1, max_retries + 1):
+        logging.info(f"[HTTP] GET {url} (try {attempt}/{max_retries})")
 
         try:
             resp = requests.get(url, headers=HEADERS, timeout=timeout)
@@ -55,23 +56,27 @@ def get_with_retry(
             wait *= backoff
             continue
 
+        # 429: 너무 자주 요청했다는 뜻 → 짧게 몇 번만 재시도
         if resp.status_code == 429:
             ra = resp.headers.get("Retry-After")
-            wait_time = float(ra) if ra else wait * backoff
-            logging.warning(f"[429] retry after {wait_time:.1f}s")
+            wait_time = float(ra) if ra else wait
+            logging.warning(f"[429] Too Many Requests, sleep {wait_time:.1f}s 후 재시도")
             time.sleep(wait_time)
             wait *= backoff
             continue
 
+        # 정상 응답
         if 200 <= resp.status_code < 300:
             return resp
 
+        # 기타 에러 코드
         logging.warning(f"[HTTP {resp.status_code}] retry..")
         time.sleep(wait)
         wait *= backoff
 
-    logging.error(f"[FAIL] 요청 실패: {url}")
+    logging.error(f"[FAIL] 요청 실패(최대 재시도 초과): {url}")
     return None
+
 
 
 # TF-IDF 및 NLTK
@@ -253,7 +258,9 @@ def fetch_weekly_papers(year: int, week: int) -> List[Dict[str, str]]:
 
     try:
         response = get_with_retry(weekly_url, timeout=10)
-        response.raise_for_status()
+        if response is None:
+            logging.error(f"[ERROR] Weekly 페이지 요청 최대 재시도 초과: {weekly_url}")
+            return []
 
         soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -297,7 +304,10 @@ def fetch_paper_details(paper_url: str) -> Dict[str, any]:
     """
     try:
         response = get_with_retry(paper_url, timeout=10)
-        response.raise_for_status()
+        if response is None:
+            logging.error(f"[ERROR] 논문 상세 페이지 요청 실패(최대 재시도 초과): {paper_url}")
+            return {"abstract": "", "github_url": "", "upvote": 0}
+
 
         soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -447,6 +457,12 @@ def crawl_weekly_papers(year: int, week: int):
     fail_count = 0
 
     for index, paper_info in enumerate(papers):
+
+        # 🔥 여기에 있어야 함! (바깥 루프 안 / 내부 for문 없음)
+        if index > 0 and index % 40 == 0:
+            logging.info(f"[COOLDOWN] {index}개 처리 완료 → 160초 휴식")
+            time.sleep(160)
+
         paper_url = paper_info['url']
         paper_title = paper_info['title']
 
@@ -454,8 +470,8 @@ def crawl_weekly_papers(year: int, week: int):
 
         # 2-1. 논문 상세 정보 추출
         details = fetch_paper_details(paper_url)
-        time.sleep(0.8)
-        
+        time.sleep(2.0)
+
         if not details['abstract']:
             logging.warning(f"  [SKIP] Abstract 없음: {paper_title}")
             fail_count += 1

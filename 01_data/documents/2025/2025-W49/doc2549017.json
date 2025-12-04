@@ -1,14 +1,14 @@
 {
-  "context": "MG-Nav, a dual-scale framework for zero-shot visual navigation, combines global memory-guided planning with local geometry-enhanced control using a Sparse Spatial Memory Graph and a VGGT-adapter for robust navigation in unseen environments. We present MG-Nav (Memory-Guided Navigation), a dual-scale framework for zero-shot visual navigation that unifies global memory-guided planning with local geometry-enhanced control. At its core is theSparse Spatial Memory Graph(SMG), a compact, region-centric memory where each node aggregates multi-viewkeyframeandobject semantics, capturing both appearance and spatial structure while preserving viewpoint diversity. At the global level, the agent is localized onSMGand a goal-conditioned node path is planned via animage-to-instance hybrid retrieval, producing a sequence of reachablewaypoints for long-horizon guidance. At the local level, a navigation foundation policy executes thesewaypoints inpoint-goal modewithobstacle-aware control, and switches toimage-goal modewhen navigating from the final node towards the visual target. To further enhance viewpoint alignment and goal recognition, we introduceVGGT-adapter, a lightweight geometric module built on the pre-trained VGGT model, which aligns observation and goal features in a shared3D-aware space. MG-Nav operates global planning and local control at different frequencies, using periodic re-localization to correct errors. Experiments onHM3DInstance-Image-Goal andMP3DImage-Goal benchmarks demonstrate that MG-Nav achieves state-of-the-artzero-shot performanceand remains robust underdynamic rearrangementsand unseen scene conditions.  ·Sign uporlog into comment",
+  "context": "Deep Research systems integrate LLMs with external tools to enhance problem-solving capabilities, involving query planning, information acquisition, memory management, and answer generation. Large language models(LLMs) have rapidly evolved from text generators into powerful problem solvers. Yet, many open tasks demand critical thinking, multi-source, and verifiable outputs, which are beyond single-shotpromptingor standard retrieval-augmented generation. Recently, numerous studies have exploredDeep Research(DR), which aims to combine thereasoning capabilitiesofLLMswith external tools, such assearch engines, thereby empoweringLLMsto act asresearch agentscapable of completing complex, open-ended tasks. This survey presents a comprehensive and systematic overview ofdeep researchsystems, including a clear roadmap, foundational components, practical implementation techniques, important challenges, and future directions. Specifically, our main contributions are as follows: (i) we formalize athree-stage roadmapand distinguishdeep researchfrom related paradigms; (ii) we introduce four key components:query planning,information acquisition,memory management, andanswer generation, each paired with fine-grainedsub-taxonomies; (iii) we summarize optimization techniques, includingprompting,supervised fine-tuning, andagentic reinforcement learning; and (iv) we consolidateevaluation criteriaandopen challenges, aiming to guide and facilitate future development. As the field ofdeep researchcontinues to evolve rapidly, we are committed to continuously updating this survey to reflect the latest progress in this area. github:https://github.com/mangopy/Deep-Research-Survey Thanks for amazing work This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "MG-Nav: Dual-Scale Visual Navigation via Sparse Spatial Memory",
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.22609",
-    "upvote": 33,
+    "paper_name": "Deep Research: A Systematic Survey",
+    "github_url": "https://github.com/mangopy/Deep-Research-Survey",
+    "huggingface_url": "https://huggingface.co/papers/2512.02038",
+    "upvote": 40,
     "tags": [
-      "goal",
-      "memory",
-      "navigation"
+      "comment",
+      "generation",
+      "research"
     ]
   }
 }

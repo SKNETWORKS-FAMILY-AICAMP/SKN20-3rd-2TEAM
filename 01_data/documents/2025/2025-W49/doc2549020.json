@@ -1,14 +1,14 @@
 {
-  "context": "MultiShotMaster extends a single-shot model with novel RoPE variants for flexible and controllable multi-shot video generation, addressing data scarcity with an automated annotation pipeline. Current video generation techniques excel at single-shot clips but struggle to produce narrative multi-shot videos, which require flexible shot arrangement, coherent narrative, and controllability beyond text prompts. To tackle these challenges, we propose MultiShotMaster, a framework for highly controllable multi-shot video generation. We extend a pretrained single-shot model by integrating two novel variants ofRoPE. First, we introduceMulti-Shot Narrative RoPE, which applies explicit phase shift at shot transitions, enabling flexible shot arrangement while preserving the temporal narrative order. Second, we designSpatiotemporal Position-Aware RoPEto incorporatereference tokensand grounding signals, enabling spatiotemporal-grounded reference injection. In addition, to overcome data scarcity, we establish an automated data annotation pipeline to extract multi-shot videos, captions,cross-shot grounding signalsandreference images. Our framework leverages the intrinsic architectural properties to support multi-shot video generation, featuringtext-driven inter-shot consistency, customized subject withmotion control, andbackground-driven customized scene. Both shot count and duration are flexibly configurable. Extensive experiments demonstrate the superior performance and outstanding controllability of our framework. The first controllable multi-shot video generation framework that supports text-driven inter-shot consistency, customized subject with motion control, and background-driven customized scene. Both shot counts and shot durations are variable. ·Sign uporlog into comment",
+  "context": "Skywork-R1V4, a 30B parameter multimodal agentic model, achieves top performance in perception and multimodal search benchmarks through supervised fine-tuning and interleaved reasoning without reinforcement learning. Despite recent progress inmultimodal agentic systems, existing approaches often treatimage manipulationandweb searchas disjoint capabilities, rely heavily on costlyreinforcement learning, and lack planning grounded in real tool-execution traces. To address these limitations, we present Skywork-R1V4, a 30B (A3B) parameter multimodal agentic model that unifiesmultimodal planning,active image manipulation(\"thinking with images\"),deep multimodal search, and, most critically,interleaved reasoningthat dynamically alternates between visual operations and external knowledge retrieval. Trained solely viasupervised fine-tuningon fewer than 30,000 high-quality, planning-execution-consistent trajectories and validated through stepwise consistency filtering, Skywork-R1V4 achieves state-of-the-art results across perception and multimodal search benchmarks: it scores 66.1 onMMSearchand 67.2 onFVQA, surpassingGemini 2.5 Flashon all 11 metrics. Skywork-R1V4 exhibits emergentlong-horizon reasoningat inference time, successfully orchestrating more than 10 tool calls to solve complex, multi-step tasks. Our results demonstrate that sophisticated agentic multimodal intelligence can be achieved through carefully curated supervised learning alone, without any reliance onreinforcement learning. Skywork-R1V4: Toward Agentic Multimodal Intelligence through Interleaved Thinking with Images and DeepResearch  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "MultiShotMaster: A Controllable Multi-Shot Video Generation Framework",
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2512.03041",
-    "upvote": 27,
+    "paper_name": "Skywork-R1V4: Toward Agentic Multimodal Intelligence through Interleaved Thinking with Images and DeepResearch",
+    "github_url": "https://github.com/SkyworkAI/Skywork-R1V/tree/main/r1v4",
+    "huggingface_url": "https://huggingface.co/papers/2512.02395",
+    "upvote": 38,
     "tags": [
-      "shot",
-      "multi",
-      "multi shot"
+      "multimodal",
+      "agentic",
+      "skywork"
     ]
   }
 }

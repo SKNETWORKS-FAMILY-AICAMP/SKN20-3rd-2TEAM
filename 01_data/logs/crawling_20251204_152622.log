@@ -1,0 +1,856 @@
+2025-12-04 15:26:22,855 [INFO] 
+============================================================
+2025-12-04 15:26:22,856 [INFO] [START] 2025-W49 크롤링 시작
+2025-12-04 15:26:22,856 [INFO] ============================================================
+2025-12-04 15:26:22,856 [INFO] [FETCH] Weekly 페이지 요청: https://huggingface.co/papers/week/2025-W49
+2025-12-04 15:26:22,857 [INFO] [HTTP] GET https://huggingface.co/papers/week/2025-W49 (try 1/4)
+2025-12-04 15:26:23,380 [INFO] [SUCCESS] 논문 105개 발견
+2025-12-04 15:26:23,381 [INFO] 
+[1/105] 처리 중: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+2025-12-04 15:26:23,387 [INFO] [HTTP] GET https://huggingface.co/papers/2511.18538 (try 1/4)
+2025-12-04 15:26:27,809 [INFO] [KEYWORDS_RAW] ['code', 'development', 'llm'] (lemmatized)
+2025-12-04 15:26:27,809 [INFO] [KEYWORDS_FILTERED] ['code', 'development', 'llm'] (중복 제거 완료)
+2025-12-04 15:26:27,810 [INFO]   [KEYWORDS] ['code', 'development', 'llm']
+2025-12-04 15:26:27,811 [INFO] [SAVED] doc2549001.json
+2025-12-04 15:26:27,812 [INFO]   [SUCCESS] doc2549001 저장 완료
+2025-12-04 15:26:27,812 [INFO] 
+[2/105] 처리 중: LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling
+2025-12-04 15:26:27,812 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20785 (try 1/4)
+2025-12-04 15:26:30,231 [INFO] [KEYWORDS_RAW] ['http', 'longvt', 'video'] (lemmatized)
+2025-12-04 15:26:30,232 [INFO] [KEYWORDS_FILTERED] ['http', 'longvt', 'video'] (중복 제거 완료)
+2025-12-04 15:26:30,232 [INFO]   [KEYWORDS] ['http', 'longvt', 'video']
+2025-12-04 15:26:30,233 [INFO] [SAVED] doc2549002.json
+2025-12-04 15:26:30,234 [INFO]   [SUCCESS] doc2549002 저장 완료
+2025-12-04 15:26:30,234 [INFO] 
+[3/105] 처리 중: DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models
+2025-12-04 15:26:30,234 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02556 (try 1/4)
+2025-12-04 15:26:32,712 [INFO] [KEYWORDS_RAW] ['deepseek', 'reasoning', 'performance'] (lemmatized)
+2025-12-04 15:26:32,713 [INFO] [KEYWORDS_FILTERED] ['deepseek', 'reasoning', 'performance'] (중복 제거 완료)
+2025-12-04 15:26:32,713 [INFO]   [KEYWORDS] ['deepseek', 'reasoning', 'performance']
+2025-12-04 15:26:32,714 [INFO] [SAVED] doc2549003.json
+2025-12-04 15:26:32,714 [INFO]   [SUCCESS] doc2549003 저장 완료
+2025-12-04 15:26:32,714 [INFO] 
+[4/105] 처리 중: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+2025-12-04 15:26:32,715 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22699 (try 1/4)
+2025-12-04 15:26:35,246 [INFO] [KEYWORDS_RAW] ['image', 'http', 'mai'] (lemmatized)
+2025-12-04 15:26:35,246 [INFO] [KEYWORDS_FILTERED] ['image', 'http', 'mai'] (중복 제거 완료)
+2025-12-04 15:26:35,246 [INFO]   [KEYWORDS] ['image', 'http', 'mai']
+2025-12-04 15:26:35,248 [INFO] [SAVED] doc2549004.json
+2025-12-04 15:26:35,248 [INFO]   [SUCCESS] doc2549004 저장 완료
+2025-12-04 15:26:35,248 [INFO] 
+[5/105] 처리 중: Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights
+2025-12-04 15:26:35,248 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01816 (try 1/4)
+2025-12-04 15:26:37,592 [INFO] [KEYWORDS_RAW] ['image', 'world', 'generation'] (lemmatized)
+2025-12-04 15:26:37,593 [INFO] [KEYWORDS_FILTERED] ['image', 'world', 'generation'] (중복 제거 완료)
+2025-12-04 15:26:37,593 [INFO]   [KEYWORDS] ['image', 'world', 'generation']
+2025-12-04 15:26:37,595 [INFO] [SAVED] doc2549005.json
+2025-12-04 15:26:37,595 [INFO]   [SUCCESS] doc2549005 저장 완료
+2025-12-04 15:26:37,595 [INFO] 
+[6/105] 처리 중: ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+2025-12-04 15:26:37,596 [INFO] [HTTP] GET https://huggingface.co/papers/2511.21689 (try 1/4)
+2025-12-04 15:26:39,916 [INFO] [KEYWORDS_RAW] ['tool', 'gpt', 'orchestrator'] (lemmatized)
+2025-12-04 15:26:39,917 [INFO] [KEYWORDS_FILTERED] ['tool', 'gpt', 'orchestrator'] (중복 제거 완료)
+2025-12-04 15:26:39,918 [INFO]   [KEYWORDS] ['tool', 'gpt', 'orchestrator']
+2025-12-04 15:26:39,919 [INFO] [SAVED] doc2549006.json
+2025-12-04 15:26:39,919 [INFO]   [SUCCESS] doc2549006 저장 완료
+2025-12-04 15:26:39,919 [INFO] 
+[7/105] 처리 중: Stabilizing Reinforcement Learning with LLMs: Formulation and Practices
+2025-12-04 15:26:39,920 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01374 (try 1/4)
+2025-12-04 15:26:42,403 [INFO] [KEYWORDS_RAW] ['training', 'level', 'approximation'] (lemmatized)
+2025-12-04 15:26:42,403 [INFO] [KEYWORDS_FILTERED] ['training', 'level', 'approximation'] (중복 제거 완료)
+2025-12-04 15:26:42,404 [INFO]   [KEYWORDS] ['training', 'level', 'approximation']
+2025-12-04 15:26:42,405 [INFO] [SAVED] doc2549007.json
+2025-12-04 15:26:42,405 [INFO]   [SUCCESS] doc2549007 저장 완료
+2025-12-04 15:26:42,406 [INFO] 
+[8/105] 처리 중: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+2025-12-04 15:26:42,406 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22570 (try 1/4)
+2025-12-04 15:26:44,937 [INFO] [KEYWORDS_RAW] ['reasoning', 'answer', 'self'] (lemmatized)
+2025-12-04 15:26:44,938 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'answer', 'self'] (중복 제거 완료)
+2025-12-04 15:26:44,938 [INFO]   [KEYWORDS] ['reasoning', 'answer', 'self']
+2025-12-04 15:26:44,940 [INFO] [SAVED] doc2549008.json
+2025-12-04 15:26:44,940 [INFO]   [SUCCESS] doc2549008 저장 완료
+2025-12-04 15:26:44,940 [INFO] 
+[9/105] 처리 중: MultiShotMaster: A Controllable Multi-Shot Video Generation Framework
+2025-12-04 15:26:44,941 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03041 (try 1/4)
+2025-12-04 15:26:47,429 [INFO] [KEYWORDS_RAW] ['shot', 'video', 'multi'] (lemmatized)
+2025-12-04 15:26:47,429 [INFO] [KEYWORDS_FILTERED] ['shot', 'video', 'multi'] (중복 제거 완료)
+2025-12-04 15:26:47,430 [INFO]   [KEYWORDS] ['shot', 'video', 'multi']
+2025-12-04 15:26:47,431 [INFO] [SAVED] doc2549009.json
+2025-12-04 15:26:47,431 [INFO]   [SUCCESS] doc2549009 저장 완료
+2025-12-04 15:26:47,432 [INFO] 
+[10/105] 처리 중: How Far Are We from Genuinely Useful Deep Research Agents?
+2025-12-04 15:26:47,432 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01948 (try 1/4)
+2025-12-04 15:26:49,729 [INFO] [KEYWORDS_RAW] ['research', 'report', 'dras'] (lemmatized)
+2025-12-04 15:26:49,730 [INFO] [KEYWORDS_FILTERED] ['research', 'report', 'dras'] (중복 제거 완료)
+2025-12-04 15:26:49,731 [INFO]   [KEYWORDS] ['research', 'report', 'dras']
+2025-12-04 15:26:49,732 [INFO] [SAVED] doc2549010.json
+2025-12-04 15:26:49,732 [INFO]   [SUCCESS] doc2549010 저장 완료
+2025-12-04 15:26:49,732 [INFO] 
+[11/105] 처리 중: MG-Nav: Dual-Scale Visual Navigation via Sparse Spatial Memory
+2025-12-04 15:26:49,733 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22609 (try 1/4)
+2025-12-04 15:26:52,193 [INFO] [KEYWORDS_RAW] ['goal', 'memory', 'navigation'] (lemmatized)
+2025-12-04 15:26:52,194 [INFO] [KEYWORDS_FILTERED] ['goal', 'memory', 'navigation'] (중복 제거 완료)
+2025-12-04 15:26:52,195 [INFO]   [KEYWORDS] ['goal', 'memory', 'navigation']
+2025-12-04 15:26:52,196 [INFO] [SAVED] doc2549011.json
+2025-12-04 15:26:52,197 [INFO]   [SUCCESS] doc2549011 저장 완료
+2025-12-04 15:26:52,197 [INFO] 
+[12/105] 처리 중: REASONEDIT: Towards Reasoning-Enhanced Image Editing Models
+2025-12-04 15:26:52,198 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22625 (try 1/4)
+2025-12-04 15:26:54,755 [INFO] [KEYWORDS_RAW] ['editing', 'image', 'edit'] (lemmatized)
+2025-12-04 15:26:54,755 [INFO] [KEYWORDS_FILTERED] ['editing', 'image', 'edit'] (중복 제거 완료)
+2025-12-04 15:26:54,755 [INFO]   [KEYWORDS] ['editing', 'image', 'edit']
+2025-12-04 15:26:54,756 [INFO] [SAVED] doc2549012.json
+2025-12-04 15:26:54,756 [INFO]   [SUCCESS] doc2549012 저장 완료
+2025-12-04 15:26:54,757 [INFO] 
+[13/105] 처리 중: Qwen3-VL Technical Report
+2025-12-04 15:26:54,757 [INFO] [HTTP] GET https://huggingface.co/papers/2511.21631 (try 1/4)
+2025-12-04 15:26:57,041 [INFO] [KEYWORDS_RAW] ['text', 'video', 'across'] (lemmatized)
+2025-12-04 15:26:57,042 [INFO] [KEYWORDS_FILTERED] ['text', 'video', 'across'] (중복 제거 완료)
+2025-12-04 15:26:57,042 [INFO]   [KEYWORDS] ['text', 'video', 'across']
+2025-12-04 15:26:57,043 [INFO] [SAVED] doc2549013.json
+2025-12-04 15:26:57,044 [INFO]   [SUCCESS] doc2549013 저장 완료
+2025-12-04 15:26:57,044 [INFO] 
+[14/105] 처리 중: TUNA: Taming Unified Visual Representations for Native Unified Multimodal Models
+2025-12-04 15:26:57,044 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02014 (try 1/4)
+2025-12-04 15:26:59,374 [INFO] [KEYWORDS_RAW] ['generation', 'unified', 'face'] (lemmatized)
+2025-12-04 15:26:59,375 [INFO] [KEYWORDS_FILTERED] ['generation', 'unified', 'face'] (중복 제거 완료)
+2025-12-04 15:26:59,376 [INFO]   [KEYWORDS] ['generation', 'unified', 'face']
+2025-12-04 15:26:59,377 [INFO] [SAVED] doc2549014.json
+2025-12-04 15:26:59,378 [INFO]   [SUCCESS] doc2549014 저장 완료
+2025-12-04 15:26:59,378 [INFO] 
+[15/105] 처리 중: What about gravity in video generation? Post-Training Newton's Laws with Verifiable Rewards
+2025-12-04 15:26:59,379 [INFO] [HTTP] GET https://huggingface.co/papers/2512.00425 (try 1/4)
+2025-12-04 15:27:01,662 [INFO] [KEYWORDS_RAW] ['physic', 'physical', 'proxy'] (lemmatized)
+2025-12-04 15:27:01,662 [INFO] [KEYWORDS_FILTERED] ['physic', 'physical', 'proxy'] (중복 제거 완료)
+2025-12-04 15:27:01,663 [INFO]   [KEYWORDS] ['physic', 'physical', 'proxy']
+2025-12-04 15:27:01,664 [INFO] [SAVED] doc2549015.json
+2025-12-04 15:27:01,664 [INFO]   [SUCCESS] doc2549015 저장 완료
+2025-12-04 15:27:01,664 [INFO] 
+[16/105] 처리 중: Infinity-RoPE: Action-Controllable Infinite Video Generation Emerges From Autoregressive Self-Rollout
+2025-12-04 15:27:01,665 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20649 (try 1/4)
+2025-12-04 15:27:04,116 [INFO] [KEYWORDS_RAW] ['rope', 'video', 'generation'] (lemmatized)
+2025-12-04 15:27:04,117 [INFO] [KEYWORDS_FILTERED] ['rope', 'video', 'generation'] (중복 제거 완료)
+2025-12-04 15:27:04,117 [INFO]   [KEYWORDS] ['rope', 'video', 'generation']
+2025-12-04 15:27:04,119 [INFO] [SAVED] doc2549016.json
+2025-12-04 15:27:04,119 [INFO]   [SUCCESS] doc2549016 저장 완료
+2025-12-04 15:27:04,119 [INFO] 
+[17/105] 처리 중: Deep Research: A Systematic Survey
+2025-12-04 15:27:04,119 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02038 (try 1/4)
+2025-12-04 15:27:06,491 [INFO] [KEYWORDS_RAW] ['comment', 'generation', 'research'] (lemmatized)
+2025-12-04 15:27:06,491 [INFO] [KEYWORDS_FILTERED] ['comment', 'generation', 'research'] (중복 제거 완료)
+2025-12-04 15:27:06,492 [INFO]   [KEYWORDS] ['comment', 'generation', 'research']
+2025-12-04 15:27:06,493 [INFO] [SAVED] doc2549017.json
+2025-12-04 15:27:06,493 [INFO]   [SUCCESS] doc2549017 저장 완료
+2025-12-04 15:27:06,493 [INFO] 
+[18/105] 처리 중: Vision Bridge Transformer at Scale
+2025-12-04 15:27:06,494 [INFO] [HTTP] GET https://huggingface.co/papers/2511.23199 (try 1/4)
+2025-12-04 15:27:08,849 [INFO] [KEYWORDS_RAW] ['bridge', 'http', 'transformer'] (lemmatized)
+2025-12-04 15:27:08,849 [INFO] [KEYWORDS_FILTERED] ['bridge', 'http', 'transformer'] (중복 제거 완료)
+2025-12-04 15:27:08,850 [INFO]   [KEYWORDS] ['bridge', 'http', 'transformer']
+2025-12-04 15:27:08,851 [INFO] [SAVED] doc2549018.json
+2025-12-04 15:27:08,851 [INFO]   [SUCCESS] doc2549018 저장 완료
+2025-12-04 15:27:08,851 [INFO] 
+[19/105] 처리 중: Guided Self-Evolving LLMs with Minimal Human Supervision
+2025-12-04 15:27:08,852 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02472 (try 1/4)
+2025-12-04 15:27:11,176 [INFO] [KEYWORDS_RAW] ['human', 'self', 'training'] (lemmatized)
+2025-12-04 15:27:11,177 [INFO] [KEYWORDS_FILTERED] ['human', 'self', 'training'] (중복 제거 완료)
+2025-12-04 15:27:11,177 [INFO]   [KEYWORDS] ['human', 'self', 'training']
+2025-12-04 15:27:11,179 [INFO] [SAVED] doc2549019.json
+2025-12-04 15:27:11,179 [INFO]   [SUCCESS] doc2549019 저장 완료
+2025-12-04 15:27:11,179 [INFO] 
+[20/105] 처리 중: Skywork-R1V4: Toward Agentic Multimodal Intelligence through Interleaved Thinking with Images and DeepResearch
+2025-12-04 15:27:11,180 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02395 (try 1/4)
+2025-12-04 15:27:13,562 [INFO] [KEYWORDS_RAW] ['multimodal', 'agentic', 'skywork'] (lemmatized)
+2025-12-04 15:27:13,563 [INFO] [KEYWORDS_FILTERED] ['multimodal', 'agentic', 'skywork'] (중복 제거 완료)
+2025-12-04 15:27:13,563 [INFO]   [KEYWORDS] ['multimodal', 'agentic', 'skywork']
+2025-12-04 15:27:13,565 [INFO] [SAVED] doc2549020.json
+2025-12-04 15:27:13,565 [INFO]   [SUCCESS] doc2549020 저장 완료
+2025-12-04 15:27:13,565 [INFO] 
+[21/105] 처리 중: AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement
+2025-12-04 15:27:13,566 [INFO] [HTTP] GET https://huggingface.co/papers/2511.23475 (try 1/4)
+2025-12-04 15:27:15,878 [INFO] [KEYWORDS_RAW] ['person', 'multi', 'multi person'] (lemmatized)
+2025-12-04 15:27:15,879 [INFO] [KEYWORDS_FILTERED] ['multi person'] (중복 제거 완료)
+2025-12-04 15:27:15,879 [INFO]   [KEYWORDS] ['multi person', 'keyword2', 'keyword3']
+2025-12-04 15:27:15,881 [INFO] [SAVED] doc2549021.json
+2025-12-04 15:27:15,881 [INFO]   [SUCCESS] doc2549021 저장 완료
+2025-12-04 15:27:15,882 [INFO] 
+[22/105] 처리 중: DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation
+2025-12-04 15:27:15,882 [INFO] [HTTP] GET https://huggingface.co/papers/2511.23127 (try 1/4)
+2025-12-04 15:27:18,378 [INFO] [KEYWORDS_RAW] ['dualcamctrl', 'camera', 'http'] (lemmatized)
+2025-12-04 15:27:18,379 [INFO] [KEYWORDS_FILTERED] ['dualcamctrl', 'camera', 'http'] (중복 제거 완료)
+2025-12-04 15:27:18,379 [INFO]   [KEYWORDS] ['dualcamctrl', 'camera', 'http']
+2025-12-04 15:27:18,381 [INFO] [SAVED] doc2549022.json
+2025-12-04 15:27:18,381 [INFO]   [SUCCESS] doc2549022 저장 완료
+2025-12-04 15:27:18,381 [INFO] 
+[23/105] 처리 중: Geometrically-Constrained Agent for Spatial Reasoning
+2025-12-04 15:27:18,382 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22659 (try 1/4)
+2025-12-04 15:27:20,894 [INFO] [KEYWORDS_RAW] ['reasoning', 'gca', 'semantic'] (lemmatized)
+2025-12-04 15:27:20,895 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'gca', 'semantic'] (중복 제거 완료)
+2025-12-04 15:27:20,895 [INFO]   [KEYWORDS] ['reasoning', 'gca', 'semantic']
+2025-12-04 15:27:20,897 [INFO] [SAVED] doc2549023.json
+2025-12-04 15:27:20,898 [INFO]   [SUCCESS] doc2549023 저장 완료
+2025-12-04 15:27:20,898 [INFO] 
+[24/105] 처리 중: The Consistency Critic: Correcting Inconsistencies in Generated Images via Reference-Guided Attentive Alignment
+2025-12-04 15:27:20,899 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20614 (try 1/4)
+2025-12-04 15:27:23,818 [INFO] [KEYWORDS_RAW] ['imagecritic', 'inconsistency', 'detail'] (lemmatized)
+2025-12-04 15:27:23,819 [INFO] [KEYWORDS_FILTERED] ['imagecritic', 'inconsistency', 'detail'] (중복 제거 완료)
+2025-12-04 15:27:23,820 [INFO]   [KEYWORDS] ['imagecritic', 'inconsistency', 'detail']
+2025-12-04 15:27:23,822 [INFO] [SAVED] doc2549024.json
+2025-12-04 15:27:23,822 [INFO]   [SUCCESS] doc2549024 저장 완료
+2025-12-04 15:27:23,822 [INFO] 
+[25/105] 처리 중: LFM2 Technical Report
+2025-12-04 15:27:23,823 [INFO] [HTTP] GET https://huggingface.co/papers/2511.23404 (try 1/4)
+2025-12-04 15:27:26,299 [INFO] [KEYWORDS_RAW] ['audio', 'comment', 'efficient'] (lemmatized)
+2025-12-04 15:27:26,300 [INFO] [KEYWORDS_FILTERED] ['audio', 'comment', 'efficient'] (중복 제거 완료)
+2025-12-04 15:27:26,300 [INFO]   [KEYWORDS] ['audio', 'comment', 'efficient']
+2025-12-04 15:27:26,301 [INFO] [SAVED] doc2549025.json
+2025-12-04 15:27:26,301 [INFO]   [SUCCESS] doc2549025 저장 완료
+2025-12-04 15:27:26,301 [INFO] 
+[26/105] 처리 중: SimScale: Learning to Drive via Real-World Simulation at Scale
+2025-12-04 15:27:26,302 [INFO] [HTTP] GET https://huggingface.co/papers/2511.23369 (try 1/4)
+2025-12-04 15:27:28,591 [INFO] [KEYWORDS_RAW] ['real', 'real world', 'world'] (lemmatized)
+2025-12-04 15:27:28,592 [INFO] [KEYWORDS_FILTERED] ['real world'] (중복 제거 완료)
+2025-12-04 15:27:28,592 [INFO]   [KEYWORDS] ['real world', 'keyword2', 'keyword3']
+2025-12-04 15:27:28,593 [INFO] [SAVED] doc2549026.json
+2025-12-04 15:27:28,593 [INFO]   [SUCCESS] doc2549026 저장 완료
+2025-12-04 15:27:28,594 [INFO] 
+[27/105] 처리 중: InnoGym: Benchmarking the Innovation Potential of AI Agents
+2025-12-04 15:27:28,594 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01822 (try 1/4)
+2025-12-04 15:27:30,966 [INFO] [KEYWORDS_RAW] ['benchmark', 'agent', 'solution'] (lemmatized)
+2025-12-04 15:27:30,966 [INFO] [KEYWORDS_FILTERED] ['benchmark', 'agent', 'solution'] (중복 제거 완료)
+2025-12-04 15:27:30,967 [INFO]   [KEYWORDS] ['benchmark', 'agent', 'solution']
+2025-12-04 15:27:30,968 [INFO] [SAVED] doc2549027.json
+2025-12-04 15:27:30,968 [INFO]   [SUCCESS] doc2549027 저장 완료
+2025-12-04 15:27:30,969 [INFO] 
+[28/105] 처리 중: Wikontic: Constructing Wikidata-Aligned, Ontology-Aware Knowledge Graphs with Large Language Models
+2025-12-04 15:27:30,969 [INFO] [HTTP] GET https://huggingface.co/papers/2512.00590 (try 1/4)
+2025-12-04 15:27:33,294 [INFO] [KEYWORDS_RAW] ['wikontic', 'comment', 'knowledge'] (lemmatized)
+2025-12-04 15:27:33,294 [INFO] [KEYWORDS_FILTERED] ['wikontic', 'comment', 'knowledge'] (중복 제거 완료)
+2025-12-04 15:27:33,295 [INFO]   [KEYWORDS] ['wikontic', 'comment', 'knowledge']
+2025-12-04 15:27:33,296 [INFO] [SAVED] doc2549028.json
+2025-12-04 15:27:33,296 [INFO]   [SUCCESS] doc2549028 저장 완료
+2025-12-04 15:27:33,296 [INFO] 
+[29/105] 처리 중: Architecture Decoupling Is Not All You Need For Unified Multimodal Model
+2025-12-04 15:27:33,297 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22663 (try 1/4)
+2025-12-04 15:27:35,662 [INFO] [KEYWORDS_RAW] ['decoupling', 'generation', 'aia'] (lemmatized)
+2025-12-04 15:27:35,663 [INFO] [KEYWORDS_FILTERED] ['decoupling', 'generation', 'aia'] (중복 제거 완료)
+2025-12-04 15:27:35,663 [INFO]   [KEYWORDS] ['decoupling', 'generation', 'aia']
+2025-12-04 15:27:35,664 [INFO] [SAVED] doc2549029.json
+2025-12-04 15:27:35,665 [INFO]   [SUCCESS] doc2549029 저장 완료
+2025-12-04 15:27:35,665 [INFO] 
+[30/105] 처리 중: Nemotron-Flash: Towards Latency-Optimal Hybrid Small Language Models
+2025-12-04 15:27:35,665 [INFO] [HTTP] GET https://huggingface.co/papers/2511.18890 (try 1/4)
+2025-12-04 15:27:38,108 [INFO] [KEYWORDS_RAW] ['latency', 'real', 'accuracy'] (lemmatized)
+2025-12-04 15:27:38,108 [INFO] [KEYWORDS_FILTERED] ['latency', 'real', 'accuracy'] (중복 제거 완료)
+2025-12-04 15:27:38,109 [INFO]   [KEYWORDS] ['latency', 'real', 'accuracy']
+2025-12-04 15:27:38,110 [INFO] [SAVED] doc2549030.json
+2025-12-04 15:27:38,110 [INFO]   [SUCCESS] doc2549030 저장 완료
+2025-12-04 15:27:38,111 [INFO] 
+[31/105] 처리 중: CaptionQA: Is Your Caption as Useful as the Image Itself?
+2025-12-04 15:27:38,111 [INFO] [HTTP] GET https://huggingface.co/papers/2511.21025 (try 1/4)
+2025-12-04 15:27:41,029 [INFO] [KEYWORDS_RAW] ['caption', 'image', 'utility'] (lemmatized)
+2025-12-04 15:27:41,029 [INFO] [KEYWORDS_FILTERED] ['caption', 'image', 'utility'] (중복 제거 완료)
+2025-12-04 15:27:41,030 [INFO]   [KEYWORDS] ['caption', 'image', 'utility']
+2025-12-04 15:27:41,031 [INFO] [SAVED] doc2549031.json
+2025-12-04 15:27:41,031 [INFO]   [SUCCESS] doc2549031 저장 완료
+2025-12-04 15:27:41,032 [INFO] 
+[32/105] 처리 중: Flash-DMD: Towards High-Fidelity Few-Step Image Generation with Efficient Distillation and Joint Reinforcement Learning
+2025-12-04 15:27:41,032 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20549 (try 1/4)
+2025-12-04 15:27:43,495 [INFO] [KEYWORDS_RAW] ['training', 'distillation', 'quality'] (lemmatized)
+2025-12-04 15:27:43,495 [INFO] [KEYWORDS_FILTERED] ['training', 'distillation', 'quality'] (중복 제거 완료)
+2025-12-04 15:27:43,496 [INFO]   [KEYWORDS] ['training', 'distillation', 'quality']
+2025-12-04 15:27:43,497 [INFO] [SAVED] doc2549032.json
+2025-12-04 15:27:43,497 [INFO]   [SUCCESS] doc2549032 저장 완료
+2025-12-04 15:27:43,497 [INFO] 
+[33/105] 처리 중: DiP: Taming Diffusion Models in Pixel Space
+2025-12-04 15:27:43,497 [INFO] [HTTP] GET https://huggingface.co/papers/2511.18822 (try 1/4)
+2025-12-04 15:27:46,165 [INFO] [KEYWORDS_RAW] ['dip', 'diffusion', 'generation'] (lemmatized)
+2025-12-04 15:27:46,166 [INFO] [KEYWORDS_FILTERED] ['dip', 'diffusion', 'generation'] (중복 제거 완료)
+2025-12-04 15:27:46,166 [INFO]   [KEYWORDS] ['dip', 'diffusion', 'generation']
+2025-12-04 15:27:46,167 [INFO] [SAVED] doc2549033.json
+2025-12-04 15:27:46,168 [INFO]   [SUCCESS] doc2549033 저장 완료
+2025-12-04 15:27:46,168 [INFO] 
+[34/105] 처리 중: Glance: Accelerating Diffusion Models with 1 Sample
+2025-12-04 15:27:46,168 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02899 (try 1/4)
+2025-12-04 15:27:48,462 [INFO] [KEYWORDS_RAW] ['lora', 'comment', 'generalization'] (lemmatized)
+2025-12-04 15:27:48,462 [INFO] [KEYWORDS_FILTERED] ['lora', 'comment', 'generalization'] (중복 제거 완료)
+2025-12-04 15:27:48,463 [INFO]   [KEYWORDS] ['lora', 'comment', 'generalization']
+2025-12-04 15:27:48,464 [INFO] [SAVED] doc2549034.json
+2025-12-04 15:27:48,464 [INFO]   [SUCCESS] doc2549034 저장 완료
+2025-12-04 15:27:48,464 [INFO] 
+[35/105] 처리 중: Rectifying LLM Thought from Lens of Optimization
+2025-12-04 15:27:48,465 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01925 (try 1/4)
+2025-12-04 15:27:50,756 [INFO] [KEYWORDS_RAW] ['reasoning', 'process', 'cot'] (lemmatized)
+2025-12-04 15:27:50,757 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'process', 'cot'] (중복 제거 완료)
+2025-12-04 15:27:50,757 [INFO]   [KEYWORDS] ['reasoning', 'process', 'cot']
+2025-12-04 15:27:50,758 [INFO] [SAVED] doc2549035.json
+2025-12-04 15:27:50,759 [INFO]   [SUCCESS] doc2549035 저장 완료
+2025-12-04 15:27:50,759 [INFO] 
+[36/105] 처리 중: SimWorld: An Open-ended Realistic Simulator for Autonomous Agents in Physical and Social Worlds
+2025-12-04 15:27:50,759 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01078 (try 1/4)
+2025-12-04 15:27:53,254 [INFO] [KEYWORDS_RAW] ['simworld', 'world', 'agent'] (lemmatized)
+2025-12-04 15:27:53,255 [INFO] [KEYWORDS_FILTERED] ['simworld', 'world', 'agent'] (중복 제거 완료)
+2025-12-04 15:27:53,255 [INFO]   [KEYWORDS] ['simworld', 'world', 'agent']
+2025-12-04 15:27:53,257 [INFO] [SAVED] doc2549036.json
+2025-12-04 15:27:53,257 [INFO]   [SUCCESS] doc2549036 저장 완료
+2025-12-04 15:27:53,257 [INFO] 
+[37/105] 처리 중: ViSAudio: End-to-End Video-Driven Binaural Spatial Audio Generation
+2025-12-04 15:27:53,257 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03036 (try 1/4)
+2025-12-04 15:27:55,572 [INFO] [KEYWORDS_RAW] ['audio', 'visaudio', 'end'] (lemmatized)
+2025-12-04 15:27:55,573 [INFO] [KEYWORDS_FILTERED] ['audio', 'visaudio', 'end'] (중복 제거 완료)
+2025-12-04 15:27:55,573 [INFO]   [KEYWORDS] ['audio', 'visaudio', 'end']
+2025-12-04 15:27:55,574 [INFO] [SAVED] doc2549037.json
+2025-12-04 15:27:55,574 [INFO]   [SUCCESS] doc2549037 저장 완료
+2025-12-04 15:27:55,574 [INFO] 
+[38/105] 처리 중: WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning
+2025-12-04 15:27:55,574 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02425 (try 1/4)
+2025-12-04 15:27:58,115 [INFO] [KEYWORDS_RAW] ['memory', 'video', 'multiple'] (lemmatized)
+2025-12-04 15:27:58,115 [INFO] [KEYWORDS_FILTERED] ['memory', 'video', 'multiple'] (중복 제거 완료)
+2025-12-04 15:27:58,116 [INFO]   [KEYWORDS] ['memory', 'video', 'multiple']
+2025-12-04 15:27:58,117 [INFO] [SAVED] doc2549038.json
+2025-12-04 15:27:58,117 [INFO]   [SUCCESS] doc2549038 저장 완료
+2025-12-04 15:27:58,117 [INFO] 
+[39/105] 처리 중: GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation
+2025-12-04 15:27:58,117 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01801 (try 1/4)
+2025-12-04 15:28:00,597 [INFO] [KEYWORDS_RAW] ['demonstration', 'learning', 'policy'] (lemmatized)
+2025-12-04 15:28:00,597 [INFO] [KEYWORDS_FILTERED] ['demonstration', 'learning', 'policy'] (중복 제거 완료)
+2025-12-04 15:28:00,598 [INFO]   [KEYWORDS] ['demonstration', 'learning', 'policy']
+2025-12-04 15:28:00,599 [INFO] [SAVED] doc2549039.json
+2025-12-04 15:28:00,599 [INFO]   [SUCCESS] doc2549039 저장 완료
+2025-12-04 15:28:00,599 [INFO] 
+[40/105] 처리 중: VLASH: Real-Time VLAs via Future-State-Aware Asynchronous Inference
+2025-12-04 15:28:00,599 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01031 (try 1/4)
+2025-12-04 15:28:03,128 [INFO] [KEYWORDS_RAW] ['vlash', 'action', 'accuracy'] (lemmatized)
+2025-12-04 15:28:03,129 [INFO] [KEYWORDS_FILTERED] ['vlash', 'action', 'accuracy'] (중복 제거 완료)
+2025-12-04 15:28:03,129 [INFO]   [KEYWORDS] ['vlash', 'action', 'accuracy']
+2025-12-04 15:28:03,130 [INFO] [SAVED] doc2549040.json
+2025-12-04 15:28:03,130 [INFO]   [SUCCESS] doc2549040 저장 완료
+2025-12-04 15:28:03,131 [INFO] [COOLDOWN] 40개 처리 완료 → 120초 휴식
+2025-12-04 15:30:03,131 [INFO] 
+[41/105] 처리 중: DualVLA: Building a Generalizable Embodied Agent via Partial Decoupling of Reasoning and Action
+2025-12-04 15:30:03,132 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22134 (try 1/4)
+2025-12-04 15:30:05,663 [INFO] [KEYWORDS_RAW] ['action', 'reasoning', 'vla'] (lemmatized)
+2025-12-04 15:30:05,663 [INFO] [KEYWORDS_FILTERED] ['action', 'reasoning', 'vla'] (중복 제거 완료)
+2025-12-04 15:30:05,664 [INFO]   [KEYWORDS] ['action', 'reasoning', 'vla']
+2025-12-04 15:30:05,665 [INFO] [SAVED] doc2549041.json
+2025-12-04 15:30:05,665 [INFO]   [SUCCESS] doc2549041 저장 완료
+2025-12-04 15:30:05,666 [INFO] 
+[42/105] 처리 중: ViDiC: Video Difference Captioning
+2025-12-04 15:30:05,666 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03405 (try 1/4)
+2025-12-04 15:30:07,952 [INFO] [KEYWORDS_RAW] ['difference', 'video', 'vidic'] (lemmatized)
+2025-12-04 15:30:07,953 [INFO] [KEYWORDS_FILTERED] ['difference', 'video', 'vidic'] (중복 제거 완료)
+2025-12-04 15:30:07,953 [INFO]   [KEYWORDS] ['difference', 'video', 'vidic']
+2025-12-04 15:30:07,955 [INFO] [SAVED] doc2549042.json
+2025-12-04 15:30:07,955 [INFO]   [SUCCESS] doc2549042 저장 완료
+2025-12-04 15:30:07,956 [INFO] 
+[43/105] 처리 중: Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models
+2025-12-04 15:30:07,956 [INFO] [HTTP] GET https://huggingface.co/papers/2511.23319 (try 1/4)
+2025-12-04 15:30:10,279 [INFO] [KEYWORDS_RAW] ['context', 'long', 'attention'] (lemmatized)
+2025-12-04 15:30:10,280 [INFO] [KEYWORDS_FILTERED] ['context', 'long', 'attention'] (중복 제거 완료)
+2025-12-04 15:30:10,281 [INFO]   [KEYWORDS] ['context', 'long', 'attention']
+2025-12-04 15:30:10,282 [INFO] [SAVED] doc2549043.json
+2025-12-04 15:30:10,283 [INFO]   [SUCCESS] doc2549043 저장 완료
+2025-12-04 15:30:10,283 [INFO] 
+[44/105] 처리 중: Adversarial Flow Models
+2025-12-04 15:30:10,283 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22475 (try 1/4)
+2025-12-04 15:30:12,752 [INFO] [KEYWORDS_RAW] ['flow', 'step', 'training'] (lemmatized)
+2025-12-04 15:30:12,752 [INFO] [KEYWORDS_FILTERED] ['flow', 'step', 'training'] (중복 제거 완료)
+2025-12-04 15:30:12,753 [INFO]   [KEYWORDS] ['flow', 'step', 'training']
+2025-12-04 15:30:12,754 [INFO] [SAVED] doc2549044.json
+2025-12-04 15:30:12,754 [INFO]   [SUCCESS] doc2549044 저장 완료
+2025-12-04 15:30:12,754 [INFO] 
+[45/105] 처리 중: Decoupled DMD: CFG Augmentation as the Spear, Distribution Matching as the Shield
+2025-12-04 15:30:12,755 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22677 (try 1/4)
+2025-12-04 15:30:15,089 [INFO] [KEYWORDS_RAW] ['distillation', 'image', 'matching'] (lemmatized)
+2025-12-04 15:30:15,089 [INFO] [KEYWORDS_FILTERED] ['distillation', 'image', 'matching'] (중복 제거 완료)
+2025-12-04 15:30:15,090 [INFO]   [KEYWORDS] ['distillation', 'image', 'matching']
+2025-12-04 15:30:15,091 [INFO] [SAVED] doc2549045.json
+2025-12-04 15:30:15,091 [INFO]   [SUCCESS] doc2549045 저장 완료
+2025-12-04 15:30:15,091 [INFO] 
+[46/105] 처리 중: PixelDiT: Pixel Diffusion Transformers for Image Generation
+2025-12-04 15:30:15,091 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20645 (try 1/4)
+2025-12-04 15:30:17,562 [INFO] [KEYWORDS_RAW] ['space', 'diffusion', 'pixel'] (lemmatized)
+2025-12-04 15:30:17,562 [INFO] [KEYWORDS_FILTERED] ['space', 'diffusion', 'pixel'] (중복 제거 완료)
+2025-12-04 15:30:17,563 [INFO]   [KEYWORDS] ['space', 'diffusion', 'pixel']
+2025-12-04 15:30:17,564 [INFO] [SAVED] doc2549046.json
+2025-12-04 15:30:17,564 [INFO]   [SUCCESS] doc2549046 저장 완료
+2025-12-04 15:30:17,564 [INFO] 
+[47/105] 처리 중: Mixture of Horizons in Action Chunking
+2025-12-04 15:30:17,565 [INFO] [HTTP] GET https://huggingface.co/papers/2511.19433 (try 1/4)
+2025-12-04 15:30:20,091 [INFO] [KEYWORDS_RAW] ['moh', 'performance', 'term'] (lemmatized)
+2025-12-04 15:30:20,092 [INFO] [KEYWORDS_FILTERED] ['moh', 'performance', 'term'] (중복 제거 완료)
+2025-12-04 15:30:20,092 [INFO]   [KEYWORDS] ['moh', 'performance', 'term']
+2025-12-04 15:30:20,093 [INFO] [SAVED] doc2549047.json
+2025-12-04 15:30:20,093 [INFO]   [SUCCESS] doc2549047 저장 완료
+2025-12-04 15:30:20,093 [INFO] 
+[48/105] 처리 중: OneThinker: All-in-one Reasoning Model for Image and Video
+2025-12-04 15:30:20,094 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03043 (try 1/4)
+2025-12-04 15:30:22,914 [INFO] [KEYWORDS_RAW] ['onethinker', 'reasoning', 'across'] (lemmatized)
+2025-12-04 15:30:22,914 [INFO] [KEYWORDS_FILTERED] ['onethinker', 'reasoning', 'across'] (중복 제거 완료)
+2025-12-04 15:30:22,915 [INFO]   [KEYWORDS] ['onethinker', 'reasoning', 'across']
+2025-12-04 15:30:22,917 [INFO] [SAVED] doc2549048.json
+2025-12-04 15:30:22,917 [INFO]   [SUCCESS] doc2549048 저장 완료
+2025-12-04 15:30:22,918 [INFO] 
+[49/105] 처리 중: InternVideo-Next: Towards General Video Foundation Models without Video-Text Supervision
+2025-12-04 15:30:22,918 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01342 (try 1/4)
+2025-12-04 15:30:25,288 [INFO] [KEYWORDS_RAW] ['level', 'pixel', 'stage'] (lemmatized)
+2025-12-04 15:30:25,289 [INFO] [KEYWORDS_FILTERED] ['level', 'pixel', 'stage'] (중복 제거 완료)
+2025-12-04 15:30:25,290 [INFO]   [KEYWORDS] ['level', 'pixel', 'stage']
+2025-12-04 15:30:25,305 [INFO] [SAVED] doc2549049.json
+2025-12-04 15:30:25,306 [INFO]   [SUCCESS] doc2549049 저장 완료
+2025-12-04 15:30:25,307 [INFO] 
+[50/105] 처리 중: MultiBanana: A Challenging Benchmark for Multi-Reference Text-to-Image Generation
+2025-12-04 15:30:25,307 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22989 (try 1/4)
+2025-12-04 15:30:28,119 [INFO] [KEYWORDS_RAW] ['reference', 'image', 'multi'] (lemmatized)
+2025-12-04 15:30:28,120 [INFO] [KEYWORDS_FILTERED] ['reference', 'image', 'multi'] (중복 제거 완료)
+2025-12-04 15:30:28,120 [INFO]   [KEYWORDS] ['reference', 'image', 'multi']
+2025-12-04 15:30:28,121 [INFO] [SAVED] doc2549050.json
+2025-12-04 15:30:28,122 [INFO]   [SUCCESS] doc2549050 저장 완료
+2025-12-04 15:30:28,122 [INFO] 
+[51/105] 처리 중: Where Culture Fades: Revealing the Cultural Gap in Text-to-Image Generation
+2025-12-04 15:30:28,123 [INFO] [HTTP] GET https://huggingface.co/papers/2511.17282 (try 1/4)
+2025-12-04 15:30:30,731 [INFO] [KEYWORDS_RAW] ['cultural', 'image', 'alignment'] (lemmatized)
+2025-12-04 15:30:30,732 [INFO] [KEYWORDS_FILTERED] ['cultural', 'image', 'alignment'] (중복 제거 완료)
+2025-12-04 15:30:30,732 [INFO]   [KEYWORDS] ['cultural', 'image', 'alignment']
+2025-12-04 15:30:30,734 [INFO] [SAVED] doc2549051.json
+2025-12-04 15:30:30,735 [INFO]   [SUCCESS] doc2549051 저장 완료
+2025-12-04 15:30:30,735 [INFO] 
+[52/105] 처리 중: PretrainZero: Reinforcement Active Pretraining
+2025-12-04 15:30:30,736 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03442 (try 1/4)
+2025-12-04 15:30:33,035 [INFO] [KEYWORDS_RAW] ['general', 'pretraining', 'pretrainzero'] (lemmatized)
+2025-12-04 15:30:33,036 [INFO] [KEYWORDS_FILTERED] ['general', 'pretraining', 'pretrainzero'] (중복 제거 완료)
+2025-12-04 15:30:33,037 [INFO]   [KEYWORDS] ['general', 'pretraining', 'pretrainzero']
+2025-12-04 15:30:33,039 [INFO] [SAVED] doc2549052.json
+2025-12-04 15:30:33,039 [INFO]   [SUCCESS] doc2549052 저장 완료
+2025-12-04 15:30:33,040 [INFO] 
+[53/105] 처리 중: WUSH: Near-Optimal Adaptive Transforms for LLM Quantization
+2025-12-04 15:30:33,041 [INFO] [HTTP] GET https://huggingface.co/papers/2512.00956 (try 1/4)
+2025-12-04 15:30:35,361 [INFO] [KEYWORDS_RAW] ['transforms', 'optimal', 'common'] (lemmatized)
+2025-12-04 15:30:35,361 [INFO] [KEYWORDS_FILTERED] ['transforms', 'optimal', 'common'] (중복 제거 완료)
+2025-12-04 15:30:35,362 [INFO]   [KEYWORDS] ['transforms', 'optimal', 'common']
+2025-12-04 15:30:35,363 [INFO] [SAVED] doc2549053.json
+2025-12-04 15:30:35,363 [INFO]   [SUCCESS] doc2549053 저장 완료
+2025-12-04 15:30:35,363 [INFO] 
+[54/105] 처리 중: SpeContext: Enabling Efficient Long-context Reasoning with Speculative Context Sparsity in LLMs
+2025-12-04 15:30:35,364 [INFO] [HTTP] GET https://huggingface.co/papers/2512.00722 (try 1/4)
+2025-12-04 15:30:37,827 [INFO] [KEYWORDS_RAW] ['specontext', 'context', 'cloud'] (lemmatized)
+2025-12-04 15:30:37,827 [INFO] [KEYWORDS_FILTERED] ['specontext', 'context', 'cloud'] (중복 제거 완료)
+2025-12-04 15:30:37,828 [INFO]   [KEYWORDS] ['specontext', 'context', 'cloud']
+2025-12-04 15:30:37,829 [INFO] [SAVED] doc2549054.json
+2025-12-04 15:30:37,829 [INFO]   [SUCCESS] doc2549054 저장 완료
+2025-12-04 15:30:37,829 [INFO] 
+[55/105] 처리 중: Flow Straighter and Faster: Efficient One-Step Generative Modeling via MeanFlow on Rectified Trajectories
+2025-12-04 15:30:37,830 [INFO] [HTTP] GET https://huggingface.co/papers/2511.23342 (try 1/4)
+2025-12-04 15:30:40,322 [INFO] [KEYWORDS_RAW] ['flow', 'meanflow', 'rectified'] (lemmatized)
+2025-12-04 15:30:40,322 [INFO] [KEYWORDS_FILTERED] ['flow', 'meanflow', 'rectified'] (중복 제거 완료)
+2025-12-04 15:30:40,323 [INFO]   [KEYWORDS] ['flow', 'meanflow', 'rectified']
+2025-12-04 15:30:40,325 [INFO] [SAVED] doc2549055.json
+2025-12-04 15:30:40,326 [INFO]   [SUCCESS] doc2549055 저장 완료
+2025-12-04 15:30:40,327 [INFO] 
+[56/105] 처리 중: RefineBench: Evaluating Refinement Capability of Language Models via Checklists
+2025-12-04 15:30:40,327 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22173 (try 1/4)
+2025-12-04 15:30:42,894 [INFO] [KEYWORDS_RAW] ['refinement', 'self', 'refine'] (lemmatized)
+2025-12-04 15:30:42,894 [INFO] [KEYWORDS_FILTERED] ['refinement', 'self', 'refine'] (중복 제거 완료)
+2025-12-04 15:30:42,895 [INFO]   [KEYWORDS] ['refinement', 'self', 'refine']
+2025-12-04 15:30:42,896 [INFO] [SAVED] doc2549056.json
+2025-12-04 15:30:42,896 [INFO]   [SUCCESS] doc2549056 저장 완료
+2025-12-04 15:30:42,896 [INFO] 
+[57/105] 처리 중: Rethinking Prompt Design for Inference-time Scaling in Text-to-Visual Generation
+2025-12-04 15:30:42,897 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03534 (try 1/4)
+2025-12-04 15:30:45,207 [INFO] [KEYWORDS_RAW] ['prompt', 'visuals', 'generation'] (lemmatized)
+2025-12-04 15:30:45,208 [INFO] [KEYWORDS_FILTERED] ['prompt', 'visuals', 'generation'] (중복 제거 완료)
+2025-12-04 15:30:45,209 [INFO]   [KEYWORDS] ['prompt', 'visuals', 'generation']
+2025-12-04 15:30:45,211 [INFO] [SAVED] doc2549057.json
+2025-12-04 15:30:45,212 [INFO]   [SUCCESS] doc2549057 저장 완료
+2025-12-04 15:30:45,212 [INFO] 
+[58/105] 처리 중: Accelerating Streaming Video Large Language Models via Hierarchical Token Compression
+2025-12-04 15:30:45,213 [INFO] [HTTP] GET https://huggingface.co/papers/2512.00891 (try 1/4)
+2025-12-04 15:30:47,836 [INFO] [KEYWORDS_RAW] ['stc', 'token', 'llm'] (lemmatized)
+2025-12-04 15:30:47,837 [INFO] [KEYWORDS_FILTERED] ['stc', 'token', 'llm'] (중복 제거 완료)
+2025-12-04 15:30:47,838 [INFO]   [KEYWORDS] ['stc', 'token', 'llm']
+2025-12-04 15:30:47,838 [INFO] [SAVED] doc2549058.json
+2025-12-04 15:30:47,839 [INFO]   [SUCCESS] doc2549058 저장 완료
+2025-12-04 15:30:47,839 [INFO] 
+[59/105] 처리 중: CUDA-L2: Surpassing cuBLAS Performance for Matrix Multiplication through Reinforcement Learning
+2025-12-04 15:30:47,839 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02551 (try 1/4)
+2025-12-04 15:30:50,391 [INFO] [KEYWORDS_RAW] ['cuda', 'kernel', 'itcublaslt'] (lemmatized)
+2025-12-04 15:30:50,392 [INFO] [KEYWORDS_FILTERED] ['cuda', 'kernel', 'itcublaslt'] (중복 제거 완료)
+2025-12-04 15:30:50,392 [INFO]   [KEYWORDS] ['cuda', 'kernel', 'itcublaslt']
+2025-12-04 15:30:50,394 [INFO] [SAVED] doc2549059.json
+2025-12-04 15:30:50,395 [INFO]   [SUCCESS] doc2549059 저장 완료
+2025-12-04 15:30:50,395 [INFO] 
+[60/105] 처리 중: Does Hearing Help Seeing? Investigating Audio-Video Joint Denoising for Video Generation
+2025-12-04 15:30:50,396 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02457 (try 1/4)
+2025-12-04 15:30:52,724 [INFO] [KEYWORDS_RAW] ['video', 'audio', 'audio video'] (lemmatized)
+2025-12-04 15:30:52,725 [INFO] [KEYWORDS_FILTERED] ['audio video'] (중복 제거 완료)
+2025-12-04 15:30:52,726 [INFO]   [KEYWORDS] ['audio video', 'keyword2', 'keyword3']
+2025-12-04 15:30:52,728 [INFO] [SAVED] doc2549060.json
+2025-12-04 15:30:52,729 [INFO]   [SUCCESS] doc2549060 저장 완료
+2025-12-04 15:30:52,729 [INFO] 
+[61/105] 처리 중: Lotus-2: Advancing Geometric Dense Prediction with Powerful Image Generative Model
+2025-12-04 15:30:52,730 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01030 (try 1/4)
+2025-12-04 15:30:55,281 [INFO] [KEYWORDS_RAW] ['lotus', 'geometric', 'deterministic'] (lemmatized)
+2025-12-04 15:30:55,282 [INFO] [KEYWORDS_FILTERED] ['lotus', 'geometric', 'deterministic'] (중복 제거 완료)
+2025-12-04 15:30:55,282 [INFO]   [KEYWORDS] ['lotus', 'geometric', 'deterministic']
+2025-12-04 15:30:55,284 [INFO] [SAVED] doc2549061.json
+2025-12-04 15:30:55,285 [INFO]   [SUCCESS] doc2549061 저장 완료
+2025-12-04 15:30:55,286 [INFO] 
+[62/105] 처리 중: Thinking with Programming Vision: Towards a Unified View for Thinking with Images
+2025-12-04 15:30:55,286 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03746 (try 1/4)
+2025-12-04 15:30:57,580 [INFO] [KEYWORDS_RAW] ['tool', 'code', 'image'] (lemmatized)
+2025-12-04 15:30:57,580 [INFO] [KEYWORDS_FILTERED] ['tool', 'code', 'image'] (중복 제거 완료)
+2025-12-04 15:30:57,581 [INFO]   [KEYWORDS] ['tool', 'code', 'image']
+2025-12-04 15:30:57,583 [INFO] [SAVED] doc2549062.json
+2025-12-04 15:30:57,584 [INFO]   [SUCCESS] doc2549062 저장 완료
+2025-12-04 15:30:57,585 [INFO] 
+[63/105] 처리 중: MagicQuillV2: Precise and Interactive Image Editing with Layered Visual Cues
+2025-12-04 15:30:57,585 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03046 (try 1/4)
+2025-12-04 15:31:00,092 [INFO] [KEYWORDS_RAW] ['layerfor', 'comment', 'content'] (lemmatized)
+2025-12-04 15:31:00,093 [INFO] [KEYWORDS_FILTERED] ['layerfor', 'comment', 'content'] (중복 제거 완료)
+2025-12-04 15:31:00,093 [INFO]   [KEYWORDS] ['layerfor', 'comment', 'content']
+2025-12-04 15:31:00,094 [INFO] [SAVED] doc2549063.json
+2025-12-04 15:31:00,094 [INFO]   [SUCCESS] doc2549063 저장 완료
+2025-12-04 15:31:00,095 [INFO] 
+[64/105] 처리 중: The Curious Case of Analogies: Investigating Analogical Reasoning in Large Language Models
+2025-12-04 15:31:00,096 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20344 (try 1/4)
+2025-12-04 15:31:02,419 [INFO] [KEYWORDS_RAW] ['level', 'relational', 'analogical'] (lemmatized)
+2025-12-04 15:31:02,419 [INFO] [KEYWORDS_FILTERED] ['level', 'relational', 'analogical'] (중복 제거 완료)
+2025-12-04 15:31:02,420 [INFO]   [KEYWORDS] ['level', 'relational', 'analogical']
+2025-12-04 15:31:02,422 [INFO] [SAVED] doc2549064.json
+2025-12-04 15:31:02,423 [INFO]   [SUCCESS] doc2549064 저장 완료
+2025-12-04 15:31:02,424 [INFO] 
+[65/105] 처리 중: Script: Graph-Structured and Query-Conditioned Semantic Token Pruning for Multimodal Large Language Models
+2025-12-04 15:31:02,425 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01949 (try 1/4)
+2025-12-04 15:31:04,911 [INFO] [KEYWORDS_RAW] ['script', 'token', 'comment'] (lemmatized)
+2025-12-04 15:31:04,912 [INFO] [KEYWORDS_FILTERED] ['script', 'token', 'comment'] (중복 제거 완료)
+2025-12-04 15:31:04,912 [INFO]   [KEYWORDS] ['script', 'token', 'comment']
+2025-12-04 15:31:04,914 [INFO] [SAVED] doc2549065.json
+2025-12-04 15:31:04,914 [INFO]   [SUCCESS] doc2549065 저장 완료
+2025-12-04 15:31:04,915 [INFO] 
+[66/105] 처리 중: DiG-Flow: Discrepancy-Guided Flow Matching for Robust VLA Models
+2025-12-04 15:31:04,915 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01715 (try 1/4)
+2025-12-04 15:31:07,250 [INFO] [KEYWORDS_RAW] ['flow', 'dig', 'dig flow'] (lemmatized)
+2025-12-04 15:31:07,251 [INFO] [KEYWORDS_FILTERED] ['dig flow'] (중복 제거 완료)
+2025-12-04 15:31:07,251 [INFO]   [KEYWORDS] ['dig flow', 'keyword2', 'keyword3']
+2025-12-04 15:31:07,254 [INFO] [SAVED] doc2549066.json
+2025-12-04 15:31:07,254 [INFO]   [SUCCESS] doc2549066 저장 완료
+2025-12-04 15:31:07,255 [INFO] 
+[67/105] 처리 중: PromptBridge: Cross-Model Prompt Transfer for Large Language Models
+2025-12-04 15:31:07,255 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01420 (try 1/4)
+2025-12-04 15:31:09,624 [INFO] [KEYWORDS_RAW] ['prompt', 'llm', 'promptbridge'] (lemmatized)
+2025-12-04 15:31:09,624 [INFO] [KEYWORDS_FILTERED] ['prompt', 'llm', 'promptbridge'] (중복 제거 완료)
+2025-12-04 15:31:09,625 [INFO]   [KEYWORDS] ['prompt', 'llm', 'promptbridge']
+2025-12-04 15:31:09,627 [INFO] [SAVED] doc2549067.json
+2025-12-04 15:31:09,628 [INFO]   [SUCCESS] doc2549067 저장 완료
+2025-12-04 15:31:09,628 [INFO] 
+[68/105] 처리 중: TRivia: Self-supervised Fine-tuning of Vision-Language Models for Table Recognition
+2025-12-04 15:31:09,629 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01248 (try 1/4)
+2025-12-04 15:31:12,140 [INFO] [KEYWORDS_RAW] ['table', 'image', 'labeled'] (lemmatized)
+2025-12-04 15:31:12,141 [INFO] [KEYWORDS_FILTERED] ['table', 'image', 'labeled'] (중복 제거 완료)
+2025-12-04 15:31:12,141 [INFO]   [KEYWORDS] ['table', 'image', 'labeled']
+2025-12-04 15:31:12,142 [INFO] [SAVED] doc2549068.json
+2025-12-04 15:31:12,142 [INFO]   [SUCCESS] doc2549068 저장 완료
+2025-12-04 15:31:12,142 [INFO] 
+[69/105] 처리 중: SCALE: Selective Resource Allocation for Overcoming Performance Bottlenecks in Mathematical Test-time Scaling
+2025-12-04 15:31:12,143 [INFO] [HTTP] GET https://huggingface.co/papers/2512.00466 (try 1/4)
+2025-12-04 15:31:14,632 [INFO] [KEYWORDS_RAW] ['problem', 'sub', 'sub problem'] (lemmatized)
+2025-12-04 15:31:14,633 [INFO] [KEYWORDS_FILTERED] ['sub problem'] (중복 제거 완료)
+2025-12-04 15:31:14,634 [INFO]   [KEYWORDS] ['sub problem', 'keyword2', 'keyword3']
+2025-12-04 15:31:14,636 [INFO] [SAVED] doc2549069.json
+2025-12-04 15:31:14,637 [INFO]   [SUCCESS] doc2549069 저장 완료
+2025-12-04 15:31:14,637 [INFO] 
+[70/105] 처리 중: Captain Safari: A World Engine
+2025-12-04 15:31:14,637 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22815 (try 1/4)
+2025-12-04 15:31:17,139 [INFO] [KEYWORDS_RAW] ['camera', 'world', 'video'] (lemmatized)
+2025-12-04 15:31:17,140 [INFO] [KEYWORDS_FILTERED] ['camera', 'world', 'video'] (중복 제거 완료)
+2025-12-04 15:31:17,140 [INFO]   [KEYWORDS] ['camera', 'world', 'video']
+2025-12-04 15:31:17,141 [INFO] [SAVED] doc2549070.json
+2025-12-04 15:31:17,141 [INFO]   [SUCCESS] doc2549070 저장 완료
+2025-12-04 15:31:17,141 [INFO] 
+[71/105] 처리 중: World in a Frame: Understanding Culture Mixing as a New Challenge for Vision-Language Models
+2025-12-04 15:31:17,142 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22787 (try 1/4)
+2025-12-04 15:31:19,517 [INFO] [KEYWORDS_RAW] ['food', 'background', 'cultural'] (lemmatized)
+2025-12-04 15:31:19,518 [INFO] [KEYWORDS_FILTERED] ['food', 'background', 'cultural'] (중복 제거 완료)
+2025-12-04 15:31:19,518 [INFO]   [KEYWORDS] ['food', 'background', 'cultural']
+2025-12-04 15:31:19,521 [INFO] [SAVED] doc2549071.json
+2025-12-04 15:31:19,521 [INFO]   [SUCCESS] doc2549071 저장 완료
+2025-12-04 15:31:19,522 [INFO] 
+[72/105] 처리 중: RULER-Bench: Probing Rule-based Reasoning Abilities of Next-level Video Generation Models for Vision Foundation Intelligence
+2025-12-04 15:31:19,522 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02622 (try 1/4)
+2025-12-04 15:31:22,131 [INFO] [KEYWORDS_RAW] ['video', 'generation', 'reasoning'] (lemmatized)
+2025-12-04 15:31:22,132 [INFO] [KEYWORDS_FILTERED] ['video', 'generation', 'reasoning'] (중복 제거 완료)
+2025-12-04 15:31:22,133 [INFO]   [KEYWORDS] ['video', 'generation', 'reasoning']
+2025-12-04 15:31:22,135 [INFO] [SAVED] doc2549072.json
+2025-12-04 15:31:22,135 [INFO]   [SUCCESS] doc2549072 저장 완료
+2025-12-04 15:31:22,136 [INFO] 
+[73/105] 처리 중: RELIC: Interactive Video World Model with Long-Horizon Memory
+2025-12-04 15:31:22,137 [INFO] [HTTP] GET https://huggingface.co/papers/2512.04040 (try 1/4)
+2025-12-04 15:31:24,710 [INFO] [KEYWORDS_RAW] ['long', 'memory', 'horizon'] (lemmatized)
+2025-12-04 15:31:24,711 [INFO] [KEYWORDS_FILTERED] ['long', 'memory', 'horizon'] (중복 제거 완료)
+2025-12-04 15:31:24,712 [INFO]   [KEYWORDS] ['long', 'memory', 'horizon']
+2025-12-04 15:31:24,715 [INFO] [SAVED] doc2549073.json
+2025-12-04 15:31:24,715 [INFO]   [SUCCESS] doc2549073 저장 완료
+2025-12-04 15:31:24,716 [INFO] 
+[74/105] 처리 중: Revisiting the Necessity of Lengthy Chain-of-Thought in Vision-centric Reasoning Generalization
+2025-12-04 15:31:24,716 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22586 (try 1/4)
+2025-12-04 15:31:27,338 [INFO] [KEYWORDS_RAW] ['cot', 'reasoning', 'visual'] (lemmatized)
+2025-12-04 15:31:27,339 [INFO] [KEYWORDS_FILTERED] ['cot', 'reasoning', 'visual'] (중복 제거 완료)
+2025-12-04 15:31:27,339 [INFO]   [KEYWORDS] ['cot', 'reasoning', 'visual']
+2025-12-04 15:31:27,340 [INFO] [SAVED] doc2549074.json
+2025-12-04 15:31:27,340 [INFO]   [SUCCESS] doc2549074 저장 완료
+2025-12-04 15:31:27,341 [INFO] 
+[75/105] 처리 중: HiconAgent: History Context-aware Policy Optimization for GUI Agents
+2025-12-04 15:31:27,341 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01763 (try 1/4)
+2025-12-04 15:31:29,824 [INFO] [KEYWORDS_RAW] ['history', 'context', 'gui'] (lemmatized)
+2025-12-04 15:31:29,824 [INFO] [KEYWORDS_FILTERED] ['history', 'context', 'gui'] (중복 제거 완료)
+2025-12-04 15:31:29,824 [INFO]   [KEYWORDS] ['history', 'context', 'gui']
+2025-12-04 15:31:29,825 [INFO] [SAVED] doc2549075.json
+2025-12-04 15:31:29,826 [INFO]   [SUCCESS] doc2549075 저장 완료
+2025-12-04 15:31:29,826 [INFO] 
+[76/105] 처리 중: StreamGaze: Gaze-Guided Temporal Reasoning and Proactive Understanding in Streaming Videos
+2025-12-04 15:31:29,827 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01707 (try 1/4)
+2025-12-04 15:31:32,445 [INFO] [KEYWORDS_RAW] ['gaze', 'streaming', 'video'] (lemmatized)
+2025-12-04 15:31:32,445 [INFO] [KEYWORDS_FILTERED] ['gaze', 'streaming', 'video'] (중복 제거 완료)
+2025-12-04 15:31:32,445 [INFO]   [KEYWORDS] ['gaze', 'streaming', 'video']
+2025-12-04 15:31:32,446 [INFO] [SAVED] doc2549076.json
+2025-12-04 15:31:32,446 [INFO]   [SUCCESS] doc2549076 저장 완료
+2025-12-04 15:31:32,447 [INFO] 
+[77/105] 처리 중: ORION: Teaching Language Models to Reason Efficiently in the Language of Thought
+2025-12-04 15:31:32,448 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22891 (try 1/4)
+2025-12-04 15:31:34,928 [INFO] [KEYWORDS_RAW] ['reasoning', 'step', 'accuracy'] (lemmatized)
+2025-12-04 15:31:34,928 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'step', 'accuracy'] (중복 제거 완료)
+2025-12-04 15:31:34,929 [INFO]   [KEYWORDS] ['reasoning', 'step', 'accuracy']
+2025-12-04 15:31:34,931 [INFO] [SAVED] doc2549077.json
+2025-12-04 15:31:34,931 [INFO]   [SUCCESS] doc2549077 저장 완료
+2025-12-04 15:31:34,932 [INFO] 
+[78/105] 처리 중: The Collapse of Patches
+2025-12-04 15:31:34,932 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22281 (try 1/4)
+2025-12-04 15:31:37,247 [INFO] [KEYWORDS_RAW] ['patch', 'image', 'collapse'] (lemmatized)
+2025-12-04 15:31:37,248 [INFO] [KEYWORDS_FILTERED] ['patch', 'image', 'collapse'] (중복 제거 완료)
+2025-12-04 15:31:37,248 [INFO]   [KEYWORDS] ['patch', 'image', 'collapse']
+2025-12-04 15:31:37,249 [INFO] [SAVED] doc2549078.json
+2025-12-04 15:31:37,249 [INFO]   [SUCCESS] doc2549078 저장 완료
+2025-12-04 15:31:37,249 [INFO] 
+[79/105] 처리 중: OralGPT-Omni: A Versatile Dental Multimodal Large Language Model
+2025-12-04 15:31:37,250 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22055 (try 1/4)
+2025-12-04 15:31:39,618 [INFO] [KEYWORDS_RAW] ['dental', 'analysis', 'image'] (lemmatized)
+2025-12-04 15:31:39,619 [INFO] [KEYWORDS_FILTERED] ['dental', 'analysis', 'image'] (중복 제거 완료)
+2025-12-04 15:31:39,620 [INFO]   [KEYWORDS] ['dental', 'analysis', 'image']
+2025-12-04 15:31:39,622 [INFO] [SAVED] doc2549079.json
+2025-12-04 15:31:39,622 [INFO]   [SUCCESS] doc2549079 저장 완료
+2025-12-04 15:31:39,623 [INFO] 
+[80/105] 처리 중: SO-Bench: A Structural Output Evaluation of Multimodal LLMs
+2025-12-04 15:31:39,623 [INFO] [HTTP] GET https://huggingface.co/papers/2511.21750 (try 1/4)
+2025-12-04 15:31:42,207 [INFO] [KEYWORDS_RAW] ['schema', 'output', 'visual'] (lemmatized)
+2025-12-04 15:31:42,208 [INFO] [KEYWORDS_FILTERED] ['schema', 'output', 'visual'] (중복 제거 완료)
+2025-12-04 15:31:42,208 [INFO]   [KEYWORDS] ['schema', 'output', 'visual']
+2025-12-04 15:31:42,211 [INFO] [SAVED] doc2549080.json
+2025-12-04 15:31:42,211 [INFO]   [SUCCESS] doc2549080 저장 완료
+2025-12-04 15:31:42,212 [INFO] [COOLDOWN] 80개 처리 완료 → 120초 휴식
+2025-12-04 15:33:42,213 [INFO] 
+[81/105] 처리 중: SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL
+2025-12-04 15:33:42,214 [INFO] [HTTP] GET https://huggingface.co/papers/2512.04069 (try 1/4)
+2025-12-04 15:33:44,682 [INFO] [KEYWORDS_RAW] ['tool', 'reasoning', 'spatial'] (lemmatized)
+2025-12-04 15:33:44,682 [INFO] [KEYWORDS_FILTERED] ['tool', 'reasoning', 'spatial'] (중복 제거 완료)
+2025-12-04 15:33:44,682 [INFO]   [KEYWORDS] ['tool', 'reasoning', 'spatial']
+2025-12-04 15:33:44,683 [INFO] [SAVED] doc2549081.json
+2025-12-04 15:33:44,684 [INFO]   [SUCCESS] doc2549081 저장 완료
+2025-12-04 15:33:44,684 [INFO] 
+[82/105] 처리 중: SR-GRPO: Stable Rank as an Intrinsic Geometric Reward for Large Language Model Alignment
+2025-12-04 15:33:44,684 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02807 (try 1/4)
+2025-12-04 15:33:47,157 [INFO] [KEYWORDS_RAW] ['signal', 'quality', 'rank'] (lemmatized)
+2025-12-04 15:33:47,157 [INFO] [KEYWORDS_FILTERED] ['signal', 'quality', 'rank'] (중복 제거 완료)
+2025-12-04 15:33:47,158 [INFO]   [KEYWORDS] ['signal', 'quality', 'rank']
+2025-12-04 15:33:47,159 [INFO] [SAVED] doc2549082.json
+2025-12-04 15:33:47,159 [INFO]   [SUCCESS] doc2549082 저장 완료
+2025-12-04 15:33:47,159 [INFO] 
+[83/105] 처리 중: PAI-Bench: A Comprehensive Benchmark For Physical AI
+2025-12-04 15:33:47,160 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01989 (try 1/4)
+2025-12-04 15:33:49,475 [INFO] [KEYWORDS_RAW] ['physical', 'bench', 'video'] (lemmatized)
+2025-12-04 15:33:49,476 [INFO] [KEYWORDS_FILTERED] ['physical', 'bench', 'video'] (중복 제거 완료)
+2025-12-04 15:33:49,476 [INFO]   [KEYWORDS] ['physical', 'bench', 'video']
+2025-12-04 15:33:49,479 [INFO] [SAVED] doc2549083.json
+2025-12-04 15:33:49,479 [INFO]   [SUCCESS] doc2549083 저장 완료
+2025-12-04 15:33:49,480 [INFO] 
+[84/105] 처리 중: POLARIS: Projection-Orthogonal Least Squares for Robust and Adaptive Inversion in Diffusion Models
+2025-12-04 15:33:49,480 [INFO] [HTTP] GET https://huggingface.co/papers/2512.00369 (try 1/4)
+2025-12-04 15:33:52,312 [INFO] [KEYWORDS_RAW] ['error', 'inversion', 'step'] (lemmatized)
+2025-12-04 15:33:52,312 [INFO] [KEYWORDS_FILTERED] ['error', 'inversion', 'step'] (중복 제거 완료)
+2025-12-04 15:33:52,312 [INFO]   [KEYWORDS] ['error', 'inversion', 'step']
+2025-12-04 15:33:52,315 [INFO] [SAVED] doc2549084.json
+2025-12-04 15:33:52,315 [INFO]   [SUCCESS] doc2549084 저장 완료
+2025-12-04 15:33:52,316 [INFO] 
+[85/105] 처리 중: Test-time scaling of diffusions with flow maps
+2025-12-04 15:33:52,317 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22688 (try 1/4)
+2025-12-04 15:33:54,785 [INFO] [KEYWORDS_RAW] ['reward', 'map', 'flow'] (lemmatized)
+2025-12-04 15:33:54,786 [INFO] [KEYWORDS_FILTERED] ['reward', 'map', 'flow'] (중복 제거 완료)
+2025-12-04 15:33:54,786 [INFO]   [KEYWORDS] ['reward', 'map', 'flow']
+2025-12-04 15:33:54,787 [INFO] [SAVED] doc2549085.json
+2025-12-04 15:33:54,787 [INFO]   [SUCCESS] doc2549085 저장 완료
+2025-12-04 15:33:54,787 [INFO] 
+[86/105] 처리 중: Asking like Socrates: Socrates helps VLMs understand remote sensing images
+2025-12-04 15:33:54,787 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22396 (try 1/4)
+2025-12-04 15:33:57,271 [INFO] [KEYWORDS_RAW] ['reasoning', 'evidence', 'visual'] (lemmatized)
+2025-12-04 15:33:57,272 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'evidence', 'visual'] (중복 제거 완료)
+2025-12-04 15:33:57,273 [INFO]   [KEYWORDS] ['reasoning', 'evidence', 'visual']
+2025-12-04 15:33:57,275 [INFO] [SAVED] doc2549086.json
+2025-12-04 15:33:57,276 [INFO]   [SUCCESS] doc2549086 저장 완료
+2025-12-04 15:33:57,277 [INFO] 
+[87/105] 처리 중: Focused Chain-of-Thought: Efficient LLM Reasoning via Structured Input Information
+2025-12-04 15:33:57,277 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22176 (try 1/4)
+2025-12-04 15:33:59,601 [INFO] [KEYWORDS_RAW] ['cot', 'reasoning', 'input'] (lemmatized)
+2025-12-04 15:33:59,601 [INFO] [KEYWORDS_FILTERED] ['cot', 'reasoning', 'input'] (중복 제거 완료)
+2025-12-04 15:33:59,602 [INFO]   [KEYWORDS] ['cot', 'reasoning', 'input']
+2025-12-04 15:33:59,602 [INFO] [SAVED] doc2549087.json
+2025-12-04 15:33:59,603 [INFO]   [SUCCESS] doc2549087 저장 완료
+2025-12-04 15:33:59,603 [INFO] 
+[88/105] 처리 중: CookAnything: A Framework for Flexible and Consistent Multi-Step Recipe Image Generation
+2025-12-04 15:33:59,604 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03540 (try 1/4)
+2025-12-04 15:34:02,078 [INFO] [KEYWORDS_RAW] ['step', 'image', 'framework'] (lemmatized)
+2025-12-04 15:34:02,078 [INFO] [KEYWORDS_FILTERED] ['step', 'image', 'framework'] (중복 제거 완료)
+2025-12-04 15:34:02,079 [INFO]   [KEYWORDS] ['step', 'image', 'framework']
+2025-12-04 15:34:02,080 [INFO] [SAVED] doc2549088.json
+2025-12-04 15:34:02,080 [INFO]   [SUCCESS] doc2549088 저장 완료
+2025-12-04 15:34:02,080 [INFO] 
+[89/105] 처리 중: Video4Spatial: Towards Visuospatial Intelligence with Context-Guided Video Generation
+2025-12-04 15:34:02,081 [INFO] [HTTP] GET https://huggingface.co/papers/2512.03040 (try 1/4)
+2025-12-04 15:34:04,455 [INFO] [KEYWORDS_RAW] ['video', 'following', 'spatial'] (lemmatized)
+2025-12-04 15:34:04,455 [INFO] [KEYWORDS_FILTERED] ['video', 'following', 'spatial'] (중복 제거 완료)
+2025-12-04 15:34:04,455 [INFO]   [KEYWORDS] ['video', 'following', 'spatial']
+2025-12-04 15:34:04,458 [INFO] [SAVED] doc2549089.json
+2025-12-04 15:34:04,458 [INFO]   [SUCCESS] doc2549089 저장 완료
+2025-12-04 15:34:04,459 [INFO] 
+[90/105] 처리 중: YingVideo-MV: Music-Driven Multi-Stage Video Generation
+2025-12-04 15:34:04,459 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02492 (try 1/4)
+2025-12-04 15:34:06,967 [INFO] [KEYWORDS_RAW] ['video', 'camera', 'music'] (lemmatized)
+2025-12-04 15:34:06,968 [INFO] [KEYWORDS_FILTERED] ['video', 'camera', 'music'] (중복 제거 완료)
+2025-12-04 15:34:06,968 [INFO]   [KEYWORDS] ['video', 'camera', 'music']
+2025-12-04 15:34:06,969 [INFO] [SAVED] doc2549090.json
+2025-12-04 15:34:06,969 [INFO]   [SUCCESS] doc2549090 저장 완료
+2025-12-04 15:34:06,970 [INFO] 
+[91/105] 처리 중: Agentic Policy Optimization via Instruction-Policy Co-Evolution
+2025-12-04 15:34:06,970 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01945 (try 1/4)
+2025-12-04 15:34:09,327 [INFO] [KEYWORDS_RAW] ['instruction', 'inspo', 'policy'] (lemmatized)
+2025-12-04 15:34:09,328 [INFO] [KEYWORDS_FILTERED] ['instruction', 'inspo', 'policy'] (중복 제거 완료)
+2025-12-04 15:34:09,328 [INFO]   [KEYWORDS] ['instruction', 'inspo', 'policy']
+2025-12-04 15:34:09,332 [INFO] [SAVED] doc2549091.json
+2025-12-04 15:34:09,332 [INFO]   [SUCCESS] doc2549091 저장 완료
+2025-12-04 15:34:09,332 [INFO] 
+[92/105] 처리 중: OpenREAD: Reinforced Open-Ended Reasoing for End-to-End Autonomous Driving with LLM-as-Critic
+2025-12-04 15:34:09,333 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01830 (try 1/4)
+2025-12-04 15:34:11,911 [INFO] [KEYWORDS_RAW] ['driving', 'open', 'autonomous'] (lemmatized)
+2025-12-04 15:34:11,912 [INFO] [KEYWORDS_FILTERED] ['driving', 'open', 'autonomous'] (중복 제거 완료)
+2025-12-04 15:34:11,913 [INFO]   [KEYWORDS] ['driving', 'open', 'autonomous']
+2025-12-04 15:34:11,915 [INFO] [SAVED] doc2549092.json
+2025-12-04 15:34:11,916 [INFO]   [SUCCESS] doc2549092 저장 완료
+2025-12-04 15:34:11,917 [INFO] 
+[93/105] 처리 중: CauSight: Learning to Supersense for Visual Causal Discovery
+2025-12-04 15:34:11,917 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01827 (try 1/4)
+2025-12-04 15:34:14,241 [INFO] [KEYWORDS_RAW] ['causal', 'http', 'causal discovery'] (lemmatized)
+2025-12-04 15:34:14,242 [INFO] [KEYWORDS_FILTERED] ['http', 'causal discovery'] (중복 제거 완료)
+2025-12-04 15:34:14,243 [INFO]   [KEYWORDS] ['http', 'causal discovery', 'keyword3']
+2025-12-04 15:34:14,245 [INFO] [SAVED] doc2549093.json
+2025-12-04 15:34:14,246 [INFO]   [SUCCESS] doc2549093 저장 완료
+2025-12-04 15:34:14,246 [INFO] 
+[94/105] 처리 중: Learning Eigenstructures of Unstructured Data Manifolds
+2025-12-04 15:34:14,247 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01103 (try 1/4)
+2025-12-04 15:34:17,114 [INFO] [KEYWORDS_RAW] ['operator', 'manifold', 'approximation'] (lemmatized)
+2025-12-04 15:34:17,115 [INFO] [KEYWORDS_FILTERED] ['operator', 'manifold', 'approximation'] (중복 제거 완료)
+2025-12-04 15:34:17,116 [INFO]   [KEYWORDS] ['operator', 'manifold', 'approximation']
+2025-12-04 15:34:17,118 [INFO] [SAVED] doc2549094.json
+2025-12-04 15:34:17,119 [INFO]   [SUCCESS] doc2549094 저장 완료
+2025-12-04 15:34:17,119 [INFO] 
+[95/105] 처리 중: SwiftVLA: Unlocking Spatiotemporal Dynamics for Lightweight VLA Models at Minimal Overhead
+2025-12-04 15:34:17,120 [INFO] [HTTP] GET https://huggingface.co/papers/2512.00903 (try 1/4)
+2025-12-04 15:34:19,504 [INFO] [KEYWORDS_RAW] ['swiftvla', 'action', 'comment'] (lemmatized)
+2025-12-04 15:34:19,505 [INFO] [KEYWORDS_FILTERED] ['swiftvla', 'action', 'comment'] (중복 제거 완료)
+2025-12-04 15:34:19,505 [INFO]   [KEYWORDS] ['swiftvla', 'action', 'comment']
+2025-12-04 15:34:19,506 [INFO] [SAVED] doc2549095.json
+2025-12-04 15:34:19,506 [INFO]   [SUCCESS] doc2549095 저장 완료
+2025-12-04 15:34:19,507 [INFO] 
+[96/105] 처리 중: Ovis-Image Technical Report
+2025-12-04 15:34:19,508 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22982 (try 1/4)
+2025-12-04 15:34:22,033 [INFO] [KEYWORDS_RAW] ['ovis', 'image', 'text'] (lemmatized)
+2025-12-04 15:34:22,034 [INFO] [KEYWORDS_FILTERED] ['ovis', 'image', 'text'] (중복 제거 완료)
+2025-12-04 15:34:22,035 [INFO]   [KEYWORDS] ['ovis', 'image', 'text']
+2025-12-04 15:34:22,037 [INFO] [SAVED] doc2549096.json
+2025-12-04 15:34:22,037 [INFO]   [SUCCESS] doc2549096 저장 완료
+2025-12-04 15:34:22,038 [INFO] 
+[97/105] 처리 중: From Pixels to Feelings: Aligning MLLMs with Human Cognitive Perception of Images
+2025-12-04 15:34:22,038 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22805 (try 1/4)
+2025-12-04 15:34:24,433 [INFO] [KEYWORDS_RAW] ['human', 'image', 'gap'] (lemmatized)
+2025-12-04 15:34:24,433 [INFO] [KEYWORDS_FILTERED] ['human', 'image', 'gap'] (중복 제거 완료)
+2025-12-04 15:34:24,434 [INFO]   [KEYWORDS] ['human', 'image', 'gap']
+2025-12-04 15:34:24,435 [INFO] [SAVED] doc2549097.json
+2025-12-04 15:34:24,435 [INFO]   [SUCCESS] doc2549097 저장 완료
+2025-12-04 15:34:24,436 [INFO] 
+[98/105] 처리 중: AlignBench: Benchmarking Fine-Grained Image-Text Alignment with Synthetic Image-Caption Pairs
+2025-12-04 15:34:24,436 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20515 (try 1/4)
+2025-12-04 15:34:26,796 [INFO] [KEYWORDS_RAW] ['alignment', 'image', 'text'] (lemmatized)
+2025-12-04 15:34:26,796 [INFO] [KEYWORDS_FILTERED] ['alignment', 'image', 'text'] (중복 제거 완료)
+2025-12-04 15:34:26,797 [INFO]   [KEYWORDS] ['alignment', 'image', 'text']
+2025-12-04 15:34:26,799 [INFO] [SAVED] doc2549098.json
+2025-12-04 15:34:26,800 [INFO]   [SUCCESS] doc2549098 저장 완료
+2025-12-04 15:34:26,800 [INFO] 
+[99/105] 처리 중: OmniRefiner: Reinforcement-Guided Local Diffusion Refinement
+2025-12-04 15:34:26,801 [INFO] [HTTP] GET https://huggingface.co/papers/2511.19990 (try 1/4)
+2025-12-04 15:34:29,179 [INFO] [KEYWORDS_RAW] ['image', 'detail', 'reference'] (lemmatized)
+2025-12-04 15:34:29,180 [INFO] [KEYWORDS_FILTERED] ['image', 'detail', 'reference'] (중복 제거 완료)
+2025-12-04 15:34:29,180 [INFO]   [KEYWORDS] ['image', 'detail', 'reference']
+2025-12-04 15:34:29,181 [INFO] [SAVED] doc2549099.json
+2025-12-04 15:34:29,181 [INFO]   [SUCCESS] doc2549099 저장 완료
+2025-12-04 15:34:29,182 [INFO] 
+[100/105] 처리 중: GUI Exploration Lab: Enhancing Screen Navigation in Agents via Multi-Turn Reinforcement Learning
+2025-12-04 15:34:29,183 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02423 (try 1/4)
+2025-12-04 15:34:31,666 [INFO] [KEYWORDS_RAW] ['agent', 'gui', 'navigation'] (lemmatized)
+2025-12-04 15:34:31,666 [INFO] [KEYWORDS_FILTERED] ['agent', 'gui', 'navigation'] (중복 제거 완료)
+2025-12-04 15:34:31,667 [INFO]   [KEYWORDS] ['agent', 'gui', 'navigation']
+2025-12-04 15:34:31,668 [INFO] [SAVED] doc2549100.json
+2025-12-04 15:34:31,669 [INFO]   [SUCCESS] doc2549100 저장 완료
+2025-12-04 15:34:31,669 [INFO] 
+[101/105] 처리 중: The Art of Scaling Test-Time Compute for Large Language Models
+2025-12-04 15:34:31,670 [INFO] [HTTP] GET https://huggingface.co/papers/2512.02008 (try 1/4)
+2025-12-04 15:34:34,170 [INFO] [KEYWORDS_RAW] ['compute', 'difficulty', 'problem'] (lemmatized)
+2025-12-04 15:34:34,171 [INFO] [KEYWORDS_FILTERED] ['compute', 'difficulty', 'problem'] (중복 제거 완료)
+2025-12-04 15:34:34,171 [INFO]   [KEYWORDS] ['compute', 'difficulty', 'problem']
+2025-12-04 15:34:34,172 [INFO] [SAVED] doc2549101.json
+2025-12-04 15:34:34,173 [INFO]   [SUCCESS] doc2549101 저장 완료
+2025-12-04 15:34:34,173 [INFO] 
+[102/105] 처리 중: FlashVGGT: Efficient and Scalable Visual Geometry Transformers with Compressed Descriptor Attention
+2025-12-04 15:34:34,174 [INFO] [HTTP] GET https://huggingface.co/papers/2512.01540 (try 1/4)
+2025-12-04 15:34:36,598 [INFO] [KEYWORDS_RAW] ['image', 'token', 'vggt'] (lemmatized)
+2025-12-04 15:34:36,598 [INFO] [KEYWORDS_FILTERED] ['image', 'token', 'vggt'] (중복 제거 완료)
+2025-12-04 15:34:36,599 [INFO]   [KEYWORDS] ['image', 'token', 'vggt']
+2025-12-04 15:34:36,600 [INFO] [SAVED] doc2549102.json
+2025-12-04 15:34:36,600 [INFO]   [SUCCESS] doc2549102 저장 완료
+2025-12-04 15:34:36,600 [INFO] 
+[103/105] 처리 중: BlockVid: Block Diffusion for High-Quality and Consistent Minute-Long Video Generation
+2025-12-04 15:34:36,601 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22973 (try 1/4)
+2025-12-04 15:34:39,093 [INFO] [KEYWORDS_RAW] ['long', 'video', 'long video'] (lemmatized)
+2025-12-04 15:34:39,094 [INFO] [KEYWORDS_FILTERED] ['long video'] (중복 제거 완료)
+2025-12-04 15:34:39,094 [INFO]   [KEYWORDS] ['long video', 'keyword2', 'keyword3']
+2025-12-04 15:34:39,096 [INFO] [SAVED] doc2549103.json
+2025-12-04 15:34:39,096 [INFO]   [SUCCESS] doc2549103 저장 완료
+2025-12-04 15:34:39,097 [INFO] 
+[104/105] 처리 중: C^2DLM: Causal Concept-Guided Diffusion Large Language Models
+2025-12-04 15:34:39,097 [INFO] [HTTP] GET https://huggingface.co/papers/2511.22146 (try 1/4)
+2025-12-04 15:34:41,567 [INFO] [KEYWORDS_RAW] ['language', 'causal', 'concept'] (lemmatized)
+2025-12-04 15:34:41,567 [INFO] [KEYWORDS_FILTERED] ['language', 'causal', 'concept'] (중복 제거 완료)
+2025-12-04 15:34:41,568 [INFO]   [KEYWORDS] ['language', 'causal', 'concept']
+2025-12-04 15:34:41,569 [INFO] [SAVED] doc2549104.json
+2025-12-04 15:34:41,569 [INFO]   [SUCCESS] doc2549104 저장 완료
+2025-12-04 15:34:41,570 [INFO] 
+[105/105] 처리 중: Beyond Description: Cognitively Benchmarking Fine-Grained Action for Embodied Agents
+2025-12-04 15:34:41,570 [INFO] [HTTP] GET https://huggingface.co/papers/2511.18685 (try 1/4)
+2025-12-04 15:34:43,879 [INFO] [KEYWORDS_RAW] ['bench', 'cfg', 'fine'] (lemmatized)
+2025-12-04 15:34:43,880 [INFO] [KEYWORDS_FILTERED] ['bench', 'cfg', 'fine'] (중복 제거 완료)
+2025-12-04 15:34:43,880 [INFO]   [KEYWORDS] ['bench', 'cfg', 'fine']
+2025-12-04 15:34:43,882 [INFO] [SAVED] doc2549105.json
+2025-12-04 15:34:43,883 [INFO]   [SUCCESS] doc2549105 저장 완료
+2025-12-04 15:34:43,883 [INFO] 
+============================================================
+2025-12-04 15:34:43,884 [INFO] [DONE] 2025-W49 크롤링 완료
+2025-12-04 15:34:43,884 [INFO]   - 총 논문 수: 105
+2025-12-04 15:34:43,885 [INFO]   - 성공: 105
+2025-12-04 15:34:43,886 [INFO]   - 실패: 0
+2025-12-04 15:34:43,886 [INFO] ============================================================

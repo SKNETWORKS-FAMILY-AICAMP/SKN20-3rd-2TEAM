@@ -1,14 +1,14 @@
 {
-  "context": "The Conformer-based decoders adapted for MEG signals achieved high performance in Speech Detection and Phoneme Classification tasks using task-specific augmentations and normalization techniques. We presentConformer-based decoders for the LibriBrain 2025 PNPL competition, targeting two foundationalMEGtasks: Speech Detection and Phoneme Classification. Our approach adapts a compactConformerto raw 306-channelMEGsignals, with a lightweight convolutional projection layer and task-specific heads. For Speech Detection, aMEG-orientedSpecAugmentprovided a first exploration ofMEG-specific augmentation. For Phoneme Classification, we usedinverse-square-root class weightingand adynamic grouping loaderto handle 100-sample averaged examples. In addition, a simpleinstance-level normalizationproved critical to mitigate distribution shifts on the holdout split. Using the official Standard track splits andF1-macrofor model selection, our best systems achieved 88.9% (Speech) and 65.8% (Phoneme) on the leaderboard, surpassing the competition baselines and ranking within the top-10 in both tasks. For further implementation details, the technical documentation, source code, and checkpoints are available at https://github.com/neural2speech/libribrain-experiments. Hello! Here are the relevant links: We welcome any questions, feedback, or ideas for improvement! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "CogIP-Bench evaluates MLLMs on image cognitive properties, revealing a gap that post-training can bridge, enhancing human-like perception and improving creative tasks. WhileMultimodal Large Language Models(MLLMs) are adept at answering what is in an image-identifying objects and describing scenes-they often lack the ability to understand how an image feels to a human observer. This gap is most evident when considering subjective cognitive properties, such as what makes an image memorable, funny, aesthetically pleasing, or emotionally evocative. To systematically address this challenge, we introduceCogIP-Bench, a comprehensive benchmark for evaluating MLLMs on suchimage cognitive properties. Our evaluation reveals a significant gap: current models are poorly aligned withhuman perceptionof these nuanced properties. We then demonstrate that apost-training phasecan effectively bridge this gap, significantly enhancing the model's alignment with human judgments. Furthermore, we show that this learnedcognitive alignmentis not merely predictive but also transferable to downstream creative tasks. By integrating our cognitively-aligned MLLM into animage generation pipeline, we can guide the synthesis process to produce images that better embody desired traits, such as being more memorable or visually appealing. Our work provides a benchmark to measure this human-like perception, a post-training pipeline to enhance it, and a demonstration that this alignment unlocks more human-centric AI. Project page with codes/datasets/models:https://follen-cry.github.io/MLLM-Cognition-project-page/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "MEGConformer: Conformer-Based MEG Decoder for Robust Speech and Phoneme Classification",
-    "github_url": "https://github.com/neural2speech/libribrain-experiments",
-    "huggingface_url": "https://huggingface.co/papers/2512.01443",
-    "upvote": 0,
+    "paper_name": "From Pixels to Feelings: Aligning MLLMs with Human Cognitive Perception of Images",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.22805",
+    "upvote": 3,
     "tags": [
-      "speech",
-      "phoneme",
-      "phoneme classification"
+      "human",
+      "image",
+      "gap"
     ]
   }
 }

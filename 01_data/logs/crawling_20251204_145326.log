@@ -1,0 +1,426 @@
+2025-12-04 14:53:26,736 [INFO] 
+============================================================
+2025-12-04 14:53:26,737 [INFO] [START] 2025-W49 크롤링 시작
+2025-12-04 14:53:26,737 [INFO] ============================================================
+2025-12-04 14:53:26,737 [INFO] [FETCH] Weekly 페이지 요청: https://huggingface.co/papers/week/2025-W49
+2025-12-04 14:53:27,949 [INFO] [SUCCESS] 논문 105개 발견
+2025-12-04 14:53:27,950 [INFO] 
+[1/105] 처리 중: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+2025-12-04 14:53:31,100 [INFO] [KEYWORDS_RAW] ['code', 'development', 'llm'] (lemmatized)
+2025-12-04 14:53:31,100 [INFO] [KEYWORDS_FILTERED] ['code', 'development', 'llm'] (중복 제거 완료)
+2025-12-04 14:53:31,101 [INFO]   [KEYWORDS] ['code', 'development', 'llm']
+2025-12-04 14:53:31,103 [INFO] [SAVED] doc2549001.json
+2025-12-04 14:53:31,103 [INFO]   [SUCCESS] doc2549001 저장 완료
+2025-12-04 14:53:31,103 [INFO] 
+[2/105] 처리 중: LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling
+2025-12-04 14:53:32,493 [INFO] [KEYWORDS_RAW] ['http', 'longvt', 'video'] (lemmatized)
+2025-12-04 14:53:32,493 [INFO] [KEYWORDS_FILTERED] ['http', 'longvt', 'video'] (중복 제거 완료)
+2025-12-04 14:53:32,494 [INFO]   [KEYWORDS] ['http', 'longvt', 'video']
+2025-12-04 14:53:32,495 [INFO] [SAVED] doc2549002.json
+2025-12-04 14:53:32,495 [INFO]   [SUCCESS] doc2549002 저장 완료
+2025-12-04 14:53:32,496 [INFO] 
+[3/105] 처리 중: DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models
+2025-12-04 14:53:33,795 [INFO] [KEYWORDS_RAW] ['deepseek', 'reasoning', 'performance'] (lemmatized)
+2025-12-04 14:53:33,796 [INFO] [KEYWORDS_FILTERED] ['deepseek', 'reasoning', 'performance'] (중복 제거 완료)
+2025-12-04 14:53:33,796 [INFO]   [KEYWORDS] ['deepseek', 'reasoning', 'performance']
+2025-12-04 14:53:33,798 [INFO] [SAVED] doc2549003.json
+2025-12-04 14:53:33,798 [INFO]   [SUCCESS] doc2549003 저장 완료
+2025-12-04 14:53:33,799 [INFO] 
+[4/105] 처리 중: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+2025-12-04 14:53:35,083 [INFO] [KEYWORDS_RAW] ['image', 'http', 'mai'] (lemmatized)
+2025-12-04 14:53:35,083 [INFO] [KEYWORDS_FILTERED] ['image', 'http', 'mai'] (중복 제거 완료)
+2025-12-04 14:53:35,084 [INFO]   [KEYWORDS] ['image', 'http', 'mai']
+2025-12-04 14:53:35,085 [INFO] [SAVED] doc2549004.json
+2025-12-04 14:53:35,085 [INFO]   [SUCCESS] doc2549004 저장 완료
+2025-12-04 14:53:35,085 [INFO] 
+[5/105] 처리 중: Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights
+2025-12-04 14:53:36,239 [INFO] [KEYWORDS_RAW] ['image', 'world', 'generation'] (lemmatized)
+2025-12-04 14:53:36,239 [INFO] [KEYWORDS_FILTERED] ['image', 'world', 'generation'] (중복 제거 완료)
+2025-12-04 14:53:36,240 [INFO]   [KEYWORDS] ['image', 'world', 'generation']
+2025-12-04 14:53:36,241 [INFO] [SAVED] doc2549005.json
+2025-12-04 14:53:36,241 [INFO]   [SUCCESS] doc2549005 저장 완료
+2025-12-04 14:53:36,241 [INFO] 
+[6/105] 처리 중: ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+2025-12-04 14:53:37,372 [INFO] [KEYWORDS_RAW] ['tool', 'gpt', 'orchestrator'] (lemmatized)
+2025-12-04 14:53:37,372 [INFO] [KEYWORDS_FILTERED] ['tool', 'gpt', 'orchestrator'] (중복 제거 완료)
+2025-12-04 14:53:37,373 [INFO]   [KEYWORDS] ['tool', 'gpt', 'orchestrator']
+2025-12-04 14:53:37,374 [INFO] [SAVED] doc2549006.json
+2025-12-04 14:53:37,374 [INFO]   [SUCCESS] doc2549006 저장 완료
+2025-12-04 14:53:37,375 [INFO] 
+[7/105] 처리 중: Stabilizing Reinforcement Learning with LLMs: Formulation and Practices
+2025-12-04 14:53:38,754 [INFO] [KEYWORDS_RAW] ['training', 'level', 'approximation'] (lemmatized)
+2025-12-04 14:53:38,754 [INFO] [KEYWORDS_FILTERED] ['training', 'level', 'approximation'] (중복 제거 완료)
+2025-12-04 14:53:38,755 [INFO]   [KEYWORDS] ['training', 'level', 'approximation']
+2025-12-04 14:53:38,756 [INFO] [SAVED] doc2549007.json
+2025-12-04 14:53:38,756 [INFO]   [SUCCESS] doc2549007 저장 완료
+2025-12-04 14:53:38,756 [INFO] 
+[8/105] 처리 중: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+2025-12-04 14:53:39,913 [INFO] [KEYWORDS_RAW] ['reasoning', 'answer', 'self'] (lemmatized)
+2025-12-04 14:53:39,914 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'answer', 'self'] (중복 제거 완료)
+2025-12-04 14:53:39,914 [INFO]   [KEYWORDS] ['reasoning', 'answer', 'self']
+2025-12-04 14:53:39,916 [INFO] [SAVED] doc2549008.json
+2025-12-04 14:53:39,916 [INFO]   [SUCCESS] doc2549008 저장 완료
+2025-12-04 14:53:39,917 [INFO] 
+[9/105] 처리 중: MultiShotMaster: A Controllable Multi-Shot Video Generation Framework
+2025-12-04 14:53:41,016 [INFO] [KEYWORDS_RAW] ['shot', 'video', 'multi'] (lemmatized)
+2025-12-04 14:53:41,016 [INFO] [KEYWORDS_FILTERED] ['shot', 'video', 'multi'] (중복 제거 완료)
+2025-12-04 14:53:41,017 [INFO]   [KEYWORDS] ['shot', 'video', 'multi']
+2025-12-04 14:53:41,018 [INFO] [SAVED] doc2549009.json
+2025-12-04 14:53:41,018 [INFO]   [SUCCESS] doc2549009 저장 완료
+2025-12-04 14:53:41,018 [INFO] 
+[10/105] 처리 중: How Far Are We from Genuinely Useful Deep Research Agents?
+2025-12-04 14:53:42,242 [INFO] [KEYWORDS_RAW] ['research', 'report', 'dras'] (lemmatized)
+2025-12-04 14:53:42,243 [INFO] [KEYWORDS_FILTERED] ['research', 'report', 'dras'] (중복 제거 완료)
+2025-12-04 14:53:42,244 [INFO]   [KEYWORDS] ['research', 'report', 'dras']
+2025-12-04 14:53:42,245 [INFO] [SAVED] doc2549010.json
+2025-12-04 14:53:42,245 [INFO]   [SUCCESS] doc2549010 저장 완료
+2025-12-04 14:53:42,246 [INFO] 
+[11/105] 처리 중: MG-Nav: Dual-Scale Visual Navigation via Sparse Spatial Memory
+2025-12-04 14:53:43,328 [INFO] [KEYWORDS_RAW] ['goal', 'memory', 'navigation'] (lemmatized)
+2025-12-04 14:53:43,329 [INFO] [KEYWORDS_FILTERED] ['goal', 'memory', 'navigation'] (중복 제거 완료)
+2025-12-04 14:53:43,329 [INFO]   [KEYWORDS] ['goal', 'memory', 'navigation']
+2025-12-04 14:53:43,330 [INFO] [SAVED] doc2549011.json
+2025-12-04 14:53:43,330 [INFO]   [SUCCESS] doc2549011 저장 완료
+2025-12-04 14:53:43,331 [INFO] 
+[12/105] 처리 중: REASONEDIT: Towards Reasoning-Enhanced Image Editing Models
+2025-12-04 14:53:44,486 [INFO] [KEYWORDS_RAW] ['editing', 'image', 'edit'] (lemmatized)
+2025-12-04 14:53:44,486 [INFO] [KEYWORDS_FILTERED] ['editing', 'image', 'edit'] (중복 제거 완료)
+2025-12-04 14:53:44,486 [INFO]   [KEYWORDS] ['editing', 'image', 'edit']
+2025-12-04 14:53:44,488 [INFO] [SAVED] doc2549012.json
+2025-12-04 14:53:44,488 [INFO]   [SUCCESS] doc2549012 저장 완료
+2025-12-04 14:53:44,488 [INFO] 
+[13/105] 처리 중: TUNA: Taming Unified Visual Representations for Native Unified Multimodal Models
+2025-12-04 14:53:45,756 [INFO] [KEYWORDS_RAW] ['generation', 'unified', 'face'] (lemmatized)
+2025-12-04 14:53:45,757 [INFO] [KEYWORDS_FILTERED] ['generation', 'unified', 'face'] (중복 제거 완료)
+2025-12-04 14:53:45,757 [INFO]   [KEYWORDS] ['generation', 'unified', 'face']
+2025-12-04 14:53:45,759 [INFO] [SAVED] doc2549013.json
+2025-12-04 14:53:45,759 [INFO]   [SUCCESS] doc2549013 저장 완료
+2025-12-04 14:53:45,760 [INFO] 
+[14/105] 처리 중: Qwen3-VL Technical Report
+2025-12-04 14:53:47,006 [INFO] [KEYWORDS_RAW] ['text', 'video', 'across'] (lemmatized)
+2025-12-04 14:53:47,007 [INFO] [KEYWORDS_FILTERED] ['text', 'video', 'across'] (중복 제거 완료)
+2025-12-04 14:53:47,008 [INFO]   [KEYWORDS] ['text', 'video', 'across']
+2025-12-04 14:53:47,009 [INFO] [SAVED] doc2549014.json
+2025-12-04 14:53:47,010 [INFO]   [SUCCESS] doc2549014 저장 완료
+2025-12-04 14:53:47,010 [INFO] 
+[15/105] 처리 중: What about gravity in video generation? Post-Training Newton's Laws with Verifiable Rewards
+2025-12-04 14:53:48,267 [INFO] [KEYWORDS_RAW] ['physic', 'physical', 'proxy'] (lemmatized)
+2025-12-04 14:53:48,267 [INFO] [KEYWORDS_FILTERED] ['physic', 'physical', 'proxy'] (중복 제거 완료)
+2025-12-04 14:53:48,268 [INFO]   [KEYWORDS] ['physic', 'physical', 'proxy']
+2025-12-04 14:53:48,270 [INFO] [SAVED] doc2549015.json
+2025-12-04 14:53:48,270 [INFO]   [SUCCESS] doc2549015 저장 완료
+2025-12-04 14:53:48,270 [INFO] 
+[16/105] 처리 중: Infinity-RoPE: Action-Controllable Infinite Video Generation Emerges From Autoregressive Self-Rollout
+2025-12-04 14:53:50,653 [INFO] [KEYWORDS_RAW] ['rope', 'video', 'generation'] (lemmatized)
+2025-12-04 14:53:50,654 [INFO] [KEYWORDS_FILTERED] ['rope', 'video', 'generation'] (중복 제거 완료)
+2025-12-04 14:53:50,654 [INFO]   [KEYWORDS] ['rope', 'video', 'generation']
+2025-12-04 14:53:50,656 [INFO] [SAVED] doc2549016.json
+2025-12-04 14:53:50,656 [INFO]   [SUCCESS] doc2549016 저장 완료
+2025-12-04 14:53:50,656 [INFO] 
+[17/105] 처리 중: Deep Research: A Systematic Survey
+2025-12-04 14:53:51,932 [INFO] [KEYWORDS_RAW] ['comment', 'generation', 'research'] (lemmatized)
+2025-12-04 14:53:51,933 [INFO] [KEYWORDS_FILTERED] ['comment', 'generation', 'research'] (중복 제거 완료)
+2025-12-04 14:53:51,934 [INFO]   [KEYWORDS] ['comment', 'generation', 'research']
+2025-12-04 14:53:51,935 [INFO] [SAVED] doc2549017.json
+2025-12-04 14:53:51,935 [INFO]   [SUCCESS] doc2549017 저장 완료
+2025-12-04 14:53:51,935 [INFO] 
+[18/105] 처리 중: Vision Bridge Transformer at Scale
+2025-12-04 14:53:53,226 [INFO] [KEYWORDS_RAW] ['bridge', 'http', 'transformer'] (lemmatized)
+2025-12-04 14:53:53,227 [INFO] [KEYWORDS_FILTERED] ['bridge', 'http', 'transformer'] (중복 제거 완료)
+2025-12-04 14:53:53,227 [INFO]   [KEYWORDS] ['bridge', 'http', 'transformer']
+2025-12-04 14:53:53,229 [INFO] [SAVED] doc2549018.json
+2025-12-04 14:53:53,229 [INFO]   [SUCCESS] doc2549018 저장 완료
+2025-12-04 14:53:53,229 [INFO] 
+[19/105] 처리 중: Guided Self-Evolving LLMs with Minimal Human Supervision
+2025-12-04 14:53:54,485 [INFO] [KEYWORDS_RAW] ['human', 'self', 'training'] (lemmatized)
+2025-12-04 14:53:54,485 [INFO] [KEYWORDS_FILTERED] ['human', 'self', 'training'] (중복 제거 완료)
+2025-12-04 14:53:54,486 [INFO]   [KEYWORDS] ['human', 'self', 'training']
+2025-12-04 14:53:54,487 [INFO] [SAVED] doc2549019.json
+2025-12-04 14:53:54,487 [INFO]   [SUCCESS] doc2549019 저장 완료
+2025-12-04 14:53:54,487 [INFO] 
+[20/105] 처리 중: Skywork-R1V4: Toward Agentic Multimodal Intelligence through Interleaved Thinking with Images and DeepResearch
+2025-12-04 14:53:55,898 [INFO] [KEYWORDS_RAW] ['multimodal', 'agentic', 'skywork'] (lemmatized)
+2025-12-04 14:53:55,899 [INFO] [KEYWORDS_FILTERED] ['multimodal', 'agentic', 'skywork'] (중복 제거 완료)
+2025-12-04 14:53:55,899 [INFO]   [KEYWORDS] ['multimodal', 'agentic', 'skywork']
+2025-12-04 14:53:55,900 [INFO] [SAVED] doc2549020.json
+2025-12-04 14:53:55,900 [INFO]   [SUCCESS] doc2549020 저장 완료
+2025-12-04 14:53:55,901 [INFO] 
+[21/105] 처리 중: AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement
+2025-12-04 14:53:57,013 [INFO] [KEYWORDS_RAW] ['person', 'multi', 'multi person'] (lemmatized)
+2025-12-04 14:53:57,014 [INFO] [KEYWORDS_FILTERED] ['multi person'] (중복 제거 완료)
+2025-12-04 14:53:57,015 [INFO]   [KEYWORDS] ['multi person', 'keyword2', 'keyword3']
+2025-12-04 14:53:57,016 [INFO] [SAVED] doc2549021.json
+2025-12-04 14:53:57,016 [INFO]   [SUCCESS] doc2549021 저장 완료
+2025-12-04 14:53:57,017 [INFO] 
+[22/105] 처리 중: DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation
+2025-12-04 14:53:58,102 [INFO] [KEYWORDS_RAW] ['dualcamctrl', 'camera', 'http'] (lemmatized)
+2025-12-04 14:53:58,102 [INFO] [KEYWORDS_FILTERED] ['dualcamctrl', 'camera', 'http'] (중복 제거 완료)
+2025-12-04 14:53:58,103 [INFO]   [KEYWORDS] ['dualcamctrl', 'camera', 'http']
+2025-12-04 14:53:58,104 [INFO] [SAVED] doc2549022.json
+2025-12-04 14:53:58,104 [INFO]   [SUCCESS] doc2549022 저장 완료
+2025-12-04 14:53:58,104 [INFO] 
+[23/105] 처리 중: Geometrically-Constrained Agent for Spatial Reasoning
+2025-12-04 14:53:59,244 [INFO] [KEYWORDS_RAW] ['reasoning', 'gca', 'semantic'] (lemmatized)
+2025-12-04 14:53:59,244 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'gca', 'semantic'] (중복 제거 완료)
+2025-12-04 14:53:59,245 [INFO]   [KEYWORDS] ['reasoning', 'gca', 'semantic']
+2025-12-04 14:53:59,246 [INFO] [SAVED] doc2549023.json
+2025-12-04 14:53:59,246 [INFO]   [SUCCESS] doc2549023 저장 완료
+2025-12-04 14:53:59,246 [INFO] 
+[24/105] 처리 중: The Consistency Critic: Correcting Inconsistencies in Generated Images via Reference-Guided Attentive Alignment
+2025-12-04 14:54:00,349 [INFO] [KEYWORDS_RAW] ['imagecritic', 'inconsistency', 'detail'] (lemmatized)
+2025-12-04 14:54:00,349 [INFO] [KEYWORDS_FILTERED] ['imagecritic', 'inconsistency', 'detail'] (중복 제거 완료)
+2025-12-04 14:54:00,350 [INFO]   [KEYWORDS] ['imagecritic', 'inconsistency', 'detail']
+2025-12-04 14:54:00,352 [INFO] [SAVED] doc2549024.json
+2025-12-04 14:54:00,352 [INFO]   [SUCCESS] doc2549024 저장 완료
+2025-12-04 14:54:00,352 [INFO] 
+[25/105] 처리 중: LFM2 Technical Report
+2025-12-04 14:54:01,455 [INFO] [KEYWORDS_RAW] ['audio', 'comment', 'efficient'] (lemmatized)
+2025-12-04 14:54:01,455 [INFO] [KEYWORDS_FILTERED] ['audio', 'comment', 'efficient'] (중복 제거 완료)
+2025-12-04 14:54:01,456 [INFO]   [KEYWORDS] ['audio', 'comment', 'efficient']
+2025-12-04 14:54:01,458 [INFO] [SAVED] doc2549025.json
+2025-12-04 14:54:01,458 [INFO]   [SUCCESS] doc2549025 저장 완료
+2025-12-04 14:54:01,458 [INFO] 
+[26/105] 처리 중: SimScale: Learning to Drive via Real-World Simulation at Scale
+2025-12-04 14:54:02,726 [INFO] [KEYWORDS_RAW] ['real', 'real world', 'world'] (lemmatized)
+2025-12-04 14:54:02,727 [INFO] [KEYWORDS_FILTERED] ['real world'] (중복 제거 완료)
+2025-12-04 14:54:02,727 [INFO]   [KEYWORDS] ['real world', 'keyword2', 'keyword3']
+2025-12-04 14:54:02,728 [INFO] [SAVED] doc2549026.json
+2025-12-04 14:54:02,728 [INFO]   [SUCCESS] doc2549026 저장 완료
+2025-12-04 14:54:02,729 [INFO] 
+[27/105] 처리 중: InnoGym: Benchmarking the Innovation Potential of AI Agents
+2025-12-04 14:54:03,834 [INFO] [KEYWORDS_RAW] ['benchmark', 'agent', 'solution'] (lemmatized)
+2025-12-04 14:54:03,835 [INFO] [KEYWORDS_FILTERED] ['benchmark', 'agent', 'solution'] (중복 제거 완료)
+2025-12-04 14:54:03,835 [INFO]   [KEYWORDS] ['benchmark', 'agent', 'solution']
+2025-12-04 14:54:03,837 [INFO] [SAVED] doc2549027.json
+2025-12-04 14:54:03,837 [INFO]   [SUCCESS] doc2549027 저장 완료
+2025-12-04 14:54:03,838 [INFO] 
+[28/105] 처리 중: Wikontic: Constructing Wikidata-Aligned, Ontology-Aware Knowledge Graphs with Large Language Models
+2025-12-04 14:54:05,349 [INFO] [KEYWORDS_RAW] ['wikontic', 'comment', 'knowledge'] (lemmatized)
+2025-12-04 14:54:05,349 [INFO] [KEYWORDS_FILTERED] ['wikontic', 'comment', 'knowledge'] (중복 제거 완료)
+2025-12-04 14:54:05,350 [INFO]   [KEYWORDS] ['wikontic', 'comment', 'knowledge']
+2025-12-04 14:54:05,351 [INFO] [SAVED] doc2549028.json
+2025-12-04 14:54:05,351 [INFO]   [SUCCESS] doc2549028 저장 완료
+2025-12-04 14:54:05,352 [INFO] 
+[29/105] 처리 중: Architecture Decoupling Is Not All You Need For Unified Multimodal Model
+2025-12-04 14:54:06,558 [INFO] [KEYWORDS_RAW] ['decoupling', 'generation', 'aia'] (lemmatized)
+2025-12-04 14:54:06,559 [INFO] [KEYWORDS_FILTERED] ['decoupling', 'generation', 'aia'] (중복 제거 완료)
+2025-12-04 14:54:06,559 [INFO]   [KEYWORDS] ['decoupling', 'generation', 'aia']
+2025-12-04 14:54:06,560 [INFO] [SAVED] doc2549029.json
+2025-12-04 14:54:06,561 [INFO]   [SUCCESS] doc2549029 저장 완료
+2025-12-04 14:54:06,561 [INFO] 
+[30/105] 처리 중: Nemotron-Flash: Towards Latency-Optimal Hybrid Small Language Models
+2025-12-04 14:54:07,921 [INFO] [KEYWORDS_RAW] ['latency', 'real', 'accuracy'] (lemmatized)
+2025-12-04 14:54:07,921 [INFO] [KEYWORDS_FILTERED] ['latency', 'real', 'accuracy'] (중복 제거 완료)
+2025-12-04 14:54:07,922 [INFO]   [KEYWORDS] ['latency', 'real', 'accuracy']
+2025-12-04 14:54:07,923 [INFO] [SAVED] doc2549030.json
+2025-12-04 14:54:07,923 [INFO]   [SUCCESS] doc2549030 저장 완료
+2025-12-04 14:54:07,923 [INFO] 
+[31/105] 처리 중: CaptionQA: Is Your Caption as Useful as the Image Itself?
+2025-12-04 14:54:09,074 [INFO] [KEYWORDS_RAW] ['caption', 'image', 'utility'] (lemmatized)
+2025-12-04 14:54:09,074 [INFO] [KEYWORDS_FILTERED] ['caption', 'image', 'utility'] (중복 제거 완료)
+2025-12-04 14:54:09,075 [INFO]   [KEYWORDS] ['caption', 'image', 'utility']
+2025-12-04 14:54:09,076 [INFO] [SAVED] doc2549031.json
+2025-12-04 14:54:09,076 [INFO]   [SUCCESS] doc2549031 저장 완료
+2025-12-04 14:54:09,076 [INFO] 
+[32/105] 처리 중: Flash-DMD: Towards High-Fidelity Few-Step Image Generation with Efficient Distillation and Joint Reinforcement Learning
+2025-12-04 14:54:10,171 [INFO] [KEYWORDS_RAW] ['training', 'distillation', 'quality'] (lemmatized)
+2025-12-04 14:54:10,171 [INFO] [KEYWORDS_FILTERED] ['training', 'distillation', 'quality'] (중복 제거 완료)
+2025-12-04 14:54:10,172 [INFO]   [KEYWORDS] ['training', 'distillation', 'quality']
+2025-12-04 14:54:10,173 [INFO] [SAVED] doc2549032.json
+2025-12-04 14:54:10,173 [INFO]   [SUCCESS] doc2549032 저장 완료
+2025-12-04 14:54:10,174 [INFO] 
+[33/105] 처리 중: DiP: Taming Diffusion Models in Pixel Space
+2025-12-04 14:54:11,294 [INFO] [KEYWORDS_RAW] ['dip', 'diffusion', 'generation'] (lemmatized)
+2025-12-04 14:54:11,294 [INFO] [KEYWORDS_FILTERED] ['dip', 'diffusion', 'generation'] (중복 제거 완료)
+2025-12-04 14:54:11,295 [INFO]   [KEYWORDS] ['dip', 'diffusion', 'generation']
+2025-12-04 14:54:11,296 [INFO] [SAVED] doc2549033.json
+2025-12-04 14:54:11,296 [INFO]   [SUCCESS] doc2549033 저장 완료
+2025-12-04 14:54:11,296 [INFO] 
+[34/105] 처리 중: Glance: Accelerating Diffusion Models with 1 Sample
+2025-12-04 14:54:12,569 [INFO] [KEYWORDS_RAW] ['lora', 'comment', 'generalization'] (lemmatized)
+2025-12-04 14:54:12,569 [INFO] [KEYWORDS_FILTERED] ['lora', 'comment', 'generalization'] (중복 제거 완료)
+2025-12-04 14:54:12,570 [INFO]   [KEYWORDS] ['lora', 'comment', 'generalization']
+2025-12-04 14:54:12,571 [INFO] [SAVED] doc2549034.json
+2025-12-04 14:54:12,571 [INFO]   [SUCCESS] doc2549034 저장 완료
+2025-12-04 14:54:12,571 [INFO] 
+[35/105] 처리 중: Rectifying LLM Thought from Lens of Optimization
+2025-12-04 14:54:13,662 [INFO] [KEYWORDS_RAW] ['reasoning', 'process', 'cot'] (lemmatized)
+2025-12-04 14:54:13,663 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'process', 'cot'] (중복 제거 완료)
+2025-12-04 14:54:13,663 [INFO]   [KEYWORDS] ['reasoning', 'process', 'cot']
+2025-12-04 14:54:13,665 [INFO] [SAVED] doc2549035.json
+2025-12-04 14:54:13,665 [INFO]   [SUCCESS] doc2549035 저장 완료
+2025-12-04 14:54:13,665 [INFO] 
+[36/105] 처리 중: SimWorld: An Open-ended Realistic Simulator for Autonomous Agents in Physical and Social Worlds
+2025-12-04 14:54:14,929 [INFO] [KEYWORDS_RAW] ['simworld', 'world', 'agent'] (lemmatized)
+2025-12-04 14:54:14,930 [INFO] [KEYWORDS_FILTERED] ['simworld', 'world', 'agent'] (중복 제거 완료)
+2025-12-04 14:54:14,930 [INFO]   [KEYWORDS] ['simworld', 'world', 'agent']
+2025-12-04 14:54:14,931 [INFO] [SAVED] doc2549036.json
+2025-12-04 14:54:14,932 [INFO]   [SUCCESS] doc2549036 저장 완료
+2025-12-04 14:54:14,932 [INFO] 
+[37/105] 처리 중: ViSAudio: End-to-End Video-Driven Binaural Spatial Audio Generation
+2025-12-04 14:54:16,198 [INFO] [KEYWORDS_RAW] ['audio', 'visaudio', 'end'] (lemmatized)
+2025-12-04 14:54:16,199 [INFO] [KEYWORDS_FILTERED] ['audio', 'visaudio', 'end'] (중복 제거 완료)
+2025-12-04 14:54:16,199 [INFO]   [KEYWORDS] ['audio', 'visaudio', 'end']
+2025-12-04 14:54:16,201 [INFO] [SAVED] doc2549037.json
+2025-12-04 14:54:16,202 [INFO]   [SUCCESS] doc2549037 저장 완료
+2025-12-04 14:54:16,202 [INFO] 
+[38/105] 처리 중: WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning
+2025-12-04 14:54:17,373 [INFO] [KEYWORDS_RAW] ['memory', 'video', 'multiple'] (lemmatized)
+2025-12-04 14:54:17,374 [INFO] [KEYWORDS_FILTERED] ['memory', 'video', 'multiple'] (중복 제거 완료)
+2025-12-04 14:54:17,374 [INFO]   [KEYWORDS] ['memory', 'video', 'multiple']
+2025-12-04 14:54:17,375 [INFO] [SAVED] doc2549038.json
+2025-12-04 14:54:17,375 [INFO]   [SUCCESS] doc2549038 저장 완료
+2025-12-04 14:54:17,376 [INFO] 
+[39/105] 처리 중: GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation
+2025-12-04 14:54:18,532 [INFO] [KEYWORDS_RAW] ['demonstration', 'learning', 'policy'] (lemmatized)
+2025-12-04 14:54:18,533 [INFO] [KEYWORDS_FILTERED] ['demonstration', 'learning', 'policy'] (중복 제거 완료)
+2025-12-04 14:54:18,533 [INFO]   [KEYWORDS] ['demonstration', 'learning', 'policy']
+2025-12-04 14:54:18,535 [INFO] [SAVED] doc2549039.json
+2025-12-04 14:54:18,535 [INFO]   [SUCCESS] doc2549039 저장 완료
+2025-12-04 14:54:18,535 [INFO] 
+[40/105] 처리 중: VLASH: Real-Time VLAs via Future-State-Aware Asynchronous Inference
+2025-12-04 14:54:19,888 [INFO] [KEYWORDS_RAW] ['vlash', 'action', 'accuracy'] (lemmatized)
+2025-12-04 14:54:19,889 [INFO] [KEYWORDS_FILTERED] ['vlash', 'action', 'accuracy'] (중복 제거 완료)
+2025-12-04 14:54:19,889 [INFO]   [KEYWORDS] ['vlash', 'action', 'accuracy']
+2025-12-04 14:54:19,890 [INFO] [SAVED] doc2549040.json
+2025-12-04 14:54:19,890 [INFO]   [SUCCESS] doc2549040 저장 완료
+2025-12-04 14:54:19,890 [INFO] 
+[41/105] 처리 중: DualVLA: Building a Generalizable Embodied Agent via Partial Decoupling of Reasoning and Action
+2025-12-04 14:54:21,036 [INFO] [KEYWORDS_RAW] ['action', 'reasoning', 'vla'] (lemmatized)
+2025-12-04 14:54:21,037 [INFO] [KEYWORDS_FILTERED] ['action', 'reasoning', 'vla'] (중복 제거 완료)
+2025-12-04 14:54:21,037 [INFO]   [KEYWORDS] ['action', 'reasoning', 'vla']
+2025-12-04 14:54:21,038 [INFO] [SAVED] doc2549041.json
+2025-12-04 14:54:21,039 [INFO]   [SUCCESS] doc2549041 저장 완료
+2025-12-04 14:54:21,039 [INFO] 
+[42/105] 처리 중: Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models
+2025-12-04 14:54:22,126 [INFO] [KEYWORDS_RAW] ['context', 'long', 'attention'] (lemmatized)
+2025-12-04 14:54:22,127 [INFO] [KEYWORDS_FILTERED] ['context', 'long', 'attention'] (중복 제거 완료)
+2025-12-04 14:54:22,128 [INFO]   [KEYWORDS] ['context', 'long', 'attention']
+2025-12-04 14:54:22,129 [INFO] [SAVED] doc2549042.json
+2025-12-04 14:54:22,129 [INFO]   [SUCCESS] doc2549042 저장 완료
+2025-12-04 14:54:22,130 [INFO] 
+[43/105] 처리 중: Adversarial Flow Models
+2025-12-04 14:54:23,808 [INFO] [KEYWORDS_RAW] ['flow', 'step', 'training'] (lemmatized)
+2025-12-04 14:54:23,809 [INFO] [KEYWORDS_FILTERED] ['flow', 'step', 'training'] (중복 제거 완료)
+2025-12-04 14:54:23,809 [INFO]   [KEYWORDS] ['flow', 'step', 'training']
+2025-12-04 14:54:23,811 [INFO] [SAVED] doc2549043.json
+2025-12-04 14:54:23,811 [INFO]   [SUCCESS] doc2549043 저장 완료
+2025-12-04 14:54:23,811 [INFO] 
+[44/105] 처리 중: ViDiC: Video Difference Captioning
+2025-12-04 14:54:25,066 [INFO] [KEYWORDS_RAW] ['difference', 'video', 'vidic'] (lemmatized)
+2025-12-04 14:54:25,066 [INFO] [KEYWORDS_FILTERED] ['difference', 'video', 'vidic'] (중복 제거 완료)
+2025-12-04 14:54:25,067 [INFO]   [KEYWORDS] ['difference', 'video', 'vidic']
+2025-12-04 14:54:25,068 [INFO] [SAVED] doc2549044.json
+2025-12-04 14:54:25,068 [INFO]   [SUCCESS] doc2549044 저장 완료
+2025-12-04 14:54:25,069 [INFO] 
+[45/105] 처리 중: Decoupled DMD: CFG Augmentation as the Spear, Distribution Matching as the Shield
+2025-12-04 14:54:26,233 [INFO] [KEYWORDS_RAW] ['distillation', 'image', 'matching'] (lemmatized)
+2025-12-04 14:54:26,234 [INFO] [KEYWORDS_FILTERED] ['distillation', 'image', 'matching'] (중복 제거 완료)
+2025-12-04 14:54:26,235 [INFO]   [KEYWORDS] ['distillation', 'image', 'matching']
+2025-12-04 14:54:26,237 [INFO] [SAVED] doc2549045.json
+2025-12-04 14:54:26,237 [INFO]   [SUCCESS] doc2549045 저장 완료
+2025-12-04 14:54:26,237 [INFO] 
+[46/105] 처리 중: PixelDiT: Pixel Diffusion Transformers for Image Generation
+2025-12-04 14:54:27,521 [INFO] [KEYWORDS_RAW] ['space', 'diffusion', 'pixel'] (lemmatized)
+2025-12-04 14:54:27,522 [INFO] [KEYWORDS_FILTERED] ['space', 'diffusion', 'pixel'] (중복 제거 완료)
+2025-12-04 14:54:27,522 [INFO]   [KEYWORDS] ['space', 'diffusion', 'pixel']
+2025-12-04 14:54:27,523 [INFO] [SAVED] doc2549046.json
+2025-12-04 14:54:27,523 [INFO]   [SUCCESS] doc2549046 저장 완료
+2025-12-04 14:54:27,524 [INFO] 
+[47/105] 처리 중: Mixture of Horizons in Action Chunking
+2025-12-04 14:54:28,638 [INFO] [KEYWORDS_RAW] ['moh', 'performance', 'term'] (lemmatized)
+2025-12-04 14:54:28,638 [INFO] [KEYWORDS_FILTERED] ['moh', 'performance', 'term'] (중복 제거 완료)
+2025-12-04 14:54:28,639 [INFO]   [KEYWORDS] ['moh', 'performance', 'term']
+2025-12-04 14:54:28,641 [INFO] [SAVED] doc2549047.json
+2025-12-04 14:54:28,642 [INFO]   [SUCCESS] doc2549047 저장 완료
+2025-12-04 14:54:28,642 [INFO] 
+[48/105] 처리 중: InternVideo-Next: Towards General Video Foundation Models without Video-Text Supervision
+2025-12-04 14:54:29,849 [INFO] [KEYWORDS_RAW] ['level', 'pixel', 'stage'] (lemmatized)
+2025-12-04 14:54:29,850 [INFO] [KEYWORDS_FILTERED] ['level', 'pixel', 'stage'] (중복 제거 완료)
+2025-12-04 14:54:29,850 [INFO]   [KEYWORDS] ['level', 'pixel', 'stage']
+2025-12-04 14:54:29,852 [INFO] [SAVED] doc2549048.json
+2025-12-04 14:54:29,853 [INFO]   [SUCCESS] doc2549048 저장 완료
+2025-12-04 14:54:29,853 [INFO] 
+[49/105] 처리 중: MultiBanana: A Challenging Benchmark for Multi-Reference Text-to-Image Generation
+2025-12-04 14:54:31,017 [INFO] [KEYWORDS_RAW] ['reference', 'image', 'multi'] (lemmatized)
+2025-12-04 14:54:31,018 [INFO] [KEYWORDS_FILTERED] ['reference', 'image', 'multi'] (중복 제거 완료)
+2025-12-04 14:54:31,018 [INFO]   [KEYWORDS] ['reference', 'image', 'multi']
+2025-12-04 14:54:31,019 [INFO] [SAVED] doc2549049.json
+2025-12-04 14:54:31,019 [INFO]   [SUCCESS] doc2549049 저장 완료
+2025-12-04 14:54:31,020 [INFO] 
+[50/105] 처리 중: Where Culture Fades: Revealing the Cultural Gap in Text-to-Image Generation
+2025-12-04 14:54:32,339 [INFO] [KEYWORDS_RAW] ['cultural', 'image', 'alignment'] (lemmatized)
+2025-12-04 14:54:32,340 [INFO] [KEYWORDS_FILTERED] ['cultural', 'image', 'alignment'] (중복 제거 완료)
+2025-12-04 14:54:32,341 [INFO]   [KEYWORDS] ['cultural', 'image', 'alignment']
+2025-12-04 14:54:32,343 [INFO] [SAVED] doc2549050.json
+2025-12-04 14:54:32,343 [INFO]   [SUCCESS] doc2549050 저장 완료
+2025-12-04 14:54:32,344 [INFO] 
+[51/105] 처리 중: OneThinker: All-in-one Reasoning Model for Image and Video
+2025-12-04 14:54:33,635 [INFO] [KEYWORDS_RAW] ['onethinker', 'reasoning', 'across'] (lemmatized)
+2025-12-04 14:54:33,635 [INFO] [KEYWORDS_FILTERED] ['onethinker', 'reasoning', 'across'] (중복 제거 완료)
+2025-12-04 14:54:33,636 [INFO]   [KEYWORDS] ['onethinker', 'reasoning', 'across']
+2025-12-04 14:54:33,637 [INFO] [SAVED] doc2549051.json
+2025-12-04 14:54:33,637 [INFO]   [SUCCESS] doc2549051 저장 완료
+2025-12-04 14:54:33,637 [INFO] 
+[52/105] 처리 중: WUSH: Near-Optimal Adaptive Transforms for LLM Quantization
+2025-12-04 14:54:34,758 [INFO] [KEYWORDS_RAW] ['transforms', 'optimal', 'common'] (lemmatized)
+2025-12-04 14:54:34,758 [INFO] [KEYWORDS_FILTERED] ['transforms', 'optimal', 'common'] (중복 제거 완료)
+2025-12-04 14:54:34,759 [INFO]   [KEYWORDS] ['transforms', 'optimal', 'common']
+2025-12-04 14:54:34,760 [INFO] [SAVED] doc2549052.json
+2025-12-04 14:54:34,761 [INFO]   [SUCCESS] doc2549052 저장 완료
+2025-12-04 14:54:34,761 [INFO] 
+[53/105] 처리 중: SpeContext: Enabling Efficient Long-context Reasoning with Speculative Context Sparsity in LLMs
+2025-12-04 14:54:35,848 [INFO] [KEYWORDS_RAW] ['specontext', 'context', 'cloud'] (lemmatized)
+2025-12-04 14:54:35,849 [INFO] [KEYWORDS_FILTERED] ['specontext', 'context', 'cloud'] (중복 제거 완료)
+2025-12-04 14:54:35,849 [INFO]   [KEYWORDS] ['specontext', 'context', 'cloud']
+2025-12-04 14:54:35,851 [INFO] [SAVED] doc2549053.json
+2025-12-04 14:54:35,851 [INFO]   [SUCCESS] doc2549053 저장 완료
+2025-12-04 14:54:35,852 [INFO] 
+[54/105] 처리 중: Flow Straighter and Faster: Efficient One-Step Generative Modeling via MeanFlow on Rectified Trajectories
+2025-12-04 14:54:36,975 [INFO] [KEYWORDS_RAW] ['flow', 'meanflow', 'rectified'] (lemmatized)
+2025-12-04 14:54:36,976 [INFO] [KEYWORDS_FILTERED] ['flow', 'meanflow', 'rectified'] (중복 제거 완료)
+2025-12-04 14:54:36,977 [INFO]   [KEYWORDS] ['flow', 'meanflow', 'rectified']
+2025-12-04 14:54:36,978 [INFO] [SAVED] doc2549054.json
+2025-12-04 14:54:36,978 [INFO]   [SUCCESS] doc2549054 저장 완료
+2025-12-04 14:54:36,978 [INFO] 
+[55/105] 처리 중: PretrainZero: Reinforcement Active Pretraining
+2025-12-04 14:54:38,069 [INFO] [KEYWORDS_RAW] ['general', 'pretraining', 'pretrainzero'] (lemmatized)
+2025-12-04 14:54:38,069 [INFO] [KEYWORDS_FILTERED] ['general', 'pretraining', 'pretrainzero'] (중복 제거 완료)
+2025-12-04 14:54:38,070 [INFO]   [KEYWORDS] ['general', 'pretraining', 'pretrainzero']
+2025-12-04 14:54:38,071 [INFO] [SAVED] doc2549055.json
+2025-12-04 14:54:38,071 [INFO]   [SUCCESS] doc2549055 저장 완료
+2025-12-04 14:54:38,071 [INFO] 
+[56/105] 처리 중: RefineBench: Evaluating Refinement Capability of Language Models via Checklists
+2025-12-04 14:54:39,208 [INFO] [KEYWORDS_RAW] ['refinement', 'self', 'refine'] (lemmatized)
+2025-12-04 14:54:39,208 [INFO] [KEYWORDS_FILTERED] ['refinement', 'self', 'refine'] (중복 제거 완료)
+2025-12-04 14:54:39,209 [INFO]   [KEYWORDS] ['refinement', 'self', 'refine']
+2025-12-04 14:54:39,210 [INFO] [SAVED] doc2549056.json
+2025-12-04 14:54:39,210 [INFO]   [SUCCESS] doc2549056 저장 완료
+2025-12-04 14:54:39,210 [INFO] 
+[57/105] 처리 중: Accelerating Streaming Video Large Language Models via Hierarchical Token Compression
+2025-12-04 14:54:40,471 [INFO] [KEYWORDS_RAW] ['stc', 'token', 'llm'] (lemmatized)
+2025-12-04 14:54:40,472 [INFO] [KEYWORDS_FILTERED] ['stc', 'token', 'llm'] (중복 제거 완료)
+2025-12-04 14:54:40,472 [INFO]   [KEYWORDS] ['stc', 'token', 'llm']
+2025-12-04 14:54:40,473 [INFO] [SAVED] doc2549057.json
+2025-12-04 14:54:40,474 [INFO]   [SUCCESS] doc2549057 저장 완료
+2025-12-04 14:54:40,474 [INFO] 
+[58/105] 처리 중: CUDA-L2: Surpassing cuBLAS Performance for Matrix Multiplication through Reinforcement Learning
+2025-12-04 14:54:41,750 [INFO] [KEYWORDS_RAW] ['cuda', 'kernel', 'itcublaslt'] (lemmatized)
+2025-12-04 14:54:41,750 [INFO] [KEYWORDS_FILTERED] ['cuda', 'kernel', 'itcublaslt'] (중복 제거 완료)
+2025-12-04 14:54:41,751 [INFO]   [KEYWORDS] ['cuda', 'kernel', 'itcublaslt']
+2025-12-04 14:54:41,752 [INFO] [SAVED] doc2549058.json
+2025-12-04 14:54:41,753 [INFO]   [SUCCESS] doc2549058 저장 완료
+2025-12-04 14:54:41,753 [INFO] 
+[59/105] 처리 중: Does Hearing Help Seeing? Investigating Audio-Video Joint Denoising for Video Generation
+2025-12-04 14:54:43,022 [INFO] [KEYWORDS_RAW] ['video', 'audio', 'audio video'] (lemmatized)
+2025-12-04 14:54:43,022 [INFO] [KEYWORDS_FILTERED] ['audio video'] (중복 제거 완료)
+2025-12-04 14:54:43,023 [INFO]   [KEYWORDS] ['audio video', 'keyword2', 'keyword3']
+2025-12-04 14:54:43,024 [INFO] [SAVED] doc2549059.json
+2025-12-04 14:54:43,024 [INFO]   [SUCCESS] doc2549059 저장 완료
+2025-12-04 14:54:43,024 [INFO] 
+[60/105] 처리 중: Lotus-2: Advancing Geometric Dense Prediction with Powerful Image Generative Model
+2025-12-04 14:54:43,278 [WARNING] [429] retry after 2.7s
+2025-12-04 14:54:46,216 [WARNING] [429] retry after 4.9s
+2025-12-04 14:54:51,823 [WARNING] [429] retry after 8.7s
+2025-12-04 14:55:00,822 [WARNING] [429] retry after 15.7s
+2025-12-04 14:55:16,834 [WARNING] [429] retry after 28.3s

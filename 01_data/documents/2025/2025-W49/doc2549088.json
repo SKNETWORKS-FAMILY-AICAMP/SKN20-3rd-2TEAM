@@ -1,14 +1,14 @@
 {
-  "context": "DreamingComics uses a diffusion-transformer model and region-aware positional encoding to enhance story visualization with improved layout control, character consistency, and style similarity. Current story visualization methods tend to position subjects solely by text and face challenges in maintaining artistic consistency. To address these limitations, we introduce DreamingComics, a layout-aware story visualization framework. We build upon a pretrainedvideo diffusion-transformer(DiT) model, leveraging itsspatiotemporal priorsto enhance identity and style consistency. For layout-based position control, we proposeRegionalRoPE, aregion-aware positional encodingscheme that re-indexes embeddings based on the target layout. Additionally, we introduce amasked condition lossto further constrain each subject's visual features to their designated region. To infer layouts from natural language scripts, we integrate anLLM-based layout generatortrained to producecomic-style layouts, enabling flexible and controllable layout conditioning. We present a comprehensive evaluation of our approach, showing a 29.2% increase incharacter consistencyand a 36.2% increase instyle similaritycompared to previous methods, while displaying highspatial accuracy. Our project page is available at https://yj7082126.github.io/dreamingcomics/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "CookAnything is a diffusion-based framework that generates coherent image sequences from cooking instructions by incorporating step-wise regional control, flexible positional encoding, and cross-step consistency. Cooking is a sequential and visually grounded activity, where each step such as chopping, mixing, or frying carries both procedural logic and visual semantics. While recentdiffusion modelshave shown strong capabilities in text-to-image generation, they struggle to handle structured multi-step scenarios likerecipe illustration. Additionally, currentrecipe illustrationmethods are unable to adjust to the natural variability in recipe length, generating a fixed number of images regardless of the actual instructions structure. To address these limitations, we present CookAnything, a flexible and consistent diffusion-based framework that generates coherent, semantically distinct image sequences from textual cooking instructions of arbitrary length. The framework introduces three key components: (1)Step-wise Regional Control(SRC), which aligns textual steps with corresponding image regions within a singledenoising process; (2)Flexible RoPE, a step-aware positional encoding mechanism that enhances bothtemporal coherenceandspatial diversity; and (3)Cross-Step Consistency Control(CSCC), which maintains fine-grained ingredient consistency across steps. Experimental results onrecipe illustrationbenchmarks show that CookAnything performs better than existing methods in training-based and training-free settings. The proposed framework supports scalable, high-quality visual synthesis of complex multi-step instructions and holds significant potential for broad applications in instructional media, and procedural content creation. ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "DreamingComics: A Story Visualization Pipeline via Subject and Layout Customized Generation using Video Models",
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2512.01686",
-    "upvote": 1,
+    "paper_name": "CookAnything: A Framework for Flexible and Consistent Multi-Step Recipe Image Generation",
+    "github_url": "https://github.com/zhangdaxia22/CookAnything",
+    "huggingface_url": "https://huggingface.co/papers/2512.03540",
+    "upvote": 3,
     "tags": [
-      "layout",
-      "visualization",
-      "story"
+      "step",
+      "image",
+      "framework"
     ]
   }
 }
