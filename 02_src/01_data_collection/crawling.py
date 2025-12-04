@@ -26,6 +26,53 @@ from bs4 import BeautifulSoup
 from typing import List, Dict
 from datetime import datetime
 import re
+import time
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0 Safari/537.36"
+    )
+}
+
+def get_with_retry(
+    url: str,
+    max_retries: int = 6,
+    initial_wait: float = 1.0,   # 처음엔 빠르게
+    backoff: float = 1.8,        # 최대 1.8배씩 증가
+    timeout: float = 12.0
+):
+    wait = initial_wait
+
+    for attempt in range(1, max_retries + 1):
+
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=timeout)
+        except Exception as e:
+            logging.warning(f"[HTTP] 예외, retry... {e}")
+            time.sleep(wait)
+            wait *= backoff
+            continue
+
+        if resp.status_code == 429:
+            ra = resp.headers.get("Retry-After")
+            wait_time = float(ra) if ra else wait * backoff
+            logging.warning(f"[429] retry after {wait_time:.1f}s")
+            time.sleep(wait_time)
+            wait *= backoff
+            continue
+
+        if 200 <= resp.status_code < 300:
+            return resp
+
+        logging.warning(f"[HTTP {resp.status_code}] retry..")
+        time.sleep(wait)
+        wait *= backoff
+
+    logging.error(f"[FAIL] 요청 실패: {url}")
+    return None
+
 
 # TF-IDF 및 NLTK
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -205,7 +252,7 @@ def fetch_weekly_papers(year: int, week: int) -> List[Dict[str, str]]:
     logging.info(f"[FETCH] Weekly 페이지 요청: {weekly_url}")
 
     try:
-        response = requests.get(weekly_url, timeout=10)
+        response = get_with_retry(weekly_url, timeout=10)
         response.raise_for_status()
 
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -249,7 +296,7 @@ def fetch_paper_details(paper_url: str) -> Dict[str, any]:
         - Upvote CSS Selector는 HuggingFace 페이지 구조 변경 시 조정 필요
     """
     try:
-        response = requests.get(paper_url, timeout=10)
+        response = get_with_retry(paper_url, timeout=10)
         response.raise_for_status()
 
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -407,7 +454,8 @@ def crawl_weekly_papers(year: int, week: int):
 
         # 2-1. 논문 상세 정보 추출
         details = fetch_paper_details(paper_url)
-
+        time.sleep(0.8)
+        
         if not details['abstract']:
             logging.warning(f"  [SKIP] Abstract 없음: {paper_title}")
             fail_count += 1
@@ -458,9 +506,9 @@ if __name__ == "__main__":
 
     # 크롤링 실행 (예시: 2025년 45주차)
     try:
-        crawl_weekly_papers(year=2025, week=45)
+        crawl_weekly_papers(year=2025, week=48)
     except Exception as e:
-        logging.error(f"[ERROR] W{45:02d} 크롤링 실패: {e}")
+        logging.error(f"[ERROR] W{48:02d} 크롤링 실패: {e}")
 
     # 최신 데이터 크롤링 실행
     # 배치 돌 때 사용
