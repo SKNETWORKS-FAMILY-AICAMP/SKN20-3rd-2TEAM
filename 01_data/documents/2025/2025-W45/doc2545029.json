@@ -1,14 +1,14 @@
 {
-  "context": "Spatial-SSRL, a self-supervised reinforcement learning paradigm, enhances spatial understanding in Large Vision-Language Models using verifiable signals from RGB or RGB-D images without human annotation.\nSpatial understanding remains a weakness of Large Vision-Language Models (LVLMs). Existing supervised fine-tuning (SFT) and recent reinforcement learning with verifiable rewards (RLVR) pipelines depend on costly supervision, specialized tools, or constrained environments that limit scale. We introduce Spatial-SSRL, a self-supervised RL paradigm that derives verifiable signals directly from ordinary RGB or RGB-D images. Spatial-SSRL automatically formulates five pretext tasks that capture 2D and 3D spatial structure: shuffled patch reordering, flipped patch recognition, cropped patch inpainting, regional depth ordering, and relative 3D position prediction. These tasks provide ground-truth answers that are easy to verify and require no human or LVLM annotation. Training on our tasks substantially improves spatial reasoning while preserving general visual capabilities. On seven spatial understanding benchmarks in both image and video settings, Spatial-SSRL delivers average accuracy gains of 4.63% (3B) and 3.89% (7B) over the Qwen2.5-VL baselines. Our results show that simple, intrinsic supervision enables RLVR at scale and provides a practical route to stronger spatial intelligence in LVLMs.",
+  "context": "Spatial-SSRL, a self-supervised reinforcement learning paradigm, enhances spatial understanding in Large Vision-Language Models using verifiable signals from RGB or RGB-D images without human annotation. Spatial understanding remains a weakness ofLarge Vision-Language Models(LVLMs). Existing supervised fine-tuning (SFT) and recent reinforcement\nlearning with verifiable rewards (RLVR) pipelines depend on costly supervision,\nspecialized tools, or constrained environments that limit scale. We introduce\nSpatial-SSRL, aself-supervised RLparadigm that derives verifiable signals\ndirectly from ordinary RGB or RGB-D images. Spatial-SSRL automatically\nformulates fivepretext tasksthat capture 2D and 3D spatial structure:shuffled patch reordering,flipped patch recognition,cropped patch inpainting,regional depth ordering, andrelative 3D position prediction. These tasks\nprovide ground-truth answers that are easy to verify and require no human or\nLVLM annotation. Training on our tasks substantially improvesspatial reasoningwhile preserving general visual capabilities. On seven spatial understanding\nbenchmarks in both image and video settings, Spatial-SSRL delivers average\naccuracy gains of 4.63% (3B) and 3.89% (7B) over the Qwen2.5-VL baselines. Our\nresults show that simple, intrinsic supervision enables RLVR at scale and\nprovides a practical route to stronger spatial intelligence in LVLMs. Spatial understanding remains a key weakness of Large Vision-Language Models (LVLMs). Existingsupervised fine-tuning (SFT)andreinforcement learning with verifiable rewards (RLVR)pipelines rely on costly human supervision, specialized tools, or closed environments that hinder scalability. We proposeSpatial-SSRL, aself-supervised reinforcement learningframework that derives verifiable spatial signals directly from ordinaryRGB/RGB-Dimages—no annotations required.Spatial-SSRL formulatesfive intrinsic pretext taskscapturing 2D and 3D spatial structures: Spatial-SSRL shows thatsimple, intrinsic supervisioncan scale RLVR efficiently — paving the way towardstronger spatial intelligence in LVLMs. ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning",
+    "paper_name": "Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised\n  Reinforcement Learning",
     "github_url": "https://github.com/InternLM/Spatial-SSRL",
     "huggingface_url": "https://huggingface.co/papers/2510.27606",
-    "upvote": 27,
+    "upvote": 0,
     "tags": [
-      "spatial",
-      "ssrl",
-      "rgb"
+      "spatial ssrl",
+      "keyword2",
+      "keyword3"
     ]
   }
 }
