@@ -1,14 +1,14 @@
 {
-  "context": "Diffusion-SDPO improves text-to-image generation quality by adaptively scaling the loser gradient in preference optimization, ensuring the preferred output's error does not increase.\nAI-generated summary\nText-to-image diffusion models deliver high-quality images, yet aligning them with human preferences remains challenging. We revisit diffusion-based Direct Preference Optimization (DPO) for these models and identify a critical pathology: enlarging the preference margin does not necessarily improve generation quality. In particular, the standard Diffusion-DPO objective can increase the reconstruction error of both winner and loser branches. Consequently, degradation of the less-preferred outputs can become sufficiently severe that the preferred branch is also adversely affected even as the margin grows. To address this, we introduce Diffusion-SDPO, a safeguarded update rule that preserves the winner by adaptively scaling the loser gradient according to its alignment with the winner gradient. A first-order analysis yields a closed-form scaling coefficient that guarantees the error of the preferred output is non-increasing at each optimization step. Our method is simple, model-agnostic, broadly compatible with existing DPO-style alignment frameworks and adds only marginal computational overhead. Across standard text-to-image benchmarks, Diffusion-SDPO delivers consistent gains over preference-learning baselines on automated preference, aesthetic, and prompt alignment metrics. Code is publicly available at https://github.com/AIDC-AI/Diffusion-SDPO.",
+  "context": "VLA models, combining vision, language, and action, are advancing through milestones like multimodality, reasoning, and safety, with trends focusing on spatial understanding and human coordination. Due to their ability of follow natural language instructions,vision-language-action (VLA) modelsare increasingly prevalent in the embodied\nAI arena, following the widespread success of their precursors -- LLMs and\nVLMs. In this paper, we discuss 10 principal milestones in the ongoing\ndevelopment of VLA models --multimodality,reasoning,data,evaluation,cross-robot action generalization,efficiency,whole-body coordination,safety,agents, andcoordination with humans. Furthermore, we discuss the emerging\ntrends of usingspatial understanding,modeling world dynamics,post training,\nanddata synthesis-- all aiming to reach these milestones. Through these\ndiscussions, we hope to bring attention to the research avenues that may\naccelerate the development of VLA models into wider acceptability. 10 Open Challenges Steering the Future of Vision-Language-Action Models This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Diffusion-SDPO: Safeguarded Direct Preference Optimization for Diffusion Models",
-    "github_url": "https://github.com/AIDC-AI/Diffusion-SDPO",
-    "huggingface_url": "https://huggingface.co/papers/2511.03317",
+    "paper_name": "10 Open Challenges Steering the Future of Vision-Language-Action Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.05936",
     "upvote": 5,
     "tags": [
-      "diffusion",
-      "preference",
-      "sdpo"
+      "action",
+      "language",
+      "vla"
     ]
   }
 }
