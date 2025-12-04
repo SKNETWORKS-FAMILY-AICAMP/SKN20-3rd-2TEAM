@@ -1,0 +1,14 @@
+{
+  "context": "Qwen3-VL, a vision-language model, excels in text and multimodal understanding through advanced architectures and larger contexts, achieving superior performance across benchmarks. We introduce Qwen3-VL, the most capablevision-language modelin the Qwen series to date, achieving superior performance across a broad range ofmultimodal benchmarks. It natively supportsinterleaved contextsof up to 256K tokens, seamlessly integrating text, images, and video. The model family includes both dense (2B/4B/8B/32B) andmixture-of-experts(30B-A3B/235B-A22B) variants to accommodate diverse latency-quality trade-offs. Qwen3-VL delivers three core pillars: (i) markedly strongerpure-text understanding, surpassing comparable text-only backbones in several cases; (ii) robustlong-context comprehensionwith a native 256K-token window for both text and interleaved multimodal inputs, enabling faithful retention, retrieval, and cross-referencing across long documents and videos; and (iii) advancedmultimodal reasoningacross single-image, multi-image, and video tasks, demonstrating leading performance on comprehensive evaluations such asMMMUandvisual-math benchmarks(e.g., MathVista and MathVision). Architecturally, we introduce three key upgrades: (i) an enhancedinterleaved-MRoPEfor stronger spatial-temporal modeling across images and video; (ii)DeepStackintegration, which effectively leverages multi-level ViT features to tightenvision-language alignment; and (iii)text-based time alignmentfor video, evolving fromT-RoPEtoexplicit textual timestamp alignmentfor more precise temporal grounding. Under comparable token budgets and latency constraints, Qwen3-VL achieves superior performance in both dense andMixture-of-Experts(MoE) architectures. We envision Qwen3-VL serving as a foundational engine forimage-grounded reasoning,agentic decision-making, andmultimodal code intelligencein real-world workflows. Qwen3-VL Technical Report ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Qwen3-VL Technical Report",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.21631",
+    "upvote": 58,
+    "tags": [
+      "text",
+      "video",
+      "across"
+    ]
+  }
+}

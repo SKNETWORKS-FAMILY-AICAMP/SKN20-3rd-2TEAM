@@ -1,0 +1,14 @@
+{
+  "context": "Reinforcement Learning with Adaptive Verifiable Environments (RLVE) improves language model reasoning by dynamically adjusting problem difficulty, outperforming static environments and traditional RL training. We introduceReinforcement Learning (RL)with Adaptive Verifiable\nEnvironments (RLVE), an approach usingverifiable environmentsthat\nprocedurally generate problems and providealgorithmically verifiable rewards,\nto scale up RL forlanguage models (LMs). RLVE enables each verifiable\nenvironment to dynamically adapt itsproblem difficulty distributionto thepolicy model's capabilities as training progresses. In contrast, static data\ndistributions often lead tovanishing learning signalswhen problems are either\ntoo easy or too hard for the policy. To implement RLVE, we createRLVE-Gym, a\nlarge-scale suite of 400verifiable environmentscarefully developed through\nmanual environment engineering. UsingRLVE-Gym, we show that environment\nscaling, i.e., expanding the collection of training environments, consistently\nimprovesgeneralizable reasoning capabilities. RLVE with joint training across\nall 400 environments inRLVE-Gymyields a 3.37% absolute average improvement\nacross sixreasoning benchmarks, starting from one of the strongest 1.5B\nreasoning LMs. By comparison, continuing this LM's original RL training yields\nonly a 0.49% average absolute gain despite using over 3x more compute. We\nrelease our code publicly. We introduce Reinforcement Learning (RL) with Adaptive Verifiable Environments (RLVE)  to scale up RL for language models (LMs). This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "RLVE: Scaling Up Reinforcement Learning for Language Models with\n  Adaptive Verifiable Environments",
+    "github_url": "https://github.com/Zhiyuan-Zeng/RLVE",
+    "huggingface_url": "https://huggingface.co/papers/2511.07317",
+    "upvote": 13,
+    "tags": [
+      "environment",
+      "rlve",
+      "training"
+    ]
+  }
+}

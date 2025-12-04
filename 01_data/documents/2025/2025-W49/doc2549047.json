@@ -1,0 +1,14 @@
+{
+  "context": "A mixture of horizons strategy in VLA models improves performance and generalizability by combining long-term foresight and short-term precision, achieving higher throughput and superior performance in robotic manipulation tasks. Vision-language-action (VLA) models have shown remarkable capabilities in robotic manipulation, but their performance is sensitive to theaction chunk lengthused during training, termedhorizon. Our empirical study reveals an inherent trade-off: longerhorizons provide stronger global foresight but degrade fine-grained accuracy, while shorter ones sharpen local control yet struggle on long-term tasks, implying fixed choice of singlehorizons being suboptimal. To mitigate the trade-off, we propose amixture of horizons (MoH)strategy. MoH rearranges the action chunk into several segments with differenthorizons, processes them in parallel with a sharedaction transformer, and fuses outputs with a light linear gate. It has three appealing benefits. 1) MoH exploits long-term foresight and short-term precision jointly within a single model, improving both performance and generalizability to complex tasks. 2) MoH is plug-and-play for full-attention action modules with minimal training or inference overhead. 3) MoH enables dynamic inference with adaptivehorizons, which selects stable actions throughcross-horizon consensus, achieving 2.5times higher throughput than baselines while preserving superior performance. Extensive experiments overflow-based policiesπ_0, π_{0.5}, andone-step regression policyπ_{reg} demonstrate that MoH yields consistent and significant gains on both simulations and real-world tasks. Notably, under mixed-task setting, π_{0.5} with MoH reaches a new state-of-the-art with 99% average success rate onLIBEROafter only 30k training iterations. Project page: https://github.com/Timsty1/MixtureOfHorizons  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Mixture of Horizons in Action Chunking",
+    "github_url": "https://github.com/Timsty1/MixtureOfHorizons/tree/main",
+    "huggingface_url": "https://huggingface.co/papers/2511.19433",
+    "upvote": 17,
+    "tags": [
+      "moh",
+      "performance",
+      "term"
+    ]
+  }
+}

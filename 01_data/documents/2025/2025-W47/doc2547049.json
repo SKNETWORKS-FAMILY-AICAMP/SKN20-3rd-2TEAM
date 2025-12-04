@@ -1,0 +1,14 @@
+{
+  "context": "A new framework, Thinking-while-Generating (TwiG), integrates interleaved textual reasoning during visual generation, enhancing context-awareness and semantic richness through zero-shot prompting, supervised fine-tuning, and reinforcement learning. Recent advances invisual generationhave increasingly explored the integration of reasoning capabilities. They incorporatetextual reasoning, i.e., think, either before (aspre-planning) or after (aspost-refinement) the generation process, yet they lack on-the-fly multimodal interaction during the generation itself. In this preliminary study, we introduceThinking-while-Generating(TwiG), the first interleaved framework that enables co-evolvingtextual reasoningthroughout thevisual generationprocess. As visual content is progressively generating,textual reasoningis interleaved to both guide upcoming local regions and reflect on previously synthesized ones. This dynamic interplay produces more context-aware and semantically rich visual outputs. To unveil the potential of this framework, we investigate three candidate strategies,zero-shot prompting,supervised fine-tuning(SFT) on our curatedTwiG-50K dataset, andreinforcement learning(RL) via a customizedTwiG-GRPOstrategy, each offering unique insights into the dynamics of interleaved reasoning. We hope this work inspires further research into interleavingtextual reasoningfor enhancedvisual generation. Code will be released at: https://github.com/ZiyuGuo99/Thinking-while-Generating. The first Interleaved framework for textual reasoning within the visual generation process This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
+    "github_url": "https://github.com/ZiyuGuo99/Thinking-while-Generating",
+    "huggingface_url": "https://huggingface.co/papers/2511.16671",
+    "upvote": 15,
+    "tags": [
+      "generation",
+      "interleaved",
+      "reasoning"
+    ]
+  }
+}

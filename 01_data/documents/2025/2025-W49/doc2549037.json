@@ -1,0 +1,14 @@
+{
+  "context": "Using phase-aware LoRA adapters, diffusion models achieve efficient acceleration and strong generalization with minimal retraining. Diffusion modelshave achieved remarkable success in image generation, yet their deployment remains constrained by the heavycomputational costand the need for numerousinference steps. Previous efforts on fewer-stepdistillationattempt to skip redundant steps by trainingcompact student models, yet they often suffer from heavyretraining costsand degraded generalization. In this work, we take a different perspective: we accelerate smartly, not evenly, applying smaller speedups to early semantic stages and larger ones to later redundant phases. We instantiate thisphase-aware strategywith two experts that specialize inslow and fast denoising phases. Surprisingly, instead of investing massive effort in retraining student models, we find that simply equipping the base model withlightweight LoRA adaptersachieves both efficientaccelerationand strong generalization. We refer to these two adapters asSlow-LoRAandFast-LoRA. Through extensive experiments, our method achieves up to 5accelerationover the base model while maintaining comparablevisual qualityacross diversebenchmarks. Remarkably, the LoRA experts are trained with only 1sampleson a singleV100within one hour, yet the resulting models generalize strongly onunseen prompts.  GitHub :https://github.com/CSU-JPG/GlanceHomepage:https://zhuobaidong.github.io/Glance/ Thanks for your sharing! It's a nice and meaningful job. I will follow your work and look forward to our communication. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Glance: Accelerating Diffusion Models with 1 Sample",
+    "github_url": "https://github.com/CSU-JPG/Glance",
+    "huggingface_url": "https://huggingface.co/papers/2512.02899",
+    "upvote": 21,
+    "tags": [
+      "lora",
+      "comment",
+      "generalization"
+    ]
+  }
+}

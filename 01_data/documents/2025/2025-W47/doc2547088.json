@@ -1,0 +1,14 @@
+{
+  "context": "ChaosEater automates the Chaos Engineering cycle using Large Language Models to enhance the resilience of Kubernetes systems with low time and cost. Chaos Engineering(CE) is an engineering technique aimed at improving theresilienceof distributed systems. It involves intentionally injecting faults into a system to test itsresilience, uncover weaknesses, and address them before they cause failures in production. Recent CE tools automate the execution of predefined CE experiments. However, planning such experiments and improving the system based on the experimental results still remain manual. These processes are labor-intensive and require multi-domain expertise. To address these challenges and enable anyone to build resilient systems at low cost, this paper proposes ChaosEater, a system that automates the entire CE cycle withLarge Language Models(LLMs). It predefines an agentic workflow according to a systematic CE cycle and assigns subdivided processes within the workflow to LLMs. ChaosEater targets CE for software systems built onKubernetes. Therefore, the LLMs in ChaosEater complete CE cycles throughsoftware engineering tasks, including requirement definition, code generation, testing, and debugging. We evaluate ChaosEater through case studies on small- and large-scaleKubernetessystems. The results demonstrate that it consistently completes reasonable CE cycles with significantly low time and monetary costs. Its cycles are also qualitatively validated by human engineers and LLMs. This paper was accepted at ASE 2025 NIER Track Please check the following links:Project page:https://ntt-dkiku.github.io/chaos-eater/Code (GitHub):https://github.com/ntt-dkiku/chaos-eaterPresentation video, demo video, slide, and poster:https://ntt-rd.box.com/s/t0o4lvqd9la96dw7z540e4o28aekv4dn This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "LLM-Powered Fully Automated Chaos Engineering: Towards Enabling Anyone to Build Resilient Software Systems at Low Cost",
+    "github_url": "https://github.com/ntt-dkiku/chaos-eater",
+    "huggingface_url": "https://huggingface.co/papers/2511.07865",
+    "upvote": 3,
+    "tags": [
+      "system",
+      "cycle",
+      "chaoseater"
+    ]
+  }
+}

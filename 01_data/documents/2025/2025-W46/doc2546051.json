@@ -1,0 +1,14 @@
+{
+  "context": "SliderEdit enables continuous, fine-grained control over image editing instructions by using low-rank adaptation matrices, improving edit controllability, visual consistency, and user steerability. Instruction-based image editing models have recently achieved impressive performance, enabling complex edits to an input image from a multi-instruction prompt. However, these models apply each instruction in the prompt with a fixed strength, limiting the user's ability to precisely and continuously control the intensity of individual edits. We introduceSliderEdit, a framework for continuous image editing with fine-grained, interpretable instruction control. Given a multi-part edit instruction,SliderEditdisentangles the individual instructions and exposes each as a globally trained slider, allowing smooth adjustment of its strength. Unlike prior works that introduced slider-based attribute controls in text-to-image generation, typically requiring separate training or fine-tuning for each attribute or concept, our method learns a single set oflow-rank adaptation matricesthat generalize across diverse edits, attributes, and compositional instructions. This enablescontinuous interpolationalong individual edit dimensions while preserving bothspatial localityandglobal semantic consistency. We applySliderEditto state-of-the-art image editing models, includingFLUX-KontextandQwen-Image-Edit, and observe substantial improvements in edit controllability, visual consistency, and user steerability. To the best of our knowledge, we are the first to explore and propose a framework for continuous,fine-grained instruction controlin instruction-based image editing models. Our results pave the way for interactive, instruction-driven image manipulation with continuous and compositional control. SliderEdit enables continuous, per-instruction control for image editing by learning low-rank adapters to disentangle and smoothly scale multiple edits. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend https://armanzarei.github.io/SliderEdit/ ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "SliderEdit: Continuous Image Editing with Fine-Grained Instruction Control",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.09715",
+    "upvote": 8,
+    "tags": [
+      "instruction",
+      "image",
+      "control"
+    ]
+  }
+}

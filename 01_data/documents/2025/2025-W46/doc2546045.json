@@ -1,0 +1,14 @@
+{
+  "context": "NURBGen generates high-fidelity 3D CAD models from text using Non-Uniform Rational B-Splines, outperforming existing methods in geometric fidelity and dimensional accuracy. Generating editable 3D CAD models from natural language remains challenging,\nas existing text-to-CAD systems either produce meshes or rely on scarce\ndesign-history data. We present NURBGen, the first framework to generate\nhigh-fidelity 3D CAD models directly from text using Non-Uniform Rational\nB-Splines (NURBS). To achieve this, we fine-tune alarge language model(LLM)\nto translate free-form texts intoJSON representationscontainingNURBSsurface\nparameters (i.e, control points, knot vectors, degrees, and rational\nweights) which can be directly converted intoBRep formatusing Python. We\nfurther propose ahybrid representationthat combines untrimmedNURBSwithanalytic primitivesto handletrimmed surfacesanddegenerate regionsmore\nrobustly, while reducing token complexity. Additionally, we introducepartABC,\na curated subset of theABC datasetconsisting of individual CAD components,\nannotated with detailed captions using anautomated annotation pipeline.\nNURBGen demonstrates strong performance on diverse prompts, surpassing prior\nmethods in geometric fidelity and dimensional accuracy, as confirmed by expert\nevaluations. Code and dataset will be released publicly. An LLM based framework for Text-To-CAD generation using NURBS Geometry. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "NURBGen: High-Fidelity Text-to-CAD Generation through LLM-Driven NURBS\n  Modeling",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.06194",
+    "upvote": 11,
+    "tags": [
+      "cad",
+      "text",
+      "fidelity"
+    ]
+  }
+}

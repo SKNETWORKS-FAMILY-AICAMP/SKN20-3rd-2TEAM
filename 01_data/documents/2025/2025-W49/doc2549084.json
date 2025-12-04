@@ -1,0 +1,14 @@
+{
+  "context": "Stable rank, an intrinsic quality signal derived from model representations, improves LLM alignment with human preferences through reinforcement learning without external supervision. AligningLarge Language Models(LLMs) withhuman preferencestypically relies onexternal supervision, which faces critical limitations:human annotationsare scarce and subjective,reward modelsare vulnerable toreward hacking, andself-evaluationmethods suffer from prompt sensitivity and biases. In this work, we proposestable rank, an intrinsic, annotation-free quality signal derived from model representations.Stable rankmeasures theeffective dimensionalityofhidden statesby computing the ratio of totalvarianceto dominant-directionvariance, capturing quality through how information distributes across representation dimensions. Empirically,stable rankachieves 84.04% accuracy onRewardBenchand improvestask accuracyby an average of 11.3 percentage points over greedy decoding viaBest-of-N sampling. Leveraging this insight, we introduceStable Rank Group Relative Policy Optimization(SR-GRPO), which usesstable rankas a reward signal for reinforcement learning. Withoutexternal supervision,SR-GRPOimprovesQwen2.5-1.5B-Instructby 10% onSTEMand 19% onmathematical reasoning, outperforming both learnedreward modelsandself-evaluationbaselines. Our findings demonstrate that quality signals can be extracted from internal model geometry, offering a path toward scalable alignment withoutexternal supervision. 🤯 We know RLHF relies heavily on external rewards. But what if the model already knows when it's reasoning well? The paperSR-GRPOintroduces a simple intrinsic metric,stable rank, which serves as an annotation-free quality signal for LLM output. It measures the richness and coherence of the hidden states. It is like checking the complexity of the model's brain signal to see if it is reasoning clearly. The result: The SR-GRPO alignment method significantly boosts performance on challenging mathematical reasoning and STEM tasks, eliminating the need for expensive human preference data. Just look inside! 🧐 Paper:SR-GRPO: Stable Rank as an Intrinsic Geometric Reward for Large Language Model Alignment ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "SR-GRPO: Stable Rank as an Intrinsic Geometric Reward for Large Language Model Alignment",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.02807",
+    "upvote": 4,
+    "tags": [
+      "signal",
+      "quality",
+      "rank"
+    ]
+  }
+}
