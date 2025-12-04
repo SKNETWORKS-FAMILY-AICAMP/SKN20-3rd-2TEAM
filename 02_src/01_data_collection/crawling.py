@@ -522,10 +522,12 @@ if __name__ == "__main__":
     )
 
     # 크롤링 실행 (예시: 2025년 48주차)
-    try:
-        crawl_weekly_papers(year=2025, week=45)
-    except Exception as e:
-        logging.error(f"[ERROR] W{45:02d} 크롤링 실패: {e}")
+    for week in range(46, 50):  # 46,47,48,49
+        try:
+            crawl_weekly_papers(year=2025, week=week)
+        except Exception as e:
+            logging.error(f"[ERROR] W{week:02d} 크롤링 실패: {e}")
+
 
     # 최신 데이터 크롤링 실행
     # 배치 돌 때 사용
