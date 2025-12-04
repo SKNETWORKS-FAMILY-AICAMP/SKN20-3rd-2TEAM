@@ -1,14 +1,14 @@
 {
-  "context": "A novel framework MPJudge assesses music-induced paintings by integrating music features into a visual encoder using a modulation-based fusion mechanism, outperforming existing emotion recognition models.\nAI-generated summary\nMusic induced painting is a unique artistic practice, where visual artworks are created under the influence of music. Evaluating whether a painting faithfully reflects the music that inspired it poses a challenging perceptual assessment task. Existing methods primarily rely on emotion recognition models to assess the similarity between music and painting, but such models introduce considerable noise and overlook broader perceptual cues beyond emotion. To address these limitations, we propose a novel framework for music induced painting assessment that directly models perceptual coherence between music and visual art. We introduce MPD, the first large scale dataset of music painting pairs annotated by domain experts based on perceptual coherence. To better handle ambiguous cases, we further collect pairwise preference annotations. Building on this dataset, we present MPJudge, a model that integrates music features into a visual encoder via a modulation based fusion mechanism. To effectively learn from ambiguous cases, we adopt Direct Preference Optimization for training. Extensive experiments demonstrate that our method outperforms existing approaches. Qualitative results further show that our model more accurately identifies music relevant regions in paintings.",
+  "context": "A new guidance method called Adversarial Sinkhorn Attention Guidance improves diffusion model performance by injecting adversarial costs into self-attention layers, enhancing sample quality and controllability. Diffusion modelshave demonstrated strong generative performance when using guidance methods such asclassifier-free guidance(CFG), which enhance output quality by modifying the sampling trajectory. These methods typically improve a target output by intentionally degrading another, often the unconditional output, using heuristic perturbation functions such as identity mixing or blurred conditions. However, these approaches lack a principled foundation and rely on manually designed distortions. In this work, we propose Adversarial Sinkhorn Attention Guidance (ASAG), a novel method that reinterprets attention scores indiffusion modelsthrough the lens ofoptimal transportand intentionally disrupt the transport cost viaSinkhorn algorithm. Instead of naively corrupting the attention mechanism, ASAG injects an adversarial cost withinself-attention layersto reduce pixel-wise similarity between queries and keys. This deliberate degradation weakens misleading attention alignments and leads to improved conditional and unconditional sample quality. ASAG shows consistent improvements intext-to-image diffusion, and enhances controllability and fidelity in downstream applications such asIP-AdapterandControlNet. The method is lightweight, plug-and-play, and improves reliability without requiring any model retraining. Accepted to AAAI 26 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "MPJudge: Towards Perceptual Assessment of Music-Induced Paintings",
+    "paper_name": "Toward the Frontiers of Reliable Diffusion Sampling via Adversarial Sinkhorn Attention Guidance",
     "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.07137",
+    "huggingface_url": "https://huggingface.co/papers/2511.07499",
     "upvote": 5,
     "tags": [
-      "music",
-      "painting",
-      "visual"
+      "attention",
+      "guidance",
+      "adversarial"
     ]
   }
 }

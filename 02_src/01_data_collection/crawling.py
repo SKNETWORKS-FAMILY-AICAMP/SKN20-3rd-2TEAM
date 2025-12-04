@@ -331,7 +331,7 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
     filename = f"{doc_id}.json"
 
     # 디렉토리 생성
-    save_dir = f"././01_data/documents/{year}/{week_str}"
+    save_dir = f"01_data/documents/{year}/{week_str}"
     os.makedirs(save_dir, exist_ok=True)
 
     # JSON 데이터 구조
@@ -458,9 +458,9 @@ if __name__ == "__main__":
 
     # 크롤링 실행 (예시: 2025년 45주차)
     try:
-        crawl_weekly_papers(year=2025, week=45)
+        crawl_weekly_papers(year=2025, week=46)
     except Exception as e:
-        logging.error(f"[ERROR] W{45:02d} 크롤링 실패: {e}")
+        logging.error(f"[ERROR] W{46:02d} 크롤링 실패: {e}")
 
     # 최신 데이터 크롤링 실행
     # 배치 돌 때 사용
