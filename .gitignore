@@ -60,3 +60,4 @@ htmlcov/
 # Model cache
 .cache/
 models/
+02_src/02_utils/CLAUDE_KR.md
