@@ -1,14 +1,14 @@
 {
-  "context": "We present ReDirector, a novel camera-controlled video retake generation method for dynamically captured variable-length videos. In particular, we rectify a common misuse of RoPE in previous works by aligning the spatiotemporal positions of the input video and the target retake. Moreover, we introduce Rotary Camera Encoding ( RoCE ), a camera-conditioned RoPE phase shift that captures and integrates multi-view relationships within and across the input and target videos. By integrating camera conditions into RoPE , our method generalizes to out-of-distribution camera trajectories and video lengths, yielding improved dynamic object localization and static background preservation . Extensive experiments further demonstrate significant improvements in camera controllability , geometric consistency , and video quality across various trajectories and lengths.",
+  "context": "ReDirector uses a novel camera-controlled video retake method with Rotary Camera Encoding (RoCE) to improve dynamic object localization and static background preservation in variable-length videos. We present ReDirector, a novelcamera-controlled video retakegeneration method for dynamically captured variable-length videos. In particular, we rectify a common misuse ofRoPEin previous works by aligning thespatiotemporal positionsof the input video and the target retake. Moreover, we introduceRotary Camera Encoding(RoCE), a camera-conditionedRoPEphase shift that captures and integratesmulti-view relationshipswithin and across the input and target videos. By integrating camera conditions intoRoPE, our method generalizes to out-of-distribution camera trajectories and video lengths, yielding improveddynamic object localizationandstatic background preservation. Extensive experiments further demonstrate significant improvements incamera controllability,geometric consistency, andvideo qualityacross various trajectories and lengths. Project page:https://byeongjun-park.github.io/ReDirector/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
     "paper_name": "ReDirector: Creating Any-Length Video Retakes with Rotary Camera Encoding",
     "github_url": "https://github.com/byeongjun-park/ReDirector",
     "huggingface_url": "https://huggingface.co/papers/2511.19827",
     "upvote": 11,
     "tags": [
-      "camera",
       "video",
-      "rope"
+      "camera",
+      "length"
     ]
   }
 }

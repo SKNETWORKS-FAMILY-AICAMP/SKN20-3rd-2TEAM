@@ -1,0 +1,74 @@
+2025-12-04 12:02:32,221 [INFO] 
+============================================================
+2025-12-04 12:02:32,221 [INFO] [START] 2025-W48 크롤링 시작
+2025-12-04 12:02:32,222 [INFO] ============================================================
+2025-12-04 12:02:32,222 [INFO] [FETCH] Weekly 페이지 요청: https://huggingface.co/papers/week/2025-W48
+2025-12-04 12:02:32,222 [INFO] [HTTP] GET https://huggingface.co/papers/week/2025-W48 (try 1/5, sleep 10.0s)
+2025-12-04 12:02:43,539 [INFO] [SUCCESS] 논문 105개 발견
+2025-12-04 12:02:43,541 [INFO] 
+[1/105] 처리 중: ROOT: Robust Orthogonalized Optimizer for Neural Network Training
+2025-12-04 12:02:43,542 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20626 (try 1/5, sleep 10.0s)
+2025-12-04 12:02:55,990 [INFO] [KEYWORDS_RAW] ['robust', 'robustness', 'training'] (lemmatized)
+2025-12-04 12:02:55,991 [INFO] [KEYWORDS_FILTERED] ['robust', 'robustness', 'training'] (중복 제거 완료)
+2025-12-04 12:02:55,992 [INFO]   [KEYWORDS] ['robust', 'robustness', 'training']
+2025-12-04 12:02:55,993 [INFO] [SAVED] doc2548001.json
+2025-12-04 12:02:55,993 [INFO]   [SUCCESS] doc2548001 저장 완료
+2025-12-04 12:02:55,994 [INFO] 
+[2/105] 처리 중: General Agentic Memory Via Deep Research
+2025-12-04 12:02:55,994 [INFO] [HTTP] GET https://huggingface.co/papers/2511.18423 (try 1/5, sleep 10.0s)
+2025-12-04 12:03:06,536 [INFO] [KEYWORDS_RAW] ['memory', 'information', 'agentic'] (lemmatized)
+2025-12-04 12:03:06,537 [INFO] [KEYWORDS_FILTERED] ['memory', 'information', 'agentic'] (중복 제거 완료)
+2025-12-04 12:03:06,537 [INFO]   [KEYWORDS] ['memory', 'information', 'agentic']
+2025-12-04 12:03:06,539 [INFO] [SAVED] doc2548002.json
+2025-12-04 12:03:06,539 [INFO]   [SUCCESS] doc2548002 저장 완료
+2025-12-04 12:03:06,539 [INFO] 
+[3/105] 처리 중: GigaEvo: An Open Source Optimization Framework Powered By LLMs And Evolution Algorithms
+2025-12-04 12:03:06,539 [INFO] [HTTP] GET https://huggingface.co/papers/2511.17592 (try 1/5, sleep 10.0s)
+2025-12-04 12:03:17,028 [INFO] [KEYWORDS_RAW] ['gigaevo', 'llm', 'framework'] (lemmatized)
+2025-12-04 12:03:17,028 [INFO] [KEYWORDS_FILTERED] ['gigaevo', 'llm', 'framework'] (중복 제거 완료)
+2025-12-04 12:03:17,029 [INFO]   [KEYWORDS] ['gigaevo', 'llm', 'framework']
+2025-12-04 12:03:17,030 [INFO] [SAVED] doc2548003.json
+2025-12-04 12:03:17,030 [INFO]   [SUCCESS] doc2548003 저장 완료
+2025-12-04 12:03:17,030 [INFO] 
+[4/105] 처리 중: Latent Collaboration in Multi-Agent Systems
+2025-12-04 12:03:17,031 [INFO] [HTTP] GET https://huggingface.co/papers/2511.20639 (try 1/5, sleep 10.0s)
+2025-12-04 12:03:27,606 [INFO] [KEYWORDS_RAW] ['latent', 'token', 'agent'] (lemmatized)
+2025-12-04 12:03:27,606 [INFO] [KEYWORDS_FILTERED] ['latent', 'token', 'agent'] (중복 제거 완료)
+2025-12-04 12:03:27,607 [INFO]   [KEYWORDS] ['latent', 'token', 'agent']
+2025-12-04 12:03:27,609 [INFO] [SAVED] doc2548004.json
+2025-12-04 12:03:27,610 [INFO]   [SUCCESS] doc2548004 저장 완료
+2025-12-04 12:03:27,610 [INFO] 
+[5/105] 처리 중: SAM 3: Segment Anything with Concepts
+2025-12-04 12:03:27,610 [INFO] [HTTP] GET https://huggingface.co/papers/2511.16719 (try 1/5, sleep 10.0s)
+2025-12-04 12:03:38,174 [INFO] [KEYWORDS_RAW] ['concept', 'image', 'sam'] (lemmatized)
+2025-12-04 12:03:38,174 [INFO] [KEYWORDS_FILTERED] ['concept', 'image', 'sam'] (중복 제거 완료)
+2025-12-04 12:03:38,175 [INFO]   [KEYWORDS] ['concept', 'image', 'sam']
+2025-12-04 12:03:38,176 [INFO] [SAVED] doc2548005.json
+2025-12-04 12:03:38,176 [INFO]   [SUCCESS] doc2548005 저장 완료
+2025-12-04 12:03:38,176 [INFO] 
+[6/105] 처리 중: OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe
+2025-12-04 12:03:38,177 [INFO] [HTTP] GET https://huggingface.co/papers/2511.16334 (try 1/5, sleep 10.0s)
+2025-12-04 12:03:48,807 [INFO] [KEYWORDS_RAW] ['reasoning', 'multimodal', 'http'] (lemmatized)
+2025-12-04 12:03:48,807 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'multimodal', 'http'] (중복 제거 완료)
+2025-12-04 12:03:48,808 [INFO]   [KEYWORDS] ['reasoning', 'multimodal', 'http']
+2025-12-04 12:03:48,809 [INFO] [SAVED] doc2548006.json
+2025-12-04 12:03:48,810 [INFO]   [SUCCESS] doc2548006 저장 완료
+2025-12-04 12:03:48,810 [INFO] 
+[7/105] 처리 중: GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization
+2025-12-04 12:03:48,810 [INFO] [HTTP] GET https://huggingface.co/papers/2511.15705 (try 1/5, sleep 10.0s)
+2025-12-04 12:03:59,493 [INFO] [KEYWORDS_RAW] ['reasoning', 'agentic', 'tool'] (lemmatized)
+2025-12-04 12:03:59,493 [INFO] [KEYWORDS_FILTERED] ['reasoning', 'agentic', 'tool'] (중복 제거 완료)
+2025-12-04 12:03:59,494 [INFO]   [KEYWORDS] ['reasoning', 'agentic', 'tool']
+2025-12-04 12:03:59,495 [INFO] [SAVED] doc2548007.json
+2025-12-04 12:03:59,496 [INFO]   [SUCCESS] doc2548007 저장 완료
+2025-12-04 12:03:59,496 [INFO] 
+[8/105] 처리 중: AutoEnv: Automated Environments for Measuring Cross-Environment Agent Learning
+2025-12-04 12:03:59,497 [INFO] [HTTP] GET https://huggingface.co/papers/2511.19304 (try 1/5, sleep 10.0s)
+2025-12-04 12:04:09,926 [INFO] [KEYWORDS_RAW] ['environment', 'learning', 'agent'] (lemmatized)
+2025-12-04 12:04:09,926 [INFO] [KEYWORDS_FILTERED] ['environment', 'learning', 'agent'] (중복 제거 완료)
+2025-12-04 12:04:09,926 [INFO]   [KEYWORDS] ['environment', 'learning', 'agent']
+2025-12-04 12:04:09,928 [INFO] [SAVED] doc2548008.json
+2025-12-04 12:04:09,928 [INFO]   [SUCCESS] doc2548008 저장 완료
+2025-12-04 12:04:09,928 [INFO] 
+[9/105] 처리 중: Unveiling Intrinsic Dimension of Texts: from Academic Abstract to Creative Story
+2025-12-04 12:04:09,929 [INFO] [HTTP] GET https://huggingface.co/papers/2511.15210 (try 1/5, sleep 10.0s)

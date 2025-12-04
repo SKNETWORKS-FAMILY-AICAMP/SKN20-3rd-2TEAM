@@ -1,14 +1,14 @@
 {
-  "context": "Scaling up multimodal models has enabled remarkable advances in visual understanding and reasoning, but practical demands call for smaller, efficient systems. In this work, we conduct a principled analysis of downscaling intelligence in multimodal models , examining how reduced large language model (LLM) capacity affects multimodal capabilities. Our initial findings reveal an interesting trend: LLM downscaling disproportionately affects visual capabilities , rather than abilities inherited from the LLM. We then examine whether this drop mainly reflects the expected decline in visual reasoning or a more fundamental loss of perceptual abilities. Isolating the effect of LLM downscaling on perception, we find performance still drops sharply, often matching or exceeding the impact on reasoning. To address this bottleneck, we introduce visual extraction tuning , which explicitly trains the model to extract instruction-relevant visual details consistently across tasks. With these extracted visual details, we then apply step-by-step reasoning to generate answers. Together, these components form our Extract+Think approach , setting a new standard for efficiency and performance in this space.",
+  "context": "Language understanding involves transferring information from the core language system to other brain regions for constructing mental models, using world knowledge, and autobiographical memories. Language understanding entails not just extracting the surface-level meaning of the linguistic input, but constructing rich mental models of the situation it describes. Here we propose that because processing within the brain's core language system is fundamentally limited, deeply understanding language requires exporting information from the language system to other brain regions that compute perceptual and motor representations, construct mental models, and store our world knowledge and autobiographical memories. We review the existing evidence for this hypothesis, and argue that recent progress in cognitive neuroscience provides both the conceptual foundation and the methods to directly test it, thus opening up a new strategy to reveal what it means, cognitively and neurally, to understand language. Discussion on brain-as-a-system, including existing evidence for the hypothesis and arguing that recent progress in cognitive neuroscience provides both the conceptual foundation and the methods to directly test it. Such discussion can also provide interesting insights for recent AI-oriented work. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Downscaling Intelligence: Exploring Perception and Reasoning Bottlenecks in Small Multimodal Models",
-    "github_url": "https://github.com/markendo/downscaling_intelligence",
-    "huggingface_url": "https://huggingface.co/papers/2511.17487",
+    "paper_name": "What does it mean to understand language?",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19757",
     "upvote": 9,
     "tags": [
-      "visual",
-      "reasoning",
-      "llm"
+      "language",
+      "brain",
+      "system"
     ]
   }
 }
