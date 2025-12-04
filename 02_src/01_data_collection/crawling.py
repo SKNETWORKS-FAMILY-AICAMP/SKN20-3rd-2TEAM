@@ -266,8 +266,8 @@ def fetch_paper_details(paper_url: str) -> Dict[str, any]:
         github_url = github_link['href'] if github_link else ""
 
         # Upvote 추출 (CSS Selector는 실제 페이지 구조에 따라 조정 필요)
-        upvote_elem = soup.select_one('div.font-semibold.text-orange-500')  # 실제 클래스명 확인 필요
         upvote = 0
+        upvote_elem = soup.select_one('div.font-semibold.text-orange-500')  # 실제 클래스명 확인 필요
         if upvote_elem:
             upvote_text = upvote_elem.get_text(strip=True)
             # 숫자만 추출 (예: "123" 또는 "123 upvotes")
