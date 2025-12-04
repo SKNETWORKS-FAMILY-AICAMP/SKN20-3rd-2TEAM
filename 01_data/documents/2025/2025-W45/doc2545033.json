@@ -4,7 +4,7 @@
     "paper_name": "Phased DMD: Few-step Distribution Matching Distillation via Score\n  Matching within Subintervals",
     "github_url": "https://github.com/ModelTC/Wan2.2-Lightning",
     "huggingface_url": "https://huggingface.co/papers/2510.27684",
-    "upvote": 0,
+    "upvote": 22,
     "tags": [
       "dmd",
       "step",

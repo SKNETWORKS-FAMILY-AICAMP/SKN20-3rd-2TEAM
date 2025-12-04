@@ -4,7 +4,7 @@
     "paper_name": "Unified Diffusion VLA: Vision-Language-Action Model via Joint Discrete\n  Denoising Diffusion Process",
     "github_url": "https://github.com/OpenHelix-Team/UD-VLA",
     "huggingface_url": "https://huggingface.co/papers/2511.01718",
-    "upvote": 0,
+    "upvote": 6,
     "tags": [
       "action",
       "diffusion",

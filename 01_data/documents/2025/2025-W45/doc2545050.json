@@ -4,7 +4,7 @@
     "paper_name": "NaviTrace: Evaluating Embodied Navigation of Vision-Language Models",
     "github_url": "https://github.com/leggedrobotics/navitrace_evaluation",
     "huggingface_url": "https://huggingface.co/papers/2510.26909",
-    "upvote": 0,
+    "upvote": 13,
     "tags": [
       "benchmark",
       "navigation",

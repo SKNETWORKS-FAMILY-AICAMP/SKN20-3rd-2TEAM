@@ -516,7 +516,7 @@ if __name__ == "__main__":
         format='%(asctime)s [%(levelname)s] %(message)s',
         handlers=[
             # 로그 파일 이름은 datetime 사용
-            logging.FileHandler(f"{log_dir}/crawling_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log", encoding='utf-8'),
+            logging.FileHandler(f"{log_dir}/crawling_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log", encoding='utf-8'),
             logging.StreamHandler()
         ]
     )

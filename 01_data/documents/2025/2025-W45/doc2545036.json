@@ -4,7 +4,7 @@
     "paper_name": "CostBench: Evaluating Multi-Turn Cost-Optimal Planning and Adaptation in\n  Dynamic Environments for LLM Tool-Use Agents",
     "github_url": "https://github.com/JiayuJeff/CostBench",
     "huggingface_url": "https://huggingface.co/papers/2511.02734",
-    "upvote": 0,
+    "upvote": 20,
     "tags": [
       "cost",
       "agent",

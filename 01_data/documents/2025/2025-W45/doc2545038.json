@@ -4,7 +4,7 @@
     "paper_name": "HyperClick: Advancing Reliable GUI Grounding via Uncertainty Calibration",
     "github_url": "https://github.com/xiaomi-research/hyperclick",
     "huggingface_url": "https://huggingface.co/papers/2510.27266",
-    "upvote": 0,
+    "upvote": 20,
     "tags": [
       "confidence",
       "gui",

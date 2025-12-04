@@ -4,7 +4,7 @@
     "paper_name": "left|,circlearrowright,text{BUS},right|: A Large and\n  Diverse Multimodal Benchmark for evaluating the ability of Vision-Language\n  Models to understand Rebus Puzzles",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.01340",
-    "upvote": 0,
+    "upvote": 12,
     "tags": [
       "reasoning",
       "rebus",

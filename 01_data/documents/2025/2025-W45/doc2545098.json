@@ -4,7 +4,7 @@
     "paper_name": "MisSynth: Improving MISSCI Logical Fallacies Classification with\n  Synthetic Data",
     "github_url": "https://github.com/mxpoliakov/MisSynth",
     "huggingface_url": "https://huggingface.co/papers/2510.26345",
-    "upvote": 0,
+    "upvote": 2,
     "tags": [
       "fine",
       "synthetic",

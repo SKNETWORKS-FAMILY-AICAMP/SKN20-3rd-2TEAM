@@ -4,7 +4,7 @@
     "paper_name": "LiveSecBench: A Dynamic and Culturally-Relevant AI Safety Benchmark for\n  LLMs in Chinese Context",
     "github_url": "https://github.com/ydli-ai/LiveSecBench",
     "huggingface_url": "https://huggingface.co/papers/2511.02366",
-    "upvote": 0,
+    "upvote": 3,
     "tags": [
       "safety",
       "chinese",

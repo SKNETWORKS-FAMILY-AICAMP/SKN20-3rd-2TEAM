@@ -4,7 +4,7 @@
     "paper_name": "SemCoT: Accelerating Chain-of-Thought Reasoning through\n  Semantically-Aligned Implicit Tokens",
     "github_url": "https://github.com/YinhanHe123/SemCoT",
     "huggingface_url": "https://huggingface.co/papers/2510.24940",
-    "upvote": 0,
+    "upvote": 16,
     "tags": [
       "reasoning",
       "implicit",

@@ -4,7 +4,7 @@
     "paper_name": "Can Visual Input Be Compressed? A Visual Token Compression Benchmark for\n  Large Multimodal Models",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.02650",
-    "upvote": 0,
+    "upvote": 9,
     "tags": [
       "pruning",
       "across",

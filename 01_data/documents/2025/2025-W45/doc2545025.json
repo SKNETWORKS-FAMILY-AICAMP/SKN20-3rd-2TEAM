@@ -4,7 +4,7 @@
     "paper_name": "Defeating the Training-Inference Mismatch via FP16",
     "github_url": "https://github.com/sail-sg/Precision-RL",
     "huggingface_url": "https://huggingface.co/papers/2510.26788",
-    "upvote": 0,
+    "upvote": 29,
     "tags": [
       "fine tuning",
       "large",

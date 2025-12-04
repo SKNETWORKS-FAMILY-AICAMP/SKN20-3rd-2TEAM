@@ -4,7 +4,7 @@
     "paper_name": "Revisiting Multimodal Positional Encoding in Vision-Language Models",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.23095",
-    "upvote": 0,
+    "upvote": 20,
     "tags": [
       "multimodal",
       "rope",

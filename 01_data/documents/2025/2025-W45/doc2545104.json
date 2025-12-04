@@ -1,14 +1,14 @@
 {
-  "context": "A modified version of Monopoly Deal, featuring Bounded One-Sided Response Games, is used to study sequential decision-making with Counterfactual Regret Minimization.\nCard games are widely used to study sequential decision-making under uncertainty, with real-world analogues in negotiation, finance, and cybersecurity. These games typically fall into three categories based on the flow of control: strictly sequential (players alternate single actions), deterministic response (some actions trigger a fixed outcome), and unbounded reciprocal response (alternating counterplays are permitted). A less-explored but strategically rich structure is the bounded one-sided response, where a player's action briefly transfers control to the opponent, who must satisfy a fixed condition through one or more moves before the turn resolves. We term games featuring this mechanism Bounded One-Sided Response Games (BORGs). We introduce a modified version of Monopoly Deal as a benchmark environment that isolates this dynamic, where a Rent action forces the opponent to choose payment assets. The gold-standard algorithm, Counterfactual Regret Minimization (CFR), converges on effective strategies without novel algorithmic extensions. A lightweight full-stack research platform unifies the environment, a parallelized CFR runtime, and a human-playable web interface. The trained CFR agent and source code are available at https://monopolydeal.ai.",
+  "context": "A novel approach combining GT-Pair and Reg-DPO enhances video generation quality by addressing data construction, training stability, and memory consumption challenges. Recent studies have identifiedDirect Preference Optimization(DPO) as an\nefficient and reward-free approach to improving video generation quality.\nHowever, existing methods largely follow image-domain paradigms and are mainly\ndeveloped on small-scale models (approximately 2B parameters), limiting their\nability to address the unique challenges of video tasks, such as costly data\nconstruction, unstable training, and heavy memory consumption. To overcome\nthese limitations, we introduce aGT-Pairthat automatically builds\nhigh-quality preference pairs by using real videos as positives and\nmodel-generated videos as negatives, eliminating the need for any external\nannotation. We further presentReg-DPO, which incorporates theSFT lossas a\nregularization term into theDPOobjective to enhance training stability and\ngeneration fidelity. Additionally, by combining theFSDP frameworkwith\nmultiple memory optimization techniques, our approach achieves nearly three\ntimes higher training capacity than using FSDP alone. Extensive experiments on\nboth I2V andT2V tasksacross multiple datasets demonstrate that our method\nconsistently outperforms existing approaches, delivering superior video\ngeneration quality. ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Monopoly Deal: A Benchmark Environment for Bounded One-Sided Response Games",
+    "paper_name": "Reg-DPO: SFT-Regularized Direct Preference Optimization with GT-Pair for\n  Improving Video Generation",
     "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.25080",
+    "huggingface_url": "https://huggingface.co/papers/2511.01450",
     "upvote": 1,
     "tags": [
-      "response",
-      "games",
-      "one"
+      "video",
+      "generation",
+      "quality"
     ]
   }
 }

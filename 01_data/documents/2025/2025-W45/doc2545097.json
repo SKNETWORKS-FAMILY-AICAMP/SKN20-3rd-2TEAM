@@ -4,7 +4,7 @@
     "paper_name": "Mask-to-Height: A YOLOv11-Based Architecture for Joint Building Instance\n  Segmentation and Height Classification from Satellite Imagery",
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.27224",
-    "upvote": 0,
+    "upvote": 2,
     "tags": [
       "urban",
       "height",

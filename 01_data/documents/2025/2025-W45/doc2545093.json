@@ -4,7 +4,7 @@
     "paper_name": "AthenaBench: A Dynamic Benchmark for Evaluating LLMs in Cyber Threat\n  Intelligence",
     "github_url": "https://github.com/Athena-Software-Group/athenabench",
     "huggingface_url": "https://huggingface.co/papers/2511.01144",
-    "upvote": 0,
+    "upvote": 3,
     "tags": [
       "llm",
       "reasoning",
