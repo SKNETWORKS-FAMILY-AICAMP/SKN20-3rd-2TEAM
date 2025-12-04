@@ -1,0 +1,10 @@
+2025-12-04 15:16:42,063 [INFO] 
+============================================================
+2025-12-04 15:16:42,064 [INFO] [START] 2025-W49 크롤링 시작
+2025-12-04 15:16:42,064 [INFO] ============================================================
+2025-12-04 15:16:42,064 [INFO] [FETCH] Weekly 페이지 요청: https://huggingface.co/papers/week/2025-W49
+2025-12-04 15:16:42,064 [INFO] [HTTP] GET https://huggingface.co/papers/week/2025-W49 (try 1/4)
+2025-12-04 15:16:43,030 [INFO] [SUCCESS] 논문 105개 발견
+2025-12-04 15:16:43,033 [INFO] 
+[1/105] 처리 중: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+2025-12-04 15:16:43,047 [INFO] [COOLDOWN] 40개 처리 완료. 레이트리밋 피하려고 90초 휴식...

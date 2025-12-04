@@ -1,14 +1,14 @@
 {
-  "context": "A cluster-based frame selection strategy groups visually similar frames to create more representative and balanced dataset partitions, reducing information leakage in video-derived frames datasets. We propose acluster-based frame selectionstrategy to mitigateinformation leakageinvideo-derived frames datasets. By grouping visually similar frames before splitting into training, validation, and test sets, the method produces more representative, balanced, and reliable dataset partitions. We propose a cluster-based frame selection strategy to mitigate information leakage in video-derived frames datasets. By grouping visually similar frames before splitting into training, validation, and test sets, the method produces more representative, balanced, and reliable dataset partitions. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "A Causal Concept-Guided Diffusion Language Model (C2DLM) improves reasoning capabilities by learning causal relationships between concepts, enhancing performance and training efficiency in downstream tasks. Autoregressive (AR) language models andDiffusion Language Models(DLMs) constitute the two principal paradigms of large language models. However, both paradigms suffer from insufficient reasoning capabilities. Human reasoning inherently relies oncausal knowledgeand thought, which are reflected in natural language. But in the AR paradigm, language is modeled asnext token prediction(a strictly left-to-right, token-by-token order), whereas natural language itself exhibits more flexible causal structures. In the DLM paradigm, the attention mechanism is fully connected, which entirely disregards causal order. To fill this gap, we propose a \\textbf{C}ausal \\textbf{C}oncept-Guided \\textbf{D}iffusion \\textbf{L}anguage \\textbf{M}odel (C^2DLM). Starting from DLM'sfully connected attention, C^2DLM first obtains a concept-levelcausal graphfrom the teacher model, and then explicitly guides attention to learncausal relationshipsbetween concepts. By focusing oncausal relationshipsand avoiding interference from difficult subgoals involvingcausal inversion, C^2DLM improves 12\\% with about 3.2 times training speedup in theCOT-OrderPerturb task, and achieves an average gain of 1.31\\% across sixdownstream reasoning tasks. More details in the repository ~https://github.com/Kairong-Han/C-2-DLM{here}. C$^2$DLM: Causal Concept-Guided Diffusion Large Language Models This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Find the Leak, Fix the Split: Cluster-Based Method to Prevent Leakage in Video-Derived Datasets",
+    "paper_name": "C^2DLM: Causal Concept-Guided Diffusion Large Language Models",
     "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.13944",
-    "upvote": 0,
+    "huggingface_url": "https://huggingface.co/papers/2511.22146",
+    "upvote": 2,
     "tags": [
-      "frames",
-      "similar",
-      "similar frames"
+      "language",
+      "causal",
+      "concept"
     ]
   }
 }

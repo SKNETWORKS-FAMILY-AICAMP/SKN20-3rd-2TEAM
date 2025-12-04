@@ -1,14 +1,14 @@
 {
-  "context": "DualCamCtrl is a diffusion model for camera-controlled video generation that uses a dual-branch framework and Semantic Guided Mutual Alignment to improve consistency and disentangle appearance and geometry modeling. This paper presents DualCamCtrl, a novel end-to-enddiffusion modelforcamera-controlled video generation. Recent works have advanced this field by representing camera poses asray-based conditions, yet they often lack sufficient scene understanding and geometric awareness. DualCamCtrl specifically targets this limitation by introducing adual-branch frameworkthat mutually generates camera-consistentRGBanddepth sequences. To harmonize these two modalities, we further propose theSemantic Guided Mutual Alignment(SIGMA) mechanism, which performsRGB-depth fusionin a semantics-guided and mutually reinforced manner. These designs collectively enable DualCamCtrl to better disentangleappearance and geometry modeling, generating videos that more faithfully adhere to the specified camera trajectories. Additionally, we analyze and reveal the distinct influence of depth and camera poses acrossdenoising stagesand further demonstrate that early and late stages play complementary roles in forming global structure and refining local details. Extensive experiments demonstrate that DualCamCtrl achieves more consistentcamera-controlled video generation, with over 40\\% reduction incamera motion errorscompared with prior methods. Our project page: https://soyouthinkyoucantell.github.io/dualcamctrl-page/ 📄 Paper:https://arxiv.org/pdf/2511.23127 🔗 arXiv:https://arxiv.org/abs/2511.23127 💻 Code:https://github.com/EnVision-Research/DualCamCtrl 🤗 HuggingFace:https://huggingface.co/FayeHongfeiZhang/DualCamCtrl ·Sign uporlog into comment",
+  "context": "OneThinker, an all-in-one multimodal reasoning model, unifies image and video understanding across various tasks using RL and demonstrates strong performance and knowledge transfer. Reinforcement learning(RL) has recently achieved remarkable success in eliciting visual reasoning withinMultimodal Large Language Models(MLLMs). However, existing approaches typically train separate models for different tasks and treatimage and video reasoningas disjoint domains. This results in limited scalability toward a multimodal reasoning generalist, which restricts practical versatility and hinders potential knowledge sharing across tasks and modalities. To this end, we propose OneThinker, an all-in-one reasoning model that unifies image and video understanding across diverse fundamental visual tasks, includingquestion answering,captioning,spatial and temporal grounding,tracking, andsegmentation. To achieve this, we construct the OneThinker-600k training corpus covering all these tasks and employ commercial models for CoT annotation, resulting in OneThinker-SFT-340k for SFT cold start. Furthermore, we proposeEMA-GRPOto handlereward heterogeneityin multi-task RL bytrackingtask-wise moving averages of reward standard deviations for balanced optimization. Extensive experiments on diverse visual benchmarks show that OneThinker delivers strong performance on 31 benchmarks, across 10 fundamental visual understanding tasks. Moreover, it exhibits effective knowledge transfer between certain tasks and preliminaryzero-shot generalizationability, marking a step toward a unified multimodal reasoning generalist. All code, model, and data are released. Project page:https://github.com/tulerfeng/OneThinker ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation",
-    "github_url": "https://github.com/EnVision-Research/DualCamCtrl",
-    "huggingface_url": "https://huggingface.co/papers/2511.23127",
-    "upvote": 8,
+    "paper_name": "OneThinker: All-in-one Reasoning Model for Image and Video",
+    "github_url": "https://github.com/tulerfeng/OneThinker",
+    "huggingface_url": "https://huggingface.co/papers/2512.03043",
+    "upvote": 14,
     "tags": [
-      "dualcamctrl",
-      "https",
-      "camera"
+      "onethinker",
+      "reasoning",
+      "across"
     ]
   }
 }
