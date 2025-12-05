@@ -31,7 +31,7 @@ from typing import List, Dict, Any, Generator, Union, Optional
 
 from langchain_core.documents import Document
 
-# import validators
+import validators
 
 
 # ==================== 전역 설정 (Inline constants) ====================

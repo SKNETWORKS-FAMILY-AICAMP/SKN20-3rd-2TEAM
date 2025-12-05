@@ -4,19 +4,21 @@ RAG 기반 HuggingFace Papers 챗봇 데이터 검증 모듈
 주요 기능:
 1. Pydantic 모델 기반 타입 안전 데이터 검증
 2. Upvote 필드 정규화 (string → int 자동 변환)
-3. 논문 메타데이터 검증 (paper_name, urls, tags)
+3. 논문 메타데이터 검증 (paper_name, urls, tag1)
 4. 배치 검증 및 에러 리포트 생성
 5. 디렉토리 전체 검증 및 통계 제공
 
 검증 스키마:
-- PaperMetadata: paper_name, github_url, huggingface_url, upvote, tags(3개)
+- PaperMetadata: paper_name, github_url, huggingface_url, upvote, tag1, tag2, tag3
 - PaperDocument: context(최소 50자), metadata
 - DocIdInfo: doc_id(doc2549001), year, week, index
 
 검증 규칙:
 - context: 최소 50자 이상, 공백 제외
 - upvote: 0 이상의 정수 (string "219" → int 219 자동 변환)
-- tags: 정확히 3개의 키워드
+- tag1: string, 비어있지 않음
+- tag2: string, 비어있지 않음
+- tag3: string, 비어있지 않음
 - huggingface_url: https://huggingface.co/papers/ 형식 필수
 - github_url: https://github.com/ 형식 (선택사항, 빈 문자열 허용)
 
@@ -54,7 +56,9 @@ class PaperMetadata(BaseModel):
         github_url: GitHub 저장소 URL (선택사항, 빈 문자열 허용)
         huggingface_url: HuggingFace 논문 URL (필수)
         upvote: Upvote 개수 (0 이상의 정수, string → int 자동 변환)
-        tags: 키워드 리스트 (정확히 3개)
+        tag1: 키워드 문자열
+        tag2: 키워드 문자열
+        tag3: 키워드 문자열
 
     예시:
         >>> metadata = PaperMetadata(
@@ -91,11 +95,19 @@ class PaperMetadata(BaseModel):
         description="Upvote 개수 (0 이상)"
     )
 
-    tags: List[str] = Field(
+    tag1: str = Field(
         ...,
-        min_items=3,
-        max_items=3,
-        description="키워드 3개"
+        description="키워드"
+    )
+
+    tag2: str = Field(
+        ...,
+        description="키워드"
+    )
+
+    tag3: str = Field(
+        ...,
+        description="키워드"
     )
 
     @validator("upvote", pre=True)
