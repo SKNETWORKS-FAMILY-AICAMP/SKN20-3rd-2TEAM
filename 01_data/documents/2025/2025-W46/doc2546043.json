@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07025",
     "upvote": 11,
-    "tags": [
-      "performance",
-      "embedding",
-      "art"
-    ]
+    "tag1": "performance",
+    "tag2": "embedding",
+    "tag3": "art"
   }
 }

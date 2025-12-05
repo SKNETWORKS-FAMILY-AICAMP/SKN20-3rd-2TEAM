@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Zeqiang-Lai/NaTex",
     "huggingface_url": "https://huggingface.co/papers/2511.16317",
     "upvote": 15,
-    "tags": [
-      "color",
-      "natex",
-      "texture"
-    ]
+    "tag1": "color",
+    "tag2": "natex",
+    "tag3": "texture"
   }
 }

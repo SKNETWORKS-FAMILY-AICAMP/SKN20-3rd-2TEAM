@@ -5,10 +5,8 @@
     "github_url": "https://github.com/alibaba-damo-academy/Lumos-Custom",
     "huggingface_url": "https://huggingface.co/papers/2511.01678",
     "upvote": 34,
-    "tags": [
-      "relighting",
-      "space",
-      "consistency"
-    ]
+    "tag1": "relighting",
+    "tag2": "space",
+    "tag3": "consistency"
   }
 }

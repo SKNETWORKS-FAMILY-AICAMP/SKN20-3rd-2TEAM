@@ -5,10 +5,8 @@
     "github_url": "https://github.com/EvolvingLMMs-Lab/OpenMMReasoner",
     "huggingface_url": "https://huggingface.co/papers/2511.16334",
     "upvote": 90,
-    "tags": [
-      "reasoning",
-      "multimodal",
-      "http"
-    ]
+    "tag1": "reasoning",
+    "tag2": "multimodal",
+    "tag3": "http"
   }
 }

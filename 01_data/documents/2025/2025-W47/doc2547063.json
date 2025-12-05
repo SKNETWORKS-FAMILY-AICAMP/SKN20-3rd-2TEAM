@@ -5,10 +5,8 @@
     "github_url": "https://github.com/jinlab-imvr/SAM2S",
     "huggingface_url": "https://huggingface.co/papers/2511.16618",
     "upvote": 7,
-    "tags": [
-      "surgical",
-      "tracking",
-      "video"
-    ]
+    "tag1": "surgical",
+    "tag2": "tracking",
+    "tag3": "video"
   }
 }

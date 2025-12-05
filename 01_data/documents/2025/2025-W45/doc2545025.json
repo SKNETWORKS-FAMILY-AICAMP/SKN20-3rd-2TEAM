@@ -5,10 +5,8 @@
     "github_url": "https://github.com/sail-sg/Precision-RL",
     "huggingface_url": "https://huggingface.co/papers/2510.26788",
     "upvote": 29,
-    "tags": [
-      "fine tuning",
-      "large",
-      "keyword3"
-    ]
+    "tag1": "fine tuning",
+    "tag2": "large",
+    "tag3": "keyword3"
   }
 }

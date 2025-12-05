@@ -5,10 +5,8 @@
     "github_url": "https://github.com/alibaba-damo-academy/RynnVLA-002",
     "huggingface_url": "https://huggingface.co/papers/2511.17502",
     "upvote": 24,
-    "tags": [
-      "rynnvla",
-      "action",
-      "vla"
-    ]
+    "tag1": "rynnvla",
+    "tag2": "action",
+    "tag3": "vla"
   }
 }

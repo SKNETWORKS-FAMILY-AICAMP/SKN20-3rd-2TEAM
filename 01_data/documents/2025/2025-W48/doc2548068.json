@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.20426",
     "upvote": 8,
-    "tags": [
-      "block",
-      "generation",
-      "causal"
-    ]
+    "tag1": "block",
+    "tag2": "generation",
+    "tag3": "causal"
   }
 }

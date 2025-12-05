@@ -5,10 +5,8 @@
     "github_url": "https://github.com/yaoliliu/OmniRefiner",
     "huggingface_url": "https://huggingface.co/papers/2511.19990",
     "upvote": 3,
-    "tags": [
-      "image",
-      "detail",
-      "reference"
-    ]
+    "tag1": "image",
+    "tag2": "detail",
+    "tag3": "reference"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/CognitiveAISystems/BlindVLA",
     "huggingface_url": "https://huggingface.co/papers/2510.25616",
     "upvote": 95,
-    "tags": [
-      "representation",
-      "action",
-      "vla"
-    ]
+    "tag1": "representation",
+    "tag2": "action",
+    "tag3": "vla"
   }
 }

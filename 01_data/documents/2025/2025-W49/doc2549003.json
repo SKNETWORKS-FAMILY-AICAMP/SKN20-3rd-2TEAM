@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2512.02556",
     "upvote": 133,
-    "tags": [
-      "deepseek",
-      "reasoning",
-      "performance"
-    ]
+    "tag1": "deepseek",
+    "tag2": "reasoning",
+    "tag3": "performance"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/microsoft/UFO/",
     "huggingface_url": "https://huggingface.co/papers/2511.11332",
     "upvote": 18,
-    "tags": [
-      "device",
-      "ufo",
-      "agent"
-    ]
+    "tag1": "device",
+    "tag2": "ufo",
+    "tag3": "agent"
   }
 }

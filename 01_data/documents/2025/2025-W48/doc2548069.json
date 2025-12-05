@@ -5,10 +5,8 @@
     "github_url": "https://github.com/LongHZ140516/MajutsuCity",
     "huggingface_url": "https://huggingface.co/papers/2511.20415",
     "upvote": 8,
-    "tags": [
-      "majutsucity",
-      "scene",
-      "city"
-    ]
+    "tag1": "majutsucity",
+    "tag2": "scene",
+    "tag3": "city"
   }
 }

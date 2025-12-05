@@ -5,10 +5,8 @@
     "github_url": "https://github.com/mit-han-lab/vlash",
     "huggingface_url": "https://huggingface.co/papers/2512.01031",
     "upvote": 21,
-    "tags": [
-      "vlash",
-      "action",
-      "accuracy"
-    ]
+    "tag1": "vlash",
+    "tag2": "action",
+    "tag3": "accuracy"
   }
 }

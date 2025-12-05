@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.27623",
     "upvote": 12,
-    "tags": [
-      "trigger",
-      "agent",
-      "backdoor"
-    ]
+    "tag1": "trigger",
+    "tag2": "agent",
+    "tag3": "backdoor"
   }
 }

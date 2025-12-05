@@ -5,10 +5,8 @@
     "github_url": "https://github.com/genglinliu/WebCoach",
     "huggingface_url": "https://huggingface.co/papers/2511.12997",
     "upvote": 10,
-    "tags": [
-      "agent",
-      "webcoach",
-      "memory"
-    ]
+    "tag1": "agent",
+    "tag2": "webcoach",
+    "tag3": "memory"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/weihao-bo/ViLoMem",
     "huggingface_url": "https://huggingface.co/papers/2511.21678",
     "upvote": 10,
-    "tags": [
-      "memory",
-      "stream",
-      "error"
-    ]
+    "tag1": "memory",
+    "tag2": "stream",
+    "tag3": "error"
   }
 }

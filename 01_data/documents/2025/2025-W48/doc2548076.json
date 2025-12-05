@@ -5,10 +5,8 @@
     "github_url": "https://github.com/H-EmbodVis/GRANT",
     "huggingface_url": "https://huggingface.co/papers/2511.19430",
     "upvote": 7,
-    "tags": [
-      "language",
-      "scheduling",
-      "grounding"
-    ]
+    "tag1": "language",
+    "tag2": "scheduling",
+    "tag3": "grounding"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/BatsResearch/Cross-Difficulty",
     "huggingface_url": "https://huggingface.co/papers/2511.21692",
     "upvote": 15,
-    "tags": [
-      "difficulty",
-      "datasets",
-      "training"
-    ]
+    "tag1": "difficulty",
+    "tag2": "datasets",
+    "tag3": "training"
   }
 }

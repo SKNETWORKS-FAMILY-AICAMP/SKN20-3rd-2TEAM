@@ -5,10 +5,8 @@
     "github_url": "https://github.com/MCG-NJU/SteadyDancer",
     "huggingface_url": "https://huggingface.co/papers/2511.19320",
     "upvote": 39,
-    "tags": [
-      "control",
-      "first",
-      "steadydancer"
-    ]
+    "tag1": "control",
+    "tag2": "first",
+    "tag3": "steadydancer"
   }
 }

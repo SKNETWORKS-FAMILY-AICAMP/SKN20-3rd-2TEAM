@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2512.02014",
     "upvote": 43,
-    "tags": [
-      "generation",
-      "unified",
-      "face"
-    ]
+    "tag1": "generation",
+    "tag2": "unified",
+    "tag3": "face"
   }
 }

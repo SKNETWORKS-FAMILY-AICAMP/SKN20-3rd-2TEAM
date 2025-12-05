@@ -5,10 +5,8 @@
     "github_url": "https://github.com/wguo-ai/CoP",
     "huggingface_url": "https://huggingface.co/papers/2511.22281",
     "upvote": 6,
-    "tags": [
-      "patch",
-      "image",
-      "collapse"
-    ]
+    "tag1": "patch",
+    "tag2": "image",
+    "tag3": "collapse"
   }
 }

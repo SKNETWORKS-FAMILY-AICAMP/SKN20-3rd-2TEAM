@@ -5,10 +5,8 @@
     "github_url": "https://github.com/YuZhaoshu/Efficient-VLAs-Survey",
     "huggingface_url": "https://huggingface.co/papers/2510.24795",
     "upvote": 5,
-    "tags": [
-      "efficient",
-      "survey",
-      "action"
-    ]
+    "tag1": "efficient",
+    "tag2": "survey",
+    "tag3": "action"
   }
 }

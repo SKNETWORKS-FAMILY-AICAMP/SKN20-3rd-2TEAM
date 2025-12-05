@@ -5,10 +5,8 @@
     "github_url": "https://github.com/thu-nics/TaH",
     "huggingface_url": "https://huggingface.co/papers/2511.08577",
     "upvote": 103,
-    "tags": [
-      "iteration",
-      "token",
-      "hard"
-    ]
+    "tag1": "iteration",
+    "tag2": "token",
+    "tag3": "hard"
   }
 }

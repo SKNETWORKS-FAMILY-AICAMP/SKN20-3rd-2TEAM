@@ -5,10 +5,8 @@
     "github_url": "https://github.com/BatsResearch/trove",
     "huggingface_url": "https://huggingface.co/papers/2511.01857",
     "upvote": 10,
-    "tags": [
-      "trove",
-      "code",
-      "experiment"
-    ]
+    "tag1": "trove",
+    "tag2": "code",
+    "tag3": "experiment"
   }
 }

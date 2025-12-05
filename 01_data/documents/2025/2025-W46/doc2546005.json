@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ServiceNow/GroundCUA/",
     "huggingface_url": "https://huggingface.co/papers/2511.07332",
     "upvote": 103,
-    "tags": [
-      "grounding",
-      "http",
-      "agent"
-    ]
+    "tag1": "grounding",
+    "tag2": "http",
+    "tag3": "agent"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/RLinf/RLinf",
     "huggingface_url": "https://huggingface.co/papers/2510.25889",
     "upvote": 63,
-    "tags": [
-      "action",
-      "flow",
-      "likelihood"
-    ]
+    "tag1": "action",
+    "tag2": "flow",
+    "tag3": "likelihood"
   }
 }

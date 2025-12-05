@@ -5,10 +5,8 @@
     "github_url": "https://github.com/hustvl/TBCM",
     "huggingface_url": "https://huggingface.co/papers/2511.20410",
     "upvote": 2,
-    "tags": [
-      "generation",
-      "distillation",
-      "efficiency"
-    ]
+    "tag1": "generation",
+    "tag2": "distillation",
+    "tag3": "efficiency"
   }
 }

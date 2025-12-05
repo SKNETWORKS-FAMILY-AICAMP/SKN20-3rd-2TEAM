@@ -5,10 +5,8 @@
     "github_url": "https://github.com/JinjieNi/dlms-are-super-data-learners",
     "huggingface_url": "https://huggingface.co/papers/2511.03276",
     "upvote": 122,
-    "tags": [
-      "diffusion language",
-      "dlm",
-      "keyword3"
-    ]
+    "tag1": "diffusion language",
+    "tag2": "dlm",
+    "tag3": "keyword3"
   }
 }

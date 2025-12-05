@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.14210",
     "upvote": 19,
-    "tags": [
-      "visual",
-      "orion",
-      "vision"
-    ]
+    "tag1": "visual",
+    "tag2": "orion",
+    "tag3": "vision"
   }
 }

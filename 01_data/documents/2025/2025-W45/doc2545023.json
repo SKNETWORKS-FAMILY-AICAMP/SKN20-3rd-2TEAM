@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.01163",
     "upvote": 31,
-    "tags": [
-      "reasoning",
-      "modal",
-      "cross"
-    ]
+    "tag1": "reasoning",
+    "tag2": "modal",
+    "tag3": "cross"
   }
 }

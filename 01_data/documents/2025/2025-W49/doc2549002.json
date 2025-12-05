@@ -5,10 +5,8 @@
     "github_url": "https://github.com/EvolvingLMMs-Lab/LongVT",
     "huggingface_url": "https://huggingface.co/papers/2511.20785",
     "upvote": 147,
-    "tags": [
-      "http",
-      "longvt",
-      "video"
-    ]
+    "tag1": "http",
+    "tag2": "longvt",
+    "tag3": "video"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.02687",
     "upvote": 21,
-    "tags": [
-      "collaboration",
-      "agent",
-      "gap"
-    ]
+    "tag1": "collaboration",
+    "tag2": "agent",
+    "tag3": "gap"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/L-CodingSpace/GVR",
     "huggingface_url": "https://huggingface.co/papers/2511.13853",
     "upvote": 34,
-    "tags": [
-      "reasoning",
-      "frame",
-      "world"
-    ]
+    "tag1": "reasoning",
+    "tag2": "frame",
+    "tag3": "world"
   }
 }

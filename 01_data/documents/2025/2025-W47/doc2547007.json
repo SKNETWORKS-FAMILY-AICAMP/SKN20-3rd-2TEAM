@@ -5,10 +5,8 @@
     "github_url": "https://github.com/aiming-lab/Agent0",
     "huggingface_url": "https://huggingface.co/papers/2511.16043",
     "upvote": 103,
-    "tags": [
-      "agent",
-      "tool",
-      "reasoning"
-    ]
+    "tag1": "agent",
+    "tag2": "tool",
+    "tag3": "reasoning"
   }
 }

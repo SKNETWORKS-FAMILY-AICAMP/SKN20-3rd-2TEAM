@@ -5,10 +5,8 @@
     "github_url": "https://github.com/mcleish7/retrofitting-recurrence",
     "huggingface_url": "https://huggingface.co/papers/2511.07384",
     "upvote": 16,
-    "tags": [
-      "recurrent",
-      "compute",
-      "language"
-    ]
+    "tag1": "recurrent",
+    "tag2": "compute",
+    "tag3": "language"
   }
 }

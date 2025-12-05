@@ -5,10 +5,8 @@
     "github_url": "https://github.com/MiroMindAI/MiroThinker",
     "huggingface_url": "https://huggingface.co/papers/2511.11793",
     "upvote": 156,
-    "tags": [
-      "scaling",
-      "agent",
-      "interaction"
-    ]
+    "tag1": "scaling",
+    "tag2": "agent",
+    "tag3": "interaction"
   }
 }

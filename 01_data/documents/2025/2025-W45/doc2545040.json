@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.27571",
     "upvote": 17,
-    "tags": [
-      "video retrieval",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "video retrieval",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07790",
     "upvote": 2,
-    "tags": [
-      "reproducibility",
-      "dataset",
-      "sentiment"
-    ]
+    "tag1": "reproducibility",
+    "tag2": "dataset",
+    "tag3": "sentiment"
   }
 }

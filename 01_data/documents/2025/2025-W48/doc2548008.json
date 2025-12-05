@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19304",
     "upvote": 88,
-    "tags": [
-      "environment",
-      "learning",
-      "agent"
-    ]
+    "tag1": "environment",
+    "tag2": "learning",
+    "tag3": "agent"
   }
 }

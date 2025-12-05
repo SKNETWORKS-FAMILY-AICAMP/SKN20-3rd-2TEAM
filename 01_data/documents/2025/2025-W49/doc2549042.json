@@ -5,10 +5,8 @@
     "github_url": "https://github.com/kszpxxzmc/ViSAudio",
     "huggingface_url": "https://huggingface.co/papers/2512.03036",
     "upvote": 20,
-    "tags": [
-      "audio",
-      "visaudio",
-      "end"
-    ]
+    "tag1": "audio",
+    "tag2": "visaudio",
+    "tag3": "end"
   }
 }

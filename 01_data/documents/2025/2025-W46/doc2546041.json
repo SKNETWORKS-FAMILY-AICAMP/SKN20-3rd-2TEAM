@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zheny2751-dotcom/WebVIA",
     "huggingface_url": "https://huggingface.co/papers/2511.06251",
     "upvote": 13,
-    "tags": [
-      "code",
-      "interactive",
-      "comment"
-    ]
+    "tag1": "code",
+    "tag2": "interactive",
+    "tag3": "comment"
   }
 }

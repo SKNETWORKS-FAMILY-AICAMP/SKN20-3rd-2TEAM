@@ -5,10 +5,8 @@
     "github_url": "https://github.com/matsuolab/multibanana",
     "huggingface_url": "https://huggingface.co/papers/2511.22989",
     "upvote": 14,
-    "tags": [
-      "reference",
-      "image",
-      "multi"
-    ]
+    "tag1": "reference",
+    "tag2": "image",
+    "tag3": "multi"
   }
 }

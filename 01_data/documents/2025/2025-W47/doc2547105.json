@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.11721",
     "upvote": 0,
-    "tags": [
-      "algorithm",
-      "cloud",
-      "cost"
-    ]
+    "tag1": "algorithm",
+    "tag2": "cloud",
+    "tag3": "cost"
   }
 }

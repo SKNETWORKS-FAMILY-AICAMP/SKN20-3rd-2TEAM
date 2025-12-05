@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.01914",
     "upvote": 5,
-    "tags": [
-      "action",
-      "vla",
-      "vlm"
-    ]
+    "tag1": "action",
+    "tag2": "vla",
+    "tag3": "vlm"
   }
 }

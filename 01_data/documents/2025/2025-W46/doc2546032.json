@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07070",
     "upvote": 18,
-    "tags": [
-      "redone",
-      "learning",
-      "sft"
-    ]
+    "tag1": "redone",
+    "tag2": "learning",
+    "tag3": "sft"
   }
 }

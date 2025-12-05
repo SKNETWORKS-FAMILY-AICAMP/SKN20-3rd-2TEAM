@@ -5,10 +5,8 @@
     "github_url": "https://github.com/KieDani/UpliftingTableTennis",
     "huggingface_url": "https://huggingface.co/papers/2511.20250",
     "upvote": 4,
-    "tags": [
-      "end",
-      "table tennis",
-      "keyword3"
-    ]
+    "tag1": "end",
+    "tag2": "table tennis",
+    "tag3": "keyword3"
   }
 }

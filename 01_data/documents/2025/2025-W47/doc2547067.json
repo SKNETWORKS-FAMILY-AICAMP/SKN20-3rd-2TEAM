@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AIR-DISCOVER/FreeAskWorld",
     "huggingface_url": "https://huggingface.co/papers/2511.13524",
     "upvote": 6,
-    "tags": [
-      "interaction",
-      "embodied",
-      "framework"
-    ]
+    "tag1": "interaction",
+    "tag2": "embodied",
+    "tag3": "framework"
   }
 }

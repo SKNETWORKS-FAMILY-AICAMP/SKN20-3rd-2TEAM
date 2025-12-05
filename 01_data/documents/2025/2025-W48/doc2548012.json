@@ -5,10 +5,8 @@
     "github_url": "https://github.com/rlresearch/dr-tulu",
     "huggingface_url": "https://huggingface.co/papers/2511.19399",
     "upvote": 54,
-    "tags": [
-      "research",
-      "deep",
-      "form"
-    ]
+    "tag1": "research",
+    "tag2": "deep",
+    "tag3": "form"
   }
 }

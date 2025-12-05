@@ -5,10 +5,8 @@
     "github_url": "https://github.com/stepfun-ai/Step1X-Edit?tab=readme-ov-file#step1x-edit-v1p2-v12",
     "huggingface_url": "https://huggingface.co/papers/2511.22625",
     "upvote": 44,
-    "tags": [
-      "editing",
-      "image",
-      "edit"
-    ]
+    "tag1": "editing",
+    "tag2": "image",
+    "tag3": "edit"
   }
 }

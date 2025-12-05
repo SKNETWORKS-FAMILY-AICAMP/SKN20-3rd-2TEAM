@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.13189",
     "upvote": 38,
-    "tags": [
-      "label",
-      "xmc",
-      "multi"
-    ]
+    "tag1": "label",
+    "tag2": "xmc",
+    "tag3": "multi"
   }
 }

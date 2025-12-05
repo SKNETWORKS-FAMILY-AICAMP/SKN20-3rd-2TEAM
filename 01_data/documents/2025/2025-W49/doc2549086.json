@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2512.01103",
     "upvote": 4,
-    "tags": [
-      "operator",
-      "manifold",
-      "approximation"
-    ]
+    "tag1": "operator",
+    "tag2": "manifold",
+    "tag3": "approximation"
   }
 }

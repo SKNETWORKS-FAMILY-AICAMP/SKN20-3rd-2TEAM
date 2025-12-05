@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.10258",
     "upvote": 1,
-    "tags": [
-      "scheduler",
-      "system",
-      "class"
-    ]
+    "tag1": "scheduler",
+    "tag2": "system",
+    "tag3": "class"
   }
 }

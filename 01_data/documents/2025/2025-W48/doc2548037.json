@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.16825",
     "upvote": 20,
-    "tags": [
-      "world",
-      "generation",
-      "scale"
-    ]
+    "tag1": "world",
+    "tag2": "generation",
+    "tag3": "scale"
   }
 }

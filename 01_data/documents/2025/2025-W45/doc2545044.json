@@ -5,10 +5,8 @@
     "github_url": "https://github.com/agents-x-project/TIR-Bench",
     "huggingface_url": "https://huggingface.co/papers/2511.01833",
     "upvote": 15,
-    "tags": [
-      "image",
-      "tool",
-      "benchmark"
-    ]
+    "tag1": "image",
+    "tag2": "tool",
+    "tag3": "benchmark"
   }
 }

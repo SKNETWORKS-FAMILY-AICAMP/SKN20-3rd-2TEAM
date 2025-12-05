@@ -5,10 +5,8 @@
     "github_url": "https://github.com/W2GenAI-Lab/UltraFlux",
     "huggingface_url": "https://huggingface.co/papers/2511.18050",
     "upvote": 37,
-    "tags": [
-      "ultraflux",
-      "aesthetic",
-      "high"
-    ]
+    "tag1": "ultraflux",
+    "tag2": "aesthetic",
+    "tag3": "high"
   }
 }

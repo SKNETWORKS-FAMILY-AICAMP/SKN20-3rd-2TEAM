@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.11270",
     "upvote": 10,
-    "tags": [
-      "feature",
-      "physical",
-      "supervised"
-    ]
+    "tag1": "feature",
+    "tag2": "physical",
+    "tag3": "supervised"
   }
 }

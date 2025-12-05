@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zhijie-group/Mantis",
     "huggingface_url": "https://huggingface.co/papers/2511.16175",
     "upvote": 12,
-    "tags": [
-      "visual",
-      "mantis",
-      "vla"
-    ]
+    "tag1": "visual",
+    "tag2": "mantis",
+    "tag3": "vla"
   }
 }

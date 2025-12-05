@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Parskatt/romav2",
     "huggingface_url": "https://huggingface.co/papers/2511.15706",
     "upvote": 6,
-    "tags": [
-      "comment",
-      "dense",
-      "matching"
-    ]
+    "tag1": "comment",
+    "tag2": "dense",
+    "tag3": "matching"
   }
 }

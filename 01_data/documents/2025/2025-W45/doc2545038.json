@@ -5,10 +5,8 @@
     "github_url": "https://github.com/xiaomi-research/hyperclick",
     "huggingface_url": "https://huggingface.co/papers/2510.27266",
     "upvote": 20,
-    "tags": [
-      "confidence",
-      "gui",
-      "hyperclick"
-    ]
+    "tag1": "confidence",
+    "tag2": "gui",
+    "tag3": "hyperclick"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.09146",
     "upvote": 92,
-    "tags": [
-      "good",
-      "comment",
-      "dope"
-    ]
+    "tag1": "good",
+    "tag2": "comment",
+    "tag3": "dope"
   }
 }

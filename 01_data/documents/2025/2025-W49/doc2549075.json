@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Richar-Du/Revisiting-Visual-CoT",
     "huggingface_url": "https://huggingface.co/papers/2511.22586",
     "upvote": 6,
-    "tags": [
-      "cot",
-      "reasoning",
-      "visual"
-    ]
+    "tag1": "cot",
+    "tag2": "reasoning",
+    "tag3": "visual"
   }
 }

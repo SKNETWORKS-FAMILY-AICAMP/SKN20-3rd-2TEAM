@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Zhiyuan-Zeng/RLVE",
     "huggingface_url": "https://huggingface.co/papers/2511.07317",
     "upvote": 13,
-    "tags": [
-      "environment",
-      "rlve",
-      "training"
-    ]
+    "tag1": "environment",
+    "tag2": "rlve",
+    "tag3": "training"
   }
 }

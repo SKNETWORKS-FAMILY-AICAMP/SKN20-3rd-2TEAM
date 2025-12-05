@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07409",
     "upvote": 4,
-    "tags": [
-      "diverse motion",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "diverse motion",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

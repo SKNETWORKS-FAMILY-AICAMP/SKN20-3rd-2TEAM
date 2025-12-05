@@ -5,10 +5,8 @@
     "github_url": "https://github.com/isbrycee/OralGPT",
     "huggingface_url": "https://huggingface.co/papers/2511.22055",
     "upvote": 5,
-    "tags": [
-      "dental",
-      "analysis",
-      "image"
-    ]
+    "tag1": "dental",
+    "tag2": "analysis",
+    "tag3": "image"
   }
 }

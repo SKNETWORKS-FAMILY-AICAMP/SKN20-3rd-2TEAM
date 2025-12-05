@@ -5,10 +5,8 @@
     "github_url": "https://github.com/opendatalab/TRivia",
     "huggingface_url": "https://huggingface.co/papers/2512.01248",
     "upvote": 8,
-    "tags": [
-      "table",
-      "image",
-      "labeled"
-    ]
+    "tag1": "table",
+    "tag2": "image",
+    "tag3": "labeled"
   }
 }

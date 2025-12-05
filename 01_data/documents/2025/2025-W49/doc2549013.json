@@ -5,10 +5,8 @@
     "github_url": "https://github.com/mangopy/Deep-Research-Survey",
     "huggingface_url": "https://huggingface.co/papers/2512.02038",
     "upvote": 46,
-    "tags": [
-      "comment",
-      "generation",
-      "research"
-    ]
+    "tag1": "comment",
+    "tag2": "generation",
+    "tag3": "research"
   }
 }

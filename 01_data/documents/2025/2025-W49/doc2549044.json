@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ByteDance-Seed/Adversarial-Flow-Models",
     "huggingface_url": "https://huggingface.co/papers/2511.22475",
     "upvote": 20,
-    "tags": [
-      "flow",
-      "step",
-      "training"
-    ]
+    "tag1": "flow",
+    "tag2": "step",
+    "tag3": "training"
   }
 }

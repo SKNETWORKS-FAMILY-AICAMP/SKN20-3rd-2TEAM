@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Joey-S-Liu/MedSAM3",
     "huggingface_url": "https://huggingface.co/papers/2511.19046",
     "upvote": 48,
-    "tags": [
-      "medical",
-      "medsam",
-      "segmentation"
-    ]
+    "tag1": "medical",
+    "tag2": "medsam",
+    "tag3": "segmentation"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/stepfun-ai/Step-Audio-R1",
     "huggingface_url": "https://huggingface.co/papers/2511.15848",
     "upvote": 51,
-    "tags": [
-      "audio",
-      "reasoning",
-      "across"
-    ]
+    "tag1": "audio",
+    "tag2": "reasoning",
+    "tag3": "across"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19418",
     "upvote": 26,
-    "tags": [
-      "visual token",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "visual token",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

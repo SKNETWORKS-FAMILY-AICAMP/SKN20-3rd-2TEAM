@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Lexsi-Labs/TabTune",
     "huggingface_url": "https://huggingface.co/papers/2511.02802",
     "upvote": 14,
-    "tags": [
-      "tabtune",
-      "foundation",
-      "tabular"
-    ]
+    "tag1": "tabtune",
+    "tag2": "foundation",
+    "tag3": "tabular"
   }
 }

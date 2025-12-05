@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.26491",
     "upvote": 9,
-    "tags": [
-      "influence",
-      "cropi",
-      "policy"
-    ]
+    "tag1": "influence",
+    "tag2": "cropi",
+    "tag3": "policy"
   }
 }

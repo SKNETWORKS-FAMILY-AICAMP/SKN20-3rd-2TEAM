@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Kr1sJFU/iMontage",
     "huggingface_url": "https://huggingface.co/papers/2511.20635",
     "upvote": 31,
-    "tags": [
-      "image",
-      "dynamic",
-      "framework"
-    ]
+    "tag1": "image",
+    "tag2": "dynamic",
+    "tag3": "framework"
   }
 }

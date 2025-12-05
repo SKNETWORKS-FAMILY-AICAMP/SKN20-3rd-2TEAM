@@ -5,10 +5,8 @@
     "github_url": "https://github.com/OpenSenseNova/SenseNova-SI",
     "huggingface_url": "https://huggingface.co/papers/2511.13719",
     "upvote": 43,
-    "tags": [
-      "multimodal",
-      "sensenova",
-      "foundation"
-    ]
+    "tag1": "multimodal",
+    "tag2": "sensenova",
+    "tag3": "foundation"
   }
 }

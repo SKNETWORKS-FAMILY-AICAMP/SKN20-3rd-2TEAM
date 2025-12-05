@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.02219",
     "upvote": 1,
-    "tags": [
-      "complex",
-      "reasoning",
-      "numerical"
-    ]
+    "tag1": "complex",
+    "tag2": "reasoning",
+    "tag3": "numerical"
   }
 }

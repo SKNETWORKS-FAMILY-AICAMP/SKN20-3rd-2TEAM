@@ -5,10 +5,8 @@
     "github_url": "https://github.com/OPPO-PersonalAI/FINDER_DEFT",
     "huggingface_url": "https://huggingface.co/papers/2512.01948",
     "upvote": 46,
-    "tags": [
-      "research",
-      "report",
-      "dras"
-    ]
+    "tag1": "research",
+    "tag2": "report",
+    "tag3": "dras"
   }
 }

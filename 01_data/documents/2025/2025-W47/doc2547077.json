@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zhangyuejoslin/Deer-3D",
     "huggingface_url": "https://huggingface.co/papers/2511.14086",
     "upvote": 4,
-    "tags": [
-      "grounding",
-      "editing",
-      "error"
-    ]
+    "tag1": "grounding",
+    "tag2": "editing",
+    "tag3": "error"
   }
 }

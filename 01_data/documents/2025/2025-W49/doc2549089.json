@@ -5,10 +5,8 @@
     "github_url": "https://github.com/GeoX-Lab/Asking_like_Socrates",
     "huggingface_url": "https://huggingface.co/papers/2511.22396",
     "upvote": 4,
-    "tags": [
-      "reasoning",
-      "evidence",
-      "visual"
-    ]
+    "tag1": "reasoning",
+    "tag2": "evidence",
+    "tag3": "visual"
   }
 }

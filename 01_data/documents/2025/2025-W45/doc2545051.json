@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.03774",
     "upvote": 12,
-    "tags": [
-      "benchmark",
-      "perturbation",
-      "contaminated"
-    ]
+    "tag1": "benchmark",
+    "tag2": "perturbation",
+    "tag3": "contaminated"
   }
 }

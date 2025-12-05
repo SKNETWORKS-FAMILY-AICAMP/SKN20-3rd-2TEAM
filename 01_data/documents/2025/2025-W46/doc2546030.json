@@ -5,10 +5,8 @@
     "github_url": "https://github.com/lcqysl/VideoSSR",
     "huggingface_url": "https://huggingface.co/papers/2511.06281",
     "upvote": 24,
-    "tags": [
-      "video",
-      "learning",
-      "mllms"
-    ]
+    "tag1": "video",
+    "tag2": "learning",
+    "tag3": "mllms"
   }
 }

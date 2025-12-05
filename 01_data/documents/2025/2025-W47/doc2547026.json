@@ -5,10 +5,8 @@
     "github_url": "https://github.com/bruno686/VisPlay",
     "huggingface_url": "https://huggingface.co/papers/2511.15661",
     "upvote": 41,
-    "tags": [
-      "visplay",
-      "reasoning",
-      "evolving"
-    ]
+    "tag1": "visplay",
+    "tag2": "reasoning",
+    "tag3": "evolving"
   }
 }

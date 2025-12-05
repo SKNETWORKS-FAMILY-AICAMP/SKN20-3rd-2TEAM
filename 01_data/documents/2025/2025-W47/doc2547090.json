@@ -5,10 +5,8 @@
     "github_url": "https://github.com/samuelstevens/biobench",
     "huggingface_url": "https://huggingface.co/papers/2511.16315",
     "upvote": 2,
-    "tags": [
-      "accuracy",
-      "imagenet",
-      "vision"
-    ]
+    "tag1": "accuracy",
+    "tag2": "imagenet",
+    "tag3": "vision"
   }
 }

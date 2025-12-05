@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07327",
     "upvote": 73,
-    "tags": [
-      "research",
-      "horizon",
-      "agent"
-    ]
+    "tag1": "research",
+    "tag2": "horizon",
+    "tag3": "agent"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.10047",
     "upvote": 1,
-    "tags": [
-      "anomaly",
-      "musc",
-      "scoring"
-    ]
+    "tag1": "anomaly",
+    "tag2": "musc",
+    "tag3": "scoring"
   }
 }

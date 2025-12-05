@@ -5,10 +5,8 @@
     "github_url": "https://github.com/NiuTrans/LMT",
     "huggingface_url": "https://huggingface.co/papers/2511.07003",
     "upvote": 32,
-    "tags": [
-      "translation",
-      "language",
-      "multilingual"
-    ]
+    "tag1": "translation",
+    "tag2": "language",
+    "tag3": "multilingual"
   }
 }

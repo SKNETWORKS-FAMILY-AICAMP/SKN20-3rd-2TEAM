@@ -5,10 +5,8 @@
     "github_url": "https://github.com/copenlu/pk-ck-knowledge-disentanglement",
     "huggingface_url": "https://huggingface.co/papers/2511.01706",
     "upvote": 2,
-    "tags": [
-      "knowledge",
-      "rank",
-      "subspace"
-    ]
+    "tag1": "knowledge",
+    "tag2": "rank",
+    "tag3": "subspace"
   }
 }

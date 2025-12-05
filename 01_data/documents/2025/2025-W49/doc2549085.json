@@ -5,10 +5,8 @@
     "github_url": "https://github.com/SHI-Labs/physical-ai-bench",
     "huggingface_url": "https://huggingface.co/papers/2512.01989",
     "upvote": 4,
-    "tags": [
-      "physical",
-      "bench",
-      "video"
-    ]
+    "tag1": "physical",
+    "tag2": "bench",
+    "tag3": "video"
   }
 }

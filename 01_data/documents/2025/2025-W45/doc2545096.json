@@ -5,10 +5,8 @@
     "github_url": "https://github.com/mohammad2012191/ViC",
     "huggingface_url": "https://huggingface.co/papers/2511.01617",
     "upvote": 2,
-    "tags": [
-      "video",
-      "candidate",
-      "retrieval"
-    ]
+    "tag1": "video",
+    "tag2": "candidate",
+    "tag3": "retrieval"
   }
 }

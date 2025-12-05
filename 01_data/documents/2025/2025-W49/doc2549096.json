@@ -5,10 +5,8 @@
     "github_url": "https://github.com/wyddmw/OpenREAD",
     "huggingface_url": "https://huggingface.co/papers/2512.01830",
     "upvote": 3,
-    "tags": [
-      "driving",
-      "open",
-      "autonomous"
-    ]
+    "tag1": "driving",
+    "tag2": "open",
+    "tag3": "autonomous"
   }
 }

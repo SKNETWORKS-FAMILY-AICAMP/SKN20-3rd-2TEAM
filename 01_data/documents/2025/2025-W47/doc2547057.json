@@ -5,10 +5,8 @@
     "github_url": "https://github.com/yujunwei04/UnSAMv2",
     "huggingface_url": "https://huggingface.co/papers/2511.13714",
     "upvote": 10,
-    "tags": [
-      "granularity",
-      "anything",
-      "comment"
-    ]
+    "tag1": "granularity",
+    "tag2": "anything",
+    "tag3": "comment"
   }
 }

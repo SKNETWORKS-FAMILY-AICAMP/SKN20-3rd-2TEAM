@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Tencent-Hunyuan/DRIVE-RLVR",
     "huggingface_url": "https://huggingface.co/papers/2511.06307",
     "upvote": 50,
-    "tags": [
-      "programming",
-      "generation",
-      "code"
-    ]
+    "tag1": "programming",
+    "tag2": "generation",
+    "tag3": "code"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/google-deepmind/superhuman",
     "huggingface_url": "https://huggingface.co/papers/2511.01846",
     "upvote": 7,
-    "tags": [
-      "imo",
-      "level",
-      "proof"
-    ]
+    "tag1": "imo",
+    "tag2": "level",
+    "tag3": "proof"
   }
 }

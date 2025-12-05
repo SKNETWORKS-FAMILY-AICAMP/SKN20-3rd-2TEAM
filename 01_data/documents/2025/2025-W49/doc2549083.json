@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zhangdaxia22/CookAnything",
     "huggingface_url": "https://huggingface.co/papers/2512.03540",
     "upvote": 4,
-    "tags": [
-      "step",
-      "image",
-      "framework"
-    ]
+    "tag1": "step",
+    "tag2": "image",
+    "tag3": "framework"
   }
 }

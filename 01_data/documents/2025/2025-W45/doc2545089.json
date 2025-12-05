@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.02374",
     "upvote": 3,
-    "tags": [
-      "ayurparam",
-      "specialized",
-      "domain"
-    ]
+    "tag1": "ayurparam",
+    "tag2": "specialized",
+    "tag3": "domain"
   }
 }

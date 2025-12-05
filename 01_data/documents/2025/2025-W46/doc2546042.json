@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zheny2751-dotcom/MathSE",
     "huggingface_url": "https://huggingface.co/papers/2511.06805",
     "upvote": 12,
-    "tags": [
-      "reasoning",
-      "azul",
-      "agi"
-    ]
+    "tag1": "reasoning",
+    "tag2": "azul",
+    "tag3": "agi"
   }
 }

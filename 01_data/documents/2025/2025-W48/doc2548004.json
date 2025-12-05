@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Gen-Verse/LatentMAS",
     "huggingface_url": "https://huggingface.co/papers/2511.20639",
     "upvote": 105,
-    "tags": [
-      "latent",
-      "token",
-      "agent"
-    ]
+    "tag1": "latent",
+    "tag2": "token",
+    "tag3": "agent"
   }
 }

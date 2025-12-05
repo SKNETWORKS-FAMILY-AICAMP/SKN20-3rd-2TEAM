@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.22815",
     "upvote": 9,
-    "tags": [
-      "camera",
-      "world",
-      "video"
-    ]
+    "tag1": "camera",
+    "tag2": "world",
+    "tag3": "video"
   }
 }

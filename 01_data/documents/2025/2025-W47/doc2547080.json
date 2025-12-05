@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AMD-AGI/Instella",
     "huggingface_url": "https://huggingface.co/papers/2511.10628",
     "upvote": 4,
-    "tags": [
-      "open",
-      "instella",
-      "language"
-    ]
+    "tag1": "open",
+    "tag2": "instella",
+    "tag3": "language"
   }
 }

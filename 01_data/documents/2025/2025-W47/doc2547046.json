@@ -5,10 +5,8 @@
     "github_url": "https://github.com/KD-TAO/OmniZip",
     "huggingface_url": "https://huggingface.co/papers/2511.14582",
     "upvote": 17,
-    "tags": [
-      "token",
-      "audio",
-      "omnizip"
-    ]
+    "tag1": "token",
+    "tag2": "audio",
+    "tag3": "omnizip"
   }
 }

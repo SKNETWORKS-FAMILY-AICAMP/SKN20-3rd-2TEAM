@@ -5,10 +5,8 @@
     "github_url": "https://github.com/YalaLab/pillar-pretrain",
     "huggingface_url": "https://huggingface.co/papers/2511.17803",
     "upvote": 19,
-    "tags": [
-      "pillar",
-      "http",
-      "radiology"
-    ]
+    "tag1": "pillar",
+    "tag2": "http",
+    "tag3": "radiology"
   }
 }

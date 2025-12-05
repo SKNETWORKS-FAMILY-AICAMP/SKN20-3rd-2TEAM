@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ulab-uiuc/live-trade-bench",
     "huggingface_url": "https://huggingface.co/papers/2511.03628",
     "upvote": 11,
-    "tags": [
-      "live",
-      "uncertainty",
-      "market"
-    ]
+    "tag1": "live",
+    "tag2": "uncertainty",
+    "tag3": "market"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/TencentARC/ARC-Chapter",
     "huggingface_url": "https://huggingface.co/papers/2511.14349",
     "upvote": 16,
-    "tags": [
-      "chapter",
-      "arc",
-      "video"
-    ]
+    "tag1": "chapter",
+    "tag2": "arc",
+    "tag3": "video"
   }
 }

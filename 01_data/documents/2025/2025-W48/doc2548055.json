@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19797",
     "upvote": 11,
-    "tags": [
-      "tvm",
-      "matching",
-      "step"
-    ]
+    "tag1": "tvm",
+    "tag2": "matching",
+    "tag3": "step"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.22115",
     "upvote": 82,
-    "tags": [
-      "ling",
-      "training",
-      "reasoning"
-    ]
+    "tag1": "ling",
+    "tag2": "training",
+    "tag3": "reasoning"
   }
 }

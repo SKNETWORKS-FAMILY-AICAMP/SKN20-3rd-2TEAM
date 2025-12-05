@@ -5,10 +5,8 @@
     "github_url": "https://github.com/showlab/Adv-GRPO",
     "huggingface_url": "https://huggingface.co/papers/2511.20256",
     "upvote": 26,
-    "tags": [
-      "reward",
-      "image",
-      "grpo"
-    ]
+    "tag1": "reward",
+    "tag2": "image",
+    "tag3": "grpo"
   }
 }

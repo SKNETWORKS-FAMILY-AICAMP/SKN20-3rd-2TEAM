@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.14865",
     "upvote": 3,
-    "tags": [
-      "recommendation",
-      "challenge",
-      "financial"
-    ]
+    "tag1": "recommendation",
+    "tag2": "challenge",
+    "tag3": "financial"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zli12321/FFGO-Video-Customization?tab=readme-ov-file",
     "huggingface_url": "https://huggingface.co/papers/2511.15700",
     "upvote": 52,
-    "tags": [
-      "video",
-      "customization",
-      "generation"
-    ]
+    "tag1": "video",
+    "tag2": "customization",
+    "tag3": "generation"
   }
 }

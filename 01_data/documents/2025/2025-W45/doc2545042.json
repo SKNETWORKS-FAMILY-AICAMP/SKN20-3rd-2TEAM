@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Hikari43/SLTH-for-MHAs",
     "huggingface_url": "https://huggingface.co/papers/2511.04217",
     "upvote": 15,
-    "tags": [
-      "head",
-      "lottery ticket",
-      "keyword3"
-    ]
+    "tag1": "head",
+    "tag2": "lottery ticket",
+    "tag3": "keyword3"
   }
 }

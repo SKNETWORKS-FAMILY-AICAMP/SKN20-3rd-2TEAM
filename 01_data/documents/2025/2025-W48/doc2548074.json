@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.14806",
     "upvote": 8,
-    "tags": [
-      "token",
-      "mergedna",
-      "tokenization"
-    ]
+    "tag1": "token",
+    "tag2": "mergedna",
+    "tag3": "tokenization"
   }
 }

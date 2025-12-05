@@ -5,10 +5,8 @@
     "github_url": "https://github.com/kandinskylab/kandinsky-5",
     "huggingface_url": "https://huggingface.co/papers/2511.14993",
     "upvote": 220,
-    "tags": [
-      "kandinsky",
-      "video",
-      "training"
-    ]
+    "tag1": "kandinsky",
+    "tag2": "video",
+    "tag3": "training"
   }
 }

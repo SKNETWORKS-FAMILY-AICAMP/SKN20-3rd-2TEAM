@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.03996",
     "upvote": 3,
-    "tags": [
-      "perception",
-      "motion",
-      "real"
-    ]
+    "tag1": "perception",
+    "tag2": "motion",
+    "tag3": "real"
   }
 }

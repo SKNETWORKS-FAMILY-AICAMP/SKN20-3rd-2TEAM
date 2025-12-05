@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.01618",
     "upvote": 9,
-    "tags": [
-      "reasoning",
-      "spatial",
-      "domain"
-    ]
+    "tag1": "reasoning",
+    "tag2": "spatial",
+    "tag3": "domain"
   }
 }

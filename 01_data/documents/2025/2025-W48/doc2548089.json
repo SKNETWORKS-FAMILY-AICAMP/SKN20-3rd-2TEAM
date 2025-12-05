@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19428",
     "upvote": 4,
-    "tags": [
-      "teacher",
-      "sampling",
-      "map"
-    ]
+    "tag1": "teacher",
+    "tag2": "sampling",
+    "tag3": "map"
   }
 }

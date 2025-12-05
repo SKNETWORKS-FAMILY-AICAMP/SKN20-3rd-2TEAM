@@ -5,10 +5,8 @@
     "github_url": "https://github.com/sb-ai-lab/MADD",
     "huggingface_url": "https://huggingface.co/papers/2511.08217",
     "upvote": 55,
-    "tags": [
-      "agent",
-      "hit",
-      "madd"
-    ]
+    "tag1": "agent",
+    "tag2": "hit",
+    "tag3": "madd"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/princetonvisualai/BeyondObjects",
     "huggingface_url": "https://huggingface.co/papers/2510.24078",
     "upvote": 2,
-    "tags": [
-      "fine",
-      "bob",
-      "image"
-    ]
+    "tag1": "fine",
+    "tag2": "bob",
+    "tag3": "image"
   }
 }

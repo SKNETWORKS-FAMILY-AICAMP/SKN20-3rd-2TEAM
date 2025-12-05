@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zai-org/UI2Code_N",
     "huggingface_url": "https://huggingface.co/papers/2511.08195",
     "upvote": 30,
-    "tags": [
-      "github",
-      "http",
-      "code"
-    ]
+    "tag1": "github",
+    "tag2": "http",
+    "tag3": "code"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19757",
     "upvote": 9,
-    "tags": [
-      "language",
-      "brain",
-      "system"
-    ]
+    "tag1": "language",
+    "tag2": "brain",
+    "tag3": "system"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/byeongjun-park/ReDirector",
     "huggingface_url": "https://huggingface.co/papers/2511.19827",
     "upvote": 11,
-    "tags": [
-      "video",
-      "camera",
-      "length"
-    ]
+    "tag1": "video",
+    "tag2": "camera",
+    "tag3": "length"
   }
 }

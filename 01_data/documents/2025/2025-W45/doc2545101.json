@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.04583",
     "upvote": 1,
-    "tags": [
-      "scientist",
-      "risk",
-      "system"
-    ]
+    "tag1": "scientist",
+    "tag2": "risk",
+    "tag3": "system"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AIFrontierLab/UniGame",
     "huggingface_url": "https://huggingface.co/papers/2511.19413",
     "upvote": 19,
-    "tags": [
-      "generation",
-      "understanding",
-      "unigame"
-    ]
+    "tag1": "generation",
+    "tag2": "understanding",
+    "tag3": "unigame"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/univa-agent/univa",
     "huggingface_url": "https://huggingface.co/papers/2511.08521",
     "upvote": 37,
-    "tags": [
-      "video",
-      "generation",
-      "agent"
-    ]
+    "tag1": "video",
+    "tag2": "generation",
+    "tag3": "agent"
   }
 }

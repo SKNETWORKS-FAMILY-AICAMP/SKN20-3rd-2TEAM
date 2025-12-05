@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Maplebb/UniREditBench",
     "huggingface_url": "https://huggingface.co/papers/2511.01295",
     "upvote": 37,
-    "tags": [
-      "scenario",
-      "reasoning",
-      "reference"
-    ]
+    "tag1": "scenario",
+    "tag2": "reasoning",
+    "tag3": "reference"
   }
 }

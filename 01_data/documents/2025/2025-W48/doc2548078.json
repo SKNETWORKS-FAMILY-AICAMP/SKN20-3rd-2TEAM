@@ -5,10 +5,8 @@
     "github_url": "https://github.com/wangtong627/DiverseVAR",
     "huggingface_url": "https://huggingface.co/papers/2511.17074",
     "upvote": 7,
-    "tags": [
-      "var",
-      "additional training",
-      "keyword3"
-    ]
+    "tag1": "var",
+    "tag2": "additional training",
+    "tag3": "keyword3"
   }
 }

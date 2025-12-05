@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.17006",
     "upvote": 24,
-    "tags": [
-      "agent",
-      "budget",
-      "scaling"
-    ]
+    "tag1": "agent",
+    "tag2": "budget",
+    "tag3": "scaling"
   }
 }

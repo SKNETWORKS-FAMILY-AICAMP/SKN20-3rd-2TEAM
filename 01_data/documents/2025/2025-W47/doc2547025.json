@@ -5,10 +5,8 @@
     "github_url": "https://github.com/EnVision-Research/TiViBench",
     "huggingface_url": "https://huggingface.co/papers/2511.13704",
     "upvote": 42,
-    "tags": [
-      "reasoning",
-      "tivibench",
-      "comment"
-    ]
+    "tag1": "reasoning",
+    "tag2": "tivibench",
+    "tag3": "comment"
   }
 }

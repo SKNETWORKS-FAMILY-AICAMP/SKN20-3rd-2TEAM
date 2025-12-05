@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ImYangC7/VR-Bench",
     "huggingface_url": "https://huggingface.co/papers/2511.15065",
     "upvote": 73,
-    "tags": [
-      "reasoning",
-      "video",
-      "spatial"
-    ]
+    "tag1": "reasoning",
+    "tag2": "video",
+    "tag3": "spatial"
   }
 }

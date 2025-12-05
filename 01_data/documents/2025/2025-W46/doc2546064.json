@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07499",
     "upvote": 5,
-    "tags": [
-      "attention",
-      "guidance",
-      "adversarial"
-    ]
+    "tag1": "attention",
+    "tag2": "guidance",
+    "tag3": "adversarial"
   }
 }

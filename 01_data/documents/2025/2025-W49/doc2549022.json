@@ -5,10 +5,8 @@
     "github_url": "https://github.com/SkyworkAI/Skywork-R1V/tree/main/r1v4",
     "huggingface_url": "https://huggingface.co/papers/2512.02395",
     "upvote": 38,
-    "tags": [
-      "multimodal",
-      "agentic",
-      "skywork"
-    ]
+    "tag1": "multimodal",
+    "tag2": "agentic",
+    "tag3": "skywork"
   }
 }

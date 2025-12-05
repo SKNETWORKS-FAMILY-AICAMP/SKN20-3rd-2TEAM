@@ -5,10 +5,8 @@
     "github_url": "https://github.com/PKU-YuanGroup/UniSandBox",
     "huggingface_url": "https://huggingface.co/papers/2511.20561",
     "upvote": 31,
-    "tags": [
-      "gap",
-      "generation",
-      "understanding"
-    ]
+    "tag1": "gap",
+    "tag2": "generation",
+    "tag3": "understanding"
   }
 }

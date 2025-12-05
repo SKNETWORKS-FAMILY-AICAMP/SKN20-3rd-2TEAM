@@ -5,10 +5,8 @@
     "github_url": "https://github.com/roozbeh-yz/miniF2F_v2",
     "huggingface_url": "https://huggingface.co/papers/2511.03108",
     "upvote": 2,
-    "tags": [
-      "formal",
-      "informal statement",
-      "keyword3"
-    ]
+    "tag1": "formal",
+    "tag2": "informal statement",
+    "tag3": "keyword3"
   }
 }

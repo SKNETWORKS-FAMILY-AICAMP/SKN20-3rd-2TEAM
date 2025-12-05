@@ -5,10 +5,8 @@
     "github_url": "https://github.com/TUM-AVS/target-bench",
     "huggingface_url": "https://huggingface.co/papers/2511.17792",
     "upvote": 3,
-    "tags": [
-      "planning",
-      "target",
-      "video"
-    ]
+    "tag1": "planning",
+    "tag2": "target",
+    "tag3": "video"
   }
 }

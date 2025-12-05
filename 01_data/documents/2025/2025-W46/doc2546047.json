@@ -5,10 +5,8 @@
     "github_url": "https://github.com/The-Aqua-Labs/Superpositional-Gradient-Descent",
     "huggingface_url": "https://huggingface.co/papers/2511.01918",
     "upvote": 11,
-    "tags": [
-      "quantum",
-      "adamw",
-      "classical"
-    ]
+    "tag1": "quantum",
+    "tag2": "adamw",
+    "tag3": "classical"
   }
 }

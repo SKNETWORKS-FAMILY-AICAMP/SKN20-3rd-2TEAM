@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.06174",
     "upvote": 5,
-    "tags": [
-      "llm",
-      "efficiency",
-      "inference"
-    ]
+    "tag1": "llm",
+    "tag2": "efficiency",
+    "tag3": "inference"
   }
 }

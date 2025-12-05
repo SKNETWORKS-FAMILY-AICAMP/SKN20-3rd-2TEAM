@@ -5,10 +5,8 @@
     "github_url": "https://github.com/xashru/sphinx",
     "huggingface_url": "https://huggingface.co/papers/2511.20814",
     "upvote": 2,
-    "tags": [
-      "reasoning",
-      "sphinx",
-      "accuracy"
-    ]
+    "tag1": "reasoning",
+    "tag2": "sphinx",
+    "tag3": "accuracy"
   }
 }

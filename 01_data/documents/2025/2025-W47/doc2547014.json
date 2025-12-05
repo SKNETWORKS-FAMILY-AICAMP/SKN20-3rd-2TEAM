@@ -5,10 +5,8 @@
     "github_url": "https://github.com/tyfeld/MMaDA-Parallel",
     "huggingface_url": "https://huggingface.co/papers/2511.09611",
     "upvote": 67,
-    "tags": [
-      "mmada",
-      "parallel",
-      "image"
-    ]
+    "tag1": "mmada",
+    "tag2": "parallel",
+    "tag3": "image"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AQ-MedAI/Diver",
     "huggingface_url": "https://huggingface.co/papers/2511.11653",
     "upvote": 54,
-    "tags": [
-      "document",
-      "group",
-      "listwise"
-    ]
+    "tag1": "document",
+    "tag2": "group",
+    "tag3": "listwise"
   }
 }

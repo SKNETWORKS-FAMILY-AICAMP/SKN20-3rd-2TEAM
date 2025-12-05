@@ -5,10 +5,8 @@
     "github_url": "https://github.com/modelscope/ms-swift/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.20347",
     "upvote": 33,
-    "tags": [
-      "sapo",
-      "policy",
-      "learning"
-    ]
+    "tag1": "sapo",
+    "tag2": "policy",
+    "tag3": "learning"
   }
 }

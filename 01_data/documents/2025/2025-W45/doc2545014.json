@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.03334",
     "upvote": 51,
-    "tags": [
-      "video",
-      "cross modal",
-      "keyword3"
-    ]
+    "tag1": "video",
+    "tag2": "cross modal",
+    "tag3": "keyword3"
   }
 }

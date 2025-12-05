@@ -5,10 +5,8 @@
     "github_url": "https://github.com/EdinburghNLP/OpenSIR",
     "huggingface_url": "https://huggingface.co/papers/2511.00602",
     "upvote": 20,
-    "tags": [
-      "problem",
-      "external",
-      "difficulty"
-    ]
+    "tag1": "problem",
+    "tag2": "external",
+    "tag3": "difficulty"
   }
 }

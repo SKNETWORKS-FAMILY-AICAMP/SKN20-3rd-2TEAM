@@ -5,10 +5,8 @@
     "github_url": "https://github.com/tongjingqi/Thinking-with-Video",
     "huggingface_url": "https://huggingface.co/papers/2511.04570",
     "upvote": 208,
-    "tags": [
-      "video",
-      "thinking",
-      "generation"
-    ]
+    "tag1": "video",
+    "tag2": "thinking",
+    "tag3": "generation"
   }
 }

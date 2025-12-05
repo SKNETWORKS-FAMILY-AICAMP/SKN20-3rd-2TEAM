@@ -5,10 +5,8 @@
     "github_url": "https://github.com/EnVision-Research/DualCamCtrl",
     "huggingface_url": "https://huggingface.co/papers/2511.23127",
     "upvote": 39,
-    "tags": [
-      "dualcamctrl",
-      "camera",
-      "http"
-    ]
+    "tag1": "dualcamctrl",
+    "tag2": "camera",
+    "tag3": "http"
   }
 }

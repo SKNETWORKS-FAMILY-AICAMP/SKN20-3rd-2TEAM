@@ -5,10 +5,8 @@
     "github_url": "https://github.com/nnilayy/rbtransformer",
     "huggingface_url": "https://huggingface.co/papers/2511.13954",
     "upvote": 3,
-    "tags": [
-      "cortical",
-      "emotion",
-      "eeg"
-    ]
+    "tag1": "cortical",
+    "tag2": "emotion",
+    "tag3": "eeg"
   }
 }

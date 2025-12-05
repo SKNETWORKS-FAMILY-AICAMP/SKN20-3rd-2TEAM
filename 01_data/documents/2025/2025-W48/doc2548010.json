@@ -5,10 +5,8 @@
     "github_url": "https://github.com/MERA-Evaluation/MERA_MULTIMODAL/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.15552",
     "upvote": 76,
-    "tags": [
-      "benchmark",
-      "russian",
-      "multimodal"
-    ]
+    "tag1": "benchmark",
+    "tag2": "russian",
+    "tag3": "multimodal"
   }
 }

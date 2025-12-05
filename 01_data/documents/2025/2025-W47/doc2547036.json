@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.15186",
     "upvote": 25,
-    "tags": [
-      "lesion",
-      "instruction",
-      "segmentation"
-    ]
+    "tag1": "lesion",
+    "tag2": "instruction",
+    "tag3": "segmentation"
   }
 }

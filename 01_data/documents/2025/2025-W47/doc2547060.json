@@ -5,10 +5,8 @@
     "github_url": "https://github.com/xiaomi-research/timeviper",
     "huggingface_url": "https://huggingface.co/papers/2511.16595",
     "upvote": 9,
-    "tags": [
-      "token",
-      "vision",
-      "hybrid"
-    ]
+    "tag1": "token",
+    "tag2": "vision",
+    "tag3": "hybrid"
   }
 }

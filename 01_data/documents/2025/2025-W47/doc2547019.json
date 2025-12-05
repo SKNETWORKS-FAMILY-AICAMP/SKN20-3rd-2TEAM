@@ -5,10 +5,8 @@
     "github_url": "https://github.com/yangluo7/V-ReasonBench",
     "huggingface_url": "https://huggingface.co/papers/2511.16668",
     "upvote": 53,
-    "tags": [
-      "video",
-      "reasoning",
-      "pattern"
-    ]
+    "tag1": "video",
+    "tag2": "reasoning",
+    "tag3": "pattern"
   }
 }

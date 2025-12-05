@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.03929",
     "upvote": 26,
-    "tags": [
-      "nemotron nano",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "nemotron nano",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

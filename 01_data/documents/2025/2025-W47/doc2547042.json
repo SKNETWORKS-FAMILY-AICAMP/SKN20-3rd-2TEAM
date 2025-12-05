@@ -5,10 +5,8 @@
     "github_url": "https://github.com/sii-research/siiRL/blob/main/docs/examples/embodied_grpo_example.rst",
     "huggingface_url": "https://huggingface.co/papers/2511.15605",
     "upvote": 22,
-    "tags": [
-      "demonstration",
-      "optimization",
-      "progress"
-    ]
+    "tag1": "demonstration",
+    "tag2": "optimization",
+    "tag3": "progress"
   }
 }

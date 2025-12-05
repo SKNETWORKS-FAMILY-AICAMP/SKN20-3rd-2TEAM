@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.05933",
     "upvote": 7,
-    "tags": [
-      "knowledge",
-      "prompting",
-      "hierarchical"
-    ]
+    "tag1": "knowledge",
+    "tag2": "prompting",
+    "tag3": "hierarchical"
   }
 }

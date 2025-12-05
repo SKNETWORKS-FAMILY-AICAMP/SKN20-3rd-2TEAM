@@ -5,10 +5,8 @@
     "github_url": "https://github.com/sjtuplayer/Harmony",
     "huggingface_url": "https://huggingface.co/papers/2511.21579",
     "upvote": 21,
-    "tags": [
-      "audio",
-      "alignment",
-      "synchronization"
-    ]
+    "tag1": "audio",
+    "tag2": "alignment",
+    "tag3": "synchronization"
   }
 }

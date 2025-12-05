@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.13288",
     "upvote": 17,
-    "tags": [
-      "agent",
-      "grpo",
-      "sub"
-    ]
+    "tag1": "agent",
+    "tag2": "grpo",
+    "tag3": "sub"
   }
 }

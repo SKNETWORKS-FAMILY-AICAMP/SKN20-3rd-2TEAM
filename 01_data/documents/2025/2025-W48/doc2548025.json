@@ -5,10 +5,8 @@
     "github_url": "https://github.com/apple/ml-starflow",
     "huggingface_url": "https://huggingface.co/papers/2511.20462",
     "upvote": 29,
-    "tags": [
-      "video",
-      "starflow",
-      "end"
-    ]
+    "tag1": "video",
+    "tag2": "starflow",
+    "tag3": "end"
   }
 }

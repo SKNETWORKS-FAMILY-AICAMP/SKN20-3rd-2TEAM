@@ -5,10 +5,8 @@
     "github_url": "https://github.com/spacetools/SpaceTools",
     "huggingface_url": "https://huggingface.co/papers/2512.04069",
     "upvote": 9,
-    "tags": [
-      "tool",
-      "reasoning",
-      "spatial"
-    ]
+    "tag1": "tool",
+    "tag2": "reasoning",
+    "tag3": "spatial"
   }
 }

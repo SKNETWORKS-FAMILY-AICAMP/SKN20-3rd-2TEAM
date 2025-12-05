@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.16664",
     "upvote": 24,
-    "tags": [
-      "training",
-      "deployment",
-      "cost"
-    ]
+    "tag1": "training",
+    "tag2": "deployment",
+    "tag3": "cost"
   }
 }

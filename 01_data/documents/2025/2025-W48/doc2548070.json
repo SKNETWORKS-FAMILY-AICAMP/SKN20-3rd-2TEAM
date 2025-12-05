@@ -5,10 +5,8 @@
     "github_url": "https://github.com/grgera/mist",
     "huggingface_url": "https://huggingface.co/papers/2511.18945",
     "upvote": 8,
-    "tags": [
-      "distribution",
-      "estimator",
-      "sample"
-    ]
+    "tag1": "distribution",
+    "tag2": "estimator",
+    "tag3": "sample"
   }
 }

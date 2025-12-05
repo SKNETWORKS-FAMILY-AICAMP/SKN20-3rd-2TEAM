@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.02347",
     "upvote": 8,
-    "tags": [
-      "bench",
-      "language spatial",
-      "keyword3"
-    ]
+    "tag1": "bench",
+    "tag2": "language spatial",
+    "tag3": "keyword3"
   }
 }

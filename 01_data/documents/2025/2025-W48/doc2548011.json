@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Zehong-Ma/DeCo",
     "huggingface_url": "https://huggingface.co/papers/2511.19365",
     "upvote": 62,
-    "tags": [
-      "frequency",
-      "http",
-      "pixel"
-    ]
+    "tag1": "frequency",
+    "tag2": "http",
+    "tag3": "pixel"
   }
 }

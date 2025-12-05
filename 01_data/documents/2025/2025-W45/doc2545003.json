@@ -5,10 +5,8 @@
     "github_url": "https://github.com/CSU-JPG/VCode/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.02778",
     "upvote": 101,
-    "tags": [
-      "visual",
-      "symbolic",
-      "centric"
-    ]
+    "tag1": "visual",
+    "tag2": "symbolic",
+    "tag3": "centric"
   }
 }

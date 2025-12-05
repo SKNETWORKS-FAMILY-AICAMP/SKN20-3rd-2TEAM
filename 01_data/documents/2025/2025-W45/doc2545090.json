@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ydli-ai/LiveSecBench",
     "huggingface_url": "https://huggingface.co/papers/2511.02366",
     "upvote": 3,
-    "tags": [
-      "safety",
-      "chinese",
-      "livesecbench"
-    ]
+    "tag1": "safety",
+    "tag2": "chinese",
+    "tag3": "livesecbench"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
     "huggingface_url": "https://huggingface.co/papers/2511.18870",
     "upvote": 22,
-    "tags": [
-      "video generation",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "video generation",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

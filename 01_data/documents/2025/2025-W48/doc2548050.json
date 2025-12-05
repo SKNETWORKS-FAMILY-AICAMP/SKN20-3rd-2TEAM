@@ -5,10 +5,8 @@
     "github_url": "https://github.com/YU-deep/VisMem.git",
     "huggingface_url": "https://huggingface.co/papers/2511.11007",
     "upvote": 15,
-    "tags": [
-      "memory",
-      "vision",
-      "visual"
-    ]
+    "tag1": "memory",
+    "tag2": "vision",
+    "tag3": "visual"
   }
 }

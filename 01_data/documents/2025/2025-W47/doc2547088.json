@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ntt-dkiku/chaos-eater",
     "huggingface_url": "https://huggingface.co/papers/2511.07865",
     "upvote": 3,
-    "tags": [
-      "system",
-      "cycle",
-      "chaoseater"
-    ]
+    "tag1": "system",
+    "tag2": "cycle",
+    "tag3": "chaoseater"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Kwai-Kolors/CoTyle",
     "huggingface_url": "https://huggingface.co/papers/2511.10555",
     "upvote": 59,
-    "tags": [
-      "style",
-      "image",
-      "code"
-    ]
+    "tag1": "style",
+    "tag2": "image",
+    "tag3": "code"
   }
 }

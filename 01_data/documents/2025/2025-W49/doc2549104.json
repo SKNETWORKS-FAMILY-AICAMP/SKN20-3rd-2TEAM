@@ -5,10 +5,8 @@
     "github_url": "https://github.com/alibaba-damo-academy/Inferix/",
     "huggingface_url": "https://huggingface.co/papers/2511.22973",
     "upvote": 2,
-    "tags": [
-      "long video",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "long video",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/MemTensor/HaluMem",
     "huggingface_url": "https://huggingface.co/papers/2511.03506",
     "upvote": 92,
-    "tags": [
-      "memory",
-      "hallucination",
-      "halumem"
-    ]
+    "tag1": "memory",
+    "tag2": "hallucination",
+    "tag3": "halumem"
   }
 }

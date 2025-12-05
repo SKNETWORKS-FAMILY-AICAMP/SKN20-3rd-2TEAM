@@ -5,10 +5,8 @@
     "github_url": "https://github.com/hexmSeeU/RULER-Bench",
     "huggingface_url": "https://huggingface.co/papers/2512.02622",
     "upvote": 7,
-    "tags": [
-      "video",
-      "generation",
-      "reasoning"
-    ]
+    "tag1": "video",
+    "tag2": "generation",
+    "tag3": "reasoning"
   }
 }

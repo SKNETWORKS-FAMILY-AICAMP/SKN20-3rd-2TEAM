@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19663",
     "upvote": 9,
-    "tags": [
-      "benchmark",
-      "computer",
-      "web"
-    ]
+    "tag1": "benchmark",
+    "tag2": "computer",
+    "tag3": "web"
   }
 }

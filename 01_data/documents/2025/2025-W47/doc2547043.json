@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.13703",
     "upvote": 20,
-    "tags": [
-      "specialized",
-      "benchmark",
-      "generalist"
-    ]
+    "tag1": "specialized",
+    "tag2": "benchmark",
+    "tag3": "generalist"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/SALT-NLP/RealtimeGym",
     "huggingface_url": "https://huggingface.co/papers/2511.04898",
     "upvote": 11,
-    "tags": [
-      "agent",
-      "reasoning",
-      "time"
-    ]
+    "tag1": "agent",
+    "tag2": "reasoning",
+    "tag3": "time"
   }
 }

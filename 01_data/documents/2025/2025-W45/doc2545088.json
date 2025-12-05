@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.02490",
     "upvote": 3,
-    "tags": [
-      "brain",
-      "case",
-      "retrieval"
-    ]
+    "tag1": "brain",
+    "tag2": "case",
+    "tag3": "retrieval"
   }
 }

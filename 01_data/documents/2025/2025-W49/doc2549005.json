@@ -5,10 +5,8 @@
     "github_url": "https://github.com/opendatalab-raiser/Envision",
     "huggingface_url": "https://huggingface.co/papers/2512.01816",
     "upvote": 85,
-    "tags": [
-      "image",
-      "world",
-      "generation"
-    ]
+    "tag1": "image",
+    "tag2": "world",
+    "tag3": "generation"
   }
 }

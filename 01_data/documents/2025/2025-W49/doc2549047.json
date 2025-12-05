@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Timsty1/MixtureOfHorizons/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.19433",
     "upvote": 17,
-    "tags": [
-      "moh",
-      "performance",
-      "term"
-    ]
+    "tag1": "moh",
+    "tag2": "performance",
+    "tag3": "term"
   }
 }

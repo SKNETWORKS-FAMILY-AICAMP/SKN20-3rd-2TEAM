@@ -5,10 +5,8 @@
     "github_url": "https://github.com/PRIME-RL/P1",
     "huggingface_url": "https://huggingface.co/papers/2511.13612",
     "upvote": 131,
-    "tags": [
-      "physic",
-      "open source",
-      "keyword3"
-    ]
+    "tag1": "physic",
+    "tag2": "open source",
+    "tag3": "keyword3"
   }
 }

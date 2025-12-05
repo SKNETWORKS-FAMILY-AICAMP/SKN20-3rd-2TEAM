@@ -5,10 +5,8 @@
     "github_url": "https://github.com/bronyayang/CaptionQA",
     "huggingface_url": "https://huggingface.co/papers/2511.21025",
     "upvote": 24,
-    "tags": [
-      "caption",
-      "image",
-      "utility"
-    ]
+    "tag1": "caption",
+    "tag2": "image",
+    "tag3": "utility"
   }
 }

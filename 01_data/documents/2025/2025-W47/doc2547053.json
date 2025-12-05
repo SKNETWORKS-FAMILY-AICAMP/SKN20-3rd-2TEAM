@@ -5,10 +5,8 @@
     "github_url": "https://github.com/facebookresearch/MHR",
     "huggingface_url": "https://huggingface.co/papers/2511.15586",
     "upvote": 13,
-    "tags": [
-      "comment",
-      "human",
-      "anatomically"
-    ]
+    "tag1": "comment",
+    "tag2": "human",
+    "tag3": "anatomically"
   }
 }

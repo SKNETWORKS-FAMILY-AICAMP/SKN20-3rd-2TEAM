@@ -5,10 +5,8 @@
     "github_url": "https://github.com/tyxiong23/Multi-Crit",
     "huggingface_url": "https://huggingface.co/papers/2511.21662",
     "upvote": 10,
-    "tags": [
-      "criterion",
-      "multimodal",
-      "crit"
-    ]
+    "tag1": "criterion",
+    "tag2": "multimodal",
+    "tag3": "crit"
   }
 }

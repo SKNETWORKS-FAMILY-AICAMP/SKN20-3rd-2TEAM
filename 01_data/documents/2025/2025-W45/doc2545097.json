@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.27224",
     "upvote": 2,
-    "tags": [
-      "urban",
-      "height",
-      "accuracy"
-    ]
+    "tag1": "urban",
+    "tag2": "height",
+    "tag3": "accuracy"
   }
 }

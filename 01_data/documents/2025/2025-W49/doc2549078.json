@@ -5,10 +5,8 @@
     "github_url": "https://github.com/daeunni/StreamGaze",
     "huggingface_url": "https://huggingface.co/papers/2512.01707",
     "upvote": 5,
-    "tags": [
-      "gaze",
-      "streaming",
-      "video"
-    ]
+    "tag1": "gaze",
+    "tag2": "streaming",
+    "tag3": "video"
   }
 }

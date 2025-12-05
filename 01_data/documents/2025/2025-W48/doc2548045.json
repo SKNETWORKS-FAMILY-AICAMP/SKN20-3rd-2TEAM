@@ -5,10 +5,8 @@
     "github_url": "https://github.com/EtaYang10th/Open-M3-Bench",
     "huggingface_url": "https://huggingface.co/papers/2511.17729",
     "upvote": 16,
-    "tags": [
-      "tool",
-      "benchmark",
-      "bench"
-    ]
+    "tag1": "tool",
+    "tag2": "benchmark",
+    "tag3": "bench"
   }
 }

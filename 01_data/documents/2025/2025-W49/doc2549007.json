@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2512.01374",
     "upvote": 66,
-    "tags": [
-      "training",
-      "level",
-      "approximation"
-    ]
+    "tag1": "training",
+    "tag2": "level",
+    "tag3": "approximation"
   }
 }

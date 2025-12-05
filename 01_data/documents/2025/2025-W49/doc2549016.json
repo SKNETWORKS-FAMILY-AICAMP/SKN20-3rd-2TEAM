@@ -5,10 +5,8 @@
     "github_url": "https://github.com/cvlab-stonybrook/NewtonRewards",
     "huggingface_url": "https://huggingface.co/papers/2512.00425",
     "upvote": 41,
-    "tags": [
-      "physic",
-      "physical",
-      "proxy"
-    ]
+    "tag1": "physic",
+    "tag2": "physical",
+    "tag3": "proxy"
   }
 }

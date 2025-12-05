@@ -5,10 +5,8 @@
     "github_url": "https://github.com/sjz5202/GUI-AIMA",
     "huggingface_url": "https://huggingface.co/papers/2511.00810",
     "upvote": 3,
-    "tags": [
-      "gui",
-      "grounding",
-      "aima"
-    ]
+    "tag1": "gui",
+    "tag2": "grounding",
+    "tag3": "aima"
   }
 }

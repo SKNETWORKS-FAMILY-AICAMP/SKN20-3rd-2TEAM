@@ -5,10 +5,8 @@
     "github_url": "https://github.com/davian-robotics/PHUMA",
     "huggingface_url": "https://huggingface.co/papers/2510.26236",
     "upvote": 28,
-    "tags": [
-      "phuma",
-      "http",
-      "motion"
-    ]
+    "tag1": "phuma",
+    "tag2": "http",
+    "tag3": "motion"
   }
 }

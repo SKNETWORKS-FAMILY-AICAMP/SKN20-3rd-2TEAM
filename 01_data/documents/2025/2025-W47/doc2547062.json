@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.16659",
     "upvote": 8,
-    "tags": [
-      "chart",
-      "part",
-      "distortion"
-    ]
+    "tag1": "chart",
+    "tag2": "part",
+    "tag3": "distortion"
   }
 }

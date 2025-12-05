@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19314",
     "upvote": 6,
-    "tags": [
-      "agent",
-      "information seeking",
-      "keyword3"
-    ]
+    "tag1": "agent",
+    "tag2": "information seeking",
+    "tag3": "keyword3"
   }
 }

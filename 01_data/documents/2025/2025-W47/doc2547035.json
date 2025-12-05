@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ziqihuangg/Awesome-From-Video-Generation-to-World-Model",
     "huggingface_url": "https://huggingface.co/papers/2511.08585",
     "upvote": 29,
-    "tags": [
-      "world",
-      "video",
-      "generation"
-    ]
+    "tag1": "world",
+    "tag2": "video",
+    "tag3": "generation"
   }
 }

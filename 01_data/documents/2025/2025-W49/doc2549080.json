@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.22891",
     "upvote": 5,
-    "tags": [
-      "reasoning",
-      "step",
-      "accuracy"
-    ]
+    "tag1": "reasoning",
+    "tag2": "step",
+    "tag3": "accuracy"
   }
 }

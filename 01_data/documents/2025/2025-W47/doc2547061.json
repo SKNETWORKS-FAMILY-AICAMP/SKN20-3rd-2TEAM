@@ -5,10 +5,8 @@
     "github_url": "https://github.com/allenai/olmoearth_pretrain",
     "huggingface_url": "https://huggingface.co/papers/2511.13655",
     "upvote": 9,
-    "tags": [
-      "olmoearth",
-      "earth observation",
-      "keyword3"
-    ]
+    "tag1": "olmoearth",
+    "tag2": "earth observation",
+    "tag3": "keyword3"
   }
 }

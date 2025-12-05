@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.12797",
     "upvote": 6,
-    "tags": [
-      "icl",
-      "genomic",
-      "language"
-    ]
+    "tag1": "icl",
+    "tag2": "genomic",
+    "tag3": "language"
   }
 }

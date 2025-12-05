@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zhaoxlpku/DynaAct",
     "huggingface_url": "https://huggingface.co/papers/2511.08043",
     "upvote": 5,
-    "tags": [
-      "action",
-      "dynaact",
-      "reasoning"
-    ]
+    "tag1": "action",
+    "tag2": "dynaact",
+    "tag3": "reasoning"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/SimWorld-AI/SimWorld",
     "huggingface_url": "https://huggingface.co/papers/2512.01078",
     "upvote": 22,
-    "tags": [
-      "simworld",
-      "world",
-      "agent"
-    ]
+    "tag1": "simworld",
+    "tag2": "world",
+    "tag3": "agent"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/declare-lab/nora-1.5",
     "huggingface_url": "https://huggingface.co/papers/2511.14659",
     "upvote": 12,
-    "tags": [
-      "nora",
-      "action",
-      "reward"
-    ]
+    "tag1": "nora",
+    "tag2": "action",
+    "tag3": "reward"
   }
 }

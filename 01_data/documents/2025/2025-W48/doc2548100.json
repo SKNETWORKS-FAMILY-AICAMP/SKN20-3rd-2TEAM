@@ -5,10 +5,8 @@
     "github_url": "https://github.com/prescient-design/funcbind/",
     "huggingface_url": "https://huggingface.co/papers/2511.15906",
     "upvote": 2,
-    "tags": [
-      "funcbind",
-      "molecule",
-      "structure"
-    ]
+    "tag1": "funcbind",
+    "tag2": "molecule",
+    "tag3": "structure"
   }
 }

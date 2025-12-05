@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ZiyuGuo99/Thinking-while-Generating",
     "huggingface_url": "https://huggingface.co/papers/2511.16671",
     "upvote": 15,
-    "tags": [
-      "generation",
-      "interleaved",
-      "reasoning"
-    ]
+    "tag1": "generation",
+    "tag2": "interleaved",
+    "tag3": "reasoning"
   }
 }

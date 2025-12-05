@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.00086",
     "upvote": 41,
-    "tags": [
-      "graph",
-      "llm",
-      "collaboration"
-    ]
+    "tag1": "graph",
+    "tag2": "llm",
+    "tag3": "collaboration"
   }
 }

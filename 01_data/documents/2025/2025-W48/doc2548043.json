@@ -5,10 +5,8 @@
     "github_url": "https://github.com/thu-ml/DiT-Extrapolation",
     "huggingface_url": "https://huggingface.co/papers/2511.20123",
     "upvote": 16,
-    "tags": [
-      "extrapolation",
-      "attention",
-      "length"
-    ]
+    "tag1": "extrapolation",
+    "tag2": "attention",
+    "tag3": "length"
   }
 }

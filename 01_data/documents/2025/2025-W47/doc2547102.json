@@ -5,10 +5,8 @@
     "github_url": "https://github.com/yining610/Reliable-dRAG",
     "huggingface_url": "https://huggingface.co/papers/2511.07577",
     "upvote": 1,
-    "tags": [
-      "system",
-      "source",
-      "decentralized"
-    ]
+    "tag1": "system",
+    "tag2": "source",
+    "tag3": "decentralized"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.14385",
     "upvote": 6,
-    "tags": [
-      "label",
-      "bias",
-      "ncc"
-    ]
+    "tag1": "label",
+    "tag2": "bias",
+    "tag3": "ncc"
   }
 }

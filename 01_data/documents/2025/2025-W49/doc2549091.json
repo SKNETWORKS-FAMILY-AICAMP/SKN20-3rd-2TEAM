@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2512.03040",
     "upvote": 3,
-    "tags": [
-      "video",
-      "following",
-      "spatial"
-    ]
+    "tag1": "video",
+    "tag2": "following",
+    "tag3": "spatial"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/chenyil6/MVI-Bench",
     "huggingface_url": "https://huggingface.co/papers/2511.14159",
     "upvote": 24,
-    "tags": [
-      "visual",
-      "input",
-      "misleading"
-    ]
+    "tag1": "visual",
+    "tag2": "input",
+    "tag3": "misleading"
   }
 }

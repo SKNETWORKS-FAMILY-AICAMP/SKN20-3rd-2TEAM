@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AstroPilot-AI/Denario",
     "huggingface_url": "https://huggingface.co/papers/2510.26887",
     "upvote": 6,
-    "tags": [
-      "denario",
-      "research",
-      "scientific"
-    ]
+    "tag1": "denario",
+    "tag2": "research",
+    "tag3": "scientific"
   }
 }

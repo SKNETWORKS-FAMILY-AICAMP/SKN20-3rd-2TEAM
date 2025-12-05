@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Wenhao-Zhou/TopoPerception",
     "huggingface_url": "https://huggingface.co/papers/2511.11831",
     "upvote": 1,
-    "tags": [
-      "visual",
-      "global",
-      "topoperception"
-    ]
+    "tag1": "visual",
+    "tag2": "global",
+    "tag3": "topoperception"
   }
 }

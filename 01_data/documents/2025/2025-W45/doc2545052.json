@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.01340",
     "upvote": 12,
-    "tags": [
-      "reasoning",
-      "rebus",
-      "puzzle"
-    ]
+    "tag1": "reasoning",
+    "tag2": "rebus",
+    "tag3": "puzzle"
   }
 }

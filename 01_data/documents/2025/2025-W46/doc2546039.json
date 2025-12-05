@@ -5,10 +5,8 @@
     "github_url": "https://github.com/answers111/alpha-research",
     "huggingface_url": "https://huggingface.co/papers/2511.08522",
     "upvote": 15,
-    "tags": [
-      "research",
-      "new",
-      "problem"
-    ]
+    "tag1": "research",
+    "tag2": "new",
+    "tag3": "problem"
   }
 }

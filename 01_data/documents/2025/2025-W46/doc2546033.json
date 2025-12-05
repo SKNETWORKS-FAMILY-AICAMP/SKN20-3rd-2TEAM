@@ -5,10 +5,8 @@
     "github_url": "https://github.com/WM-PO/WMPO",
     "huggingface_url": "https://huggingface.co/papers/2511.09515",
     "upvote": 17,
-    "tags": [
-      "policy",
-      "vla",
-      "comment"
-    ]
+    "tag1": "policy",
+    "tag2": "vla",
+    "tag3": "comment"
   }
 }

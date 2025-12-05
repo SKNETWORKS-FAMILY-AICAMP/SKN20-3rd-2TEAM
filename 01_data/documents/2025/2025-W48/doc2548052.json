@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Longin-Yu/OmniAlpha",
     "huggingface_url": "https://huggingface.co/papers/2511.20211",
     "upvote": 12,
-    "tags": [
-      "layer",
-      "multi",
-      "unified"
-    ]
+    "tag1": "layer",
+    "tag2": "multi",
+    "tag3": "unified"
   }
 }

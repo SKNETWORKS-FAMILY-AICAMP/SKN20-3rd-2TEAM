@@ -5,10 +5,8 @@
     "github_url": "https://github.com/hunarbatra/SpatialThinker",
     "huggingface_url": "https://huggingface.co/papers/2511.07403",
     "upvote": 13,
-    "tags": [
-      "spatial",
-      "reasoning",
-      "spatialthinker"
-    ]
+    "tag1": "spatial",
+    "tag2": "reasoning",
+    "tag3": "spatialthinker"
   }
 }

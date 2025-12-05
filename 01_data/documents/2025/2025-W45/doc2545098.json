@@ -5,10 +5,8 @@
     "github_url": "https://github.com/mxpoliakov/MisSynth",
     "huggingface_url": "https://huggingface.co/papers/2510.26345",
     "upvote": 2,
-    "tags": [
-      "fine",
-      "synthetic",
-      "fallacy"
-    ]
+    "tag1": "fine",
+    "tag2": "synthetic",
+    "tag3": "fallacy"
   }
 }

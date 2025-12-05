@@ -5,10 +5,8 @@
     "github_url": "https://github.com/yunlong10/Video-R4",
     "huggingface_url": "https://huggingface.co/papers/2511.17490",
     "upvote": 21,
-    "tags": [
-      "video",
-      "rumination",
-      "comment"
-    ]
+    "tag1": "video",
+    "tag2": "rumination",
+    "tag3": "comment"
   }
 }

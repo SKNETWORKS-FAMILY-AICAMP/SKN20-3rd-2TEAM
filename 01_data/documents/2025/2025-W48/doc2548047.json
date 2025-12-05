@@ -5,10 +5,8 @@
     "github_url": "https://github.com/NOVAglow646/Monet",
     "huggingface_url": "https://huggingface.co/papers/2511.21395",
     "upvote": 15,
-    "tags": [
-      "visual",
-      "latent",
-      "reasoning"
-    ]
+    "tag1": "visual",
+    "tag2": "latent",
+    "tag3": "reasoning"
   }
 }

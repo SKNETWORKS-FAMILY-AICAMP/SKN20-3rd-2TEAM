@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Tencent-Hunyuan/HunyuanOCR",
     "huggingface_url": "https://huggingface.co/papers/2511.19575",
     "upvote": 19,
-    "tags": [
-      "end",
-      "hunyuanocr",
-      "lightweight"
-    ]
+    "tag1": "end",
+    "tag2": "hunyuanocr",
+    "tag3": "lightweight"
   }
 }

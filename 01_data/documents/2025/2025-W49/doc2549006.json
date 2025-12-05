@@ -5,10 +5,8 @@
     "github_url": "https://github.com/NVlabs/ToolOrchestra/",
     "huggingface_url": "https://huggingface.co/papers/2511.21689",
     "upvote": 78,
-    "tags": [
-      "tool",
-      "gpt",
-      "orchestrator"
-    ]
+    "tag1": "tool",
+    "tag2": "gpt",
+    "tag3": "orchestrator"
   }
 }

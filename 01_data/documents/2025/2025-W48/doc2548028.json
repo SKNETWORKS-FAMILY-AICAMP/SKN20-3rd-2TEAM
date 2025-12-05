@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.20102",
     "upvote": 26,
-    "tags": [
-      "sparse attention",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "sparse attention",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/deepreinforce-ai/CUDA-L2",
     "huggingface_url": "https://huggingface.co/papers/2512.02551",
     "upvote": 10,
-    "tags": [
-      "cuda",
-      "kernel",
-      "itcublaslt"
-    ]
+    "tag1": "cuda",
+    "tag2": "kernel",
+    "tag3": "itcublaslt"
   }
 }

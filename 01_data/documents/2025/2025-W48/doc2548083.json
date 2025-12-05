@@ -5,10 +5,8 @@
     "github_url": "https://github.com/seominseok0429/Upsample-Anything-A-Simple-and-Hard-to-Beat-Baseline-for-Feature-Upsampling",
     "huggingface_url": "https://huggingface.co/papers/2511.16301",
     "upvote": 6,
-    "tags": [
-      "anything",
-      "resolution",
-      "upsample"
-    ]
+    "tag1": "anything",
+    "tag2": "resolution",
+    "tag3": "upsample"
   }
 }

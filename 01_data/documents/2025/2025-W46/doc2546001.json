@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.08892",
     "upvote": 192,
-    "tags": [
-      "lumine",
-      "open",
-      "world"
-    ]
+    "tag1": "lumine",
+    "tag2": "open",
+    "tag3": "world"
   }
 }

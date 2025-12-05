@@ -5,10 +5,8 @@
     "github_url": "https://github.com/CSU-JPG/Glance",
     "huggingface_url": "https://huggingface.co/papers/2512.02899",
     "upvote": 21,
-    "tags": [
-      "lora",
-      "comment",
-      "generalization"
-    ]
+    "tag1": "lora",
+    "tag2": "comment",
+    "tag3": "generalization"
   }
 }

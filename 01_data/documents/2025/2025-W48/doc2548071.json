@@ -5,10 +5,8 @@
     "github_url": "https://github.com/pkargupta/cognitive_foundations/",
     "huggingface_url": "https://huggingface.co/papers/2511.16660",
     "upvote": 8,
-    "tags": [
-      "cognitive",
-      "reasoning",
-      "trace"
-    ]
+    "tag1": "cognitive",
+    "tag2": "reasoning",
+    "tag3": "trace"
   }
 }

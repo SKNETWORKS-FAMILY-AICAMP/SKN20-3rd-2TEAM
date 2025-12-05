@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ziangcao0312/PhysX-Anything",
     "huggingface_url": "https://huggingface.co/papers/2511.13648",
     "upvote": 52,
-    "tags": [
-      "physical",
-      "physx",
-      "generative"
-    ]
+    "tag1": "physical",
+    "tag2": "physx",
+    "tag3": "generative"
   }
 }

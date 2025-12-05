@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AiEson/Part-X-MLLM",
     "huggingface_url": "https://huggingface.co/papers/2511.13647",
     "upvote": 69,
-    "tags": [
-      "part",
-      "language",
-      "structured"
-    ]
+    "tag1": "part",
+    "tag2": "language",
+    "tag3": "structured"
   }
 }

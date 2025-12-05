@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.16528",
     "upvote": 15,
-    "tags": [
-      "turkish",
-      "encoders",
-      "interaction"
-    ]
+    "tag1": "turkish",
+    "tag2": "encoders",
+    "tag3": "interaction"
   }
 }

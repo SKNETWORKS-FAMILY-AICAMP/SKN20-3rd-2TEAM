@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.11134",
     "upvote": 31,
-    "tags": [
-      "ggbench",
-      "reasoning",
-      "ability"
-    ]
+    "tag1": "ggbench",
+    "tag2": "reasoning",
+    "tag3": "ability"
   }
 }

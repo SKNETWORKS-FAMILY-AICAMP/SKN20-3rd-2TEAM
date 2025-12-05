@@ -5,10 +5,8 @@
     "github_url": "https://github.com/BeingBeyond/DiG-Flow",
     "huggingface_url": "https://huggingface.co/papers/2512.01715",
     "upvote": 9,
-    "tags": [
-      "dig flow",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "dig flow",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

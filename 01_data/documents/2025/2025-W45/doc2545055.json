@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.26707",
     "upvote": 12,
-    "tags": [
-      "human value",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "human value",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

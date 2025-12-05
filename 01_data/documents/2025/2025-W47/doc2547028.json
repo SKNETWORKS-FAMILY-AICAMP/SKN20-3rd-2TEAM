@@ -5,10 +5,8 @@
     "github_url": "https://github.com/dongdongunique/EvoSynth",
     "huggingface_url": "https://huggingface.co/papers/2511.12710",
     "upvote": 36,
-    "tags": [
-      "attack",
-      "code",
-      "evosynth"
-    ]
+    "tag1": "attack",
+    "tag2": "code",
+    "tag3": "evosynth"
   }
 }

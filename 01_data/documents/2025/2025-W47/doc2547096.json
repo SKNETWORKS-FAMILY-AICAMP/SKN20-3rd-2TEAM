@@ -5,10 +5,8 @@
     "github_url": "https://github.com/HUANGLIZI/MGLL",
     "huggingface_url": "https://huggingface.co/papers/2511.15943",
     "upvote": 1,
-    "tags": [
-      "mgll",
-      "granularity",
-      "label"
-    ]
+    "tag1": "mgll",
+    "tag2": "granularity",
+    "tag3": "label"
   }
 }

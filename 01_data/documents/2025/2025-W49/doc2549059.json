@@ -5,10 +5,8 @@
     "github_url": "https://github.com/lern-to-write/STC",
     "huggingface_url": "https://huggingface.co/papers/2512.00891",
     "upvote": 11,
-    "tags": [
-      "stc",
-      "token",
-      "llm"
-    ]
+    "tag1": "stc",
+    "tag2": "token",
+    "tag3": "llm"
   }
 }

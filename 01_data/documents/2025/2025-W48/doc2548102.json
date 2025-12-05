@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.20643",
     "upvote": 1,
-    "tags": [
-      "concept",
-      "batch",
-      "cab"
-    ]
+    "tag1": "concept",
+    "tag2": "batch",
+    "tag3": "cab"
   }
 }

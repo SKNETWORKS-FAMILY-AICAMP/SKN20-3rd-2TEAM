@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.11168",
     "upvote": 0,
-    "tags": [
-      "dataset",
-      "perception",
-      "cat"
-    ]
+    "tag1": "dataset",
+    "tag2": "perception",
+    "tag3": "cat"
   }
 }

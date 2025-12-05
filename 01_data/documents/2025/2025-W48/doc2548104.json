@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19504",
     "upvote": 1,
-    "tags": [
-      "alignment",
-      "rlhf",
-      "trilemma"
-    ]
+    "tag1": "alignment",
+    "tag2": "rlhf",
+    "tag3": "trilemma"
   }
 }

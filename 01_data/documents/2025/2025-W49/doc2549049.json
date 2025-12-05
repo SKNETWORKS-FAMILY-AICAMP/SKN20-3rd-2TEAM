@@ -5,10 +5,8 @@
     "github_url": "https://github.com/tulerfeng/OneThinker",
     "huggingface_url": "https://huggingface.co/papers/2512.03043",
     "upvote": 15,
-    "tags": [
-      "onethinker",
-      "reasoning",
-      "across"
-    ]
+    "tag1": "onethinker",
+    "tag2": "reasoning",
+    "tag3": "across"
   }
 }

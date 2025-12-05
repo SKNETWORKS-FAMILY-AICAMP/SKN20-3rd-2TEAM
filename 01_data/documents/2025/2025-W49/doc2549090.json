@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.22176",
     "upvote": 4,
-    "tags": [
-      "cot",
-      "reasoning",
-      "input"
-    ]
+    "tag1": "cot",
+    "tag2": "reasoning",
+    "tag3": "input"
   }
 }

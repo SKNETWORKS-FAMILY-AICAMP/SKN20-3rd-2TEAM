@@ -5,10 +5,8 @@
     "github_url": "https://github.com/showlab/AUI",
     "huggingface_url": "https://huggingface.co/papers/2511.15567",
     "upvote": 51,
-    "tags": [
-      "agent",
-      "aui",
-      "http"
-    ]
+    "tag1": "agent",
+    "tag2": "aui",
+    "tag3": "http"
   }
 }

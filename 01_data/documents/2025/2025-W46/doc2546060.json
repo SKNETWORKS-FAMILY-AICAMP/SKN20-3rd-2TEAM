@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AIDC-AI/Diffusion-SDPO",
     "huggingface_url": "https://huggingface.co/papers/2511.03317",
     "upvote": 6,
-    "tags": [
-      "diffusion",
-      "preference",
-      "preferred"
-    ]
+    "tag1": "diffusion",
+    "tag2": "preference",
+    "tag3": "preferred"
   }
 }

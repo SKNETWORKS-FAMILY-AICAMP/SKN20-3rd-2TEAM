@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.03601",
     "upvote": 28,
-    "tags": [
-      "audio editx",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "audio editx",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

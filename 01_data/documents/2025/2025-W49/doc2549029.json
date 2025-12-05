@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zhengdian1/AIA",
     "huggingface_url": "https://huggingface.co/papers/2511.22663",
     "upvote": 28,
-    "tags": [
-      "decoupling",
-      "generation",
-      "aia"
-    ]
+    "tag1": "decoupling",
+    "tag2": "generation",
+    "tag3": "aia"
   }
 }

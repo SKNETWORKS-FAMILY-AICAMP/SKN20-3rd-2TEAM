@@ -5,10 +5,8 @@
     "github_url": "https://github.com/facebookresearch/sam-3d-objects",
     "huggingface_url": "https://huggingface.co/papers/2511.16624",
     "upvote": 104,
-    "tags": [
-      "object",
-      "image",
-      "reconstruction"
-    ]
+    "tag1": "object",
+    "tag2": "image",
+    "tag3": "reconstruction"
   }
 }

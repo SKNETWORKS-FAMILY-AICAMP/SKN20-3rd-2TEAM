@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Rednote-ExperienceAI-Lab/LoopTool",
     "huggingface_url": "https://huggingface.co/papers/2511.09148",
     "upvote": 16,
-    "tags": [
-      "capability",
-      "closed",
-      "loop"
-    ]
+    "tag1": "capability",
+    "tag2": "closed",
+    "tag3": "loop"
   }
 }

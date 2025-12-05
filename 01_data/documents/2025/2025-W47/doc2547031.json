@@ -5,10 +5,8 @@
     "github_url": "https://github.com/KlingTeam/VANS",
     "huggingface_url": "https://huggingface.co/papers/2511.16669",
     "upvote": 31,
-    "tags": [
-      "video",
-      "event prediction",
-      "keyword3"
-    ]
+    "tag1": "video",
+    "tag2": "event prediction",
+    "tag3": "keyword3"
   }
 }

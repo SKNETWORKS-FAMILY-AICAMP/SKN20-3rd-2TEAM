@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.04285",
     "upvote": 7,
-    "tags": [
-      "policy",
-      "training",
-      "reward"
-    ]
+    "tag1": "policy",
+    "tag2": "training",
+    "tag3": "reward"
   }
 }

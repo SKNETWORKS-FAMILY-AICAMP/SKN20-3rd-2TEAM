@@ -5,10 +5,8 @@
     "github_url": "https://github.com/0russwest0/Agent-R1",
     "huggingface_url": "https://huggingface.co/papers/2511.14460",
     "upvote": 17,
-    "tags": [
-      "agent",
-      "framework",
-      "llm"
-    ]
+    "tag1": "agent",
+    "tag2": "framework",
+    "tag3": "llm"
   }
 }

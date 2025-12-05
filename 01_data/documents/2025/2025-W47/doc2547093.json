@@ -5,10 +5,8 @@
     "github_url": "https://github.com/EavnJeong/Draft-and-Refine-with-Visual-Experts",
     "huggingface_url": "https://huggingface.co/papers/2511.11005",
     "upvote": 2,
-    "tags": [
-      "visual",
-      "utilization",
-      "agent"
-    ]
+    "tag1": "visual",
+    "tag2": "utilization",
+    "tag3": "agent"
   }
 }

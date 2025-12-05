@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.27545",
     "upvote": 48,
-    "tags": [
-      "policy",
-      "ebt",
-      "energy"
-    ]
+    "tag1": "policy",
+    "tag2": "ebt",
+    "tag3": "energy"
   }
 }

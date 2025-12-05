@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AIDC-AI/Ovis-Image",
     "huggingface_url": "https://huggingface.co/papers/2511.22982",
     "upvote": 3,
-    "tags": [
-      "ovis",
-      "image",
-      "text"
-    ]
+    "tag1": "ovis",
+    "tag2": "image",
+    "tag3": "text"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/XMUDeepLIT/UME-R1",
     "huggingface_url": "https://huggingface.co/papers/2511.00405",
     "upvote": 5,
-    "tags": [
-      "generative",
-      "embeddings",
-      "reasoning"
-    ]
+    "tag1": "generative",
+    "tag2": "embeddings",
+    "tag3": "reasoning"
   }
 }

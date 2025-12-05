@@ -5,10 +5,8 @@
     "github_url": "https://github.com/yk7333/EntroPIC",
     "huggingface_url": "https://huggingface.co/papers/2511.15248",
     "upvote": 5,
-    "tags": [
-      "training",
-      "entropy",
-      "exploration"
-    ]
+    "tag1": "training",
+    "tag2": "entropy",
+    "tag3": "exploration"
   }
 }

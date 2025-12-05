@@ -5,10 +5,8 @@
     "github_url": "https://github.com/papercopilot/iclr-insights.",
     "huggingface_url": "https://huggingface.co/papers/2511.15462",
     "upvote": 6,
-    "tags": [
-      "reviewer",
-      "score",
-      "rebuttal"
-    ]
+    "tag1": "reviewer",
+    "tag2": "score",
+    "tag3": "rebuttal"
   }
 }

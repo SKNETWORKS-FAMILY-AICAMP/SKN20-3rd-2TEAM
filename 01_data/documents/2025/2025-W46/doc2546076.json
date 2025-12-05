@@ -5,10 +5,8 @@
     "github_url": "https://github.com/LiXinran6/PRC-Emo",
     "huggingface_url": "https://huggingface.co/papers/2511.07061",
     "upvote": 3,
-    "tags": [
-      "emotion",
-      "llm",
-      "erc"
-    ]
+    "tag1": "emotion",
+    "tag2": "llm",
+    "tag3": "erc"
   }
 }

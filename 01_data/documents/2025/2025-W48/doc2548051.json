@@ -5,10 +5,8 @@
     "github_url": "https://github.com/mll-lab-nu/ENACT",
     "huggingface_url": "https://huggingface.co/papers/2511.20937",
     "upvote": 14,
-    "tags": [
-      "action",
-      "embodied",
-      "cognition"
-    ]
+    "tag1": "action",
+    "tag2": "embodied",
+    "tag3": "cognition"
   }
 }

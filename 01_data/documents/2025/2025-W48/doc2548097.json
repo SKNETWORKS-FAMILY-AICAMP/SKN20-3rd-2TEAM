@@ -5,10 +5,8 @@
     "github_url": "https://github.com/valeoai/NAF",
     "huggingface_url": "https://huggingface.co/papers/2511.18452",
     "upvote": 2,
-    "tags": [
-      "naf",
-      "vfm",
-      "comment"
-    ]
+    "tag1": "naf",
+    "tag2": "vfm",
+    "tag3": "comment"
   }
 }

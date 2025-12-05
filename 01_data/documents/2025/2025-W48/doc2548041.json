@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.18886",
     "upvote": 17,
-    "tags": [
-      "scene",
-      "magicworld",
-      "historical"
-    ]
+    "tag1": "scene",
+    "tag2": "magicworld",
+    "tag3": "historical"
   }
 }

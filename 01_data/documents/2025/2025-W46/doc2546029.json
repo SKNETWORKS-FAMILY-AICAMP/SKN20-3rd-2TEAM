@@ -5,10 +5,8 @@
     "github_url": "https://github.com/tianyi-lab/RoMA",
     "huggingface_url": "https://huggingface.co/papers/2511.07419",
     "upvote": 25,
-    "tags": [
-      "expert",
-      "manifold",
-      "moe"
-    ]
+    "tag1": "expert",
+    "tag2": "manifold",
+    "tag3": "moe"
   }
 }

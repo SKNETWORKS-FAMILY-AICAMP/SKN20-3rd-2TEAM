@@ -5,10 +5,8 @@
     "github_url": "https://github.com/PointsCoder/OpenReal2Sim",
     "huggingface_url": "https://huggingface.co/papers/2511.07416",
     "upvote": 28,
-    "tags": [
-      "video",
-      "world",
-      "physical"
-    ]
+    "tag1": "video",
+    "tag2": "world",
+    "tag3": "physical"
   }
 }

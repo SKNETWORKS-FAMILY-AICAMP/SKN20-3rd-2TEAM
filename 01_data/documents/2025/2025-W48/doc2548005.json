@@ -5,10 +5,8 @@
     "github_url": "https://github.com/facebookresearch/sam3",
     "huggingface_url": "https://huggingface.co/papers/2511.16719",
     "upvote": 100,
-    "tags": [
-      "concept",
-      "image",
-      "sam"
-    ]
+    "tag1": "concept",
+    "tag2": "image",
+    "tag3": "sam"
   }
 }

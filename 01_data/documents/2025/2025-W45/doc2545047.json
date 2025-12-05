@@ -5,10 +5,8 @@
     "github_url": "https://github.com/yifanzhang-pro/HLA",
     "huggingface_url": "https://huggingface.co/papers/2510.27258",
     "upvote": 14,
-    "tags": [
-      "hla",
-      "order",
-      "attention"
-    ]
+    "tag1": "hla",
+    "tag2": "order",
+    "tag3": "attention"
   }
 }

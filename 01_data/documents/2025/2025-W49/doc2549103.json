@@ -5,10 +5,8 @@
     "github_url": "https://github.com/wzpscott/flashvggt",
     "huggingface_url": "https://huggingface.co/papers/2512.01540",
     "upvote": 2,
-    "tags": [
-      "image",
-      "token",
-      "vggt"
-    ]
+    "tag1": "image",
+    "tag2": "token",
+    "tag3": "vggt"
   }
 }

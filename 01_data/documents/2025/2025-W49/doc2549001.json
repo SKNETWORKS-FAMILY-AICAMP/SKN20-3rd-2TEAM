@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.18538",
     "upvote": 218,
-    "tags": [
-      "code",
-      "development",
-      "llm"
-    ]
+    "tag1": "code",
+    "tag2": "development",
+    "tag3": "llm"
   }
 }

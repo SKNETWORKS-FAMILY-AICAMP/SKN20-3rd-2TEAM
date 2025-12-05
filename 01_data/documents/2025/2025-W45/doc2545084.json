@@ -5,10 +5,8 @@
     "github_url": "https://github.com/yaochenzhu/Rank-GRPO",
     "huggingface_url": "https://huggingface.co/papers/2510.20150",
     "upvote": 4,
-    "tags": [
-      "rank",
-      "grpo",
-      "recommendation"
-    ]
+    "tag1": "rank",
+    "tag2": "grpo",
+    "tag3": "recommendation"
   }
 }

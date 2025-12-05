@@ -5,10 +5,8 @@
     "github_url": "https://github.com/stevenlsw/visualsync",
     "huggingface_url": "https://huggingface.co/papers/2512.02017",
     "upvote": 3,
-    "tags": [
-      "visualsync",
-      "view",
-      "camera"
-    ]
+    "tag1": "visualsync",
+    "tag2": "view",
+    "tag3": "camera"
   }
 }

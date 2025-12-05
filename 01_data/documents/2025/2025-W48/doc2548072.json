@@ -5,10 +5,8 @@
     "github_url": "https://github.com/monkek123King/CLD",
     "huggingface_url": "https://huggingface.co/papers/2511.16249",
     "upvote": 8,
-    "tags": [
-      "layer",
-      "image",
-      "cld"
-    ]
+    "tag1": "layer",
+    "tag2": "image",
+    "tag3": "cld"
   }
 }

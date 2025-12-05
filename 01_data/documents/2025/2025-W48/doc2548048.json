@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Markus-Pobitzer/wlp",
     "huggingface_url": "https://huggingface.co/papers/2511.17344",
     "upvote": 15,
-    "tags": [
-      "medium",
-      "painting",
-      "style"
-    ]
+    "tag1": "medium",
+    "tag2": "painting",
+    "tag3": "style"
   }
 }

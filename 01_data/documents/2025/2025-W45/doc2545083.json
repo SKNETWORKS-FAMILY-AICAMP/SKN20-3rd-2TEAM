@@ -5,10 +5,8 @@
     "github_url": "https://github.com/360CVGroup/EVTAR",
     "huggingface_url": "https://huggingface.co/papers/2511.00956",
     "upvote": 4,
-    "tags": [
-      "evtar",
-      "image",
-      "reference"
-    ]
+    "tag1": "evtar",
+    "tag2": "image",
+    "tag3": "reference"
   }
 }

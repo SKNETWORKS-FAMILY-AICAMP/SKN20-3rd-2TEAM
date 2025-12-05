@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.23319",
     "upvote": 19,
-    "tags": [
-      "context",
-      "long",
-      "attention"
-    ]
+    "tag1": "context",
+    "tag2": "long",
+    "tag3": "attention"
   }
 }

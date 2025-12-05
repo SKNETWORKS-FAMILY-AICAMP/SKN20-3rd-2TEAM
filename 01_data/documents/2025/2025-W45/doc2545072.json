@@ -5,10 +5,8 @@
     "github_url": "https://github.com/perplexityai/pplx-garden",
     "huggingface_url": "https://huggingface.co/papers/2510.27656",
     "upvote": 6,
-    "tags": [
-      "point",
-      "comment",
-      "communication"
-    ]
+    "tag1": "point",
+    "tag2": "comment",
+    "tag3": "communication"
   }
 }

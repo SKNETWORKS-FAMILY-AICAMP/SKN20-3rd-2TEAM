@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.23404",
     "upvote": 34,
-    "tags": [
-      "audio",
-      "comment",
-      "efficient"
-    ]
+    "tag1": "audio",
+    "tag2": "comment",
+    "tag3": "efficient"
   }
 }

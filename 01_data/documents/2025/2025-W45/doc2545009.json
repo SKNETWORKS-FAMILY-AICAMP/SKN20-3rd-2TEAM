@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ChenMnZ/INT_vs_FP",
     "huggingface_url": "https://huggingface.co/papers/2510.25602",
     "upvote": 75,
-    "tags": [
-      "format",
-      "grained",
-      "fine"
-    ]
+    "tag1": "format",
+    "tag2": "grained",
+    "tag3": "fine"
   }
 }

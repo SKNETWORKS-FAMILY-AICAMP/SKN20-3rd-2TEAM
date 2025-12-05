@@ -5,10 +5,8 @@
     "github_url": "https://github.com/weichow23/weave",
     "huggingface_url": "https://huggingface.co/papers/2511.11434",
     "upvote": 44,
-    "tags": [
-      "context",
-      "image",
-      "turn"
-    ]
+    "tag1": "context",
+    "tag2": "image",
+    "tag3": "turn"
   }
 }

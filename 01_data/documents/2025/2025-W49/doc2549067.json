@@ -5,10 +5,8 @@
     "github_url": "https://github.com/dmis-lab/analogical-reasoning",
     "huggingface_url": "https://huggingface.co/papers/2511.20344",
     "upvote": 9,
-    "tags": [
-      "level",
-      "relational",
-      "analogical"
-    ]
+    "tag1": "level",
+    "tag2": "relational",
+    "tag3": "analogical"
   }
 }

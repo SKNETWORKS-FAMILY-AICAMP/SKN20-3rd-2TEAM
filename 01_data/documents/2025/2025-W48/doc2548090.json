@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AIGeeksGroup/EvoVLA",
     "huggingface_url": "https://huggingface.co/papers/2511.16166",
     "upvote": 4,
-    "tags": [
-      "evovla",
-      "horizon",
-      "stage"
-    ]
+    "tag1": "evovla",
+    "tag2": "horizon",
+    "tag3": "stage"
   }
 }

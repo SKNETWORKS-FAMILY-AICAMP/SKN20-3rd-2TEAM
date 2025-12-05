@@ -5,10 +5,8 @@
     "github_url": "https://github.com/leggedrobotics/navitrace_evaluation",
     "huggingface_url": "https://huggingface.co/papers/2510.26909",
     "upvote": 13,
-    "tags": [
-      "benchmark",
-      "navigation",
-      "trace"
-    ]
+    "tag1": "benchmark",
+    "tag2": "navigation",
+    "tag3": "trace"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/shkim0116/KLASS",
     "huggingface_url": "https://huggingface.co/papers/2511.05664",
     "upvote": 35,
-    "tags": [
-      "klass",
-      "generation",
-      "diffusion"
-    ]
+    "tag1": "klass",
+    "tag2": "generation",
+    "tag3": "diffusion"
   }
 }

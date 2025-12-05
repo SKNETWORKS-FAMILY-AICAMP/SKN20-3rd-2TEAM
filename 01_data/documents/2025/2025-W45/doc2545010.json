@@ -5,10 +5,8 @@
     "github_url": "https://github.com/OS-Copilot/OS-Sentinel",
     "huggingface_url": "https://huggingface.co/papers/2510.24411",
     "upvote": 70,
-    "tags": [
-      "agent",
-      "mobile",
-      "safety"
-    ]
+    "tag1": "agent",
+    "tag2": "mobile",
+    "tag3": "safety"
   }
 }

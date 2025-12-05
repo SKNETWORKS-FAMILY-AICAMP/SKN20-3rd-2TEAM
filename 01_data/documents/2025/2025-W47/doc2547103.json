@@ -5,10 +5,8 @@
     "github_url": "https://github.com/XZheng0427/OpenUS",
     "huggingface_url": "https://huggingface.co/papers/2511.11510",
     "upvote": 0,
-    "tags": [
-      "openus",
-      "pre",
-      "ultrasound"
-    ]
+    "tag1": "openus",
+    "tag2": "pre",
+    "tag3": "ultrasound"
   }
 }

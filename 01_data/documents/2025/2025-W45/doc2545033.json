@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ModelTC/Wan2.2-Lightning",
     "huggingface_url": "https://huggingface.co/papers/2510.27684",
     "upvote": 22,
-    "tags": [
-      "dmd",
-      "step",
-      "one"
-    ]
+    "tag1": "dmd",
+    "tag2": "step",
+    "tag3": "one"
   }
 }

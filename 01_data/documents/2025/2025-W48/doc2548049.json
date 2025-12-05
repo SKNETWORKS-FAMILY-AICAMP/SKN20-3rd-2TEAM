@@ -5,10 +5,8 @@
     "github_url": "https://github.com/YusufCelebii/PARROT",
     "huggingface_url": "https://huggingface.co/papers/2511.17220",
     "upvote": 15,
-    "tags": [
-      "domain",
-      "authority",
-      "correct"
-    ]
+    "tag1": "domain",
+    "tag2": "authority",
+    "tag3": "correct"
   }
 }

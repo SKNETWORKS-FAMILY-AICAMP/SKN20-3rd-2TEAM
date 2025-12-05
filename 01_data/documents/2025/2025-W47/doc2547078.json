@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ieellee/MicroVQA-PlusPlus",
     "huggingface_url": "https://huggingface.co/papers/2511.11407",
     "upvote": 4,
-    "tags": [
-      "graph",
-      "large",
-      "stage"
-    ]
+    "tag1": "graph",
+    "tag2": "large",
+    "tag3": "stage"
   }
 }

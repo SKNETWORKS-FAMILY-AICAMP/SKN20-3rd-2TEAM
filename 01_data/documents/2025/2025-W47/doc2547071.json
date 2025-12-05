@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.09915",
     "upvote": 6,
-    "tags": [
-      "lip",
-      "assistive",
-      "communication"
-    ]
+    "tag1": "lip",
+    "tag2": "assistive",
+    "tag3": "communication"
   }
 }

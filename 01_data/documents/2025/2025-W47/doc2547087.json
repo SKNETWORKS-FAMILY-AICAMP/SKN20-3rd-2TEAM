@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.10899",
     "upvote": 3,
-    "tags": [
-      "tool",
-      "reasoning",
-      "talms"
-    ]
+    "tag1": "tool",
+    "tag2": "reasoning",
+    "tag3": "talms"
   }
 }

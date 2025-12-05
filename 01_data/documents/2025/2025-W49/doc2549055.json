@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Xinxi-Zhang/Re-MeanFlow",
     "huggingface_url": "https://huggingface.co/papers/2511.23342",
     "upvote": 13,
-    "tags": [
-      "flow",
-      "meanflow",
-      "rectified"
-    ]
+    "tag1": "flow",
+    "tag2": "meanflow",
+    "tag3": "rectified"
   }
 }

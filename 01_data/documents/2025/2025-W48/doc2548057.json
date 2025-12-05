@@ -5,10 +5,8 @@
     "github_url": "https://github.com/DanielGilo/instruct-mix2mix/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.14899",
     "upvote": 11,
-    "tags": [
-      "view",
-      "diffusion",
-      "multi"
-    ]
+    "tag1": "view",
+    "tag2": "diffusion",
+    "tag3": "multi"
   }
 }

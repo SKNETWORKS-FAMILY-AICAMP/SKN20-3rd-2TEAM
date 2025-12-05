@@ -5,10 +5,8 @@
     "github_url": "https://github.com/screemix/Wikontic",
     "huggingface_url": "https://huggingface.co/papers/2512.00590",
     "upvote": 29,
-    "tags": [
-      "wikontic",
-      "comment",
-      "knowledge"
-    ]
+    "tag1": "wikontic",
+    "tag2": "comment",
+    "tag3": "knowledge"
   }
 }

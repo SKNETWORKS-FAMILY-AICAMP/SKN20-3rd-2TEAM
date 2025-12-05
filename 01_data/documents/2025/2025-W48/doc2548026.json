@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19401",
     "upvote": 29,
-    "tags": [
-      "video",
-      "instruction",
-      "visual"
-    ]
+    "tag1": "video",
+    "tag2": "instruction",
+    "tag3": "visual"
   }
 }

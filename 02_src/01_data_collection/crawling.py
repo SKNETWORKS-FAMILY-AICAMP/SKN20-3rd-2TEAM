@@ -358,7 +358,9 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
             - github_url (str): GitHub URL
             - huggingface_url (str): HuggingFace 논문 URL
             - upvote (int): 추천 수
-            - tags (List[str]): 키워드 리스트 (3개)
+            - tag1 (str): 키워드 1
+            - tag2 (str): 키워드 2
+            - tag3 (str): 키워드 3
         year: 연도 (예: 2025)
         week: 주차 (1~52)
         index: 논문 번호 (0부터 시작)
@@ -377,7 +379,9 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
             "github_url": "GitHub URL",
             "huggingface_url": "HuggingFace URL",
             "upvote": 123,
-            "tags": ["keyword1", "keyword2", "keyword3"]
+            "tag1": "keyword1",
+            "tag2": "keyword2",
+            "tag3": "keyword3"
           }
         }
     """
@@ -399,7 +403,9 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
             , "github_url": paper_data['github_url']
             , "huggingface_url": paper_data['huggingface_url']
             , "upvote": paper_data['upvote']
-            , "tags": paper_data['tags']
+            , "tag1": paper_data['tag1']
+            , "tag2": paper_data['tag2']
+            , "tag3": paper_data['tag3']
         }
     }
 
@@ -488,7 +494,9 @@ def crawl_weekly_papers(year: int, week: int):
             , 'github_url': details['github_url']
             , 'huggingface_url': paper_url
             , 'upvote': details['upvote']
-            ,'tags': keywords
+            ,'tag1': keywords[0]
+            ,'tag2': keywords[1]
+            ,'tag3': keywords[2]
         }
 
         try:

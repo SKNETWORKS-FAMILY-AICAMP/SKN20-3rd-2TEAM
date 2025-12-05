@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.06194",
     "upvote": 11,
-    "tags": [
-      "cad",
-      "text",
-      "fidelity"
-    ]
+    "tag1": "cad",
+    "tag2": "text",
+    "tag3": "fidelity"
   }
 }

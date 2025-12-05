@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ekonwang/GeoVista",
     "huggingface_url": "https://huggingface.co/papers/2511.15705",
     "upvote": 90,
-    "tags": [
-      "reasoning",
-      "agentic",
-      "tool"
-    ]
+    "tag1": "reasoning",
+    "tag2": "agentic",
+    "tag3": "tool"
   }
 }

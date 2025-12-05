@@ -5,10 +5,8 @@
     "github_url": "https://github.com/EnVision-Research/Lotus-2",
     "huggingface_url": "https://huggingface.co/papers/2512.01030",
     "upvote": 11,
-    "tags": [
-      "lotus",
-      "geometric",
-      "deterministic"
-    ]
+    "tag1": "lotus",
+    "tag2": "geometric",
+    "tag3": "deterministic"
   }
 }

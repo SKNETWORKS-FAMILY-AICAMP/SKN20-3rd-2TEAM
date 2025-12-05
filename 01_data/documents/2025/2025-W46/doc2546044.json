@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.06449",
     "upvote": 11,
-    "tags": [
-      "agent",
-      "flex",
-      "experience"
-    ]
+    "tag1": "agent",
+    "tag2": "flex",
+    "tag3": "experience"
   }
 }

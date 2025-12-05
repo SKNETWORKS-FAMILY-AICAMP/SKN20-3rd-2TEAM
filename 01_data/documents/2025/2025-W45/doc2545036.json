@@ -5,10 +5,8 @@
     "github_url": "https://github.com/JiayuJeff/CostBench",
     "huggingface_url": "https://huggingface.co/papers/2511.02734",
     "upvote": 20,
-    "tags": [
-      "cost",
-      "agent",
-      "planning"
-    ]
+    "tag1": "cost",
+    "tag2": "agent",
+    "tag3": "planning"
   }
 }

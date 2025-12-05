@@ -5,10 +5,8 @@
     "github_url": "https://github.com/WeiboAI/VibeThinker",
     "huggingface_url": "https://huggingface.co/papers/2511.06221",
     "upvote": 127,
-    "tags": [
-      "reasoning",
-      "vibethinker",
-      "capability"
-    ]
+    "tag1": "reasoning",
+    "tag2": "vibethinker",
+    "tag3": "capability"
   }
 }

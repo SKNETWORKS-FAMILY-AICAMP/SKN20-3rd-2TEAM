@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Athena-Software-Group/athenabench",
     "huggingface_url": "https://huggingface.co/papers/2511.01144",
     "upvote": 3,
-    "tags": [
-      "llm",
-      "reasoning",
-      "benchmark"
-    ]
+    "tag1": "llm",
+    "tag2": "reasoning",
+    "tag3": "benchmark"
   }
 }

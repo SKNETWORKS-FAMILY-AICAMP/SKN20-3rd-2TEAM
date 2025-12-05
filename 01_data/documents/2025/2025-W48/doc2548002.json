@@ -5,10 +5,8 @@
     "github_url": "https://github.com/VectorSpaceLab/general-agentic-memory",
     "huggingface_url": "https://huggingface.co/papers/2511.18423",
     "upvote": 151,
-    "tags": [
-      "memory",
-      "information",
-      "agentic"
-    ]
+    "tag1": "memory",
+    "tag2": "information",
+    "tag3": "agentic"
   }
 }

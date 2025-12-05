@@ -5,10 +5,8 @@
     "github_url": "https://github.com/aiming-lab/SynthAgent",
     "huggingface_url": "https://huggingface.co/papers/2511.06101",
     "upvote": 6,
-    "tags": [
-      "synthetic",
-      "quality",
-      "synthagent"
-    ]
+    "tag1": "synthetic",
+    "tag2": "quality",
+    "tag3": "synthagent"
   }
 }

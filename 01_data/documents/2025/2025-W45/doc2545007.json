@@ -5,10 +5,8 @@
     "github_url": "https://github.com/ThinkMorph/ThinkMorph",
     "huggingface_url": "https://huggingface.co/papers/2510.27492",
     "upvote": 80,
-    "tags": [
-      "reasoning",
-      "multimodal",
-      "thinkmorph"
-    ]
+    "tag1": "reasoning",
+    "tag2": "multimodal",
+    "tag3": "thinkmorph"
   }
 }

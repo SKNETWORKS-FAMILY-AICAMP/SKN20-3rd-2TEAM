@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.11519",
     "upvote": 3,
-    "tags": [
-      "strategy",
-      "experience",
-      "system"
-    ]
+    "tag1": "strategy",
+    "tag2": "experience",
+    "tag3": "system"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/aiming-lab/Agent0/tree/main/Agent0-VL",
     "huggingface_url": "https://huggingface.co/papers/2511.19900",
     "upvote": 46,
-    "tags": [
-      "reasoning",
-      "self",
-      "improvement"
-    ]
+    "tag1": "reasoning",
+    "tag2": "self",
+    "tag3": "improvement"
   }
 }

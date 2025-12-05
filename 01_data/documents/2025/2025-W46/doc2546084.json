@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Time-Search/TimeSearch-R",
     "huggingface_url": "https://huggingface.co/papers/2511.05489",
     "upvote": 2,
-    "tags": [
-      "search",
-      "video",
-      "grpo"
-    ]
+    "tag1": "search",
+    "tag2": "video",
+    "tag3": "grpo"
   }
 }

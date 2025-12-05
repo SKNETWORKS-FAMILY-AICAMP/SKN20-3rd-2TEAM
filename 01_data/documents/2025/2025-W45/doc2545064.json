@@ -5,10 +5,8 @@
     "github_url": "https://github.com/CodeClash-ai/CodeClash",
     "huggingface_url": "https://huggingface.co/papers/2511.00839",
     "upvote": 8,
-    "tags": [
-      "round",
-      "code",
-      "objective"
-    ]
+    "tag1": "round",
+    "tag2": "code",
+    "tag3": "objective"
   }
 }

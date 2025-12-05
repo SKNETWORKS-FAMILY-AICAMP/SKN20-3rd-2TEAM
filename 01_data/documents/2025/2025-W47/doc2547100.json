@@ -5,10 +5,8 @@
     "github_url": "https://github.com/svenschultze/VOIX",
     "huggingface_url": "https://huggingface.co/papers/2511.11287",
     "upvote": 1,
-    "tags": [
-      "agent",
-      "web",
-      "framework"
-    ]
+    "tag1": "agent",
+    "tag2": "web",
+    "tag3": "framework"
   }
 }

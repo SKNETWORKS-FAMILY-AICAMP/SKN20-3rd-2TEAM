@@ -5,10 +5,8 @@
     "github_url": "https://github.com/InternLM/ARC-VL",
     "huggingface_url": "https://huggingface.co/papers/2511.15703",
     "upvote": 8,
-    "tags": [
-      "reasoning",
-      "arc",
-      "agi"
-    ]
+    "tag1": "reasoning",
+    "tag2": "arc",
+    "tag3": "agi"
   }
 }

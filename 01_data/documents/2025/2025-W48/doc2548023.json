@@ -5,10 +5,8 @@
     "github_url": "https://github.com/open-gigaai/giga-world-0",
     "huggingface_url": "https://huggingface.co/papers/2511.19861",
     "upvote": 30,
-    "tags": [
-      "world",
-      "gigaworld",
-      "embodied"
-    ]
+    "tag1": "world",
+    "tag2": "gigaworld",
+    "tag3": "embodied"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.00279",
     "upvote": 22,
-    "tags": [
-      "omni",
-      "flash",
-      "longcat"
-    ]
+    "tag1": "omni",
+    "tag2": "flash",
+    "tag3": "longcat"
   }
 }

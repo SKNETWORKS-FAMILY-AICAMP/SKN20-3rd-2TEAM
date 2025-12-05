@@ -5,10 +5,8 @@
     "github_url": "https://github.com/wgcyeo/WorldMM",
     "huggingface_url": "https://huggingface.co/papers/2512.02425",
     "upvote": 21,
-    "tags": [
-      "memory",
-      "video",
-      "multiple"
-    ]
+    "tag1": "memory",
+    "tag2": "video",
+    "tag3": "multiple"
   }
 }

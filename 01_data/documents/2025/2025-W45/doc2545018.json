@@ -5,10 +5,8 @@
     "github_url": "https://github.com/nvidia-cosmos/cosmos-predict2.5",
     "huggingface_url": "https://huggingface.co/papers/2511.00062",
     "upvote": 40,
-    "tags": [
-      "cosmos",
-      "generation",
-      "video"
-    ]
+    "tag1": "cosmos",
+    "tag2": "generation",
+    "tag3": "video"
   }
 }

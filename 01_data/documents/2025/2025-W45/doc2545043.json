@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.02818",
     "upvote": 15,
-    "tags": [
-      "tabular",
-      "feature",
-      "msp"
-    ]
+    "tag1": "tabular",
+    "tag2": "feature",
+    "tag3": "msp"
   }
 }

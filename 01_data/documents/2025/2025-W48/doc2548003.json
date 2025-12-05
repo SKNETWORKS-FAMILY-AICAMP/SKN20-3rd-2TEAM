@@ -5,10 +5,8 @@
     "github_url": "https://github.com/FusionBrainLab/gigaevo-core",
     "huggingface_url": "https://huggingface.co/papers/2511.17592",
     "upvote": 117,
-    "tags": [
-      "gigaevo",
-      "llm",
-      "framework"
-    ]
+    "tag1": "gigaevo",
+    "tag2": "llm",
+    "tag3": "framework"
   }
 }

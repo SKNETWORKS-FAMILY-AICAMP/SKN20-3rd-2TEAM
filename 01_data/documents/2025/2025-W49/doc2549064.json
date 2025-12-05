@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zliucz/MagicQuillV2",
     "huggingface_url": "https://huggingface.co/papers/2512.03046",
     "upvote": 9,
-    "tags": [
-      "layerfor",
-      "comment",
-      "content"
-    ]
+    "tag1": "layerfor",
+    "tag2": "comment",
+    "tag3": "content"
   }
 }

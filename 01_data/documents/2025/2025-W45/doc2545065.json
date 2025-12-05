@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.27607",
     "upvote": 8,
-    "tags": [
-      "modality",
-      "action",
-      "dust"
-    ]
+    "tag1": "modality",
+    "tag2": "action",
+    "tag3": "dust"
   }
 }

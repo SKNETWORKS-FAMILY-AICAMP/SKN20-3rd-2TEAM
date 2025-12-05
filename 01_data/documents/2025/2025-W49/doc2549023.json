@@ -5,10 +5,8 @@
     "github_url": "https://github.com/gca-spatial-reasoning/gca",
     "huggingface_url": "https://huggingface.co/papers/2511.22659",
     "upvote": 36,
-    "tags": [
-      "reasoning",
-      "gca",
-      "semantic"
-    ]
+    "tag1": "reasoning",
+    "tag2": "gca",
+    "tag3": "semantic"
   }
 }

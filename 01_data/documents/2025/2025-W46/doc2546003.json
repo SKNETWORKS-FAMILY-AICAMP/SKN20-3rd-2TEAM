@@ -5,10 +5,8 @@
     "github_url": "https://github.com/vaskers5/LUA",
     "huggingface_url": "https://huggingface.co/papers/2511.10629",
     "upvote": 118,
-    "tags": [
-      "resolution",
-      "space",
-      "latent"
-    ]
+    "tag1": "resolution",
+    "tag2": "space",
+    "tag3": "latent"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/AR-FORUM/NINJA_Attack",
     "huggingface_url": "https://huggingface.co/papers/2511.04707",
     "upvote": 3,
-    "tags": [
-      "context",
-      "attack",
-      "jailbreak"
-    ]
+    "tag1": "context",
+    "tag2": "attack",
+    "tag3": "jailbreak"
   }
 }

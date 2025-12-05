@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Tongyi-MAI/Z-Image/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.22677",
     "upvote": 16,
-    "tags": [
-      "distillation",
-      "image",
-      "matching"
-    ]
+    "tag1": "distillation",
+    "tag2": "image",
+    "tag3": "matching"
   }
 }

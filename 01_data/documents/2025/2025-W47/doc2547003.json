@@ -5,10 +5,8 @@
     "github_url": "https://github.com/facebookresearch/llm_souping",
     "huggingface_url": "https://huggingface.co/papers/2511.13254",
     "upvote": 132,
-    "tags": [
-      "averaging",
-      "performance",
-      "uniform"
-    ]
+    "tag1": "averaging",
+    "tag2": "performance",
+    "tag3": "uniform"
   }
 }

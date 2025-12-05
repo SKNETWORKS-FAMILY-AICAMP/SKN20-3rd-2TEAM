@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.01502",
     "upvote": 1,
-    "tags": [
-      "motion",
-      "component",
-      "constraint"
-    ]
+    "tag1": "motion",
+    "tag2": "component",
+    "tag3": "constraint"
   }
 }

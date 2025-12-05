@@ -5,10 +5,8 @@
     "github_url": "https://github.com/apple/ml-clara",
     "huggingface_url": "https://huggingface.co/papers/2511.18659",
     "upvote": 11,
-    "tags": [
-      "retrieval",
-      "continuous",
-      "generation"
-    ]
+    "tag1": "retrieval",
+    "tag2": "continuous",
+    "tag3": "generation"
   }
 }

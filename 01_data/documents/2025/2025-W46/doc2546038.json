@@ -5,10 +5,8 @@
     "github_url": "https://github.com/zz1358m/SofT-GRPO-master/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.06411",
     "upvote": 16,
-    "tags": [
-      "soft grpo",
-      "keyword2",
-      "keyword3"
-    ]
+    "tag1": "soft grpo",
+    "tag2": "keyword2",
+    "tag3": "keyword3"
   }
 }

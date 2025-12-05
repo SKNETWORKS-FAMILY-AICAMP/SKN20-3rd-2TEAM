@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Chatonz/POLARIS",
     "huggingface_url": "https://huggingface.co/papers/2512.00369",
     "upvote": 4,
-    "tags": [
-      "error",
-      "inversion",
-      "step"
-    ]
+    "tag1": "error",
+    "tag2": "inversion",
+    "tag3": "step"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2512.04072",
     "upvote": 2,
-    "tags": [
-      "skill",
-      "cognitive",
-      "learn"
-    ]
+    "tag1": "skill",
+    "tag2": "cognitive",
+    "tag3": "learn"
   }
 }

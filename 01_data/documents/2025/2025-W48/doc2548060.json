@@ -5,10 +5,8 @@
     "github_url": "https://github.com/MiZhenxing/One4D",
     "huggingface_url": "https://huggingface.co/papers/2511.18922",
     "upvote": 10,
-    "tags": [
-      "generation",
-      "frame",
-      "reconstruction"
-    ]
+    "tag1": "generation",
+    "tag2": "frame",
+    "tag3": "reconstruction"
   }
 }

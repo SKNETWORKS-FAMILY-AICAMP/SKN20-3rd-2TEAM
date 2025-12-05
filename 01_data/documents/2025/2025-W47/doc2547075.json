@@ -5,10 +5,8 @@
     "github_url": "https://github.com/CWRU-DB-Group/DrugKG",
     "huggingface_url": "https://huggingface.co/papers/2511.12472",
     "upvote": 5,
-    "tags": [
-      "knowledge",
-      "answer",
-      "comment"
-    ]
+    "tag1": "knowledge",
+    "tag2": "answer",
+    "tag3": "comment"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/HITsz-TMG/Uni-MoE",
     "huggingface_url": "https://huggingface.co/papers/2511.12609",
     "upvote": 101,
-    "tags": [
-      "moe",
-      "omni",
-      "training"
-    ]
+    "tag1": "moe",
+    "tag2": "omni",
+    "tag3": "training"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/liushulinle/MarsRL",
     "huggingface_url": "https://huggingface.co/papers/2511.11373",
     "upvote": 12,
-    "tags": [
-      "reasoning",
-      "agent",
-      "marsrl"
-    ]
+    "tag1": "reasoning",
+    "tag2": "agent",
+    "tag3": "marsrl"
   }
 }

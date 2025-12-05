@@ -5,10 +5,8 @@
     "github_url": "https://github.com/open-compass/RePro",
     "huggingface_url": "https://huggingface.co/papers/2512.01925",
     "upvote": 21,
-    "tags": [
-      "reasoning",
-      "process",
-      "cot"
-    ]
+    "tag1": "reasoning",
+    "tag2": "process",
+    "tag3": "cot"
   }
 }

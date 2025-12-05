@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Yangr116/VST",
     "huggingface_url": "https://huggingface.co/papers/2511.05491",
     "upvote": 49,
-    "tags": [
-      "spatial",
-      "general",
-      "tuning"
-    ]
+    "tag1": "spatial",
+    "tag2": "general",
+    "tag3": "tuning"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/moonmath-ai/LiteAttention",
     "huggingface_url": "https://huggingface.co/papers/2511.11062",
     "upvote": 30,
-    "tags": [
-      "attention",
-      "step",
-      "denoising"
-    ]
+    "tag1": "attention",
+    "tag2": "step",
+    "tag3": "denoising"
   }
 }

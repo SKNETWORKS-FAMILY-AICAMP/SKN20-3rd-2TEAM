@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.22146",
     "upvote": 2,
-    "tags": [
-      "language",
-      "causal",
-      "concept"
-    ]
+    "tag1": "language",
+    "tag2": "causal",
+    "tag3": "concept"
   }
 }

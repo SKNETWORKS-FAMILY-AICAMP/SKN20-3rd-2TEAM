@@ -5,10 +5,8 @@
     "github_url": "https://github.com/MBZUAI-Paris/Frugal-AI-Math",
     "huggingface_url": "https://huggingface.co/papers/2511.01937",
     "upvote": 12,
-    "tags": [
-      "length",
-      "problem",
-      "easy"
-    ]
+    "tag1": "length",
+    "tag2": "problem",
+    "tag3": "easy"
   }
 }

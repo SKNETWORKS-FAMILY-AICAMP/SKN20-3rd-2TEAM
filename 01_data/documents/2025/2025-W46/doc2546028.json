@@ -5,10 +5,8 @@
     "github_url": "https://github.com/Bria-AI/FIBO",
     "huggingface_url": "https://huggingface.co/papers/2511.06876",
     "upvote": 26,
-    "tags": [
-      "image",
-      "caption",
-      "controllability"
-    ]
+    "tag1": "image",
+    "tag2": "caption",
+    "tag3": "controllability"
   }
 }

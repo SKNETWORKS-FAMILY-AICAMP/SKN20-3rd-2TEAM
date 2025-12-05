@@ -5,10 +5,8 @@
     "github_url": "https://github.com/flageval-baai/MeasureBench",
     "huggingface_url": "https://huggingface.co/papers/2510.26865",
     "upvote": 11,
-    "tags": [
-      "vlms",
-      "reading",
-      "fine"
-    ]
+    "tag1": "vlms",
+    "tag2": "reading",
+    "tag3": "fine"
   }
 }

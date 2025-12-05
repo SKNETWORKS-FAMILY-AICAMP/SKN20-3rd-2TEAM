@@ -5,10 +5,8 @@
     "github_url": "https://github.com/hammoudhasan/AraLingBench",
     "huggingface_url": "https://huggingface.co/papers/2511.14295",
     "upvote": 70,
-    "tags": [
-      "aralingbench",
-      "benchmark",
-      "linguistic"
-    ]
+    "tag1": "aralingbench",
+    "tag2": "benchmark",
+    "tag3": "linguistic"
   }
 }

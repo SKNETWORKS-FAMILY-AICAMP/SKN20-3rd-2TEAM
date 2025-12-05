@@ -5,10 +5,8 @@
     "github_url": "https://github.com/pILLOW-1/Xsyn/",
     "huggingface_url": "https://huggingface.co/papers/2511.15299",
     "upvote": 2,
-    "tags": [
-      "image",
-      "ray security",
-      "keyword3"
-    ]
+    "tag1": "image",
+    "tag2": "ray security",
+    "tag3": "keyword3"
   }
 }

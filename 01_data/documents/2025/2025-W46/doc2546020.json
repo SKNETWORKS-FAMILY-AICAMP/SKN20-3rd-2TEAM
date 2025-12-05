@@ -5,10 +5,8 @@
     "github_url": "https://github.com/dualverse-ai/station",
     "huggingface_url": "https://huggingface.co/papers/2511.06309",
     "upvote": 35,
-    "tags": [
-      "agent",
-      "scientific",
-      "narrative"
-    ]
+    "tag1": "agent",
+    "tag2": "scientific",
+    "tag3": "narrative"
   }
 }

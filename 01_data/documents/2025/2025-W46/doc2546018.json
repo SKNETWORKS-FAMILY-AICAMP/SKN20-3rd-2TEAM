@@ -5,10 +5,8 @@
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07464",
     "upvote": 38,
-    "tags": [
-      "motif",
-      "efficiency",
-      "architectural"
-    ]
+    "tag1": "motif",
+    "tag2": "efficiency",
+    "tag3": "architectural"
   }
 }

@@ -5,10 +5,8 @@
     "github_url": "https://github.com/cambridgeltl/inspo",
     "huggingface_url": "https://huggingface.co/papers/2512.01945",
     "upvote": 3,
-    "tags": [
-      "instruction",
-      "inspo",
-      "policy"
-    ]
+    "tag1": "instruction",
+    "tag2": "inspo",
+    "tag3": "policy"
   }
 }
