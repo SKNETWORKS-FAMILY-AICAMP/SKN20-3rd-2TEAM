@@ -1,12 +1,18 @@
 {
   "context": "A data-centric framework and benchmark for Visual Question-Visual Answering (VQ-VA) improve open-source model performance, narrowing the gap with proprietary systems. This paper studiesVisual Question-Visual Answering(VQ-VA): generating an image, rather than text, in response to a visual question -- an ability that has recently emerged in proprietary systems such asNanoBananaandGPT-Image. To also bring this capability to open-source models, we introduceVQ-VAWorld, a data-centric framework built around anagentic pipelinefor large-scale, targeted data construction. Leveragingweb-scale deployment, this pipeline crawls a massive amount of ~1.8M high-quality, interleavedimage-text samplesfor model training. For evaluation, we further releaseIntelligentBench, a human-curated benchmark that systematically assessesVQ-VAalong the aspects ofworld knowledge,design knowledge, andreasoning. Training withVQ-VAWorld data yields strong empirical gains: it helpsLightFusionattain 53.06 onIntelligentBench, substantially surpassing the best prior open-source baselines (i.e., 7.78 from vanillaLightFusion; 1.94 fromUniWorld-V1), and significantly narrowing the gap toward leading proprietary systems (e.g., 81.67 fromNanoBanana; 82.64 fromGPT-Image). By releasing the full suite of model weights, datasets, and pipelines, we hope to stimulate future research onVQ-VA. Visual Question-Visual AnsweringAffiliated with Monash University, Tsinghua University, UC Santa Cruz, Bytedance Seed, This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "VQ-VA World: Towards High-Quality Visual Question-Visual Answering",
+    "title": "VQ-VA World: Towards High-Quality Visual Question-Visual Answering",
+    "authors": [
+      "Zicheng Duan"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.20573",
     "upvote": 7,
-    "tag1": "visual",
-    "tag2": "question",
-    "tag3": "comment"
+    "tags": [
+      "answeringaffiliated monash",
+      "generating image",
+      "systematically assessesvq"
+    ]
   }
 }

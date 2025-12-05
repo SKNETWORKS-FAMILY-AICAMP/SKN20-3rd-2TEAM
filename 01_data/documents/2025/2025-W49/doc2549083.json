@@ -1,12 +1,16 @@
 {
-  "context": "CookAnything is a diffusion-based framework that generates coherent image sequences from cooking instructions by incorporating step-wise regional control, flexible positional encoding, and cross-step consistency. Cooking is a sequential and visually grounded activity, where each step such as chopping, mixing, or frying carries both procedural logic and visual semantics. While recentdiffusion modelshave shown strong capabilities in text-to-image generation, they struggle to handle structured multi-step scenarios likerecipe illustration. Additionally, currentrecipe illustrationmethods are unable to adjust to the natural variability in recipe length, generating a fixed number of images regardless of the actual instructions structure. To address these limitations, we present CookAnything, a flexible and consistent diffusion-based framework that generates coherent, semantically distinct image sequences from textual cooking instructions of arbitrary length. The framework introduces three key components: (1)Step-wise Regional Control(SRC), which aligns textual steps with corresponding image regions within a singledenoising process; (2)Flexible RoPE, a step-aware positional encoding mechanism that enhances bothtemporal coherenceandspatial diversity; and (3)Cross-Step Consistency Control(CSCC), which maintains fine-grained ingredient consistency across steps. Experimental results onrecipe illustrationbenchmarks show that CookAnything performs better than existing methods in training-based and training-free settings. The proposed framework supports scalable, high-quality visual synthesis of complex multi-step instructions and holds significant potential for broad applications in instructional media, and procedural content creation. ·Sign uporlog into comment",
+  "context": "SIMA 2, built on a Gemini foundation model, interacts in 3D virtual worlds, reasons about goals, handles complex instructions, and autonomously learns new skills through open-ended self-improvement. We introduce SIMA 2, a generalistembodied agentthat understands and acts in a wide variety of 3D virtual worlds. Built upon aGemini foundation model, SIMA 2 represents a significant step toward active, goal-directed interaction within an embodied environment. Unlike prior work (e.g., SIMA 1) limited to simple language commands, SIMA 2 acts as an interactive partner, capable of reasoning abouthigh-level goals, conversing with the user, and handlingcomplex instructionsgiven throughlanguage and images. Across a diverse portfolio of games, SIMA 2 substantially closes the gap with human performance and demonstrates robustgeneralizationto previously unseen environments, all while retaining the base model's core reasoning capabilities. Furthermore, we demonstrate a capacity foropen-ended self-improvement: by leveraging Gemini to generate tasks and provide rewards, SIMA 2 can autonomously learn new skills from scratch in a new environment. This work validates a path toward creating versatile and continuously learning agents for both virtual and, eventually, physical worlds. We introduce SIMA 2, a generalist embodied agent that understands and acts in a wide variety of 3D virtual worlds. Built upon a Gemini foundation model, SIMA 2 represents a significant step toward active, goal-directed interaction within an embodied environment. Unlike prior work (e.g., SIMA 1) limited to simple language commands, SIMA 2 acts as an interactive partner, capable of reasoning about high-level goals, conversing with the user, and handling complex instructions given through language and images. Across a diverse portfolio of games, SIMA 2 substantially closes the gap with human performance and demonstrates robust generalization to previously unseen environments, all while retaining the base model's core reasoning capabilities. Furthermore, we demonstrate a capacity for open-ended self-improvement: by leveraging Gemini to generate tasks and provide rewards, SIMA 2 can autonomously learn new skills from scratch in a new environment. This work validates a path toward creating versatile and continuously learning agents for both virtual and, eventually, physical worlds. ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "CookAnything: A Framework for Flexible and Consistent Multi-Step Recipe Image Generation",
-    "github_url": "https://github.com/zhangdaxia22/CookAnything",
-    "huggingface_url": "https://huggingface.co/papers/2512.03540",
-    "upvote": 4,
-    "tag1": "step",
-    "tag2": "image",
-    "tag3": "framework"
+    "title": "SIMA 2: A Generalist Embodied Agent for Virtual Worlds",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.04797",
+    "upvote": 8,
+    "tags": [
+      "instructions autonomously",
+      "new skills",
+      "virtual worlds"
+    ]
   }
 }

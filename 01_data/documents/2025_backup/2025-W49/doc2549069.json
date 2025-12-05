@@ -1,0 +1,12 @@
+{
+  "context": "Script, a plug-and-play token pruning method for multimodal large language models, improves efficiency and accuracy by removing redundant and irrelevant visual tokens without retraining. The rapid growth ofvisual tokensinmultimodal large language models(MLLMs) leads to excessive memory consumption and inference latency, especially when handling high-resolution images and videos.Token pruningis a technique used to mitigate this issue by removing redundancy, but existing methods often ignore relevance to the user query or suffer from the limitations of attention mechanisms, reducing their adaptability and effectiveness. To address these challenges, we propose Script, a plug-and-play pruning method that requires no retraining and generalizes across diverse MLLMs. Script comprises two modules: agraph-structured pruningmodule that removes visually redundant tokens, and aquery-conditioned semantic pruningmodule that preserves query-relevant visual information. Together, they enhance performance on multimodal tasks. Experiments on fourteen benchmarks across image andvideo understandingtasks show that Script consistently achieves higher model efficiency and predictive accuracy compared to existing pruning methods. On LLaVA-NeXT-7B, it achieves up to 6.8xprefill speedupand 10xFLOP reduction, while retaining 96.88% of the original performance. Published in Transactions on Machine Learning Research,Project website inhttps://01yzzyu.github.io/script.github.io/. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Script: Graph-Structured and Query-Conditioned Semantic Token Pruning for Multimodal Large Language Models",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.01949",
+    "upvote": 8,
+    "tag1": "script",
+    "tag2": "token",
+    "tag3": "comment"
+  }
+}

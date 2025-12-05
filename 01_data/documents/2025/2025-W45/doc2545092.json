@@ -1,12 +1,16 @@
 {
   "context": "SAIL-RL enhances multimodal large language models' reasoning capabilities using a dual reward system that improves factual grounding, logical coherence, and adaptability. We introduce SAIL-RL, areinforcement learning(RL) post-training framework that enhances the reasoning capabilities ofmultimodal large language models(MLLMs) by teaching them when and how to think. Existing approaches are limited by outcome-only supervision, which rewards correct answers without ensuring sound reasoning, and by uniform thinking strategies, which often lead to overthinking on simple tasks and underthinking on complex ones. SAIL-RL addresses these challenges with a dual reward system: theThinking Reward, which evaluates reasoning quality throughfactual grounding,logical coherence, andanswer consistency, and theJudging Reward, which adaptively determines whetherdeep reasoningordirect answeringis appropriate. Experiments on the state-of-the-art SAIL-VL2 show that SAIL-RL improves reasoning andmultimodal understanding benchmarksat both 4B and 8B scales, achieving competitive performance against commercial closed-source models such as GPT-4o, and substantially reduceshallucinations, establishing it as a principled framework for building more reliable and adaptive MLLMs. The code will be available at https://github.com/BytedanceDouyinContent/SAIL-RL. SAIL-RL This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "SAIL-RL: Guiding MLLMs in When and How to Think via Dual-Reward RL Tuning",
+    "title": "SAIL-RL: Guiding MLLMs in When and How to Think via Dual-Reward RL Tuning",
+    "authors": [],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.02280",
     "upvote": 3,
-    "tag1": "sail",
-    "tag2": "reasoning",
-    "tag3": "reward"
+    "tags": [
+      "reward adaptively",
+      "sail vl2",
+      "reasoningordirect answeringis"
+    ]
   }
 }

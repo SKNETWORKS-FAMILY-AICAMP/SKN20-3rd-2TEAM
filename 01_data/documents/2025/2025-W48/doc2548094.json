@@ -1,12 +1,18 @@
 {
   "context": "Sphinx, a synthetic environment for visual perception and reasoning, evaluates large vision-language models and demonstrates that reinforcement learning with verifiable rewards improves model accuracy on diverse tasks. We present Sphinx, asynthetic environmentforvisual perceptionandreasoningthat targets corecognitive primitives. Sphinx procedurally generates puzzles usingmotifs,tiles,charts,icons, andgeometric primitives, each paired with verifiableground-truth solutions, enabling both precise evaluation and large-scaledataset construction. The benchmark covers 25 task types spanningsymmetry detection,geometric transformations,spatial reasoning,chart interpretation, andsequence prediction. Evaluating recentlarge vision-language models(LVLMs) shows that even state-of-the-artGPT-5attains only 51.1% accuracy, well below human performance. Finally, we demonstrate thatreinforcement learningwithverifiable rewards(RLVR) substantially improves model accuracy on these tasks and yields gains on external visualreasoningbenchmarks, highlighting its promise for advancingmultimodal reasoning. We introduce Sphinx, a synthetic environment for visual perception and reasoning that procedurally generates tasks with verifiable ground-truth answers, enabling precise evaluation and large-scale training. The benchmark spans 25 visual reasoning tasks covering symmetry, geometric transformations, spatial reasoning, chart interpretation, and sequence prediction. Using reinforcement learning with verifiable rewards (RLVR), we substantially improve LVLM accuracy on Sphinx and observe gains on external visual reasoning benchmarks. Dataset:https://huggingface.co/datasets/xashru/sphinxCode:https://github.com/xashru/sphinx(WIP) This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "SPHINX: A Synthetic Environment for Visual Perception and Reasoning",
+    "title": "SPHINX: A Synthetic Environment for Visual Perception and Reasoning",
+    "authors": [
+      "Md Tanvirul Alam"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/xashru/sphinx",
     "huggingface_url": "https://huggingface.co/papers/2511.20814",
     "upvote": 2,
-    "tag1": "reasoning",
-    "tag2": "sphinx",
-    "tag3": "accuracy"
+    "tags": [
+      "primitives sphinx",
+      "verifiable rewards",
+      "environmentforvisual perceptionandreasoningthat"
+    ]
   }
 }

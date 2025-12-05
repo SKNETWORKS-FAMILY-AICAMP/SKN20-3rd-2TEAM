@@ -1,12 +1,20 @@
 {
   "context": "UniAVGen, a unified framework using dual Diffusion Transformers and Asymmetric Cross-Modal Interaction, enhances audio-video generation by ensuring synchronization and consistency with fewer training samples. Due to the lack of effective cross-modal modeling, existing open-sourceaudio-video generationmethods often exhibit compromised lip synchronization\nand insufficient semantic consistency. To mitigate these drawbacks, we propose\nUniAVGen, a unified framework for joint audio and video generation. UniAVGen is\nanchored in a dual-branch joint synthesis architecture, incorporating two\nparallelDiffusion Transformers(DiTs) to build a cohesive cross-modal latent\nspace. At its heart lies anAsymmetric Cross-Modal Interactionmechanism, which\nenables bidirectional, temporally alignedcross-attention, thus ensuring\nprecise spatiotemporal synchronization and semantic consistency. Furthermore,\nthis cross-modal interaction is augmented by aFace-Aware Modulationmodule,\nwhich dynamically prioritizes salient regions in the interaction process. To\nenhance generative fidelity during inference, we additionally introduceModality-Aware Classifier-Free Guidance, a novel strategy that explicitly\namplifies cross-modal correlation signals. Notably, UniAVGen's robust joint\nsynthesis design enables seamless unification of pivotal audio-video tasks\nwithin a single model, such as jointaudio-video generationand continuation,video-to-audio dubbing, andaudio-driven video synthesis. Comprehensive\nexperiments validate that, with far fewer training samples (1.3M vs. 30.1M),\nUniAVGen delivers overall advantages in audio-video synchronization, timbre\nconsistency, and emotion consistency. UniAVGen is a unified framework for high-fidelity joint audio-video generation, addressing key limitations of existing methods such as poor lip synchronization, insufficient semantic consistency, and limited task generalization.At its core, UniAVGen adopts a symmetric dual-branch architecture (parallel Diffusion Transformers for audio and video) and introduces three critical innovations:(1) Asymmetric Cross-Modal Interaction for bidirectional temporal alignment,(2)Face-Aware Modulation to prioritize salient facial regions during interaction,(3)Modality-Aware Classifier-Free Guidance to amplify cross-modal correlations during inference.Project Page:https://mcg-nju.github.io/UniAVGen/ great The code and checkpoint will come soon. good job！ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "UniAVGen: Unified Audio and Video Generation with Asymmetric Cross-Modal\n  Interactions",
+    "title": "UniAVGen: Unified Audio and Video Generation with Asymmetric Cross-Modal\n  Interactions",
+    "authors": [
+      "Guozhen Zhang",
+      "Teng Hu",
+      "Limin Wang"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.03334",
     "upvote": 51,
-    "tag1": "video",
-    "tag2": "cross modal",
-    "tag3": "keyword3"
+    "tags": [
+      "lip synchronization",
+      "modal latent",
+      "uniavgen unified"
+    ]
   }
 }

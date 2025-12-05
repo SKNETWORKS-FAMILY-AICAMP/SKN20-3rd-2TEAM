@@ -1,12 +1,19 @@
 {
-  "context": "TUNA, a unified multimodal model, uses a cascaded VAE and representation encoder for end-to-end multimodal understanding and generation, outperforming decoupled models and achieving state-of-the-art results across various benchmarks. Unified multimodal models(UMMs) aim to jointly performmultimodal understandingand generation within a single framework. We presentTUNA, a native UMM that builds a unified continuous visual representation by cascading aVAE encoderwith arepresentation encoder. This unified representation space allows end-to-end processing of images and videos for both understanding and generation tasks. Compared to priorUMMswith decoupled representations,TUNA's unified visual space avoidsrepresentation format mismatchesintroduced by separate encoders, outperforming decoupled alternatives in both understanding and generation. Moreover, we observe that stronger pretrainedrepresentation encoders consistently yield better performance across all multimodal tasks, highlighting the importance of therepresentation encoder. Finally, in this unified setting, jointly training on both understanding and generation data allows the two tasks to benefit from each other rather than interfere. Our extensive experiments onmultimodal understandingand generation benchmarks show thatTUNAachieves state-of-the-art results in image andvideo understanding, image andvideo generation, andimage editing, demonstrating the effectiveness and scalability of its unified representation design. @taesiriThx for sharing! Could you also attach this video?  Oops! Sorry@Yuren— unfortunately, Hugging Face doesn't allow editing the thumbnail video. If you'd like, I can reach out to someone on the Hugging Face team to remove the paper so you can resubmit it. Just let me know! Oops! Sorry@Yuren— unfortunately, Hugging Face doesn't allow editing the thumbnail video. If you'd like, I can reach out to someone on the Hugging Face team to remove the paper so you can resubmit it. Just let me know! never mind:) it's ok This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "FINDER is a benchmark for deep research agents with standardized human-curated tasks and DEFT is a failure taxonomy revealing that DRAs struggle with evidence integration, verification, and reasoning-resilient planning. Deep Research Agents(DRAs) aim to automatically produce analyst-level reports through iterative informationretrievaland synthesis. However, most existing DRAs were validated on question-answering benchmarks, while research on generating comprehensive reports remains overlooked. Worse, current benchmarks for report synthesis suffer from task complexity and subjective metrics -- this fails to reflect user demands and limits the practical utility of generated reports. To address these gaps, we presentFine-grained DEepResearch bench(FINDER), an enhanced benchmark consisting of 100 human-curated research tasks with 419structured checklist itemsthat standardize report structure, analytical depth, and factual grounding. Based on approximately 1,000 reports produced by mainstream DRAs, we further proposeDeep rEsearch Failure Taxonomy(DEFT), the first failure taxonomy fordeep research agents. DEFT contains 14 fine-grainedfailure modesacrossreasoning,retrieval, andgeneration, and is built upon grounded theory with human-LLM co-annotating and inter-annotator reliability validation. Our experimental findings reveal that current DRAs struggle not with task comprehension but with evidence integration, verification, andreasoning-resilient planning. We present Finegrained DEepResearch bench (FINDER), an enhanced benchmark consisting of 100 human-curated research tasks with 419 structured checklist items that standardize report structure, analytical depth, and factual grounding. Based on approximately 1,000 reports produced by mainstream DRAs, we further propose Deep rEsearch Failure Taxonomy (DEFT), the first failure taxonomy for deep research agents. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "TUNA: Taming Unified Visual Representations for Native Unified Multimodal Models",
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2512.02014",
-    "upvote": 43,
-    "tag1": "generation",
-    "tag2": "unified",
-    "tag3": "face"
+    "title": "How Far Are We from Genuinely Useful Deep Research Agents?",
+    "authors": [
+      "Jincheng Ren",
+      "Shudong Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/OPPO-PersonalAI/FINDER_DEFT",
+    "huggingface_url": "https://huggingface.co/papers/2512.01948",
+    "upvote": 50,
+    "tags": [
+      "finder benchmark",
+      "report synthesis",
+      "taxonomy deep"
+    ]
   }
 }

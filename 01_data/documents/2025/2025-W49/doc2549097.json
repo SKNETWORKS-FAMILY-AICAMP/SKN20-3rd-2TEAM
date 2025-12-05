@@ -1,12 +1,20 @@
 {
-  "context": "Ovis-Image is a 7B text-to-image model optimized for high-quality text rendering under computational constraints, combining a diffusion-based visual decoder with a multimodal backbone and a text-centric training pipeline. We introduce Ovis-Image, a 7Btext-to-image modelspecifically optimized for high-quality text rendering, designed to operate efficiently under stringent computational constraints. Built upon our previous Ovis-U1 framework, Ovis-Image integrates adiffusion-based visual decoderwith the stronger Ovis 2.5multimodal backbone, leveraging atext-centric training pipelinethat combines large-scale pre-training with carefully tailored post-training refinements. Despite its compact architecture, Ovis-Image achieves text rendering performance on par with significantly larger open models such asQwen-Imageand approaches closed-source systems likeSeedreamandGPT4o. Crucially, the model remains deployable on a single high-end GPU with moderate memory, narrowing the gap between frontier-level text rendering and practical deployment. Our results indicate that combining a strongmultimodal backbonewith a carefully designed, text-focused training recipe is sufficient to achieve reliablebilingual text renderingwithout resorting to oversized or proprietary models. Built upon Ovis-U1, Ovis-Image is a 7B text-to-image model specifically optimized for high-quality text rendering, designed to operate efficiently under stringent computational constraints. GitHub:https://github.com/AIDC-AI/Ovis-ImageHuggingFace:https://huggingface.co/AIDC-AI/Ovis-Image-7BDemo:https://huggingface.co/spaces/AIDC-AI/Ovis-Image-7BComfyUI:https://huggingface.co/Comfy-Org/Ovis-Image This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "SignRoundV2, a post-training quantization framework, achieves competitive accuracy for Large Language Models at extremely low-bit quantization through layer-wise bit allocation and pre-tuning scale search. Extremelow-bit quantizationis critical for efficiently deployingLarge Language Models(LLMs), yet it often leads to severe performance degradation at 2-bits and even 4-bits (e.g., MXFP4). We presentSignRoundV2, apost-training quantizationframework that is highly effective even withoutmixed-precision.SignRoundV2introduces (1) a fast sensitivity metric that combinesgradient informationwithquantization-induced deviationsto guidelayer-wise bit allocation, and (2) a lightweightpre-tuningsearch for quantization scales to improve extremelylow-bit quantization. These components allowSignRoundV2to close the gap with full-precision models. Extensive experiments indicate that our method sustains competitive accuracy for LLMs, achievingproduction-grade performancewith about 1 percent variance at 4-5 bits and strong results even at 2 bits. The implementation is available at https://github.com/intel/auto-round. Extremely low-bit quantization for LLMs. Check outhttps://github.com/intel/auto-round ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Ovis-Image Technical Report",
-    "github_url": "https://github.com/AIDC-AI/Ovis-Image",
-    "huggingface_url": "https://huggingface.co/papers/2511.22982",
-    "upvote": 3,
-    "tag1": "ovis",
-    "tag2": "image",
-    "tag3": "text"
+    "title": "SignRoundV2: Closing the Performance Gap in Extremely Low-Bit Post-Training Quantization for LLMs",
+    "authors": [
+      "Wenhua Cheng",
+      "Heng Guo",
+      "Haihao Shen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/intel/auto-round",
+    "huggingface_url": "https://huggingface.co/papers/2512.04746",
+    "upvote": 6,
+    "tags": [
+      "signroundv2introduces fast",
+      "lightweightpre tuningsearch",
+      "quantization"
+    ]
   }
 }

@@ -1,12 +1,18 @@
 {
-  "context": "InternVideo-Next uses a two-stage pretraining scheme with an Encoder-Predictor-Decoder framework to achieve state-of-the-art video representation learning by combining pixel-level fidelity and high-level semantics. Large-scale video-text pretraining achieves strong performance but depends on noisy, synthetic captions with limited semantic coverage, often overlooking implicitworld knowledgesuch as object motion, 3D geometry, and physical cues. In contrast,masked video modeling(MVM) directly exploitsspatiotemporal structuresbut trails text-supervised methods on general tasks. We find this gap arises from overlooked architectural issues: pixel-level reconstruction struggles with convergence and its low-level requirement often conflicts with semantics, while latent prediction often encouragesshortcut learning. To address these, we disentangle the traditionalencoder-decoder designinto anEncoder-Predictor-Decoder(EPD) framework, where the predictor acts as alatent world model, and propose InternVideo-Next, a two-stage pretraining scheme that builds a semantically consistent yet detail-preserving latent space for this world model. First, conventional linear decoder in pixel MVM enforces the predictor output latent to be linearly projected to, thus separable in pixel space, causing the conflict withsemantic abstraction. Our Stage 1 proposes aconditional diffusion decoderand injects reliableimage-level semantic priorsto enhance semantics and convergence, thus bridging pixel-level fidelity with high-levelsemantic abstraction. Stage 2 further learnsworld knowledgeby predicting frozen Stage 1 targets within this space, mitigatingshortcut learning. Trained on public, unlabeled videos, InternVideo-Next achieves state-of-the-art results across benchmarks and provides a scalable path toward generalvideo representation learning. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "VLASH is an asynchronous inference framework for Vision-Language-Action models that achieves high speed and low latency without sacrificing accuracy, enabling precise robotic tasks like ping-pong and whack-a-mole. Vision-Language-Action models (VLAs) are becoming increasingly capable across diverse robotic tasks. However, their real-world deployment remains slow and inefficient: demonstration videos are often sped up by 5-10x to appear smooth, with noticeable action stalls and delayed reactions to environmental changes.Asynchronous inferenceoffers a promising solution to achieve continuous and low-latency control by enabling robots to execute actions and perform inference simultaneously. However, because the robot and environment continue to evolve during inference, atemporal misalignmentarises between the prediction and execution intervals. This leads to significantaction instability, while existing methods either degrade accuracy or introduce runtime overhead to mitigate it. We propose VLASH, a generalasynchronous inferenceframework for VLAs that delivers smooth, accurate, and fast reaction control without additional overhead or architectural changes. VLASH estimates the future execution-time state by rolling therobot stateforward with the previously generatedaction chunk, thereby bridging the gap between prediction and execution. Experiments show that VLASH achieves up to 2.03x speedup and reducesreaction latencyby up to 17.4x compared tosynchronous inferencewhile fully preserving the original accuracy. Moreover, it empowers VLAs to handle fast-reaction,high-precision taskssuch as playing ping-pong and playing whack-a-mole, where traditionalsynchronous inferencefails. Code is available at https://github.com/mit-han-lab/vlash This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "InternVideo-Next: Towards General Video Foundation Models without Video-Text Supervision",
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2512.01342",
-    "upvote": 14,
-    "tag1": "level",
-    "tag2": "pixel",
-    "tag3": "stage"
+    "title": "VLASH: Real-Time VLAs via Future-State-Aware Asynchronous Inference",
+    "authors": [
+      "Zhijian Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/mit-han-lab/vlash",
+    "huggingface_url": "https://huggingface.co/papers/2512.01031",
+    "upvote": 22,
+    "tags": [
+      "diverse robotic",
+      "noticeable action",
+      "vlash asynchronous"
+    ]
   }
 }

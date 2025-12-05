@@ -1,12 +1,18 @@
 {
   "context": "CostBench evaluates Large Language Model agents' cost-aware planning and adaptability in response to dynamic changes, revealing significant gaps in current models' performance. Current evaluations ofLarge Language Model(LLM) agents primarily emphasize\ntask completion, often overlooking resource efficiency and adaptability. This\nneglects a crucial capability: agents' ability to devise and adjust\ncost-optimal plans in response to changing environments. To bridge this gap, we\nintroduceCostBench, a scalable, cost-centric benchmark designed to evaluate\nagents'economic reasoningandreplanning abilities. Situated in thetravel-planning domain,CostBenchcomprises tasks solvable via multiple\nsequences of atomic andcomposite toolswith diverse, customizable costs. It\nalso supports four types ofdynamic blocking events, such astool failuresandcost changes, to simulate real-world unpredictability and necessitate agents to\nadapt in real time. Evaluating leading open-sourced and proprietary models onCostBenchreveals a substantial gap in cost-aware planning: agents frequently\nfail to identifycost-optimal solutionsin static settings, with even GPT-5\nachieving less than 75%exact match rateon the hardest tasks, and performance\nfurther dropping by around 40% under dynamic conditions. By diagnosing these\nweaknesses,CostBenchlays the groundwork for developing future agents that are\nboth economically rational and robust. This paper reveals SOTA LLMs' significant deficiencies in cost-optimal planning, stemming from high sensitivity to cost variations and insufficient coverage of potential paths in their strategies. Performance deteriorates further under dynamic disruptions like tool failures or cost changes, emphasizing limitations in adaptive capabilities. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "CostBench: Evaluating Multi-Turn Cost-Optimal Planning and Adaptation in\n  Dynamic Environments for LLM Tool-Use Agents",
+    "title": "CostBench: Evaluating Multi-Turn Cost-Optimal Planning and Adaptation in\n  Dynamic Environments for LLM Tool-Use Agents",
+    "authors": [
+      "Jiayu Liu"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/JiayuJeff/CostBench",
     "huggingface_url": "https://huggingface.co/papers/2511.02734",
     "upvote": 20,
-    "tag1": "cost",
-    "tag2": "agent",
-    "tag3": "planning"
+    "tags": [
+      "cost changes",
+      "models oncostbenchreveals",
+      "language agents"
+    ]
   }
 }

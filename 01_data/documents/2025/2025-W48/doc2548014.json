@@ -1,12 +1,20 @@
 {
   "context": "MedSAM-3, a text-promptable medical segmentation model fine-tuned on SAM 3 architecture, achieves superior performance across various medical imaging modalities using semantic conceptual labels and multimodal large language models. Medical image segmentation is fundamental for biomedical discovery. Existing methods lack generalizability and demand extensive, time-consuming manual annotation for new clinical application. Here, we propose MedSAM-3, atext promptablemedical segmentationmodel for medical image andvideosegmentation. By fine-tuning theSegment Anything Model (SAM)3 architecture on medical images paired with semantic conceptual labels, our MedSAM-3 enables medicalPromptable Concept Segmentation (PCS), allowing precise targeting of anatomical structures via open-vocabulary text descriptions rather than solely geometric prompts. We further introduce the MedSAM-3 Agent, a framework that integratesMultimodal Large Language Models (MLLMs)to perform complex reasoning and iterative refinement in an agent-in-the-loop workflow. Comprehensive experiments across diverse medical imaging modalities, includingX-ray,MRI,Ultrasound,CT, andvideo, demonstrate that our approach significantly outperforms existing specialist and foundation models. We will release our code and model at https://github.com/Joey-S-Liu/MedSAM3. Medical image segmentation is fundamental for biomedical discovery. Existing methods lack generalizability and demand extensive, time-consuming manual annotation for new clinical application. Here, we propose MedSAM-3, a text promptable medical segmentation model for medical image and video segmentation. By fine-tuning the Segment Anything Model (SAM) 3 architecture on medical images paired with semantic conceptual labels, our MedSAM-3 enables medical Promptable Concept Segmentation (PCS), allowing precise targeting of anatomical structures via open-vocabulary text descriptions rather than solely geometric prompts. We further introduce the MedSAM-3 Agent, a framework that integrates Multimodal Large Language Models (MLLMs) to perform complex reasoning and iterative refinement in an agent-in-the-loop workflow. Comprehensive experiments across diverse medical imaging modalities, including X-ray, MRI, Ultrasound, CT, and video, demonstrate that our approach significantly outperforms existing specialist and foundation models. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/medsam3-delving-into-segment-anything-with-medical-concepts ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "MedSAM3: Delving into Segment Anything with Medical Concepts",
+    "title": "MedSAM3: Delving into Segment Anything with Medical Concepts",
+    "authors": [
+      "Anglin Liu",
+      "Xu R. Cao",
+      "Yifan Shen"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/Joey-S-Liu/MedSAM3",
     "huggingface_url": "https://huggingface.co/papers/2511.19046",
     "upvote": 48,
-    "tag1": "medical",
-    "tag2": "medsam",
-    "tag3": "segmentation"
+    "tags": [
+      "recommended semantic",
+      "segmentation pcs",
+      "medsam3 medical"
+    ]
   }
 }

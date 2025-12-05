@@ -1,12 +1,16 @@
 {
   "context": "UFO$^3$ unifies heterogeneous devices into a single orchestration fabric, enabling seamless task collaboration and dynamic optimization across distributed environments. Large language model (LLM)-powered agents are transforming digital devices from passive tools into proactive intelligent collaborators. However, most existing frameworks remain confined to a single OS or device, making cross-device workflows brittle and largely manual. We present UFO^3, a system that unifies heterogeneous endpoints, desktops, servers, mobile devices, and edge, into a single orchestration fabric. UFO^3 models each user request as a mutableTaskConstellation: a distributedDAGof atomic subtasks (TaskStars) with explicit control and data dependencies (TaskStarLines). TheTaskConstellationcontinuously evolves as results stream in from distributed devices, enabling asynchronous execution, adaptive recovery, and dynamic optimization. AConstellation Orchestrator} executes tasks safely and asynchronously while applying dynamicDAGupdates, and theAgent Interaction Protocol(AIP) provides persistent, low-latency channels for reliable task dispatch and result streaming. These designs dissolve the traditional boundaries between devices and platforms, allowing agents to collaborate seamlessly and amplify their collective intelligence.\n  We evaluate UFO^3 onNebulaBench, a benchmark of 55 cross-device tasks across 5 machines and 10 categories. UFO^3 achieves 83.3% subtask completion, 70.9% task success, exposesparallelismwith an average width of 1.72, and reducesend-to-end latencyby 31% relative to a sequential baseline.Fault-injectionexperiments demonstrate graceful degradation and recovery under transient and permanent agent failures. These results show that UFO^3 achieves accurate, efficient, and resilient task orchestration across heterogeneous devices, uniting isolated agents into a coherent,adaptive computing fabricthat extends across the landscape ofubiquitous computing. UFO³: Weaving the Digital Agent Galaxy] Video demo:https://www.youtube.com/watch?v=NGrVWGcJL8o This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "UFO^3: Weaving the Digital Agent Galaxy",
+    "title": "UFO^3: Weaving the Digital Agent Galaxy",
+    "authors": [],
+    "publication_year": 2025,
     "github_url": "https://github.com/microsoft/UFO/",
     "huggingface_url": "https://huggingface.co/papers/2511.11332",
     "upvote": 18,
-    "tag1": "device",
-    "tag2": "ufo",
-    "tag3": "agent"
+    "tags": [
+      "orchestration fabric",
+      "subtasks taskstars",
+      "distributeddagof atomic"
+    ]
   }
 }

@@ -1,12 +1,16 @@
 {
   "context": "An error-driven framework, DEER-3D, improves the grounding accuracy of 3D large language models by iteratively editing and retraining them with targeted counterfactuals. Despite recent progress in3D-LLMs, they remain limited in accurately grounding language to visual and spatial elements in 3D environments. This limitation stems in part from training data that focuses on language reasoning rather than spatial understanding due to scarce 3D resources, leaving inherent grounding biases unresolved. To address this, we propose 3D scene editing as a key mechanism to generate precisevisual counterfactualsthat mitigate these biases through fine-grainedspatial manipulation, without requiring costly scene reconstruction or large-scale 3D data collection. Furthermore, to make these edits targeted and directly address the specific weaknesses of the model, we introduceDEER-3D, an error-driven framework following a structured \"Decompose, Diagnostic Evaluation, Edit, and Re-train\" workflow, rather than broadly or randomly augmenting data as in conventional approaches. Specifically, upon identifying a grounding failure of the 3D-LLM, our framework first diagnoses the exactpredicate-level error(e.g., attribute or spatial relation). It then executes minimal, predicate-aligned 3D scene edits, such as recoloring or repositioning, to produce targeted counterfactual supervision for iterative model fine-tuning, significantly enhancing grounding accuracy. We evaluate our editing pipeline across multiple benchmarks for3D groundingandscene understandingtasks, consistently demonstrating improvements across all evaluated datasets through iterative refinement.DEER-3Dunderscores the effectiveness of targeted, error-driven scene editing in bridging linguistic reasoning capabilities with spatial grounding in 3D LLMs. Code:https://github.com/zhangyuejoslin/Deer-3D This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Error-Driven Scene Editing for 3D Grounding in Large Language Models",
+    "title": "Error-Driven Scene Editing for 3D Grounding in Large Language Models",
+    "authors": [],
+    "publication_year": 2025,
     "github_url": "https://github.com/zhangyuejoslin/Deer-3D",
     "huggingface_url": "https://huggingface.co/papers/2511.14086",
     "upvote": 4,
-    "tag1": "grounding",
-    "tag2": "editing",
-    "tag3": "error"
+    "tags": [
+      "grounding language",
+      "benchmarks for3d",
+      "iteratively editing"
+    ]
   }
 }

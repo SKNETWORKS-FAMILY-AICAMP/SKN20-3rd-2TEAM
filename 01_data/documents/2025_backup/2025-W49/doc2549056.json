@@ -1,0 +1,12 @@
+{
+  "context": "PRIS adaptively revises prompts during inference to enhance alignment with user intent in text-to-visual generation, improving accuracy and quality. Achieving precise alignment between user intent and generated visuals remains a central challenge in text-to-visual generation, as a single attempt often fails to produce the desired output. To handle this, prior approaches mainly scale the visual generation process (e.g., increasing sampling steps or seeds), but this quickly leads to a quality plateau. This limitation arises because the prompt, crucial for guiding generation, is kept fixed. To address this, we proposePrompt Redesign for Inference-time Scaling, coinedPRIS, a framework that adaptively revises the prompt during inference in response to the scaled visual generations. The core idea ofPRISis to review the generated visuals, identify recurring failure patterns across visuals, and redesign the prompt accordingly before regenerating the visuals with the revised prompt. To provide precise alignment feedback for prompt revision, we introduce a new verifier,element-level factual correction, which evaluates the alignment between prompt attributes and generated visuals at a fine-grained level, achieving more accurate and interpretable assessments than holistic measures. Extensive experiments on bothtext-to-imageandtext-to-videobenchmarks demonstrate the effectiveness of our approach, including a 15% gain onVBench 2.0. These results highlight that jointly scaling prompts and visuals is key to fully leveragingscaling lawsat inference-time. Visualizations are available at the website: https://subin-kim-cv.github.io/PRIS. Scaling visuals with prompts redesigned for the scaled outputs → break the plateau.Simply scaling visuals with a fixed prompt quickly hits a performance ceiling - generations repeatedly exhibit the same recurring failure patterns even as compute grows. By redesigning the prompt to directly address these failure patterns at the new visual scale, we break through this plateau, achieving steadily improving generations and much higher prompt-adherence for both seen and unseen rewards as compute scales. ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Rethinking Prompt Design for Inference-time Scaling in Text-to-Visual Generation",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.03534",
+    "upvote": 12,
+    "tag1": "prompt",
+    "tag2": "visuals",
+    "tag3": "generation"
+  }
+}

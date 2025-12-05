@@ -1,12 +1,21 @@
 {
   "context": "Step-Audio-EditX, an open-source LLM-based audio model, excels in expressive and iterative audio editing and zero-shot TTS using large-margin synthetic data. We present Step-Audio-EditX, the first open-sourceLLM-based audio modelexcelling at expressive anditerative audio editingencompassing emotion,speaking style, andparalinguisticsalongside robustzero-shot text-to-speech(TTS) capabilities.Our core innovation lies in leveraging only large-margin\nsynthetic data, which circumvents the need for embedding-based priors or\nauxiliary modules. Thislarge-margin learningapproach enables both iterative\ncontrol and high expressivity across voices, and represents a fundamental pivot\nfrom the conventional focus onrepresentation-level disentanglement. Evaluation\nresults demonstrate that Step-Audio-EditX surpasses both MiniMax-2.6-hd and\nDoubao-Seed-TTS-2.0 inemotion editingand other fine-grained control tasks. 床前明月光 Is this multilingual? ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Step-Audio-EditX Technical Report",
+    "title": "Step-Audio-EditX Technical Report",
+    "authors": [
+      "Boyong Wu",
+      "Guoqiang Hu",
+      "Xuerui Yang",
+      "Xiangyu Zhang"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.03601",
     "upvote": 28,
-    "tag1": "audio editx",
-    "tag2": "keyword2",
-    "tag3": "keyword3"
+    "tags": [
+      "shot text",
+      "audio modelexcelling",
+      "editingencompassing emotion"
+    ]
   }
 }

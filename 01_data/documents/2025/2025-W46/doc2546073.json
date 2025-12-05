@@ -1,12 +1,16 @@
 {
   "context": "BACo, a token-level collaboration framework for LLMs, enhances output diversity and quality through dynamic routing without degrading performance. Alignment has greatly improvedlarge language models(LLMs)' output quality at the cost of diversity, yielding highly similar outputs across generations. We proposeBase-Aligned Model Collaboration(BACo), an inference-timetoken-level model collaborationframework that dynamically combines a base LLM with its aligned counterpart to optimize diversity and quality. Inspired by prior work (Fei et al., 2025),BACoemploysrouting strategiesthat determine, at each token, from which model to decode based onnext-token prediction uncertaintyand predicted contents'semantic role. Priordiversity-promoting methods, such asretraining,prompt engineering, andmulti-sampling methods, improve diversity but often degrade quality or require costly decoding or post-training. In contrast,BACoachieves both high diversity and quality post hoc within a single pass, while offering strong controllability. We explore a family ofrouting strategies, across threeopen-ended generation tasksand 13 metrics covering diversity and quality,BACoconsistently surpasses state-of-the-art inference-time baselines. With our best router,BACoachieves a 21.3% joint improvement in diversity and quality. Human evaluations also mirror these improvements. The results suggest that collaboration between base and aligned models can optimize and control diversity and quality. Tired of aligned LLMs losing their creativity? 🤖Alignment improves LLM quality but badly hurts output diversity. This \"diversity-quality trade-off\" forces a choice: do you want creative answers or high-quality ones?What if you could have both?Excited to share our new paper:BACO (Base-Aligned Model Collaboration)!BACO is a new inference-time framework that gets the best of both worlds. It dynamically \"collaborates\" between a base LLM (for high diversity) and its aligned counterpart (for high quality) at the token level.🚀 The result: A 21.3% joint improvement in diversity & quality—all in a single pass with no costly retraining. CodeDataAwesome LLM Diversity Reading List This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Optimizing Diversity and Quality through Base-Aligned Model Collaboration",
+    "title": "Optimizing Diversity and Quality through Base-Aligned Model Collaboration",
+    "authors": [],
+    "publication_year": 2025,
     "github_url": "https://www.github.com/YichenZW/base-align-collab",
     "huggingface_url": "https://huggingface.co/papers/2511.05650",
     "upvote": 4,
-    "tag1": "diversity quality",
-    "tag2": "keyword2",
-    "tag3": "keyword3"
+    "tags": [
+      "token decode",
+      "diversity quality",
+      "dynamically collaborates"
+    ]
   }
 }

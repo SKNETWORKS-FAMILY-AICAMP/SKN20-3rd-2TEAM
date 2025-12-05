@@ -1,12 +1,18 @@
 {
   "context": "Jr. AI Scientist, an autonomous AI system, mimics novice researcher workflows to generate scientifically valuable papers, outperforming fully automated systems but with identified limitations and risks. Understanding the current capabilities and risks ofAI Scientistsystems is\nessential for ensuring trustworthy and sustainable AI-driven scientific\nprogress while preserving the integrity of the academic ecosystem. To this end,\nwe develop Jr.AI Scientist, a state-of-the-artautonomous AI scientistsystem\nthat mimics the coreresearch workflowof a novice student researcher: Given\nthe baseline paper from the human mentor, it analyzes its limitations,\nformulates novel hypotheses for improvement, validates them through rigorous\nexperimentation, and writes a paper with the results. Unlike previous\napproaches that assume full automation or operate on small-scale code, Jr. AI\nScientist follows a well-definedresearch workflowand leverages modern coding\nagents to handle complex, multi-file implementations, leading to scientifically\nvaluable contributions. For evaluation, we conducted automated assessments\nusingAI Reviewers, author-led evaluations, and submissions toAgents4Science,\na venue dedicated toAI-driven scientific contributions. The findings\ndemonstrate that Jr.AI Scientistgenerates papers receiving higher review\nscores than existing fully automated systems. Nevertheless, we identify\nimportant limitations from both the author evaluation and theAgents4Sciencereviews, indicating the potential risks of directly applying current AI\nScientist systems and key challenges for future research. Finally, we\ncomprehensively report various risks identified during development. We hope\nthese insights will deepen understanding of current progress and risks in AI\nScientist development. This paper presents a comprehensive report on the development of a state-of-the-art (SOTA) AI Scientist and the associated risks. 💎 Achievements Developed Jr. AI Scientist, a SOTA autonomous AI Scientist system specialized in baseline extension research that mirrors the workflow of an early-stage student researcher. With the permission of the original paper authors, allowed Jr. AI Scientist to generate papers building upon real NeurIPS and ICLR papers — achieving higher scores than existing AI-generated research papers. Conducted an in-depth analysis of the fundamental limitations of Jr. AI Scientist through evaluations by the authors and Agents4Science. Comprehensively reported various risks identified during development (e.g., review hacking and incorrect citations). Through this report, we aim to contribute to a deeper understanding of AI Scientists. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Jr. AI Scientist and Its Risk Report: Autonomous Scientific Exploration\n  from a Baseline Paper",
+    "title": "Jr. AI Scientist and Its Risk Report: Autonomous Scientific Exploration\n  from a Baseline Paper",
+    "authors": [
+      "Atsuyuki Miyai"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.04583",
     "upvote": 1,
-    "tag1": "scientist",
-    "tag2": "risk",
-    "tag3": "system"
+    "tags": [
+      "author evaluation",
+      "ai driven",
+      "researcher workflows"
+    ]
   }
 }

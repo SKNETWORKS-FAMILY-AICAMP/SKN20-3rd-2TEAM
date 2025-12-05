@@ -1,0 +1,12 @@
+{
+  "context": "This paper presents a strategy to allocate services on a Cloud system without overloading nodes and maintaining the system stability with minimum cost. We specify an abstract model of cloud resources utilization, including multiple types of resources as well as considerations for the service migration costs. A prototype meta-heuristic load balancer is demonstrated and experimental results are presented and discussed. We also propose a novel genetic algorithm, where population is seeded with the outputs of other meta-heuristic algorithms. This paper presents a strategy to allocate services on a Cloud system without overloading nodes and maintaining the system stability with minimum cost. We specify an abstract model of cloud resources utilization, including multiple types of resources as well as considerations for the service migration costs. A prototype meta-heuristic load balancer is demonstrated and experimental results are presented and discussed. We also propose a novel genetic algorithm, where population is seeded with the outputs of other meta-heuristic algorithms. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "A Meta-Heuristic Load Balancer for Cloud Computing Systems",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.11721",
+    "upvote": 0,
+    "tag1": "algorithm",
+    "tag2": "cloud",
+    "tag3": "cost"
+  }
+}

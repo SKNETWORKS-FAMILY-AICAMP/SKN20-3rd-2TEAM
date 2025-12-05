@@ -1,12 +1,19 @@
 {
   "context": "Converting pretrained non-recurrent language models to depth-recurrent models improves performance at a given compute budget using a curriculum of recurrences. Recent advances indepth-recurrent language modelsshow thatrecurrencecan\ndecouple train-time compute and parameter count from test-time compute. In this\nwork, we study how to convert existing pretrained non-recurrent language models\ninto depth-recurrent models. We find that using acurriculum of recurrencesto\nincrease theeffective depthof the model over the course of training preserves\nperformance while reducing totalcomputational cost. In our experiments, onmathematics, we observe that converting pretrained models to recurrent ones\nresults in better performance at a given compute budget than simplypost-trainingthe original non-recurrent language model. Model Collection:https://huggingface.co/collections/tomg-group-umd/retrofitting-recurrence This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Teaching Pretrained Language Models to Think Deeper with Retrofitted\n  Recurrence",
+    "title": "Teaching Pretrained Language Models to Think Deeper with Retrofitted\n  Recurrence",
+    "authors": [
+      "Sean McLeish",
+      "Ang Li"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/mcleish7/retrofitting-recurrence",
     "huggingface_url": "https://huggingface.co/papers/2511.07384",
     "upvote": 16,
-    "tag1": "recurrent",
-    "tag2": "compute",
-    "tag3": "language"
+    "tags": [
+      "recurrencesto increase",
+      "language collection",
+      "models depth"
+    ]
   }
 }

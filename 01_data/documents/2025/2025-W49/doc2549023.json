@@ -1,12 +1,21 @@
 {
-  "context": "Geometrically-Constrained Agent (GCA) addresses the semantic-to-geometric gap in vision language models by decoupling semantic analysis and task solving with formal constraints, achieving state-of-the-art performance in spatial reasoning. Vision Language Models(VLMs) exhibit a fundamentalsemantic-to-geometric gapinspatial reasoning: they excel at qualitative semantic inference but their reasoning operates within a lossy semantic space, misaligned with high-fidelity geometry. Current paradigms fail to bridge this gap.Training-based methodssuffer from an ``oracle paradox,'' learning flawed spatial logic from imperfect oracles.Tool-integrated methodsconstrain the final computation but critically leave the VLM's planning process unconstrained, resulting in geometrically flawed plans. In this work, we proposeGeometrically-Constrained Agent(GCA), a training-free agentic paradigm that resolves this gap by introducing aformal task constraint. Specifically, we strategically decouples the VLM's role into two stages. First, acting as asemantic analyst, the VLM translates the user's ambiguous query into the formal, verifiable task constraint, which defines the reference frame and objective. Second, acting as atask solver, the VLM generates and executes tool calls strictly within thedeterministic boundsdefined by the constraint. This geometrically-constrained reasoning strategy successfully resolve thesemantic-to-geometric gap, yielding a robust and verifiable reasoning pathway forspatial reasoning. Comprehensive experiments demonstrate that GCA achieves SOTA performance on multiplespatial reasoning benchmarks, surpassing existing training-based andtool-integrated methodsby ~27%. Please see our homepage at https://gca-spatial-reasoning.github.io. HomePage:https://gca-spatial-reasoning.github.ioCode:https://github.com/gca-spatial-reasoning/gca This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "Bridge Models, instantiated as Vision Bridge Transformer (ViBT), efficiently translate data through direct modeling of input-to-output trajectories, achieving robust performance in image and video editing tasks at large scales. We introduceVision Bridge Transformer (ViBT), a large-scale instantiation ofBrownian Bridge Modelsdesigned for conditional generation. Unlike traditionaldiffusion modelsthat transform noise into data, Bridge Models directly model the trajectory between inputs and outputs, creating an efficientdata-to-data translationparadigm. By scaling these models to 20B and 1.3B parameters, we demonstrate their effectiveness for image and video translation tasks. To support this scale, we adopt a Transformer architecture and propose avariance-stabilized velocity-matching objectivefor robust training. Together, these advances highlight the power of scaling Bridge Models for instruction-based image editing and complex video translation. 🚀 ViBT: The First Vision Bridge Transformer at 20B ParametersOpen-source • Data-to-Data Translation • Built for the Next Generation of Conditional Vision Models Project Page:https://yuanshi9815.github.io/ViBT_homepage/Paper:https://arxiv.org/abs/2511.23199Code:https://github.com/Yuanshi9815/ViBTHF Demo:https://huggingface.co/spaces/Yuanshi/ViBTHF Model:https://huggingface.co/Yuanshi/ViBT  Let's go ! Look very similar to LBM You are right! I guess we’re building on the same Brownian Bridge model paradigm to learn the distribution. The difference is on thescaling: stabilized training objective, a much larger model with transformers, and more complex tasks. There’s a huge opportunity for bridge models. I guess more will come soon. 🔍 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Geometrically-Constrained Agent for Spatial Reasoning",
-    "github_url": "https://github.com/gca-spatial-reasoning/gca",
-    "huggingface_url": "https://huggingface.co/papers/2511.22659",
-    "upvote": 36,
-    "tag1": "reasoning",
-    "tag2": "gca",
-    "tag3": "semantic"
+    "title": "Vision Bridge Transformer at Scale",
+    "authors": [
+      "Zhenxiong Tan",
+      "Zeqing Wang",
+      "Xingyi Yang",
+      "Songhua Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Yuanshi9815/ViBT",
+    "huggingface_url": "https://huggingface.co/papers/2511.23199",
+    "upvote": 41,
+    "tags": [
+      "transformer vibt",
+      "velocity matching",
+      "image editing"
+    ]
   }
 }

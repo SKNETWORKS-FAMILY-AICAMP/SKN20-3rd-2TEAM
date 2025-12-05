@@ -1,12 +1,18 @@
 {
   "context": "Video generative models can interpret and execute visual instructions embedded within frames, enhancing controllability in image-to-video generation. Large-scalevideo generative modelshave recently demonstrated strong visual capabilities, enabling the prediction of future frames that adhere to the logical and physical cues in the current observation. In this work, we investigate whether such capabilities can be harnessed for controllable image-to-video generation by interpreting visual signals embedded within the frames as instructions, a paradigm we termIn-Video Instruction. In contrast toprompt-based control, which provides textual descriptions that are inherently global and coarse,In-Video Instructionencodes user guidance directly into the visual domain through elements such asoverlaid text,arrows, ortrajectories. This enables explicit,spatial-aware, and unambiguous correspondences between visual subjects and their intended actions by assigning distinct instructions to different objects. Extensive experiments on three state-of-the-art generators, includingVeo 3.1,Kling 2.5, andWan 2.2, show that video models can reliably interpret and execute such visually embedded instructions, particularly in complexmulti-object scenarios. Project Page:https://fangggf.github.io/In-Video/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "In-Video Instructions: Visual Signals as Generative Control",
+    "title": "In-Video Instructions: Visual Signals as Generative Control",
+    "authors": [
+      "Xinyin Ma"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.19401",
     "upvote": 29,
-    "tag1": "video",
-    "tag2": "instruction",
-    "tag3": "visual"
+    "tags": [
+      "execute visually",
+      "large scalevideo",
+      "video instructionencodes"
+    ]
   }
 }

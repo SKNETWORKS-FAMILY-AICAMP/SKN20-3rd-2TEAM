@@ -1,12 +1,20 @@
 {
   "context": "BEAT is a framework that injects visual backdoors into MLLM-based embodied agents using object triggers, achieving high attack success rates while maintaining task performance. Multimodal large language models(MLLMs) have advancedembodied agentsby\nenabling direct perception, reasoning, and planning task-oriented actions from\nvisual inputs. However, such vision drivenembodied agentsopen a new attack\nsurface:visual backdoor attacks, where the agent behaves normally until a\nvisual trigger appears in the scene, then persistently executes an\nattacker-specified multi-step policy. We introduceBEAT, the first framework to\ninject such visual backdoors into MLLM-basedembodied agentsusing objects in\nthe environments as triggers. Unlike textual triggers, object triggers exhibit\nwide variation across viewpoints and lighting, making them difficult to implant\nreliably.BEATaddresses this challenge by (1) constructing a training set that\nspans diverse scenes, tasks, and trigger placements to expose agents to trigger\nvariability, and (2) introducing a two-stage training scheme that first appliessupervised fine-tuning(SFT) and then our novelContrastive Trigger Learning(CTL).CTLformulates trigger discrimination aspreference learningbetween\ntrigger-present and trigger-free inputs, explicitly sharpening the decision\nboundaries to ensure precise backdoor activation. Across various embodied agent\nbenchmarks andMLLMs,BEATachieves attack success rates up to 80%, while\nmaintaining strong benign task performance, and generalizes reliably toout-of-distribution trigger placements. Notably, compared to naiveSFT,CTLboostsbackdoor activation accuracyup to 39% under limited backdoor data.\nThese findings expose a critical yet unexplored security risk in MLLM-basedembodied agents, underscoring the need for robust defenses before real-world\ndeployment. BEAT is the first framework to demonstrate visual backdoor attacks on multimodal large language model (MLLM) based embodied agents. By fine-tuning the backbone MLLM to implant a backdoor, agents behave normally in trigger-free scenes but switch to an attacker-specified policy when a specific object trigger appears. BEAT injects robust backdoors through diverse training scenes and a two-stage procedure: supervised fine-tuning followed by novel Contrastive Trigger Learning (CTL) to sharpen trigger discrimination. Across multiple agents and benchmarks, BEAT achieves up to 80% attack success while preserving benign task performance. ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive\n  Trigger Learning",
+    "title": "Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive\n  Trigger Learning",
+    "authors": [
+      "Qiusi Zhan",
+      "Rui Yang",
+      "Sirui Xu"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.27623",
     "upvote": 12,
-    "tag1": "trigger",
-    "tag2": "agent",
-    "tag3": "backdoor"
+    "tags": [
+      "injects visual",
+      "performance multimodal",
+      "backdoor agents"
+    ]
   }
 }

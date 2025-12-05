@@ -9,8 +9,7 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 
 import nltk
-# from nltk.corpus import stopwords
-# from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
 from keybert import KeyBERT
 
 # NLTK 불용어 다운로드
@@ -28,6 +27,7 @@ HEADERS = {
 }
 
 # 불용어 로드
+nltk_stopwords = set(stopwords.words('english'))
 # 도메인 특화 불용어 추가 (선택적)
 custom_stopwords = {
     "the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for",
@@ -41,6 +41,8 @@ custom_stopwords = {
     "approach", "method", "model", "based", "results", "work",
     "task", "tasks", "result", "results", "data"
 }
+
+all_stopwords = nltk_stopwords.union(custom_stopwords)
 
 
 # KeyBERT를 사용하여 keyword 추출
@@ -65,10 +67,10 @@ def extract_keywords(text: str, top_n: int = 3) -> List[str]:
         # 키워드 추출 (불용어 제거)
         keywords = kw_model.extract_keywords(
             text,
-            keyphrase_ngram_range=(1, 2),
-            stop_words=list(custom_stopwords),
+            keyphrase_ngram_range=(1, 2),   # 1~2단어 키워드
+            stop_words=list(all_stopwords),
             top_n=top_n,
-            use_maxsum=True,
+            use_maxsum=True     # 다양성 확보
         )
 
         # (keyword, score) 튜플에서 keyword만 추출
@@ -81,7 +83,7 @@ def extract_keywords(text: str, top_n: int = 3) -> List[str]:
         return result[:top_n]
 
     except Exception as e:
-        print(f"⚠️  키워드 추출 실패: {e}")
+        print(f"[WARNING]  키워드 추출 실패: {e}")
         return [f"keyword{i+1}" for i in range(top_n)]
 
 
@@ -280,6 +282,7 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
     return doc_id
 
 
+# 메인 함수
 def crawl_weekly_papers(year: int, week: int):
     """
     특정 주차의 HuggingFace DailyPapers 크롤링
@@ -339,7 +342,7 @@ def crawl_weekly_papers(year: int, week: int):
 
         # Error 429 방지 - 40개마다 휴식
         if (index + 1) % 40 == 0 and index + 1 < len(papers):
-            print(f"\n💤 {index+1}개 처리 완료, 160초 휴식...")
+            print(f"\n[BREAK] {index+1}개 처리 완료, 160초 휴식...")
             time.sleep(160)
 
     # 3. 통계 출력
@@ -355,7 +358,7 @@ if __name__ == "__main__":
     print("=== HuggingFace DailyPapers 크롤러 ===\n")
 
     # 크롤링 실행 예시 (2025년 45~49주차)
-    for week in range(45, 46):
+    for week in range(47, 50):
         try:
             crawl_weekly_papers(year=2025, week=week)
         except Exception as e:
