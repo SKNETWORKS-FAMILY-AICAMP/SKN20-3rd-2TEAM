@@ -10,16 +10,13 @@
 4. sentence-transformers/allenai-specter (scientific papers)
 5. OpenAI text-embedding-3-small
 6. BAAI/bge-m3
-7. E5-Mistral / Jina-embeddings (Jina v2, v3)
+7. Jina-embeddings (Jina v2)
 8. paraphrase-multilingual-mpnet-base-v2
 
 평가 방법:
 - 테스트 쿼리에 대한 검색 성능 측정
 - Cosine similarity 기반 Recall@k, MRR 계산
 - 각 쿼리에 대해 관련 문서가 상위에 포함되는지 평가
-
-Version: 1.0
-Author: SKN20-3rd-2TEAM
 """
 
 import os
@@ -34,6 +31,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from langchain_core.documents import Document
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings
+from transformers import AutoModel
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -133,7 +131,7 @@ def init_models() -> Dict[str, any]:
     """
     models = {}
 
-    logger.info("[모델 초기화] 5개 임베딩 모델 로딩 시작...")
+    logger.info("[모델 초기화] 8개 임베딩 모델 로딩 시작...")
 
     # 1. all-MiniLM-L6-v2 (384 dim, 빠름)
     try:
@@ -202,16 +200,16 @@ def init_models() -> Dict[str, any]:
     except Exception as e:
         logger.error(f"✗ BGE-M3 로딩 실패: {e}")
 
-    # 7. E5-Mistral / Jina-embeddings (Jina v2, v3)
+    # 7. 'jinaai/jina-embeddings-v2-base-en'
     try:
-        models["E5-Base"] = HuggingFaceEmbeddings(
-            model_name="intfloat/e5-base-v2",
-            model_kwargs={'device': 'cpu'},
-            encode_kwargs={'normalize_embeddings': True}
+        models["Jina-v2"] = AutoModel.from_pretrained(
+            "jinaai/jina-embeddings-v2-base-en",
+            trust_remote_code=True,
+            device="cpu"
         )
-        logger.info("✓ E5-Base 로딩 완료")
+        logger.info("✓ Jina-v2 로딩 완료")
     except Exception as e:
-        logger.error(f"✗ E5-Base 로딩 실패: {e}")
+        logger.error(f"✗ Jina-v2 로딩 실패: {e}")
 
     # 8. paraphrase-multilingual-mpnet-base-v2 (768 dim, 다국어 지원)
     try:
