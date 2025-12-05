@@ -30,8 +30,8 @@ class SimpleRAGSystem:
         self.vectorstore = vectorstore
         self.llm = llm
         self.retriever = vectorstore.as_retriever(search_type = 'similarity', search_kwargs={'k':retriever_k})
-        # self.retriever_chain = self._retriever_basic_chain()
         self.chain = self._build_chain()
+        self.chat_history = []
     
 
     def _build_chain(self): ### ---------> 최종 사용자에게 전달되는 프롬프트 수정
@@ -126,6 +126,9 @@ class SimpleRAGSystem:
     ("human", """
     [QUESTION]
     {question}
+     
+    [CHAT HISTORY]
+    {chat_history}
 
      [Context]
     The following CONTEXT block may contain 0 or more papers. 
@@ -152,7 +155,7 @@ class SimpleRAGSystem:
             {
                 "context": self.retriever | self._format_docs,
                 "question": RunnablePassthrough(),
-                "chat_history": lambda x: ""
+                "chat_history": lambda _: self._format_chat_history()
             }
             | prompt
             | self.llm
@@ -202,14 +205,49 @@ class SimpleRAGSystem:
         return "\n\n".join(lines)
 
 
+    def _format_chat_history(self):
+        """저장된 대화 리스트를 하나의 문자열로 구성"""
+        if not self.chat_history:
+            return "(no previous conversation)"
+
+        history_lines = []
+        for turn in self.chat_history:
+            history_lines.append(f"User: {turn['user']}")
+            history_lines.append(f"Assistant: {turn['assistant']}")
+        return "\n".join(history_lines)
+
+    def chat(self, user_message: str) -> str:
+        """대화 모드: 히스토리 저장 + RAG 답변"""
+        response = self.chain.invoke({
+            "question": user_message,
+            "chat_history": self._format_chat_history()
+        })
+
+        # 히스토리에 저장
+        self.chat_history.append({
+            "user": user_message,
+            "assistant": response
+        })
+
+        return response
+
+
+
     def ask(self, question:str) -> str:
         '''질문에 답변'''
-        return self.chain.invoke(question)
+        return self.chain.invoke({
+        "question": question,
+        "chat_history": self._format_chat_history()
+    })
+
     
 
     def ask_with_sources(self, question: str) -> dict:
         """질문에 답변 + 출처 반환"""
-        answer = self.chain.invoke(question)
+        answer = self.chain.invoke({
+        "question": question,
+        "chat_history": self._format_chat_history()
+    })
         source_docs = self.retriever.invoke(question)
 
         sources = []
@@ -284,3 +322,21 @@ if __name__ == '__main__' :
             print(f"  tags: {', '.join(src['tags'])}")
         if src["upvote"] is not None:
             print(f"  upvote: {src['upvote']}")
+
+
+    # --------------------------------------------------------
+    # 🔥 여기 아래 챗봇 모드 입력 루프 넣으면 됨!
+    # --------------------------------------------------------
+
+    print("\n=== AI Tech Trend Navigator Chatbot ===")
+    print("종료하려면 'exit' 또는 'quit' 입력\n")
+
+    while True:
+        user_msg = input("You: ")
+
+        if user_msg.lower() in ["exit", "quit"]:
+            print("챗봇 종료!")
+            break
+
+        answer = rag_system.chat(user_msg)
+        print(f"\nAssistant:\n{answer}\n")
