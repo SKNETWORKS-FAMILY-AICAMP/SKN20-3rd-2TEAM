@@ -1,19 +1,25 @@
 # pip install chromadb
 import os
+from pathlib import Path
 from dotenv import load_dotenv
-import chromadb
-from chromadb.config import Settings
-from tqdm import tqdm
-from config import EMBEDDINGS_DIR, DATA_DIR
-from embedding import load_embeddings
 
 load_dotenv()
 
+import chromadb
+from chromadb.config import Settings
+from llama_index.embeddings.openai import OpenAIEmbedding
+from tqdm import tqdm
+
+from embedding import load_embeddings
+
 # Chroma 설정
+# 경로 설정
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+DATA_DIR = PROJECT_ROOT / "01_data"
+
 CHROMA_DB_PATH = str(DATA_DIR / "chroma_db")
 COLLECTION_NAME = "rag-collection"
 BATCH_SIZE = 100  # Chroma upsert 배치 크기
-
 
 def create_chroma_client():
     """Chroma 클라이언트 생성"""
@@ -28,7 +34,6 @@ def create_chroma_client():
     )
     
     return client
-
 
 def create_or_get_collection(client):
     """Chroma 컬렉션 생성 또는 가져오기"""
@@ -58,7 +63,6 @@ def create_or_get_collection(client):
         )
     
     return collection
-
 
 def upload_to_chroma(embedded_chunks, collection):
     """임베딩된 청크를 Chroma에 업로드"""
@@ -106,7 +110,7 @@ def upload_to_chroma(embedded_chunks, collection):
 
 def test_search(collection, query_text="AI", n_results=3):
     """검색 테스트"""
-    from llama_index.embeddings.openai import OpenAIEmbedding
+    
     
     print("\n" + "=" * 60)
     print("검색 테스트")

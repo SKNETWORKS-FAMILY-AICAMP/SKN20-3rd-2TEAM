@@ -1,15 +1,26 @@
 # pip install llama-index-embeddings-openai
-from dotenv import load_dotenv
-load_dotenv()
 import os
-import pickle
 from pathlib import Path
+import pickle
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from llama_index.embeddings.openai import OpenAIEmbedding
-from chunking import load_chunks_from_pkl
 from tqdm import tqdm
 
-# config.py에서 경로 가져오기
-from config import EMBEDDINGS_DIR, CHUNKS_FILE, EMBEDDINGS_FILE, PROJECT_ROOT
+from chunking import load_chunks_from_pkl
+
+# 경로 설정
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+DATA_DIR = PROJECT_ROOT / "01_data"
+EMBEDDINGS_DIR = DATA_DIR / "embeddings"
+CHUNKS_DIR = DATA_DIR / "chunks"
+DOCUMENTS_DIR = DATA_DIR / "documents"
+
+# 파일 경로
+CHUNKS_FILE = CHUNKS_DIR / "chunks_all.pkl"
+EMBEDDINGS_FILE = EMBEDDINGS_DIR / "embeddings.pkl"
 
 BATCH_SIZE = 40   # 20~60 정도가 가장 안전하고 빠름
 
@@ -59,6 +70,9 @@ def embed_chunks_batch(chunks, embedding_model, batch_size=BATCH_SIZE):
 
 def save_embeddings(embedded_chunks, filename="embeddings.pkl"):
     """임베딩 결과를 pickle 파일로 저장"""
+    # 디렉토리 생성
+    EMBEDDINGS_DIR.mkdir(parents=True, exist_ok=True)
+
     output_path = EMBEDDINGS_DIR / filename  # config에서 가져온 경로 사용
     with open(output_path, 'wb') as f:
         pickle.dump(embedded_chunks, f)
