@@ -62,7 +62,9 @@ class PaperMetadata(BaseModel):
         ...     github_url="https://github.com/tensorflow/tensor2tensor",
         ...     huggingface_url="https://huggingface.co/papers/1706.03762",
         ...     upvote=219,
-        ...     tags=["transformers", "attention", "nlp"]
+        ...     tag1="transformers", 
+        ...     tag2="attention",
+        ...     tag3="nlp"
         ... )
     """
 
@@ -125,25 +127,23 @@ class PaperMetadata(BaseModel):
             logger.warning(f"[UPVOTE 타입 오류] 잘못된 타입: {type(v)}. 기본값 0 반환")
             return 0
 
-    @validator("tags")
+    @validator("tag1", "tag2", "tag3")
     def validate_tags(cls, v):
         """
-        Tags 검증 (비어있지 않은 문자열 3개)
+        Tag 검증
 
         Args:
-            v: Tags 리스트
+            v: Tag값
 
         Returns:
-            List[str]: 검증된 tags
+            str: 검증된 tag
 
         Raises:
             ValueError: 태그가 비어있거나 문자열이 아닌 경우
         """
-        for tag in v:
-            if not tag or not isinstance(tag, str):
-                raise ValueError(f"[태그 검증 실패] 잘못된 태그: {tag}")
+        if not v or not isinstance(v, str):
+            raise ValueError(f"[태그 검증 실패] 잘못된 태그: {v}")
         return v
-
     class Config:
         extra = "allow"  # 추가 필드 허용 (유연성)
 
@@ -163,7 +163,9 @@ class PaperDocument(BaseModel):
         ...         "paper_name": "Attention Is All You Need",
         ...         "huggingface_url": "https://huggingface.co/papers/1706.03762",
         ...         "upvote": 219,
-        ...         "tags": ["transformers", "attention", "nlp"]
+        ...         "tag1": "transformers",
+        ...         "tag2": "attention",
+        ...         "tag3": "nlp"
         ...     }
         ... )
     """

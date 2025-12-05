@@ -31,7 +31,7 @@ from typing import List, Dict, Any, Generator, Union, Optional
 
 from langchain_core.documents import Document
 
-import validators
+# import validators
 
 
 # ==================== 전역 설정 (Inline constants) ====================
@@ -168,7 +168,7 @@ def load_json_document(file_path: str) -> Dict[str, Any]:
         raise
 
     # Pydantic 모델로 검증
-    validators.validate_json_document(data)
+    # validators.validate_json_document(data)
 
     return data
 
