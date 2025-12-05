@@ -153,7 +153,7 @@ class SimpleRAGSystem:
             ])
         return (
             {
-                "context": self.retriever | self._format_docs,
+                "context": lambda x: self._format_docs(self.retriever.invoke(x["question"])),
                 "question": RunnablePassthrough(),
                 "chat_history": lambda _: self._format_chat_history()
             }
