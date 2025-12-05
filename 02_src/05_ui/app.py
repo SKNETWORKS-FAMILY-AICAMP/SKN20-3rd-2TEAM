@@ -55,7 +55,7 @@ def main():
     rag_system = load_rag_system(vectorstore)
 
     # UI 렌더링
-    render_header(keyword_manager)
+    render_header(keyword_manager, rag_system)
     render_chat_interface(rag_system)
     render_sidebar(keyword_manager)
 
