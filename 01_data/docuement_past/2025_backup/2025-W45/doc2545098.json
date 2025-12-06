@@ -1,0 +1,12 @@
+{
+  "context": "Introducing synthetic fallacy data through MisSynth enhances the zero-shot classification performance of large language models in detecting scientific misinformation. Health-related misinformation is very prevalent and potentially harmful. It\nis difficult to identify, especially when claims distort or misinterpret\nscientific findings. We investigate the impact ofsynthetic data generationandlightweight fine-tuningtechniques on the ability of large language models\n(LLMs) to recognize fallacious arguments using theMISSCI datasetand\nframework. In this work, we propose MisSynth, a pipeline that appliesretrieval-augmented generation (RAG)to produce synthetic fallacy samples,\nwhich are then used to fine-tune an LLM model. Our results show substantial\naccuracy gains with fine-tuned models compared to vanilla baselines. For\ninstance, the LLaMA 3.1 8B fine-tuned model achieved an over 35%F1-scoreabsolute improvement on the MISSCI test split over its vanilla baseline. We\ndemonstrate that introducing synthetic fallacy data to augment limited\nannotated resources can significantly enhance zero-shot LLM classification\nperformance on real-worldscientific misinformationtasks, even with limited\ncomputational resources. The code and synthetic dataset are available on\nhttps://github.com/mxpoliakov/MisSynth. MisSynthcombines Retrieval-Augmented Generation (RAG) to create context-aware synthetic data and Parameter-Efficient Fine-Tuning (PEFT) to fine-tune models. Our main claim is that this pipeline can significantly improve the performance of Large Language Models (LLMs) on the complex task of classifying scientific logical fallacies from theMISSCIdataset. We provide pieces of evidence to support our claims, primarily through benchmark comparisons on theMISSCItest split. The core evidence is the improvement in F1 scores for fine-tuned models compared to their vanilla baselines. The fine-tuned models surpassed the performance of much larger, state-of-the-art models reported in the original MISSCI paper. ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "MisSynth: Improving MISSCI Logical Fallacies Classification with\n  Synthetic Data",
+    "github_url": "https://github.com/mxpoliakov/MisSynth",
+    "huggingface_url": "https://huggingface.co/papers/2510.26345",
+    "upvote": 2,
+    "tag1": "fine",
+    "tag2": "synthetic",
+    "tag3": "fallacy"
+  }
+}

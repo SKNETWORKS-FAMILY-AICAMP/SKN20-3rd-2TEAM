@@ -1,0 +1,12 @@
+{
+  "context": "VLASH is an asynchronous inference framework for Vision-Language-Action models that achieves high speed and low latency without sacrificing accuracy, enabling precise robotic tasks like ping-pong and whack-a-mole. Vision-Language-Action models (VLAs) are becoming increasingly capable across diverse robotic tasks. However, their real-world deployment remains slow and inefficient: demonstration videos are often sped up by 5-10x to appear smooth, with noticeable action stalls and delayed reactions to environmental changes.Asynchronous inferenceoffers a promising solution to achieve continuous and low-latency control by enabling robots to execute actions and perform inference simultaneously. However, because the robot and environment continue to evolve during inference, atemporal misalignmentarises between the prediction and execution intervals. This leads to significantaction instability, while existing methods either degrade accuracy or introduce runtime overhead to mitigate it. We propose VLASH, a generalasynchronous inferenceframework for VLAs that delivers smooth, accurate, and fast reaction control without additional overhead or architectural changes. VLASH estimates the future execution-time state by rolling therobot stateforward with the previously generatedaction chunk, thereby bridging the gap between prediction and execution. Experiments show that VLASH achieves up to 2.03x speedup and reducesreaction latencyby up to 17.4x compared tosynchronous inferencewhile fully preserving the original accuracy. Moreover, it empowers VLAs to handle fast-reaction,high-precision taskssuch as playing ping-pong and playing whack-a-mole, where traditionalsynchronous inferencefails. Code is available at https://github.com/mit-han-lab/vlash This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "VLASH: Real-Time VLAs via Future-State-Aware Asynchronous Inference",
+    "github_url": "https://github.com/mit-han-lab/vlash",
+    "huggingface_url": "https://huggingface.co/papers/2512.01031",
+    "upvote": 21,
+    "tag1": "vlash",
+    "tag2": "action",
+    "tag3": "accuracy"
+  }
+}

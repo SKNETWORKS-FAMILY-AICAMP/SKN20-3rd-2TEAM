@@ -1,396 +1,295 @@
-"""
-RAG 기반 HuggingFace Papers 챗봇 텍스트 청킹 모듈
-
-주요 기능:
-1. RecursiveCharacterTextSplitter를 사용한 문서 청킹
-2. Chunk 결과를 .pkl 파일로 저장/로딩
-3. 메타데이터 보존 (doc_id, year, week, upvote 등)
-4. 청킹 통계 및 검증
-
-청킹 설정:
-- chunk_size: 100 (기본값, 논문 초록 기준 적절한 크기)
-- chunk_overlap: 10 (컨텍스트 보존)
-- separators: ["\n\n", "\n", ". ", " ", ""] (문단 우선 분리)
-
-청킹 전략:
-- 문단 우선 분리로 의미 단위 보존
-- 메타데이터 상속 (원본 Document의 metadata 유지)
-- Chunk index 추가 (같은 문서의 청크 추적)
-
-Version: 2.0 (Simplified)
-Author: SKN20-3rd-2TEAM
-"""
-
-import os
 import json
 import pickle
-import logging
 from pathlib import Path
-from typing import List, Optional, Dict, Any
+from typing import List
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from documents import load_all_documents, load_documents_by_week
 
-
-# ==================== 전역 설정 (Inline constants) ====================
-
-logger = logging.getLogger(__name__)
-
-# Project paths
+# 전역 경로 설정
+# 프로젝트 경로
 PROJECT_ROOT = Path(__file__).parent.parent.parent
+DOCUMENTS_DIR = PROJECT_ROOT / "01_data" / "documents"
 CHUNKS_DIR = PROJECT_ROOT / "01_data" / "chunks"
 
-# 청킹 설정
-DEFAULT_CHUNK_SIZE = 100
-DEFAULT_CHUNK_OVERLAP = 10
+# 문서 분리 기준
 DEFAULT_SEPARATORS = ["\n\n", "\n", ". ", " ", ""]
 
-# 파일 경로
-DEFAULT_CHUNKS_PKL = "chunks_all.pkl"
 
-
-# ==================== 청킹 함수 ====================
-
-def chunk_documents(
-    documents: List[Document],
-    chunk_size: int = DEFAULT_CHUNK_SIZE,
-    chunk_overlap: int = DEFAULT_CHUNK_OVERLAP,
-    separators: Optional[List[str]] = None
-) -> List[Document]:
+def load_json_files(use_weeks: int = 6) -> List[Document]:
     """
-    LangChain Document 리스트를 청크로 분할
+    최근 use_weeks주차의 JSON 문서 파일을 로딩
 
     Args:
-        documents: 원본 Document 리스트
-        chunk_size: 청크 크기 (기본값: 500)
-        chunk_overlap: 청크 오버랩 크기 (기본값: 50)
-        separators: 분리자 리스트 (기본값: ["\n\n", "\n", ". ", " ", ""])
+        use_weeks: 로딩할 최근 주차 수 (기본값: 6)
 
     Returns:
-        List[Document]: 청크된 Document 리스트 (메타데이터 보존)
+        LangChain Document 리스트
 
-    동작:
-        1. RecursiveCharacterTextSplitter 초기화
-        2. 각 문서를 청크로 분할
-        3. 각 청크에 chunk_index 메타데이터 추가
-        4. 원본 메타데이터 상속
-
-    예시:
-        >>> from utils import load_all_documents, chunk_documents
-        >>> docs = load_all_documents()
-        >>> chunks = chunk_documents(docs, chunk_size=500, chunk_overlap=50)
-        >>> print(f"원본: {len(docs)}개 → 청크: {len(chunks)}개")
-        원본: 506개 → 청크: 1523개
+    동작 방식:
+        1. 01_data/documents/ 폴더를 스캔
+        2. 최신 주차부터 use_weeks 만큼 JSON 파일 로딩
+        3. JSON의 context를 page_content로, metadata는 그대로 사용
     """
-    if separators is None:
-        separators = DEFAULT_SEPARATORS
+    print(f"\n[LOADING] 최근 {use_weeks}주차 JSON 문서 로딩 중...")
 
-    logger.info(
-        f"[청킹 시작] {len(documents)}개 문서, "
-        f"chunk_size={chunk_size}, overlap={chunk_overlap}"
-    )
+    if not DOCUMENTS_DIR.exists():
+        print(f"[NOTFOUND] 문서 폴더를 찾을 수 없습니다: {DOCUMENTS_DIR}")
+        return []
 
-    # RecursiveCharacterTextSplitter 초기화
+    documents = []
+    week_count = 0
+
+    # 연도 폴더를 최신순으로 정렬
+    year_dirs = sorted(DOCUMENTS_DIR.iterdir(), reverse=True)
+
+    for year_dir in year_dirs:
+        if not year_dir.is_dir():
+            continue
+
+        # 주차 폴더를 최신순으로 정렬
+        week_dirs = sorted(year_dir.iterdir(), reverse=True)
+
+        for week_dir in week_dirs:
+            if not week_dir.is_dir():
+                continue
+
+            # 주차별 JSON 파일 로딩
+            json_files = sorted(week_dir.glob("*.json"))
+
+            for json_file in json_files:
+                try:
+                    # JSON 파일 읽기
+                    with open(json_file, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+
+                    # 파일명에서 doc_id 추출 (doc2549001.json -> doc2549001)
+                    doc_id = json_file.stem
+
+                    # Document 생성
+                    metadata = data.get("metadata", {}).copy()
+                    metadata["doc_id"] = doc_id
+
+                    # upvote 정규화 (문자열 -> 숫자)
+                    if "upvote" in metadata:
+                        upvote = metadata["upvote"]
+                        if isinstance(upvote, str):
+                            metadata["upvote"] = (
+                                0 if upvote.strip() == "-" else int(upvote)
+                            )
+
+                    doc = Document(
+                        page_content=data.get("context", ""), metadata=metadata
+                    )
+
+                    documents.append(doc)
+
+                except Exception as e:
+                    print(f"   [FAILED] 파일 로딩 실패 ({json_file.name}): {e}")
+                    continue
+
+            # 주차 카운트 증가
+            week_count += 1
+            if week_count >= use_weeks:
+                print(f"[SUCCESS] {len(documents)}개 문서 로딩 완료 (최근 {use_weeks}주차)")
+                return documents
+
+    print(f"[SUCCESS] {len(documents)}개 문서 로딩 완료 (총 {week_count}주차)")
+    return documents
+
+
+def chunk_documents(
+    documents: List[Document], chunk_size: int = 100, chunk_overlap: int = 10
+) -> List[Document]:
+    """
+    문서 리스트를 작은 청크로 분할
+
+    Args:
+        documents: 원본 문서 리스트
+        chunk_size: 청크 하나의 크기 (글자 수)
+        chunk_overlap: 청크 간 중복되는 부분 (글자 수)
+
+    Returns:
+        청크로 분할된 문서 리스트
+
+    동작 방식:
+        1. RecursiveCharacterTextSplitter로 문서를 나눔
+        2. 각 청크에 chunk_index와 total_chunks 정보 추가
+        3. 원본 문서의 메타데이터는 모두 유지
+    """
+    print(f"\n[CHUNKING START] 청킹 시작: {len(documents)}개 문서")
+    print(f"   - CHUNK_SIZE: {chunk_size}")
+    print(f"   - CHUNK_OVERLAP: {chunk_overlap}")
+
+    # 텍스트 분할기 생성
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
-        separators=separators,
-        length_function=len
+        separators=DEFAULT_SEPARATORS,
+        length_function=len,
     )
 
-    # 문서 청킹
+    # 모든 청크를 저장할 리스트
     all_chunks = []
 
+    # 각 문서를 청크로 분할
     for doc_idx, doc in enumerate(documents):
-        try:
-            # 문서를 청크로 분할
-            chunks = text_splitter.split_documents([doc])
+        # 문서를 청크로 나누기
+        chunks = text_splitter.split_documents([doc])
 
-            # 각 청크에 chunk_index 추가
-            for chunk_idx, chunk in enumerate(chunks):
-                chunk.metadata["chunk_index"] = chunk_idx
-                chunk.metadata["total_chunks"] = len(chunks)
-                all_chunks.append(chunk)
+        # 각 청크에 인덱스 정보 추가
+        for chunk_idx, chunk in enumerate(chunks):
+            chunk.metadata["chunk_index"] = chunk_idx
+            chunk.metadata["total_chunks"] = len(chunks)
+            all_chunks.append(chunk)
 
-            if (doc_idx + 1) % 100 == 0:
-                logger.debug(f"[청킹 진행] {doc_idx + 1}/{len(documents)}개 문서 처리됨")
+        # 진행 상황 표시 (100개마다)
+        if (doc_idx + 1) % 100 == 0:
+            print(f"   진행: {doc_idx + 1}/{len(documents)} 문서 처리됨")
 
-        except Exception as e:
-            logger.error(f"[청킹 에러] 문서 {doc_idx}: {e}")
-            # 에러 발생 시 원본 문서를 그대로 추가 (chunk_index=0)
-            doc.metadata["chunk_index"] = 0
-            doc.metadata["total_chunks"] = 1
-            all_chunks.append(doc)
-
-    logger.info(
-        f"[청킹 완료] {len(documents)}개 문서 → {len(all_chunks)}개 청크 "
-        f"(평균 {len(all_chunks)/len(documents):.1f}개/문서)"
-    )
+    print(f"\n[CHUNKING SUCCESS] 청킹 완료: {len(all_chunks)}개 청크 생성")
+    print(f"   평균 {len(all_chunks)/len(documents):.1f}개 청크/문서")
 
     return all_chunks
 
 
 def save_chunks_to_pkl(
-    chunks: List[Document],
-    filename: str = DEFAULT_CHUNKS_PKL,
-    output_dir: Optional[Path] = None
+    chunks: List[Document], chunk_size: int, chunk_overlap: int
 ) -> str:
     """
     청크 리스트를 .pkl 파일로 저장
 
     Args:
-        chunks: 저장할 Document 청크 리스트
-        filename: 출력 파일명 (기본값: "chunks_all.pkl")
-        output_dir: 출력 디렉토리 (기본값: 01_data/chunks/)
+        chunks: 저장할 청크 리스트
+        chunk_size: 청크 크기 (파일명에 사용)
+        chunk_overlap: 청크 오버랩 (파일명에 사용)
 
     Returns:
-        str: 저장된 파일 경로
-
-    동작:
-        1. 출력 디렉토리 생성 (없으면)
-        2. pickle로 청크 리스트 직렬화
-        3. .pkl 파일로 저장
-
-    예시:
-        >>> chunks = chunk_documents(docs)
-        >>> filepath = save_chunks_to_pkl(chunks, "chunks_2025_w49.pkl")
-        >>> print(f"저장 완료: {filepath}")
+        저장된 파일 경로
     """
-    if output_dir is None:
-        output_dir = CHUNKS_DIR
+    # 저장 폴더 생성 (없으면)
+    CHUNKS_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 디렉토리 생성
-    output_dir.mkdir(parents=True, exist_ok=True)
+    # 파일명 생성 (파라미터 값 포함)
+    filename = f"chunks_{chunk_size}_{chunk_overlap}.pkl"
+    output_path = CHUNKS_DIR / filename
 
-    output_path = output_dir / filename
+    print(f"\n[SAVE START] 저장 시작: {output_path}")
 
-    logger.info(f"[저장 시작] {len(chunks)}개 청크를 {output_path}에 저장 중...")
+    # pickle로 저장
+    with open(output_path, "wb") as f:
+        pickle.dump(chunks, f, protocol=pickle.HIGHEST_PROTOCOL)
 
-    try:
-        with open(output_path, 'wb') as f:
-            pickle.dump(chunks, f, protocol=pickle.HIGHEST_PROTOCOL)
+    # 파일 크기 계산
+    file_size = output_path.stat().st_size / (1024 * 1024)  # MB
+    print(f"[SAVE SUCCESS] 저장 완료: {file_size:.2f} MB")
 
-        file_size = output_path.stat().st_size / (1024 * 1024)  # MB
-        logger.info(f"[저장 완료] {output_path} ({file_size:.2f} MB)")
+    return str(output_path)
 
-        return str(output_path)
 
-    except Exception as e:
-        logger.error(f"[저장 실패] {e}")
-        raise
+def chunk_and_save(
+    use_weeks: int = 6, chunk_size: int = 100, chunk_overlap: int = 10
+) -> str:
+    """
+    문서 로딩 → 청킹 → 저장을 한번에 실행
+
+    Args:
+        use_weeks: 사용할 최근 주차 수 (기본값: 6)
+        chunk_size: 청크 크기 (기본값: 100)
+        chunk_overlap: 청크 오버랩 (기본값: 10)
+
+    Returns:
+        저장된 파일 경로
+
+    사용 예시:
+        # 기본 설정으로 실행
+        >>> chunk_and_save()
+
+        # 커스텀 파라미터로 실행
+        >>> chunk_and_save(use_weeks=4, chunk_size=200, chunk_overlap=20)
+    """
+    print("=" * 60)
+    print("[START] 문서 청킹 시작")
+    print("=" * 60)
+    print(
+        f"설정: use_weeks={use_weeks}, chunk_size={chunk_size}, chunk_overlap={chunk_overlap}"
+    )
+
+    # 1. 문서 로딩
+    documents = load_json_files(use_weeks=use_weeks)
+
+    if not documents:
+        print("[FAILED LOADING] 로딩된 문서가 없습니다!")
+        return ""
+
+    # 2. 청킹
+    chunks = chunk_documents(
+        documents, chunk_size=chunk_size, chunk_overlap=chunk_overlap
+    )
+
+    # 3. 저장
+    filepath = save_chunks_to_pkl(chunks, chunk_size, chunk_overlap)
+
+    print("\n" + "=" * 60)
+    print("[SUCCESS] 모든 작업 완료!")
+    print(f"[PATH] 저장 위치: {filepath}")
+    print("=" * 60)
+
+    return filepath
 
 
 def load_chunks_from_pkl(
-    filename: str = DEFAULT_CHUNKS_PKL,
-    chunks_dir: Optional[Path] = None
+    chunk_size: int = 100, chunk_overlap: int = 10
 ) -> List[Document]:
     """
     .pkl 파일에서 청크 리스트 로딩
 
     Args:
-        filename: 로딩할 파일명 (기본값: "chunks_all.pkl")
-        chunks_dir: 청크 디렉토리 (기본값: 01_data/chunks/)
+        chunk_size: 청크 크기 (파일명 지정용)
+        chunk_overlap: 청크 오버랩 (파일명 지정용)
 
     Returns:
-        List[Document]: 로딩된 Document 청크 리스트
+        로딩된 청크 리스트
 
-    Raises:
-        FileNotFoundError: 파일이 존재하지 않을 경우
-
-    예시:
-        >>> chunks = load_chunks_from_pkl("chunks_all.pkl")
-        >>> print(f"로딩 완료: {len(chunks)}개 청크")
+    사용 예시:
+        >>> chunks = load_chunks_from_pkl(chunk_size=100, chunk_overlap=10)
+        >>> print(f"로딩된 청크 개수: {len(chunks)}")
     """
-    if chunks_dir is None:
-        chunks_dir = CHUNKS_DIR
-
-    pkl_path = chunks_dir / filename
+    filename = f"chunks_{chunk_size}_{chunk_overlap}.pkl"
+    pkl_path = CHUNKS_DIR / filename
 
     if not pkl_path.exists():
-        raise FileNotFoundError(f"[파일 없음] {pkl_path}")
+        print(f"[NOT FOUND] 파일을 찾을 수 없습니다: {pkl_path}")
+        raise FileNotFoundError(f"파일 없음: {pkl_path}")
 
-    logger.info(f"[로딩 시작] {pkl_path}")
+    print(f"\n[LOADING] 청크 로딩 중: {pkl_path}")
 
-    try:
-        with open(pkl_path, 'rb') as f:
-            chunks = pickle.load(f)
+    with open(pkl_path, "rb") as f:
+        chunks = pickle.load(f)
 
-        logger.info(f"[로딩 완료] {len(chunks)}개 청크")
-        return chunks
+    print(f"[SUCCESS] {len(chunks)}개 청크 로딩 완료")
 
-    except Exception as e:
-        logger.error(f"[로딩 실패] {e}")
-        raise
-
-
-def chunk_and_save(
-    year: Optional[int] = None,
-    week: Optional[int] = None,
-    chunk_size: int = DEFAULT_CHUNK_SIZE,
-    chunk_overlap: int = DEFAULT_CHUNK_OVERLAP,
-    filename: Optional[str] = None
-) -> str:
-    """
-    문서 로딩 → 청킹 → 저장 (원스텝)
-
-    Args:
-        year: 연도 (None이면 전체 문서 로딩)
-        week: 주차 (None이면 전체 문서 로딩)
-        chunk_size: 청크 크기
-        chunk_overlap: 청크 오버랩
-        filename: 출력 파일명 (자동 생성 가능)
-
-    Returns:
-        str: 저장된 파일 경로
-
-    동작:
-        1. 문서 로딩 (load_all_documents 또는 load_documents_by_week)
-        2. 청킹 (chunk_documents)
-        3. 저장 (save_chunks_to_pkl)
-
-    예시:
-        >>> # 전체 문서 청킹
-        >>> filepath = chunk_and_save()
-        >>> print(f"저장됨: {filepath}")
-
-        >>> # 특정 주차만 청킹
-        >>> filepath = chunk_and_save(year=2025, week=49, filename="chunks_2025_w49.pkl")
-    """
-    # 문서 로딩
-    if year and week:
-        logger.info(f"[문서 로딩] {year}-W{week:02d}")
-        documents = load_documents_by_week(year, week, validate=False)
-        default_filename = f"chunks_{year}_w{week:02d}.pkl"
-    else:
-        logger.info("[문서 로딩] 전체 문서")
-        documents = load_all_documents(validate=False)
-        default_filename = "chunks_all.pkl"
-
-    if not documents:
-        logger.warning("[경고] 로딩된 문서가 없습니다")
-        return ""
-
-    # 청킹
-    chunks = chunk_documents(
-        documents,
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap
-    )
-
-    # 저장
-    output_filename = filename or default_filename
-    filepath = save_chunks_to_pkl(chunks, filename=output_filename)
-
-    return filepath
-
-
-# ==================== 통계 ====================
-
-def get_chunk_statistics(chunks: List[Document]) -> Dict[str, Any]:
-    """
-    청크 통계 정보 조회
-
-    Args:
-        chunks: Document 청크 리스트
-
-    Returns:
-        Dict: 통계 정보
-            - total_chunks: 총 청크 개수
-            - avg_chunk_length: 평균 청크 길이
-            - min_chunk_length: 최소 청크 길이
-            - max_chunk_length: 최대 청크 길이
-            - unique_docs: 유니크 문서 개수
-
-    예시:
-        >>> stats = get_chunk_statistics(chunks)
-        >>> print(f"총 청크: {stats['total_chunks']}")
-        >>> print(f"평균 길이: {stats['avg_chunk_length']:.0f}자")
-    """
-    if not chunks:
-        return {
-            "total_chunks": 0,
-            "avg_chunk_length": 0,
-            "min_chunk_length": 0,
-            "max_chunk_length": 0,
-            "unique_docs": 0
-        }
-
-    chunk_lengths = [len(chunk.page_content) for chunk in chunks]
-    unique_doc_ids = set(chunk.metadata.get("doc_id") for chunk in chunks)
-
-    stats = {
-        "total_chunks": len(chunks),
-        "avg_chunk_length": sum(chunk_lengths) / len(chunk_lengths),
-        "min_chunk_length": min(chunk_lengths),
-        "max_chunk_length": max(chunk_lengths),
-        "unique_docs": len(unique_doc_ids)
-    }
-
-    logger.info(
-        f"[청크 통계] 총 {stats['total_chunks']}개 청크, "
-        f"평균 {stats['avg_chunk_length']:.0f}자, "
-        f"{stats['unique_docs']}개 문서"
-    )
-
-    return stats
-
-
-# ==================== 유틸리티 ====================
-
-def list_chunk_files(chunks_dir: Optional[Path] = None) -> List[str]:
-    """
-    저장된 청크 파일 목록 조회
-
-    Args:
-        chunks_dir: 청크 디렉토리 (기본값: 01_data/chunks/)
-
-    Returns:
-        List[str]: .pkl 파일명 리스트
-
-    예시:
-        >>> files = list_chunk_files()
-        >>> print(files)
-        ['chunks_all.pkl', 'chunks_2025_w49.pkl']
-    """
-    if chunks_dir is None:
-        chunks_dir = CHUNKS_DIR
-
-    if not chunks_dir.exists():
-        logger.warning(f"[디렉토리 없음] {chunks_dir}")
-        return []
-
-    pkl_files = sorted([f.name for f in chunks_dir.glob("*.pkl")])
-
-    logger.info(f"[청크 파일 목록] {len(pkl_files)}개 파일")
-    return pkl_files
+    return chunks
 
 
 if __name__ == "__main__":
-    # 테스트용 메인 실행부
-    import logging
-    logging.basicConfig(level=logging.INFO)
+    # 기본 설정으로 청킹 실행
+    filepath = chunk_and_save(use_weeks=6, chunk_size=100, chunk_overlap=10)
 
-    # 전체 문서 청킹 및 저장
-    print("[테스트] 전체 문서 청킹 시작...")
-    filepath = chunk_and_save(chunk_size=100, chunk_overlap=10)
-    print(f"✓ 저장 완료: {filepath}")
+    # 생성된 청크 확인
+    print("\n" + "=" * 60)
+    print("[SAMPLE] 청크 샘플 미리보기 (첫 3개)")
+    print("=" * 60)
 
-    # 청크 로딩 및 통계
-    print("\n[테스트] 청크 로딩 및 통계...")
-    chunks = load_chunks_from_pkl()
-    stats = get_chunk_statistics(chunks)
+    chunks = load_chunks_from_pkl(chunk_size=100, chunk_overlap=10)
 
-    print(f"✓ 총 청크: {stats['total_chunks']}개")
-    print(f"✓ 평균 길이: {stats['avg_chunk_length']:.0f}자")
-    print(f"✓ 원본 문서: {stats['unique_docs']}개")
-
-    # 샘플 청크 출력
-    print("\n[테스트] 샘플 청크 (첫 3개):")
     for i, chunk in enumerate(chunks[:3]):
-        print(f"\n--- 청크 {i+1} ---")
-        print(f"doc_id: {chunk.metadata.get('doc_id')}")
-        print(f"chunk_index: {chunk.metadata.get('chunk_index')}/{chunk.metadata.get('total_chunks')}")
+        print(f"\n--- 청크 #{i+1} ---")
+        print(f"문서 ID: {chunk.metadata.get('doc_id')}")
+        print(
+            f"청크 인덱스: {chunk.metadata.get('chunk_index')}/{chunk.metadata.get('total_chunks')}"
+        )
         print(f"길이: {len(chunk.page_content)}자")
         print(f"내용 미리보기: {chunk.page_content[:100]}...")
+        
