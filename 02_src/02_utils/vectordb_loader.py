@@ -1,6 +1,7 @@
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -8,7 +9,8 @@ embedding_model = OpenAIEmbeddings(
     model = 'text-embedding-3-small'
 )
 
-persist_dir = os.path.join("01_data", "vector_db")
+project_root = Path(__file__).resolve().parent.parent.parent 
+persist_dir = project_root / "01_data" / "vector_db"
 if os.path.exists(persist_dir):
     vectorstore = Chroma(
         persist_directory = persist_dir,
