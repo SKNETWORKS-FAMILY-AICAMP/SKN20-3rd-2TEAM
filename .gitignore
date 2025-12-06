@@ -62,5 +62,5 @@ htmlcov/
 models/
 02_src/02_utils/CLAUDE_KR.md
 01_data/embeddings/
-01_data/chroma_db/
+01_data/vector_db/
 *.backup

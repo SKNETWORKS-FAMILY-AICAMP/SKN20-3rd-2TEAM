@@ -12,13 +12,19 @@ embedding_model = OpenAIEmbeddings(
     model = 'text-embedding-3-small'
 )
 
+# 저장경로 설정
+current_folder = Path(__file__).resolve().parent
+project_root = current_folder.parent.parent 
+chunks_path = project_root / "01_data" / "chunks" / "chunks_all.pkl"
+
 # 저장된 피클 데이터 가져오기
-chunks_path = Path(r".\01_data\chunks\chunks_all.pkl")
+# chunks_path = Path(r".\01_data\chunks\chunks_all.pkl")
 with open(chunks_path, "rb") as f:
     chunks = pickle.load(f)
 
-# 프로젝트 루트 기준 상대경로
-persist_dir = os.path.join("01_data", "vector_db")
+current_file_dir = Path(__file__).resolve().parent
+project_root = current_file_dir.parent.parent 
+persist_dir = project_root / "01_data" / "vector_db"
 
 # 디렉토리가 없으면 생성
 os.makedirs(persist_dir, exist_ok=True)  # exist_ok=True면 이미 있어도 에러 안 남
