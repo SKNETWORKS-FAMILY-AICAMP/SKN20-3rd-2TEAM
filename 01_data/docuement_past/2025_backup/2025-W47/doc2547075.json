@@ -1,0 +1,12 @@
+{
+  "context": "SerenQA evaluates Large Language Models' ability to generate surprising and valuable answers in scientific knowledge graph question answering, particularly in drug repurposing, using a structured pipeline and serendipity metric. Large Language Models(LLMs) have greatly advancedknowledge graph question answering(KGQA), yet existing systems are typically optimized for returning highly relevant but predictable answers. A missing yet desired capacity is to exploitLLMsto suggest surprise and novel (\"serendipitious\") answers. In this paper, we formally define theserendipity-aware KGQAtask and propose theSerenQAframework to evaluateLLMs' ability to uncover unexpected insights in scientificKGQAtasks.SerenQAincludes a rigorousserendipity metricbased on relevance, novelty, and surprise, along with an expert-annotated benchmark derived from the Clinical Knowledge Graph, focused ondrug repurposing. Additionally, it features a structured evaluation pipeline encompassing three subtasks:knowledge retrieval,subgraph reasoning, andserendipity exploration. Our experiments reveal that while state-of-the-artLLMsperform well on retrieval, they still struggle to identify genuinely surprising and valuable discoveries, underscoring a significant room for future improvements. Our curated resources and extended version are released at: https://cwru-db-group.github.io/serenQA. One of the most important capabilities of anAI Research Partneris to discover serendipity points from large, complex knowledge spaces while remaining firmly grounded and trustworthy. To facilitate future research in this direction, we introduce SerenQA, in which we: This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Assessing LLMs for Serendipity Discovery in Knowledge Graphs: A Case for Drug Repurposing",
+    "github_url": "https://github.com/CWRU-DB-Group/DrugKG",
+    "huggingface_url": "https://huggingface.co/papers/2511.12472",
+    "upvote": 5,
+    "tag1": "knowledge",
+    "tag2": "answer",
+    "tag3": "comment"
+  }
+}

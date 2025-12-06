@@ -1,0 +1,12 @@
+{
+  "context": "HiconAgent, a GUI agent using HCPO, efficiently utilizes historical context for better performance in navigation tasks with reduced computational cost. Graphical User Interface (GUI) agents require effective use of historical context to perform sequential navigation tasks. While incorporating past actions and observations can improve decision making, naive use of full history leads to excessive computational overhead and distraction from irrelevant information. To address this, we introduce HiconAgent, a GUI agent trained withHistory Context-aware Policy Optimization (HCPO)for efficient and effective utilization of historical information. HCPO optimizes history usage in both sampling and policy updates through two complementary components: (1)Dynamic Context Sampling (DCS)presents the agent with variable length histories during sampling, enabling adaptive use of the most relevant context; (2)Anchor-guided History Compression (AHC)refines the policy update phase with a dual branch strategy where the compressed branch removes history observations while keeping history actions as information flow anchors. The compressed and uncompressed branches are coupled through ahistory-enhanced alignment lossto enforce consistent history usage while maintaining efficiency. Experiments on mainstreamGUI navigation benchmarksdemonstrate strong performance. Despite being smaller, HiconAgent-3B outperforms GUI-R1-7B by +8.46 percentgrounding accuracyand +11.32 percentstep success rateon GUI-Odyssey, while achieving comparable results on AndroidControl and AITW with up to 2.47xcomputational speedupand 60 percentFLOPs reduction. HiconAgent: History Context-aware Policy Optimization for GUI Agents This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "HiconAgent: History Context-aware Policy Optimization for GUI Agents",
+    "github_url": "https://github.com/JiuTian-VL/HiconAgent",
+    "huggingface_url": "https://huggingface.co/papers/2512.01763",
+    "upvote": 5,
+    "tag1": "history",
+    "tag2": "context",
+    "tag3": "gui"
+  }
+}

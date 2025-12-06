@@ -1,0 +1,12 @@
+{
+  "context": "EmoVid, a multimodal emotion-annotated video dataset, bridges emotion understanding with video generation, leading to improved emotional expression in generated videos. Emotion plays a pivotal role in video-based expression, but existing video generation systems predominantly focus on low-level visual metrics while neglecting affective dimensions. Althoughemotion analysishas made progress in the visual domain, the video community lacks dedicated resources to bridge emotion understanding with generative tasks, particularly for stylized and non-realistic contexts. To address this gap, we introduce EmoVid, the firstmultimodal,emotion-annotatedvideo dataset specifically designed for creative media, which includes cartoon animations, movie clips, and animated stickers. Each video is annotated with emotion labels, visual attributes (brightness, colorfulness, hue), and text captions. Through systematic analysis, we uncover spatial and temporal patterns linking visual features to emotional perceptions across diverse video forms. Building on these insights, we develop an emotion-conditioned video generation technique by fine-tuning theWan2.1 model. The results show a significant improvement in both quantitative metrics and the visual quality of generated videos fortext-to-videoandimage-to-videotasks. EmoVid establishes a new benchmark foraffective video computing. Our work not only offers valuable insights into visualemotion analysisin artistically styled videos, but also provides practical methods for enhancing emotional expression in video generation. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "EmoVid: A Multimodal Emotion Video Dataset for Emotion-Centric Video Understanding and Generation",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.11002",
+    "upvote": 3,
+    "tag1": "video",
+    "tag2": "emotion",
+    "tag3": "visual"
+  }
+}
