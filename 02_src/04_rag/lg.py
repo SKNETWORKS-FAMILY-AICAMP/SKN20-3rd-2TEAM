@@ -147,7 +147,7 @@ def langgraph_rag():
                     'year': None
                 }
             )
-        processed_documents.append(web_doc)
+            processed_documents.append(web_doc)
         
         return {
             'documents': processed_documents, 
@@ -167,14 +167,10 @@ def langgraph_rag():
 
     def decide_to_generate(state:RAGState)-> Literal['generate','web_search']:
         '''조건부 분기 함수 : 문서내에 참고할 내용이 없다면 web으로 검색한다.'''    
-        # if state['documents'] and len(state['documents']) > 0:
-        #     return 'generate'
-        # else:
-        #     return 'web_search'
         if state['documents'] and len(state['documents']) > 0:
             print(f" [decide] {len(state['documents'])}개 문서 있음. -> generate")
             return 'generate'
-        else:
+        else: # 검색된 문서가 0개인경우, len(state['documents'] == 0
             print(f" [decide] 0개 문서 확인. (내부 문서 유사도 낮음) -> 웹 서칭을 합니다.")
             return 'web_search'
 
