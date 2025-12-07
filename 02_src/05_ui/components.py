@@ -10,11 +10,26 @@ Streamlit UI 컴포넌트 모듈
 import streamlit as st
 from pathlib import Path
 from typing import List, Tuple
+import sys
+import json
+from collections import Counter
+from langchain_openai import OpenAIEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
+from langchain_openai import ChatOpenAI
 
 # 프로젝트 경로
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 DATA_DIR = PROJECT_ROOT / "01_data"
 SRC_DIR = PROJECT_ROOT / "02_src"
+
+# vectordb 모듈 import
+sys.path.insert(0, str(SRC_DIR / "02_utils"))
+from vectordb import load_vectordb
+
+# SimpleRAGSystem 임포트
+sys.path.insert(0, str(SRC_DIR / "04_rag"))
+from simpleRAGsystem_2 import SimpleRAGSystem
 
 # HuggingFace 스타일 CSS
 HUGGINGFACE_STYLE = """
@@ -104,43 +119,115 @@ HUGGINGFACE_STYLE = """
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         transform: translateY(-2px);
     }
+
+    /* Streamlit의 text_input 컴포넌트의 특정 클래스(data-testid)를 타겟팅하여 컨테이너에 맞게 스타일 조정 */
+    .fixed-bottom-container div[data-testid="stTextInput"] {
+        margin-bottom: 0;
+    }
+
+    /* 메인 컨텐츠 영역 - 하단 고정 요소를 위한 여백 */
+    .main-content {
+        padding-bottom: 280px;
+        min-height: 100vh;
+    }
+
+    /* 트렌드 키워드 제목 스타일 */
+    .trend-title {
+        color: #FF9D00;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    /* 검색 제목 스타일 */
+    .search-title {
+        color: #FF9D00;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
 </style>
 """
 
-# ==================== 리소스 로딩 ====================
 
-@st.cache_resource
+# ==================== 키워드 추출 ====================
+
+def get_trending_keywords_from_json(weeks: int = 6, top_n: int = 7) -> List[Tuple[str, int]]:
+    """
+    최근 N주간의 JSON 데이터에서 트렌딩 키워드 추출
+
+    Args:
+        weeks: 분석할 최근 주 수 (기본값: 6)
+        top_n: 반환할 상위 키워드 개수 (기본값: 7)
+
+    Returns:
+        List of tuples: [(키워드, 개수), ...]
+    """
+    try:
+        docs_dir = PROJECT_ROOT / "01_data" / "documents" / "2025"
+
+        if not docs_dir.exists():
+            raise FileNotFoundError("문서 디렉토리가 존재하지 않습니다")
+
+        all_keywords = []
+
+        # 모든 주차 디렉토리를 이름순으로 정렬 (내림차순)
+        week_dirs = sorted([d for d in docs_dir.iterdir() if d.is_dir()], reverse=True)
+
+        # 최근 N주 데이터 처리
+        for week_dir in week_dirs[:weeks]:
+            for json_file in week_dir.glob('*.json'):
+                try:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        tags = data.get('metadata', {}).get('tags', [])
+                        all_keywords.extend(tags)
+                except Exception:
+                    # 문제가 있는 파일은 건너뛰기
+                    continue
+
+        # 키워드를 찾지 못한 경우 예외 발생
+        if not all_keywords:
+            raise ValueError("키워드를 찾을 수 없습니다")
+
+        # 키워드 개수 계산 후 상위 N개 반환
+        keyword_counts = Counter(all_keywords)
+        return keyword_counts.most_common(top_n)
+
+    except Exception:
+        # 모든 예외 발생 시 더미 데이터 반환
+        return [
+            ("LLM", 45), ("Transformer", 38), ("RAG", 32),
+            ("Vision", 28), ("Diffusion", 25), ("Agent", 22),
+            ("Multimodal", 20)
+        ][:top_n]
+
+
+# ==================== 리소스 로딩 ====================
 def load_vectorstore():
-    """VectorDB 로드 (캐싱)
+    """VectorDB 로드 (세션 스테이트 사용)
 
     Returns:
         VectorStore 또는 None: ChromaDB 벡터 저장소
     """
+    # 이미 로드된 경우 재사용
+    if "vectorstore" in st.session_state:
+        return st.session_state.vectorstore
+
     try:
-        import pickle
-        from langchain_openai import OpenAIEmbeddings
-        from langchain_chroma import Chroma
+        with st.spinner("🔄 VectorDB 로딩 중..."):
+            # vectordb.py의 load_vectordb() 함수 호출
+            vectorstore = load_vectordb(
+                model_name="MiniLM-L6",
+                chunk_size=100,
+                chunk_overlap=10
+            )
 
-        # chunks_all.pkl 파일 로드
-        chunks_path = DATA_DIR / "chunks" / "chunks_all.pkl"
-
-        if not chunks_path.exists():
-            st.error(f"❌ chunks_all.pkl 파일을 찾을 수 없습니다: {chunks_path}")
-            return None
-
-        with open(chunks_path, "rb") as f:
-            chunks = pickle.load(f)
-
-        # ChromaDB 생성 (in-memory)
-        embeddings = OpenAIEmbeddings(model='text-embedding-3-small')
-        vectorstore = Chroma.from_documents(
-            documents=chunks,
-            collection_name='huggingface_papers',
-            embedding=embeddings
-        )
-
-        st.success(f"✅ VectorDB 로드 완료: {len(chunks)}개 문서")
-        return vectorstore
+            # 세션 스테이트에 저장
+            st.session_state.vectorstore = vectorstore
+            st.toast("✅ VectorDB 로드 완료", icon="✅")
+            return vectorstore
 
     except Exception as e:
         st.error(f"❌ VectorDB 로드 실패: {e}")
@@ -149,62 +236,35 @@ def load_vectorstore():
         return None
 
 
-@st.cache_resource
-def load_keyword_manager():
-    """KeywordManager 로드 (캐싱)
-
-    Returns:
-        KeywordManager 또는 None: 키워드 관리 객체
-    """
-    try:
-        # TODO: KeywordManager 로드 로직 구현
-        # 예시:
-        # import sys
-        # sys.path.insert(0, str(SRC_DIR / "02_utils"))
-        # from documents import load_all_documents
-        # from keyword_manager import KeywordManager
-        #
-        # documents = load_all_documents(year=2025, weeks=[49, 48, 47, 46, 45])
-        # km = KeywordManager(documents)
-        # return km
-
-        st.info("⚠️ KeywordManager 로드 대기 중 - 키워드 시스템 미구현")
-        return None
-
-    except Exception as e:
-        st.error(f"KeywordManager 로드 실패: {e}")
-        return None
-
-
-@st.cache_resource
-def load_rag_system(_vectorstore):
-    """RAG 시스템 초기화 (캐싱)
+def load_rag_system(vectorstore):
+    """RAG 시스템 초기화 (세션 스테이트 사용)
 
     Args:
-        _vectorstore: VectorStore 객체 (언더스코어는 캐싱 제외를 위한 관례)
+        vectorstore: VectorStore 객체
 
     Returns:
         SimpleRAGSystem 또는 None: RAG 시스템 객체
     """
+    # 이미 로드된 경우 재사용
+    if "rag_system" in st.session_state:
+        return st.session_state.rag_system
+
     try:
-        if _vectorstore is None:
+        if vectorstore is None:
             st.warning("⚠️ VectorDB가 로드되지 않아 RAG 시스템을 초기화할 수 없습니다.")
             return None
 
-        # SimpleRAGSystem 임포트
-        import sys
-        sys.path.insert(0, str(SRC_DIR / "04_rag"))
-        from simpleRAGsystem_2 import SimpleRAGSystem
-        from langchain_openai import ChatOpenAI
+        with st.spinner("🔄 RAG 시스템 초기화 중..."):
+            # LLM 초기화
+            llm = ChatOpenAI(model='gpt-4o-mini', temperature=0)
 
-        # LLM 초기화
-        llm = ChatOpenAI(model='gpt-4o-mini', temperature=0)
+            # RAG 시스템 초기화 (retriever_k=3으로 상위 3개 문서 검색)
+            rag_system = SimpleRAGSystem(vectorstore, llm, retriever_k=3)
 
-        # RAG 시스템 초기화 (retriever_k=3으로 상위 3개 문서 검색)
-        rag_system = SimpleRAGSystem(_vectorstore, llm, retriever_k=3)
-
-        st.success("✅ RAG 시스템 초기화 완료")
-        return rag_system
+            # 세션 스테이트에 저장
+            st.session_state.rag_system = rag_system
+            st.toast("✅ RAG 시스템 초기화 완료", icon="✅")
+            return rag_system
 
     except Exception as e:
         st.error(f"❌ RAG 시스템 초기화 실패: {e}")
@@ -229,16 +289,17 @@ def init_session_state():
     if "search_mode" not in st.session_state:
         st.session_state.search_mode = "chat"  # "chat" or "keyword"
 
+    if "last_searched_keyword" not in st.session_state:
+        st.session_state.last_searched_keyword = None  # 중복 검색 방지
+
+    if "keyword_selection_key" not in st.session_state:
+        st.session_state.keyword_selection_key = 0  # pills 위젯 초기화용 카운터
+
 
 # ==================== UI 렌더링 ====================
 
-def render_header(keyword_manager, rag_system=None):
-    """헤더: 제목 & 트렌드 키워드
-
-    Args:
-        keyword_manager: KeywordManager 객체 또는 None
-        rag_system: SimpleRAGSystem 객체 또는 None (키워드 기반 검색용)
-    """
+def render_header():
+    """헤더: 제목"""
     # HuggingFace 스타일 CSS 적용
     st.markdown(HUGGINGFACE_STYLE, unsafe_allow_html=True)
 
@@ -256,62 +317,6 @@ def render_header(keyword_manager, rag_system=None):
 
     st.markdown("---")
 
-    # 트렌드 키워드 영역
-    st.markdown("### 🔥 트렌딩 키워드")
-    
-    # keyword_manager 구현 전 더미 데이터 사용
-    if keyword_manager is None:
-        st.info("💡 키워드 데이터를 불러오는 중...")
-        # 데모용 더미 데이터
-        trending = [
-            ("LLM", 45), ("Transformer", 38), ("RAG", 32),
-            ("Vision", 28), ("Diffusion", 25), ("Agent", 22),
-            ("Multimodal", 20), ("RL", 18), ("NLP", 15), ("CV", 12)
-        ]
-    else:
-        trending = keyword_manager.get_trending_keywords(
-            year=2025,
-            weeks=[49, 48, 47, 46, 45],
-            top_n=10
-        )
-
-    # st.pills로 키워드 표시 (단일 선택으로 변경)
-    keyword_labels = [f"{kw} ({count})" for kw, count in trending]
-
-    selected = st.pills(
-        label="키워드를 선택하여 관련 논문을 검색하세요",
-        options=keyword_labels,
-        selection_mode="single"  # 단일 선택으로 변경
-    )
-
-    # 선택된 키워드 처리
-    if selected:
-        # "키워드 (count)" → "키워드" 추출 (단일 선택이므로 문자열)
-        keyword = selected.split(" (")[0]
-
-        # 상태 업데이트 (단일 키워드)
-        if keyword != st.session_state.get("selected_keyword", None):
-            st.session_state.selected_keyword = keyword
-
-            # 키워드 기반 검색 메시지
-            query = f"📌 선택한 키워드: {keyword}"
-
-            # RAG 시스템 사용 여부에 따라 응답 생성
-            if rag_system is None:
-                # RAG 시스템이 없으면 예시 응답 사용
-                result_text = get_example_keyword_response(keyword)
-            else:
-                # 실제 RAG 시스템으로 키워드 기반 질문 생성
-                keyword_query = f"{keyword}에 대한 최신 연구 동향을 알려주세요."
-                result_text = rag_system.ask(keyword_query)
-
-            add_message("user", query)
-            add_message("assistant", result_text)
-
-            st.rerun()
-
-    st.markdown("---")
-
 
 def render_chat_interface(rag_system):
     """채팅 인터페이스
@@ -319,20 +324,99 @@ def render_chat_interface(rag_system):
     Args:
         rag_system: SimpleRAGSystem 객체 또는 None
     """
-    # 채팅 헤더
-    st.markdown("### 💬 논문 검색 채팅")
-    
-    # 채팅 메시지 표시
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"], avatar="🤗" if message["role"] == "assistant" else "👤"):
-            st.markdown(message["content"])
+    # 1. 메인 컨텐츠 영역 (답변 표시)
+    # st.markdown('<div class="main-content">', unsafe_allow_html=True)
 
-    # 사용자 입력
-    user_input = st.chat_input(
-        placeholder="🔍 논문에 대해 질문하거나 키워드를 입력하세요..."
+    # Q&A 메시지 표시
+    if len(st.session_state.messages) == 0:
+        st.markdown("""
+            <div style='text-align: center; color: #6c757d; padding: 3rem 1rem;'>
+                <h3 style='color: #FF9D00;'>💬 대화를 시작해보세요!</h3>
+                <p>하단의 트렌드 키워드를 선택하거나 검색창에 질문을 입력하세요.</p>
+            </div>
+        """, unsafe_allow_html=True)
+    else:
+        for message in st.session_state.messages:
+            with st.chat_message(message["role"], avatar="🤗" if message["role"] == "assistant" else "👤"):
+                st.markdown(message["content"])
+
+    # st.markdown('</div>', unsafe_allow_html=True)
+
+    # 2. 하단 고정 영역 (트렌드 키워드 + 검색창)
+    # 트렌드 키워드
+    st.markdown('<div class="trend-title">🔥 트렌드 키워드</div>', unsafe_allow_html=True)
+
+    trending = get_trending_keywords_from_json(weeks=6, top_n=7)
+    keyword_labels = [kw for kw, count in trending]  # 개수 제거, 키워드만 표시
+
+    selected = st.pills(
+        label="trend keyword",
+        options=keyword_labels,
+        selection_mode="single",
+        label_visibility="collapsed",
+        key=f"keyword_pills_{st.session_state.keyword_selection_key}"
     )
 
+    user_input = st.chat_input(
+        placeholder=" 🔍 논문에 대해 질문하거나 키워드를 입력하세요..."
+    )
+
+    # 3. 키워드 선택 시 검색 실행
+    if selected:
+        keyword = selected
+
+        # 중복 검색 방지
+        if keyword != st.session_state.get("last_searched_keyword", None):
+            # 키워드 기반 검색 메시지
+            query = f"📌 선택한 키워드: {keyword}"
+
+            # 사용자 메시지 추가
+            with st.chat_message("user", avatar="👤"):
+                st.markdown(query)
+            add_message("user", query)
+
+            # AI 응답 생성
+            with st.chat_message("assistant", avatar="🤗"):
+                # RAG 시스템이 없으면 예시 응답 사용
+                if rag_system is None:
+                    with st.spinner("🔎 논문을 검색하고 답변을 생성하는 중..."):
+                        result_text = get_example_keyword_response(keyword)
+                    st.markdown(result_text)
+                else:
+                    # 실제 RAG 시스템으로 키워드 기반 질문 생성 (스트리밍)
+                    keyword_query = f"{keyword}에 대한 최신 연구 동향을 알려주세요."
+
+                    with st.spinner("🔎 논문 검색 중..."):
+                        result = rag_system.ask_with_sources(keyword_query, stream=True)
+
+                    # 스트리밍 응답 표시
+                    result_text = st.write_stream(result['answer_stream'])
+
+                # 참조 논문 표시
+                # if rag_system is not None:
+                #     sources = result.get('sources', [])
+                #     if sources:
+                #         st.markdown("---")
+                #         with st.expander(f"📚 참조된 논문 ({len(sources)}개)", expanded=True):
+                #             for i, source in enumerate(sources, 1):
+                #                 render_paper_card(source, i)
+                #     else:
+                #         st.info("💡 검색된 관련 논문이 없습니다.")
+
+            # 어시스턴트 응답 저장
+            add_message("assistant", result_text)
+
+            # 키워드 선택 해제 및 상태 업데이트
+            st.session_state.last_searched_keyword = keyword
+            st.session_state.keyword_selection_key += 1
+            st.rerun()
+
+    # 사용자 입력 처리
     if user_input:
+        # 키워드 선택 해제
+        st.session_state.keyword_selection_key += 1
+        st.session_state.last_searched_keyword = None
+
         # 사용자 메시지 추가
         with st.chat_message("user", avatar="👤"):
             st.markdown(user_input)
@@ -340,41 +424,40 @@ def render_chat_interface(rag_system):
 
         # AI 응답 생성
         with st.chat_message("assistant", avatar="🤗"):
-            with st.spinner("🔎 논문을 검색하고 답변을 생성하는 중..."):
-                # RAG 시스템이 없으면 예시 응답 사용
-                if rag_system is None:
+            # RAG 시스템이 없으면 예시 응답 사용
+            if rag_system is None:
+                with st.spinner("🔎 논문을 검색하고 답변을 생성하는 중..."):
                     # simpleRAGsystem_2.py의 출력 형식을 시뮬레이션
                     result = get_example_rag_response(user_input)
                     response_text = result['answer']
-                else:
-                    # 실제 RAG 시스템 호출
-                    result = rag_system.ask_with_sources(user_input)
-                    response_text = result['answer']
+                st.markdown(response_text)
+            else:
+                # 실제 RAG 시스템 호출 (스트리밍)
+                with st.spinner("🔎 논문 검색 중..."):
+                    result = rag_system.ask_with_sources(user_input, stream=True)
 
-            # 응답 표시
-            st.markdown(response_text)
+                # 스트리밍 응답 표시
+                response_text = st.write_stream(result['answer_stream'])
 
             # 참조 논문 표시
-            sources = result.get('sources', [])
-            if sources:
-                st.markdown("---")
-                with st.expander(f"📚 참조된 논문 ({len(sources)}개)", expanded=True):
-                    for i, source in enumerate(sources, 1):
-                        render_paper_card(source, i)
-            else:
-                st.info("💡 검색된 관련 논문이 없습니다.")
+            # sources = result.get('sources', [])
+            # if sources:
+            #     st.markdown("---")
+            #     with st.expander(f"📚 참조된 논문 ({len(sources)}개)", expanded=True):
+            #         for i, source in enumerate(sources, 1):
+            #             render_paper_card(source, i)
+            # else:
+            #     st.info("💡 검색된 관련 논문이 없습니다.")
 
         # 어시스턴트 응답 저장 (답변만 저장, 출처는 제외)
         add_message("assistant", response_text)
 
-        st.rerun()
 
-
-def render_sidebar(keyword_manager):
+def render_sidebar(rag_system=None):
     """사이드바: 설정 & 통계
 
     Args:
-        keyword_manager: KeywordManager 객체 또는 None
+        rag_system: SimpleRAGSystem 객체 (대화 히스토리 초기화용)
     """
     with st.sidebar:
         # 로고 영역
@@ -394,11 +477,29 @@ def render_sidebar(keyword_manager):
         if st.button("🗑️ 대화 초기화", use_container_width=True, type="primary"):
             st.session_state.messages = []
             st.session_state.selected_keyword = None
+            st.session_state.last_searched_keyword = None
+            # 키워드 선택 해제
+            st.session_state.keyword_selection_key += 1
+            # RAG 시스템의 chat_history도 초기화
+            if rag_system is not None:
+                rag_system.clear_history()
+            st.toast("✅ 대화가 초기화되었습니다", icon="✅")
             st.rerun()
 
         # 캐시 초기화 버튼
         if st.button("🔄 캐시 초기화", use_container_width=True):
-            st.cache_resource.clear()
+            # 대화 초기화
+            st.session_state.messages = []
+            st.session_state.selected_keyword = None
+            st.session_state.last_searched_keyword = None
+            # 키워드 선택 해제
+            st.session_state.keyword_selection_key += 1
+            # 세션 스테이트에서 VectorDB와 RAG 시스템 제거
+            if "vectorstore" in st.session_state:
+                del st.session_state.vectorstore
+            if "rag_system" in st.session_state:
+                del st.session_state.rag_system
+            st.toast("✅ 캐시와 대화가 모두 초기화되었습니다. 다음 요청 시 재로드됩니다.", icon="✅")
             st.rerun()
 
         st.markdown("---")
@@ -406,41 +507,10 @@ def render_sidebar(keyword_manager):
         # 통계 섹션
         st.markdown("### 📊 통계")
 
-        # keyword_manager 구현 전 N/A 표시
-        if keyword_manager is None:
-            st.metric("📄 논문 개수", "로딩 중...")
-            st.metric("🏷️ 키워드 개수", "로딩 중...")
-            st.info("💡 데이터를 로드하는 중입니다.")
-        else:
-            keyword_stats = keyword_manager.get_keyword_stats()
-            total_keywords = len(keyword_stats)
-            total_papers = len(keyword_manager.documents)
-
-            # 메트릭 표시
-            col1, col2 = st.columns(2)
-            with col1:
-                st.metric("📄 논문", total_papers)
-            with col2:
-                st.metric("🏷️ 키워드", total_keywords)
-
-            st.metric("평균 키워드/논문", f"{total_keywords/total_papers:.1f}")
-
-            # 전체 키워드 TOP 20 차트 (선택적)
-            with st.expander("🏆 인기 키워드 TOP 20"):
-                import pandas as pd
-
-                top_keywords = sorted(
-                    keyword_stats.items(),
-                    key=lambda x: x[1],
-                    reverse=True
-                )[:20]
-
-                df = pd.DataFrame(
-                    top_keywords,
-                    columns=["키워드", "논문 수"]
-                )
-
-                st.bar_chart(df.set_index("키워드"))
+        # 논문 및 키워드 개수 표시
+        st.metric("📄 논문 개수", "506")
+        st.metric("🏷️ 키워드 개수", "1,449")
+        st.info("💡 최근 6주간의 데이터")
 
         st.markdown("---")
 

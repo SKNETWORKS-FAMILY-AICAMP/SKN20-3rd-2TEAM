@@ -358,7 +358,7 @@ if __name__ == "__main__":
     print("=== HuggingFace DailyPapers 크롤러 ===\n")
 
     # 크롤링 실행 예시 (2025년 45~49주차)
-    for week in range(47, 50):
+    for week in range(45, 50):
         try:
             crawl_weekly_papers(year=2025, week=week)
         except Exception as e:

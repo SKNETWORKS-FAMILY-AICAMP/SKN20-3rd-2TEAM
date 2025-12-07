@@ -66,11 +66,10 @@ from .chunking import (
     list_chunk_files
 )
 
-# Embeddings (HuggingFace - FREE!)
-from .embeddings import EmbeddingManager
-
 # Vector DB (ChromaDB + Search)
-from .vectordb import VectorDBManager
+from .vectordb import (
+    load_vectordb
+)
 
 
 __all__ = [

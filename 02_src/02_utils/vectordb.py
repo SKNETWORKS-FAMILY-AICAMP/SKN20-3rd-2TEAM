@@ -119,16 +119,33 @@ def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
         ValueError: 벡터 DB 디렉토리가 존재하지 않을 때
     """
     # 벡터 DB 디렉토리 존재 확인
-    if os.path.exists(VECTORDB_DIR):
-        # Chroma 벡터스토어 로드
-        vectorstore = Chroma(
-            persist_directory=VECTORDB_DIR,
-            embedding_function=embedding_models[model_name],
-            collection_name=f"chroma_{model_name}_{chunk_size}_{chunk_overlap}",
-        )
-        print("[SUCCESS] VectorDB 로딩 완료\n")
-    else:
+    if not os.path.exists(VECTORDB_DIR):
         raise ValueError("[ERROR] 폴더가 존재하지 않음")
+
+    # 임베딩 모델 초기화
+    if model_name == "OpenAI":
+        embedding_function = OpenAIEmbeddings(model=embedding_models[model_name])
+        print(f"[LOADING] {model_name} 로딩 완료")
+    else:
+        try:
+            # HuggingFace 임베딩 모델 로드 (CUDA 사용 가능 시 GPU 사용)
+            embedding_function = HuggingFaceEmbeddings(
+                model_name=embedding_models[model_name],
+                model_kwargs={"device": "cuda" if torch.cuda.is_available() else "cpu"},
+                encode_kwargs={"normalize_embeddings": True},
+            )
+            print(f"[LOADING] {model_name} 로딩 완료")
+        except Exception as e:
+            print(f"[FAILED] {model_name} 로딩 실패: {e}")
+            raise
+
+    # Chroma 벡터스토어 로드
+    vectorstore = Chroma(
+        persist_directory=VECTORDB_DIR,
+        embedding_function=embedding_function,
+        collection_name=f"chroma_{model_name}_{chunk_size}_{chunk_overlap}",
+    )
+    print("[SUCCESS] VectorDB 로딩 완료\n")
 
     # 컬렉션에서 문서와 메타데이터 가져오기
     docs = vectorstore._collection.get(include=["documents", "metadatas"])
@@ -136,8 +153,9 @@ def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
     metadatas = docs["metadatas"]
 
     # 처음 5개의 문서와 메타데이터 출력 (샘플 확인용)
-    for doc, meta in zip(documents[:5], metadatas[:5]):
-        print(f"Doc: {doc[:50]}\nMeta: {meta}")
+    if __name__ == "__main__":
+        for doc, meta in zip(documents[:5], metadatas[:5]):
+            print(f"Doc: {doc[:50]}\nMeta: {meta}")
 
     return vectorstore
 

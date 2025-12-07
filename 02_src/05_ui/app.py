@@ -22,7 +22,6 @@ load_dotenv()
 try:
     from components import (
         load_vectorstore,
-        load_keyword_manager,
         load_rag_system,
         init_session_state,
         render_header,
@@ -51,13 +50,12 @@ def main():
 
     # 리소스 로드
     vectorstore = load_vectorstore()
-    keyword_manager = load_keyword_manager()
     rag_system = load_rag_system(vectorstore)
 
     # UI 렌더링
-    render_header(keyword_manager, rag_system)
+    render_header()
     render_chat_interface(rag_system)
-    render_sidebar(keyword_manager)
+    render_sidebar(rag_system)
 
 
 if __name__ == "__main__":

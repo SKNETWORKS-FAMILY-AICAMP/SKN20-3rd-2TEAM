@@ -1,5 +1,6 @@
 import os
 import warnings
+import sys
 import pickle    # chunk, vectorDB 저장한것 사용
 from dotenv import load_dotenv
 
@@ -22,6 +23,11 @@ from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import time
 from pathlib import Path
+
+# vectordb 모듈 import
+SRC_DIR=Path(__file__).parent.parent
+sys.path.insert(0, str(SRC_DIR / "02_utils"))
+from vectordb import load_vectordb
 
 
 class SimpleRAGSystem:
@@ -92,7 +98,7 @@ class SimpleRAGSystem:
          You may briefly state what you assumed.
 
     2. Use only the relevant papers
-       - Focus on the most relevant 1–3 papers in the given context.
+       - Focus on the most relevant 1-3 papers in the given context.
        - If some papers look only weakly related to the question, you may ignore them.
        - If nothing is clearly relevant, say that the context does not directly answer the question.
 
@@ -152,12 +158,7 @@ class SimpleRAGSystem:
     """)
             ])
         return (
-            {
-                "context": lambda x: self._format_docs(self.retriever.invoke(x["question"])),
-                "question": RunnablePassthrough(),
-                "chat_history": lambda _: self._format_chat_history()
-            }
-            | prompt
+            prompt
             | self.llm
             | StrOutputParser()
         )
@@ -217,9 +218,15 @@ class SimpleRAGSystem:
         return "\n".join(history_lines)
 
     def chat(self, user_message: str) -> str:
-        """대화 모드: 히스토리 저장 + RAG 답변"""
+        """대화 모드: 히스토리 저장 + RAG 답변 (최적화: retrieval 1회만 수행)"""
+        # retrieval 수행
+        source_docs = self.retriever.invoke(user_message)
+        context = self._format_docs(source_docs)
+
+        # chain 실행
         response = self.chain.invoke({
             "question": user_message,
+            "context": context,
             "chat_history": self._format_chat_history()
         })
 
@@ -233,23 +240,39 @@ class SimpleRAGSystem:
 
 
 
-    def ask(self, question:str) -> str:
-        '''질문에 답변'''
+    def ask(self, question: str) -> str:
+        '''질문에 답변 (최적화: retrieval 1회만 수행)'''
+        # retrieval 수행
+        source_docs = self.retriever.invoke(question)
+        context = self._format_docs(source_docs)
+
+        # chain 실행
         return self.chain.invoke({
-        "question": question,
-        "chat_history": self._format_chat_history()
-    })
+            "question": question,
+            "context": context,
+            "chat_history": self._format_chat_history()
+        })
 
     
 
-    def ask_with_sources(self, question: str) -> dict:
-        """질문에 답변 + 출처 반환"""
-        answer = self.chain.invoke({
-        "question": question,
-        "chat_history": self._format_chat_history()
-    })
+    def ask_with_sources(self, question: str, stream: bool = False):
+        """질문에 답변 + 출처 반환 (최적화: retrieval 1회만 수행)
+
+        Args:
+            question: 사용자 질문
+            stream: True이면 스트리밍 응답 생성기 반환, False이면 전체 답변 반환
+
+        Returns:
+            stream=False: {"answer": str, "sources": list}
+            stream=True: {"answer_stream": generator, "sources": list}
+        """
+        # 1. retrieval을 한 번만 수행
         source_docs = self.retriever.invoke(question)
 
+        # 2. 검색된 문서를 포맷팅
+        context = self._format_docs(source_docs)
+
+        # 3. 출처 정보 구성
         sources = []
         for doc in source_docs:
             md = doc.metadata or {}
@@ -270,14 +293,34 @@ class SimpleRAGSystem:
                 }
             )
 
-        return {
-            "answer": answer,
-            "sources": sources,
+        # 4. chain 실행 (스트리밍 or 일반)
+        chain_input = {
+            "question": question,
+            "context": context,
+            "chat_history": self._format_chat_history()
         }
+
+        if stream:
+            # 스트리밍 응답 생성기 반환
+            return {
+                "answer_stream": self.chain.stream(chain_input),
+                "sources": sources,
+            }
+        else:
+            # 전체 답변 반환
+            answer = self.chain.invoke(chain_input)
+            return {
+                "answer": answer,
+                "sources": sources,
+            }
+
+    def clear_history(self):
+        """대화 히스토리 초기화"""
+        self.chat_history = []
    
 
 
-if __name__ == '__main__' :
+if __name__ == '__main__':
     # chunk 파일로 임시 확인
     def get_project_root():
         curr = Path().resolve()
@@ -286,22 +329,13 @@ if __name__ == '__main__' :
                 return parent
         raise FileNotFoundError("프로젝트 루트 찾기 실패")
 
-    PROJECT_ROOT = get_project_root()
-    DATA_DIR = PROJECT_ROOT / "01_data/chunks"
-
-    chunks_path = DATA_DIR / "chunks_all.pkl"
-
-    with open(chunks_path, "rb") as f:
-        chunks = pickle.load(f)
-
-    vectorstore = Chroma.from_documents(
-        documents=chunks,
-        collection_name='test',
-        embedding=OpenAIEmbeddings(model='text-embedding-3-small')
+    vectorstore = load_vectordb(
+            model_name="MiniLM-L6",    # OpenAI
+            chunk_size=100,
+            chunk_overlap=10
     )
-
   
-    llm = ChatOpenAI( model = 'gpt-4o-mini', temperature=0 )
+    llm = ChatOpenAI(model='gpt-4o-mini', temperature=0)
 
     rag_system = SimpleRAGSystem(vectorstore, llm)
     user_question = "벡터DB가 뭐야?"
