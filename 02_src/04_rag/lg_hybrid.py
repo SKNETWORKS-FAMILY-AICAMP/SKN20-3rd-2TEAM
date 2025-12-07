@@ -22,6 +22,9 @@ from langchain_community.retrievers import TavilySearchAPIRetriever
 # LangGraph 관련 임포트
 from langgraph.graph import StateGraph, START, END
 
+# 하이브리드 검색 관련 임포트
+from langchain_community.retrievers import BM25Retriever, EnsembleRetriever
+
 # 환경설정
 load_dotenv()
 
@@ -56,7 +59,33 @@ def langgraph_rag():
         )
     else:
         raise ValueError('이전단계 chroma_db_reg2 디렉터리 생성 필요')
+    
+    # 2. BM25 Retriever를 위한 전체 문서 준비 (추가된 부분)
+    # Chroma에서 모든 문서를 가져옵니다. (BM25 인덱스 생성용)
+    print(" [BM25] BM25 Retriever를 위한 전체 문서 로드 및 인덱스 생성 시작...")
+    
+    # Chroma._collection.get()을 사용하여 Document 리스트를 직접 구성합니다.
+    collection_data = vectorstore._collection.get(include=['documents', 'metadatas'])
+    
+    # LangChain Document 객체 리스트로 변환
+    all_documents = []
+    for content, metadata in zip(collection_data['documents'], collection_data['metadatas']):
+        all_documents.append(Document(page_content=content, metadata=metadata))
+        
+    if not all_documents:
+        raise ValueError('Chroma DB에 문서가 없습니다. BM25 인덱스 생성이 불가합니다.')
 
+    # BM25 Retriever 초기화 (전체 문서를 사용하여 인덱스 생성)
+    # **주의:** 문서가 많으면 이 단계에서 메모리를 많이 사용하고 시간이 오래 걸립니다.
+    bm25_retriever = BM25Retriever.from_documents(all_documents)
+    bm25_retriever.k = 3 # BM25 검색 결과 개수 설정
+    
+    # 리트리버
+    retriever = vectorstore.as_retriever(
+        search_type = 'similarity',
+        search_kwargs = {'k' : 3}
+    )
+    
     ## Node 함수 + 조건 분기 함수 생성
         # 검색 노드
         # 문서평가 노드
@@ -64,19 +93,44 @@ def langgraph_rag():
         # 생성 노드
         # 조건 분기 함수
     def retrieve_node(state:RAGState)->dict:
-        '''내부문서 검색 노드 : 하이브리드 검색'''
+        '''
+        하이브리드 검색 노드 (RRF: Reciprocal Rank Fusion 수동 구현)
+        - BM25 키워드 검색과 벡터 유사도 검색 결과를 병합합니다.
+        '''
         question = state['question']
-        docs_with_scores = vectorstore.similarity_search_with_score(question, k = 3)
         
-        # similarity_search_with_score 함수가 반환하는 docs_with_scores 결과는 점수(score)가 높은 순서대로 정렬
-        documents =  [ doc for doc,score in docs_with_scores]
-        scores =  [ 1-score for doc,score in docs_with_scores]
-        # socres : score값이 낮을수록 유사도가 높다.(거리)
-                #  1-score : 1에 가까울수록 유사도가 높다. 
-                # 검색된 3개 문서의 $1 - score$ 값이 모두 0.3 미만이었기 때문에 (즉, 유사도가 매우 낮았기 때문에) 모든 문서가 필터링되어 0개가 되는 것
+        # 백터 검색
+        vector_docs = retriever.invoke(question)
+        # BM25 검색
+        bm25_docs = bm25_retriever.invoke(question)
+        fusion_scores = {}
+        # 백터 검색 결과 점수
+        for rank, doc in enumerate(vector_docs):
+            doc_key = doc.page_content[:50]
+            score = 1 / (60 + rank)
+            fusion_scores[doc_key] = fusion_scores.get(doc_key,0) + score
+        # BM25 검색 결과 점수
+        for rank, doc in enumerate(bm25_docs):
+            doc_key = doc.page_content[:50]
+            score = 1 / (60 + rank)
+            fusion_scores[doc_key] = fusion_scores.get(doc_key,0) + score
+        
+        # 점수로 정렬
+        sorted_docs =  sorted(
+            fusion_scores.items(), key=lambda x : x[1], reverse=True
+        )
 
-        print(f' [retriever] {len(documents)}개 문서 검색됨')        
-        return {'documents': documents, 'doc_scores':scores, 'search_type':'internal'}   # state 업데이트
+        # print(f'fusion docs 결과 상위 3개 : {sorted_docs[:3]}')
+        docs = []
+        scores =[]
+        for doc,score in sorted_docs[:3]:
+            docs.append(doc)
+            scores.append(score)
+
+        return {
+            'documents': docs, 
+            'doc_scores': scores,
+        }
 
     def grade_documents_node(state:RAGState)->dict:
         '''문서평가 노드'''
