@@ -126,14 +126,17 @@ class SimpleRAGSystem:
     ("human", """
     [QUESTION]
     {question}
-     
+    
     [CHAT HISTORY]
     {chat_history}
 
-     [Context]
+    [Context]
     The following CONTEXT block may contain 0 or more papers. 
     If it is "NO_RELEVANT_PAPERS", please answer from your general AI/ML knowledge.
-     
+    Each paper in the context may contain:
+    - page_content (text)
+    - metadata: paper_name, tags, upvote, github_url, huggingface_url, etc.
+
     [CONTEXT]
     ======== START ========
     {context}
@@ -141,14 +144,24 @@ class SimpleRAGSystem:
 
     Please structure your answer as follows (flexible, but try to follow this):
 
-    1) One-line summary  
-    2) Key insights (3-6 bullets)  
-    3) Related papers (top 1~3)  
-    4) Detailed explanation  
+    1) One-line summary
+    2) Key insights (3-6 bullets)
+    3) Related papers (top 1~3)
+    4) Detailed explanation
     5) Sources summary
+    - Organize the papers used above **based on metadata**
+    - Output each paper in the following format:
+    - Paper {index}
+        · Paper title: {paper_name or “No information”}  
+        · Authors: {authors metadata if available, “No information” otherwise}  
+        · huggingface_url: {huggingface_url or “No information”}  
+        · github_url: {github_url or “No information”}  
+        · upvote: {upvote or “No information”}  
+        · tags: {tags list separated by commas, “No information” if none}
 
+    ⚠ For information not present in the metadata (e.g., if authors are missing), DO NOT invent it; instead, write “No information available.”
     ⚠ Do not hallucinate papers or details not shown in context.
-    Respond by Korean.
+    ⚠ Regardless of the input language, ALWAYS respond in Korean.
     """)
             ])
         return (
