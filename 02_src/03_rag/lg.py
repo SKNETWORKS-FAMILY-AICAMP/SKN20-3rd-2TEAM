@@ -71,9 +71,6 @@ def langgraph_rag():
         # similarity_search_with_score 함수가 반환하는 docs_with_scores 결과는 점수(score)가 높은 순서대로 정렬
         documents =  [ doc for doc,score in docs_with_scores]
         scores =  [ score for doc,score in docs_with_scores]
-        # socres : score값이 낮을수록 유사도가 높다.
-                #  1-score : 1에 가까울수록 유사도가 높다. 
-                # 검색된 3개 문서의 $1 - score$ 값이 모두 0.3 미만이었기 때문에 (즉, 유사도가 매우 낮았기 때문에) 모든 문서가 필터링되어 0개가 되는 것
 
         print(f' [retriever] {len(documents)}개 문서 검색됨')        
         return {'documents': documents, 'doc_scores':scores, 'search_type':'internal'}   # state 업데이트
@@ -90,7 +87,7 @@ def langgraph_rag():
         final_documents = [item[0] for item in filtered_data]
         final_scores = [item[1] for item in filtered_data]
 
-        print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지") ### 출력 조정
+        print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지")
         return {'documents': final_documents, 'doc_scores': final_scores}
     
 ##
