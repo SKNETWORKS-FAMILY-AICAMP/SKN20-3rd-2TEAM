@@ -1,0 +1,15 @@
+{
+  "context": "DC-VideoGen accelerates video generation by adapting pre-trained diffusion models to a deep compression latent space, reducing inference latency and enabling high-resolution video generation. We introduceDC-VideoGen, a post-training acceleration framework for\nefficient video generation.DC-VideoGencan be applied to any pre-trained video\ndiffusion model, improving efficiency by adapting it to a deep compression\nlatent space withlightweight fine-tuning. The framework builds on two key\ninnovations: (i) aDeep Compression Video Autoencoderwith a novel chunk-causal\ntemporal design that achieves 32x/64x spatial and 4x temporal compression while\npreserving reconstruction quality and generalization to longer videos; and (ii)AE-Adapt-V, a robust adaptation strategy that enables rapid and stable transfer\nof pre-trained models into the new latent space. Adapting the pre-trainedWan-2.1-14B modelwithDC-VideoGenrequires only 10 GPU days on the NVIDIA H100\nGPU. The accelerated models achieve up to 14.8x lowerinference latencythan\ntheir base counterparts without compromising quality, and further enable\n2160x3840 video generation on a single GPU. Code:\nhttps://github.com/dc-ai-projects/DC-VideoGen. DC-VideoGen is a new post-training framework for accelerating video diffusion models. Key features:🎬 Supports video generation up to 2160×3840 resolution on a single H100 GPU⚡ Delivers 14.8× faster inference than the base model💰 230× lower training cost compared to training from scratch (only 10 H100 GPU days for Wan-2.1-14B) DC-VideoGen is built on two core innovations: This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "DC-VideoGen: Efficient Video Generation with Deep Compression Video\n  Autoencoder",
+    "authors": [
+      "Junsong Chen",
+      "Muyang Li"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2509.25182",
+    "upvote": 37,
+    "tags": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "context": "LLMs process factual queries and hallucinations similarly when associated with subject knowledge, leading to indistinguishable internal representations, but produce distinct representations for hallucinations without subject knowledge. Recent work suggests thatlarge language models(LLMs) encode factuality\nsignals in their internal representations, such ashidden states, attention\nweights, ortoken probabilities, implying thatLLMsmay \"know what they don't\nknow\". However,LLMscan also produce factual errors by relying on shortcuts or\nspurious associations. These error are driven by the same training objective\nthat encourage correct predictions, raising the question of whether internal\ncomputations can reliably distinguish between factual and hallucinated outputs.\nIn this work, we conduct a mechanistic analysis of howLLMsinternally processfactual queriesby comparing two types ofhallucinationsbased on their\nreliance onsubject information. We find that whenhallucinationsare\nassociated with subject knowledge,LLMsemploy the sameinternal recall processas for correct responses, leading to overlapping and indistinguishablehidden-state geometries. In contrast,hallucinationsdetached from subject\nknowledge produce distinct, clustered representations that make them\ndetectable. These findings reveal a fundamental limitation:LLMsdo not encodetruthfulnessin their internal states but only patterns ofknowledge recall,\ndemonstrating that \"LLMsdon't really know what they don't know\". In this work, we conduct a mechanistic analysis of how LLMs internally process factual queries by comparing two types of hallucinations based on their reliance on subject information. We find that when hallucinations are associated with subject knowledge, LLMs employ the same internal recall process as for correct responses, leading to overlapping and indistinguishable hidden-state geometries. In contrast, hallucinations detached from subject knowledge produce distinct, clustered representations that make them detectable. These findings reveal a fundamental limitation: LLMs do not encode truthfulness in their internal states but only patterns of knowledge recall, demonstrating that \"LLMs don't really know what they don't know\".  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Large Language Models Do NOT Really Know What They Don't Know",
+    "authors": [
+      "Chi Seng Cheang",
+      "Hou Pong Chan",
+      "Yang Deng"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.09033",
+    "upvote": 16,
+    "tags": []
+  }
+}

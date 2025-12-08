@@ -1,0 +1,16 @@
+{
+  "context": "A fully open-source text embedding model achieves state-of-the-art performance across embedding tasks, particularly in multilingual scenarios, through a novel data mix and detailed ablation studies. We introduce llama-embed-nemotron-8b, an open-weightstext embedding modelthat achieves state-of-the-art performance on the Multilingual Massive Text\nEmbedding Benchmark (MMTEB) leaderboard as of October 21, 2025. While recent\nmodels show strong performance, their training data or methodologies are often\nnot fully disclosed. We aim to address this by developing a fullyopen-sourcemodel, publicly releasing its weights and detailedablation studies, and\nplanning to share the curated training datasets. Our model demonstrates\nsuperior performance across all major embedding tasks -- includingretrieval,classificationandsemantic textual similarity (STS)-- and excels in\nchallenging multilingual scenarios, such aslow-resource languagesandcross-lingual setups. This state-of-the-art performance is driven by a novel\ndata mix of 16.1 million query-document pairs, split between 7.7 million\nsamples from public datasets and 8.4 million synthetically generated examples\nfrom various open-weight LLMs. One of our key contributions is a detailed\nablation study analyzing core design choices, including a comparison ofcontrastive lossimplementations, an evaluation of synthetic data generation\n(SDG) strategies, and the impact ofmodel merging. The llama-embed-nemotron-8b\nis aninstruction-aware model, supporting user-defined instructions to enhance\nperformance for specific use-cases. This combination of top-tier performance,\nbroad applicability, and user-driven flexibility enables it to serve as a\nuniversal text embedding solution. We introducellama-embed-nemotron-8b, a new open-weights universal text embedding model. Our model achieves state-of-the-art performance, securing the #1 position on the MMTEB leaderboard as of October 21, 2025. It demonstrates superior generalization according to the Borda count method, outperforming other top models across a diverse set of 131 tasks and 250+ languages. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Llama-Embed-Nemotron-8B: A Universal Text Embedding Model for\n  Multilingual and Cross-Lingual Tasks",
+    "authors": [
+      "Yauhen Babakhin",
+      "Ronay Ak",
+      "Bo Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.07025",
+    "upvote": 11,
+    "tags": []
+  }
+}

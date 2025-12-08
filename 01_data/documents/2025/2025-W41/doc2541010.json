@@ -1,0 +1,14 @@
+{
+  "context": "Low-probability Regularization (Lp-Reg) enhances exploration in Reinforcement Learning with Verifiable Rewards (RLVR) by preserving valuable low-probability tokens, leading to improved performance in complex reasoning tasks. Reinforcement Learning with Verifiable Rewards(RLVR) has propelled Large\nLanguage Models in complex reasoning, yet its scalability is often hindered by\na training bottleneck where performance plateaus aspolicy entropycollapses,\nsignaling a loss of exploration. Previous methods typically address this by\nmaintaining highpolicy entropy, yet the precise mechanisms that govern\nmeaningful exploration have remained underexplored. Our analysis suggests that\nan unselective focus on entropy risks amplifying irrelevant tokens and\ndestabilizing training. This paper investigates theexploration dynamicswithinRLVRand identifies a key issue: the gradual elimination of valuable\nlow-probability exploratory tokens, which we term \\textit{reasoning\nsparks}. We find that while abundant in pre-trained models, these sparks are\nsystematically extinguished duringRLVRdue to over-penalization, leading to a\ndegeneracy in exploration. To address this, we introduce Low-probability\nRegularization (Lp-Reg). Its core mechanism regularizes the policy towards aheuristic proxy distribution. This proxy is constructed by filtering out\npresumed noise tokens and re-normalizing the distribution over the remaining\ncandidates. The result is a less-noisy proxy where the probability ofreasoning sparksis amplified, which then serves as a soft\nregularization target to shield these valuable tokens from elimination via KL\ndivergence. Experiments show thatLp-Regenables stableon-policy trainingfor\naround 1,000 steps, a regime where baseline entropy-control methods collapse.\nThis sustained exploration leads to state-of-the-art performance, achieving a\n60.17% average accuracy on fivemath benchmarks, an improvement of 2.66%\nover prior methods. Code is available at https://github.com/CarlanLark/Lp-Reg. Code:https://github.com/CarlanLark/Lp-Reghttps://github.com/CarlanLark/Lp-Reg-dev This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Low-probability Tokens Sustain Exploration in Reinforcement Learning\n  with Verifiable Reward",
+    "authors": [
+      "Guanhua Huang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/CarlanLark/Lp-Reg-dev",
+    "huggingface_url": "https://huggingface.co/papers/2510.03222",
+    "upvote": 75,
+    "tags": []
+  }
+}

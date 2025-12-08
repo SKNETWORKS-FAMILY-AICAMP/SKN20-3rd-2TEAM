@@ -1,0 +1,15 @@
+{
+  "context": "MesaTask, an LLM-based framework with a Spatial Reasoning Chain, generates realistic tabletop scenes aligned with task descriptions using DPO algorithms. The ability of robots to interpret human instructions and execute\nmanipulation tasks necessitates the availability of task-relevant tabletop\nscenes for training. However, traditional methods for creating these scenes\nrely on time-consuming manual layout design or purely randomized layouts, which\nare limited in terms of plausibility or alignment with the tasks. In this\npaper, we formulate a novel task, namely task-oriented tabletop scene\ngeneration, which poses significant challenges due to the substantial gap\nbetween high-level task instructions and the tabletop scenes. To support\nresearch on such a challenging task, we introduce MesaTask-10K, a large-scale\ndataset comprising approximately 10,700 synthetic tabletop scenes with manually\ncrafted layouts that ensure realistic layouts and intricate inter-object\nrelations. To bridge the gap between tasks and scenes, we propose a Spatial\nReasoning Chain that decomposes the generation process intoobject inference,spatial interrelation reasoning, andscene graph constructionfor the final 3D\nlayout. We present MesaTask, anLLM-based frameworkthat utilizes this\nreasoning chain and is further enhanced withDPO algorithmsto generate\nphysically plausible tabletop scenes that align well with given task\ndescriptions. Exhaustive experiments demonstrate the superior performance of\nMesaTask compared to baselines in generating task-conforming tabletop scenes\nwith realistic layouts. Project page is at https://mesatask.github.io/ 🤖 Robots that actually understand “put the fruit in the bowl”?Meet MesaTask 🚀 [NeurIPS 2025 Spotlight]✨ 10K+ physics-verified tabletop scenes✨ 12K+ curated 3D assets✨ Outperforms baselines in alignment, realism & physicalityAll data & code are OPEN — try it now ⚡  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial\n  Reasoning",
+    "authors": [
+      "Jinkun Hao",
+      "Naifu Liang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/InternRobotics/MesaTask",
+    "huggingface_url": "https://huggingface.co/papers/2509.22281",
+    "upvote": 31,
+    "tags": []
+  }
+}

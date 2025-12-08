@@ -1,0 +1,16 @@
+{
+  "context": "CoDA, a 1.7B-parameter diffusion coder, achieves competitive performance with smaller models through confidence-guided sampling and is released with open-source tools. Diffusion language modelspromisebidirectional contextand infilling\ncapabilities thatautoregressive coderslack, yet practical systems remain\nheavyweight. We introduce CoDA, a 1.7B-parameterdiffusion codertrained on TPU\nwith a fully open-source training pipeline. CoDA pairs large-scale diffusion\npre-training withcode-centric mid-trainingandinstruction tuning, enablingconfidence-guided samplingthat keepsinference latencycompetitive. OnHumaneval,MBPP, andEvalPlus, CoDA-1.7B-Instruct matches or surpasses\ndiffusion models up to 7B parameters. Our release includes model checkpoints,\nevaluation harnesses, and TPU training pipelines to accelerate research on\nlightweightdiffusion-based coding assistants. CoDA-1.7B  is born for code editing ✍️tasks while overall coding performances on par with 7B models. The cool part is it does parallel decoding so it’s blazingly fast ⚡️during inference! The models, pre/mid/post-training code and frameworks have all been open-sourced: → 🤗 𝗛𝘂𝗴𝗴𝗶𝗻𝗴 𝗙𝗮𝗰𝗲:https://huggingface.co/Salesforce/CoDA-v0-Instruct→ 🤖 𝗚𝗶𝘁𝗛𝘂𝗯:https://github.com/SalesforceAIResearch/CoDA/→ 📑 𝗧𝗲𝗰𝗵 𝗥𝗲𝗽𝗼𝗿𝘁:https://www.arxiv.org/abs/2510.03270 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "CoDA: Coding LM via Diffusion Adaptation",
+    "authors": [
+      "Haolin Chen",
+      "Can Qin",
+      "Weiran Yao"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/SalesforceAIResearch/CoDA/",
+    "huggingface_url": "https://huggingface.co/papers/2510.03270",
+    "upvote": 42,
+    "tags": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "context": "DeepSeek-OCR uses optical 2D mapping to compress long contexts, achieving high OCR precision with reduced vision tokens and demonstrating practical value in document processing. We presentDeepSeek-OCRas an initial investigation into the feasibility of\ncompressing long contexts viaoptical 2D mapping.DeepSeek-OCRconsists of two\ncomponents:DeepEncoderandDeepSeek3B-MoE-A570Mas the decoder. Specifically,DeepEncoderserves as the core engine, designed to maintain low activations\nunder high-resolution input while achieving highcompression ratios to ensure\nan optimal and manageable number ofvision tokens. Experiments show that when\nthe number of text tokens is within 10 times that ofvision tokens(i.e., acompression ratio< 10x), the model can achieve decoding (OCR) precision of\n97%. Even at acompression ratioof 20x, the OCR accuracy still remains at\nabout 60%. This shows considerable promise for research areas such as\nhistorical long-context compression and memory forgetting mechanisms inLLMs.\nBeyond this,DeepSeek-OCRalso demonstrates high practical value. OnOmniDocBench, it surpassesGOT-OCR2.0(256 tokens/page) using only 100 vision\ntokens, and outperformsMinerU2.0(6000+ tokens per page on average) while\nutilizing fewer than 800vision tokens. In production,DeepSeek-OCRcan\ngenerate training data forLLMs/VLMsat a scale of 200k+ pages per day (a\nsingle A100-40G). Codes and model weights are publicly accessible at\nhttp://github.com/deepseek-ai/DeepSeek-OCR. deepseek OCR paper! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend What is the goal At first, all memory manufacturers thought it was just a small model innovation. arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/deepseek-ocr-contexts-optical-compression  ·Sign uporlog into comment",
+  "metadata": {
+    "title": "DeepSeek-OCR: Contexts Optical Compression",
+    "authors": [
+      "Haoran Wei",
+      "Yaofeng Sun"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.18234",
+    "upvote": 82,
+    "tags": []
+  }
+}

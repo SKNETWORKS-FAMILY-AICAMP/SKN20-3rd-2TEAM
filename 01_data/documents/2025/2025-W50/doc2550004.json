@@ -1,0 +1,12 @@
+{
+  "context": "EMMA is an efficient unified architecture for multimodal tasks that uses autoencoders, channel-wise concatenation, shared-and-decoupled networks, and mixture-of-experts to achieve superior performance and efficiency. We propose EMMA, an efficient and unified architecture formultimodal understanding, generation and editing. Specifically, EMMA primarily consists of 1) An efficientautoencoderwith a 32x compression ratio, which significantly reduces the number of tokens required for generation. This also ensures the training balance between understanding and generation tasks by applying the same compression ratio to images. 2)Channel-wise concatenationinstead of token-wise concatenation among visual understanding and generation tokens, which further reduces the visual tokens in unified architectures. 3) Ashared-and-decoupled networkthat enables mutual improvements across tasks while meeting the task-specific modeling requirements. 4) Amixture-of-expertsmechanism adopted for visual understanding encoder, which substantially improvesperceptual capabilitieswith a few parameters increase. Extensive experiments have shown that EMMA-4B can significantly outperform state-of-the-art unified multimodal approaches (e.g., BAGEL-7B) in both efficiency and performance, while also achieving competitive results compared to recentmultimodal understandingand generation experts (e.g., Qwen3-VL and Qwen-Image). We believe that EMMA lays a solid foundation for the future development of unified multimodal architectures. The project pagehttps://emma-umm.github.io/emma/ The project page:https://emma-umm.github.io/emma/ ·Sign uporlog into comment",
+  "metadata": {
+    "title": "EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/umm-emma/emma",
+    "huggingface_url": "https://huggingface.co/papers/2512.04810",
+    "upvote": 20,
+    "tags": []
+  }
+}

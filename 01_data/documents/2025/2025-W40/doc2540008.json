@@ -1,0 +1,17 @@
+{
+  "context": "SLA, a trainable attention method combining sparse and linear attention, accelerates Diffusion Transformer models for video generation with minimal quality loss. InDiffusion Transformer(DiT) models, particularly for video generation,attention latencyis a major bottleneck due to the longsequence lengthand thequadratic complexity. We find that attention weights can be separated into two\nparts: a small fraction of large weights with high rank and the remaining\nweights with very low rank. This naturally suggests applying sparse\nacceleration to the first part andlow-rank accelerationto the second. Based\non this finding, we proposeSLA(Sparse-Linear Attention), a trainable\nattention method that fuses sparse and linear attention to accelerate diffusion\nmodels.SLAclassifies attention weights into critical, marginal, and\nnegligible categories, applying O(N^2) attention tocritical weights, O(N)\nattention tomarginal weights, and skipping negligible ones.SLAcombines these\ncomputations into a singleGPU kerneland supports both forward and backward\npasses. With only a fewfine-tuningsteps usingSLA, DiT models achieve a 20x\nreduction inattention computation, resulting in significant acceleration\nwithout loss ofgeneration quality. Experiments show thatSLAreduces attention\ncomputation by 95% without degrading end-to-endgeneration quality,\noutperforming baseline methods. In addition, we implement an efficient GPU\nkernel forSLA, which yields a 13.7x speedup inattention computationand a\n2.2xend-to-end speedupin video generation on Wan2.1-1.3B. SLA (Sparse-Linear Attention), a trainable attention method that fuses sparse and linear attention to accelerate diffusion models.  With only a few fine-tuning steps using SLA, DiT models achieve a 20x reduction in attention computation. SLA reduces attention computation by 95% without degrading end-to-end generation quality, yielding a 13.7x speedup in attention. The code will be available athttps://github.com/thu-ml/SLA.   https://github.com/thu-ml/SLA ·Sign uporlog into comment",
+  "metadata": {
+    "title": "SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable\n  Sparse-Linear Attention",
+    "authors": [
+      "Jintao Zhang",
+      "Haoxu Wang",
+      "Kaiwen Zheng",
+      "Hongzhou Zhu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/thu-ml/SLA",
+    "huggingface_url": "https://huggingface.co/papers/2509.24006",
+    "upvote": 118,
+    "tags": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "A novel agentic framework, VLA^2, enhances vision-language-action models by integrating external modules like web retrieval and object detection, improving generalization to unseen objects and descriptions. Current vision-language-action (VLA) models, pre-trained on large-scale\nrobotic data, exhibit strongmulti-task capabilitiesand generalize well to\nvariations in visual and language instructions for manipulation. However, theirsuccess ratedrops significantly when faced with object concepts outside the\ntraining data, such as unseen object descriptions and textures in the dataset.\nTo address this, we propose a novel agentic framework, VLA^2, which leveragesOpenVLAas the execution backbone and effectively leverages external modules\nsuch asweb retrievalandobject detectionto provide visual and textual\nknowledge about target objects to the VLA. This approach mitigatesgeneralizationfailure when handlingout-of-distribution objects. Based on theLIBERO simulation environment, we introduced novel objects and object\ndescriptions to construct a newevaluation benchmarkwith three difficulty\nlevels to test the effectiveness of our method. Our framework successfully\noutperformed the current state-of-the-art models on our designed hard-levelgeneralizationbenchmark. Compared to the standaloneOpenVLAbaseline, VLA^2\nachieves a 44.2% improvement in thesuccess ratein the hard-level benchmark\nand an average improvement of 20.2% in all customized environments without any\nperformance degradation onin-domain tasks. Project website:\nhttps://vla-2.github.io. Project Website: vla-2.github.io This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "VLA^2: Empowering Vision-Language-Action Models with an Agentic\n  Framework for Unseen Concept Manipulation",
+    "authors": [
+      "Han Zhao"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/zhangjiaxuan-Xuan/VLA-2",
+    "huggingface_url": "https://huggingface.co/papers/2510.14902",
+    "upvote": 15,
+    "tags": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "ChronoPlay is a framework for generating dynamic RAG benchmarks in gaming, addressing the challenges of game content updates and player focus shifts. Retrieval Augmented Generation(RAG) systems are increasingly vital in\ndynamic domains like online gaming, yet the lack of a dedicated benchmark has\nimpeded standardized evaluation in this area. The core difficulty lies in Dual\nDynamics: the constant interplay between game content updates and the shifting\nfocus of the player community. Furthermore, the necessity of automating such a\nbenchmark introduces a critical requirement for player-centric authenticity to\nensure generated questions are realistic. To address this integrated challenge,\nwe introduceChronoPlay, a novel framework for the automated and continuous\ngeneration of gameRAGbenchmarks.ChronoPlayutilizes a dual-dynamic update\nmechanism to track both forms of change, and adual-source synthesis enginethat draws from official sources and player community to ensure both factual\ncorrectness and authentic query patterns. We instantiate our framework on three\ndistinct games to create the firstdynamic RAG benchmarkfor the gaming domain,\noffering new insights into model performance under these complex and realistic\nconditions. Code is avaliable at: https://github.com/hly1998/ChronoPlay. We are excited to introduce ChronoPlay, a novel framework for automatically generating dynamic RAG benchmarks in the gaming domain. Evaluating RAG in this area faces a unique challenge we termDual Dynamics: the constant interplay between Knowledge Evolution, driven by game patches and updates , and User Interest Drift, representing the shifting focus of the player community. ChronoPlay addresses this through two core components: a dual-source synthesis engine that draws from official sources and player communities to ensure both factual correctness and authentic query patterns , and a dual-dynamic update mechanism that tracks changes in both game content and user interest. Our experiments on three distinct games demonstrate that RAG system performance is highly volatile over a game's lifecycle , and ChronoPlay successfully captures these real-world challenges driven by dual dynamics, offering a new paradigm for evaluating and building more adaptive RAG systems. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ChronoPlay: A Framework for Modeling Dual Dynamics and Authenticity in\n  Game RAG Benchmarks",
+    "authors": [
+      "Liyang He"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/hly1998/ChronoPlay",
+    "huggingface_url": "https://huggingface.co/papers/2510.18455",
+    "upvote": 17,
+    "tags": []
+  }
+}

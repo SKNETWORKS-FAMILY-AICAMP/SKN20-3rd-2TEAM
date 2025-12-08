@@ -1,0 +1,18 @@
+{
+  "context": "VisCoder2, a multi-language visualization model trained on VisCode-Multi-679K, outperforms open-source baselines and approaches proprietary models in visualization coding tasks, especially with iterative self-debugging. Large language models(LLMs) have recently enabledcoding agentscapable of\ngenerating, executing, and revisingvisualization code. However, existing\nmodels often fail in practical workflows due to limitedlanguage coverage,\nunreliable execution, and lack ofiterative correction mechanisms. Progress has\nbeen constrained by narrow datasets and benchmarks that emphasize single-round\ngeneration and single-language tasks. To address these challenges, we introduce\nthree complementary resources for advancing visualizationcoding agents.VisCode-Multi-679Kis a large-scale, supervised dataset containing 679K\nvalidated and executable visualization samples with multi-turn correction\ndialogues across 12 programming languages.VisPlotBenchis a benchmark for\nsystematic evaluation, featuring executable tasks, rendered outputs, and\nprotocols for both initial generation and multi-round self-debug. Finally, we\npresentVisCoder2, a family of multi-language visualization models trained onVisCode-Multi-679K. Experiments show thatVisCoder2significantly outperforms\nstrong open-source baselines and approaches the performance of proprietary\nmodels like GPT-4.1, with further gains from iterative self-debug, reaching\n82.4% overallexecution pass rateat the 32B scale, particularly in symbolic orcompiler-dependent languages. VisCoder2: Building Multi-Language Visualization Coding Agents arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/viscoder2-building-multi-language-visualization-coding-agents ·Sign uporlog into comment",
+  "metadata": {
+    "title": "VisCoder2: Building Multi-Language Visualization Coding Agents",
+    "authors": [
+      "Yuansheng Ni",
+      "Songcheng Cai",
+      "Xiangchao Chen",
+      "Jiarong Liang",
+      "Ping Nie"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/TIGER-AI-Lab/VisCoder2",
+    "huggingface_url": "https://huggingface.co/papers/2510.23642",
+    "upvote": 21,
+    "tags": []
+  }
+}

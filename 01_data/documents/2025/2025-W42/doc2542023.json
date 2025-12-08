@@ -1,0 +1,15 @@
+{
+  "context": "Latent Refinement Decoding (LRD) improves parallel sequence generation by maintaining global consistency and iterative refinement, enhancing accuracy and reducing latency. Autoregressive (AR) models remain the standard for natural language\ngeneration but still suffer from high latency due to strictly sequential\ndecoding. Recentdiffusion-inspired approaches, such asLlaDAandDream,\nmitigate this by generating in parallel, yet they suffer from two core\nlimitations: information loss, as predictive distributions for non-finalized\ntokens are discarded at each step, and premature commitment, where local\ndecisions are made without sufficient global coordination. We introduce Latent\nRefinement Decoding (LRD), a two-stage framework withLatent Refinementand aPredictive Feedback Loop. The first stage maintains masked positions as\ndistributional mixtures of predicted tokens and the mask embedding, allowing\nthe model to establish more globally consistent beliefs. The second stage\nprogressively finalizes confident tokens while retaining uncertain ones for\niterative feedback.KL-divergence dynamicsprovide a principled and reliable\ncriterion for convergence and early stopping. Experiments across coding\n(HumanEval+6.3,MBPP+2.6) and reasoning (GSM8K+2.9,MATH500+3.8) show that\nLRD improves accuracy while delivering speedups of up to 10.6x, making it a\nstrong and versatile alternative for parallel sequence generation. Latent Refinement Decoding (LRD) is a two-stage parallel generation framework that mitigates information loss and premature commitment in diffusion-inspired models by maintaining distributional mixtures and iterative feedback, achieving higher accuracy and up to 10.6× faster decoding across coding and reasoning tasks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Latent Refinement Decoding: Enhancing Diffusion-Based Language Models by\n  Refining Belief States",
+    "authors": [
+      "Chen Jin",
+      "Lin Gui"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.11052",
+    "upvote": 51,
+    "tags": []
+  }
+}

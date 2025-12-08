@@ -1,0 +1,17 @@
+{
+  "context": "A variational reasoning framework treats thinking traces as latent variables, optimizing them through variational inference to improve language model reasoning. We introduce avariational reasoning frameworkfor language models that\ntreats thinking traces aslatent variablesand optimizes them throughvariational inference. Starting from theevidence lower bound (ELBO), we extend\nit to amulti-trace objectivefor tighter bounds and propose a forward-KL\nformulation that stabilizes the training of the variational posterior. We\nfurther show thatrejection sampling finetuningandbinary-reward RL, includingGRPO, can be interpreted as local forward-KL objectives, where an implicit\nweighting bymodel accuracynaturally arises from the derivation and reveals a\npreviously unnoticed bias toward easier questions. We empirically validate our\nmethod on the Qwen 2.5 and Qwen 3 model families across a wide range of\nreasoning tasks. Overall, our work provides a principled probabilistic\nperspective that unifiesvariational inferencewithRL-style methodsand yields\nstable objectives for improving the reasoning ability of language models. Our\ncode is available at https://github.com/sail-sg/variational-reasoning. We introduce a variational reasoning framework for language models that treats thinking traces as latent variables and optimizes them through variational inference. Starting from the evidence lower bound (ELBO), we extend it to a multi-trace objective for tighter bounds and propose a forward-KL formulation that stabilizes the training of the variational posterior. We further show that rejection sampling finetuning and binary-reward RL, including GRPO, can be interpreted as local forward-KL objectives, where an implicit weighting by model accuracy naturally arises from the derivation and reveals a previously unnoticed bias toward easier questions. We empirically validate our method on the Qwen 2.5 and Qwen 3 model families across a wide range of reasoning tasks. Overall, our work provides a principled probabilistic perspective that unifies variational inference with RL-style methods and yields stable objectives for improving the reasoning ability of language models. Our code is available atthis https URL. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Variational Reasoning for Language Models",
+    "authors": [
+      "Xiangxin Zhou",
+      "Zichen Liu",
+      "Chongxuan Li",
+      "Tianyu Pang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/sail-sg/variational-reasoning",
+    "huggingface_url": "https://huggingface.co/papers/2509.22637",
+    "upvote": 69,
+    "tags": []
+  }
+}

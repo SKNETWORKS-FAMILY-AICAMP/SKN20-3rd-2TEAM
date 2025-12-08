@@ -1,0 +1,16 @@
+{
+  "context": "COIG-Writer, a Chinese creative writing dataset, reveals that process supervision and general-purpose data are crucial for creative writing, with cultural-bound capabilities and lexical diversity impacting performance. Large language models exhibit systematic deficiencies in creative writing,\nparticularly in non-English contexts where training data is scarce and lacks\nprocess-level supervision. We presentCOIG-Writer, a novel Chinese creative\nwriting dataset that captures both diverse outputs and their underlying thought\nprocesses through systematic reverse-engineering of high-quality texts. Unlike\nexisting datasets that provide only input-output pairs,COIG-Writercomprises\n1,665 meticulously curated triplets spanning 51 genres, each containing: (1) areverse-engineered prompt, (2) detailedcreative reasoningdocumenting\ndecision-making processes, and (3) the final text. Through comprehensive\nexperiments, we identify a two-component model of creative writing: narrative\nlogic (provided byprocess supervision) andlinguistic expression(maintained\nbygeneral-purpose data). Our findings reveal three critical insights: (1)Process supervisionis highly effective but requires stabilization with general\ndata. A ratio of at least one creative sample to twelve general samples is\nneeded to achieve optimal performance; below this threshold, the win rate\nprogressively degrades (from 62.75% down to 35.78%)., (2) creative capabilities\nare culturally-bound with nocross-lingual transfer(89.26pp gap between\nChinese and English performance), and (3)lexical diversityinversely\ncorrelates with creative quality (TTR paradox), suggesting high diversity\nsignals compensatory behavior for logical deficiencies. These findings\nestablish that creative excellence emerges from the interaction between logical\nscaffolding and linguistic grounding, analogous to how mathematical reasoning\nenhances but cannot replace linguistic competence in foundation models. Project Homepage:https://COIG-Writer.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "COIG-Writer: A High-Quality Dataset for Chinese Creative Writing with\n  Thought Processes",
+    "authors": [
+      "Xin Li",
+      "Minghao Liu",
+      "Qiguang Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/COIG-Writer/COIG-Writer",
+    "huggingface_url": "https://huggingface.co/papers/2510.14763",
+    "upvote": 13,
+    "tags": []
+  }
+}

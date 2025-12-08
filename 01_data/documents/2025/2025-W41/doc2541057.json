@@ -1,0 +1,16 @@
+{
+  "context": "PickStyle uses diffusion models with style adapters and synthetic video clips to perform video style transfer from text prompts, preserving context and style. We address the task ofvideo style transferwithdiffusion models, where the\ngoal is to preserve the context of an input video while rendering it in a\ntarget style specified by a text prompt. A major challenge is the lack of\npaired video data for supervision. We propose PickStyle, a video-to-video style\ntransfer framework that augments pretrained video diffusion backbones withstyle adaptersand benefits from paired still image data with source-style\ncorrespondences for training. PickStyle inserts low-rank adapters into theself-attention layersofconditioning modules, enabling efficient\nspecialization for motion-style transfer while maintaining strong alignment\nbetween video content and style. To bridge the gap between static image\nsupervision and dynamic video, we constructsynthetic training clipsfrom\npaired images by applying shared augmentations that simulatecamera motion,\nensuring temporal priors are preserved. In addition, we introduce Context-Style\nClassifier-Free Guidance (CS-CFG), a novel factorization of classifier-free\nguidance into independent text (style) and video (context) directions.CS-CFGensures that context is preserved in generated video while the style is\neffectively transferred. Experiments across benchmarks show that our approach\nachievestemporally coherent,style-faithful, andcontent-preservingvideo\ntranslations, outperforming existing baselines both qualitatively and\nquantitatively. TL;DR: PickStyle is a diffusion-based video style transfer framework that preserves video context while applying a target visual style. It uses low-rank style adapters and synthetic clip augmentation from paired images for training, and introduces Context-Style Classifier-Free Guidance (CS-CFG) to independently control content and style, achieving temporally consistent and style-faithful video results. 🌐Project page:http://pickstyle.pickford.ai/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "PickStyle: Video-to-Video Style Transfer with Context-Style Adapters",
+    "authors": [
+      "Soroush Mehraban",
+      "Vida Adeli",
+      "Babak Taati"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.07546",
+    "upvote": 21,
+    "tags": []
+  }
+}

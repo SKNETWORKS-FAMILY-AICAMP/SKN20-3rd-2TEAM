@@ -1,0 +1,12 @@
+{
+  "context": "Agent Context Optimization (ACON) compresses context in large language models for efficient long-horizon tasks by analyzing failure cases and distilling the compressor into smaller models. Large language models (LLMs) are increasingly deployed as agents in dynamic,\nreal-world environments, where success requires both reasoning and effective\ntool use. A central challenge for agentic tasks is the growing context length,\nas agents must accumulate long histories of actions and observations. This\nexpansion raises costs and reduces efficiency inlong-horizon tasks, yet prior\nwork oncontext compressionhas mostly focused on single-step tasks or narrow\napplications. We introduceAgent Context Optimization(ACON), a unified\nframework that optimally compresses bothenvironment observationsandinteraction historiesinto concise yet informative condensations.ACONleveragescompression guideline optimizationinnatural language space: givenpaired trajectorieswhere full context succeeds but compressed context fails,\ncapable LLMs analyze the causes of failure, and the compression guideline is\nupdated accordingly. Furthermore, we propose distilling the optimized LLM\ncompressor into smaller models to reduce the overhead of the additional module.\nExperiments on AppWorld, OfficeBench, and Multi-objective QA show thatACONreducesmemory usageby 26-54% (peak tokens) while largely preserving task\nperformance, preserves over 95% ofaccuracywhen distilled into smaller\ncompressors, and enhances smaller LMs as long-horizon agents with up to 46%performance improvement. We will release the code as soon as possible. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ACON: Optimizing Context Compression for Long-horizon LLM Agents",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/microsoft/acon",
+    "huggingface_url": "https://huggingface.co/papers/2510.00615",
+    "upvote": 32,
+    "tags": []
+  }
+}

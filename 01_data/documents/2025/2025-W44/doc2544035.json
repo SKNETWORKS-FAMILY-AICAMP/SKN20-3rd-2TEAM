@@ -1,0 +1,16 @@
+{
+  "context": "Video models like Veo-3 show promise in short-term visual reasoning but struggle with long-term causal reasoning and abstract logic, indicating they are not yet reliable standalone zero-shot reasoners. Recent video generation models can produce high-fidelity, temporally coherent\nvideos, indicating that they may encode substantial world knowledge. Beyond\nrealistic synthesis, they also exhibit emerging behaviors indicative of visual\nperception, modeling, and manipulation. Yet, an important question still\nremains: Arevideo modelsready to serve aszero-shot reasonersin challenging\nvisual reasoning scenarios? In this work, we conduct an empirical study to\ncomprehensively investigate this question, focusing on the leading and popularVeo-3. We evaluate its reasoning behavior across 12 dimensions, including\nspatial, geometric, physical, temporal, and embodied logic, systematically\ncharacterizing both its strengths and failure modes. To standardize this study,\nwe curate the evaluation data into MME-CoF, a compact benchmark that enables\nin-depth and thorough assessment ofChain-of-Frame (CoF) reasoning. Our\nfindings reveal that while currentvideo modelsdemonstrate promising reasoning\npatterns on short-horizonspatial coherence,fine-grained grounding, andlocally consistent dynamics, they remain limited in long-horizon causal\nreasoning, strictgeometric constraints, andabstract logic. Overall, they are\nnot yet reliable as standalonezero-shot reasoners, but exhibit encouraging\nsigns as complementary visual engines alongside dedicated reasoning models.\nProject page: https://video-cof.github.io Homepage:https://video-cof.github.io/ Excellent work! ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with\n  the MME-CoF Benchmark",
+    "authors": [
+      "Xinyan Chen",
+      "Yu Qi",
+      "Dongzhi Jiang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/ZiyuGuo99/MME-CoF",
+    "huggingface_url": "https://huggingface.co/papers/2510.26802",
+    "upvote": 33,
+    "tags": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "A quantifiable framework based on Cattell-Horn-Carroll theory evaluates AI systems across ten cognitive domains, revealing significant gaps in foundational cognitive abilities like long-term memory. The lack of a concrete definition for Artificial General Intelligence (AGI)\nobscures the gap between today's specialized AI and human-level cognition. This\npaper introduces a quantifiable framework to address this, defining AGI as\nmatching the cognitive versatility and proficiency of a well-educated adult. To\noperationalize this, we ground our methodology inCattell-Horn-Carroll theory,\nthe most empirically validated model of human cognition. The framework dissects\ngeneral intelligence into ten corecognitive domains-includingreasoning,memory, andperception-and adapts established humanpsychometric batteriesto\nevaluate AI systems. Application of this framework reveals a highly \"jagged\"\ncognitive profile in contemporary models. While proficient in\nknowledge-intensive domains, current AI systems have critical deficits in\nfoundational cognitive machinery, particularly long-termmemorystorage. The\nresultingAGI scores(e.g., GPT-4 at 27%, GPT-5 at 58%) concretely quantify\nboth rapid progress and the substantial gap remaining before AGI. arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/a-definition-of-agi The paperdefines AGI as an AI matching or surpassing the cognitive versatility and proficiency of a well-educated adult, measured across ten human-like cognitive domains. This paper should seriously reevaluate their framework on GPT-5 Pro rather than relying on the Auto mode of GPT-5 with a sloppy router behind it. We are talking about achieving AGI capabilities and exposing a range of serious risks for human kind. Therefore, measuring the most powerful frontier model at the moment does provide a better sense of where we stand today. it's a start ·Sign uporlog into comment",
+  "metadata": {
+    "title": "A Definition of AGI",
+    "authors": [
+      "Long Phan"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.18212",
+    "upvote": 34,
+    "tags": []
+  }
+}

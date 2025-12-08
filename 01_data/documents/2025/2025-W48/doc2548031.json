@@ -1,0 +1,18 @@
+{
+  "context": "A unified Vision-Language-Action (VLA) and world model, RynnVLA-002, jointly learns environmental dynamics and action planning, outperforming individual models in both simulation and real-world tasks. We introduce RynnVLA-002, a unifiedVision-Language-Action (VLA)andworld model. Theworld modelleverages action and visual inputs to predict futureimage states, learning theunderlying physicsof the environment to refineaction generation. Conversely, the VLA model produces subsequent actions from image observations, enhancingvisual understandingand supporting theworld model's image generation. The unified framework of RynnVLA-002 enables joint learning ofenvironmental dynamicsandaction planning. Our experiments show that RynnVLA-002 surpasses individual VLA andworld models, demonstrating their mutual enhancement. We evaluate RynnVLA-002 in both simulation and real-world robot tasks. RynnVLA-002 achieves 97.4% success rate on theLIBERO simulation benchmarkwithout pretraining, while in real-worldLeRobot experiments, its integratedworld modelboosts the overall success rate by 50%. Watch videos and get code athttps://github.com/alibaba-damo-academy/RynnVLA-002! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "RynnVLA-002: A Unified Vision-Language-Action and World Model",
+    "authors": [
+      "Siteng Huang",
+      "Hangjie Yuan",
+      "Chaohui Yu",
+      "Yuming Jiang",
+      "Jiayan Guo"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/alibaba-damo-academy/RynnVLA-002",
+    "huggingface_url": "https://huggingface.co/papers/2511.17502",
+    "upvote": 24,
+    "tags": []
+  }
+}

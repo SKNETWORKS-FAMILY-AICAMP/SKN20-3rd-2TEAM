@@ -1,0 +1,14 @@
+{
+  "context": "SVG, a novel latent diffusion model without VAEs, uses self-supervised representations to enable efficient training, few-step sampling, and high-quality visual generation with semantic and discriminative capabilities. Recent progress in diffusion-based visual generation has largely relied onlatent diffusion modelswithvariational autoencoders(VAEs). While effective\nfor high-fidelity synthesis, this VAE+diffusion paradigm suffers from limited\ntraining efficiency, slow inference, and poor transferability to broader vision\ntasks. These issues stem from a key limitation of VAE latent spaces: the lack\nof clear semantic separation and strong discriminative structure. Our analysis\nconfirms that these properties are crucial not only for perception and\nunderstanding tasks, but also for the stable and efficient training of latentdiffusion models. Motivated by this insight, we introduce SVG, a novel latent\ndiffusion model withoutvariational autoencoders, which leveragesself-supervised representationsfor visual generation. SVG constructs a feature\nspace with clearsemantic discriminabilityby leveraging frozenDINO features,\nwhile a lightweightresidual branchcaptures fine-grained details forhigh-fidelity reconstruction.Diffusion modelsare trained directly on this\nsemantically structured latent space to facilitate more efficient learning. As\na result, SVG enables accelerated diffusion training, supports few-step\nsampling, and improves generative quality. Experimental results further show\nthat SVG preserves the semantic and discriminative capabilities of the\nunderlyingself-supervised representations, providing a principled pathway\ntowardtask-general, high-qualityvisual representations. We introduce SVG (Self-supervised representation for Visual Generation), a new paradigm for latent diffusion models (LDMs) that completely eliminates the traditional Variational Autoencoder (VAE). This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Latent Diffusion Model without Variational Autoencoder",
+    "authors": [
+      "Haolin Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/shiml20/SVG",
+    "huggingface_url": "https://huggingface.co/papers/2510.15301",
+    "upvote": 48,
+    "tags": []
+  }
+}

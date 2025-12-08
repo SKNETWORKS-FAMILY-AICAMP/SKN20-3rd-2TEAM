@@ -1,0 +1,14 @@
+{
+  "context": "MoRe4D generates high-quality 4D scenes with multi-view consistency and dynamic details from a single image using a diffusion-based trajectory generator and depth-guided motion normalization. Generating interactive and dynamic 4D scenes from a single static image remains a core challenge. Most existing generate-then-reconstruct and reconstruct-then-generate methods decouple geometry from motion, causing spatiotemporal inconsistencies and poor generalization. To address these, we extend the reconstruct-then-generate framework to jointly perform Motion generation and geometric Reconstruction for 4D Synthesis (MoRe4D). We first introduceTrajScene-60K, a large-scale dataset of 60,000 video samples with dense point trajectories, addressing the scarcity of high-quality 4D scene data. Based on this, we propose adiffusion-based 4D Scene Trajectory Generator(4D-STraG) to jointly generate geometrically consistent and motion-plausible 4D point trajectories. To leverage single-view priors, we design adepth-guided motion normalizationstrategy and amotion-aware modulefor effective geometry and dynamics integration. We then propose a4D View Synthesis Module(4D-ViSM) to render videos with arbitrary camera trajectories from 4D point track representations. Experiments show that MoRe4D generates high-quality 4D scenes withmulti-view consistencyand richdynamic detailsfrom a single image. Code: https://github.com/Zhangyr2022/MoRe4D. Project Page:https://ivg-yanranzhang.github.io/MoRe4D/Github Repo:https://github.com/Zhangyr2022/MoRe4DThe dataset is coming soon. Stay tuned!  ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Joint 3D Geometry Reconstruction and Motion Generation for 4D Synthesis from a Single Image",
+    "authors": [
+      "Yanran Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Zhangyr2022/MoRe4D",
+    "huggingface_url": "https://huggingface.co/papers/2512.05044",
+    "upvote": 12,
+    "tags": []
+  }
+}

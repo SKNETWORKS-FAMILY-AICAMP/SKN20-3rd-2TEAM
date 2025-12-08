@@ -1,0 +1,12 @@
+{
+  "context": "Lookahead Anchoring improves audio-driven human animation by using future keyframes as dynamic guides, enhancing lip synchronization, identity preservation, and visual quality. Audio-driven human animation models often suffer fromidentity driftduringtemporal autoregressive generation, where characters gradually lose their\nidentity over time. One solution is to generatekeyframesas intermediate\ntemporal anchors that prevent degradation, but this requires an additional\nkeyframe generation stage and can restrict natural motion dynamics. To address\nthis, we proposeLookahead Anchoring, which leverageskeyframesfrom future\ntimesteps ahead of the current generation window, rather than within it. This\ntransformskeyframesfrom fixed boundaries intodirectional beacons: the model\ncontinuously pursues these future anchors while responding to immediate audio\ncues, maintaining consistent identity through persistent guidance. This also\nenablesself-keyframing, where the reference image serves as the lookahead\ntarget, eliminating the need for keyframe generation entirely. We find that thetemporal lookahead distancenaturally controls the balance between expressivity\nand consistency: larger distances allow for greater motion freedom, while\nsmaller ones strengthen identity adherence. When applied to three recent human\nanimation models,Lookahead Anchoringachieves superior lip synchronization,\nidentity preservation, and visual quality, demonstrating improved temporal\nconditioning across several different architectures. Video results are\navailable at the following link: https://lookahead-anchoring.github.io. [Audio-Driven Human Animation] Enabling Stable Long Human Animation with Any Video DiTs Project page:https://lookahead-anchoring.github.io/ Any idea when the code and weights will be available? The Github repo is blank. Appreciate. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Lookahead Anchoring: Preserving Character Identity in Audio-Driven Human\n  Animation",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.23581",
+    "upvote": 41,
+    "tags": []
+  }
+}

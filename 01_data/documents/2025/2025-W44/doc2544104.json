@@ -1,0 +1,14 @@
+{
+  "context": "An ARC-Encoder compresses context into continuous representations for LLMs, improving inference efficiency and performance across various scenarios. Recent techniques such asretrieval-augmented generationor chain-of-thought\nreasoning have led to longer contexts and increased inference costs. Context\ncompression techniques can reduce these costs, but the most effective\napproaches require fine-tuning the target model or even modifying its\narchitecture. This can degrade its general abilities when not used for this\nspecific purpose. Here we explore an alternative approach: an encoder that\ncompresses the context into continuous representations which replace token\nembeddings indecoder LLMs. First, we perform a systematic study of training\nstrategies and architecture choices for the encoder. Our findings led to the\ndesign of anAdaptable text Representations Compressor, namedARC-Encoder,\nwhich outputs x-times fewer continuous representations (typically\nx!in!{4,8}) than text tokens. We evaluateARC-Encoderacross a variety\nof LLM usage scenarios, ranging fromin-context learningto context window\nextension, on both instruct andbase decoders. Results show thatARC-Encoderachieves state-of-the-art performance on several benchmarks while improving\ncomputational efficiency at inference. Finally, we demonstrate that our models\ncan be adapted to multiple decoders simultaneously, allowing a single encoder\nto generalize across differentdecoder LLMs. This makesARC-Encodera flexible\nand efficient solution for portable encoders that work seamlessly with multiple\nLLMs. We release a training code at https://github.com/kyutai-labs/ARC-Encoder, fine-tuning dataset andpretrained modelsare available at\nhttps://huggingface.co/collections/kyutai/arc-encoders-68ee18787301407d60a57047 . We present a new method to design and train a text encoder which generates compressed text representations and feeds them to an unmodified decoder-only LLM. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ARC-Encoder: learning compressed text representations for large language\n  models",
+    "authors": [
+      "Hippolyte Pilchen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/kyutai-labs/ARC-Encoder",
+    "huggingface_url": "https://huggingface.co/papers/2510.20535",
+    "upvote": 6,
+    "tags": []
+  }
+}

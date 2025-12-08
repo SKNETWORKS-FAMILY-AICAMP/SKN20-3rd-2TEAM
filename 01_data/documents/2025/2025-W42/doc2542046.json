@@ -1,0 +1,14 @@
+{
+  "context": "A scalable data engine converts large-scale pre-training documents into diverse question-answer pairs for reinforcement learning, significantly improving model performance and efficiency. Large Language Models(LLMs) have achieved remarkable success throughimitation learningon vast text corpora, but this paradigm creates a\ntraining-generation gap and limits robust reasoning.Reinforcement learning(RL) offers a more data-efficient solution capable of bridging this gap, yet\nits application has been constrained by a critical data bottleneck: existing RL\ndatasets are orders of magnitude smaller and less diverse than web-scale\npre-training corpora. To address this, we introduce theWebscale-RL pipeline, a\nscalable data engine that systematically converts large-scale pre-training\ndocuments into millions of diverse, verifiable question-answer pairs for RL.\nUsing this pipeline, we construct theWebscale-RL dataset, containing 1.2\nmillion examples across more than 9 domains. Our experiments show that the\nmodel trained on this dataset significantly outperformscontinual pretrainingand strongdata refinementbaselines across a suite ofbenchmarks. Notably, RL\ntraining with our dataset proves substantially more efficient, achieving the\nperformance of continual pre-training with up to 100times fewer tokens. Our\nwork presents a viable path toward scaling RL to pre-training levels, enabling\nmore capable and efficient language models. RL for LLMs has been bottlenecked by tiny datasets (<10B tokens) vs pretraining (>1T).Our Webscale-RL pipeline converts pretraining text into diverse RL-ready QA data — scaling RL to pretraining levels! All codes and datasets are open-source! HF🤗:https://huggingface.co/datasets/Salesforce/Webscale-RL Github 🤖:https://github.com/SalesforceAIResearch/PretrainRL-pipeline This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining\n  Levels",
+    "authors": [
+      "Haolin Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/SalesforceAIResearch/PretrainRL-pipeline",
+    "huggingface_url": "https://huggingface.co/papers/2510.06499",
+    "upvote": 31,
+    "tags": []
+  }
+}

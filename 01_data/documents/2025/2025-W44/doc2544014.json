@@ -1,0 +1,12 @@
+{
+  "context": "Diffusion models are explored through variational, score-based, and flow-based perspectives, focusing on their mathematical foundations and applications in controllable generation and efficient sampling. This monograph presents the core principles that have guided the development\nofdiffusion models, tracing their origins and showing how diverse formulations\narise from shared mathematical ideas. Diffusion modeling starts by defining a\nforward process that gradually corrupts data into noise, linking the data\ndistribution to a simple prior through a continuum of intermediate\ndistributions. The goal is to learn a reverse process that transforms noise\nback into data while recovering the same intermediates. We describe three\ncomplementary views. Thevariational view, inspired by variational\nautoencoders, sees diffusion as learning to remove noise step by step. Thescore-based view, rooted inenergy-based modeling, learns the gradient of the\nevolving data distribution, indicating how to nudge samples toward more likely\nregions. Theflow-based view, related tonormalizing flows, treats generation\nas following a smooth path that moves samples from noise to data under a\nlearned velocity field. These perspectives share a common backbone: atime-dependent velocity fieldwhose flow transports a simple prior to the data.\nSampling then amounts to solving adifferential equationthat evolves noise\ninto data along a continuous trajectory. On this foundation, the monograph\ndiscusses guidance forcontrollable generation,efficient numerical solvers,\nanddiffusion-motivated flow-map modelsthat learn direct mappings between\narbitrary times. It provides a conceptual and mathematically grounded\nunderstanding ofdiffusion modelsfor readers with basic deep-learning\nknowledge. OG Thanks a lot for your work! provide me extra insights on diffusion, great work ·Sign uporlog into comment",
+  "metadata": {
+    "title": "The Principles of Diffusion Models",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.21890",
+    "upvote": 59,
+    "tags": []
+  }
+}

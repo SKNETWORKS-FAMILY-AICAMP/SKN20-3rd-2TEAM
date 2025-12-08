@@ -1,0 +1,17 @@
+{
+  "context": "RECAP, a reinforcement learning method, enhances the safety and robustness of large reasoning models by teaching them to override flawed reasoning and maintain safety without additional training costs. Large reasoning models (LRMs) \"think\" by generating structuredchain-of-thought(CoT) before producing a final answer, yet they still lack the\nability to reason critically about safety alignment and are easily biased when\na flawed premise is injected into their thought process. We propose RECAP\n(Robust Safety Alignment via Counter-Aligned Prefilling), a principledreinforcement learning(RL) method for post-training that explicitly teaches\nmodels to override flawed reasoning trajectories and reroute to safe and\nhelpful responses. RECAP trains on a mixture of synthetically generated\ncounter-aligned CoT prefills andstandard prompts, requires no additional\ntraining cost or modifications beyond vanillareinforcement learningfrom human\nfeedback (RLHF), and substantially improves safety andjailbreak robustness,\nreducesoverrefusal, and preserves core reasoning capability -- all while\nmaintaining inference token budget. Extensive analysis shows that RECAP-trained\nmodels engage inself-reflectionmore frequently and remain robust underadaptive attacks, preserving safety even after repeated attempts to override\ntheir reasoning. We’d love to bring our recent work to the community — a collaboration betweenMeta Superintelligence Labs,IBM Research, andGeorgia Tech. We found thatflawed thinking can actually help reasoning models learn better!Our method,RECAP, is an RL post-training approach that teaches models to override unsafe reasoning, reroute to safe & helpful answers, and stay robust — all without extra training cost. More info can be found athttps://x.com/RealAnthonyPeng/status/1973756324547575873. If you find our work interesting, we’d really appreciate it if you could help share it with a broader audience.  RECAP trains LRMs on a mixture of counter-aligned prefilled and standard prompts. Harmful prompts are prefilled with unsafe reasoning, and benign prompts with refusal reasoning, forcing the model to override flawed trajectories to achieve high rewards. This simple recipe teaches models to internalize safety values and remain robust under both clean and adversarial reasoning traces, with no extra cost beyond standard RLHF. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Large Reasoning Models Learn Better Alignment from Flawed Thinking",
+    "authors": [
+      "ShengYun Peng",
+      "Eric Smith",
+      "Mahesh Pasupuleti",
+      "Jianfeng Chi"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.00938",
+    "upvote": 58,
+    "tags": []
+  }
+}

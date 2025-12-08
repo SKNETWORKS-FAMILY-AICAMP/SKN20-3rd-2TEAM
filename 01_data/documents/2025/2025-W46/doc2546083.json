@@ -1,0 +1,14 @@
+{
+  "context": "Omni-AVSR is a unified audio-visual LLM that efficiently supports ASR, VSR, and AVSR through multi-granularity training and parameter-efficient adaptation, achieving high accuracy with reduced resource use. Large language models (LLMs) have recently achieved impressive results in\nspeech recognition across multiple modalities, including Auditory Speech\nRecognition (ASR),Visual Speech Recognition (VSR), and Audio-Visual Speech\nRecognition (AVSR). Despite this progress, current LLM-based approaches\ntypically address each task independently, training separate models that raise\ncomputational and deployment resource use while missing potential cross-task\nsynergies. They also rely on fixed-rate token compression, which restricts\nflexibility in balancing accuracy with efficiency. These limitations highlight\nthe need for a unified framework that can support ASR, VSR, and AVSR while\nenabling elastic inference. To this end, we present Omni-AVSR, a unified\naudio-visual LLM that combines efficientmulti-granularity trainingwithparameter-efficient adaptation. Specifically, we adapt the matryoshka\nrepresentation learning paradigm to efficiently train across multiple audio and\nvisual granularities, reducing its inherent training resource use. Furthermore,\nwe explore threeLoRA-based strategies for adapting the backbone LLM, balancing\nshared and task-specific specialization. Experiments onLRS2andLRS3show that\nOmni-AVSR achieves comparable or superior accuracy to state-of-the-art\nbaselines while training a single model at substantially lower training and\ndeployment resource use. The model also remains robust underacoustic noise,\nand we analyze its scaling behavior as LLM size increases, providing insights\ninto the trade-off between performance and efficiency. Project website:https://umbertocappellazzo.github.io/Omni-AVSRCode and checkpoints:https://github.com/umbertocappellazzo/Omni-AVSR This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Omni-AVSR: Towards Unified Multimodal Speech Recognition with Large\n  Language Models",
+    "authors": [
+      "Umberto Cappellazzo"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/umbertocappellazzo/Omni-AVSR",
+    "huggingface_url": "https://huggingface.co/papers/2511.07253",
+    "upvote": 2,
+    "tags": []
+  }
+}

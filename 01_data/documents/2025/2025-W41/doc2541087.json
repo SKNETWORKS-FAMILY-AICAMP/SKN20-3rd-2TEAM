@@ -1,0 +1,16 @@
+{
+  "context": "VTC-Bench is introduced to provide a fair evaluation framework for visual token compression by incorporating a data filtering mechanism to denoise existing benchmarks. Recent endeavors to accelerate inference inMultimodal Large Language Models(MLLMs) have primarily focused onvisual token compression. The effectiveness\nof these methods is typically assessed by measuring the accuracy drop on\nestablished benchmarks, comparing model performance before and after\ncompression. However, these benchmarks are originally designed to assess the\nperception and reasoning capabilities of MLLMs, rather than to evaluate\ncompression techniques. As a result, directly applying them to visual token\ncompression introduces a task mismatch. Strikingly, our investigation reveals\nthat simpleimage downsamplingconsistently outperforms many advanced\ncompression methods across multiple widely used benchmarks. Through extensive\nexperiments, we make the following observations: (i) Current benchmarks are\nnoisy for thevisual token compressiontask. (ii) Down-sampling is able to\nserve as a data filter to evaluate the difficulty of samples in the visual\ntoken compression task. Motivated by these findings, we introduceVTC-Bench, an\nevaluation framework that incorporates adata filtering mechanismto denoise\nexisting benchmarks, thereby enabling fairer and more accurate assessment ofvisual token compressionmethods. All data and code are available at\nhttps://github.com/Chenfei-Liao/VTC-Bench. Code Link:https://github.com/Chenfei-Liao/VTC-Bench This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Are We Using the Right Benchmark: An Evaluation Framework for Visual\n  Token Compression Methods",
+    "authors": [
+      "Chenfei Liao",
+      "Zichen Wen",
+      "Xu Zheng"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Chenfei-Liao/VTC-Bench",
+    "huggingface_url": "https://huggingface.co/papers/2510.07143",
+    "upvote": 12,
+    "tags": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "DialTree-RPO, an on-policy reinforcement learning framework with tree search, autonomously discovers diverse multi-turn attack strategies against large language models, achieving higher attack success rates and uncovering new attack trajectories. Despite recent rapid progress in AI safety, current large language models\nremain vulnerable toadversarial attacksinmulti-turn interactionsettings,\nwhere attackers strategically adapt their prompts across conversation turns and\npose a more critical yet realistic challenge. Existing approaches that discover\nsafety vulnerabilities either rely on manual red-teaming with human experts or\nemploy automated methods using pre-defined templates and human-curated attack\ndata, with most focusing on single-turn attacks. However, these methods did not\nexplore the vast space of possible multi-turn attacks, failing to consider\nnovel attack trajectories that emerge from complex dialogue dynamics and\nstrategic conversation planning. This gap is particularly critical given recent\nfindings that LLMs exhibit significantly higher vulnerability to multi-turn\nattacks compared to single-turn attacks. We propose DialTree-RPO, an on-policyreinforcement learningframework integrated withtree searchthat autonomously\ndiscovers diverse multi-turn attack strategies by treating the dialogue as asequential decision-makingproblem, enabling systematic exploration without\nmanually curated data. Through extensive experiments, our approach not only\nachieves more than 25.9% higher ASR across 10 target models compared to\nprevious state-of-the-art approaches, but also effectively uncovers new attack\nstrategies by learning optimaldialogue policiesthat maximize attack success\nacross multiple turns. Tree-based Dialogue Reinforced Policy Optimization for Red-Teaming Attacks This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Very interesting. I wonder how the pattern observed here would apply to less-harmful applications of LLMs, and whether or not repeated affirmation across several terms would also cause the quality in general to decline. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Tree-based Dialogue Reinforced Policy Optimization for Red-Teaming\n  Attacks",
+    "authors": [
+      "Ruohao Guo"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.02286",
+    "upvote": 28,
+    "tags": []
+  }
+}

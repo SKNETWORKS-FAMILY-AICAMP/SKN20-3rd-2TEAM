@@ -1,0 +1,12 @@
+{
+  "context": "Omni-Reward addresses modality imbalance and preference rigidity in reward models by introducing a benchmark, dataset, and model that support multiple modalities and free-form preferences. Reward models(RMs) play a critical role in aligning AI behaviors with human\npreferences, yet they face two fundamental challenges: (1)Modality Imbalance,\nwhere most RMs are mainly focused on text and image modalities, offering\nlimited support for video, audio, and other modalities; and (2) Preference\nRigidity, where training on fixed binary preference pairs fails to capture the\ncomplexity and diversity of personalized preferences. To address the above\nchallenges, we proposeOmni-Reward, a step toward generalist omni-modal reward\nmodeling with support for free-form preferences, consisting of: (1) Evaluation:\nWe introduceOmni-RewardBench, the first omni-modal RM benchmark with free-form\npreferences, covering nine tasks across five modalities including text, image,\nvideo, audio, and 3D; (2) Data: We constructOmni-RewardData, a multimodal\npreference dataset comprising 248K general preference pairs and 69K\ninstruction-tuning pairs for training generalist omni-modal RMs; (3) Model: We\nproposeOmni-RewardModel, which includes both discriminative and generative\nRMs, and achieves strong performance onOmni-RewardBenchas well as other\nwidely used reward modeling benchmarks. 📢Check out our work: Omni-Reward—a step towardgeneralist omni-modal reward modeling with free-form preferences! ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Omni-Reward: Towards Generalist Omni-Modal Reward Modeling with\n  Free-Form Preferences",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/HongbangYuan/OmniReward",
+    "huggingface_url": "https://huggingface.co/papers/2510.23451",
+    "upvote": 26,
+    "tags": []
+  }
+}

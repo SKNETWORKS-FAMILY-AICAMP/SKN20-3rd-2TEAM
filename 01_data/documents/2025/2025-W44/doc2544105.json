@@ -1,0 +1,14 @@
+{
+  "context": "The Remote Labor Index evaluates AI performance in real-world, economically valuable projects, showing limited automation capabilities and providing a benchmark for AI impacts. AIs have made rapid progress on research-oriented benchmarks of knowledge and\nreasoning, but it remains unclear how these gains translate into economic value\nand automation. To measure this, we introduce theRemote Labor Index(RLI), a\nbroadly multi-sector benchmark comprising real-world, economically valuable\nprojects designed to evaluateend-to-end agent performancein practical\nsettings. AI agents perform near the floor on RLI, with the highest-performing\nagent achieving an automation rate of 2.5%. These results help ground\ndiscussions ofAI automationin empirical evidence, setting a common basis for\ntracking AI impacts and enabling stakeholders to proactively navigate AI-driven\nlabor automation. Takeaway: Despite strong scores on research benchmarks, today’s agents barely automate real freelance-style work; RLI provides a concrete yardstick to track progress.  ￼ ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Remote Labor Index: Measuring AI Automation of Remote Work",
+    "authors": [
+      "Manasi Sharma"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.26787",
+    "upvote": 5,
+    "tags": []
+  }
+}

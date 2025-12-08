@@ -1,0 +1,16 @@
+{
+  "context": "RegionE is a region-aware framework that accelerates instruction-based image editing by differentiating between edited and unedited regions, optimizing the denoising process for each. Recently,instruction-based image editing(IIE) has received widespread\nattention. In practice, IIE often modifies only specific regions of an image,\nwhile the remaining areas largely remain unchanged. Although these two types of\nregions differ significantly in generation difficulty and computational\nredundancy, existing IIE models do not account for this distinction, instead\napplying a uniform generation process across the entire image. This motivates\nus to propose RegionE, an adaptive,region-aware generationframework that\naccelerates IIE tasks without additional training. Specifically, the RegionE\nframework consists of three main components: 1)Adaptive Region Partition. We\nobserved that the trajectory of unedited regions is straight, allowing for\nmulti-stepdenoised predictionsto be inferred in a single step. Therefore, in\nthe early denoising stages, we partition the image into edited and unedited\nregions based on the difference between the final estimated result and the\nreference image. 2)Region-Aware Generation. After distinguishing the regions,\nwe replace multi-step denoising with one-step prediction for unedited areas.\nFor edited regions, the trajectory is curved, requiring local iterative\ndenoising. To improve the efficiency and quality of local iterative generation,\nwe propose theRegion-Instruction KV Cache, which reduces computational cost\nwhile incorporating global information. 3)Adaptive Velocity Decay Cache.\nObserving that adjacent timesteps in edited regions exhibit strong velocity\nsimilarity, we further propose anadaptive velocity decay cacheto accelerate\nthe local denoising process. We applied RegionE to state-of-the-art IIE base\nmodels, including Step1X-Edit, FLUX.1 Kontext, and Qwen-Image-Edit. RegionE\nachieved acceleration factors of 2.57, 2.41, and 2.06. Evaluations by GPT-4o\nconfirmed that semantic and perceptual fidelity were well preserved.  ·Sign uporlog into comment",
+  "metadata": {
+    "title": "RegionE: Adaptive Region-Aware Generation for Efficient Image Editing",
+    "authors": [
+      "Pengtao Chen",
+      "Wei Cheng",
+      "Gang Yu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Peyton-Chen/RegionE",
+    "huggingface_url": "https://huggingface.co/papers/2510.25590",
+    "upvote": 27,
+    "tags": []
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "context": "A large-scale investigation into constructing a fully open bilingual LLM for Korean using synthetic data demonstrates that such data can sustain pretraining and achieve performance comparable to multilingual baselines. This work presents the first large-scale investigation into constructing a\nfully open bilinguallarge language model(LLM) for a non-English language,\nspecifically Korean, trained predominantly onsynthetic data. We introduceKORMo-10B, a 10.8B-parameter model trained from scratch on a Korean-English\ncorpus in which 68.74% of the Korean portion is synthetic. Through systematic\nexperimentation, we demonstrate thatsynthetic data, when carefully curated\nwith balanced linguistic coverage and diverse instruction styles, does not\ncause instability or degradation during large-scalepretraining. Furthermore,\nthe model achieves performance comparable to that of contemporary open-weight\nmultilingual baselines across a wide range of reasoning, knowledge, and\ninstruction-following benchmarks. Our experiments reveal two key findings: (1)synthetic datacan reliably sustain long-horizonpretrainingwithout model\ncollapse, and (2)bilingual instruction tuningenables near-native reasoning\nand discourse coherence in Korean. By fully releasing all components including\ndata, code, training recipes, and logs, this work establishes a transparent\nframework for developingsynthetic data-drivenfully open models(FOMs) inlow-resource settingsand sets a reproducible precedent for future multilingualLLMresearch. HF repository:https://huggingface.co/KORMo-Team This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "KORMo: Korean Open Reasoning Model for Everyone",
+    "authors": [
+      "Minjun Kim",
+      "Hyeonseok Lim",
+      "Hangyeol Yoo",
+      "Seungwoo Song",
+      "Minkyung Cho",
+      "Dongjae Shin"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/MLP-Lab/KORMo-tutorial",
+    "huggingface_url": "https://huggingface.co/papers/2510.09426",
+    "upvote": 81,
+    "tags": []
+  }
+}

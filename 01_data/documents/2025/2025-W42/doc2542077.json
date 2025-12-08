@@ -1,0 +1,16 @@
+{
+  "context": "Typicality bias in preference data causes mode collapse in LLMs, and Verbalized Sampling is introduced as a prompting strategy to enhance diversity without compromising accuracy or safety. Post-training alignment often reducesLLMdiversity, leading to a phenomenon\nknown asmode collapse. Unlike prior work that attributes this effect to\nalgorithmic limitations, we identify a fundamental, pervasive data-level\ndriver:typicality biasinpreference data, whereby annotators systematically\nfavor familiar text as a result of well-established findings in cognitive\npsychology. We formalize this bias theoretically, verify it on preference\ndatasets empirically, and show that it plays a central role inmode collapse.\nMotivated by this analysis, we introduceVerbalized Sampling, a simple,\ntraining-free prompting strategy to circumventmode collapse. VS prompts the\nmodel to verbalize a probability distribution over a set of responses (e.g.,\n``Generate 5 jokes about coffee and their corresponding probabilities'').\nComprehensive experiments show that VS significantly improves performance\nacrosscreative writing(poems, stories, jokes),dialogue simulation,open-ended QA, andsynthetic data generation, without sacrificing factual\naccuracy andsafety. For instance, increative writing, VS increases diversity\nby 1.6-2.1x over direct prompting. We further observe an emergent trend that\nmore capable models benefit more from VS. In sum, our work provides a new\ndata-centric perspective onmode collapseand a practical inference-time remedy\nthat helps unlock pre-trained generative diversity. Verbalized Sampling (VS) is a simple prompting strategy that improves LLM diversity by 2-3x. It works by asking the model to generate multiple responses with their probabilities, then sampling from this distribution. VS is training-free (works with any LLM via prompting), model-agnostic (GPT, Claude, Gemini, Llama, etc.), orthogonal to temperature, and effective across tasks like creative writing, social simulation, synthetic data generation, and open-ended QA.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM\n  Diversity",
+    "authors": [
+      "Jiayi Zhang",
+      "Simon Yu",
+      "Derek Chong"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/CHATS-lab/verbalized-sampling",
+    "huggingface_url": "https://huggingface.co/papers/2510.01171",
+    "upvote": 18,
+    "tags": []
+  }
+}

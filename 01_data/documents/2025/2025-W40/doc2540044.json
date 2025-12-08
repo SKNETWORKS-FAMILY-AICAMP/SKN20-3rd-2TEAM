@@ -1,0 +1,15 @@
+{
+  "context": "Code2Video generates educational videos using a code-centric agent framework, improving coherence and interpretability compared to direct code generation. While recentgenerative modelsadvancepixel-space video synthesis, they\nremain limited in producing professional educational videos, which demand\ndisciplinary knowledge, precise visual structures, and coherent transitions,\nlimiting their applicability in educational scenarios. Intuitively, such\nrequirements are better addressed through the manipulation of a renderable\nenvironment, which can be explicitly controlled vialogical commands(e.g.,\ncode). In this work, we propose Code2Video, acode-centric agent frameworkfor\ngenerating educational videos via executable Python code. The framework\ncomprises three collaborative agents: (i)Planner, which structures lecture\ncontent into temporally coherent flows and prepares corresponding visual\nassets; (ii)Coder, which converts structured instructions into executable\nPython codes while incorporating scope-guided auto-fix to enhance efficiency;\nand (iii)Critic, which leveragesvision-language models(VLM) with visual\nanchor prompts to refine spatial layout and ensure clarity. To support\nsystematic evaluation, we buildMMMC, a benchmark of professionally produced,\ndiscipline-specific educational videos. We evaluateMMMCacross diverse\ndimensions, includingVLM-as-a-Judge aesthetic scores, code efficiency, and\nparticularly,TeachQuiz, a novel end-to-end metric that quantifies how well aVLM, after unlearning, can recover knowledge by watching the generated videos.\nOur results demonstrate the potential of Code2Video as a scalable,\ninterpretable, and controllable approach, achieving 40% improvement over direct\ncode generation and producing videos comparable tohuman-crafted tutorials. The\ncode and datasets are available at https://github.com/showlab/Code2Video. TL;DR:Video Generation via Code.  ArXiv:https://arxiv.org/abs/2510.01174Website:https://showlab.github.io/Code2Video/Github:https://github.com/showlab/code2videoHF datasets:https://huggingface.co/datasets/YanzheChen/MMMC HF datasets:https://huggingface.co/datasets/YanzheChen/MMMC This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Code2Video: A Code-centric Paradigm for Educational Video Generation",
+    "authors": [
+      "Yanzhe Chen",
+      "Kevin Qinghong Lin"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/showlab/Code2Video",
+    "huggingface_url": "https://huggingface.co/papers/2510.01174",
+    "upvote": 33,
+    "tags": []
+  }
+}

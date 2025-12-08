@@ -1,0 +1,12 @@
+{
+  "context": "The framework π<sub>RL</sub> uses reinforcement learning to train flow-based Vision-Language-Action models, addressing challenges with intractable action log-likelihoods and achieving significant performance improvements over supervised fine-tuning. Vision-Language-Action (VLA) models enable robots to understand and perform\ncomplex tasks from multimodal input. Although recent work explores usingreinforcement learning(RL) to automate the laborious data collection process\nin scalingsupervised fine-tuning(SFT), applying large-scale RL to flow-based\nVLAs (e.g., pi_0, pi_{0.5}) remains challenging due to intractable action\nlog-likelihoods from iterative denoising.\n  We address this challenge with pi_{RL}, an open-source framework\nfor trainingflow-based VLAsin parallel simulation. pi_{RL}\nimplements two RL algorithms: (1) {Flow-Noise} models thedenoising processas\nadiscrete-time MDPwith alearnable noise networkfor exact log-likelihood\ncomputation. (2) {Flow-SDE} integrates denoising with agent-environment\ninteraction, formulating atwo-layer MDPthat employsODE-to-SDE conversionfor\nefficient RL exploration.\n  We evaluate pi_{RL} onLIBEROandManiSkillbenchmarks. OnLIBERO,\npi_{RL} boostsfew-shot SFTmodels pi_0 and pi_{0.5} from 57.6%\nto 97.6% and from 77.1% to 98.3%, respectively. InManiSkill, we train\npi_{RL} in 320 parallel environments, improving pi_0 from 41.6% to\n85.7% and pi_{0.5} from 40.0% to 84.8% across 4352pick-and-place tasks,\ndemonstratingscalable multitask RLunderheterogeneous simulation.\n  Overall, pi_{RL} achieves significant performance gains and\nstronger generalization over SFT-models, validating the effectiveness of online\nRL forflow-based VLAs.  The open-source link:https://github.com/RLinf/RLinf lgtm, that's nice! ·Sign uporlog into comment",
+  "metadata": {
+    "title": "π_RL: Online RL Fine-tuning for Flow-based\n  Vision-Language-Action Models",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/RLinf/RLinf",
+    "huggingface_url": "https://huggingface.co/papers/2510.25889",
+    "upvote": 64,
+    "tags": []
+  }
+}

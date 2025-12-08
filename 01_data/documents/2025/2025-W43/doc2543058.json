@@ -1,0 +1,16 @@
+{
+  "context": "SAKE is a benchmark for editing auditory attribute knowledge in Large Audio-Language Models, addressing challenges in reliability, generality, locality, and portability. Knowledge editingoffers an efficient way to update model knowledge without\nfull retraining, but prior work has concentrated almost exclusively on textual\nor visual modalities. We introduce SAKE, the firstbenchmarkspecifically\ndesigned for editingauditory attribute knowledgein Large Audio-Language\nModels (LALMs). Unlike factual updates, SAKE targets several abstract auditory\nattributes, capturing knowledge types that go beyond conventional textual and\nvisual domains. Webenchmarkseven editing methods on twoLALMsalong four\ndimensions:reliability,generality,audio/text locality, andportability.\nResults highlight challenges such as preservingintra-attribute knowledgeunrelated to the edit, generalizing edits tomultimodal reasoning, and\nmaintaining edits undersequential updates. SAKE provides a principled\nframework to study howknowledge editingextends to the auditory modalities,\nopening new directions for maintaining and adaptingLALMsin more diverse\nreal-world scenarios. Code will be available athttps://github.com/ckyang1124/SAKE This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "SAKE: Towards Editing Auditory Attribute Knowledge of Large\n  Audio-Language Models",
+    "authors": [
+      "Chih-Kai Yang",
+      "Yen-Ting Piao",
+      "Tzu-Wen Hsu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/ckyang1124/SAKE",
+    "huggingface_url": "https://huggingface.co/papers/2510.16917",
+    "upvote": 19,
+    "tags": []
+  }
+}

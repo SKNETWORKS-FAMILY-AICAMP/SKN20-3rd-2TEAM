@@ -1,0 +1,15 @@
+{
+  "context": "Puffin, a unified multimodal model, integrates language regression and diffusion-based generation to enhance camera-centric spatial understanding and generation by treating camera parameters as language. Camera-centricunderstanding and generation are two cornerstones of spatial\nintelligence, yet they are typically studied in isolation. We present Puffin, a\nunifiedcamera-centricmultimodal modelthat extendsspatial awarenessalong\nthe camera dimension. Puffin integrateslanguage regressionand diffusion-based\ngeneration to interpret and create scenes from arbitrary viewpoints. To bridge\nthe modality gap between cameras andvision-language, we introduce a novel\nparadigm that treatscamera as language, enabling thinking with camera. This\nguides the model to align spatially grounded visual cues with photographic\nterminology while reasoning acrossgeometric context. Puffin is trained onPuffin-4M, a large-scale dataset of 4 millionvision-language-camera triplets.\nWe incorporate bothglobal camera parametersandpixel-wise camera maps,\nyielding flexible and reliablespatial generation. Experiments demonstrate\nPuffin superior performance over specialized models forcamera-centricgeneration and understanding. Withinstruction tuning, Puffin generalizes to\ndiverse cross-view tasks such asspatial imagination,world exploration, andphotography guidance. We will release the code, models, dataset pipeline, and\nbenchmark to advance multimodal spatial intelligence research. Project Page:https://kangliao929.github.io/projects/puffin/Github:https://github.com/KangLiao929/PuffinDataset:https://huggingface.co/datasets/KangLiao/Puffin-4MModel:https://huggingface.co/KangLiao/PuffinDemo:https://huggingface.co/spaces/KangLiao/Puffin This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/thinking-with-camera-a-unified-multimodal-model-for-camera-centric-understanding-and-generation ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Thinking with Camera: A Unified Multimodal Model for Camera-Centric\n  Understanding and Generation",
+    "authors": [
+      "Kang Liao",
+      "Yikai Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/KangLiao929/Puffin",
+    "huggingface_url": "https://huggingface.co/papers/2510.08673",
+    "upvote": 125,
+    "tags": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "context": "Paper2Web is a benchmark and evaluation framework for academic webpage generation, featuring PWAgent, an autonomous pipeline that enhances content and layout through MCP tools, outperforming end-to-end baselines. Academic project websites can more effectively disseminate research when they\nclearly present core content and enable intuitive navigation and interaction.\nHowever, current approaches such as directLarge Language Model (LLM)generation, templates, or direct HTML conversion struggle to produce\nlayout-aware, interactive sites, and a comprehensive evaluation suite for this\ntask has been lacking. In this paper, we introducePaper2Web, a benchmark\ndataset and multi-dimensionalevaluation frameworkfor assessing academic\nwebpage generation. It incorporates rule-based metrics likeConnectivity,Completenessand human-verifiedLLM-as-a-Judge(covering interactivity,\naesthetics, and informativeness), andPaperQuiz, which measures paper-level\nknowledge retention. We further presentPWAgent, an autonomous pipeline that\nconverts scientific papers into interactive and multimedia-rich academic\nhomepages. The agent iteratively refines both content and layout through MCP\ntools that enhance emphasis, balance, and presentation quality. Our experiments\nshow thatPWAgentconsistently outperforms end-to-end baselines liketemplate-based webpagesandarXiv/alphaXiv versionsby a large margin while\nmaintaining low cost, achieving thePareto-frontin academic webpage\ngeneration. tldr; Transforming static academic papers into interactive, visually coherent websites for enhanced dissemination and engagement. Github:https://github.com/YuhangChen1/Paper2All 404 😊 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Paper2Web: Let's Make Your Paper Alive!",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/YuhangChen1/Paper2All",
+    "huggingface_url": "https://huggingface.co/papers/2510.15842",
+    "upvote": 25,
+    "tags": []
+  }
+}

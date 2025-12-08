@@ -1,0 +1,14 @@
+{
+  "context": "dParallel is a method that enhances the parallel decoding of diffusion large language models, significantly reducing decoding steps without compromising performance. Diffusion large language models(dLLMs) have recently drawn considerable\nattention within the research community as a promising alternative toautoregressive generation, offeringparallel token predictionand lower\ninference latency. Yet, theirparallel decodingpotential remains largely\nunderexplored, as existing open-source models still require nearly token-length\ndecoding steps to ensure performance. To address this, we introduce dParallel,\na simple and effective method that unlocks the inherent parallelism ofdLLMsfor fast sampling. We identify that the key bottleneck toparallel decodingarises from the sequential certainty convergence formasked tokens. Building on\nthis insight, we introduce the core of our approach: certainty-forcing\ndistillation, a novel training strategy that distills the model to follow its\noriginal sampling trajectories while enforcing it to achieve high certainty onmasked tokensmore rapidly and in parallel. Extensive experiments across\nvarious benchmarks demonstrate that our method can dramatically reduce the\nnumber of decoding steps while maintaining performance. When applied to theLLaDA-8B-Instructmodel, dParallel reduces decoding steps from 256 to 30 onGSM8K, achieving an 8.5x speedup without performance degradation. On the MBPP\nbenchmark, it cuts decoding steps from 256 to 24, resulting in a 10.5x speedup\nwhile maintaining accuracy. Our code is available at\nhttps://github.com/czg1225/dParallel We present dParallel, a novel method that unlocks the inherent parallelism of dLLMs for fast sampling. Our paper, code, models, and dataset are all available now! Code:https://github.com/czg1225/dParallelPaper:https://arxiv.org/pdf/2509.26488Model:https://huggingface.co/Zigeng/dParallel-LLaDA-8B-instructData:https://huggingface.co/datasets/Zigeng/dParallel_LLaDA_Distill_Data This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "dParallel: Learnable Parallel Decoding for dLLMs",
+    "authors": [
+      "Zigeng Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/czg1225/dParallel",
+    "huggingface_url": "https://huggingface.co/papers/2509.26488",
+    "upvote": 19,
+    "tags": []
+  }
+}

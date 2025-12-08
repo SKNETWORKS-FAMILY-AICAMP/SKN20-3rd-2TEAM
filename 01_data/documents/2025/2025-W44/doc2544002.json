@@ -1,0 +1,15 @@
+{
+  "context": "Concerto, a minimalist model combining 3D self-distillation and 2D-3D joint embedding, achieves superior spatial feature learning and outperforms existing models in scene understanding and open-world perception. Humans learn abstract concepts through multisensory synergy, and once formed,\nsuch representations can often be recalled from a single modality. Inspired by\nthis principle, we introduce Concerto, a minimalist simulation of human concept\nlearning for spatial cognition, combining3D intra-modal self-distillationwith2D-3D cross-modal joint embedding. Despite its simplicity, Concerto learns more\ncoherent and informative spatial features, as demonstrated by zero-shot\nvisualizations. It outperforms both standalone SOTA 2D and 3D self-supervised\nmodels by 14.2% and 4.8%, respectively, as well as their feature concatenation,\ninlinear probingfor3D scene perception. With full fine-tuning, Concerto sets\nnew SOTA results across multiple scene understanding benchmarks (e.g., 80.7%mIoUonScanNet). We further present a variant of Concerto tailored forvideo-lifted point cloudspatial understanding, and a translator that linearly\nprojects Concerto representations intoCLIP's language space, enablingopen-world perception. These results highlight that Concerto emerges spatial\nrepresentations with superiorfine-grained geometric and semantic consistency.  TL;DR:Concerto provides joint 2D-3D self-supervised pre-trained Point Transformer V3 for 3D point cloud downstream tasks, modified from Sonata. Homepage:https://pointcept.github.io/Concerto/Gradio Demo:https://huggingface.co/spaces/Pointcept/ConcertoInference Code:https://github.com/Pointcept/ConcertoTraining Code:https://github.com/Pointcept/Pointcept  Thanks for the great work! 👍 👍 👍 Very cool paper. With world models / splatting and really anything that has to operate in 3d space I feel like there is likely a lot of information we can distill from 2d models that learn some sort of depth information as evidenced by Dino and other SSL models are decent depth detectors as is.Here is a bite sized podcast about the work in case anyone wants to listen to an AI overview:https://spotifycreators-web.app.link/e/qfVxqCBJRXb Thank you ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial\n  Representations",
+    "authors": [
+      "Xiaoyang Wu",
+      "Chengyao Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Pointcept/Concerto",
+    "huggingface_url": "https://huggingface.co/papers/2510.23607",
+    "upvote": 174,
+    "tags": []
+  }
+}

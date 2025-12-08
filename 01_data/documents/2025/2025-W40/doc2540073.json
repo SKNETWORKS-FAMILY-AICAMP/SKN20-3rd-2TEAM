@@ -1,0 +1,14 @@
+{
+  "context": "VoiceAssistant-Eval is a benchmark for evaluating AI assistants across listening, speaking, and viewing tasks, revealing insights into model performance and identifying areas for improvement. The growing capabilities oflarge language modelsandmultimodal systemshave\nspurred interest invoice-first AI assistants, yet existing benchmarks are\ninadequate for evaluating the full range of these systems' capabilities. We\nintroduceVoiceAssistant-Eval, a comprehensive benchmark designed to assess AI\nassistants acrosslistening,speaking, andviewing.VoiceAssistant-Evalcomprises 10,497 curated examples spanning 13 task categories. These tasks\nincludenatural sounds,music, andspoken dialogueforlistening; multi-turn\ndialogue,role-play imitation, and various scenarios forspeaking; and highly\nheterogeneous images forviewing. To demonstrate its utility, we evaluate 21open-source modelsandGPT-4o-Audio, measuring the quality of the response\ncontent andspeech, as well as theirconsistency. The results reveal three key\nfindings: (1)proprietary modelsdo not universally outperform open-source\nmodels; (2) most models excel atspeakingtasks but lag in audio understanding;\nand (3) well-designed smaller models can rival much larger ones. Notably, the\nmid-sizedStep-Audio-2-mini(7B) achieves more than double thelisteningaccuracy ofLLaMA-Omni2-32B-Bilingual. However, challenges remain: multimodal\n(audio plus visual) input androle-play voice imitationtasks are difficult for\ncurrent models, and significant gaps persist inrobustnessand safety\nalignment.VoiceAssistant-Evalidentifies these gaps and establishes a rigorous\nframework for evaluating and guiding the development of next-generation AI\nassistants. Code and data will be released at\nhttps://mathllm.github.io/VoiceAssistantEval/ . Code athttps://github.com/mathllm/VoiceAssistant-Eval This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "VoiceAssistant-Eval: Benchmarking AI Assistants across Listening,\n  Speaking, and Viewing",
+    "authors": [
+      "Ke Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/mathllm/VoiceAssistant-Eval",
+    "huggingface_url": "https://huggingface.co/papers/2509.22651",
+    "upvote": 22,
+    "tags": []
+  }
+}

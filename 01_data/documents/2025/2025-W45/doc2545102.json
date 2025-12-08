@@ -1,0 +1,14 @@
+{
+  "context": "A framework combining query decomposition, table sanitization, and program-of-thoughts reasoning improves large language models' performance on complex tabular numerical reasoning tasks. Complex reasoning over tabular data is crucial in real-world data analysis,\nyet large language models (LLMs) often underperform due to complex queries,\nnoisy data, and limited numerical capabilities. To address these issues, we\npropose \\method, a framework consisting of: (1) aquery decomposerthat breaks\ndown complex questions, (2) atable sanitizerthat cleans and filters noisy\ntables, and (3) aprogram-of-thoughts(PoT)-based reasoner that generates\nexecutable code to derive the final answer from the sanitized table. To ensure\nunbiased evaluation and mitigate data leakage, we introduce a new dataset,CalTab151, specifically designed for complex numerical reasoning over tables.\nExperimental results demonstrate that \\method consistently outperforms existing\nmethods, achieving state-of-the-art (SOTA) performance with 8.79%, 6.08%, and\n19.87% accuracy improvement onTAT-QA,TableBench, and \\method, respectively.\nMoreover, our framework integrates seamlessly with mainstream LLMs, providing a\nrobust solution for complex tabular numerical reasoning. These findings\nhighlight the effectiveness of our framework in enhancing LLM performance for\ncomplex tabular numerical reasoning. Data and code are available upon request. Our paper “TabDSR: Decompose, Sanitize, and Reason for Complex Numerical Reasoning in Tabular Data” has been accepted to EMNLP 2025 Findings 🎉. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "TabDSR: Decompose, Sanitize, and Reason for Complex Numerical Reasoning\n  in Tabular Data",
+    "authors": [
+      "Changjiang Jiang"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.02219",
+    "upvote": 1,
+    "tags": []
+  }
+}

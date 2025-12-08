@@ -1,0 +1,14 @@
+{
+  "context": "A new training framework for RL-based LLM Agents is introduced, extending MDP methodology and demonstrating effectiveness on Multihop QA tasks. Large Language Models (LLMs) are increasingly being explored for building Agents capable of active environmental interaction (e.g., via tool use) to solve complex problems.Reinforcement Learning(RL) is considered a key technology with significant potential for training such Agents; however, the effective application of RL toLLM Agentsis still in its nascent stages and faces considerable challenges. Currently, this emerging field lacks in-depth exploration intoRL approachesspecifically tailored for the LLM Agent context, alongside a scarcity of flexible and easily extensible training frameworks designed for this purpose. To help advance this area, this paper first revisits and clarifiesReinforcement Learningmethodologies forLLM Agentsby systematically extending theMarkov Decision Process(MDP) framework to comprehensively define the key components of an LLM Agent. Secondly, we introduce Agent-R1, a modular, flexible, and user-friendly training framework for RL-basedLLM Agents, designed for straightforward adaptation across diverse task scenarios and interactive environments. We conducted experiments onMultihop QAbenchmark tasks, providing initial validation for the effectiveness of our proposed methods and framework. Introduces Agent-R1, a modular RL framework for end-to-end training of powerful LLM agents via extended MDPs, validated on multihop QA benchmarks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Agent-R1: Training Powerful LLM Agents with End-to-End Reinforcement Learning",
+    "authors": [
+      "Daoyu Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/0russwest0/Agent-R1",
+    "huggingface_url": "https://huggingface.co/papers/2511.14460",
+    "upvote": 17,
+    "tags": []
+  }
+}

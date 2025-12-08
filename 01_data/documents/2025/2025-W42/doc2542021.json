@@ -1,0 +1,14 @@
+{
+  "context": "ImagerySearch, a prompt-guided adaptive test-time search strategy, enhances video generation in imaginative scenarios by dynamically adjusting search spaces and reward functions, outperforming existing methods on a new benchmark, LDT-Bench. Video generation models have achieved remarkable progress, particularly\nexcelling in realistic scenarios; however, their performance degrades notably\nin imaginative scenarios. These prompts often involve rarely co-occurring\nconcepts with long-distance semantic relationships, falling outside training\ndistributions. Existing methods typically apply test-time scaling for improving\nvideo quality, but their fixed search spaces and static reward designs limit\nadaptability to imaginative scenarios. To fill this gap, we propose\nImagerySearch, aprompt-guidedadaptive test-time searchstrategy that\ndynamically adjusts both theinference search spaceandreward functionaccording to semantic relationships in the prompt. This enables more coherent\nand visually plausible videos in challenging imaginative settings. To evaluate\nprogress in this direction, we introduceLDT-Bench, the first dedicated\nbenchmark forlong-distance semantic prompts, consisting of 2,839 diverse\nconcept pairs and an automated protocol for assessing creative generation\ncapabilities. Extensive experiments show that ImagerySearch consistently\noutperforms strong video generation baselines and existing test-time scaling\napproaches onLDT-Bench, and achieves competitive improvements onVBench,\ndemonstrating its effectiveness across diverse prompt types. We will releaseLDT-Benchand code to facilitate future research on imaginative video\ngeneration. https://github.com/AMAP-ML/ImagerySearch This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ImagerySearch: Adaptive Test-Time Search for Video Generation Beyond\n  Semantic Dependency Constraints",
+    "authors": [
+      "Jiashu Zhu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/AMAP-ML/ImagerySearch",
+    "huggingface_url": "https://huggingface.co/papers/2510.14847",
+    "upvote": 55,
+    "tags": []
+  }
+}

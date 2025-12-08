@@ -1,0 +1,14 @@
+{
+  "context": "Seeing Eye, a modular framework, enhances multimodal reasoning in text-only LLMs by decoupling perception and reasoning through an agent-based translator and reasoner, outperforming larger end-to-end models on VQA benchmarks. Recent advances in text-only large language models (LLMs), such asDeepSeek-R1, demonstrate remarkable reasoning ability. However, these models\nremain fragile or entirely incapable when extended to multi-modal tasks.\nExisting approaches largely rely on single-form captions, which lack diversity\nand often fail to adapt across different types of Visual Question Answering\n(VQA) benchmarks. As a result, they provide no principled or efficient channel\nfor transmitting fine-grained visual information. We introduce Seeing Eye, a\nmodular framework that unlocksmultimodal reasoningintext-only LLMsthrough\nanagent-based small VLM translator. This translator acts as a perception\nagent: it can invokespecialized tools(e.g.,OCRandcrop) and iteratively\ndistill multimodal inputs intostructured intermediate representations(SIRs)\ntailored to the question. TheseSIRsare then passed to the text-only LLM,\nwhich serves as areasoning agent. Crucially, the translator and reasoner\nengage inmulti-round feedbackand interaction, enabling the extraction of\ntargeted visual details and yielding more confident answers. Experiments on\nknowledge-intensive VQA benchmarks, includingMMMUandMIA-Bench, demonstrate\nthat Seeing Eye not only reduces inference cost but also surpasses much larger\nend-to-end VLMs. For example, an instantiation combining a 3B-parameter vision\ntranslator with an 8B-parameterlanguage reasoneroutperforms a monolithic 32B\nVLM on challenging knowledge-based questions. Our results highlight that\ndecoupling perception from reasoning via agent information flow offers a\nscalable and plug-and-play pathway tomultimodal reasoning, allowing strongtext-only LLMsto fully leverage their reasoning capabilities. Code is\navailable at: https://github.com/ulab-uiuc/SeeingEye  ·Sign uporlog into comment",
+  "metadata": {
+    "title": "SeeingEye: Agentic Information Flow Unlocks Multimodal Reasoning In\n  Text-only LLMs",
+    "authors": [
+      "Zijia Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/ulab-uiuc/SeeingEye",
+    "huggingface_url": "https://huggingface.co/papers/2510.25092",
+    "upvote": 7,
+    "tags": []
+  }
+}

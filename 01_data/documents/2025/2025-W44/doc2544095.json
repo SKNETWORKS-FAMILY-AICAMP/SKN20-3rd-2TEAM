@@ -1,0 +1,14 @@
+{
+  "context": "LIMRANK-SYNTHESIZER generates synthetic data to fine-tune LIMRANK, achieving competitive performance with minimal supervision on information reranking tasks. Existing approaches typically rely on large-scale fine-tuning to adapt LLMs\nfor information reranking tasks, which is computationally expensive. In this\nwork, we demonstrate that modern LLMs can be effectively adapted using only\nminimal, high-quality supervision. To enable this, we designLIMRANK-SYNTHESIZER, a reusable and open-source pipeline for generating\ndiverse, challenging, and realistic reranking examples. Using this synthetic\ndata, we fine-tune ourreranker model,LIMRANK. We evaluateLIMRANKon two\nchallenging benchmarks, i.e.,BRIGHTfor reasoning-intensive retrieval andFollowIRfor instruction-following retrieval. Our experiments demonstrate thatLIMRANKachieves competitive performance, while being trained on less than 5%\nof the data typically used in prior work. Further ablation studies demonstrate\nthe effectiveness ofLIMRANK-SYNTHESIZERand the strong generalization\ncapabilities ofLIMRANKacross downstream tasks, including scientific\nliterature search andretrieval-augmented generationfor knowledge-intensive\nproblem solving. This work presents LIMRANK, a lightweight information reranking model that uses LIMRANK-SYNTHESIZER to generate high-quality synthetic data, achieving strong reranking performance with minimal supervision across diverse retrieval tasks. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "LimRank: Less is More for Reasoning-Intensive Information Reranking",
+    "authors": [
+      "Tingyu Song"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.23544",
+    "upvote": 8,
+    "tags": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "context": "CATS-V2V is a new real-world dataset for V2V cooperative perception in complex adverse traffic scenarios, providing comprehensive sensor data and precise temporal alignment. Vehicle-to-Vehicle (V2V) cooperative perception has great potential to enhance autonomous driving performance by overcoming perception limitations in complex adverse traffic scenarios (CATS). Meanwhile, data serves as the fundamental infrastructure for modern autonomous driving AI. However, due to stringent data collection requirements, existing datasets focus primarily on ordinary traffic scenarios, constraining the benefits of cooperative perception. To address this challenge, we introduce CATS-V2V, the first-of-its-kind real-world dataset for V2V cooperative perception under complex adverse traffic scenarios. The dataset was collected by two hardware time-synchronized vehicles, covering 10 weather and lighting conditions across 10 diverse locations. The 100-clip dataset includes 60K frames of 10 HzLiDAR point cloudsand 1.26M multi-view 30 Hz camera images, along with 750K anonymized yet high-precisionRTK-fixed GNSSandIMU records. Correspondingly, we provide time-consistent3D bounding box annotationsfor objects, as well as static scenes to construct a4D BEV representation. On this basis, we propose atarget-based temporal alignmentmethod, ensuring that all objects are precisely aligned across all sensor modalities. We hope that CATS-V2V, the largest-scale, most supportive, and highest-quality dataset of its kind to date, will benefit the autonomous driving community in related tasks. Introduces CATS-V2V, a real-world V2V cooperative perception dataset under complex adverse traffic scenarios, with synchronized dual-vehicle data, multi-weather coverage, and 4D BEV annotations. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "CATS-V2V: A Real-World Vehicle-to-Vehicle Cooperative Perception Dataset with Complex Adverse Traffic Scenarios",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.11168",
+    "upvote": 0,
+    "tags": []
+  }
+}

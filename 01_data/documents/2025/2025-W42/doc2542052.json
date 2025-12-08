@@ -1,0 +1,17 @@
+{
+  "context": "AVoCaDO, an audiovisual video captioner, enhances temporal coherence and dialogue accuracy through a two-stage post-training pipeline, outperforming existing models across multiple benchmarks. Audiovisual video captioningaims to generate semantically rich descriptions\nwith temporal alignment between visual and auditory events, thereby benefiting\nboth video understanding and generation. In this paper, we presentAVoCaDO, a\npowerful audiovisual video captioner driven by thetemporal orchestrationbetween audio and visual modalities. We propose a two-stage post-training\npipeline: (1)AVoCaDO SFT, which fine-tunes the model on a newly curated\ndataset of 107K high-quality, temporally-aligned audiovisual captions; and (2)AVoCaDO GRPO, which leverages tailoredreward functionsto further enhancetemporal coherenceanddialogue accuracywhile regularizingcaption lengthand\nreducingcollapse. Experimental results demonstrate thatAVoCaDOsignificantly\noutperforms existing open-source models across four audiovisual video\ncaptioning benchmarks, and also achieves competitive performance on theVDCandDREAM-1Kbenchmark under visual-only settings. Audiovisual video captioning aims to generate semantically rich descriptions with temporal alignment between visual and auditory events, thereby benefiting both video understanding and generation. In this paper, we present AVoCaDO, a powerful audiovisual video captioner driven by the temporal orchestration between audio and visual modalities. We propose a two-stage post-training pipeline: (1) AVoCaDO SFT, which fine-tunes the model on a newly curated dataset of 107K high-quality, temporally-aligned audiovisual captions; and (2) AVoCaDO GRPO, which leverages tailored reward functions to further enhance temporal coherence and dialogue accuracy while regularizing caption length and reducing collapse. Experimental results demonstrate that AVoCaDO significantly outperforms existing open-source models across four audiovisual video captioning benchmarks, and also achieves competitive performance on the VDC and DREAM-1K benchmark under visual-only settings. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "AVoCaDO: An Audiovisual Video Captioner Driven by Temporal Orchestration",
+    "authors": [
+      "Xinlong Chen",
+      "Jingyun Hua",
+      "Yang Shi",
+      "Bozhou Li"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/AVoCaDO-Captioner/AVoCaDO",
+    "huggingface_url": "https://huggingface.co/papers/2510.10395",
+    "upvote": 29,
+    "tags": []
+  }
+}

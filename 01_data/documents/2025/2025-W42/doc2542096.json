@@ -1,0 +1,17 @@
+{
+  "context": "CodePlot-CoT, a code-driven Chain-of-Thought model, enhances multimodal mathematical reasoning by generating both text and executable plotting code to solve problems requiring visual assistance. Recent advances inLarge Language Models(LLMs) andVision Language Models(VLMs) have shown significant progress inmathematical reasoning, yet they\nstill face a critical bottleneck with problems requiringvisual assistance,\nsuch as drawing auxiliary lines or plotting functions to solve the problems.\nMost LLMs and VLMs are constrained to text-only reasoning chains, whilemultimodal unified modelsthat can generate interleaved text and images lack\nthe necessary precision and controllability for such tasks. To address this, we\npropose CodePlot-CoT, a code-drivenChain-of-Thoughtparadigm for \"thinking\nwith images\" in mathematics. Our approach leverages the VLM to generate text\nreasoning as well as executable plotting code, which is then rendered into\nimages as \"visual thought\", to solvemathematical problems. To achieve this, we\nfirst constructMath-VR, the first large-scale, bilingual dataset and benchmark\nfor Mathematics problems withVisual Reasoning, comprising 178K samples.\nSecond, to create high-quality training data, we develop a state-of-the-artimage-to-code converterspecialized for parsing complex mathematical figures\ninto codes. Finally, using these training data, we train the CodePlot-CoT model\nfor solvingmathematical problems. Experimental results show that our model\nachieves up to 21% increase over base model on our new benchmark, fully\nvalidating the efficacy of our proposed code-driven reasoning paradigm. Our\nwork opens a new direction for multimodalmathematical reasoningand provides\nthe community with the first large-scale dataset, comprehensive benchmark, and\nstrong approach for such problems. To facilitate future research, we make our\ndatasets, code, and pretrained models publicly available at\nhttps://github.com/HKU-MMLab/Math-VR-CodePlot-CoT. About Math-VR Benchmark & CodePlot-CoT: Mathematical Visual Reasoning by Thinking with Code-Driven Images This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "CodePlot-CoT: Mathematical Visual Reasoning by Thinking with Code-Driven\n  Images",
+    "authors": [
+      "Chengqi Duan",
+      "Kaiyue Sun",
+      "Ke Wang",
+      "Xihui Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/HKU-MMLab/Math-VR-CodePlot-CoT",
+    "huggingface_url": "https://huggingface.co/papers/2510.11718",
+    "upvote": 13,
+    "tags": []
+  }
+}

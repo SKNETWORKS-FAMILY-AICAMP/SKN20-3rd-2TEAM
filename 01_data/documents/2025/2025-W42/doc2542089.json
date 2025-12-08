@@ -1,0 +1,14 @@
+{
+  "context": "GS-Reasoner, a 3D LLM with a dual-path pooling mechanism, achieves autoregressive grounding and state-of-the-art spatial reasoning without external modules. In this paper, we claim that3D visual groundingis the cornerstone ofspatial reasoningand introduce theGrounded-Spatial Reasoner (GS-Reasoner)to\nexplore the effective spatial representations that bridge the gap between them.\nExisting3D LLMssuffer from the absence of aunified 3D representationcapable\nof jointly capturing semantic and geometric information. This deficiency is\nmanifested either in poor performance on grounding or in an excessive reliance\non external modules, ultimately hindering the seamless integration of grounding\nandspatial reasoning. To address this, we propose a simple yet effectivedual-path pooling mechanismthat tightly alignsgeometric featureswith both\nsemantic andpositional cues, constructing a unified image patch-based 3D\nrepresentation that encapsulates all essential information without increasing\nthe number of input tokens. Leveraging this holistic representation,\nGS-Reasoner is the first 3D LLM that achievesautoregressive groundingentirely\nwithout external modules while delivering performance comparable to\nstate-of-the-art models, establishing a unified and self-contained framework\nfor 3Dspatial reasoning. To further bridge grounding andspatial reasoning, we\nintroduce theGrounded Chain-of-Thought (GCoT) dataset. This dataset is\nmeticulously curated to include both3D bounding box annotationsfor objects\nreferenced in reasoning questions andstep-by-step reasoning pathsthat\nintegrate grounding as a core component of the problem-solving process.\nExtensive experiments demonstrate that GS-Reasoner achieves impressive results\non3D visual grounding, which in turn significantly enhances its spatial\nreasoning capabilities, leading to state-of-the-art performance. Homepage:https://yiming-cc.github.io/gs-reasoner/Code:https://github.com/WU-CVGL/GS-ReasonerHuggingface:https://huggingface.co/collections/ymccccc/gs-reasoner-68efc95783fb92bb44269f7a This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Reasoning in Space via Grounding in the World",
+    "authors": [
+      "Zekun Qi"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/WU-CVGL/GS-Reasoner",
+    "huggingface_url": "https://huggingface.co/papers/2510.13800",
+    "upvote": 14,
+    "tags": []
+  }
+}

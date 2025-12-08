@@ -1,0 +1,15 @@
+{
+  "context": "PM4GRPO, a reasoning-aware Group Relative Policy Optimization, enhances policy models by incorporating process mining to align reasoning with a teacher model, outperforming existing methods. Reinforcement learning(RL)-based post-training has been crucial for enablingmulti-step reasoninginlarge reasoning models(LRMs), yet current reward\nschemes are typically outcome-centric. We propose PM4GRPO, areasoning-awareGroup Relative Policy Optimization(GRPO) that augments standard answer/format\nrewards with signals over the reasoning procedure. To this end,process miningtechniques are utilized to compute ascalar conformance rewardthat measures\nhow closely a policy model's reasoning aligns with the pretrained teacher\nmodel. The empirical results on five benchmarks demonstrate that PM4GRPOsignificantly outperforms existing methodologies forGRPO-based post-training.\nThese results highlight that leveragingprocess miningforreasoning-awareGRPOeffectively enhances the reasoning capabilities of policy models. PM4GRPOincorporates the reasoning process through Process Mining into the post-training phase. This enhancement allows the Policy Optimization method to better enable the policy model to imitate the reasoning process of the teacher model. In other words,PM4GRPOachieves Reasoning-Aware Policy Optimization throughPROCESS MINING. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Reasoning-Aware GRPO using Process Mining",
+    "authors": [
+      "Taekhyun Park",
+      "Yongjae Lee"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Thrillcrazyer/THIP",
+    "huggingface_url": "https://huggingface.co/papers/2510.25065",
+    "upvote": 41,
+    "tags": []
+  }
+}

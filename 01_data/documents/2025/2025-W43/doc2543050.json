@@ -1,0 +1,15 @@
+{
+  "context": "EliCal, a two-stage framework combining self-consistency supervision and minimal correctness annotations, achieves near-optimal honesty alignment in large language models with limited annotation effort. Honesty alignment-the ability oflarge language models(LLMs) to recognize\ntheir knowledge boundaries and express calibrated confidence-is essential for\ntrustworthy deployment. Existing methods either rely on training-freeconfidence estimation(e.g., token probabilities,self-consistency) or\ntraining-basedcalibrationwithcorrectness annotations. While effective,\nachieving universalhonesty alignmentwith training-basedcalibrationrequires\ncostly, large-scale labeling. To support annotation-efficient training, we\nintroduceElicitation-Then-Calibration(EliCal), a two-stage framework that\nfirst elicits internal confidence using inexpensiveself-consistencysupervision, then calibrates this confidence with a small set of correctness\nannotations. To support a large-scale study, we releaseHonestyBench, a\nbenchmark covering tenfree-form QA datasetswith 560k training and 70k\nevaluation instances annotated with correctness andself-consistencysignals.\nExperiments show thatEliCalachieves near-optimal alignment with only 1kcorrectness annotations(0.18% of full supervision) and better alignment\nperformance on unseenMMLU tasksthan thecalibration-only baseline, offering a\nscalable solution toward universalhonesty alignmentin LLMs. Annotation-Efficient Universal Honesty Alignment This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Annotation-Efficient Universal Honesty Alignment",
+    "authors": [
+      "Shiyu Ni",
+      "Minghao Tang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Trustworthy-Information-Access/Annotation-Efficient-Universal-Honesty-Alignment",
+    "huggingface_url": "https://huggingface.co/papers/2510.17509",
+    "upvote": 21,
+    "tags": []
+  }
+}

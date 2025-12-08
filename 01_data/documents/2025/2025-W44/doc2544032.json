@@ -1,0 +1,17 @@
+{
+  "context": "Ming-Flash-Omni, an advanced Mixture-of-Experts model, enhances computational efficiency and multimodal intelligence, achieving state-of-the-art performance in speech recognition, image generation, and text-to-image generation. We propose Ming-Flash-Omni, an upgraded version of Ming-Omni, built upon a\nsparserMixture-of-Experts (MoE)variant ofLing-Flash-2.0with 100 billion\ntotal parameters, of which only 6.1 billion are active per token. This\narchitecture enables highly efficient scaling (dramatically improving\ncomputational efficiency while significantly expanding model capacity) and\nempowers strongerunified multimodal intelligenceacross vision, speech, and\nlanguage, representing a key step towardArtificial General Intelligence (AGI).\nCompared to its predecessor, the upgraded version exhibits substantial\nimprovements across multimodal understanding and generation. We significantly\nadvance speech recognition capabilities, achieving state-of-the-art performance\nincontextual ASRand highly competitive results indialect-aware ASR. In image\ngeneration, Ming-Flash-Omni introduceshigh-fidelity text renderingand\ndemonstrates marked gains inscene consistencyandidentity preservationduringimage editing. Furthermore, Ming-Flash-Omni introducesgenerative segmentation,\na capability that not only achieves strong standalone segmentation performance\nbut also enhancesspatial controlin image generation and improves editing\nconsistency. Notably, Ming-Flash-Omni achieves state-of-the-art results intext-to-image generationandgenerative segmentation, and sets new records on\nall 12contextual ASRbenchmarks, all within a single unified architecture. Ming-flash-omni Preview, an upgraded version of Ming-Omni, built upon a sparser Mixture-of-Experts (MoE) variant of Ling-Flash-2.0 with 100B total parameters, of which only 6B are active per token. Compared to its predecessor, the upgraded version exhibits substantial improvements across multimodal understanding and generation. We significantly advance speech recognition capabilities, achieving state-of-the-art performance in both contextual ASR and dialect-aware ASR. In image generation, Ming-flash-omni Preview introduces high-fidelity text rendering and demonstrates marked gains in scene consistency and identity preservation during image editing. Furthermore, Ming-flash-omni Preview introduces generative segmentation, a capability that not only achieves strong standalone segmentation performance but also enhances spatial control in image generation and improves editing consistency. It demonstrates highly competitive results in various modal benchmarks compared to industry-leading models. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Ming-Flash-Omni: A Sparse, Unified Architecture for Multimodal\n  Perception and Generation",
+    "authors": [
+      "Cheng Zou",
+      "Chunxiang Jin",
+      "Dandan Zheng",
+      "Kaixiang Ji"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/inclusionAI/Ming",
+    "huggingface_url": "https://huggingface.co/papers/2510.24821",
+    "upvote": 37,
+    "tags": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "ASPO addresses the imbalance in token weighting during OSRL by flipping Importance Sampling ratios and incorporating a soft dual-clipping mechanism, improving training stability and performance in LLMs. Recent Large Language Model (LLM) post-training methods rely on token-level\nclipping mechanisms during Reinforcement Learning (RL). However, we identify a\nfundamental flaw in thisOutcome-Supervised RL(OSRL) paradigm: the Importance\nSampling (IS) ratios of positive-advantage tokens are mismatched, leading to\nunbalanced token weighting for positive and negative tokens. This mismatch\nsuppresses the update oflow-probability tokenswhile over-amplifying already\nhigh-probability ones. To address this, we propose Asymmetric Importance\nSampling Policy Optimization (ASPO), which uses a simple yet effective strategy\nthat flips the IS ratios of positive-advantage tokens, aligning their update\ndirection with the learning dynamics of negative ones. AIS further incorporates\nasoft dual-clipping mechanismto stabilize extreme updates while maintaining\ngradient flow. Comprehensive experiments on coding and mathematical reasoning\nbenchmarks demonstrate that ASPO significantly mitigatespremature convergence,\nimprovestraining stability, and enhances final performance over strongGRPO-based baselines. Our analysis provides new insights into the role of\ntoken-level weighting in OSRL and highlights the critical importance of\ncorrecting IS in LLM RL. The code and models of ASPO are available at\nhttps://github.com/wizard-III/Archer2.0. Code:https://github.com/wizard-III/Archer2.0Models & Data:https://huggingface.co/collections/Fate-Zero/archer20-68b945c878768a27941fd7b6Zhihu:https://zhuanlan.zhihu.com/p/1950985242098799047 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ASPO: Asymmetric Importance Sampling Policy Optimization",
+    "authors": [
+      "Runze Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/wizard-III/Archer2.0",
+    "huggingface_url": "https://huggingface.co/papers/2510.06062",
+    "upvote": 13,
+    "tags": []
+  }
+}

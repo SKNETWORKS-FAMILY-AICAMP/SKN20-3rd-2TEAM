@@ -1,0 +1,12 @@
+{
+  "context": "The study introduces ATLAS, a multilingual scaling law that improves out-of-sample generalization and provides insights into cross-lingual transfer, optimal scaling, and computational crossover points for model training. Scaling laws research has focused overwhelmingly on English -- yet the most\nprominent AI models explicitly serve billions of international users. In this\nwork, we undertake the largestmultilingual scaling lawsstudy to date,\ntotaling 774 multilingual training experiments, spanning 10M-8B model\nparameters, 400+ training languages and 48 evaluation languages. We introduce\ntheAdaptive Transfer Scaling Law(ATLAS) for both monolingual and multilingualpretraining, which outperforms existing scaling laws' out-of-sample\ngeneralization often by more than 0.3 R^2. Our analyses of the experiments shed\nlight on multilingual learning dynamics, transfer properties between languages,\nand the curse of multilinguality. First, we derive a cross-lingual transfer\nmatrix, empirically measuring mutual benefit scores between 38 x 38=1444\nlanguage pairs. Second, we derive alanguage-agnostic scaling lawthat reveals\nhow to optimally scale model size and data when adding languages without\nsacrificing performance. Third, we identify thecomputational crossover pointsfor when to pretrain from scratch versus finetune from multilingual\ncheckpoints. We hope these findings provide the scientific foundation for\ndemocratizing scaling laws across languages, and enable practitioners to\nefficiently scale models -- beyond English-first AI. Media:https://x.com/ShayneRedford/status/1983170949865173069 ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ATLAS: Adaptive Transfer Scaling Laws for Multilingual Pretraining,\n  Finetuning, and Decoding the Curse of Multilinguality",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.22037",
+    "upvote": 19,
+    "tags": []
+  }
+}

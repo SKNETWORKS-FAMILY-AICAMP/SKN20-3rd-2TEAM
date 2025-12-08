@@ -1,0 +1,14 @@
+{
+  "context": "ODesign is a generative world model that allows for the design of diverse biomolecular interactions across proteins, nucleic acids, and small molecules with fine-grained control. Biomolecular interactions underpin almost all biological processes, and their\nrational design is central to programming new biological functions. Generative\nAI models have emerged as powerful tools for molecular design, yet most remain\nspecialized for individual molecular types and lack fine-grained control over\ninteraction details. Here we present ODesign, an all-atom generative world\nmodel for all-to-all biomolecular interaction design. ODesign allows scientists\nto specifyepitopeson arbitrary targets and generate diverse classes ofbinding partnerswith fine-grained control. Across entity-, token-, andatom-level benchmarksin theprotein modality, ODesign demonstrates superior\ncontrollability and performance tomodality-specific baselines. Extending\nbeyond proteins, it generalizes to nucleic acid andsmall-molecule design,\nenabling interaction types such asprotein-binding RNA/DNAand RNA/DNA-binding\nligands that were previously inaccessible. By unifying multimodal biomolecular\ninteractions within a single generative framework, ODesign moves toward ageneral-purpose molecular world modelcapable ofprogrammable design. ODesign\nis available at https://odesign.lglab.ac.cn , Biomolecular interactions underpin almost all biological processes, and their rational design is central to programming new biological functions. Generative AI models have emerged as powerful tools for molecular design, yet most remain specialized for individual molecular types and lack fine-grained control over interaction details. Here we present ODesign, an all-atom generative world model for all-to-all biomolecular interaction design. ODesign allows scientists to specify epitopes on arbitrary targets and generate diverse classes of binding partners with fine-grained control. Across entity-, token-, and atom-level benchmarks in the protein modality, ODesign demonstrates superior controllability and performance to modality-specific baselines. Extending beyond proteins, it generalizes to nucleic acid and small-molecule design, enabling interaction types such as protein-binding RNA/DNA and RNA/DNA-binding ligands that were previously inaccessible. By unifying multimodal biomolecular interactions within a single generative framework, ODesign moves toward a general-purpose molecular world model capable of programmable design. ODesign is available athttps://odesign.lglab.ac.cn/. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ODesign: A World Model for Biomolecular Interaction Design",
+    "authors": [
+      "Cheng Tan"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.22304",
+    "upvote": 22,
+    "tags": []
+  }
+}

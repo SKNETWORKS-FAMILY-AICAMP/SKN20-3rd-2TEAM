@@ -1,0 +1,14 @@
+{
+  "context": "Executable Knowledge Graphs (xKG) enhance AI research replication by integrating technical insights and code snippets from scientific literature, improving performance in automated replication tasks. Replicating AI research is a crucial yet challenging task for large language\nmodel (LLM) agents. Existing approaches often struggle to generate executable\ncode, primarily due to insufficient background knowledge and the limitations ofretrieval-augmented generation (RAG)methods, which fail to capture latent\ntechnical details hidden in referenced papers. Furthermore, previous approaches\ntend to overlook valuable implementation-level code signals and lack structured\nknowledge representations that support multi-granular retrieval and reuse. To\novercome these challenges, we proposeExecutable Knowledge Graphs (xKG), a\nmodular and pluggable knowledge base that automatically integrates technical\ninsights,code snippets, anddomain-specific knowledgeextracted from\nscientific literature. When integrated into three agent frameworks with two\ndifferent LLMs, xKG shows substantial performance gains (10.9% witho3-mini) onPaperBench, demonstrating its effectiveness as a general and extensible\nsolution for automated AI research replication. Code will released at\nhttps://github.com/zjunlp/xKG. We propose Executable Knowledge Graphs (xKG), a modular and pluggable knowledge base that automatically integrates technical insights, code snippets, and domain-specific knowledge extracted from scientific literature. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Executable Knowledge Graphs for Replicating AI Research",
+    "authors": [
+      "Ningyu Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/zjunlp/xKG",
+    "huggingface_url": "https://huggingface.co/papers/2510.17795",
+    "upvote": 14,
+    "tags": []
+  }
+}

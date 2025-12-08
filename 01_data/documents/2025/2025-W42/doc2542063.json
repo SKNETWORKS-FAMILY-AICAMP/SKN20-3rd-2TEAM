@@ -1,0 +1,14 @@
+{
+  "context": "Solving math problems through verifiable languages such as Lean has\nsignificantly impacted both the mathematics and computer science communities.\nCurrent state-of-the-art models are often trained with expensive online\nReinforcement Learning (RL) or expert iteration. However, these approaches rely\non fixed problem sets, which causes inefficient training and limits the model\nto tackle complex problems. To overcome these limitations, we propose GAR:\nGenerative Adversarial Reinforcement learning, a comprehensive RL training\nframework that jointly trains the problem composer and solver in an adversarial\nloop. GAR introduces an implicit curriculum learning mechanism, which aligns\ntask difficulty with the prover's evolving capability. It thereby improves the\ntraining efficiency and enables stronger performance of proving advanced\ntheorems. Experiments show that with GAR training, Goedel-Prover-V2-8B and\nDeepSeek-Prover-V2-7B achieve an average relative improvement in pass@32 of\n4.20% on MiniF2F-Test benchmark, while DeepSeek-Prover-V2's pass@32 on\nProofNet-Test increases from 22.58% to 25.81%. Beyond formal proving, GAR\nestablishes a general RL paradigm for co-evolution of problem generation and\nsolving under verifiable environments. We propose a Generative Adversarial Reinforcement Learning method that can improve the formal reasoning on SOTA models This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "GAR: Generative Adversarial Reinforcement Learning for Formal Theorem\n  Proving",
+    "authors": [
+      "Rui Pan"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.11769",
+    "upvote": 25,
+    "tags": []
+  }
+}

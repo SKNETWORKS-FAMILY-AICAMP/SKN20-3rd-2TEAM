@@ -1,0 +1,12 @@
+{
+  "context": "VoMP uses a feed-forward method with a Geometry Transformer to predict accurate volumetric material properties from 3D objects, outperforming existing methods in both accuracy and speed. Physical simulation relies on spatially-varying mechanical properties, often\nlaboriously hand-crafted. VoMP is afeed-forward methodtrained to predictYoung's modulus(E),Poisson's ratio(nu), anddensity(rho) throughout\nthe volume of3D objects, in any representation that can be rendered and\nvoxelized. VoMP aggregatesper-voxel multi-view featuresand passes them to our\ntrainedGeometry Transformerto predict per-voxelmaterial latent codes. These\nlatents reside on amanifold of physically plausible materials, which we learn\nfrom a real-world dataset, guaranteeing the validity of decoded per-voxel\nmaterials. To obtain object-level training data, we propose an annotation\npipeline combining knowledge fromsegmented 3D datasets,material databases,\nand avision-language model, along with a newbenchmark. Experiments show that\nVoMP estimates accurate volumetric properties, far outperforming prior art in\naccuracy and speed.  ·Sign uporlog into comment",
+  "metadata": {
+    "title": "VoMP: Predicting Volumetric Mechanical Property Fields",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.22975",
+    "upvote": 6,
+    "tags": []
+  }
+}

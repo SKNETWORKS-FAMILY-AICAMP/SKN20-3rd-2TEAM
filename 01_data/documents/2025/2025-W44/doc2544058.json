@@ -1,0 +1,14 @@
+{
+  "context": "OmniX repurposes 2D generative models for panoramic perception and generation, creating graphics-ready 3D scenes suitable for PBR, relighting, and simulation. There are two prevalent ways to constructing 3D scenes:procedural generationand2D lifting. Among them,panorama-based 2D liftinghas emerged as a\npromising technique, leveraging powerful2D generative priorsto produce\nimmersive, realistic, and diverse 3D environments. In this work, we advance\nthis technique to generate graphics-ready 3D scenes suitable for physically\nbased rendering (PBR), relighting, and simulation. Our key insight is to\nrepurpose 2D generative models forpanoramic perceptionof geometry, textures,\nandPBRmaterials. Unlike existing2D liftingapproaches that emphasize\nappearance generation and ignore the perception of intrinsic properties, we\npresentOmniX, a versatile and unified framework. Based on a lightweight and\nefficientcross-modal adapter structure,OmniXreuses2D generative priorsfor\na broad range of panoramic vision tasks, includingpanoramic perception,\ngeneration, and completion. Furthermore, we construct a large-scale synthetic\npanorama dataset containing high-quality multimodal panoramas from diverse\nindoor and outdoor scenes. Extensive experiments demonstrate the effectiveness\nof our model in panoramic visual perception and graphics-ready 3D scene\ngeneration, opening new possibilities for immersive and physically realistic\nvirtual world generation. Project page:https://yukun-huang.github.io/OmniX/  ·Sign uporlog into comment",
+  "metadata": {
+    "title": "OmniX: From Unified Panoramic Generation and Perception to\n  Graphics-Ready 3D Scenes",
+    "authors": [
+      "Yukun Huang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/HKU-MMLab/OmniX",
+    "huggingface_url": "https://huggingface.co/papers/2510.26800",
+    "upvote": 21,
+    "tags": []
+  }
+}

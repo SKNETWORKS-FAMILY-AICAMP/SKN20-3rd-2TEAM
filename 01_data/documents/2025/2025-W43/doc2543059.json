@@ -1,0 +1,14 @@
+{
+  "context": "Chronos-2, a pretrained model with a group attention mechanism, achieves state-of-the-art performance in zero-shot univariate, multivariate, and covariate-informed forecasting tasks. Pretrained time series models have enabled inference-only forecasting systems\nthat produce accurate predictions without task-specific training. However,\nexisting approaches largely focus on univariate forecasting, limiting their\napplicability in real-world scenarios where multivariate data and covariates\nplay a crucial role. We present Chronos-2, apretrained modelcapable of\nhandling univariate, multivariate, and covariate-informed forecasting tasks in\na zero-shot manner. Chronos-2 employs agroup attention mechanismthat\nfacilitatesin-context learning(ICL) through efficient information sharing\nacross multiple time series within a group, which may represent sets of related\nseries, variates of a multivariate series, or targets and covariates in a\nforecasting task. These general capabilities are achieved through training onsynthetic datasetsthat impose diversemultivariate structureson univariate\nseries. Chronos-2 delivers state-of-the-art performance across three\ncomprehensive benchmarks:fev-bench,GIFT-Eval, andChronos Benchmark II. Onfev-bench, which emphasizes multivariate and covariate-informed forecasting,\nChronos-2's universalICLcapabilities lead to substantial improvements over\nexisting models. On tasks involving covariates, it consistently outperforms\nbaselines by a wide margin. Case studies in the energy andretail domains\nfurther highlight its practical advantages. Thein-context learningcapabilities of Chronos-2 establish it as a general-purpose forecasting model\nthat can be used \"as is\" in real-world forecasting pipelines. Chronos-2, the latest foundation model for time series from AWS. It natively supports a variety of forecasting tasks — univariate, multivariate and covariate-informed — in a zero-shot manner. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Congrats on the release! Will you upload the model to HF too@abdulfatir@shchuro? That would be great 🔥 ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Chronos-2: From Univariate to Universal Forecasting",
+    "authors": [
+      "Oleksandr Shchur"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/amazon-science/chronos-forecasting",
+    "huggingface_url": "https://huggingface.co/papers/2510.15821",
+    "upvote": 19,
+    "tags": []
+  }
+}

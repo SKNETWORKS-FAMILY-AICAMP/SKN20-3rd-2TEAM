@@ -1,0 +1,14 @@
+{
+  "context": "Pixel-space generative models are often more difficult to train and generally\nunderperform compared to their latent-space counterparts, leaving a persistent\nperformance and efficiency gap. In this paper, we introduce a novel two-stage\ntraining framework that closes this gap for pixel-space diffusion and\nconsistency models. In the first stage, we pre-train encoders to capture\nmeaningful semantics from clean images while aligning them with points along\nthe same deterministic sampling trajectory, which evolves points from the prior\nto the data distribution. In the second stage, we integrate the encoder with a\nrandomly initialized decoder and fine-tune the complete model end-to-end for\nboth diffusion and consistency models. Our training framework demonstrates\nstrong empirical performance on ImageNet dataset. Specifically, our diffusion\nmodel reaches an FID of 2.04 on ImageNet-256 and 2.35 on ImageNet-512 with 75\nnumber of function evaluations (NFE), surpassing prior pixel-space methods by a\nlarge margin in both generation quality and efficiency while rivaling leading\nVAE-based models at comparable training cost. Furthermore, on ImageNet-256, our\nconsistency model achieves an impressive FID of 8.82 in a single sampling step,\nsignificantly surpassing its latent-space counterpart. To the best of our\nknowledge, this marks the first successful training of a consistency model\ndirectly on high-resolution images without relying on pre-trained VAEs or\ndiffusion models. EPG: Diffusion model without VAE.https://github.com/AMAP-ML/EPG Hi@jiachenlei, Congratulations on the breakthrough of your EPG model in pixel-space diffusion. I am the author of PixNerd. Previously, Pixelflow and PixNerd have pushed the pixel diffusion performance frontier forward, achieving 1.98 and 1.93 FID, respectively. While these works appear to be concurrent, could you consider further discussing and comparing your EPG model with them? PixNerd:https://huggingface.co/papers/2507.23268Pixelflow:https://huggingface.co/papers/2504.07963 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Advancing End-to-End Pixel Space Generative Modeling via Self-supervised\n  Pre-training",
+    "authors": [
+      "Jiachen Lei"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/AMAP-ML/EPG",
+    "huggingface_url": "https://huggingface.co/papers/2510.12586",
+    "upvote": 108,
+    "tags": []
+  }
+}

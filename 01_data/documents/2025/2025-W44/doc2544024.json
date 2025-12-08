@@ -1,0 +1,15 @@
+{
+  "context": "WorldGrow, a hierarchical framework, generates large, continuous 3D environments with coherent geometry and realistic appearance using pre-trained 3D models and a coarse-to-fine generation strategy. We tackle the challenge of generating the infinitely extendable 3D world --\nlarge, continuous environments with coherent geometry and realistic appearance.\nExisting methods face key challenges: 2D-lifting approaches suffer from\ngeometric and appearance inconsistencies across views, 3D implicit\nrepresentations are hard to scale up, and current3D foundation modelsare\nmostly object-centric, limiting their applicability to scene-level generation.\nOur key insight is leveraging strong generation priors from pre-trained 3D\nmodels for structuredscene block generation. To this end, we propose\nWorldGrow, a hierarchical framework for unbounded 3D scene synthesis. Our\nmethod features three core components: (1) adata curation pipelinethat\nextracts high-quality scene blocks for training, making the 3D structured\nlatent representations suitable for scene generation; (2) a3D block inpaintingmechanism that enables context-aware scene extension; and (3) a coarse-to-fine\ngeneration strategy that ensures both global layout plausibility and local\ngeometric/textural fidelity. Evaluated on the large-scale3D-FRONT dataset,\nWorldGrow achieves SOTA performance ingeometry reconstruction, while uniquely\nsupporting infinite scene generation with photorealistic and structurally\nconsistent outputs. These results highlight its capability for constructing\nlarge-scale virtual environments and potential for building future world\nmodels. TL;DR: We propose WorldGrow — a generative method which creates infinite EXPLICIT 3D worlds, an alternative to the extensible, realistic, interactive world simulator. How did you guys come up with this!?Saw the demo, seems futuristic in a couple of scenarios. Will read the paper today! is the generated env. persistent? ·Sign uporlog into comment",
+  "metadata": {
+    "title": "WorldGrow: Generating Infinite 3D World",
+    "authors": [
+      "Jiemin Fang",
+      "Taoran Yi"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/world-grow/WorldGrow",
+    "huggingface_url": "https://huggingface.co/papers/2510.21682",
+    "upvote": 42,
+    "tags": []
+  }
+}

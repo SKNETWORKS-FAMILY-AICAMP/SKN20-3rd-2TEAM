@@ -1,0 +1,15 @@
+{
+  "context": "AMO-Bench is a benchmark for evaluating advanced mathematical reasoning in large language models with problems at the International Mathematical Olympiad level or higher, revealing significant room for improvement in current models. We present AMO-Bench, an AdvancedMathematical reasoningbenchmarkwith\nOlympiad level or even higher difficulty, comprising 50 human-crafted problems.\nExistingbenchmarks have widely leveraged high school math competitions for\nevaluatingmathematical reasoningcapabilities oflarge language models(LLMs).\nHowever, many existing math competitions are becoming less effective for\nassessing top-tier LLMs due toperformance saturation(e.g., AIME24/25). To\naddress this, AMO-Bench introduces more rigorous challenges by ensuring all 50\nproblems are (1) cross-validated by experts to meet at least the International\nMathematical Olympiad (IMO) difficulty standards, and (2) entirely original\nproblems to prevent potential performance leakages from data memorization.\nMoreover, each problem in AMO-Bench requires only a final answer rather than a\nproof, enabling automatic and robust grading for evaluation. Experimental\nresults across 26 LLMs on AMO-Bench show that even the best-performing model\nachieves only 52.4% accuracy on AMO-Bench, with most LLMs scoring below 40%.\nBeyond these poor performances, our further analysis reveals a promising\nscaling trend with increasingtest-time computeon AMO-Bench. These results\nhighlight the significant room for improving themathematical reasoningin\ncurrent LLMs. We release AMO-Bench to facilitate further research into\nadvancing the reasoning abilities of language models.\nhttps://amo-bench.github.io/ 🎉🎉🎉 Welcome to try this new challenging benchmark! 🎉🎉🎉Github Repo:https://github.com/meituan-longcat/AMO-BenchHuggingface Dataset:https://huggingface.co/datasets/meituan-longcat/AMO-BenchArxiv Paper:https://arxiv.org/pdf/2510.26768Project Page:https://amo-bench.github.io/ ·Sign uporlog into comment",
+  "metadata": {
+    "title": "AMO-Bench: Large Language Models Still Struggle in High School Math\n  Competitions",
+    "authors": [
+      "Shengnan An",
+      "Junlin Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/meituan-longcat/AMO-Bench",
+    "huggingface_url": "https://huggingface.co/papers/2510.26768",
+    "upvote": 33,
+    "tags": []
+  }
+}

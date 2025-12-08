@@ -1,0 +1,16 @@
+{
+  "context": "A systematic study defines a framework for analyzing and predicting reinforcement learning scaling in large language models, identifying key design choices that affect compute efficiency and proposing a best-practice recipe. Reinforcement learning(RL) has become central to training large language\nmodels (LLMs), yet the field lacks predictive scaling methodologies comparable\nto those established for pre-training. Despite rapidly rising compute budgets,\nthere is no principled understanding of how to evaluate algorithmic\nimprovements for scaling RL compute. We present the first large-scale\nsystematic study, amounting to more than 400,000 GPU-hours, that defines a\nprincipled framework for analyzing and predicting RL scaling in LLMs. We fitsigmoidal compute-performance curvesfor RL training and ablate a wide range of\ncommon design choices to analyze their effects onasymptotic performanceandcompute efficiency. We observe: (1) Not all recipes yield similar asymptotic\nperformance, (2) Details such asloss aggregation,normalization,curriculum,\nandoff-policy algorithmprimarily modulatecompute efficiencywithout\nmaterially shifting the asymptote, and (3) Stable, scalable recipes follow\npredictablescaling trajectories, enabling extrapolation from smaller-scale\nruns. Combining these insights, we propose a best-practice recipe,ScaleRL, and\ndemonstrate its effectiveness by successfully scaling and predicting validation\nperformance on a single RL run scaled up to 100,000 GPU-hours. Our work\nprovides both a scientific framework for analyzing scaling in RL and a\npractical recipe that brings RL training closer to the predictability long\nachieved in pre-training. \"The most impressive paper I've read all year\" -@lewtun This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "The Art of Scaling Reinforcement Learning Compute for LLMs",
+    "authors": [
+      "Devvrit Khatri",
+      "Rishabh Tiwari",
+      "Rachit Bansal"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.13786",
+    "upvote": 30,
+    "tags": []
+  }
+}

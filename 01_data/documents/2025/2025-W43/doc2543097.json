@@ -1,0 +1,14 @@
+{
+  "context": "NeuroAda is a parameter-efficient fine-tuning method that combines selective adaptation with bypass connections to achieve high performance with minimal trainable parameters and reduced memory usage. Existingparameter-efficient fine-tuning(PEFT) methods primarily fall into\ntwo categories:addition-basedandselective in-situ adaptation. The former,\nsuch asLoRA, introduce additional modules to adapt the model to downstream\ntasks, offering strong memory efficiency. However, their representational\ncapacity is often limited, making them less suitable for fine-grained\nadaptation. In contrast, the latter directly fine-tunes a carefully chosen\nsubset of the original model parameters, allowing for more precise and\neffective adaptation, but at the cost of significantly increased memory\nconsumption. To reconcile this trade-off, we proposeNeuroAda, a novelPEFTmethod that enables fine-grained model finetuning while maintaining high memory\nefficiency. Our approach first identifiesimportant parameters(i.e.,\nconnections within the network) as in selective adaptation, and then introducesbypass connectionsfor these selected parameters. During finetuning, only thebypass connectionsare updated, leaving the original model parameters frozen.\nEmpirical results on 23+ tasks spanning bothnatural language generationand\nunderstanding demonstrate thatNeuroAdaachieves state-of-the-art performance\nwith as little as leq 0.02% trainable parameters, while reducing\nCUDA memory usage by up to 60%. We release our code here:\nhttps://github.com/FightingFighting/NeuroAda.git. We propose a novel parameter-efficient fine-tuning (PEFT) method that substantially reduces GPU memory consumption—a major limitation of selection-based PEFT approaches. Meanwhile, the proposed method ensures that all neurons in the neural network retain the potential to be activated, thereby enhancing the model’s adaptability to downstream tasks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "NeuroAda: Activating Each Neuron's Potential for Parameter-Efficient\n  Fine-Tuning",
+    "authors": [
+      "Zhi Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/\nFightingFighting/NeuroAda.git",
+    "huggingface_url": "https://huggingface.co/papers/2510.18940",
+    "upvote": 8,
+    "tags": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "context": "Lang1, a specialized language model pretrained on clinical data, outperforms generalist models in predicting hospital operational metrics through supervised finetuning and real-world evaluation. Hospitals and healthcare systems rely on operational decisions that determine patient flow, cost, and quality of care. Despite strong performance on medical knowledge and conversational benchmarks,foundation modelstrained on general text may lack the specialized knowledge required for these operational decisions. We introduceLang1, a family of models (100M-7B parameters) pretrained on a specialized corpus blending 80Bclinical tokensfrom NYU Langone Health'sEHRsand 627B tokens from the internet. To rigorously evaluateLang1in real-world settings, we developed theREalistic Medical Evaluation(ReMedE), a benchmark derived from 668,331 EHR notes that evaluates five critical tasks:30-day readmission prediction,30-day mortality prediction,length of stay,comorbidity coding, and predictinginsurance claims denial. Inzero-shot settings, both general-purpose and specialized models underperform on four of five tasks (36.6%-71.7%AUROC), with mortality prediction being an exception. Afterfinetuning,Lang1-1B outperforms finetuned generalist models up to 70x larger and zero-shot models up to 671x larger, improvingAUROCby 3.64%-6.75% and 1.66%-23.66% respectively. We also observedcross-task scalingwith jointfinetuningon multiple tasks leading to improvement on other tasks.Lang1-1B effectively transfers to out-of-distribution settings, including other clinical tasks and an external health system. Our findings suggest that predictive capabilities for hospital operations require explicitsupervised finetuning, and that thisfinetuningprocess is made more efficient byin-domain pretrainingon EHR. Our findings support the emerging view thatspecialized LLMscan compete with generalist models in specialized tasks, and show that effective healthcare systems AI requires the combination ofin-domain pretraining,supervised finetuning, andreal-world evaluationbeyond proxy benchmarks. Can smaller, specialized models beat massive generalists in healthcare operations? Healthcare operations (bed management, discharge planning, risk prediction) are high-stakes and data-sensitive. In this work, we explore the tradeoffs between off-the-shelf generalists and models specialized on internal patient notes. We introduceLang1(models) andReMedE(benchmark). 🚀The Models: Lang1 We introduce a family of decoder LLMs (100M, 1B, 7B) pretrained on80B tokens of EHR notes+ 627B web tokens. 🏥The Benchmark: ReMedE Existing benchmarks often rely on proxies that fail to capture real-world clinical constraints. We introduce ReMedE to fix this: 💡Key Engineering Insights 💭Why This Matters Feasibility & Cost: Training Lang1-1B cost roughly$180k(estimated on AWS), a figure comparable to routine hospital IT upgrades. This proves health systems can \"build institutional assets\" rather than \"renting intelligence\" via APIs, ensuring better data privacy and long-term control. Operations > Diagnostics: With physicians spending ~74% of their time on documentation and logistics, focusing AI onoperational tasks(unlike pure diagnostics) offers immediate, measurable ROI for healthcare delivery. The Future of Clinical AI: Our findings challenge the assumption that internet-scale generalists are the solution for every domain. For high-stakes environments,smaller, domain-specific systemsoffer a more accurate, affordable, and robust path forward. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Generalist Foundation Models Are Not Clinical Enough for Hospital Operations",
+    "authors": [
+      "Lavender Y. Jiang",
+      "Angelica Chen",
+      "Xu Han",
+      "Xujin Chris Liu",
+      "Radhika Dua",
+      "Robert Steele",
+      "Anton Alyakin",
+      "Qingkai Pan",
+      "Karl L. Sangwon",
+      "Daniel A. Alber"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.13703",
+    "upvote": 20,
+    "tags": []
+  }
+}

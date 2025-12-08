@@ -1,0 +1,15 @@
+{
+  "context": "MATPO, a reinforcement learning method, optimizes tool-integrated multi-agent roles within a single LLM, improving performance and robustness over single-agent systems. Large language models (LLMs) increasingly rely on multi-turn tool-integrated\nplanning for knowledge-intensive and complex reasoning tasks. Existing\nimplementations typically rely on a single agent, but they suffer from limited\ncontext length and noisy tool responses. A natural solution is to adopt amulti-agent frameworkwith planner- andworker-agentsto manage context.\nHowever, no existing methods support effectivereinforcement learningpost-training of tool-integratedmulti-agent frameworks. To address this gap,\nwe propose Multi-Agent Tool-Integrated Policy Optimization (MATPO), which\nenables distinct roles (planner and worker) to be trained within a single LLM\ninstance usingrole-specific promptsviareinforcement learning. MATPO is\nderived from a principledcredit assignment mechanismacross planner and worker\nrollouts. This design eliminates the need to deploy multiple LLMs, which would\nbe memory-intensive, while preserving the benefits of specialization.\nExperiments on GAIA-text, WebWalkerQA, and FRAMES show that MATPO consistently\noutperforms single-agent baselines by an average of 18.38% relative improvement\nin performance and exhibits greater robustness to noisy tool outputs. Our\nfindings highlight the effectiveness of unifying multiple agent roles within a\nsingle LLM and provide practical insights for stable and efficient multi-agent\nRL training. Code:https://github.com/mzf666/MATPOCheckpoint:https://huggingface.co/veggiebird/MATPO-14bData:https://huggingface.co/datasets/veggiebird/MATPO-dataRollout:https://huggingface.co/datasets/veggiebird/MATPO-rollout This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Multi-Agent Tool-Integrated Policy Optimization",
+    "authors": [
+      "Zhanfeng Mo",
+      "Lidong Bing"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/mzf666/MATPO",
+    "huggingface_url": "https://huggingface.co/papers/2510.04678",
+    "upvote": 30,
+    "tags": []
+  }
+}

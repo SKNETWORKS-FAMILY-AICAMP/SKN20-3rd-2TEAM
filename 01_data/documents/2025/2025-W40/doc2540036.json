@@ -1,0 +1,14 @@
+{
+  "context": "Interactive Training is a framework that allows real-time, feedback-driven intervention during neural network training, improving stability and adaptability. Traditional neural network training typically follows fixed, predefined\noptimization recipes, lacking the flexibility to dynamically respond to\ninstabilities or emerging training issues. In this paper, we introduceInteractive Training, an open-source framework that enables real-time,\nfeedback-driven intervention during neural network training by human experts or\nautomatedAI agents. At its core,Interactive Traininguses acontrol serverto\nmediate communication between users or agents and the ongoing training process,\nallowing users to dynamically adjustoptimizer hyperparameters,training data,\nandmodel checkpoints. Through three case studies, we demonstrate thatInteractive Trainingachieves superiortraining stability, reduced sensitivity\nto initial hyperparameters, and improvedadaptabilityto evolving user needs,\npaving the way toward a future training paradigm whereAI agentsautonomously\nmonitortraining logs, proactively resolve instabilities, and optimize training\ndynamics. Every time I watch models train, I wish I could tune LR on the fly.It's like cooking: we adjust the dial when the food smells off. We built Interactive Training to do exactly that, turning one-way loss monitoring into two-way interaction. Interactive Training Frontend Dashboard. The left panel provides control tabs organized by Optimizer, Model, Checkpoint, and Dataset, allowing users to dynamically send intervention commands during training (e.g., adjusting the learning rate via the Optimizer panel shown). The right side displays real-time visualizations of training metrics, such as loss and gradient norm. Unlike traditional monitoring tools, this interface supports active two-way communication, enabling users to directly intervene and influence ongoing training processes in real-time. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Interactive Training: Feedback-Driven Neural Network Optimization",
+    "authors": [
+      "Yuntian Deng"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/yuntian-group/interactive-training",
+    "huggingface_url": "https://huggingface.co/papers/2510.02297",
+    "upvote": 42,
+    "tags": []
+  }
+}

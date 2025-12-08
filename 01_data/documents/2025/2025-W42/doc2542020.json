@@ -1,0 +1,16 @@
+{
+  "context": "A new dataset and pipeline for data curation improve the performance of fully open multimodal large language models, achieving state-of-the-art results competitive with semi-open models. Fully openmultimodal large language models(MLLMs) currently lag behind\nproprietary counterparts, primarily due to a significant gap in data quality\nforsupervised fine-tuning(SFT). Existing open-source datasets are often\nplagued by widespread noise and a critical deficit in complex reasoning data,\nsuch asChain-of-Thought(CoT), which hinders the development of advanced model\ncapabilities. Addressing these challenges, our work makes three primary\ncontributions. First, we introduceHoney-Data-15M, a new SFT dataset comprising\napproximately 15 million QA pairs, processed through multiple cleaning\ntechniques and enhanced with a novel dual-level (short and long) CoT enrichment\nstrategy. Second, we introduceHoneyPipe, the data curation pipeline, and its\nunderlying frameworkDataStudio, providing the community with a transparent and\nadaptable methodology for data curation that moves beyond static dataset\nreleases. Finally, to validate our dataset and pipeline, we trainBee-8B, an 8B\nmodel onHoney-Data-15M. Experiments show thatBee-8Bestablishes a newstate-of-the-art(SOTA) for fully open MLLMs, achieving performance that is\ncompetitive with, and in some cases surpasses, recent semi-open models such as\nInternVL3.5-8B. Our work delivers to the community a suite of foundational\nresources, including: theHoney-Data-15Mcorpus; the full-stack suite\ncomprisingHoneyPipeandDataStudio; training recipes; an evaluation harness;\nand the model weights. This effort demonstrates that a principled focus on data\nquality is a key pathway to developing fully open MLLMs that are highly\ncompetitive with their semi-open counterparts. A High-Quality Corpus and Full-Stack Suite (Data, Model weight, code , etc)  to Unlock Advanced Fully Open MLLMs This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Bee: A High-Quality Corpus and Full-Stack Suite to Unlock Advanced Fully\n  Open MLLMs",
+    "authors": [
+      "Yi Zhang",
+      "Yongming Rao",
+      "Meng-Hao Guo"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.13795",
+    "upvote": 56,
+    "tags": []
+  }
+}

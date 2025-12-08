@@ -1,0 +1,15 @@
+{
+  "context": "EHR-R1, a series of reasoning-enhanced LLMs, outperforms existing models in EHR analysis through a comprehensive instruction dataset and multi-stage training paradigm. Electronic Health Records (EHRs) contain rich yet complex information, and\ntheir automated analysis is critical for clinical decision-making. Despite\nrecent advances oflarge language models(LLMs) in clinical workflows, their\nability to analyze EHRs remains limited due to narrow task coverage and lack of\nEHR-oriented reasoning capabilities. This paper aims to bridge the gap,\nspecifically, we present EHR-Ins, a large-scale, comprehensive EHR reasoning\ninstruction dataset, comprising 300k high-quality reasoning cases and 4M\nnon-reasoning cases across 42 distinct EHR tasks. Its core innovation is athinking-graph-driven frameworkthat enables to generate high-quality reasoning\ndata at scale. Based on it, we develop EHR-R1, a series of reasoning-enhanced\nLLMs with up to 72B parameters tailored for EHR analysis. Through a multi-stage\ntraining paradigm, includingdomain adaptation,reasoning enhancement, andreinforcement learning, EHR-R1 systematically acquires domain knowledge and\ndiverse reasoning capabilities, enabling accurate and robust EHR analysis.\nLastly, we introduceEHR-Bench, a new benchmark curated fromMIMIC-IV, spanning\n42 tasks, to comprehensively assess reasoning and prediction across EHR\nscenarios. In experiments, we show that the resulting EHR-R1 consistently\noutperforms state-of-the-art commercial and open-source LLMs (including\nDeepSeek-V3 and GPT-4o), surpassing GPT-4o by over 30 points on MIMIC-Bench and\nachieving a 10\\% higherzero-shot AUROConEHRSHOT. Collectively, EHR-Ins,\nEHR-R1, andEHR-Benchhave significantly advanced the development for more\nreliable and clinically relevant EHR analysis. In this paper, authors propose a reasoning-oriented large language model (LLM) designed for electronic health record (EHR) analysis, trained using reasoning-enhanced supervised fine-tuning (SFT) and reinforcement learning (RL). The construct a novel EHR analysis instruction dataset with reasoning based on a thinking-graph-driven framework. Their final 72B-parameter model, EHR-R1, achieves state-of-the-art performance across 42 distinct EHR tasks, surpassing all previous LLM baselines. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "EHR-R1: A Reasoning-Enhanced Foundational Language Model for Electronic\n  Health Record Analysis",
+    "authors": [
+      "Yusheng Liao",
+      "Pengcheng Qiu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/MAGIC-AI4Med/EHR-R1",
+    "huggingface_url": "https://huggingface.co/papers/2510.25628",
+    "upvote": 10,
+    "tags": []
+  }
+}

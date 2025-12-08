@@ -1,0 +1,15 @@
+{
+  "context": "ProfBench evaluates large language models in professional domains using human-expert criteria, revealing challenges and performance disparities between proprietary and open-weight models. Evaluating progress inlarge language models(LLMs) is often constrained by\nthe challenge of verifying responses, limiting assessments to tasks like\nmathematics, programming, and short-form question-answering. However, many\nreal-world applications require evaluatingLLMsin processing professional\ndocuments, synthesizing information, and generating comprehensive reports in\nresponse to user queries. We introduceProfBench: a set of over 7000response-criterion pairsas evaluated byhuman-expertswith professional\nknowledge across Physics PhD, Chemistry PhD, Finance MBA and Consulting MBA. We\nbuild robust and affordableLLM-Judgesto evaluateProfBenchrubrics, by\nmitigatingself-enhancement biasand reducing the cost of evaluation by 2-3\norders of magnitude, to make it fair and accessible to the broader community.\nOur findings reveal thatProfBenchposes significant challenges even for\nstate-of-the-artLLMs, with top-performing models likeGPT-5-highachieving\nonly 65.9\\% overall performance. Furthermore, we identify notable performance\ndisparities between proprietary and open-weight models and provide insights\ninto the role thatextended thinkingplays in addressing complex,professional-domain tasks. Data:\nhttps://huggingface.co/datasets/nvidia/ProfBenchand Code:\nhttps://github.com/NVlabs/ProfBench ProfBench: Multi-Domain Rubrics requiring Professional Knowledge to Answer and Judge This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ProfBench: Multi-Domain Rubrics requiring Professional Knowledge to\n  Answer and Judge",
+    "authors": [
+      "Zhilin Wang",
+      "Jaehun Jung"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.18941",
+    "upvote": 7,
+    "tags": []
+  }
+}

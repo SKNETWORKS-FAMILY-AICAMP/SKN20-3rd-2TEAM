@@ -1,0 +1,14 @@
+{
+  "context": "FARMER, a unified generative framework combining Normalizing Flows and Autoregressive models, achieves competitive image synthesis performance with exact likelihoods and scalable training. Directly modeling the explicit likelihood of the raw data distribution is key\ntopic in the machine learning area, which achieves the scaling successes in\nLarge Language Models by autoregressive modeling. However, continuous AR\nmodeling over visual pixel data suffer from extremely long sequences and\nhigh-dimensional spaces. In this paper, we present FARMER, a novel end-to-end\ngenerative framework that unifiesNormalizing Flows(NF) and Autoregressive\n(AR) models for tractable likelihood estimation and high-quality image\nsynthesis directly from raw pixels. FARMER employs an invertible autoregressive\nflow to transform images into latent sequences, whose distribution is modeled\nimplicitly by an autoregressive model. To address the redundancy and complexity\nin pixel-level modeling, we propose aself-supervised dimension reductionscheme that partitions NF latent channels into informative and redundant\ngroups, enabling more effective and efficient AR modeling. Furthermore, we\ndesign aone-step distillationscheme to significantly accelerate inference\nspeed and introduce aresampling-based classifier-free guidancealgorithm to\nboost image generation quality. Extensive experiments demonstrate that FARMER\nachieves competitive performance compared to existing pixel-based generative\nmodels while providing exact likelihoods and scalable training. Bytedance Seed Technical Report ·Sign uporlog into comment",
+  "metadata": {
+    "title": "FARMER: Flow AutoRegressive Transformer over Pixels",
+    "authors": [
+      "Jie Wu"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.23588",
+    "upvote": 57,
+    "tags": []
+  }
+}

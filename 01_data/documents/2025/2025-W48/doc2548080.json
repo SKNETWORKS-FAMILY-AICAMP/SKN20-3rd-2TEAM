@@ -1,0 +1,12 @@
+{
+  "context": "PRInTS, a generative process reward model, enhances information-seeking abilities in AI agents by providing dense scoring and trajectory summarization, outperforming existing models with smaller backbones. Information-seeking is a core capability for AI agents, requiring them to gather and reason over tool-generated information across long trajectories. However, such multi-step information-seeking tasks remain challenging for agents backed by language models. Whileprocess reward models(PRMs) can guide agents by ranking candidate steps at test-time, existingPRMs, designed for short reasoning with binary judgment, cannot capture richer dimensions of information-seeking steps, such astool interactionsand reasoning over tool outputs, nor handle the rapidly growing context in long-horizon tasks. To address these limitations, we introduce PRInTS, a generative PRM trained with dual capabilities: (1)dense scoringbased on the PRM's reasoning across multiple step quality dimensions (e.g., interpretation of tool outputs,tool call informativeness) and (2)trajectory summarizationthat compresses the growing context while preserving essential information for step evaluation. Extensive evaluations acrossFRAMES,GAIA(levels 1-3), andWebWalkerQA(easy-hard) benchmarks on multiple models, along with ablations, reveal thatbest-of-n samplingwith PRInTS enhances information-seeking abilities ofopen-source modelsas well asspecialized agents, matching or surpassing the performance of frontier models with a much smaller backbone agent and outperforming other strongreward modelingbaselines. PRInTS: Reward Modeling for Long-Horizon Information Seeking This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "PRInTS: Reward Modeling for Long-Horizon Information Seeking",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19314",
+    "upvote": 6,
+    "tags": []
+  }
+}

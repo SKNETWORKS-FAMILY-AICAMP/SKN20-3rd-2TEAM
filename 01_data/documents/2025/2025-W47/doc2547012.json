@@ -1,0 +1,18 @@
+{
+  "context": "AraLingBench evaluates Arabic and bilingual LLMs' linguistic competence using a benchmark with expert-designed questions across grammar, morphology, spelling, reading comprehension, and syntax, revealing gaps between surface proficiency and true comprehension. We present AraLingBench: a fully human annotated benchmark for evaluating the Arabic linguistic competence oflarge language models(LLMs). The benchmark spans five core categories:grammar,morphology,spelling,reading comprehension, andsyntax, through 150 expert-designedmultiple choice questionsthat directly assessstructural language understanding. Evaluating 35 Arabic and bilingualLLMsreveals that current models demonstrate strong surface level proficiency but struggle with deeper grammatical and syntactic reasoning. AraLingBench highlights a persistent gap between high scores on knowledge-based benchmarks and true linguistic mastery, showing that many models succeed through memorization or pattern recognition rather than authentic comprehension. By isolating and measuring fundamental linguistic skills, AraLingBench provides a diagnostic framework for developing ArabicLLMs. The full evaluation code is publicly available on GitHub. We present AraLingBench: a fully human annotated benchmark for evaluating the Arabic linguistic competence of large language models (LLMs). The benchmark spans five core categories: grammar, morphology, spelling, reading comprehension, and syntax, through 150 expert-designed multiple choice questions that directly assess structural language understanding. Evaluating 35 Arabic and bilingual LLMs reveals that current models demonstrate strong surface level proficiency but struggle with deeper grammatical and syntactic reasoning. AraLingBench highlights a persistent gap between high scores on knowledge-based benchmarks and true linguistic mastery, showing that many models succeed through memorization or pattern recognition rather than authentic comprehension. By isolating and measuring fundamental linguistic skills, AraLingBench provides a diagnostic framework for developing Arabic LLMs. The full evaluation code is publicly available on GitHub. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/aralingbench-a-human-annotated-benchmark-for-evaluating-arabic-linguistic-capabilities-of-large-language-models ·Sign uporlog into comment",
+  "metadata": {
+    "title": "AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models",
+    "authors": [
+      "Mohammad Zbib",
+      "Hasan Abed Al Kader Hammoud",
+      "Nadine Rizk",
+      "Fatima Karnib",
+      "Ammar Mohanna"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/hammoudhasan/AraLingBench",
+    "huggingface_url": "https://huggingface.co/papers/2511.14295",
+    "upvote": 71,
+    "tags": []
+  }
+}

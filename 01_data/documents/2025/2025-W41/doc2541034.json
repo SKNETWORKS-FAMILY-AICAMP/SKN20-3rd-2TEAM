@@ -1,0 +1,14 @@
+{
+  "context": "Imperceptible jailbreaks using Unicode variation selectors enable high attack success rates against aligned LLMs without visible prompt modifications. Jailbreaking attacks on the vision modality typically rely on imperceptibleadversarial perturbations, whereas attacks on the textual modality are\ngenerally assumed to require visible modifications (e.g., non-semantic\nsuffixes). In this paper, we introduce imperceptible jailbreaks that exploit a\nclass ofUnicode characterscalledvariation selectors. By appending invisiblevariation selectorsto malicious questions, the jailbreak prompts appear\nvisually identical to original malicious questions on screen, while theirtokenizationis \"secretly\" altered. We propose achain-of-search pipelineto\ngenerate such adversarial suffixes to induce harmful responses. Our experiments\nshow that our imperceptible jailbreaks achieve high attack success rates\nagainst fouraligned LLMsand generalize toprompt injection attacks, all\nwithout producing any visible modifications in the written prompt. Our code is\navailable at https://github.com/sail-sg/imperceptible-jailbreaks. Jailbreaking attacks on the vision modality typically rely on imperceptible adversarial perturbations, whereas attacks on the textual modality are generally assumed to require visible modifications (e.g., non-semantic suffixes). In this paper, we introduce imperceptible jailbreaks that exploit a class of Unicode characters called variation selectors. By appending invisible variation selectors to malicious questions, the jailbreak prompts appear visually identical to original malicious questions on screen, while their tokenization is \"secretly\" altered. We propose a chain-of-search pipeline to generate such adversarial suffixes to induce harmful responses. Our experiments show that our imperceptible jailbreaks achieve high attack success rates against four aligned LLMs and generalize to prompt injection attacks, all without producing any visible modifications in the written prompt. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Imperceptible Jailbreaking against Large Language Models",
+    "authors": [
+      "Xin Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.05025",
+    "upvote": 33,
+    "tags": []
+  }
+}

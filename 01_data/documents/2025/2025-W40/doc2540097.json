@@ -1,0 +1,18 @@
+{
+  "context": "RewardMap, a multi-stage reinforcement learning framework, enhances multimodal large language models' visual understanding and reasoning skills through dense reward signals and a difficulty-aware reward design. Fine-grained visual reasoningremains a core challenge for multimodal large\nlanguage models (MLLMs). The recently introducedReasonMaphighlights this gap\nby showing that even advanced MLLMs struggle withspatial reasoningin\nstructured and information-rich settings such as transit maps, a task of clear\npractical and scientific importance. However, standard reinforcement learning\n(RL) on such tasks is impeded bysparse rewardsandunstable optimization. To\naddress this, we first constructReasonMap-Plus, an extended dataset that\nintroduces dense reward signals throughVisual Question Answering (VQA)tasks,\nenabling effectivecold-start trainingof fine-grained visual understanding\nskills. Next, we propose RewardMap, amulti-stage RLframework designed to\nimprove both visual understanding and reasoning capabilities of MLLMs.\nRewardMap incorporates two key designs. First, we introduce a difficulty-aware\nreward design that incorporates detail rewards, directly tackling the sparse\nrewards while providing richer supervision. Second, we propose amulti-stage RLscheme that bootstraps training from simple perception to complex reasoning\ntasks, offering a more effective cold-start strategy than conventionalSupervised Fine-Tuning (SFT). Experiments onReasonMapandReasonMap-Plusdemonstrate that each component of RewardMap contributes to consistent\nperformance gains, while their combination yields the best results. Moreover,\nmodels trained with RewardMap achieve an average improvement of 3.47% across 6\nbenchmarks spanningspatial reasoning,fine-grained visual reasoning, and\ngeneral tasks beyond transit maps, underscoring enhanced visual understanding\nand reasoning capabilities. Project Page:https://fscdc.github.io/RewardMap This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "RewardMap: Tackling Sparse Rewards in Fine-grained Visual Reasoning via\n  Multi-Stage Reinforcement Learning",
+    "authors": [
+      "Sicheng Feng",
+      "Kaiwen Tuo",
+      "Song Wang",
+      "Lingdong Kong",
+      "Huan Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/fscdc/RewardMap",
+    "huggingface_url": "https://huggingface.co/papers/2510.02240",
+    "upvote": 17,
+    "tags": []
+  }
+}

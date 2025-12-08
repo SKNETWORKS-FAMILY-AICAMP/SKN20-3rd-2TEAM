@@ -1,0 +1,18 @@
+{
+  "context": "ReCode, a recursive code generation paradigm, unifies high-level planning and low-level action in a single representation, enhancing decision granularity and data efficiency in LLM-based agents. Real-world tasks require decisions at varying granularities, and humans excel\nat this by leveraging a unified cognitive representation where planning is\nfundamentally understood as a high-level form of action. However, current Large\nLanguage Model (LLM)-based agents lack this crucial capability to operate\nfluidly across decision granularities. This limitation stems from existing\nparadigms that enforce a rigid separation betweenhigh-level planningandlow-level action, which impairs dynamic adaptability and limits generalization.\nWe proposeReCode(Recursive Code Generation), a novel paradigm that addresses\nthis limitation by unifying planning and action within a single code\nrepresentation. In this representation,ReCodetreats high-level plans asabstract placeholder functions, which the agent then recursively decomposes\ninto finer-grained sub-functions until reachingprimitive actions. This\nrecursive approach dissolves the rigid boundary between plan and action,\nenabling the agent to dynamically control itsdecision granularity.\nFurthermore, the recursive structure inherently generates rich,\nmulti-granularity training data, enabling models to learn hierarchical\ndecision-making processes. Extensive experiments showReCodesignificantly\nsurpasses advanced baselines ininference performanceand demonstrates\nexceptionaldata efficiencyin training, validating our core insight that\nunifying planning and action throughrecursive code generationis a powerful\nand effective approach to achieving universal granularity control. The code is\navailable at https://github.com/FoundationAgents/ReCode. ReCode introduces recursive code generation for LLM agents, unifying planning and action into a single representation. By treating high-level plans as placeholder functions that recursively decompose into executable primitives, it achieves universal granularity control and dynamically adapts from strategic thinking to concrete actions. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ReCode: Unify Plan and Action for Universal Granularity Control",
+    "authors": [
+      "Zhaoyang Yu",
+      "Jiayi Zhang",
+      "Jinyu Xiang",
+      "Yingchao Li",
+      "Bang Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/FoundationAgents/ReCode",
+    "huggingface_url": "https://huggingface.co/papers/2510.23564",
+    "upvote": 120,
+    "tags": []
+  }
+}

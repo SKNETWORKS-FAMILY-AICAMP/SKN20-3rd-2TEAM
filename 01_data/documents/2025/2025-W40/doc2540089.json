@@ -1,0 +1,14 @@
+{
+  "context": "A reinforcement learning framework with span-level rewards improves hallucination span detection in large language models by incentivizing reasoning. Large language models (LLMs) often generate hallucinations -- unsupported\ncontent that undermines reliability. While most prior works frame hallucination\ndetection as a binary task, many real-world applications require identifying\nhallucinated spans, which is a multi-step decision making process. This\nnaturally raises the question of whether explicit reasoning can help the\ncomplex task of detecting hallucination spans. To answer this question, we\nfirst evaluate pretrained models with and withoutChain-of-Thought(CoT)\nreasoning, and show that CoT reasoning has the potential to generate at least\none correct answer when sampled multiple times. Motivated by this, we propose\nRL4HS, areinforcement learningframework that incentivizes reasoning with aspan-level reward function. RL4HS builds onGroup Relative Policy Optimizationand introducesClass-Aware Policy Optimizationto mitigate reward imbalance\nissue. Experiments on theRAGTruth benchmark(summarization, question\nanswering,data-to-text) show that RL4HS surpasses pretrained reasoning models\nand supervised fine-tuning, demonstrating the necessity of reinforcement\nlearning with span-level rewards for detecting hallucination spans. arXiv:https://arxiv.org/abs/2510.02173 Such a huge step forward — lucky to have stumbled upon this paper! 🙌 Amazing This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/learning-to-reason-for-hallucination-span-detection ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Learning to Reason for Hallucination Span Detection",
+    "authors": [
+      "Hsuan Su"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.02173",
+    "upvote": 18,
+    "tags": []
+  }
+}

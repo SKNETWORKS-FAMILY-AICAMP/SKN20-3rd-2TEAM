@@ -1,0 +1,14 @@
+{
+  "context": "ChronoEdit addresses physical consistency in image editing by reframing it as a video generation problem, leveraging pretrained video models and temporal reasoning tokens. Recent advances in large generative models have significantly advanced image\nediting and in-context image generation, yet a critical gap remains in ensuring\nphysical consistency, where edited objects must remain coherent. This\ncapability is especially vital for world simulation related tasks. In this\npaper, we present ChronoEdit, a framework that reframes image editing as a\nvideo generation problem. First, ChronoEdit treats the input and edited images\nas the first and last frames of a video, allowing it to leverage large\npretrainedvideo generative modelsthat capture not only object appearance but\nalso the implicit physics of motion and interaction through learned temporal\nconsistency. Second, ChronoEdit introduces atemporal reasoningstage that\nexplicitly performs editing at inference time. Under this setting, the target\nframe is jointly denoised withreasoning tokensto imagine a plausible editing\ntrajectory that constrains the solution space to physically viable\ntransformations. Thereasoning tokensare then dropped after a few steps to\navoid the high computational cost of rendering a full video. To validate\nChronoEdit, we introducePBench-Edit, a new benchmark of image-prompt pairs for\ncontexts that require physical consistency, and demonstrate that ChronoEdit\nsurpasses state-of-the-art baselines in bothvisual fidelityand physical\nplausibility. Code and models for both the 14B and 2B variants of ChronoEdit\nwill be released on the project page:\nhttps://research.nvidia.com/labs/toronto-ai/chronoedit Project page:https://research.nvidia.com/labs/toronto-ai/chronoedit This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ChronoEdit: Towards Temporal Reasoning for Image Editing and World\n  Simulation",
+    "authors": [
+      "Jay Zhangjie Wu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/nv-tlabs/ChronoEdit",
+    "huggingface_url": "https://huggingface.co/papers/2510.04290",
+    "upvote": 17,
+    "tags": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "context": "Lumina-DiMOO, an open-source foundational model, uses fully discrete diffusion modeling for efficient multi-modal generation and understanding, outperforming existing models. We introduce Lumina-DiMOO, an open-source foundational model for seamless\nmulti-modal generation and understanding. Lumina-DiMOO sets itself apart from\nprior unified models by utilizing a fullydiscrete diffusion modelingto handle\ninputs and outputs across various modalities. This innovative approach allows\nLumina-DiMOO to achieve higher sampling efficiency compared to previousautoregressive(AR) orhybrid AR-Diffusionparadigms and adeptly support a\nbroad spectrum of multi-modal tasks, includingtext-to-image generation,image-to-image generation(e.g.,image editing,subject-driven generation, andimage inpainting, etc.), as well asimage understanding. Lumina-DiMOO achieves\nstate-of-the-art performance on multiple benchmarks, surpassing existing\nopen-source unified multi-modal models. To foster further advancements in\nmulti-modal and discrete diffusion model research, we release our code and\ncheckpoints to the community. Project Page:\nhttps://synbol.github.io/Lumina-DiMOO. We introduce Lumina-DiMOO, an open-source foundational model for seamless multi-modal generation and understanding. Lumina-DiMOO sets itself apart from prior unified models by utilizing a fully discrete diffusion modeling to handle inputs and outputs across various modalities. This innovative approach allows Lumina-DiMOO to achieve higher sampling efficiency compared to previous autoregressive (AR) or hybrid AR-Diffusion paradigms and adeptly support a broad spectrum of multi-modal tasks, including text-to-image generation, image-to-image generation (e.g., image editing, subject-driven generation, and image inpainting, etc.), as well as image understanding. Lumina-DiMOO achieves state-of-the-art performance on multiple benchmarks, surpassing existing open-source unified multi-modal models. To foster further advancements in multi-modal and discrete diffusion model research, we release our code and checkpoints to the community. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Lumina-DiMOO: An Omni Diffusion Large Language Model for Multi-Modal\n  Generation and Understanding",
+    "authors": [
+      "Qi Qin",
+      "Jiayi Lei",
+      "Yibin Wang",
+      "Jinbin Bai",
+      "Dengyang Jiang",
+      "Yuandong Pu",
+      "Haoxing Chen",
+      "Le Zhuo"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Alpha-VLLM/Lumina-DiMOO",
+    "huggingface_url": "https://huggingface.co/papers/2510.06308",
+    "upvote": 53,
+    "tags": []
+  }
+}

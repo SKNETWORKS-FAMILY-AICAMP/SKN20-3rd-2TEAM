@@ -1,0 +1,15 @@
+{
+  "context": "A unified multimodal code corpus and model enable high-quality code generation from both text and visual inputs, outperforming commercial models. The scope ofneural code intelligenceis rapidly expanding beyond text-based\nsource code to encompass the richvisual outputsthat programs generate. This\nvisual dimension is critical for advanced applications like flexible content\ngeneration and precise,program-driven editingof visualizations. However,\nprogress has been impeded by the scarcity of high-qualitymultimodal code data,\na bottleneck stemming from challenges in synthesis and quality assessment. To\naddress these challenges, we make contributions from both a data and modeling\nperspective. We first introduce a completesynthesis toolkitthat leverages\nreciprocal synergies between data modalities to efficiently produce a\nlarge-scale, high-quality corpus spanning from standard charts to complex\ninteractive web UIs and code-driven animations. Leveraging this toolkit, we\nconstructJanusCode-800K, the largest multimodal code corpus to date. This\npowers the training of our models,JanusCoderandJanusCoderV, which establish\navisual-programmatic interfacefor generating code from textual instructions,\nvisual inputs, or a combination of both. Our unified model is a departure from\nexisting approaches that build specialized models for isolated tasks. Extensive\nexperiments on bothtext-centricandvision-centric coding tasksdemonstrate\nthe superior performance of theJanusCoderseries, with our 7B to 14B scale\nmodels approaching or even exceeding the performance of commercial models.\nFurthermore, extensive analysis provides key insights into harmonizing\nprogrammatic logic with itsvisual expression. Our code and checkpoints will\nare available at https://github.com/InternLM/JanusCoder. JanusCoder is a suite of open models that establishes a unified visual–programmatic interface for multimodal code intelligence. The models (JanusCoder and JanusCoderV) handle both text-centric and vision-centric tasks within a single, unified framework. This allows them to tackle a diverse range of tasks, including but not limited to chart-to-code, web UI generation and editing, and code-driven animations. Across public benchmarks, the models demonstrate superior performance, approaching or even surpassing proprietary systems. Code available at:https://github.com/InternLM/JanusCoder ·Sign uporlog into comment",
+  "metadata": {
+    "title": "JanusCoder: Towards a Foundational Visual-Programmatic Interface for\n  Code Intelligence",
+    "authors": [
+      "Qiushi Sun",
+      "Qiaosheng Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/InternLM/JanusCoder",
+    "huggingface_url": "https://huggingface.co/papers/2510.23538",
+    "upvote": 96,
+    "tags": []
+  }
+}

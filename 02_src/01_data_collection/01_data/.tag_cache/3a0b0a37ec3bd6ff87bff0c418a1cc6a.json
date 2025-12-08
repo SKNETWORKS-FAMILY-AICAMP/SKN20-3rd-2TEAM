@@ -1,0 +1,11 @@
+{
+  "title": "ThinkMorph: Emergent Properties in Multimodal Interleaved\n  Chain-of-Thought Reasoning",
+  "abstract": "ThinkMorph, a unified model fine-tuned on interleaved reasoning traces, enhances multimodal reasoning by generating coherent text-image steps, achieving significant performance gains and demonstrating",
+  "tags": [
+    "Multimodal Learning",
+    "Model Architecture",
+    "Generative Models"
+  ],
+  "timestamp": 1765199759.2866366,
+  "model": "gpt-3.5-turbo"
+}

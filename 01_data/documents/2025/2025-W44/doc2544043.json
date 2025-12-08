@@ -1,0 +1,15 @@
+{
+  "context": "The agent data protocol (ADP) standardizes diverse agent training datasets, enabling improved performance across various tasks without domain-specific tuning. Public research results on large-scalesupervised finetuningofAI agentsremain relatively rare, since the collection of agent training data presents\nunique challenges. In this work, we argue that the bottleneck is not a lack of\nunderlying data sources, but that a large variety of data is fragmented across\nheterogeneous formats, tools, and interfaces. To this end, we introduce theagent data protocol(ADP), a light-weight representation language that serves\nas an \"interlingua\" betweenagent datasetsin diverse formats and unified agent\ntraining pipelines downstream. The design ofADPis expressive enough to\ncapture a large variety of tasks, includingAPI/tool use,browsing,coding,software engineering, and generalagentic workflows, while remaining simple to\nparse and train on without engineering at a per-dataset level. In experiments,\nwe unified a broad collection of 13 existing agent training datasets intoADPformat, and converted the standardizedADPdata into training-ready formats for\nmultiple agent frameworks. We performedSFTon these data, and demonstrated an\naverage performance gain of ~20% over corresponding base models, and deliversstate-of-the-artornear-SOTAperformance on standardcoding,browsing, tool\nuse, andresearch benchmarks, without domain-specific tuning. All code and data\nare released publicly, in the hope thatADPcould help lower the barrier to\nstandardized, scalable, and reproducible agent training. We introduce the agent data protocol (ADP), a light-weight representation language that serves as an \"interlingua\" between agent datasets in diverse formats and unified agent training pipelines downstream. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Agent Data Protocol: Unifying Datasets for Diverse, Effective\n  Fine-tuning of LLM Agents",
+    "authors": [
+      "Boyu Gou",
+      "Yiheng Xu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/neulab/agent-data-protocol",
+    "huggingface_url": "https://huggingface.co/papers/2510.24702",
+    "upvote": 27,
+    "tags": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "context": "DeLeaker mitigates semantic leakage in text-to-image models by dynamically reweighting attention maps during the diffusion process, outperforming existing methods without compromising quality. Text-to-Image (T2I) models have advanced rapidly, yet they remain vulnerable\ntosemantic leakage, the unintended transfer of semantically related features\nbetween distinct entities. Existing mitigation strategies are often\noptimization-based or dependent on external inputs. We introduce DeLeaker, a\nlightweight, optimization-free inference-time approach that mitigates leakage\nby directly intervening on the model'sattention maps. Throughout the diffusion\nprocess, DeLeaker dynamically reweightsattention mapsto suppress excessive\ncross-entity interactions while strengthening the identity of each entity. To\nsupport systematic evaluation, we introduceSLIM(Semantic Leakagein IMages),\nthe first dataset dedicated tosemantic leakage, comprising 1,130\nhuman-verified samples spanning diverse scenarios, together with a novelautomatic evaluation framework. Experiments demonstrate that DeLeaker\nconsistently outperforms all baselines, even when they are provided with\nexternal information, achieving effective leakage mitigation without\ncompromising fidelity or quality. These results underscore the value of\nattention control and pave the way for more semantically precise T2I models.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "DeLeaker: Dynamic Inference-Time Reweighting For Semantic Leakage\n  Mitigation in Text-to-Image Models",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.15015",
+    "upvote": 10,
+    "tags": []
+  }
+}

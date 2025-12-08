@@ -1,0 +1,15 @@
+{
+  "context": "A benchmark for code-diff understanding with tasks including apply, anti-apply, and diff generation, revealing optimal diff formats based on model size and use case. Reliable handling of code diffs is central to agents that edit and refactor\nrepositories at scale. We introduce Diff-XYZ, a compact benchmark for code-diff\nunderstanding with three supervised tasks: apply (old code + diff\nrightarrow new code), anti-apply (new code - diff rightarrow old code),\nanddiff generation(new code - old code rightarrow diff). Instances in\nthe benchmark are triples langle old code, new code,\ndiff rangle drawn from real commits in CommitPackFT, paired with\nautomatic metrics and a clear evaluation protocol. We use the benchmark to do a\nfocused empirical study of theunified diff formatand run a cross-format\ncomparison of different diff representations. Our findings reveal that\ndifferent formats should be used depending on the use case and model size. For\nexample, representing diffs insearch-replace formatis good for larger models\nin thediff generationscenario, yet not suited well fordiff analysisand\nsmaller models. The Diff-XYZ benchmark is a reusable foundation for assessing\nand improving diff handling inLLMsthat can aid future development of diff\nformats and models editing code. The dataset is published on HuggingFace Hub:\nhttps://huggingface.co/datasets/JetBrains-Research/diff-xyz. We present a paper that explores LLMs capabilities to understand diffs and to generate diffs. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Diff-XYZ: A Benchmark for Evaluating Diff Understanding",
+    "authors": [
+      "Evgeniy Glukhov",
+      "Egor Bogomolov"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.12487",
+    "upvote": 8,
+    "tags": []
+  }
+}

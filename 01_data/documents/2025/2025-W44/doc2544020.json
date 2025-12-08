@@ -1,0 +1,14 @@
+{
+  "context": "ChatGPT Atlas excels in logical reasoning tasks within web games but struggles in real-time games requiring precise timing and motor control. OpenAI's ChatGPT Atlas introduces new capabilities forweb interaction,\nenabling the model to analyze webpages, process user intents, and execute\ncursor and keyboard inputs directly within the browser. While its capacity for\ninformation retrieval tasks has been demonstrated, its performance in dynamic,\ninteractive environments remains less explored. In this study, we conduct an\nearly evaluation of Atlas'sweb interactioncapabilities using browser-based\ngames as test scenarios, including Google'sT-Rex Runner,Sudoku,Flappy Bird,\nandStein.world. We employin-game performance scoresas quantitative metrics\nto assess performance across different task types. Our results show that Atlas\nperforms strongly inlogical reasoningtasks likeSudoku, completing puzzles\nsignificantly faster than human baselines, but struggles substantially inreal-time gamesrequiring precise timing andmotor control, often failing to\nprogress beyond initial obstacles. These findings suggest that while Atlas\ndemonstrates capable analytical processing, there remain notable limitations in\ndynamic web environments requiring real-time interaction. The website of our\nproject can be found at https://atlas-game-eval.github.io. OpenAI's ChatGPT Atlas introduces new capabilities for web interaction, enabling the model to analyze webpages, process user intents, and execute cursor and keyboard inputs directly within the browser. While its capacity for information retrieval tasks has been demonstrated, its performance in dynamic, interactive environments remains less explored. In this study, we conduct an early evaluation of Atlas's web interaction capabilities using browser-based games as test scenarios, including Google's T-Rex Runner, Sudoku, Flappy Bird, and Stein.world. We employ in-game performance scores as quantitative metrics to assess performance across different task types. Our results show that Atlas performs strongly in logical reasoning tasks like Sudoku, completing puzzles significantly faster than human baselines, but struggles substantially in real-time games requiring precise timing and motor control, often failing to progress beyond initial obstacles. These findings suggest that while Atlas demonstrates capable analytical processing, there remain notable limitations in dynamic web environments requiring real-time interaction. what a fun paper <3 thanks for releasing ~ ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Can Agent Conquer Web? Exploring the Frontiers of ChatGPT Atlas Agent in\n  Web Games",
+    "authors": [
+      "Jingran Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.26298",
+    "upvote": 45,
+    "tags": []
+  }
+}

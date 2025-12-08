@@ -1,0 +1,17 @@
+{
+  "context": "GigaBrain-0, a VLA foundation model, uses world model-generated data to enhance cross-task generalization and policy robustness, improving real-world performance on complex manipulation tasks. Training Vision-Language-Action (VLA) models for generalist robots typically\nrequires large-scale real-world robot data, which is expensive and\ntime-consuming to collect. The inefficiency of physical data collection\nseverely limits the scalability, and generalization capacity of current VLA\nsystems. To address this challenge, we introduce GigaBrain-0, a novel VLA\nfoundation model empowered byworld model-generated data(e.g., video\ngeneration,real2real transfer,human transfer,view transfer, sim2real\ntransfer data). By leveraging world models to generate diverse data at scale,\nGigaBrain-0 significantly reduces reliance on real robot data while improving\ncross-task generalization. Our approach further improves policy robustness\nthroughRGBD input modelingand embodied Chain-of-Thought (CoT) supervision,\nenabling the model to reason aboutspatial geometry,object states, andlong-horizon dependenciesduring task execution. This leads to substantial\ngains in real-world performance on dexterous, long-horizon, and mobile\nmanipulation tasks. Extensive experiments demonstrate that GigaBrain-0 achieves\nsuperior generalization across variations in appearances (e.g., textures,\ncolors), object placements, and camera viewpoints. Additionally, we present\nGigaBrain-0-Small, an optimized lightweight variant designed to run efficiently\non devices such as the NVIDIA Jetson AGX Orin.  Nice work Awesome This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "GigaBrain-0: A World Model-Powered Vision-Language-Action Model",
+    "authors": [
+      "Jie Li",
+      "Jiagang Zhu",
+      "Xiaofeng Wang",
+      "Yang Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/open-gigaai/giga-brain-0",
+    "huggingface_url": "https://huggingface.co/papers/2510.19430",
+    "upvote": 48,
+    "tags": []
+  }
+}

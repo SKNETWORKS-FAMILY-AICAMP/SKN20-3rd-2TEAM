@@ -1,0 +1,20 @@
+{
+  "context": "MCPMark is a comprehensive benchmark for evaluating MCP use in real-world workflows, featuring diverse tasks that require richer interactions with the environment, and reveals that current LLMs perform poorly on these tasks. MCPstandardizes howLLMsinteract with external systems, forming the\nfoundation forgeneral agents. However, existingMCP benchmarksremain narrow\nin scope: they focus on read-heavy tasks or tasks with limited interaction\ndepth, and fail to capture the complexity and realism of real-world workflows.\nTo address this gap, we proposeMCPMark, a benchmark designed to evaluateMCPuse in a more realistic and comprehensive manner. It consists of 127high-quality taskscollaboratively created bydomain expertsandAI agents.\nEach task begins with a curatedinitial stateand includes a programmatic\nscript forautomatic verification. These tasks demand richer and more diverse\ninteractions with the environment, involving a broad range of create, read,\nupdate, and delete (CRUD) operations. We conduct a comprehensive evaluation of\ncutting-edgeLLMsusing aminimal agent frameworkthat operates in atool-calling loop. Empirical results show that the best-performing model,gpt-5-medium, reaches only 52.56\\%pass@1and 33.86\\%pass^4, while other\nwidely regarded strong models, includingclaude-sonnet-4ando3, fall below\n30\\%pass@1and 15\\%pass^4. On average,LLMsrequire 16.2 execution\nturns and 17.4tool callsper task, significantly surpassing those in\npreviousMCP benchmarksand highlighting the stress-testing nature ofMCPMark. Agents can call tools — but can they actually deliver?MCPMark stress-tested >30 models through 127 CRUD-heavy tasks across 5 MCP servers, with a minimal but general MCPMark-Agent ensuring fair comparison.Results: even the best models cap at 52.56% pass@1 / 33.86% pass^4, while other strong systems like claude-sonnet-4 and o3 stay under 30% pass@1.We break down why — from implicit errors and context drift to cost-performance tradeoffs. 👉 Paper:https://arxiv.org/pdf/2509.24002👉 Website:https://mcpmark.ai/👉 Code:https://github.com/eval-sys/mcpmark test This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Discuss with us on X!https://x.com/michaelqshieh/status/1973374660919324795 I would like to know how the newly released Claude 4.5 Sonnet would have compared in this test. Always new models coming, thanks for the excellent work! Hi, thanks for your interest! You can find claude-sonnet-4.5 results here. For more discussions, you can refer our X. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "MCPMark: A Benchmark for Stress-Testing Realistic and Comprehensive MCP\n  Use",
+    "authors": [
+      "Zijian Wu",
+      "Lingjun Chen",
+      "Lingxiao Du",
+      "Yiran Zhao",
+      "Jiawei Wang",
+      "Jinjie Ni",
+      "Arvin Xu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/eval-sys/mcpmark",
+    "huggingface_url": "https://huggingface.co/papers/2509.24002",
+    "upvote": 173,
+    "tags": []
+  }
+}

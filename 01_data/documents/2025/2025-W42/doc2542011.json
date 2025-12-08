@@ -1,0 +1,17 @@
+{
+  "context": "Recent multimodal embedding approaches leveraging multimodal large language\nmodels (MLLMs) fine-tuned with contrastive learning (CL) have shown promising\nresults, yet the underlying reasons behind their superiority remain\nunderexplored. This work argues that a crucial advantage of MLLM-based\napproaches stems from implicit cross-modal alignment achieved during generative\npretraining, where the language decoder learns to exploit multimodal signals\nwithin a shared representation space for generating unimodal outputs. Through\nanalysis of anisotropy and kernel similarity structure, we empirically confirm\nthat latent alignment emerges within MLLM representations, allowing CL to serve\nas a lightweight refinement stage. Leveraging this insight, we propose a\nLanguage-Centric Omnimodal Embedding framework, termed LCO-Emb. Extensive\nexperiments across diverse backbones and benchmarks demonstrate its\neffectiveness, achieving state-of-the-art performance across modalities.\nFurthermore, we identify a Generation-Representation Scaling Law (GRSL),\nshowing that the representational capabilities gained through contrastive\nrefinement scales positively with the MLLM's generative capabilities. This\nsuggests that improving generative abilities evolves as an effective paradigm\nfor enhancing representation quality. We provide a theoretical explanation of\nGRSL, which formally links the MLLM's generative quality to the upper bound on\nits representation performance, and validate it on a challenging, low-resource\nvisual-document retrieval task, showing that continual generative pretraining\nbefore CL can further enhance the potential of a model's embedding\ncapabilities. Codes, models, and resources are available at\nhttps://github.com/LCO-Embedding/LCO-Embedding. Illustration of our LCO-Embedding method: LCO-Embedding's performance on MIEB-lite (51 image-text embedding tasks):  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Scaling Language-Centric Omnimodal Representation Learning",
+    "authors": [
+      "Chenghao Xiao",
+      "Hou Pong Chan",
+      "Hao Zhang",
+      "Yu Rong"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/LCO-Embedding/LCO-Embedding",
+    "huggingface_url": "https://huggingface.co/papers/2510.11693",
+    "upvote": 100,
+    "tags": []
+  }
+}

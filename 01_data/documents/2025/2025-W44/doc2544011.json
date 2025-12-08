@@ -1,0 +1,15 @@
+{
+  "context": "Video-Thinker, a multimodal large language model, autonomously reasons with videos using intrinsic grounding and captioning capabilities, achieving state-of-the-art performance on various video reasoning benchmarks. Recent advances in image reasoning methods, particularly \"Thinking with\nImages\", have demonstrated remarkable success in Multimodal Large Language\nModels (MLLMs); however, this dynamic reasoning paradigm has not yet been\nextended to video reasoning tasks. In this paper, we proposeVideo-Thinker,\nwhich empowers MLLMs to think with videos by autonomously leveraging their\nintrinsic \"grounding\" and \"captioning\" capabilities to generate reasoning clues\nthroughout the inference process. To spark this capability, we constructVideo-Thinker-10K, a curated dataset featuring autonomous tool usage within\nchain-of-thought reasoning sequences. Our training strategy begins withSupervised Fine-Tuning(SFT) to learn the reasoning format, followed by Group\nRelative Policy Optimization (GRPO) to strengthen this reasoning capability.\nThrough this approach,Video-Thinkerenables MLLMs to autonomously navigate\ngrounding and captioning tasks for video reasoning, eliminating the need for\nconstructing and calling external tools. Extensive experiments demonstrate thatVideo-Thinkerachieves significant performance gains on both in-domain tasks\nand challenging out-of-domain video reasoning benchmarks, includingVideo-Holmes,CG-Bench-Reasoning, andVRBench. OurVideo-Thinker-7B\nsubstantially outperforms existing baselines such asVideo-R1and establishes\nstate-of-the-art performance among 7B-sized MLLMs. Video-Thinker is an end-to-end video reasoning framework that empowers MLLMs to autonomously leverage intrinsic \"grounding\" and \"captioning\" capabilities during inference. This paradigm extends \"Thinking with Images\" to video understanding, enabling dynamic temporal navigation and visual cue extraction without relying on external tools or pre-designed prompts. To spark this capability, we construct Video-Thinker-10K, a curated dataset with structured reasoning traces synthesized through hindsight-curation reasoning, ensuring that temporal localizations and visual descriptions genuinely contribute to correct answers. Furthermore, we propose a two-stage training strategy combining SFT for format learning and GRPO with pure outcome reward for reinforcement learning, enabling Video-Thinker to achieve state-of-the-art performance on challenging video reasoning benchmarks with remarkable data efficiency. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Video-Thinker: Sparking \"Thinking with Videos\" via Reinforcement\n  Learning",
+    "authors": [
+      "Shijian Wang",
+      "Jiarui Jin"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/shijian2001/Video-Thinker",
+    "huggingface_url": "https://huggingface.co/papers/2510.23473",
+    "upvote": 84,
+    "tags": []
+  }
+}

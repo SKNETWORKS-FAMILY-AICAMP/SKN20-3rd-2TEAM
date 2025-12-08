@@ -1,0 +1,18 @@
+{
+  "context": "The Acadreason benchmark evaluates LLMs and agents on high-level academic reasoning across multiple domains, revealing significant capability gaps. In recent years, the research focus oflarge language models(LLMs) andagentshas shifted increasingly from demonstrating novel capabilities to\ncomplex reasoning and tackling challenging tasks. However, existing evaluations\nfocus mainly on math/code contests or general tasks, while existing\nmulti-domain academic benchmarks lack sufficient reasoning depth, leaving the\nfield without a rigorous benchmark for high-level reasoning. To fill this gap,\nwe introduce theAcadreason benchmark, designed to evaluate the ability of LLMs\nandagentsto acquire and reason overacademic knowledge. It consists of 50\nexpert-annotated academic problems across five high-reasoning domains,\nincludingcomputer science,economics,law,mathematics, andphilosophy. All\nquestions are sourced fromtop-tier publicationsin recent years and undergo\nrigorous annotation and quality control to ensure they are both challenging and\nanswerable. We conductsystematic evaluationsof over 10 mainstream LLMs andagents. The results show that most LLMs scored below 20 points, with even the\ncutting-edgeGPT-5achieving only 16 points. Whileagentsachieved higher\nscores, none exceeded 40 points. This demonstrates the current capability gap\nbetween LLMs andagentsin super-intelligent academic research tasks and\nhighlights the challenges of Acadreason. Really thoughtful work! ACADREASON seems like a valuable step toward deeper academic reasoning evaluation—looking forward to seeing how it evolves and inspires future benchmarks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ACADREASON: Exploring the Limits of Reasoning Models with Academic\n  Research Problems",
+    "authors": [
+      "Xin Gui",
+      "King Zhu",
+      "JinCheng Ren",
+      "Minghao Liu",
+      "Ge Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.11652",
+    "upvote": 28,
+    "tags": []
+  }
+}

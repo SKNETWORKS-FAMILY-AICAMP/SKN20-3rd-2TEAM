@@ -1,0 +1,14 @@
+{
+  "context": "OneFlow, a non-autoregressive multimodal model, achieves superior performance in text-image generation and understanding tasks with reduced computational cost compared to autoregressive and diffusion-based models. We present OneFlow, the firstnon-autoregressivemultimodal modelthat\nenablesvariable-lengthandconcurrent mixed-modal generation. Unlike\nautoregressive models that enforce rigid causal ordering between text and image\ngeneration, OneFlow combines aninsertion-based Edit Flowfor discrete text\ntokens withFlow Matchingforimage latents. OneFlow enables concurrent\ntext-image synthesis withhierarchical samplingthat prioritizes content over\ngrammar. Through controlled experiments across model sizes from 1B to 8B, we\ndemonstrate that OneFlow outperformsautoregressive baselineson both\ngeneration and understanding tasks while using up to 50% fewertraining FLOPs.\nOneFlow surpasses both autoregressive anddiffusion-based approacheswhile\nunlocking new capabilities for concurrent generation,iterative refinement, andnatural reasoning-like generation. Project page: johnlnguyen.com/oneflow/ Thanks for sharing our work! super cool work! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "OneFlow: Concurrent Mixed-Modal and Interleaved Generation with Edit\n  Flows",
+    "authors": [
+      "John Nguyen"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.03506",
+    "upvote": 14,
+    "tags": []
+  }
+}

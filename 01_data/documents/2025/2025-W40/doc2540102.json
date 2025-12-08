@@ -1,0 +1,15 @@
+{
+  "context": "Reverse-engineering a model that learns multi-digit multiplication via implicit chain-of-thought reveals that it uses attention to encode long-range dependencies and represents partial products efficiently, insights that help address limitations in standard fine-tuning. Language models are increasingly capable, yet still fail at a seemingly\nsimple task of multi-digit multiplication. In this work, we study why, by\nreverse-engineering a model that successfully learns multiplication viaimplicit chain-of-thought, and report three findings: (1) Evidence of\nlong-range structure:Logit attributionsandlinear probesindicate that the\nmodel encodes the necessarylong-range dependenciesfor multi-digit\nmultiplication. (2) Mechanism: the model encodeslong-range dependenciesusingattentionto construct adirected acyclic graphto ``cache'' and ``retrieve''\npairwise partial products. (3) Geometry: the model implements partial products\ninattentionheads by formingMinkowski sumsbetween pairs of digits, and\ndigits are represented using aFourier basis, both of which are intuitive and\nefficient representations that thestandard fine-tuningmodel lacks. With these\ninsights, we revisit thelearning dynamicsofstandard fine-tuningand find\nthat the model converges to alocal optimumthat lacks the required long-range\ndependencies. We further validate this understanding by introducing anauxiliary lossthat predicts the ``running sum'' via alinear regression probe,\nwhich provides aninductive biasthat enables the model to successfully learn\nmulti-digit multiplication. In summary, by reverse-engineering the mechanisms\nof animplicit chain-of-thoughtmodel we uncover a pitfall for learninglong-range dependenciesin Transformers and provide an example of how the\ncorrectinductive biascan address this issue. Transformers stumble on multi-digit multiplication, but why?By reverse-engineering a model that does succeed---trained with implicit chain-of-thought (ICoT)---we found:1️⃣ Attention builds a DAG to cache/retrieve partial products2️⃣ Digits are encoded via a Fourier basis3️⃣ Attention heads implement Minkowski sums Hey nice work!I just check the repo page but i didn't found any training script, do you plan to share it? This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Why Can't Transformers Learn Multiplication? Reverse-Engineering Reveals\n  Long-Range Dependency Pitfalls",
+    "authors": [
+      "Itamar Pres",
+      "Yuntian Deng"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/ajyl/icot",
+    "huggingface_url": "https://huggingface.co/papers/2510.00184",
+    "upvote": 16,
+    "tags": []
+  }
+}

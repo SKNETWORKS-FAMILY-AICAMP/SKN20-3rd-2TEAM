@@ -1,0 +1,15 @@
+{
+  "context": "VAPO-Thinker-7B enhances multimodal reasoning by anchoring the process to visual information, improving performance on visual tasks while maintaining logical inference. Reasoning has emerged as a pivotal capability in Large Language Models\n(LLMs). ThroughReinforcement Learning(RL), typically Group Relative Policy\nOptimization (GRPO), these models are able to solve complex tasks such as\nmathematics and code generation. Building on these advances, recent research\nhas sought to extend reasoning toVision-Language Models(VLMs), yielding\npromising results across diverse visual tasks. Despite this progress, our study\nuncovers the dual nature ofmultimodal reasoning: while it substantially\nenhanceslogical inferenceand facilitates performance on challenging problems,\nit may gradually impairperceptual grounding, leading to recognition failures\non otherwise basic visual questions. Through further analysis, we attribute\nthis phenomenon tovisual forgetting, wherein prolonged reasoning causes the\nmodel to increasingly disregard visual input. To address this, we proposeVision-Anchored Policy Optimization(VAPO), a simple yet effective method that\nexplicitly steers the reasoning process toward visually grounded trajectories.\nOur result model, VAPO-Thinker-7B, significantly strengthens the model's\nreliance on visual information and achieves new state-of-the-art results on a\nwide range of established benchmarks. Project page:\nhttps://xytian1008.github.io/VAPO/ A sober look at the pros and cons of multimodal reasoning with comprehensive findings, and a new RL method as a multimodal replacement of GRPO, achieving new state-of-the-art results.Project page👉:https://xytian1008.github.io/VAPO/Github repo👉:https://github.com/xytian1008/VAPO This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/more-thought-less-accuracy-on-the-dual-nature-of-reasoning-in-vision-language-models ·Sign uporlog into comment",
+  "metadata": {
+    "title": "More Thought, Less Accuracy? On the Dual Nature of Reasoning in\n  Vision-Language Models",
+    "authors": [
+      "Xinyu Tian",
+      "Shu Zou"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/xytian1008/VAPO",
+    "huggingface_url": "https://huggingface.co/papers/2509.25848",
+    "upvote": 80,
+    "tags": []
+  }
+}

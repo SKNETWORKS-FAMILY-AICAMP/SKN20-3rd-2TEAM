@@ -1,0 +1,17 @@
+{
+  "context": "InteractComp evaluates search agents' ability to recognize and resolve query ambiguity through interaction, revealing significant gaps in current models' capabilities. Language agents have demonstrated remarkable potential in web search and\ninformation retrieval. However, thesesearch agentsassume user queries are\ncomplete and unambiguous, an assumption that diverges from reality where users\nbegin with incomplete queries requiring clarification through interaction. Yet\nmost agents lack interactive mechanisms during the search process, and existingbenchmarks cannot assess this capability. To address this gap, we introduce\nInteractComp, abenchmarkdesigned to evaluate whethersearch agentscan\nrecognizequery ambiguityand actively interact to resolve it during search.\nFollowing the principle of easy to verify, interact to disambiguate, we\nconstruct 210expert-curated questionsacross 9 domains through atarget-distractor methodologythat creates genuine ambiguity resolvable only\nthrough interaction. Evaluation of 17 models reveals striking failure: the best\nmodel achieves only 13.73%accuracydespite 71.50% with complete context,\nexposing systematicoverconfidencerather thanreasoning deficits. Forced\ninteraction produces dramatic gains, demonstrating latent capability current\nstrategies fail to engage.Longitudinal analysisshows interaction capabilities\nstagnated over 15 months while search performance improved seven-fold,\nrevealing a critical blind spot. This stagnation, coupled with the immediate\nfeedback inherent to search tasks, makes InteractComp a valuable resource for\nboth evaluating and training interaction capabilities insearch agents. The\ncode is available at https://github.com/FoundationAgents/InteractComp. 🚀InteractCompexposes a key blind spot in today’s AI search agents — they cansearchandreason, but they can’task. This new benchmark of 210 ambiguous, expert-curated queries shows that even GPT-5 scores only13.7%when left to decide on its own, yet doubles accuracy whenforced to ask. While search performance has improved seven-fold, interaction remains stagnant — true intelligence begins by asking before answering. Pardon my ignorance guys, but I remember seeing a link that would explain the relevance of these papers for non-technical users around the comments section. I don't see them anymore! ·Sign uporlog into comment",
+  "metadata": {
+    "title": "InteractComp: Evaluating Search Agents With Ambiguous Queries",
+    "authors": [
+      "Jiayi Zhang",
+      "Zhaoyang Yu",
+      "Yanfei Zhang",
+      "Xinyu Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/FoundationAgents/InteractComp",
+    "huggingface_url": "https://huggingface.co/papers/2510.24668",
+    "upvote": 97,
+    "tags": []
+  }
+}

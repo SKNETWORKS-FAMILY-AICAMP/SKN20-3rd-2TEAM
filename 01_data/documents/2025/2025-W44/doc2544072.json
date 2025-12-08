@@ -1,0 +1,15 @@
+{
+  "context": "Global PIQA is a multilingual commonsense reasoning benchmark that highlights performance gaps of large language models across different cultures and languages. To date, there exist almost no culturally-specific evaluation benchmarks forlarge language models(LLMs) that cover a large number of languages and\ncultures. In this paper, we presentGlobal PIQA, a participatory commonsense\nreasoning benchmark for over 100 languages, constructed by hand by 335\nresearchers from 65 countries around the world. The 116language varietiesinGlobal PIQAcover five continents, 14 language families, and 23 writing\nsystems. In the non-parallel split ofGlobal PIQA, over 50% of examples\nreference local foods, customs, traditions, or other culturally-specific\nelements. We find that state-of-the-artLLMsperform well onGlobal PIQAin\naggregate, but they exhibit weaker performance inlower-resource languages(up\nto a 37% accuracy gap, despite random chance at 50%).Open modelsgenerally\nperform worse thanproprietary models.Global PIQAhighlights that in many\nlanguages and cultures, everyday knowledge remains an area for improvement,\nalongside more widely-discussed capabilities such as complex reasoning and\nexpert knowledge. Beyond its uses for LLM evaluation, we hope thatGlobal PIQAprovides a glimpse into the wide diversity of cultures in which human language\nis embedded. Global PIQA is a new multilingual benchmark for 100+ languages. This benchmark is the outcome of this year’s MRL shared task, in collaboration with 300+ researchers from 65 countries. This dataset evaluates physical commonsense reasoning in culturally relevant contexts. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Global PIQA: Evaluating Physical Commonsense Reasoning Across 100+\n  Languages and Cultures",
+    "authors": [
+      "Catherine Arnett",
+      "Aleksei Dorkin"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.24081",
+    "upvote": 16,
+    "tags": []
+  }
+}

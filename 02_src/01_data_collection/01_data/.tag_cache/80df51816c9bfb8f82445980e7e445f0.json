@@ -1,0 +1,11 @@
+{
+  "title": "Thinking with Video: Video Generation as a Promising Multimodal\n  Reasoning Paradigm",
+  "abstract": "The \"Thinking with Video\" paradigm enhances multimodal reasoning by integrating video generation models, demonstrated through the Video Thinking Benchmark and improved performance on both vision and t",
+  "tags": [
+    "Multimodal Learning",
+    "Generative Models",
+    "Reasoning and Planning"
+  ],
+  "timestamp": 1765199753.0066133,
+  "model": "gpt-3.5-turbo"
+}

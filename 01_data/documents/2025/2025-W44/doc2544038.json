@@ -1,0 +1,14 @@
+{
+  "context": "A unified framework extends a single text embedding model to perform both retrieval and listwise reranking, achieving state-of-the-art results with low latency. Text embedding modelsserve as a fundamental component in real-world search\napplications. By mapping queries and documents into ashared embedding space,\nthey deliver competitive retrieval performance with high efficiency. However,\ntheirranking fidelityremains limited compared to dedicated rerankers,\nespecially recentLLM-based listwise rerankers, which capture fine-grained\nquery-document and document-document interactions. In this paper, we propose a\nsimple yet effective unified framework E^2Rank, means Efficient\nEmbedding-based Ranking (also means Embedding-to-Rank), which extends a single\ntext embedding model to perform both high-quality retrieval and listwise\nreranking through continued training under alistwise ranking objective,\nthereby achieving strong effectiveness with remarkable efficiency. By applyingcosine similaritybetween the query and document embeddings as a unified\nranking function, thelistwise ranking prompt, which is constructed from the\noriginal query and its candidate documents, serves as an enhanced query\nenriched with signals from the top-K documents, akin to pseudo-relevance\nfeedback (PRF) in traditional retrieval models. This design preserves the\nefficiency and representational quality of the base embedding model while\nsignificantly improving its reranking performance. Empirically,\nE^2Rank achieves state-of-the-art results on the BEIR\nreranking benchmark and demonstrates competitive performance on the\nreasoning-intensiveBRIGHT benchmark, with very low reranking latency. We also\nshow that the ranking training process improvesembedding performanceon theMTEB benchmark. Our findings indicate that a single embedding model can\neffectively unify retrieval and reranking, offering both computational\nefficiency and competitive ranking accuracy. 📊 Highlights: One unified model. One scoring function. Retrieval and ranking, together at last. 🔗 Project Website:https://alibaba-nlp.github.io/E2Rank ·Sign uporlog into comment",
+  "metadata": {
+    "title": "E^2Rank: Your Text Embedding can Also be an Effective\n  and Efficient Listwise Reranker",
+    "authors": [
+      "Qi Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Alibaba-NLP/E2Rank",
+    "huggingface_url": "https://huggingface.co/papers/2510.22733",
+    "upvote": 31,
+    "tags": []
+  }
+}

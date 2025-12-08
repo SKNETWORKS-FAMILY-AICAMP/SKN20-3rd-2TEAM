@@ -1,0 +1,14 @@
+{
+  "context": "Functional Dual Anchors (FDAs) enhance model merging by aligning gradients with task vectors in the input-representation space, offering robustness and flexibility compared to parameter-space methods. Model mergingis an efficient post-training strategy for integrating\nknowledge from multiple finetuned checkpoints of a shared foundation model.\nExisting methods operate in the parameter space, combiningtask vectorsto\nmitigate conflicts, but remain constrained by parameter inconsistencies. We\nproposeFunctional Dual Anchors(FDAs), a framework that instead models theinput-representation space.FDAsare synthetic inputs whose induced gradients\nalign withtask vectors, capturing task-specific functional shifts relative to\nthe pretrained model. This perspective bridgesjoint multi-task trainingandpost-hoc merging, offering both robustness and flexibility. We further\nintroduce a principled initialization scheme and show thatFDAsare\ncomplementary toparameter-spacemodel merging. Comprehensive experiments\ndemonstrate the effectiveness ofFDAsinmodel merging.  This work presents a novel perspective for Model Merging as well as a novel knowledge utilization. Model Merging has been an intriguing post-training strategy for integrating knowledge from existing checkpoints of a shared foundation model. Existing methods focus on operations in the parameter space (i.e., task vectors), thereby suffering from the complexity of the parameter space. We proposeFunctional Dual Anchors (FDAs), a framework  that instead models the knowledge in the input-representation space. Specifically, FDAs are synthetic inputs whose induced gradients align with task vectors, capturing task-specific functional shifts relative to the pretrained model. Then, we use the FDAs to adapt the pretrained model. FDAs provide an alternative perspective on model merging by extending input-space modeling to this setting and bridging joint multi-task training and post-hoc merging. 💬We welcome discussions, feedback, and collaborations on this direction! ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Model Merging with Functional Dual Anchors",
+    "authors": [
+      "Kexuan Shi"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Sphere-AI-Lab/fda/tree/main",
+    "huggingface_url": "https://huggingface.co/papers/2510.21223",
+    "upvote": 12,
+    "tags": []
+  }
+}

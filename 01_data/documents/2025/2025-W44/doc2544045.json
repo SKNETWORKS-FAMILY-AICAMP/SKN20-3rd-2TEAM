@@ -1,0 +1,15 @@
+{
+  "context": "AsyncThink, a new reasoning paradigm for large language models, improves inference efficiency and accuracy through concurrent and optimized sub-query processing. We envision a new era of AI, termed agentic organization, where agents solve\ncomplex problems by working collaboratively and concurrently, enabling outcomes\nbeyond individual intelligence. To realize this vision, we introduceasynchronous thinking(AsyncThink) as a new paradigm of reasoning with large\nlanguage models, which organizes the internal thinking process into\nconcurrently executable structures. Specifically, we propose a thinking\nprotocol where anorganizerdynamically assigns sub-queries toworkers, merges\nintermediate knowledge, and produces coherent solutions. More importantly, the\nthinking structure in this protocol can be further optimized throughreinforcement learning. Experiments demonstrate thatAsyncThinkachieves 28%\nlowerinference latencycompared to parallel thinking while improving accuracy\nonmathematical reasoning. Moreover,AsyncThinkgeneralizes its learnedasynchronous thinkingcapabilities, effectively tackling unseen tasks without\nadditional training. We envision a new era of AI, termed agentic organization, where agents solve complex problems by working collaboratively and concurrently, enabling outcomes beyond individual intelligence. To realize this vision, we introduce asynchronous thinking (AsyncThink) as a new paradigm of reasoning with large language models, which organizes the internal thinking process into concurrently executable structures. Specifically, we propose a thinking protocol where an organizer dynamically assigns sub-queries to workers, merges intermediate knowledge, and produces coherent solutions. More importantly, the thinking structure in this protocol can be further optimized through reinforcement learning. Experiments demonstrate that AsyncThink achieves 28% lower inference latency compared to parallel thinking while improving accuracy on mathematical reasoning. Moreover, AsyncThink generalizes its learned asynchronous thinking capabilities, effectively tackling unseen tasks without additional training. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "The Era of Agentic Organization: Learning to Organize with Language\n  Models",
+    "authors": [
+      "Zewen Chi",
+      "Li Dong"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.26658",
+    "upvote": 26,
+    "tags": []
+  }
+}

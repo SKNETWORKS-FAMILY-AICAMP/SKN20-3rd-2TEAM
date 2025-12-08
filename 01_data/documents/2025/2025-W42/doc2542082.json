@@ -1,0 +1,14 @@
+{
+  "context": "Increased computing resources are correlated with national funding and citations in foundation model research, but not with research environment, domain, or methodology. Cutting-edge research in Artificial Intelligence (AI) requires considerable\nresources, including Graphics Processing Units (GPUs), data, and human\nresources. In this paper, we evaluate of the relationship between these\nresources and the scientific advancement offoundation models(FM). We reviewed\n6517 FM papers published between 2022 to 2024, and surveyed 229 first-authors\nto the impact ofcomputing resourceson scientific output. We find that\nincreased computing is correlated withnational fundingallocations andcitations, but our findings don't observe the strong correlations with research\nenvironment (academic or industrial),domain, orstudy methodology. We advise\nthat individuals and institutions focus on creating shared and affordable\ncomputing opportunities to lower the entry barrier for under-resourced\nresearchers. These steps can help expand participation in FM research, fosterdiversity of ideasand contributors, and sustaininnovationandprogress in AI.\nThe data will be available at: https://mit-calc.csail.mit.edu/ More GPU means “better” foundation model (FM) research?? We looked at 6517 FM papers and surveyed 229 FM authors to understand the role of computing resources in publishing. Surprisingly….. We found that GPU power strongly tracks national funding and citations, but not whether the work came from academia or industry. Access ≠ innovation: shared, affordable compute may matter more than we think. Website:https://mit-calc.csail.mit.edu/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "The Role of Computing Resources in Publishing Foundation Model Research",
+    "authors": [
+      "Yuexing Hao"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.13621",
+    "upvote": 16,
+    "tags": []
+  }
+}

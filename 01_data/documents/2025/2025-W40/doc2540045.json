@@ -1,0 +1,14 @@
+{
+  "context": "Ovi is a unified audio-video generation model using twin-DiT modules with blockwise cross-modal fusion, enabling natural synchronization and high-quality multimodal outputs. Audio-video generation has often relied on complex multi-stage architectures\nor sequential synthesis of sound and visuals. We introduce Ovi, a unified\nparadigm for audio-video generation that models the two modalities as a single\ngenerative process. By usingblockwise cross-modal fusionoftwin-DiT modules,\nOvi achieves natural synchronization and removes the need for separate\npipelines or post hoc alignment. To facilitate fine-grained multimodal fusion\nmodeling, we initialize an audio tower with an architecture identical to that\nof a strong pretrained video model. Trained from scratch on hundreds of\nthousands of hours of raw audio, the audio tower learns to generate realistic\nsound effects, as well as speech that conveys rich speaker identity and\nemotion. Fusion is obtained by jointly training the identical video and audio\ntowers via blockwise exchange of timing (viascaled-RoPE embeddings) and\nsemantics (throughbidirectional cross-attention) on a vast video corpus. Our\nmodel enablescinematic storytellingwith natural speech and accurate,\ncontext-matched sound effects, producingmovie-grade video clips. All the\ndemos, code and model weights are published at https://aaxwaz.github.io/Ovi This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend  Move your head and start walking   8/12/16 Nivel a Laser Profissional Ajustável Nível 360° Laser Nível a Level Medição Da Linha De Ferramentas ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Ovi: Twin Backbone Cross-Modal Fusion for Audio-Video Generation",
+    "authors": [
+      "Calder Katyal"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/character-ai/Ovi",
+    "huggingface_url": "https://huggingface.co/papers/2510.01284",
+    "upvote": 33,
+    "tags": []
+  }
+}

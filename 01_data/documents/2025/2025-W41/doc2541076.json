@@ -1,0 +1,15 @@
+{
+  "context": "InstructX integrates Multimodal Large Language Models and diffusion models for instruction-driven image and video editing, achieving state-of-the-art performance across diverse tasks. With recent advances inMultimodal Large Language Models(MLLMs) showing\nstrong visual understanding and reasoning, interest is growing in using them to\nimprove the editing performance ofdiffusion models. Despite rapid progress,\nmost studies lack an in-depth analysis of MLLM design choices. Moreover, the\nintegration of MLLMs anddiffusion modelsremains an open challenge in some\ndifficult tasks, such asvideo editing. In this paper, we present InstructX, a\nunified framework for image andvideo editing. Specifically, we conduct a\ncomprehensive study on integrating MLLMs anddiffusion modelsforinstruction-driven editingacross diverse tasks. Building on this study, we\nanalyze the cooperation and distinction between images and videos in unified\nmodeling. (1) We show that training on image data can lead to emergent video\nediting capabilities without explicit supervision, thereby alleviating the\nconstraints imposed by scarce video training data. (2) By incorporating\nmodality-specific MLLM features, our approach effectively unifies image andvideo editingtasks within a single model. Extensive experiments demonstrate\nthat our method can handle a broad range of image andvideo editingtasks and\nachieves state-of-the-art performance. InstructX is a unified framework for image and video editing. By integrating MLLMs with diffusion models, it enables flexible and precise instruction-guided manipulation across image and video. Project page:https://mc-e.github.io/project/InstructX/Paper:https://arxiv.org/pdf/2510.08485Code will be released athttps://github.com/MC-E/InstructX  Great work! I can't wait to try! 🚀 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "InstructX: Towards Unified Visual Editing with MLLM Guidance",
+    "authors": [
+      "Qichao Sun",
+      "Songtao Zhao"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/MC-E/InstructX",
+    "huggingface_url": "https://huggingface.co/papers/2510.08485",
+    "upvote": 16,
+    "tags": []
+  }
+}

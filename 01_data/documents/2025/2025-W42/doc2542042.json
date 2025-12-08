@@ -1,0 +1,16 @@
+{
+  "context": "Misaligned tokenization in large language models for code leads to inconsistent model behavior, necessitating grammar-aware tokenization. Large language models(LLMs) for code rely onsubword tokenizers, such asbyte-pair encoding(BPE), learned from mixed natural language text and\nprogramming language code but driven by statistics rather than grammar. As a\nresult, semantically identical code snippets can be tokenized differently\ndepending on superficial factors such as whitespace or identifier naming. To\nmeasure the impact of this misalignment, we introduceTokDrift, a framework\nthat appliessemantic-preserving rewrite rulesto create code variants\ndiffering only intokenization. Across ninecode LLMs, including large ones\nwith over 30B parameters, even minor formatting changes can cause substantial\nshifts in model behavior. Layer-wise analysis shows that the issue originates\ninearly embeddings, where subword segmentation fails to capture grammar token\nboundaries. Our findings identify misalignedtokenizationas a hidden obstacle\nto reliablecode understandingand generation, highlighting the need for\ngrammar-awaretokenizationfor futurecode LLMs. 1️⃣ LLMs' subword tokenizers don't align well with programming language grammar: tiny whitespace or renaming tweaks -> different tokenization -> flipped outputs. 2️⃣ Our framework TokDrift systematically tests 9 code LLMs on 3 tasks, showing their sensitivity to tokenization changes: up to60%outputs change under a single semantic-preserving rewrite. 3️⃣ If your win margin is ~1 pp, beware: spacing & naming can swing results. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "TokDrift: When LLM Speaks in Subwords but Code Speaks in Grammar",
+    "authors": [
+      "Yinxi Li",
+      "Yuntian Deng",
+      "Pengyu Nie"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/uw-swag/tokdrift",
+    "huggingface_url": "https://huggingface.co/papers/2510.14972",
+    "upvote": 33,
+    "tags": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "ROVER, a minimalist RL method, achieves superior performance and diversity in LLM math reasoning by leveraging Q-values from a fixed random policy, bypassing complex policy iteration. RL with Verifiable Rewards(RLVR) has emerged as a promising paradigm for\nimproving the reasoning abilities oflarge language models(LLMs). Current\nmethods rely primarily onpolicy optimizationframeworks likePPOandGRPO,\nwhich followgeneralized policy iterationthat alternates between evaluating\nthe current policy's value and improving the policy based on evaluation. While\neffective, they often suffer from training instability anddiversitycollapse,\nrequiring complex heuristic tricks and careful tuning. We observe that standardRLVRin math reasoning can be formalized as a specialized finite-horizon Markov\nDecision Process withdeterministic state transitions, tree-structured\ndynamics, andbinary terminal rewards. Though large in scale, the underlying\nstructure is simpler than general-purpose control settings for which popular RL\nalgorithms (e.g.,PPO) were developed, suggesting that several sophisticated\ntechniques in existing methods may be reduced or even omitted. Based on this\ninsight, we prove a surprising result: the optimal action can be recovered from\ntheQ-functionof a fixed uniformly random policy, thereby bypassing thegeneralized policy iterationloop and its associated heuristics. We introduceRandom Policy Valuation for Diverse Reasoning(ROVER) to translate this\nprinciple into a practical and scalable algorithm for LLM math reasoning, a\nminimalist yet highly effective RL method that samples actions from asoftmaxover these uniform-policy Q-values.ROVERpreservesdiversitythroughout\ntraining, allowing sustainedexplorationof multiple valid pathways. Across\nmultiple base models and standard math reasoning benchmarks,ROVERdemonstrates\nsuperior performance in both quality (+8.2 onpass@1,\n+16.8 onpass@256) anddiversity(+17.6\\%), despite\nits radical simplification compared to strong, complicated existing methods. Codes:https://github.com/tinnerhrhe/ROVER ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Random Policy Valuation is Enough for LLM Reasoning with Verifiable\n  Rewards",
+    "authors": [
+      "Chen Hu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/tinnerhrhe/ROVER",
+    "huggingface_url": "https://huggingface.co/papers/2509.24981",
+    "upvote": 29,
+    "tags": []
+  }
+}

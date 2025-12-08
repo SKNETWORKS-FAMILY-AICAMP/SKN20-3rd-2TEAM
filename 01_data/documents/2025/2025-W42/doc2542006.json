@@ -1,0 +1,17 @@
+{
+  "context": "Robot learning transitions from model-based to data-driven methods, leveraging reinforcement learning and behavioral cloning to develop versatile, language-conditioned models for diverse tasks and robot types. Robot learning is at an inflection point, driven by rapid advancements in\nmachine learning and the growing availability of large-scale robotics data.\nThis shift from classical, model-based methods to data-driven, learning-based\nparadigms is unlocking unprecedented capabilities in autonomous systems. This\ntutorial navigates the landscape of modern robot learning, charting a course\nfrom the foundational principles ofReinforcement Learningand Behavioral\nCloning to generalist,language-conditioned modelscapable of operating across\ndiverse tasks and even robot embodiments. This work is intended as a guide for\nresearchers and practitioners, and our goal is to equip the reader with the\nconceptual understanding and practical tools necessary to contribute to\ndevelopments in robot learning, with ready-to-use examples implemented in\nlerobot. A comprehensive tutorial on Robot Learning, with step-by-step derivations of the most relevant techniques from first principles, and hands-on code examples implemented in lerobot Finally! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend That's a really nice overview, thanks for the contribution of Hugging Face for more universally affordable robot learning! ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Robot Learning: A Tutorial",
+    "authors": [
+      "Francesco Capuano",
+      "Adil Zouitine",
+      "Thomas Wolf",
+      "Michel Aractingi"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/fracapuano/robot-learning-tutorial",
+    "huggingface_url": "https://huggingface.co/papers/2510.12403",
+    "upvote": 115,
+    "tags": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "Conan, a framework for evidence-grounded multi-step video reasoning, enhances visual grounding and reasoning accuracy through a multi-stage training strategy and outperforms existing models on various benchmarks. Video reasoning, which requires multi-step deduction across frames, remains a\nmajor challenge formultimodal large language models(MLLMs). Whilereinforcement learning(RL)-based methods enhance reasoning capabilities, they\noften rely on text-only chains that yield ungrounded or hallucinated\nconclusions. Conversely,frame-retrievalapproaches introduce visual grounding\nbut still struggle with inaccurate evidence localization. To address these\nchallenges, we present Conan, a framework for evidence-grounded multi-stepvideo reasoning. Conan identifies contextual andevidence frames, reasons overcross-frame clues, and adaptively decides when to conclude or explore further.\nTo achieve this, we (1) construct Conan-91K, a large-scale dataset of\nautomatically generated reasoning traces that includes frame identification,\nevidence reasoning, and action decision, and (2) design a multi-stage\nprogressive cold-start strategy combined with anIdentification-Reasoning-Action (AIR) RLVR training frameworkto jointly\nenhance multi-step visual reasoning. Extensive experiments on six multi-step\nreasoning benchmarks demonstrate that Conan surpasses the baseline\nQwen2.5-VL-7B-Instruct by an average of over 10% in accuracy, achieving\nstate-of-the-art performance. Furthermore, Conan generalizes effectively tolong-video understandingtasks, validating its strong scalability and\nrobustness. Conan: Progressive Learning to Reason Like a Detective over Multi-Scale Visual Evidence.Model:https://huggingface.co/RUBBISHLIKE/Conan-7BRepo:https://github.com/OuyangKun10/Conan This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Conan: Progressive Learning to Reason Like a Detective over Multi-Scale\n  Visual Evidence",
+    "authors": [
+      "Yuanxin Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/OuyangKun10/Conan",
+    "huggingface_url": "https://huggingface.co/papers/2510.20470",
+    "upvote": 11,
+    "tags": []
+  }
+}

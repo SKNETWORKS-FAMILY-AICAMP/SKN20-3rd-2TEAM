@@ -1,0 +1,17 @@
+{
+  "context": "SANA-Video, a small diffusion model, efficiently generates high-resolution, high-quality videos with strong text-video alignment using linear attention and a constant-memory KV cache, achieving competitive performance at a lower cost and faster speed. We introduce SANA-Video, a smalldiffusion modelthat can efficiently\ngenerate videos up to 720x1280 resolution and minute-length duration.\nSANA-Video synthesizes high-resolution, high-quality and long videos with\nstrongtext-video alignmentat a remarkably fast speed, deployable on RTX 5090\nGPU. Two core designs ensure our efficient, effective and long video\ngeneration: (1)Linear DiT: We leveragelinear attentionas the core operation,\nwhich is more efficient than vanilla attention given the large number of tokens\nprocessed in video generation. (2)Constant-Memory KV cachefor Block Linear\nAttention: we designblock-wise autoregressiveapproach for long video\ngeneration by employing a constant-memory state, derived from the cumulative\nproperties oflinear attention. This KV cache provides theLinear DiTwith\nglobal context at a fixed memory cost, eliminating the need for a traditional\nKV cache and enabling efficient, minute-long video generation. In addition, we\nexplore effective data filters and model training strategies, narrowing the\ntraining cost to 12 days on 64 H100 GPUs, which is only 1% of the cost ofMovieGen. Given its low cost, SANA-Video achieves competitive performance\ncompared to modern state-of-the-art smalldiffusion models (e.g., Wan 2.1-1.3B\nand SkyReel-V2-1.3B) while being 16x faster in measured latency. Moreover,\nSANA-Video can be deployed on RTX 5090 GPUs withNVFP4 precision, accelerating\nthe inference speed of generating a 5-second 720p video from 71s to 29s (2.4x\nspeedup). In summary, SANA-Video enables low-cost, high-quality video\ngeneration. 🚀 SANA-Video: Efficient AI Video Generation is Here!It's time for a new SANA family member! We introduce SANA-Video, a small diffusion model engineered to shatter the limits of video speed, making high-quality, short and long content truly deployable on consumer hardware. Core Efficiency & ImpactArchitecture: Pure Linear Diffusion Transformer + Block Linear KV Cache = Unmatched Efficiency. Training Cost: We knocked down the price! Training completed in just 12 days on 64 H100 GPUs. Speed: A pre-trained model generates a 720p video within just 36 seconds. Unified: A unified framework for Text-to-Video, Image-to-Video, and Text-to-Image—all in one! Most important: STILL a fully open-sourced model. 📖 Paper:https://huggingface.co/papers/2509.24695💻 Project Page:https://nvlabs.github.io/Sana/Video This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "SANA-Video: Efficient Video Generation with Block Linear Diffusion\n  Transformer",
+    "authors": [
+      "Junsong Chen",
+      "Haozhe Liu",
+      "Muyang Li",
+      "Yukang Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/NVlabs/Sana",
+    "huggingface_url": "https://huggingface.co/papers/2509.24695",
+    "upvote": 45,
+    "tags": []
+  }
+}

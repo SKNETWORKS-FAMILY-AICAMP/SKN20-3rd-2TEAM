@@ -1,0 +1,14 @@
+{
+  "context": "UniMMVSR is a unified generative video super-resolution framework that incorporates hybrid-modal conditions, including text, images, and videos, within a latent video diffusion model, achieving superior detail and conformity to multi-modal conditions. Cascaded video super-resolutionhas emerged as a promising technique for\ndecoupling the computational burden associated with generating high-resolution\nvideos using largefoundation models. Existing studies, however, are largely\nconfined totext-to-video tasksand fail to leverage additional generative\nconditions beyond text, which are crucial for ensuring fidelity in multi-modal\nvideo generation. We address this limitation by presenting UniMMVSR, the firstunified generative video super-resolutionframework to incorporate hybrid-modal\nconditions, including text, images, and videos. We conduct a comprehensive\nexploration ofcondition injection strategies,training schemes, and data\nmixture techniques within alatent video diffusion model. A key challenge was\ndesigning distinct data construction and condition utilization methods to\nenable the model to precisely utilize all condition types, given their varied\ncorrelations with the target video. Our experiments demonstrate that UniMMVSR\nsignificantly outperforms existing methods, producing videos with superior\ndetail and a higher degree of conformity to multi-modal conditions. We also\nvalidate the feasibility of combining UniMMVSR with a base model to achievemulti-modal guided generationof 4K video, a feat previously unattainable with\nexisting techniques.  TL;DR: We propose UniMMVSR, the first unified generative video super-resolution framework to incorporate hybrid-modal conditions, including text, images, and videos, which supports 4K controllable video generation for the first time. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "UniMMVSR: A Unified Multi-Modal Framework for Cascaded Video\n  Super-Resolution",
+    "authors": [
+      "Shian Du"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/ShianDu/UniMMVSR",
+    "huggingface_url": "https://huggingface.co/papers/2510.08143",
+    "upvote": 20,
+    "tags": []
+  }
+}

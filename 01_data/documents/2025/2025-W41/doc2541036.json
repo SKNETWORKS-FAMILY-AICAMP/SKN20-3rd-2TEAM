@@ -1,0 +1,15 @@
+{
+  "context": "Vibe Checker evaluates LLMs by combining functional correctness and instruction following to better align with human coding preferences. Large Language Models(LLMs) have catalyzedvibe coding, where users leverageLLMsto generate and iteratively refine code through natural language\ninteractions until it passes their vibe check. Vibe check is tied to real-worldhuman preferenceand goes beyond functionality: the solution should feel right,\nread cleanly, preserve intent, and remain correct. However, current code\nevaluation remains anchored to pass@k and captures onlyfunctional correctness,\noverlooking the non-functional instructions that users routinely apply. In this\npaper, we hypothesize thatinstruction followingis the missing piece\nunderlying vibe check that representshuman preferencein coding besidesfunctional correctness. To quantify models' codeinstruction followingcapabilities with measurable signals, we presentVeriCode, a taxonomy of 30verifiable code instructionstogether with corresponding deterministic\nverifiers. We use the taxonomy to augment established evaluation suites,\nresulting inVibe Checker, a testbed to assess both codeinstruction followingandfunctional correctness. Upon evaluating 31 leadingLLMs, we show that even\nthe strongest models struggle to comply with multiple instructions and exhibit\nclear functional regression. Most importantly, a composite score of functional\ncorrectness andinstruction followingcorrelates the best with human\npreference, with the latter emerging as the primary differentiator on\nreal-world programming tasks. Our work identifies core factors of the vibe\ncheck, providing a concrete path for benchmarking and developing models that\nbetter align with user preferences in coding. Taxonomy, verifier, and data will be released soon This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Vibe Checker: Aligning Code Evaluation with Human Preference",
+    "authors": [
+      "Ming Zhong",
+      "Qingze Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.07315",
+    "upvote": 32,
+    "tags": []
+  }
+}

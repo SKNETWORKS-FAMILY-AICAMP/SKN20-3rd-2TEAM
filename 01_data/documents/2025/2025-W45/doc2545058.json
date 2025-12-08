@@ -1,0 +1,14 @@
+{
+  "context": "Trove is an open-source retrieval toolkit that streamlines data management and experimentation with efficient on-the-fly processing and customizable components. We introduce Trove, an easy-to-use open-sourceretrieval toolkitthat\nsimplifies research experiments without sacrificing flexibility or speed. For\nthe first time, we introduce efficientdata managementfeatures that load and\nprocess (filter, select, transform, and combine) retrieval datasets on the fly,\nwith just a few lines of code. This gives users the flexibility to easily\nexperiment with differentdataset configurationswithout the need to compute\nand store multiple copies of large datasets. Trove is highly customizable: in\naddition to many built-in options, it allows users to freely modify existing\ncomponents or replace them entirely with user-defined objects. It also provides\na low-code and unified pipeline for evaluation andhard negative mining, which\nsupportsmulti-node executionwithout any code changes. Trove'sdata managementfeatures reduce memory consumption by a factor of 2.6. Moreover, Trove's\neasy-to-useinference pipelineincurs no overhead, and inference times decrease\nlinearly with the number of available nodes. Most importantly, we demonstrate\nhow Trove simplifies retrieval experiments and allows for arbitrary\ncustomizations, thus facilitating exploratory research. Repo:https://github.com/BatsResearch/troveDocumentation:https://ir-trove.dev/ ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Trove: A Flexible Toolkit for Dense Retrieval",
+    "authors": [
+      "Max Zuo"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/BatsResearch/trove",
+    "huggingface_url": "https://huggingface.co/papers/2511.01857",
+    "upvote": 10,
+    "tags": []
+  }
+}

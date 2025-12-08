@@ -1,0 +1,15 @@
+{
+  "context": "QeRL, a quantization-enhanced reinforcement learning framework, accelerates RL training for large language models by combining NVFP4 quantization with Low-Rank Adaptation and an Adaptive Quantization Noise mechanism, achieving significant speedups and improved performance. We propose QeRL, a Quantization-enhancedReinforcement Learningframework forlarge language models (LLMs). While RL is essential for LLMs' reasoning\ncapabilities, it is resource-intensive, requiring substantial GPU memory and\nlong rollout durations. QeRL addresses these issues by combining NVFP4\nquantization withLow-Rank Adaptation (LoRA), acceleratingrollout phaseof RL\nwhile reducing memory overhead. Beyond efficiency, our findings show that\nquantization noise increasespolicy entropy, enhancingexploration, and\nenabling the discovery of better strategies during RL. To further optimizeexploration, QeRL introduces anAdaptive Quantization Noise (AQN)mechanism,\nwhich dynamically adjusts noise during training. Experiments demonstrate that\nQeRL delivers over 1.5 times speedup in therollout phase. Moreover, this is\nthe first framework to enable RL training of a 32B LLM on a single H100 80GB\nGPU, while delivering overall speedups for RL training. It also achieves fasterreward growthand higher final accuracy than 16-bit LoRA and QLoRA, while\nmatching the performance of full-parameter fine-tuning on mathematical\nbenchmarks such asGSM8K(90.8%) andMATH 500(77.4%) in the 7B model. These\nresults establish QeRL as an efficient and effective framework for RL training\nin LLMs. TL;DR: QeRL enables reinforcement learning (RL) for 32B LLMs on a single H100 GPU. Our findings reveal that quantization enhances RL exploration! Paper:https://arxiv.org/abs/2510.11696Code:https://github.com/NVlabs/QeRL This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/qerl-beyond-efficiency-quantization-enhanced-reinforcement-learning-for-llms Here is a cool AI bite sized podcast on the paper as well if you need something to listen to commuting:https://spotifycreators-web.app.link/e/xeWMnJPOOXb ·Sign uporlog into comment",
+  "metadata": {
+    "title": "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning\n  for LLMs",
+    "authors": [
+      "Wei Huang",
+      "Yi Ge"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/NVlabs/QeRL",
+    "huggingface_url": "https://huggingface.co/papers/2510.11696",
+    "upvote": 176,
+    "tags": []
+  }
+}

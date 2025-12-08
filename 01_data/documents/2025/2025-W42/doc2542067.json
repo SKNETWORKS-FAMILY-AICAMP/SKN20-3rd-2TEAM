@@ -1,0 +1,14 @@
+{
+  "context": "A reinforcement learning framework identifies and prioritizes critical attention heads for efficient KV cache compression in large language models, maintaining reasoning quality with reduced overhead. Reasoning large language models exhibit complex reasoning behaviors through\nthe extendedchain-of-thought generation, creating unprecedented Key-Value (KV)\ncache overhead during the decoding phase. ExistingKV cachecompression methods\nunderperform on reasoning models:token-droppingmethods break reasoning\nintegrity by discarding critical information, whilehead-reallocatingmethods\nmistakenly compress reasoning-critical heads since they are designed for\nretrieval tasks, resulting in significant performance degradation as\ncompression rates increase. We hypothesize that KV heads exhibit functional\nheterogeneity in reasoning models-some heads are critical for chain-of-thought\nconsistency while others are compressible. To validate and exploit this\ninsight, we proposeRLKV, a novel reasoning-critical head identification\nframework, which usesreinforcement learningto directly optimize the\nrelationship between each head'scache usageandreasoning quality. AsRLKVproduces rewards from actual generated samples during training, it naturally\nidentifies heads relevant to reasoning behaviors. We then allocate full KV\ncache to these heads while applying compressed constantKV cacheto others for\nefficient inference. Our experiments reveal that only a small fraction ofattention headsis essential for reasoning, enabling ourKV compressionapproach to outperform baseline methods while achieving 20-50% cache reduction\nwith near lossless performance compared to uncompressed results. [page] This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Which Heads Matter for Reasoning? RL-Guided KV Cache Compression",
+    "authors": [
+      "Wenjie Du"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/kurt232/RLKV/",
+    "huggingface_url": "https://huggingface.co/papers/2510.08525",
+    "upvote": 22,
+    "tags": []
+  }
+}

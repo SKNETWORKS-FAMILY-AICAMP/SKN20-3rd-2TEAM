@@ -1,0 +1,14 @@
+{
+  "context": "DA², a zero-shot generalizable and fully end-to-end panoramic depth estimator, addresses challenges in panoramic depth estimation by using a data curation engine and SphereViT to handle spherical distortions, achieving state-of-the-art performance. Panorama has a full FoV (360^circtimes180^circ), offering a more\ncomplete visual description than perspective images. Thanks to this\ncharacteristic,panoramic depth estimationis gaining increasing traction in 3D\nvision. However, due to the scarcity of panoramic data, previous methods are\noften restricted to in-domain settings, leading to poor zero-shot\ngeneralization. Furthermore, due to the spherical distortions inherent in\npanoramas, many approaches rely onperspective splitting(e.g.,cubemaps),\nwhich leads to suboptimal efficiency. To address these challenges, we propose\nDA^{2}: Depth Anything in\nAny Direction, an accurate, zero-shot generalizable, and\nfully end-to-end panoramic depth estimator. Specifically, for scaling up\npanoramic data, we introduce adata curation enginefor generating high-quality\npanoramic depth data from perspective, and create sim543K panoramic\nRGB-depth pairs, bringing the total to sim607K. To further mitigate the\nspherical distortions, we presentSphereViT, which explicitly leveragesspherical coordinatesto enforce thespherical geometric consistencyin\npanoramic image features, yielding improved performance. A comprehensive\nbenchmark on multiple datasets clearly demonstrates DA^{2}'s SoTA\nperformance, with an average 38% improvement onAbsRelover the strongest\nzero-shot baseline. Surprisingly, DA^{2} even outperforms prior in-domain\nmethods, highlighting its superiorzero-shot generalization. Moreover, as an\nend-to-end solution, DA^{2} exhibits much higher efficiency over fusion-based\napproaches. Both the code and the curated panoramic data will be released.\nProject page: https://depth-any-in-any-dir.github.io/. Project page:https://depth-any-in-any-dir.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "DA^2: Depth Anything in Any Direction",
+    "authors": [
+      "Haodong Li"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/EnVision-Research/DA-2",
+    "huggingface_url": "https://huggingface.co/papers/2509.26618",
+    "upvote": 25,
+    "tags": []
+  }
+}

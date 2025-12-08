@@ -1,0 +1,15 @@
+{
+  "context": "RL-ZVP, a novel reinforcement learning algorithm, leverages zero-variance prompts to improve the accuracy and pass rate of Large Language Models in math reasoning tasks. Reinforcement Learning with Verifiable Rewards(RLVR) is a powerful framework\nfor improving the reasoning abilities ofLarge Language Models(LLMs). However,\ncurrent methods such asGRPOrely only on problems where the model responses to\nthe same input differ in correctness, while ignoring those where all responses\nreceive the same reward - so-calledzero-variance prompts. In this work, we\nargue that such prompts are not useless but can, in fact, provide meaningful\nfeedback forpolicy optimization. To this end, we introduce RL withZero-Variance Prompts(RL-ZVP), a novel algorithm that extract learning signals\nfromzero-variance prompts. RL-ZVP directly rewards correctness and penalizes\nerrors even without contrasting responses, modulating feedback with token-level\ncharacteristics to preserve informative, nuanced signals. Across six math\nreasoning benchmarks, RL-ZVP achieves significant improvements of up to 8.61\npoints in accuracy and 7.77 points in pass rate overGRPO, while consistently\noutperforming other baselines that filter outzero-variance prompts. These\nresults highlight the untapped potential of learning fromzero-variance promptsin RLVR. We propose exploiting zero-variance prompts for additional learning signals in RLVR (GRPO) pipeline.Project Page:https://bltnynk.github.io/publications/rl-zvp/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/no-prompt-left-behind-exploiting-zero-variance-prompts-in-llm-reinforcement-learning-via-entropy-guided-advantage-shaping ·Sign uporlog into comment",
+  "metadata": {
+    "title": "No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM\n  Reinforcement Learning via Entropy-Guided Advantage Shaping",
+    "authors": [
+      "Thanh-Long V. Le",
+      "Viet Lai"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2509.21880",
+    "upvote": 52,
+    "tags": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "context": "LENS modifies GRPO by assigning confidence-dependent rewards to incorrect responses, improving efficiency and performance in reinforcement learning with verifiable rewards. Reinforcement learning with verifiable rewards(RLVR) has become a standard\nrecipe for improving large language models (LLMs) on reasoning tasks, withGroup Relative Policy Optimization(GRPO) widely used in practice. YetGRPOwastes substantial compute on negative groups: groups in which no sampled\nresponse is correct yield zero advantage and thus no gradient. We ask whether\nnegative groups can be leveraged without extra supervision. Starting from amaximum-likelihood(MLE) objective in reward modeling, we show that theMLEgradient is equivalent to apolicy gradientfor a modifiedvalue function. Thisvalue functionadds aconfidence-weighted penaltyon incorrect responses,\nimposing larger penalties on more confident mistakes. We refer to this as\nLikelihood Estimation with Negative Samples\n(LENS).LENSmodifiesGRPOto assign non-zero, confidence-dependent\nrewards to incorrect generations, making negative groups informative and\nconverting previously wasted samples into useful gradient updates. On the MATH\nbenchmark withLlama-3.1-8BandQwen-2.5-3B, the proposed variant consistently\noutperformsGRPObaseline, with significant gains on harder items. These\nresults demonstrate a principled and practical way to \"rescue\" negative groups,\nimproving efficiency and performance inRLVR. A new algorithm to make use of negative groups in GRPO. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Using negative(bad) data is always what I have been thinking about..I like this ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Don't Waste Mistakes: Leveraging Negative RL-Groups via Confidence\n  Reweighting",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.08696",
+    "upvote": 14,
+    "tags": []
+  }
+}

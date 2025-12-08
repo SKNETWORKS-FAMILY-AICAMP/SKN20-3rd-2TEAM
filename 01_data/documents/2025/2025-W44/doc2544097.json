@@ -1,0 +1,16 @@
+{
+  "context": "FunReason-MT is a novel data synthesis framework that enhances multi-turn function calling in large language models by addressing targeted training, tool architecture isolation, and logical dependencies, achieving state-of-the-art performance on the Berkeley Function-Calling Leaderboard. Function calling(FC) empowerslarge language models(LLMs) and autonomous\nagents to interface with external tools, a critical capability for solving\ncomplex, real-world problems. As this ability becomes increasingly central to\nadvanced AI systems, the need for high-quality,multi-turn training datato\ndevelop and refine it cannot be overstated. Existing data synthesis methods,\nsuch as random environment sampling or multi-agent role-playing, are not\npowerful enough to generate high-quality data in real-world environments.\nPractical challenges come in three folds: targeted model training, isolation of\ntool architecture, and multi-turn logical dependency. To address these\nstructural deficiencies, we present FunReason-MT, a novel data synthesis\nframework for real-world multi-turn tool use. FunReason-MT resolves the\ncomplexity barrier in multi-turn FC data by employing 1) Environment-API Graph\nInteractions to gather varied high-quality trajectories, 2) Advanced Tool-Query\nSynthesis to simplify hard query construction, and 3)Guided Iterative Chainfor sophisticated CoT generation. Evaluations on Berkeley Function-Calling\nLeaderboard (BFCLv3) demonstrate the power of our framework: a 4B model built\nupon FunReason-MT generated data achieves state-of-the-art performance among\ncomparable-sized models, outperforming most close-source models. Further\nperformance improvements on BFCLv4 confirm that FunReason-MT provides a\nreliable and robust source for agentic learning. A good dataset and a nice data synthesis pipeline! ·Sign uporlog into comment",
+  "metadata": {
+    "title": "FunReason-MT Technical Report: Overcoming the Complexity Barrier in\n  Multi-Turn Function Calling",
+    "authors": [
+      "Bingguang Hao",
+      "Yuntao Wen",
+      "Cunyin Peng"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.24645",
+    "upvote": 7,
+    "tags": []
+  }
+}

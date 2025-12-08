@@ -1,0 +1,12 @@
+{
+  "context": "A simple VLA model, VLA-0, outperforms more complex models on robotic manipulation tasks by representing actions as text without additional modifications or large-scale training. Vision-Language-Action models(VLAs) hold immense promise for enabling\ngeneralist robot manipulation. However, the best way to build them remains an\nopen question. Current approaches often add complexity, such as modifying the\nexisting vocabulary of aVision-Language Model(VLM) withaction tokensor\nintroducing specialaction heads. Curiously, the simplest strategy of\nrepresenting actions directly as text has remained largely unexplored. This\nwork introduces VLA-0 to investigate this idea. We find that VLA-0 is not only\neffective; it is surprisingly powerful. With the right design, VLA-0\noutperforms more involved models. OnLIBERO, a popular benchmark for evaluating\nVLAs, VLA-0 outperforms all existing methods trained on the same robotic data,\nincluding pi_0.5-KI,OpenVLA-OFTandSmolVLA. Furthermore, without\nlarge-scale robotics-specific training, it outperforms methods trained on\nlarge-scale robotic data, like pi_0.5-KI, pi_0,GR00T-N1andMolmoAct.\nThese findings also translate to the real world, where VLA-0 outperformsSmolVLA, a VLA model pre-trained on large-scale real data. This paper\nsummarizes our unexpected findings and spells out the specific techniques\nrequired to unlock the high performance of this simple yet potent VLA design.\nVisual results, code, and trained models are provided here:\nhttps://vla0.github.io/. Paper:https://arxiv.org/abs/2510.13054Website:https://vla0.github.io/Code:https://github.com/NVlabs/vla0 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "VLA-0: Building State-of-the-Art VLAs with Zero Modification",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/NVlabs/vla0",
+    "huggingface_url": "https://huggingface.co/papers/2510.13054",
+    "upvote": 11,
+    "tags": []
+  }
+}

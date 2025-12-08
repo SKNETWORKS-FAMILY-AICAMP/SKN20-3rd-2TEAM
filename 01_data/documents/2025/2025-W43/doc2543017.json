@@ -1,0 +1,18 @@
+{
+  "context": "PICABench and PICAEval evaluate physical realism in image editing by assessing eight sub-dimensions and using VLM-as-a-judge with human annotations, highlighting the need for physics-based solutions. Image editinghas achieved remarkable progress recently. Modern editing\nmodels could already follow complex instructions to manipulate the original\ncontent. However, beyond completing the editing instructions, the accompanying\nphysical effects are the key to the generation realism. For example, removing\nan object should also remove its shadow, reflections, and interactions with\nnearby objects. Unfortunately, existing models and benchmarks mainly focus on\ninstruction completion but overlook these physical effects. So, at this moment,\nhow far are we from physically realisticimage editing? To answer this, we\nintroducePICABench, which systematically evaluatesphysical realismacross\neight sub-dimension (spanning optics, mechanics, and state transitions) for\nmost of the common editing operations (add, remove, attribute change, etc). We\nfurther propose thePICAEval, a reliable evaluation protocol that usesVLM-as-a-judgewith per-case, region-level human annotations and questions.\nBeyond benchmarking, we also explore effective solutions by learning physics\nfrom videos and construct a training datasetPICA-100K. After evaluating most\nof the mainstream models, we observe thatphysical realismremains a\nchallenging problem with large rooms to explore. We hope that our benchmark and\nproposed solutions can serve as a foundation for future work moving from naive\ncontent editing toward physically consistent realism. Project page:https://picabench.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/picabench-how-far-are-we-from-physically-realistic-image-editing ·Sign uporlog into comment",
+  "metadata": {
+    "title": "PICABench: How Far Are We from Physically Realistic Image Editing?",
+    "authors": [
+      "Yuandong Pu",
+      "Le Zhuo",
+      "Songhao Han",
+      "Jinbo Xing",
+      "Xi Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Andrew0613/PICABench",
+    "huggingface_url": "https://huggingface.co/papers/2510.17681",
+    "upvote": 62,
+    "tags": []
+  }
+}

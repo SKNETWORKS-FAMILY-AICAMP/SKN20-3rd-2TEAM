@@ -1,0 +1,15 @@
+{
+  "context": "The study quantifies the material footprint of AI training, focusing on the Nvidia A100 GPU, and examines the environmental impact of training models like GPT-4, emphasizing the need for resource-efficient strategies. As computational demands continue to rise, assessing the environmental footprint of AI requires moving beyond energy and water consumption to include the material demands of specialized hardware. This study quantifies the material footprint of AI training by linking computational workloads to physical hardware needs. The elemental composition of the Nvidia A100 SXM 40 GBgraphics processing unit(GPU) was analyzed usinginductively coupled plasma optical emission spectroscopy, which identified 32 elements. The results show that AI hardware consists of about 90% heavy metals and only trace amounts of precious metals. The elements copper, iron, tin, silicon, and nickel dominate the GPU composition by mass. In a multi-step methodology, we integrate these measurements withcomputational throughputper GPU across varying lifespans, accounting for the computational requirements of training specific AI models at different training efficiency regimes. Scenario-based analyses reveal that, depending onModel FLOPs Utilization(MFU) and hardware lifespan, trainingGPT-4requires between 1,174 and 8,800 A100 GPUs, corresponding to the extraction and eventual disposal of up to 7 tons of toxic elements. Combined software and hardware optimization strategies can reduce material demands: increasing MFU from 20% to 60% lowers GPU requirements by 67%, while extending lifespan from 1 to 3 years yields comparable savings; implementing both measures together reduces GPU needs by up to 93%. Our findings highlight that incremental performance gains, such as those observed between GPT-3.5 andGPT-4, come at disproportionately high material costs. The study underscores the necessity of incorporatingmaterial resource considerationsinto discussions of AI scalability, emphasizing that future progress in AI must align with principles ofresource efficiencyandenvironmental responsibility. The study quantifies the material footprint of AI training, focusing on the Nvidia A100 GPU, and examines the environmental impact of training models like GPT-4 🌱🍃 ·Sign uporlog into comment",
+  "metadata": {
+    "title": "From FLOPs to Footprints: The Resource Cost of Artificial Intelligence",
+    "authors": [
+      "Sophia Falk",
+      "Nicholas Kluge Corrêa"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.04142",
+    "upvote": 1,
+    "tags": []
+  }
+}

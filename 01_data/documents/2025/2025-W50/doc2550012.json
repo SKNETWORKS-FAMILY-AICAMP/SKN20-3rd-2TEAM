@@ -1,0 +1,14 @@
+{
+  "context": "ReVSeg, a reasoning-centric video object segmentation framework, uses sequential decision-making in pretrained vision language models and reinforcement learning to achieve state-of-the-art performance and interpretable reasoning. Reasoning-centricvideo object segmentationis an inherently complex task: the query often refers todynamics,causality, andtemporal interactions, rather than static appearances. Yet existing solutions generally collapse these factors into simplified reasoning withlatent embeddings, rendering the reasoning chain opaque and essentially intractable. We therefore adopt an explicit decomposition perspective and introduce ReVSeg, which executes reasoning as sequential decisions in the native interface ofpretrained vision language models(VLMs). Rather than folding all reasoning into a single-step prediction, ReVSeg executes three explicit operations --semantics interpretation,temporal evidence selection, andspatial grounding-- aligning pretrained capabilities. We further employreinforcement learningto optimize the multi-step reasoning chain, enabling the model to self-refine its decision quality from outcome-driven signals. Experimental results demonstrate that ReVSeg attains state-of-the-art performances on standardvideo object segmentationbenchmarks and yields interpretablereasoning trajectories. Project page is available at https://clementine24.github.io/ReVSeg/ . Reasoning-centric video object segmentation is an inherently complex task: the query often refers to dynamics, causality, and temporal interactions, rather than static appearances. Yet existing solutions generally collapse these factors into simplified reasoning with latent embeddings, rendering the reasoning chain opaque and essentially intractable. We therefore adopt an explicit decomposition perspective and introduce ReVSeg, which executes reasoning as sequential decisions in the native interface of pretrained vision language models (VLMs). Rather than folding all reasoning into a single-step prediction, ReVSeg executes three explicit operations -- semantics interpretation, temporal evidence selection, and spatial grounding -- aligning pretrained capabilities. We further employ reinforcement learning to optimize the multi-step reasoning chain, enabling the model to self-refine its decision quality from outcome-driven signals. Experimental results demonstrate that ReVSeg attains state-of-the-art performances on standard video object segmentation benchmarks and yields interpretable reasoning trajectories. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ReVSeg: Incentivizing the Reasoning Chain for Video Segmentation with Reinforcement Learning",
+    "authors": [
+      "Yifan Li"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Clementine24/ReVSeg",
+    "huggingface_url": "https://huggingface.co/papers/2512.02835",
+    "upvote": 8,
+    "tags": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "context": "Tongyi DeepResearch, a large language model with agentic capabilities, achieves top performance in various deep research tasks through an end-to-end training framework and automatic data synthesis. We present Tongyi DeepResearch, anagentic large language model, which is\nspecifically designed for long-horizon, deep information-seeking research\ntasks. To incentivize autonomous deep research agency, Tongyi DeepResearch is\ndeveloped through anend-to-end training frameworkthat combines agentic\nmid-training andagentic post-training, enablingscalable reasoningandinformation seekingacross complex tasks. We design a highly scalable data\nsynthesis pipeline that is fully automatic, without relying on costly human\nannotation, and empowers all training stages. By constructing customized\nenvironments for each stage, our system enables stable and consistent\ninteractions throughout. Tongyi DeepResearch, featuring 30.5 billion total\nparameters, with only 3.3 billion activated per token, achieves\nstate-of-the-art performance across a range of agentic deep research\nbenchmarks, includingHumanity's Last Exam,BrowseComp,BrowseComp-ZH,WebWalkerQA,xbench-DeepSearch,FRAMESandxbench-DeepSearch-2510. We\nopen-source the model, framework, and complete solutions to empower the\ncommunity. We present Tongyi DeepResearch, an agentic large language model, which is specifically designed for long-horizon, deep information-seeking research tasks. To incentivize autonomous deep research agency, Tongyi DeepResearch is developed through an end-to-end training framework that combines agentic mid-training and agentic post-training, enabling scalable reasoning and information seeking across complex tasks. We design a highly scalable data synthesis pipeline that is fully automatic, without relying on costly human annotation, and empowers all training stages. By constructing customized environments for each stage, our system enables stable and consistent interactions throughout. Tongyi DeepResearch, featuring 30.5 billion total parameters, with only 3.3 billion activated per token, achieves state-of-the-art performance across a range of agentic deep research benchmarks, including Humanity's Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES and xbench-DeepSearch-2510. We open-source the model, framework, and complete solutions to empower the community. Github:https://github.com/Alibaba-NLP/DeepResearch Blog:https://tongyi-agent.github.io/blogGithub:https://github.com/Alibaba-NLP/DeepResearchHuggingFace:https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3BModelScope:https://www.modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B Thanks for opensource! ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Tongyi DeepResearch Technical Report",
+    "authors": [
+      "Guoxin Chen",
+      "Jialong Wu",
+      "Liangcai Su",
+      "Xinyu Wang",
+      "Xixi Wu",
+      "Xuanzhong Chen",
+      "Yida Zhao"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Alibaba-NLP/DeepResearch/////",
+    "huggingface_url": "https://huggingface.co/papers/2510.24701",
+    "upvote": 97,
+    "tags": []
+  }
+}

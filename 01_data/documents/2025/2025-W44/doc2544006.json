@@ -1,0 +1,21 @@
+{
+  "context": "Emu3.5, a large-scale multimodal world model, predicts next states in vision and language, enhanced with reinforcement learning and Discrete Diffusion Adaptation for efficient inference, achieving strong performance in various multimodal tasks. We introduce Emu3.5, a large-scalemultimodal world modelthat natively\npredicts the next state across vision and language. Emu3.5 is pre-trained\nend-to-end with a unifiednext-token predictionobjective on a corpus ofvision-language interleaved datacontaining over 10 trillion tokens, primarily\nderived from sequential frames and transcripts of internet videos. The model\nnaturally accepts interleaved vision-language inputs and generates interleaved\nvision-language outputs. Emu3.5 is further post-trained with large-scale\nreinforcement learning to enhance multimodal reasoning and generation. To\nimprove inference efficiency, we proposeDiscrete Diffusion Adaptation(DiDA),\nwhich converts token-by-token decoding intobidirectional parallel prediction,\naccelerating per-image inference by about 20x without sacrificing performance.\nEmu3.5 exhibits strong native multimodal capabilities, including long-horizon\nvision-language generation, any-to-image (X2I) generation, and complex\ntext-rich image generation. It also exhibits generalizable world-modeling\nabilities, enablingspatiotemporally consistent world explorationandopen-world embodied manipulationacross diverse scenarios and tasks. For\ncomparison, Emu3.5 achieves performance comparable to Gemini 2.5 Flash Image\n(Nano Banana) on image generation and editing tasks and demonstrates superior\nresults on a suite of interleaved generation tasks. We open-source Emu3.5 at\nhttps://github.com/baaivision/Emu3.5 to support community research.  comment romoved deleted ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Emu3.5: Native Multimodal Models are World Learners",
+    "authors": [
+      "Yufeng Cui",
+      "Haoge Deng",
+      "Xu Huang",
+      "Wenxuan Wang",
+      "Yueze Wang",
+      "Chengyuan Wang",
+      "Fan Zhang",
+      "Ting Pan"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/baaivision/Emu3.5",
+    "huggingface_url": "https://huggingface.co/papers/2510.26583",
+    "upvote": 106,
+    "tags": []
+  }
+}

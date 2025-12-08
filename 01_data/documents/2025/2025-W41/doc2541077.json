@@ -1,0 +1,15 @@
+{
+  "context": "Native Hybrid Attention (NHA) combines linear and full attention mechanisms to maintain long-term context while improving efficiency, outperforming Transformers in recall-intensive tasks and offering efficiency gains in pretrained LLMs. Transformers excel at sequence modeling but face quadratic complexity, whilelinear attentionoffers improved efficiency but often compromises recall\naccuracy over long contexts. In this work, we introduceNative Hybrid Attention(NHA), a novel hybrid architecture of linear andfull attentionthat integrates\nboth intra \\&inter-layer hybridizationinto a unified layer design.NHAmaintains long-term context inkey-value slotsupdated by alinear RNN, and\naugments them with short-term tokens from asliding window. A singlesoftmax attentionoperation is then applied over all keys and values,\nenabling per-token and per-head context-dependent weighting without requiring\nadditional fusion parameters. The inter-layer behavior is controlled through a\nsingle hyperparameter, thesliding windowsize, which allows smooth adjustment\nbetween purely linear andfull attentionwhile keeping all layers structurally\nuniform. Experimental results show thatNHAsurpasses Transformers and other\nhybrid baselines on recall-intensive andcommonsense reasoning tasks.\nFurthermore,pretrained LLMscan be structurally hybridized withNHA, achieving\ncompetitive accuracy while delivering significant efficiency gains. Code is\navailable at https://github.com/JusenD/NHA. Code:https://github.com/JusenD/NHA This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Native Hybrid Attention for Efficient Sequence Modeling",
+    "authors": [
+      "Jusen Du",
+      "Weigao Sun"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/JusenD/NHA",
+    "huggingface_url": "https://huggingface.co/papers/2510.07019",
+    "upvote": 16,
+    "tags": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "context": "A 4D-controllable video diffusion framework decouples scene dynamics from camera pose, enabling precise manipulation of both and achieving high-quality generation across diverse timing patterns and camera trajectories. Emergingvideo diffusion modelsachieve high visual fidelity but fundamentally couplescene dynamicswith camera motion, limiting their ability to provide precise spatial and temporal control. We introduce a 4D-controllable video diffusion framework that explicitly decouplesscene dynamicsfromcamera pose, enabling fine-grained manipulation of bothscene dynamicsand camera viewpoint. Our framework takes continuous world-time sequences and camera trajectories as conditioning inputs, injecting them into the video diffusion model through a4D positional encodingin theattention layerandadaptive normalizationsforfeature modulation. To train this model, we curate a unique dataset in which temporal and camera variations are independently parameterized; this dataset will be made public. Experiments show that our model achieves robust real-world4D controlacross diverse timing patterns and camera trajectories, while preserving high generation quality and outperforming prior work in controllability. See our website for video results: https://19reborn.github.io/Bullet4D/  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "BulletTime: Decoupled Control of Time and Camera Pose for Video Generation",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.05076",
+    "upvote": 7,
+    "tags": []
+  }
+}

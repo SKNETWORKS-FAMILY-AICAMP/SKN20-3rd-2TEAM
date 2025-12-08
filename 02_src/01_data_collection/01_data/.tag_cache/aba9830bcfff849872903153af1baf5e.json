@@ -1,0 +1,11 @@
+{
+  "title": "Every Activation Boosted: Scaling General Reasoner to 1 Trillion Open\n  Language Foundation",
+  "abstract": "Ling 2.0, a reasoning-oriented language model series, achieves high efficiency and accuracy through a Mixture-of-Experts paradigm, sparse activation, and innovative training techniques. We introduce L",
+  "tags": [
+    "Model Architecture",
+    "Efficient AI",
+    "Natural Language Processing"
+  ],
+  "timestamp": 1765199758.6049206,
+  "model": "gpt-3.5-turbo"
+}

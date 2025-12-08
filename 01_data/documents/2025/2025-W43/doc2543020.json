@@ -1,0 +1,16 @@
+{
+  "context": "Open-o3 Video integrates spatio-temporal evidence into video reasoning, achieving state-of-the-art performance on multiple benchmarks and providing valuable reasoning traces for test-time scaling. Mostvideo reasoningmodels only generate textualreasoning traceswithout\nindicating when and where key evidence appears. Recent models such as OpenAI-o3\nhave sparked wide interest in evidence-centered reasoning for images, yet\nextending this ability to videos is more challenging, as it requires jointtemporal trackingandspatial localizationacross dynamic scenes. We introduce\nOpen-o3 Video, anon-agent frameworkthat integrates explicit spatio-temporal\nevidence intovideo reasoning, and carefully collect training data and design\ntraining strategies to address the aforementioned challenges. The model\nhighlights key timestamps, objects, and bounding boxes alongside its answers,\nallowing reasoning to be grounded in concrete visual observations. To enable\nthis functionality, we first curate and build two high-quality datasets,\nSTGR-CoT-30k forSFTand STGR-RL-36k forRL, with carefully constructed\ntemporal and spatial annotations, since most existing datasets offer either\ntemporal spans for videos or spatial boxes on images, lacking unified\nspatio-temporal supervision andreasoning traces. Then, we adopt a cold-start\nreinforcement learning strategy with multiple specially designed rewards that\njointly encourage answer accuracy, temporal alignment, and spatial precision.\nOnV-STAR benchmark, Open-o3 Video achieves state-of-the-art performance,\nraisingmAMby 14.4% andmLGMby 24.2% on the Qwen2.5-VL baseline. Consistent\nimprovements are also observed on a broad range of video understanding\nbenchmarks, includingVideoMME,WorldSense,VideoMMMU, andTVGBench. Beyond\naccuracy, thereasoning tracesproduced by Open-o3 Video also provide valuable\nsignals for test-time scaling, enablingconfidence-aware verificationand\nimproving answer reliability. Open-o3 Videointroduces a video reasoning framework that grounds its answers in explicit spatio-temporal evidence—highlighting when and where key visual cues occur—achieving state-of-the-art performance across video understanding benchmarks. Code:https://github.com/marinero4972/Open-o3-Video This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal\n  Evidence",
+    "authors": [
+      "Jiahao Meng",
+      "Haochen Wang",
+      "Lingdong Kong"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/marinero4972/Open-o3-Video",
+    "huggingface_url": "https://huggingface.co/papers/2510.20579",
+    "upvote": 55,
+    "tags": []
+  }
+}

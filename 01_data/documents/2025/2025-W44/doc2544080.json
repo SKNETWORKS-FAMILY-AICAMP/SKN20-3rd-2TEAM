@@ -1,0 +1,15 @@
+{
+  "context": "VisJudge-Bench is a benchmark for evaluating MLLMs' performance in assessing visualization aesthetics and quality, revealing gaps compared to human experts and demonstrating improvements with the VisJudge model. Visualization, a domain-specific yet widely used form of imagery, is an\neffective way to turn complex datasets into intuitive insights, and its value\ndepends on whether data are faithfully represented, clearly communicated, and\naesthetically designed. However, evaluating visualization quality is\nchallenging: unlike natural images, it requires simultaneous judgment across\ndata encoding accuracy, information expressiveness, and visual aesthetics.\nAlthoughmultimodal large language models(MLLMs) have shown promising\nperformance in aesthetic assessment of natural images, no systematic benchmark\nexists for measuring their capabilities in evaluating visualizations. To\naddress this, we proposeVisJudge-Bench, the first comprehensive benchmark for\nevaluatingMLLMs' performance in assessing visualization aesthetics and\nquality. It contains 3,090expert-annotated samplesfrom real-world scenarios,\ncovering single visualizations, multiple visualizations, and dashboards across\n32chart types. Systematic testing on this benchmark reveals that even the most\nadvancedMLLMs(such as GPT-5) still exhibit significant gaps compared to human\nexperts in judgment, with aMean Absolute Error(MAE) of 0.551 and acorrelation with human ratingsof only 0.429. To address this issue, we proposeVisJudge, a model specifically designed for visualization aesthetics and\nquality assessment. Experimental results demonstrate thatVisJudgesignificantly narrows the gap with human judgment, reducing theMAEto 0.442 (a\n19.8% reduction) and increasing the consistency with human experts to 0.681 (a\n58.7% improvement) compared to GPT-5. The benchmark is available at\nhttps://github.com/HKUSTDial/VisJudgeBench. We introduce VisJudge-Bench, the first comprehensive benchmark for evaluating MLLMs' capabilities in assessing visualization aesthetics and quality. Built on the \"Fidelity-Expressiveness-Aesthetics\" framework, our benchmark contains 3,090 expert-annotated samples covering 32 chart types across single visualizations, multiple visualizations, and dashboards. Extensive testing reveals that even GPT-5 shows significant gaps compared to human experts (MAE: 0.551, correlation: 0.429). To address this, we developed VisJudge, a specialized model that achieves 19.8% MAE reduction (0.442) and 58.7% correlation improvement (0.681) over GPT-5, demonstrating the necessity and effectiveness of domain-specific training for visualization quality assessment. Dataset and code available athttps://github.com/HKUSTDial/VisJudgeBench ·Sign uporlog into comment",
+  "metadata": {
+    "title": "VisJudge-Bench: Aesthetics and Quality Assessment of Visualizations",
+    "authors": [
+      "Jiayi Zhang",
+      "Zhaoyang Yu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/HKUSTDial/VisJudgeBench",
+    "huggingface_url": "https://huggingface.co/papers/2510.22373",
+    "upvote": 14,
+    "tags": []
+  }
+}

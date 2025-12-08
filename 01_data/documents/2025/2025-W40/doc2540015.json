@@ -1,0 +1,18 @@
+{
+  "context": "SINQ enhances post-training quantization by introducing a second-axis scale factor and Sinkhorn-Knopp-style algorithm to minimize matrix imbalance, improving perplexity on large language models. Post-training quantizationhas emerged as the most widely used strategy for\ndeployinglarge language modelsat low precision. Still, current methods showperplexitydegradation at bit-widths less than or equal to 4, partly because\nrepresenting outliers causes precision issues in parameters that share the same\nscales as these outliers. This problem is especially pronounced forcalibration-free,uniform quantizationmethods. We introduce SINQ to augment\nexisting post-training quantizers with an additionalsecond-axis scale factorand a fastSinkhorn-Knopp-style algorithmthat finds scales to normalize\nper-row and per-column variances, thereby minimizing a novel per-matrix proxy\ntarget for quantization: thematrix imbalance. Our method has no interactions\nbetween layers and can be trivially applied to new architectures to quantize\nany linear layers. We evaluate our method on theQwen3model family andDeepSeek-V2.5. SINQ improvesWikiText2andC4perplexitysignificantly against\nuncalibrateduniform quantizationbaselines and can be further enhanced by\ncombining it with calibration andnon-uniform quantization levels. Code to\nreproduce the results of this work and to easily quantize models using SINQ is\navailable at https://github.com/huawei-csl/SINQ. Welcome to theSINQ project! 🚀 SINQis a novel, fast, plug-and-play,calibration-free quantization techniquethat deliversstate-of-the-art performancefor Large Language Models. We're excited to share our work and would love to hear your thoughts, questions, and feedback here. We’ll also be uploading someSINQ-quantized modelsand related resources soon, and we’re eager to discuss ideas and potential applications together! If you're curious about why you should start usingSINQ, check out ourGitHub repoand consider giving it a star⭐:https://github.com/huawei-csl/SINQ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Hi Everyone!Regardless of its origin, our local AI community really needs solutions like this to make large models usable on low-GPU setups. It would be great to see discussions or tools focused on efficient model usage for everyone, not just high end hardware. Thanks for the support@Hussain2050! Small update: we started uploading to the 🤗 HF Hub somepre-quantized SINQ models. I would love to know what models would you like to see there! Here the link:https://huggingface.co/collections/huawei-csl/sinq-68f242fedaac9a0bc3e95413 ·Sign uporlog into comment",
+  "metadata": {
+    "title": "SINQ: Sinkhorn-Normalized Quantization for Calibration-Free\n  Low-Precision LLM Weights",
+    "authors": [
+      "Lorenz K. Müller",
+      "Philippe Bich",
+      "Ahmet Çelik",
+      "Luca Benfenati",
+      "Lukas Cavigelli"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/huawei-csl/SINQ",
+    "huggingface_url": "https://huggingface.co/papers/2509.22944",
+    "upvote": 79,
+    "tags": []
+  }
+}

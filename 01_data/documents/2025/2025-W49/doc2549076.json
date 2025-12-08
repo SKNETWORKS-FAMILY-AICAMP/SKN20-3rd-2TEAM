@@ -1,0 +1,12 @@
+{
+  "context": "Phase-Preserving Diffusion and Frequency-Selective Structured noise enable structure-aligned generation in diffusion models without altering architecture or introducing extra parameters, enhancing performance in tasks like re-rendering and simulation. Standarddiffusioncorrupts data usingGaussian noisewhoseFourier coefficientshave random magnitudes and random phases. While effective for unconditional or text-to-image generation, corrupting phase components destroys spatial structure, making it ill-suited for tasks requiringgeometric consistency, such as re-rendering, simulation enhancement, and image-to-image translation. We introducePhase-Preserving Diffusionφ-PD, a model-agnostic reformulation of thediffusionprocess that preserves input phase while randomizing magnitude, enabling structure-aligned generation without architectural changes or additional parameters. We further propose Frequency-Selective Structured (FSS) noise, which provides continuous control overstructural rigidityvia a singlefrequency-cutoffparameter.φ-PDadds noinference-time costand is compatible with anydiffusionmodel for images or videos. Across photorealistic and stylized re-rendering, as well as sim-to-real enhancement for driving planners,φ-PDproduces controllable, spatially aligned results. When applied to the CARLA simulator,φ-PDimprovesCARLA-to-Waymo plannerperformance by 50\\%. The method is complementary to existing conditioning approaches and broadly applicable to image-to-image andvideo-to-video generation. Videos, additional examples, and code are available on our https://yuzeng-at-tri.github.io/ppd-page/{project page}.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "NeuralRemaster: Phase-Preserving Diffusion for Structure-Aligned Generation",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.05106",
+    "upvote": 13,
+    "tags": []
+  }
+}

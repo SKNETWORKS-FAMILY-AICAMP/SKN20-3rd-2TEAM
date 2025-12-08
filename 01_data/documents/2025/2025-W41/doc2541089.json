@@ -1,0 +1,16 @@
+{
+  "context": "An unsupervised method learns a compact state representation using a lightweight encoder and Diffusion Transformer decoder, improving robotic performance and enabling latent action decoding from static images. A fundamental challenge in embodied intelligence is developing expressive and\ncompact state representations for efficient world modeling and decision making.\nHowever, existing methods often fail to achieve this balance, yielding\nrepresentations that are either overly redundant or lacking in task-critical\ninformation. We propose an unsupervised approach that learns a highly\ncompressed two-token state representation using a lightweight encoder and a\npre-trainedDiffusion Transformer(DiT) decoder, capitalizing on its strong\ngenerative prior. Our representation is efficient, interpretable, and\nintegrates seamlessly into existingVLA-based models, improving performance by\n14.3% onLIBEROand 30% in real-world task success with minimal inference\noverhead. More importantly, we find that the difference between these tokens,\nobtained vialatent interpolation, naturally serves as a highly effectivelatent action, which can be further decoded into executable robot actions. This\nemergent capability reveals that our representation captures structured\ndynamics without explicit supervision. We name our methodStaMofor its ability\nto learn generalizable robotic Motion from compact State representation, which\nis encoded from static images, challenging the prevalent dependence to learninglatent actionon complex architectures and video data. The resulting latent\nactions also enhancepolicy co-training, outperforming prior methods by 10.4%\nwith improved interpretability. Moreover, our approach scales effectively\nacross diverse data sources, including real-world robot data, simulation, andhuman egocentric video. StaMo Github:https://github.com/aim-uofa/StaMoHomepage:https://aim-uofa.github.io/StaMo/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "StaMo: Unsupervised Learning of Generalizable Robot Motion from Compact\n  State Representation",
+    "authors": [
+      "Mingyu Liu",
+      "Zeju Li",
+      "Canyu Zhao"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/aim-uofa/StaMo",
+    "huggingface_url": "https://huggingface.co/papers/2510.05057",
+    "upvote": 12,
+    "tags": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "context": "Group Relative Attention Guidance enhances image editing quality by modulating token deltas in Diffusion-in-Transformer models, providing fine-grained control over editing intensity. Recently, image editing based onDiffusion-in-Transformermodels has\nundergone rapid development. However, existing editing methods often lack\neffective control over the degree of editing, limiting their ability to achieve\nmore customized results. To address this limitation, we investigate theMM-Attentionmechanism within the DiT model and observe that the Query and Key\ntokens share abias vectorthat is only layer-dependent. We interpret this bias\nas representing the model's inherent editing behavior, while the delta between\neach token and its corresponding bias encodes the content-specific editing\nsignals. Based on this insight, we proposeGroup Relative Attention Guidance, a\nsimple yet effective method that reweights the delta values of different tokens\nto modulate the focus of the model on the input image relative to the editing\ninstruction, enabling continuous and fine-grained control over editing\nintensity without any tuning. Extensive experiments conducted on existing image\nediting frameworks demonstrate that GRAG can be integrated with as few as four\nlines of code, consistently enhancing editing quality. Moreover, compared to\nthe commonly usedClassifier-Free Guidance, GRAG achieves smoother and more\nprecise control over the degree of editing. Our code will be released at\nhttps://github.com/little-misfit/GRAG-Image-Editing. We investigate the MM-Attention mechanism within the DiT model and observe that the Query (Q) and Key (K) tokens share a bias vector that is only layer-dependent. We interpret this bias as representing the model's inherent editing behavior, while the delta between each token and its corresponding bias encodes the content-specific editing signals. Based on this insight, we propose Group Relative Attention Guidance (GRAG), a simple yet effective method that reweights the delta values of different tokens to modulate the focus of the model on the input image relative to the editing instruction, enabling continuous and fine-grained control over editing intensity without any tuning. Extensive experiments conducted on existing image editing frameworks demonstrate that GRAG can be integrated with as few as four lines of code, consistently enhancing editing quality. Moreover, compared to the commonly used Classifier-Free Guidance, GRAG achieves smoother and more precise control over the degree of editing.  Project page:https://little-misfit.github.io/GRAG-Image-Editing/Github code:https://github.com/little-misfit/GRAG-Image-EditingarXiv link:https://arxiv.org/abs/2510.24657 ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Group Relative Attention Guidance for Image Editing",
+    "authors": [
+      "Penghui Du",
+      "Kai Wu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/little-misfit/GRAG-Image-Editing",
+    "huggingface_url": "https://huggingface.co/papers/2510.24657",
+    "upvote": 25,
+    "tags": []
+  }
+}

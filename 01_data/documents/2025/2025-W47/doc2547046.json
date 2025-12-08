@@ -1,0 +1,12 @@
+{
+  "context": "OmniZip is a training-free framework that compresses audio-visual tokens by dynamically pruning video tokens based on audio retention scores, achieving significant inference speedup and memory reduction without sacrificing performance. Omnimodal large language models (OmniLLMs) have attracted increasing research attention of late towards unified audio-video understanding, wherein processing audio-video token sequences creates a significant computational bottleneck, however. Existing token compression methods have yet to accommodate this emerging need of jointly compressing multimodal tokens. To bridge this gap, we present OmniZip, a training-free, audio-guidedaudio-visual token-compressionframework that optimizes multimodal token representation and accelerates inference. Specifically, OmniZip first identifiessalient audio tokens, then computes anaudio retention scorefor each time group to capture information density, thereby dynamically guidingvideo token pruningand preserving cues from audio anchors enhanced bycross-modal similarity. For each time window, OmniZip compresses the video tokens using aninterleaved spatio-temporal scheme. Extensive empirical results demonstrate the merits of OmniZip - it achieves 3.42X inference speedup and 1.4X memory reduction over other top-performing counterparts, while maintaining performance with no training. Code Link:https://github.com/KD-TAO/OmniZip This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "OmniZip: Audio-Guided Dynamic Token Compression for Fast Omnimodal Large Language Models",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/KD-TAO/OmniZip",
+    "huggingface_url": "https://huggingface.co/papers/2511.14582",
+    "upvote": 17,
+    "tags": []
+  }
+}

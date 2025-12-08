@@ -1,0 +1,14 @@
+{
+  "context": "Large Multimodal Models (LMMs) encode rich factual knowledge via cross-modal\npre-training, yet their static representations struggle to maintain an accurate\nunderstanding of time-sensitive factual knowledge. Existing benchmarks remain\nconstrained by static designs, inadequately evaluating LMMs' ability to\nunderstand time-sensitive knowledge. To address this gap, we propose MINED, a\ncomprehensive benchmark that evaluates temporal awareness along 6 key\ndimensions and 11 challenging tasks: cognition, awareness, trustworthiness,\nunderstanding, reasoning, and robustness. MINED is constructed from Wikipedia\nby two professional annotators, containing 2,104 time-sensitive knowledge\nsamples spanning six knowledge types. Evaluating 15 widely used LMMs on MINED\nshows that Gemini-2.5-Pro achieves the highest average CEM score of 63.07,\nwhile most open-source LMMs still lack time understanding ability. Meanwhile,\nLMMs perform best on organization knowledge, whereas their performance is\nweakest on sport. To address these challenges, we investigate the feasibility\nof updating time-sensitive knowledge in LMMs through knowledge editing methods\nand observe that LMMs can effectively update knowledge via knowledge editing\nmethods in single editing scenarios. Temporal Awareness Evaluation, Comprehensive Benchmarking, and Multi-Dimensional Analysis!  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "MINED: Probing and Updating with Multimodal Time-Sensitive Knowledge for\n  Large Multimodal Models",
+    "authors": [
+      "Kailin Jiang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/MINED-LMM/MINED",
+    "huggingface_url": "https://huggingface.co/papers/2510.19457",
+    "upvote": 8,
+    "tags": []
+  }
+}

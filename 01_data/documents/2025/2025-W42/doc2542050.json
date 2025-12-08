@@ -1,0 +1,12 @@
+{
+  "context": "Diffusion models have achieved remarkable success as generative models.\nHowever, even a well-trained model can accumulate errors throughout the\ngeneration process. These errors become particularly problematic when arbitrary\nguidance is applied to steer samples toward desired properties, which often\nbreaks sample fidelity. In this paper, we propose a general solution to address\nthe off-manifold phenomenon observed in diffusion models. Our approach\nleverages a time predictor to estimate deviations from the desired data\nmanifold at each timestep, identifying that a larger time gap is associated\nwith reduced generation quality. We then design a novel guidance mechanism,\n`Temporal Alignment Guidance' (TAG), attracting the samples back to the desired\nmanifold at every timestep during generation. Through extensive experiments, we\ndemonstrate that TAG consistently produces samples closely aligned with the\ndesired manifold at each timestep, leading to significant improvements in\ngeneration quality across various downstream tasks. TL;DR:  We propose Temporal Alignment Guidance (TAG), a framework that provably mitigates off-manifold errors in diffusion models by guiding samples back to the data manifold at each timestep, significantly improving generation quality across tasks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Temporal Alignment Guidance: On-Manifold Sampling in Diffusion Models",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.11057",
+    "upvote": 30,
+    "tags": []
+  }
+}

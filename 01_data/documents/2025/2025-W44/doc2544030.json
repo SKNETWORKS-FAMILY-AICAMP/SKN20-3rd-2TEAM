@@ -1,0 +1,16 @@
+{
+  "context": "ORCA uses learnable task and visual prompts to adapt pre-trained text-to-image diffusion models for robotic control, achieving state-of-the-art performance on benchmarks. While pre-trained visual representations have significantly advanced\nimitation learning, they are often task-agnostic as they remain frozen during\npolicy learning. In this work, we explore leveraging pre-trained text-to-image\ndiffusion models to obtaintask-adaptive visual representationsfor robotic\ncontrol, without fine-tuning the model itself. However, we find that naively\napplying textual conditions - a successful strategy in other vision domains -\nyields minimal or even negative gains in control tasks. We attribute this to\nthedomain gapbetween the diffusion model's training data androbotic controlenvironments, leading us to argue for conditions that consider the specific,\ndynamic visual information required for control. To this end, we propose ORCA,\nwhich introduceslearnable task promptsthat adapt to the control environment\nandvisual promptsthat capture fine-grained,frame-specific details. Through\nfacilitating task-adaptive representations with our newly devised conditions,\nour approach achieves state-of-the-art performance on variousrobotic controlbenchmarks, significantly surpassing prior methods. ORCA aims to solve robotic control tasks in a task-adaptive way, through conditioning diffusion models.Project page:https://orca-rc.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Exploring Conditions for Diffusion models in Robotic Control",
+    "authors": [
+      "Heeseong Shin",
+      "Byeongho Heo",
+      "Taekyung Kim"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.15510",
+    "upvote": 39,
+    "tags": []
+  }
+}

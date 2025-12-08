@@ -1,0 +1,14 @@
+{
+  "context": "The Generalized Adversarial Solver improves diffusion model sampling efficiency and quality by combining a simple ODE solver parameterization with adversarial training. Whilediffusion modelsachieve state-of-the-art generation quality, they\nstill suffer from computationally expensive sampling. Recent works address this\nissue withgradient-based optimizationmethods that distill a few-step ODE\ndiffusion solver from the full sampling process, reducing the number offunction evaluationsfrom dozens to just a few. However, these approaches often\nrely on intricate training techniques and do not explicitly focus on preserving\nfine-grained details. In this paper, we introduce theGeneralized Solver: a\nsimple parameterization of the ODE sampler that does not require additional\ntraining tricks and improves quality over existing approaches. We further\ncombine the original distillation loss withadversarial training, which\nmitigates artifacts and enhances detail fidelity. We call the resulting method\ntheGeneralized Adversarial Solverand demonstrate its superior performance\ncompared to existing solver training methods under similar resource\nconstraints. Code is available at https://github.com/3145tttt/GAS. We introduce the Generalized Adversarial Solver (GAS) — a simple yet powerful approach to greatly accelerate diffusion model sampling (up to 5x) without sacrificing generation quality and fine-grained detail Our method is based on a novel trainable parametrization of a solver, which can adapt to the diffusion model utilized in your generation pipeline, thus, solve the underlying ODE with more precision More details about method's implementations, experiments, and ablation studies can be found in our preprint 📄 Preprint:https://arxiv.org/abs/2510.17699👾 Code:https://github.com/3145tttt/GAS This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "GAS: Improving Discretization of Diffusion ODEs via Generalized\n  Adversarial Solver",
+    "authors": [
+      "Aleksandr Oganov"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/3145tttt/GAS/tree/main",
+    "huggingface_url": "https://huggingface.co/papers/2510.17699",
+    "upvote": 24,
+    "tags": []
+  }
+}

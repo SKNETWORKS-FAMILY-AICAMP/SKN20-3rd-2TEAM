@@ -1,0 +1,15 @@
+{
+  "context": "CALM framework uses expert interventions to refine LRM reasoning for optimization tasks, achieving high accuracy with fewer modifications compared to traditional methods. Large Reasoning Models(LRMs) have demonstrated strong capabilities in\ncomplex multi-step reasoning, opening new opportunities for automating\noptimization modeling. However, existingdomain adaptationmethods, originally\ndesigned for earlier instruction-tuned models, often fail to exploit the\nadvanced reasoning patterns of modern LRMs -- In particular, we show that\ndirectfine-tuningon traditionalnon-reflective datasetsleads to\nlimited gains. To fully leverage LRMs' inherent reasoning abilities, we proposeCALM(Corrective AdaptationwithLightweight Modification), a\nframework that progressively refines LRMs within their native reasoning modes\nfor optimization modeling tasks. InCALM, an expert intervener identifiesreasoning flawsand provides concisecorrective hints, which the LRM\nincorporates to produce improvedreasoning trajectories. These interventions\nmodify fewer than 2.6\\% of generated tokens, but generate high-quality data forsoft adaptationthroughsupervised fine-tuning. The adapted model is then\nfurther improved throughreinforcement learning. Building onCALM, we developSTORM(Smart Thinking Optimization Reasoning Model), a\n4B-parameter LRM that achieves a new state-of-the-art average accuracy of\n68.9\\% across five popular optimization modeling benchmarks, matching the\nperformance of a 671B LRM. These results demonstrate that dynamic, hint-based\ndata synthesis both preserves and amplifies the native reasoning patterns of\nmodern LRMs, offering a more effective and scalable path towards expert-level\nperformance on challenging optimization modeling tasks. We introduce STORM, a 4B parameter model that achieves new SOTA on 5 optimization modeling benchmarks (68.9% avg acc), matching the performance of a 671B model. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "CALM Before the STORM: Unlocking Native Reasoning for Optimization\n  Modeling",
+    "authors": [
+      "Zhengyang Tang",
+      "Xuhan Huang"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.04204",
+    "upvote": 19,
+    "tags": []
+  }
+}

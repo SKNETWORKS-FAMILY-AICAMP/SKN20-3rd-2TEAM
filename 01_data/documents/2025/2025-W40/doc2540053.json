@@ -1,0 +1,16 @@
+{
+  "context": "ModernVBERT, a compact vision-language encoder, outperforms larger models in document retrieval by optimizing attention masking, image resolution, modality alignment, and contrastive objectives. Multimodal embedding modelsare gaining prevalence, notably for document\nretrieval as efficient alternatives to text-only pipelines. These models are\ntypically built by finetuning largevision-language decoders(VLMs) withcontrastive losseson text-image pairs. In this work, we show that, while\ncost-efficient, this repurposing approach often bottlenecks retrieval\nperformance. Through controlled experiments, we establish a principled recipe\nfor improving visualdocument retrievalmodels. We notably measure the impact\nofattention masking,image resolution,modality alignmentdata regimes, and\nlate interaction centeredcontrastive objectiveswhich emerge as central\nperformance factors. Building on these insights, we release ModernVBERT, a\ncompact 250M-parametervision-language encoderthat outperforms models up to 10\ntimes larger when finetuned ondocument retrievaltasks. Models and code are\nmade available at https://huggingface.co/ModernVBERT. Multimodal embedding models are gaining prevalence, notably for document retrieval as efficient alternatives to text-only pipelines. These models are typically built by finetuning large vision-language decoders (VLMs) with contrastive losses on text-image pairs. In this work, we show that, while cost-efficient, this repurposing approach often bottlenecks retrieval performance. Through controlled experiments, we establish a principled recipe for improving visual document retrieval models. We notably measure the impact of attention masking, image resolution, modality alignment data regimes, and late interaction centered contrastive objectives which emerge as central performance factors. Building on these insights, we release ModernVBERT, a compact 250M-parameter vision-language encoder that outperforms models up to 10 times larger when finetuned on document retrieval tasks. Models and code are made available. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ModernVBERT: Towards Smaller Visual Document Retrievers",
+    "authors": [
+      "Quentin Macé",
+      "Antonio Loison",
+      "Manuel Faysse"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.01149",
+    "upvote": 30,
+    "tags": []
+  }
+}

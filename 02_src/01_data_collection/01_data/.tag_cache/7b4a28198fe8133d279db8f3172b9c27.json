@@ -1,0 +1,11 @@
+{
+  "title": "OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid\n  Validation in Realistic Workflows",
+  "abstract": "A hybrid safety detection framework combining formal verification and VLM-based contextual assessment improves the detection of unsafe operations in mobile agents. Computer-using agents powered byVisi",
+  "tags": [
+    "Agents and Tools",
+    "Safety and Ethics",
+    "Efficient AI"
+  ],
+  "timestamp": 1765199763.0667722,
+  "model": "gpt-3.5-turbo"
+}

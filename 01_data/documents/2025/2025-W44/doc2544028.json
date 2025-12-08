@@ -1,0 +1,19 @@
+{
+  "context": "URSA, a discrete generative model, bridges the gap with continuous approaches in video generation by using iterative refinement, linearized metric paths, and resolution-dependent timestep shifting, achieving performance comparable to state-of-the-art continuous methods. Continuous-spacevideo generationhas advanced rapidly, while discrete\napproaches lag behind due to error accumulation and long-context inconsistency.\nIn this work, we revisitdiscrete generative modelingand present Uniform\ndiscRete diffuSion with metric pAth (URSA), a simple yet powerful framework\nthat bridges the gap with continuous approaches for the scalable video\ngeneration. At its core, URSA formulates thevideo generationtask as aniterative global refinementofdiscrete spatiotemporal tokens. It integrates\ntwo key designs: aLinearized Metric Pathand a Resolution-dependent Timestep\nShifting mechanism. These designs enable URSA to scale efficiently to\nhigh-resolutionimage synthesisandlong-duration video generation, while\nrequiring significantly fewer inference steps. Additionally, we introduce anasynchronous temporal fine-tuningstrategy that unifies versatile tasks within\na single model, includinginterpolationandimage-to-video generation.\nExtensive experiments on challenging video and image generation benchmarks\ndemonstrate that URSA consistently outperforms existing discrete methods and\nachieves performance comparable to state-of-the-art continuous diffusion\nmethods. Code and models are available at https://github.com/baaivision/URSA We presentURSA(Uniform discRete diffuSion with metric pAth), a simple yet powerful framework that bridges the gap with continuous approaches.URSAformulates the video generation task as an iterative global refinement of discrete spatiotemporal tokens and scales efficiently to long video generation, requiring fewer inference steps.URSAenables multi-task video generation with asynchronous timestep scheduling strategy in one unified model. Paper link:https://arxiv.org/abs/2510.24717Code available at:https://github.com/baaivision/URSA ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Uniform Discrete Diffusion with Metric Path for Video Generation",
+    "authors": [
+      "Haoge Deng",
+      "Ting Pan",
+      "Fan Zhang",
+      "Yufeng Cui",
+      "Wenxuan Wang",
+      "Xinlong Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/baaivision/URSA",
+    "huggingface_url": "https://huggingface.co/papers/2510.24717",
+    "upvote": 39,
+    "tags": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "context": "Knocking-heads attention (KHA) enhances multi-head attention by enabling cross-head interactions, improving training dynamics and performance in large language models. Multi-head attention(MHA) has become the cornerstone of modern large\nlanguage models, enhancing representational capacity through parallel attention\nheads. However, increasing the number of heads inherently weakens individual\nhead capacity, and existing attention mechanisms - whether standardMHAor its\nvariants likegrouped-query attention(GQA) andgrouped-tied attention(GTA) -\nsimply concatenate outputs from isolated heads without strong interaction. To\naddress this limitation, we proposeknocking-heads attention(KHA), which\nenables attention heads to \"knock\" on each other - facilitating cross-head\nfeature-level interactions before thescaled dot-product attention. This is\nachieved by applying a shared, diagonally-initialized projection matrix across\nall heads. The diagonal initialization preserves head-specific specialization\nat the start of training while allowing the model to progressively learn\nintegrated cross-head representations.KHAadds only minimal parameters and\nFLOPs and can be seamlessly integrated intoMHA,GQA,GTA, and other attention\nvariants. We validateKHAby training a 6.1B parameterMoEmodel (1.01B\nactivated) on 1Thigh-quality tokens. Compared to baseline attention\nmechanisms,KHAbrings superior and more stabletraining dynamics, achieving\nbetter performance acrossdownstream tasks. Knocking-Heads Attention (KHA)enables attention heads to \"knock\" and interact with each other before computing attention, addressing the limitation that traditional multi-head attention processes heads independently and simply concatenates outputs. Using adiagonally-initialized shared projection matrix, KHA facilitates cross-head feature interactions while preserving head specialization,achieving superior performance and training stabilitywith minimal additional parameters and computation. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Knocking-Heads Attention",
+    "authors": [
+      "Zhanchao Zhou",
+      "Xiaodong Chen",
+      "Haoxing Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.23052",
+    "upvote": 29,
+    "tags": []
+  }
+}

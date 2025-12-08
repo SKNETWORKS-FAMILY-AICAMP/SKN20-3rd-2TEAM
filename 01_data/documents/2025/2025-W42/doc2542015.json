@@ -1,0 +1,19 @@
+{
+  "context": "Alpha-Service, a unified framework for proactive AI assistance, uses a multi-agent system on AI glasses to detect service opportunities and provide timely, personalized assistance. In an era where AI is evolving from a passive tool into an active and\nadaptive companion, we introduce AI for Service (AI4Service), a new paradigm\nthat enables proactive and real-time assistance in daily life. Existing AI\nservices remain largely reactive, responding only to explicit user commands. We\nargue that a truly intelligent and helpful assistant should be capable of\nanticipating user needs and taking actions proactively when appropriate. To\nrealize this vision, we proposeAlpha-Service, a unified framework that\naddresses two fundamental challenges: Know When to intervene by detecting\nservice opportunities fromegocentric video streams, and Know How to provide\nboth generalized and personalized services. Inspired by the von Neumann\ncomputer architecture and based onAI glasses,Alpha-Serviceconsists of five\nkey components: anInput Unitfor perception, aCentral Processing Unitfor\ntask scheduling, anArithmetic Logic Unitfor tool utilization, aMemory Unitfor long-term personalization, and anOutput Unitfor natural human\ninteraction. As an initial exploration, we implementAlpha-Servicethrough amulti-agent systemdeployed onAI glasses. Case studies, including a real-time\nBlackjack advisor, a museum tour guide, and a shopping fit assistant,\ndemonstrate its ability to seamlessly perceive the environment, infer user\nintent, and provide timely and useful assistance without explicit prompts. In an era where AI is evolving from a passive tool into an active and adaptive companion, we introduce AI for Service (AI4Service), a new paradigm that enables proactive and real-time assistance in daily life. Existing AI services remain largely reactive, responding only to explicit user commands. We argue that a truly intelligent and helpful assistant should be capable of anticipating user needs and taking actions proactively when appropriate. To realize this vision, we propose Alpha-Service, a unified framework that addresses two fundamental challenges: Know When to intervene by detecting service opportunities from egocentric video streams, and Know How to provide both generalized and personalized services. Inspired by the von Neumann computer architecture and based on AI glasses, Alpha-Service consists of five key components: an Input Unit for perception, a Central Processing Unit for task scheduling, an Arithmetic Logic Unit for tool utilization, a Memory Unit for long-term personalization, and an Output Unit for natural human interaction. As an initial exploration, we implement Alpha-Service through a multi-agent system deployed on AI glasses. Case studies, including a real-time Blackjack advisor, a museum tour guide, and a shopping fit assistant, demonstrate its ability to seamlessly perceive the environment, infer user intent, and provide timely and useful assistance without explicit prompts. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "AI for Service: Proactive Assistance with AI Glasses",
+    "authors": [
+      "Zichen Wen",
+      "Chenfei Liao",
+      "Boxue Yang",
+      "Junxian Li",
+      "Haocong He",
+      "Bolong Feng"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.14359",
+    "upvote": 73,
+    "tags": []
+  }
+}

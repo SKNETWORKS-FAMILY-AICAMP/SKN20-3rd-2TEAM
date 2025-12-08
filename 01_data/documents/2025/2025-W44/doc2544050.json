@@ -1,0 +1,12 @@
+{
+  "context": "Permuted Block-Sparse Attention improves computational efficiency in large language models by enhancing block-level sparsity in the self-attention mechanism, achieving significant speedups without compromising accuracy. Scaling the context length of large language models (LLMs) offers significant\nbenefits but is computationally expensive. This expense stems primarily from\ntheself-attention mechanism, whose O(N^2) complexity with respect to\nsequence length presents a major bottleneck for both memory and latency.\nFortunately, the attention matrix is often sparse, particularly for long\nsequences, suggesting an opportunity for optimization.Block-sparse attentionhas emerged as a promising solution that partitions sequences into blocks and\nskips computation for a subset of these blocks. However, the effectiveness of\nthis method is highly dependent on the underlying attention patterns, which can\nlead to sub-optimal block-level sparsity. For instance, important key tokens\nfor queries within a single block may be scattered across numerous other\nblocks, leading to computational redundancy. In this work, we propose PermutedBlock-Sparse Attention(PBS-Attn), a plug-and-play method that\nleverages the permutation properties of attention to increase block-level\nsparsity and enhance the computational efficiency of LLM prefilling. We conduct\ncomprehensive experiments on challenging real-world long-context datasets,\ndemonstrating thatPBS-Attnconsistently outperforms existing block-sparse\nattention methods in model accuracy and closely matches the full attention\nbaseline. Powered by our custompermuted-FlashAttention kernels,PBS-Attnachieves an end-to-end speedup of up to 2.75times in long-context\nprefilling, confirming its practical viability. Code available at\nhttps://github.com/xinghaow99/pbs-attn Introducing Permuted Block-Sparse Attention (PBS-Attn), a plug-and-play method that leverages the permutation properties of attention to increase block-level sparsity and boost efficiency of LLM prefilling. Code:https://github.com/xinghaow99/pbs-attn ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Sparser Block-Sparse Attention via Token Permutation",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/xinghaow99/pbs-attn",
+    "huggingface_url": "https://huggingface.co/papers/2510.21270",
+    "upvote": 24,
+    "tags": []
+  }
+}

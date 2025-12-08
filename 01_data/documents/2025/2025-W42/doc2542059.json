@@ -1,0 +1,14 @@
+{
+  "context": "AuraGen and Safiron address pre-execution safety gaps in LLM agents by synthesizing benign trajectories, injecting risks, and using a cross-planner adapter for robust risk detection and explanation. While LLM agents can plan multi-step tasks, intervening at the planning\nstage-before any action is executed-is often the safest way to prevent harm,\nsince certain risks can lead to severe consequences once carried out. However,\nexisting guardrails mostly operate post-execution, which is difficult to scale\nand leaves little room for controllable supervision at the plan level. To\naddress this challenge, we highlight three critical gaps in current research:\ndata gap, model gap, and evaluation gap. To close the data gap, we introduceAuraGen, a controllable engine that (i) synthesizes benign trajectories, (ii)\ninjects category-labeled risks with calibrated difficulty, and (iii) filters\noutputs via anautomated reward model, producing large and reliable corpora for\npre-execution safety. To close the guardian model gap, we propose a\nfoundational guardrailSafiron, combining across-planner adapterwith acompact guardian model. The adapter unifies different input formats, whileSafironflags risky cases, assigns risk types, and generates rationales;\ntrained in two stages with a broadly explored data recipe,Safironachieves\nrobust transfer across settings. To close the evaluation gap, we releasePre-Exec Bench, a realistic benchmark covering diverse tools and branching\ntrajectories, which measures detection, fine-grained categorization,explanation, andcross-planner generalizationin human-verified scenarios.\nExtensive experiments demonstrate consistent gains of the proposed guardrail\nover strong baselines onPre-Exec Bench, and ablations further distill\nactionable practices, providing a practical template for safer agentic systems. Docs for AuraGen:https://howiehwong.github.io/Agentic-Guardian/Model:https://huggingface.co/Safiron/SafironCode:https://github.com/HowieHwong/Agentic-Guardian This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Building a Foundational Guardrail for General Agentic Systems via\n  Synthetic Data",
+    "authors": [
+      "Hang Hua"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/HowieHwong/Agentic-Guardian",
+    "huggingface_url": "https://huggingface.co/papers/2510.09781",
+    "upvote": 26,
+    "tags": []
+  }
+}

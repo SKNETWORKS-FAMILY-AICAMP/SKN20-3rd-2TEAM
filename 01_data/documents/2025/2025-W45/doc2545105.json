@@ -1,0 +1,14 @@
+{
+  "context": "A modified version of Monopoly Deal, featuring Bounded One-Sided Response Games, is used to study sequential decision-making with Counterfactual Regret Minimization. Card games are widely used to study sequential decision-making under\nuncertainty, with real-world analogues in negotiation, finance, and\ncybersecurity. These games typically fall into three categories based on the\nflow of control: strictly sequential (players alternate single actions),\ndeterministic response (some actions trigger a fixed outcome), and unbounded\nreciprocal response (alternating counterplays are permitted). A less-explored\nbut strategically rich structure is the bounded one-sided response, where a\nplayer's action briefly transfers control to the opponent, who must satisfy a\nfixed condition through one or more moves before the turn resolves. We term\ngames featuring this mechanismBounded One-Sided Response Games(BORGs). We\nintroduce a modified version of Monopoly Deal as a benchmark environment that\nisolates this dynamic, where a Rent action forces the opponent to choose\npayment assets. The gold-standard algorithm,Counterfactual Regret Minimization(CFR), converges on effective strategies without novel algorithmic extensions.\nA lightweight full-stack research platform unifies the environment, a\nparallelizedCFRruntime, and a human-playable web interface. The trainedCFRagent and source code are available at https://monopolydeal.ai.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Monopoly Deal: A Benchmark Environment for Bounded One-Sided Response\n  Games",
+    "authors": [
+      "Will Wolf"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.25080",
+    "upvote": 1,
+    "tags": []
+  }
+}

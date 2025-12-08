@@ -1,0 +1,14 @@
+{
+  "context": "Nemotron-Parse-1.1 is a lightweight OCR and document parsing model with improved capabilities in general OCR, markdown formatting, structured table parsing, and text extraction from images, using an encoder-decoder architecture. We introduce Nemotron-Parse-1.1, a lightweightdocument parsingandOCRmodel that advances the capabilities of its predecessor, Nemoretriever-Parse-1.0. Nemotron-Parse-1.1 delivers improved capabilities across generalOCR,markdown formatting,structured table parsing, andtext extractionfrom pictures, charts, and diagrams. It also supports a longer output sequence length for visually dense documents. As with its predecessor, it extractsbounding boxesof text segments, as well as correspondingsemantic classes. Nemotron-Parse-1.1 follows anencoder-decoder architecturewith 885M parameters, including a compact 256M-parameter language decoder. It achieves competitive accuracy on public benchmarks making it a strong lightweightOCRsolution. We release the model weights publicly onHuggingface, as well as an optimizedNIM container, along with a subset of the training data as part of the broader Nemotron-VLM-v2 dataset. Additionally, we release Nemotron-Parse-1.1-TC which operates on a reduced vision token length, offering a 20% speed improvement with minimal quality degradation. Lightweight 885M-parameter encoder-decoder OCR model for improved document parsing (OCR, markdown, tables) with bounding-box outputs and a faster 1.1-TC variant, released publicly. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "NVIDIA Nemotron Parse 1.1",
+    "authors": [
+      "Amala Sanjay Deshmukh"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.20478",
+    "upvote": 20,
+    "tags": []
+  }
+}

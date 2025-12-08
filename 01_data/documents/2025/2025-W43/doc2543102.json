@@ -1,0 +1,16 @@
+{
+  "context": "Current large language models exhibit significant limitations in social reasoning, particularly in inferring interpersonal relationships across different languages, and thinking models or chain-of-thought prompting offer minimal improvement. Aslarge language models(LLMs) are increasingly used in human-AI\ninteractions, theirsocial reasoningcapabilities in interpersonal contexts are\ncritical. We introduceSCRIPTS, a 1k-dialogue datasetin English and Korean,\nsourced from moviescripts. The task involves evaluating models' social\nreasoning capability to infer theinterpersonal relationships(e.g., friends,\nsisters, lovers) between speakers in each dialogue. Each dialogue is annotated\nwithprobabilistic relational labels(Highly Likely, Less Likely, Unlikely) by\nnative (or equivalent) Korean and English speakers from Korea and the U.S.\nEvaluating nine models on our task, current proprietary LLMs achieve around\n75-80% on the English dataset, whereas their performance on Korean drops to\n58-69%. More strikingly, models select Unlikely relationships in 10-25% of\ntheir responses. Furthermore, we find thatthinking modelsand chain-of-thought\nprompting, effective for general reasoning, provide minimal benefits for social\nreasoning and occasionally amplify social biases. Our findings reveal\nsignificant limitations in current LLMs'social reasoningcapabilities,\nhighlighting the need for efforts to developsocially-aware language models. github:https://github.com/rladmstn1714/SCRIPTS This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Are they lovers or friends? Evaluating LLMs' Social Reasoning in English\n  and Korean Dialogues",
+    "authors": [
+      "Eunsu Kim",
+      "Kiwoong Park",
+      "Seyoung Song"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/rladmstn1714/SCRIPTS",
+    "huggingface_url": "https://huggingface.co/papers/2510.19028",
+    "upvote": 7,
+    "tags": []
+  }
+}

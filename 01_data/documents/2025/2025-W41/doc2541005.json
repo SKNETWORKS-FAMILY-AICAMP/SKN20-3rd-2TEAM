@@ -1,0 +1,15 @@
+{
+  "context": "PaperTalker is a multi-agent framework that automates academic presentation video generation by integrating slide generation, layout refinement, subtitling, speech synthesis, and talking-head rendering, outperforming existing methods. Academic presentation videos have become an essential medium for research\ncommunication, yet producing them remains highly labor-intensive, often\nrequiring hours of slide design, recording, and editing for a short 2 to 10\nminutes video. Unlike natural video, presentation video generation involves\ndistinctive challenges: inputs from research papers, dense multi-modal\ninformation (text, figures, tables), and the need to coordinate multiple\naligned channels such as slides, subtitles, speech, and human talker. To\naddress these challenges, we introduce PaperTalker, the first benchmark of 101\nresearch papers paired with author-created presentation videos, slides, and\nspeaker metadata. We further design four tailored evaluation metrics--Meta\nSimilarity, PresentArena, PresentQuiz, and IP Memory--to measure how videos\nconvey the paper's information to the audience. Building on this foundation, we\npropose PaperTalker, the firstmulti-agent frameworkfor academic presentation\nvideo generation. It integratesslide generationwith effective layout\nrefinement by a novel effectivetree search visual choice,cursor grounding,subtitling,speech synthesis, andtalking-head rendering, while parallelizingslide-wise generationfor efficiency. Experiments on Paper2Video demonstrate\nthat the presentation videos produced by our approach are more faithful and\ninformative than existing baselines, establishing a practical step toward\nautomated and ready-to-use academic video generation. Our dataset, agent, and\ncode are available at https://github.com/showlab/Paper2Video.  We addressHow to create a presentation video from a paperandHow to evaluate presentation video.  💻 Github:https://github.com/showlab/Paper2Video🌐 Website:https://showlab.github.io/Paper2Video/📜 ArXiv:https://arxiv.org/abs/2510.05096🤗 HF datasets:https://huggingface.co/datasets/ZaynZhu/Paper2Video This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Paper2Video: Automatic Video Generation from Scientific Papers",
+    "authors": [
+      "Zeyu Zhu",
+      "Kevin Qinghong Lin"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/showlab/Paper2Video",
+    "huggingface_url": "https://huggingface.co/papers/2510.05096",
+    "upvote": 116,
+    "tags": []
+  }
+}

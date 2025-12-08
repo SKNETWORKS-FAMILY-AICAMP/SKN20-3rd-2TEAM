@@ -1,0 +1,18 @@
+{
+  "context": "LMT, a suite of large-scale multilingual translation models, addresses challenges in multilingual machine translation through strategic downsampling and parallel multilingual prompting, achieving state-of-the-art performance across 60 languages. Large language models have significantly advancedMultilingual Machine Translation(MMT), yet the broad language coverage, consistent translation quality, and English-centric bias remain open challenges. To address these challenges, we introduceLMT, a suite ofLarge-scale Multilingual Translationmodels centered on both Chinese and English, covering 60 languages and 234 translation directions. During development, we identify a previously overlooked phenomenon ofdirectional degeneration, where symmetric multi-way fine-tuning data overemphasize reverse directions (X to En/Zh), leading to excessive many-to-one mappings and degraded translation quality. We proposeStrategic Downsampling, a simple yet effective method to mitigate this degeneration. In addition, we designParallel Multilingual Prompting(PMP), which leverages typologically related auxiliary languages to enhancecross-lingual transfer. Through rigorous data curation and refined adaptation strategies,LMTachieves SOTA performance among models of comparable language coverage, with our 4B model (LMT-60-4B) surpassing the much larger Aya-101-13B and NLLB-54B models by a substantial margin. We releaseLMTin four sizes (0.6B/1.7B/4B/8B) to catalyze future research and provide strong baselines for inclusive, scalable, and high-quality MMT \\href{https://github.com/NiuTrans/LMT{https://github.com/NiuTrans/LMT}}. Beyond English: Toward Inclusive and Scalable Multilingual Machine Translation with LLMs This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Beyond English: Toward Inclusive and Scalable Multilingual Machine Translation with LLMs",
+    "authors": [
+      "Yingfeng Luo",
+      "Ziqiang Xu",
+      "Kaiyan Chang",
+      "Peinan Feng",
+      "Tong Xiao"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/NiuTrans/LMT",
+    "huggingface_url": "https://huggingface.co/papers/2511.07003",
+    "upvote": 32,
+    "tags": []
+  }
+}

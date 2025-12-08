@@ -1,0 +1,14 @@
+{
+  "context": "Flawed-Aware Policy Optimization (FAPO) enhances reinforcement learning with verifiable rewards by penalizing flawed-positive rollouts, improving reasoning capability and training stability in large language models. Reinforcement learningwithverifiable rewards(RLVR) has emerged as a\npromising paradigm for enhancing the reasoning capabilities of large language\nmodels (LLMs). In this context, models explorereasoning trajectoriesand\nexploit rollouts with correct answers as positive signals for policy\noptimization. However, these rollouts might involve flawed patterns such as\nanswer-guessing and jump-in-reasoning. Suchflawed-positive rolloutsare\nrewarded identically to fully correct ones, causing policy models to\ninternalize these unreliable reasoning patterns. In this work, we first conduct\na systematic study offlawed-positive rolloutsin RL and find that they enable\nrapid capability gains during the early optimization stage, while constraining\nreasoning capability later by reinforcing unreliable patterns. Building on\nthese insights, we propose Flawed-AwarePolicy Optimization(FAPO), which\npresents aparameter-free reward penaltyforflawed-positive rollouts, enabling\nthe policy to leverage them as useful shortcuts in the warm-up stage, securing\nstable early gains, while gradually shifting optimization toward reliable\nreasoning in the later refinement stage. To accurately and comprehensively\ndetectflawed-positive rollouts, we introduce agenerative reward model(GenRM)\nwith aprocess-level rewardthat precisely localizesreasoning errors.\nExperiments show that FAPO is effective in broad domains, improving outcome\ncorrectness, process reliability, and training stability without increasing the\ntoken budget. Project homepage:https://fapo-rl.github.io ·Sign uporlog into comment",
+  "metadata": {
+    "title": "FAPO: Flawed-Aware Policy Optimization for Efficient and Reliable\n  Reasoning",
+    "authors": [
+      "Yuyang Ding"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/volcengine/verl/tree/main/recipe/fapo",
+    "huggingface_url": "https://huggingface.co/papers/2510.22543",
+    "upvote": 10,
+    "tags": []
+  }
+}

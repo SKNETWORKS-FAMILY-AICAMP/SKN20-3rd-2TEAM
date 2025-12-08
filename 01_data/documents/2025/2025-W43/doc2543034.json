@@ -1,0 +1,16 @@
+{
+  "context": "Nyx, a unified mixed-modal retriever, enhances vision-language generation by retrieving and reasoning over mixed-modal data, outperforming existing RAG systems in real-world scenarios. Retrieval-Augmented Generation(RAG) has emerged as a powerful paradigm for\nenhancinglarge language models(LLMs) by retrieving relevant documents from an\nexternal corpus. However, existingRAGsystems primarily focus on unimodal text\ndocuments, and often fall short in real-world scenarios where both queries and\ndocuments may containmixed modalities(such as text and images). In this\npaper, we address the challenge ofUniversal Retrieval-Augmented Generation(URAG), which involves retrieving and reasoning over mixed-modal information to\nimprove vision-language generation. To this end, we proposeNyx, a unified\nmixed-modal to mixed-modal retriever tailored forURAGscenarios. To mitigate\nthe scarcity of realistic mixed-modal data, we introduce a four-stage automated\npipeline for generation and filtering, leveraging web documents to constructNyxQA, a dataset comprising diverse mixed-modal question-answer pairs that\nbetter reflect real-world information needs. Building on this high-quality\ndataset, we adopt atwo-stage training frameworkforNyx: we first performpre-trainingonNyxQAalong with a variety of open-source retrieval datasets,\nfollowed bysupervised fine-tuningusing feedback from downstreamvision-language models(VLMs) to align retrieval outputs with generative\npreferences. Experimental results demonstrate thatNyxnot only performs\ncompetitively on standard text-onlyRAGbenchmarks, but also excels in the more\ngeneral and realisticURAGsetting, significantly improvinggeneration qualityinvision-language tasks. We proposedNyx, a unified mixed-modal retriever tailored for URAG scenarios, and constructedNyxQA, a large-scale mixed-modal QA dataset. Our framework includes:  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Towards Mixed-Modal Retrieval for Universal Retrieval-Augmented\n  Generation",
+    "authors": [
+      "Chenghao Zhang",
+      "Guanting Dong",
+      "Zhicheng Dou"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/SnowNation101/Nyx",
+    "huggingface_url": "https://huggingface.co/papers/2510.17354",
+    "upvote": 33,
+    "tags": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "context": "MedVLSynther synthesizes high-quality medical VQA data from open literature, improving LMM performance across benchmarks through a generator-verifier framework. LargeMultimodal Models(LMMs) are increasingly capable of answering medical\nquestions that require joint reasoning over images and text, yet training\ngeneral medicalVQAsystems is impeded by the lack of large, openly usable,\nhigh-quality corpora. We presentMedVLSynther, a rubric-guidedgenerator-verifier frameworkthat synthesizes high-quality multiple-choiceVQAitems directly from openbiomedical literatureby conditioning on figures,\ncaptions, and in-text references. The generator produces self-contained stems\nand parallel, mutually exclusive options under a machine-checkableJSON schema;\na multi-stage verifier enforces essential gates (self-containment, single\ncorrect answer, clinical validity, image-text consistency), awards fine-grained\npositive points, and penalizes common failure modes before acceptance. Applying\nthis pipeline to PubMed Central yieldsMedSynVQA: 13,087 audited questions over\n14,803 images spanning 13 imaging modalities and 28 anatomical regions.\nTraining open-weight LMMs withreinforcement learningusing verifiable rewards\nimproves accuracy across six medicalVQAbenchmarks, achieving averages of\n55.85 (3B) and 58.15 (7B), with up to 77.57 onVQA-RADand 67.76 onPathVQA,\noutperforming strong medical LMMs. A Ablations verify that both generation and\nverification are necessary and that more verified data consistently helps, and\na targeted contamination analysis detects no leakage from evaluation suites. By\noperating entirely on open literature and open-weight models,MedVLSyntheroffers an auditable, reproducible, andprivacy-preservingpath to scalable\nmedicalVQAtraining data. Excited to announce a full-stack open release of our data, code, and models to advance open science!Link:https://ucsc-vlaa.github.io/MedVLSynther/HF:https://huggingface.co/MedVLSynther ·Sign uporlog into comment",
+  "metadata": {
+    "title": "MedVLSynther: Synthesizing High-Quality Visual Question Answering from\n  Medical Documents with Generator-Verifier LMMs",
+    "authors": [
+      "Xiaoke Huang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/UCSC-VLAA/MedVLSynther",
+    "huggingface_url": "https://huggingface.co/papers/2510.25867",
+    "upvote": 6,
+    "tags": []
+  }
+}

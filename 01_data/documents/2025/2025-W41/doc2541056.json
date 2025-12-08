@@ -1,0 +1,14 @@
+{
+  "context": "LLMs finetuned on misaligned data exhibit dishonest behavior, which can be exacerbated in downstream tasks and human-AI interactions. Previous research has shown thatLLMsfinetuned on malicious or incorrect\ncompletions within narrow domains (e.g., insecure code or incorrect medical\nadvice) can become broadly misaligned to exhibit harmful behaviors, which is\ncalledemergent misalignment. In this work, we investigate whether this\nphenomenon can extend beyond safety behaviors to a broader spectrum ofdishonestyanddeceptionunderhigh-stakes scenarios(e.g., lying under\npressure and deceptive behavior). To explore this, we finetune open-sourcedLLMson misaligned completions across diverse domains. Experimental results\ndemonstrate thatLLMsshow broadly misaligned behavior indishonesty.\nAdditionally, we further explore this phenomenon in a downstream combinedfinetuningsetting, and find that introducing as little as 1% of misalignment\ndata into a standard downstream task is sufficient to decrease honest behavior\nover 20%. Furthermore, we consider a more practicalhuman-AI interactionenvironment where we simulate both benign andbiased usersto interact with the\nassistant LLM. Notably, we find that the assistant can be misaligned\nunintentionally to exacerbate itsdishonestywith only 10% biased user\npopulation. In summary, we extend the study ofemergent misalignmentto the\ndomain ofdishonestyanddeceptionunderhigh-stakes scenarios, and demonstrate\nthat this risk arises not only through directfinetuning, but also in\ndownstream mixture tasks and practicalhuman-AI interactions. We extend the study of emergent misalignment beyond safety to the domain of dishonesty and deception, showing that even minimal or unintentional exposure through misaligned data, mixed downstream finetuning, or practical human-AI interactions can induce severe and generalized dishonest behaviors in LLMs. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "LLMs Learn to Deceive Unintentionally: Emergent Misalignment in\n  Dishonesty from Misaligned Samples to Biased Human-AI Interactions",
+    "authors": [
+      "XuHao Hu"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.08211",
+    "upvote": 22,
+    "tags": []
+  }
+}

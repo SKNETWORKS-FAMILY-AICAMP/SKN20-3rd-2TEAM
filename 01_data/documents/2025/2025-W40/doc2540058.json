@@ -1,0 +1,18 @@
+{
+  "context": "A new benchmark, Personalized Deep Research Bench, evaluates the personalization capabilities of Deep Research Agents across diverse tasks and user profiles using the PQR Evaluation Framework. Deep Research Agents(DRAs) can autonomously conduct complex investigations\nand generate comprehensive reports, demonstrating strong real-world potential.\nHowever, existing evaluations mostly rely on close-ended benchmarks, while\nopen-ended deep research benchmarks remain scarce and typically neglect\npersonalized scenarios. To bridge this gap, we introduce Personalized Deep\nResearch Bench, the first benchmark for evaluating personalization in DRAs. It\npairs 50 diverse research tasks across 10 domains with 25 authentic user\nprofiles that combine structured persona attributes with dynamic real-world\ncontexts, yielding 250 realistic user-task queries. To assess system\nperformance, we propose thePQR Evaluation Framework, which jointly measures\n(P)Personalization Alignment, (Q)Content Quality, and (R) Factual\nReliability. Our experiments on a range of systems highlight current\ncapabilities and limitations in handling personalized deep research. This work\nestablishes a rigorous foundation for developing and evaluating the next\ngeneration of truly personalized AI research assistants. We introduce Personalized Deep Research Bench, the first benchmark for evaluating personalization in deep research agents. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Towards Personalized Deep Research: Benchmarks and Evaluations",
+    "authors": [
+      "Yuqing Wang",
+      "Motong Tian",
+      "Ge Zhang",
+      "Minghao Liu",
+      "Ningyu Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2509.25106",
+    "upvote": 29,
+    "tags": []
+  }
+}

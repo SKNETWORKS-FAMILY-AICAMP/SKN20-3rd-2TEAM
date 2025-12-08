@@ -1,0 +1,15 @@
+{
+  "context": "OpenTSLM integrates time series into pretrained LLMs using soft prompting and cross-attention, outperforming text-only models on clinical reasoning tasks. LLMs have emerged as powerful tools for interpreting multimodal data. In\nmedicine, they hold particular promise for synthesizing large volumes of\nclinical information into actionable insights and digital health applications.\nYet, a major limitation remains their inability to handle time series. To\novercome this gap, we present OpenTSLM, a family ofTime Series Language Models(TSLMs) created by integrating time series as a native modality to pretrained\nLLMs, enabling reasoning over multiple time series of any length. We\ninvestigate two architectures for OpenTSLM. The first, OpenTSLM-SoftPrompt,\nmodels time series implicitly by concatenating learnable time series tokens\nwith text tokens viasoft prompting. Although parameter-efficient, we\nhypothesize that explicit time series modeling scales better and outperforms\nimplicit approaches. We thus introduce OpenTSLM-Flamingo, which integrates time\nseries with text viacross-attention. We benchmark both variants against\nbaselines that treat time series as text tokens or plots, across a suite of\ntext-time-seriesChain-of-Thought(CoT) reasoning tasks. We introduce three\ndatasets:HAR-CoT,Sleep-CoT, andECG-QA-CoT. Across all, OpenTSLM models\noutperform baselines, reaching 69.9 F1 in sleep staging and 65.4 in HAR,\ncompared to 9.05 and 52.2 for finetuned text-only models. Notably, even\n1B-parameter OpenTSLM models surpassGPT-4o(15.47 and 2.95). OpenTSLM-Flamingo\nmatches OpenTSLM-SoftPrompt in performance and outperforms on longer sequences,\nwhile maintaining stable memory requirements. By contrast, SoftPrompt grows\nexponentially in memory with sequence length, requiring around 110 GB compared\nto 40 GB VRAM when training on ECG-QA withLLaMA-3B. Expert reviews by\nclinicians find strong reasoning capabilities exhibited by OpenTSLMson ECG-QA.\nTo facilitate further research, we provide all code, datasets, and models\nopen-source. 💡 Highlights This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "OpenTSLM: Time-Series Language Models for Reasoning over Multivariate\n  Medical Text- and Time-Series Data",
+    "authors": [
+      "Patrick Langer",
+      "Thomas Kaar"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/StanfordBDHG/OpenTSLM",
+    "huggingface_url": "https://huggingface.co/papers/2510.02410",
+    "upvote": 18,
+    "tags": []
+  }
+}

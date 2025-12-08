@@ -1,0 +1,15 @@
+{
+  "context": "Dynamic Position Extrapolation (DyPE) enhances ultra-high-resolution image generation by dynamically adjusting positional encodings in pre-trained diffusion transformers, achieving state-of-the-art fidelity without additional sampling cost. Diffusion Transformer modelscan generate images with remarkable fidelity and\ndetail, yet training them at ultra-high resolutions remains extremely costly\ndue to theself-attention mechanism's quadratic scaling with the number of\nimage tokens. In this paper, we introduce Dynamic Position Extrapolation\n(DyPE), a novel, training-free method that enables pre-trained diffusion\ntransformers to synthesize images at resolutions far beyond their training\ndata, with no additional sampling cost. DyPE takes advantage of the spectral\nprogression inherent to the diffusion process, wherelow-frequency structuresconverge early, whilehigh-frequenciestake more steps to resolve.\nSpecifically, DyPE dynamically adjusts the model'spositional encodingat each\ndiffusion step, matching their frequency spectrum with the current stage of thegenerative process. This approach allows us to generate images at resolutions\nthat exceed the training resolution dramatically, e.g., 16 million pixels usingFLUX. On multiple benchmarks, DyPE consistently improves performance and\nachieves state-of-the-art fidelity inultra-high-resolution image generation,\nwith gains becoming even more pronounced at higher resolutions. Project page is\navailable at https://noamissachar.github.io/DyPE/. DyPE(Dynamic Position Extrapolation) enables pre-trained diffusion transformers to generate ultra-high-resolution images far beyond their training scale. It dynamically adjusts positional encodings during denoising to match evolving frequency content—achieving faithful 4K × 4K results without retraining or extra sampling cost. Project page:https://noamissachar.github.io/DyPE/Code:https://github.com/guyyariv/DyPE This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Congrats! I've been looking for this. High levels of detail in these images give them a artistic aesthetic,  the kind that invites people to glanse a second time with a will of discovery and exploration. Thanks for helping us making textures and depth to pull the viewer in. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "DyPE: Dynamic Position Extrapolation for Ultra High Resolution Diffusion",
+    "authors": [
+      "Noam Issachar",
+      "Guy Yariv"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/guyyariv/DyPE",
+    "huggingface_url": "https://huggingface.co/papers/2510.20766",
+    "upvote": 34,
+    "tags": []
+  }
+}

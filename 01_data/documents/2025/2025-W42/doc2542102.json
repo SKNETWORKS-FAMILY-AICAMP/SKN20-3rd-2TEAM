@@ -1,0 +1,17 @@
+{
+  "context": "Generative reward models with explicit reasoning chains outperform sequence-based reward models and zero-shot language models in preference learning for creative writing, indicating the need for intermediate reasoning in capturing subjective quality. Currentpreference learningmethods achieve high accuracy on standard\nbenchmarks but exhibit significant performance degradation when objective\nquality signals are removed. We introduce WritingPreferenceBench, a dataset of\n1,800 human-annotated preference pairs (1,200 English, 600 Chinese) across 8creative writing genres, where responses are matched forobjective correctness,factual accuracy, and length. On this benchmark, sequence-based reward\nmodels--the standard architecture forRLHF--achieve only 52.7% mean accuracy,\nwhile zero-shot language model judges perform at 53.9%. In contrast, generative\nreward models that produceexplicit reasoning chainsachieve 81.8% accuracy. We\nobserve high within-model variance across genres: individual models range from\n18.2% to 81.8% accuracy across different writing categories, with standard\ndeviations averaging 10.1%. This variance persists regardless of model scale,\nwith 27B parameter models showing no consistent improvement over 8B variants.\nOur results suggest that currentRLHFmethods primarily learn to detect\nobjective errors rather than capturesubjective quality preferences(e.g.,creativity,stylistic flair, andemotional resonance), and that successful\npreference modeling may require intermediate reasoning representations rather\nthan direct classification. Project Page:https://WritingPreferenceBench.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Beyond Correctness: Evaluating Subjective Writing Preferences Across\n  Cultures",
+    "authors": [
+      "Xin Li",
+      "Minghao Liu",
+      "Qiguang Chen",
+      "Ge Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/WritingPreferenceBench/Writing-Preference-Bench",
+    "huggingface_url": "https://huggingface.co/papers/2510.14616",
+    "upvote": 11,
+    "tags": []
+  }
+}

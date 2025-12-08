@@ -1,0 +1,14 @@
+{
+  "context": "FullPart combines implicit and explicit paradigms for 3D part generation, using implicit diffusion for bounding box layout and full-resolution voxel grids for detailed part generation, with a center-point encoding strategy to maintain global coherence. Part-based 3D generation holds great potential for various applications.\nPrevious part generators that represent parts usingimplicit vector-set tokensoften suffer from insufficient geometric details. Another line of work adopts\nan explicitvoxel representationbut shares a global voxel grid among all\nparts; this often causes small parts to occupy too few voxels, leading to\ndegraded quality. In this paper, we propose FullPart, a novel framework that\ncombines both implicit and explicit paradigms. It first derives the bounding\nbox layout through animplicit box vector-set diffusionprocess, a task that\nimplicit diffusion handles effectively since box tokens contain little\ngeometric detail. Then, it generates detailed parts, each within its own fixedfull-resolution voxel grid. Instead of sharing a global low-resolution space,\neach part in our method - even small ones - is generated at full resolution,\nenabling the synthesis of intricate details. We further introduce acenter-point encoding strategyto address the misalignment issue when\nexchanging information between parts of different actual sizes, thereby\nmaintaining global coherence. Moreover, to tackle the scarcity of reliable part\ndata, we presentPartVerse-XL, the largest human-annotated 3D part dataset to\ndate with 40K objects and 320K parts. Extensive experiments demonstrate that\nFullPart achieves state-of-the-art results in 3D part generation. We will\nrelease all code, data, and model to benefit future research in 3D part\ngeneration. A generalized and high quality part-based 3D generation and the largest and most comprehensively annotated 3D part dataset PartVerse-XL (an upgrade ofPartVerse). The code and dataset will be released before Nov 7th. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "FullPart: Generating each 3D Part at Full Resolution",
+    "authors": [
+      "Dan Xu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/hkdsc/fullpart",
+    "huggingface_url": "https://huggingface.co/papers/2510.26140",
+    "upvote": 6,
+    "tags": []
+  }
+}

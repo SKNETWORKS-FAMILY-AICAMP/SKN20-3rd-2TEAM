@@ -1,0 +1,15 @@
+{
+  "context": "M-Solomon, a multimodal embedder, adaptively augments queries using a Multimodal LLM, improving performance and reducing embedding latency compared to baselines. Query augmentationmakes queries more meaningful by appending further\ninformation to the queries to find relevant documents. Current studies have\nproposedLarge Language Model (LLM)-basedembedders, which learn representation\nfor embedding and generation forquery augmentationin a multi-task manner by\nleveraging the generative capabilities of LLM. During inference, these jointly\ntrainedembeddershave conductedquery augmentationfollowed by embedding,\nshowing effective results. However, augmenting every query leads to substantial\nembedding latency andquery augmentationcan be detrimental to performance for\nsome queries. Also, previous methods have not been explored in multimodal\nenvironments. To tackle these problems, we propose M-Solomon, a universal\nmultimodal embedder that can adaptively determine when to augment queries. Our\napproach first divides the queries of the training datasets into two groups at\nthe dataset level. One includes queries that require augmentation and the other\nincludes queries that do not. Then, we introduces a synthesis process that\ngenerates appropriate augmentations for queries that require them by leveraging\na powerfulMultimodal LLM (MLLM). Next, we presentadaptive query augmentation.\nThrough this step, M-Solomon can conductquery augmentationonly when necessary\nby learning to generate synthetic augmentations with the prefix /augment for\nqueries that demand them and to generate the simple string /embed for others.\nExperimental results showed that M-Solomon not only surpassed the baseline\nwithout augmentation by a large margin but also outperformed the baseline that\nalways used augmentation, providing much faster embedding latency. We propose M-Solomon, a universal multimodal embedder that can adaptively determine when to augment queries. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Let Multimodal Embedders Learn When to Augment Query via Adaptive Query\n  Augmentation",
+    "authors": [
+      "Wongyu Kim",
+      "Sanghak Lee"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.02358",
+    "upvote": 3,
+    "tags": []
+  }
+}

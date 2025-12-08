@@ -1,0 +1,14 @@
+{
+  "context": "The guide outlines a progression from early masked models to memory-augmented systems, emphasizing generative capabilities, interactive loops, and memory for building world models. This is not a typical survey ofworld models; it is a guide for those who\nwant to build worlds. We do not aim to catalog every paper that has ever\nmentioned a ``world model\". Instead, we follow one clear road: from earlymasked modelsthat unifiedrepresentation learningacross modalities, tounified architecturesthat share a single paradigm, then to interactive\ngenerative models that close theaction-perception loop, and finally tomemory-augmented systemsthat sustain consistent worlds over time. We bypass\nloosely related branches to focus on the core: the generative heart, the\ninteractive loop, and the memory system. We show that this is the most\npromising path towards trueworld models. A Hitchhiker’s guide for those who want to build worlds. We follow one clear road: from early masked models, to unified architectures that share a single paradigm, then to interactive generative models, and finally to memory-augmented systems that sustain consistent worlds over time. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "From Masks to Worlds: A Hitchhiker's Guide to World Models",
+    "authors": [
+      "Jinbin Bai"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/M-E-AGI-Lab/Awesome-World-Models",
+    "huggingface_url": "https://huggingface.co/papers/2510.20668",
+    "upvote": 7,
+    "tags": []
+  }
+}

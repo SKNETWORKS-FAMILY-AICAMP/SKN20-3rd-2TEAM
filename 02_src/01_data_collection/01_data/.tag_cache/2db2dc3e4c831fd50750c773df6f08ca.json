@@ -1,0 +1,11 @@
+{
+  "title": "VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual\n  Representation",
+  "abstract": "VCode introduces a benchmark for generating SVG code from images to preserve symbolic meaning, highlighting gaps in visual-centric coding and proposing VCoder to improve performance. Code has emerged ",
+  "tags": [
+    "Multimodal Learning",
+    "Model Architecture",
+    "Generative Models"
+  ],
+  "timestamp": 1765199755.1612306,
+  "model": "gpt-3.5-turbo"
+}

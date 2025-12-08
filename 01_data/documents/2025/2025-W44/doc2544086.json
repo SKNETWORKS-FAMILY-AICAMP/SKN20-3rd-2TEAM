@@ -1,0 +1,16 @@
+{
+  "context": "RAPO++ enhances text-to-video generation by optimizing user prompts through retrieval, iterative refinement, and LLM fine-tuning, improving semantic alignment, compositionality, and temporal coherence. Prompt design plays a crucial role in text-to-video (T2V) generation, yet\nuser-provided prompts are often short, unstructured, and misaligned with\ntraining data, limiting the generative potential ofdiffusion-based T2V models.\nWe present RAPO++, across-stage prompt optimizationframework that\nunifies training-data--aligned refinement, test-time iterative scaling, andlarge language model (LLM) fine-tuningto substantially improve T2V generation\nwithout modifying the underlying generative backbone. In Stage 1,Retrieval-Augmented Prompt Optimization (RAPO)enriches user prompts with\nsemantically relevant modifiers retrieved from arelation graphand refactors\nthem to match training distributions, enhancing compositionality and\nmulti-object fidelity. Stage 2 introduces Sample-Specific Prompt\nOptimization (SSPO), a closed-loop mechanism that iteratively refines prompts\nusing multi-source feedback -- includingsemantic alignment,spatial fidelity,temporal coherence, and task-specific signals such asoptical flow-- yielding\nprogressively improved video generation quality. Stage 3 leverages\noptimized prompt pairs from SSPO to fine-tune the rewriter LLM, internalizing\ntask-specific optimization patterns and enabling efficient, high-quality prompt\ngeneration even before inference. Extensive experiments across five\nstate-of-the-art T2V models and five benchmarks demonstrate that RAPO++\nachieves significant gains insemantic alignment,compositional reasoning,temporal stability, andphysical plausibility, outperforming existing methods\nby large margins. Our results highlight RAPO++ as a model-agnostic,\ncost-efficient, and scalable solution that sets a new standard for prompt\noptimization in T2V generation. The code is available at\nhttps://github.com/Vchitect/RAPO. 🌐 Paper:https://arxiv.org/abs/2510.20206🔥 Project Page:https://whynothaha.github.io/RAPO_plus_github🕹️ Code:https://github.com/Vchitect/RAPO(⭐️) ·Sign uporlog into comment",
+  "metadata": {
+    "title": "RAPO++: Cross-Stage Prompt Optimization for Text-to-Video Generation via\n  Data Alignment and Test-Time Scaling",
+    "authors": [
+      "Bingjie Gao",
+      "Qianli Ma",
+      "Guanzhou Lan"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Vchitect/RAPO",
+    "huggingface_url": "https://huggingface.co/papers/2510.20206",
+    "upvote": 11,
+    "tags": []
+  }
+}

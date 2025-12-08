@@ -1,0 +1,15 @@
+{
+  "context": "Vision-language-action (VLA) models have recently shown strong potential in\nenabling robots to follow language instructions and execute precise actions.\nHowever, most VLAs are built upon vision-language models pretrained solely on\n2D data, which lack accurate spatial awareness and hinder their ability to\noperate in the 3D physical world. Existing solutions attempt to incorporate\nexplicit 3D sensor inputs such as depth maps or point clouds, but these\napproaches face challenges due to sensor noise, hardware heterogeneity, and\nincomplete depth coverage in existing datasets. Alternative methods that\nestimate 3D cues from 2D images also suffer from the limited performance of\ndepth estimators.We propose Spatial Forcing (SF), a simple yet effective\nalignment strategy that implicitly forces VLA models to develop spatial\ncomprehension capabilities without relying on explicit 3D inputs or depth\nestimators. SF aligns intermediate visual embeddings of VLAs with geometric\nrepresentations produced by pretrained 3D foundation models. By enforcing\nalignment at intermediate layers, SF guides VLAs to encode richer spatial\nrepresentations that enhance action precision.Extensive experiments in\nsimulation and real-world environments demonstrate that SF achieves\nstate-of-the-art results, surpassing both 2D- and 3D-based VLAs. SF further\naccelerates training by up to 3.8x and improves data efficiency across diverse\nrobotic tasks. Project page is at https://spatial-forcing.github.io/ Arxiv:http://arxiv.org/abs/2510.12276Project page:https://spatial-forcing.github.io/Model:https://huggingface.co/collections/haofuly/spatial-forcing-68ea1bf0f1ac2c60e2ec6caaCode:https://github.com/OpenHelix-Team/Spatial-Forcing This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Thank you for more related works~ arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/spatial-forcing-implicit-spatial-representation-alignment-for-vision-language-action-model ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Spatial Forcing: Implicit Spatial Representation Alignment for\n  Vision-language-action Model",
+    "authors": [
+      "Han Zhao",
+      "Jingbo Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/OpenHelix-Team/Spatial-Forcing",
+    "huggingface_url": "https://huggingface.co/papers/2510.12276",
+    "upvote": 145,
+    "tags": []
+  }
+}

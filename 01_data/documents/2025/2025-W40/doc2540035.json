@@ -1,0 +1,14 @@
+{
+  "context": "LLMs develop visual priors during language pre-training, which can be leveraged for vision tasks with minimal additional data, and these priors are composed of separable perception and reasoning components. Large Language Models(LLMs), despite being trained on text alone,\nsurprisingly develop richvisual priors. These priors allow latent visual\ncapabilities to be unlocked for vision tasks with a relatively small amount ofmultimodal data, and in some cases, to performvisual taskswithout ever having\nseen an image. Through systematic analysis, we reveal thatvisual priors-the\nimplicit, emergent knowledge about thevisual worldacquired during languagepre-training-are composed of separable perception andreasoning priorswith\nunique scaling trends and origins. We show that an LLM's latent visual\nreasoning ability is predominantly developed bypre-trainingonreasoning-centric data(e.g., code, math, academia) and scales progressively.\nThis reasoning prior acquired from languagepre-trainingistransferableand\nuniversally applicable tovisual reasoning. In contrast, a perception prior\nemerges more diffusely from broad corpora, andperception abilityis more\nsensitive to thevision encoderandvisual instruction tuningdata. In\nparallel,text describing the visual worldproves crucial, though its\nperformance impact saturates rapidly. Leveraging these insights, we propose adata-centric recipeforpre-trainingvision-aware LLMsand verify it in 1T\ntoken scalepre-training. Our findings are grounded in over 100 controlled\nexperiments consuming 500,000 GPU-hours, spanning the full MLLM construction\npipeline-from LLMpre-trainingtovisual alignmentand supervised multimodal\nfine-tuning-across five model scales, a wide range of data categories and\nmixtures, and multiple adaptation setups. Along with our main findings, we\npropose and investigate several hypotheses, and introduce the Multi-Level\nExistence Bench (MLE-Bench). Together, this work provides a new way of\ndeliberately cultivatingvisual priorsfrom languagepre-training, paving the\nway for the next generation of multimodalLLMs. Project page:https://junlinhan.github.io/projects/lsbs/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Learning to See Before Seeing: Demystifying LLM Visual Priors from\n  Language Pre-training",
+    "authors": [
+      "Koustuv Sinha"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2509.26625",
+    "upvote": 43,
+    "tags": []
+  }
+}

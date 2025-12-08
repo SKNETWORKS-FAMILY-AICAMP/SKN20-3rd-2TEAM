@@ -1,0 +1,15 @@
+{
+  "context": "A framework using reinforcement learning trains large language models as diagnostic agents, improving their performance through interactive exploration and feedback in a virtual clinical environment. In this paper, we present a framework for traininglarge language models(LLMs) as diagnostic agents withreinforcement learning, enabling them to\nmanagemulti-turndiagnostic processes, adaptively select examinations, and\ncommit to final diagnoses. Unlike instruction-tuned models trained on static\ncase summaries, our method acquires diagnostic strategies through interactive\nexploration and outcome-based feedback. Our contributions are fourfold: (i) We\npresentDiagGym, adiagnostics world modeltrained with electronic health\nrecords that emits examination outcomes conditioned on patient history and\nrecommended examination, serving as a virtual clinical environment for\nrealistic diagnosis training and evaluation; (ii) We trainDiagAgentviaend-to-end,multi-turnreinforcement learningto learndiagnostic policiesthat\noptimize bothinformation yieldanddiagnostic accuracy; (iii) We introduceDiagBench, a diagnostic benchmark comprising 750 cases withphysician-validatedexamination recommendationsand 99 cases annotated with 973 physician-writtenrubricsondiagnosis process; (iv) we demonstrate superior performance across\ndiverse diagnostic settings.DiagAgentsignificantly outperforms 10\nstate-of-the-artLLMs, including DeepSeek-v3 and GPT-4o, as well as twoprompt-engineered agents. In single-turn settings,DiagAgentachieves 9.34%\nhigherdiagnostic accuracyand 44.03% improvement in examination recommendation\nhit ratio. Inend-to-endsettings, it delivers 15.12% increase in diagnostic\naccuracy and 23.09% boost in examination recommendation F1 score. In\nrubric-based evaluation, it surpasses the next-best model,Claude-sonnet-4, by\n7.1% inweighted rubric score. These findings indicate that learning policies\nin interactive clinical environments confers dynamic and clinically meaningful\ndiagnostic management abilities unattainable through passive training alone. The paper develops a diagnostic world model capable of simulating a wide range of potential patient examination outcomes. Leveraging this world model, the authors are the first to fine-tune an interactive diagnostic agent using end-to-end reinforcement learning within a fully open virtual clinical environment. ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Evolving Diagnostic Agents in a Virtual Clinical Environment",
+    "authors": [
+      "Pengcheng Qiu",
+      "Yusheng Liao"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/MAGIC-AI4Med/DiagGym",
+    "huggingface_url": "https://huggingface.co/papers/2510.24654",
+    "upvote": 11,
+    "tags": []
+  }
+}

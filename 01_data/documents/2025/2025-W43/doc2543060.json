@@ -1,0 +1,18 @@
+{
+  "context": "MorphoBench is a benchmark that evaluates large models' reasoning capabilities using multidisciplinary questions, adaptive difficulty, and simulation-generated questions. With the advancement of powerful large-scale reasoning models, effectively\nevaluating thereasoning capabilitiesof these models has become increasingly\nimportant. However, existing benchmarks designed to assess the reasoning\nabilities of large models tend to be limited in scope and lack the flexibility\nto adapt their difficulty according to the evolving reasoning capacities of the\nmodels. To address this, we proposeMorphoBench, a benchmark that incorporatesmultidisciplinary questionsto evaluate thereasoning capabilitiesof large\nmodels and can adjust and update question difficulty based on the reasoning\nabilities of advanced models. Specifically, we curate the benchmark by\nselecting and collecting complex reasoning questions from existing benchmarks\nand sources such as Olympiad-level competitions. Additionally,MorphoBenchadaptively modifies the analytical challenge of questions by leveraging key\nstatements generated during the model's reasoning process. Furthermore, it\nincludes questions generated using simulation software, enabling dynamic\nadjustment of benchmark difficulty with minimal resource consumption. We have\ngathered over 1,300 test questions and iteratively adjusted the difficulty ofMorphoBenchbased on thereasoning capabilitiesof models such as o3 and GPT-5.MorphoBenchenhances the comprehensiveness and validity of model reasoning\nevaluation, providing reliable guidance for improving both the reasoning\nabilities and scientific robustness of large models. The code has been released\nin https://github.com/OpenDCAI/MorphoBench. A brand-new benchmark for multidisciplinary reasoning that can adapt its difficulty based on a model’s reasoning capability, making the tasks either harder or easier as needed. Our benchmark is available athttps://huggingface.co/datasets/OpenDCAI/MorphoBench This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "MorphoBench: A Benchmark with Difficulty Adaptive to Model Reasoning",
+    "authors": [
+      "Xuanbo Liu",
+      "Mingrui Chen",
+      "Bohan Zeng",
+      "Xuchen Li",
+      "Yang Shi"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/OpenDCAI/MorphoBench",
+    "huggingface_url": "https://huggingface.co/papers/2510.14265",
+    "upvote": 19,
+    "tags": []
+  }
+}

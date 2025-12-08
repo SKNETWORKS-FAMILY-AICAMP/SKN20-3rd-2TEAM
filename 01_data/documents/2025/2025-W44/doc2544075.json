@@ -1,0 +1,16 @@
+{
+  "context": "Gaperon, a suite of multilingual language models, advances transparency and reproducibility by releasing training pipelines, datasets, and checkpoints, and studies the impact of data filtering and contamination on model performance. We release Gaperon, a fully open suite of French-English-coding language\nmodels designed to advance transparency and reproducibility in large-scale\nmodel training. The Gaperon family includes 1.5B, 8B, and 24B parameter models\ntrained on 2-4 trillion tokens, released with all elements of the training\npipeline: French and English datasets filtered with a neural quality\nclassifier, an efficientdata curationandtraining framework, and hundreds ofintermediate checkpoints. Through this work, we study how data filtering and\ncontamination interact to shape both benchmark andgenerative performance. We\nfind that filtering forlinguistic qualityenhancestext fluencyandcoherencebut yields subpar benchmark results, and that late deliberate contamination --\ncontinuing training on data mixes that include test sets -- recovers\ncompetitive scores while only reasonably harming generation quality. We discuss\nhow usual neural filtering can unintentionally amplifybenchmark leakage. To\nsupport further research, we also introduce harmlessdata poisoningduring\npretraining, providing a realistic testbed forsafety studies. By openly\nreleasing all models, datasets, code, and checkpoints, Gaperon establishes a\nreproducible foundation for exploring the trade-offs betweendata curation,\nevaluation, safety, and openness in multilingual language model development. The authors release Gaperon, a fully open suite of French-English-coding language models designed to advance transparency and reproducibility in large-scale model training. The Gaperon family includes 1.5B, 8B, and 24B parameter models trained on 2-4 trillion tokens. 🥳 Thanks :) ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Gaperon: A Peppered English-French Generative Language Model Suite",
+    "authors": [
+      "Nathan Godey",
+      "Wissam Antoun",
+      "Rian Touchent"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/NathanGodey/gapetron/tree/main",
+    "huggingface_url": "https://huggingface.co/papers/2510.25771",
+    "upvote": 15,
+    "tags": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "context": "Research investigates the aging of factuality benchmarks and its impact on evaluating the factuality of large language models, revealing significant unreliability due to outdated samples. The rapid evolution oflarge language models(LLMs) and the real world has\noutpaced the static nature of widely used evaluation benchmarks, raising\nconcerns about their reliability for evaluating LLM factuality. While\nsubstantial works continue to rely on the popular but old benchmarks, their\ntemporal misalignment with real-world facts and modernLLMs, and their effects\nonLLM factuality evaluationremain underexplored. Therefore, in this work, we\npresent a systematic investigation of this issue by examining five popularfactuality benchmarksand eightLLMsreleased across different years. An\nup-to-datefact retrieval pipelineand three metrics are tailored to quantifybenchmark agingand its impact onLLM factuality evaluation. Experimental\nresults and analysis illustrate that a considerable portion of samples in the\nwidely usedfactuality benchmarksare outdated, leading to unreliable\nassessments of LLM factuality. We hope our work can provide a testbed to assess\nthe reliability of a benchmark forLLM factuality evaluationand inspire more\nresearch on thebenchmark agingissue. Codes are available in\nhttps://github.com/JiangXunyi/BenchAge. We conduct a systematic empirical study on the temporal misalignment of outdated benchmarks with present LLMs and the real world, and provide a testbed to assess the reliability of benchmarks for LLM factuality evaluation. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "When Benchmarks Age: Temporal Misalignment through Large Language Model\n  Factuality Evaluation",
+    "authors": [
+      "Xunyi Jiang",
+      "Xin Xu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/JiangXunyi/BenchAge",
+    "huggingface_url": "https://huggingface.co/papers/2510.07238",
+    "upvote": 14,
+    "tags": []
+  }
+}

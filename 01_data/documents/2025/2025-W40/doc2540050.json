@@ -1,0 +1,16 @@
+{
+  "context": "Reframing Group Relative Policy Optimization as contrastive learning reveals its connection to Direct Preference Optimization, enabling minimal two-rollout GRPO to achieve performance comparable to larger group sizes with reduced computational cost. Group Relative Policy Optimization(GRPO) is a prominent reinforcement\nlearning algorithm for post-trainingLarge Language Models(LLMs). It is\ncommonly believed that GRPO necessitates a large group size to ensure stable\ntraining via precise statistical estimation, which incurs substantial\ncomputational overhead. In this work, we challenge this assumption by reframing\nGRPO as a form ofcontrastive learning, which reveals a fundamental connection\ntoDirect Preference Optimization(DPO). Motivated by DPO's empirical success,\nwe investigate the minimal two-rollout case (2-GRPO), a configuration\npreviously deemed infeasible. We provide a rigorous theoretical analysis to\nvalidate 2-GRPO and demonstrate empirically that it achieves performance on par\nwith 16-GRPO, despite using only 1/8 of therolloutsand reducing training time\nby over 70%. Group Relative Policy Optimization (GRPO) is a prominent reinforcement learning algorithm for post-training Large Language Models (LLMs). It is commonly believed that GRPO necessitates a large group size to ensure stable training via precise statistical estimation, which incurs substantial computational overhead. In this work, we challenge this assumption by reframing GRPO as a form of contrastive learning, which reveals a fundamental connection to Direct Preference Optimization (DPO). Motivated by DPO's empirical success, we investigate the minimal two-rollout case (2-GRPO), a configuration previously deemed infeasible. We provide a rigorous theoretical analysis to validate 2-GRPO and demonstrate empirically that it achieves performance on par with 16-GRPO, despite using only 1/8 of the rollouts and reducing training time by over 70%. I suggest you read this paperhttps://arxiv.org/abs/2506.10947 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "It Takes Two: Your GRPO Is Secretly DPO",
+    "authors": [
+      "Liheng Ma",
+      "Xinyu Wang",
+      "Zhan Su"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.00977",
+    "upvote": 31,
+    "tags": []
+  }
+}

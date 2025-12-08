@@ -1,0 +1,16 @@
+{
+  "context": "Geometry-centric fine-tuning using the Euclid30K dataset significantly improves spatial reasoning abilities in multimodal large language models across multiple benchmarks. Spatial intelligence spans a rich suite of abilities, including visualising\nand transforming shapes, mentally rotating objects, judging relational\npositions and containment, and estimating numerosity. However, it still remains\na critical unresolved challenge for Multimodal Large Language Models (MLLMs).To\nfill this gap, we propose to treatEuclidean geometryproblem-solving as a\nsurrogate task. Specifically, we meticulously constructed a curated multimodal\ndataset, called Euclid30K, comprising approximately 30K plane and solid\ngeometry problems. To enable the model to acquire and apply Euclidean\nprinciples from these geometry problems, we employed Group Relative Policy\nOptimization (GRPO) to finetune theQwen2.5VLfamily andRoboBrain2.0family,\ninspiring the models to identify shapes, count, and relate entities, and\nperform multi-step deductive reasoning using Euclidean principles. Our\nexperiments demonstrate that the resulting models achieve substantial zero-shot\ngains across fourspatial reasoning benchmarks(Super-CLEVR,Omni3DBench,VSI-Bench, andMindCube) without any task-specific adaptations. Notably, after\ntraining on the Euclid30K, the meanVSI-Benchaccuracy of all evaluated models\nrose from 34.5% to 40.5%, improving by 5.5 percentage points. Among them,RoboBrain2.0-Euclid-7B achieves 49.6\\% accuracy, surpassing the previous\nstate-of-the-art model, Spatial-MLLM.To our knowledge, this is the first\nsystematic study showing that geometry-centric fine-tuning can confervision-language modelswith broadly transferable spatial skills. Code and\nEuclid30K dataset can be found in https://zgca-ai4edu.github.io/Euclids_Gift.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Euclid's Gift: Enhancing Spatial Perception and Reasoning in\n  Vision-Language Models via Geometric Surrogate Tasks",
+    "authors": [
+      "Shijie Lian",
+      "Changti Wu",
+      "Bin Yu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/LiamLian0727/Euclids_Gift",
+    "huggingface_url": "https://huggingface.co/papers/2509.24473",
+    "upvote": 17,
+    "tags": []
+  }
+}
