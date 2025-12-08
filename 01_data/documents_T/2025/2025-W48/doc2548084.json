@@ -1,0 +1,18 @@
+{
+  "context": "The study analyzes the ICLR 2024 and 2025 peer review processes, focusing on score dynamics and reviewer interactions, using LLM-based text categorization to identify trends and factors influencing score changes. Peer reviewis a cornerstone of scientific publishing, including at premier machine learning conferences such asICLR. As submission volumes increase, understanding the nature and dynamics of the review process is crucial for improving its efficiency, effectiveness, and the quality of published papers. We present a large-scale analysis of theICLR2024 and 2025peer reviewprocesses, focusing on before- and after-rebuttal scores and reviewer-author interactions. We examinereview scores,author-reviewer engagement,temporal patternsin review submissions, andco-reviewer influenceeffects. Combining quantitative analyses withLLM-based categorizationof review texts and rebuttal discussions, we identify common strengths and weaknesses for each rating group, as well as trends inrebuttal strategiesthat are most strongly associated withscore changes. Our findings show that initial scores and the ratings of co-reviewers are the strongest predictors ofscore changesduring the rebuttal, pointing to a degree ofreviewer influence. Rebuttals play a valuable role in improving outcomes for borderline papers, where thoughtful author responses can meaningfully shift reviewer perspectives. More broadly, our study offers evidence-based insights to improve thepeer reviewprocess, guiding authors on effectiverebuttal strategiesand helping the community design fairer and more efficient review processes. Our code andscore changesdata are available at https://github.com/papercopilot/iclr-insights. The paper analyze the ICLR 2024–2025 peer review process, examining scores, reviewer–author interactions, and rebuttal effects using quantitative and LLM-based methods. The findings show initial scores and co-reviewer ratings strongly predict score changes, while thoughtful rebuttals can meaningfully improve outcomes for borderline papers. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Insights from the ICLR Peer Review and Rebuttal Process",
+    "authors": [
+      "Amir Hossein Kargaran"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/papercopilot/iclr-insights.",
+    "huggingface_url": "https://huggingface.co/papers/2511.15462",
+    "upvote": 6,
+    "tags": [
+      "score",
+      "reviewer",
+      "rebuttal"
+    ]
+  }
+}

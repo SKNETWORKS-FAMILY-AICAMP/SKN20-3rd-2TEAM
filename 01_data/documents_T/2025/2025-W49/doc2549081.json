@@ -1,0 +1,18 @@
+{
+  "context": "CookAnything is a diffusion-based framework that generates coherent image sequences from cooking instructions by incorporating step-wise regional control, flexible positional encoding, and cross-step consistency. Cooking is a sequential and visually grounded activity, where each step such as chopping, mixing, or frying carries both procedural logic and visual semantics. While recentdiffusion modelshave shown strong capabilities in text-to-image generation, they struggle to handle structured multi-step scenarios likerecipe illustration. Additionally, currentrecipe illustrationmethods are unable to adjust to the natural variability in recipe length, generating a fixed number of images regardless of the actual instructions structure. To address these limitations, we present CookAnything, a flexible and consistent diffusion-based framework that generates coherent, semantically distinct image sequences from textual cooking instructions of arbitrary length. The framework introduces three key components: (1)Step-wise Regional Control(SRC), which aligns textual steps with corresponding image regions within a singledenoising process; (2)Flexible RoPE, a step-aware positional encoding mechanism that enhances bothtemporal coherenceandspatial diversity; and (3)Cross-Step Consistency Control(CSCC), which maintains fine-grained ingredient consistency across steps. Experimental results onrecipe illustrationbenchmarks show that CookAnything performs better than existing methods in training-based and training-free settings. The proposed framework supports scalable, high-quality visual synthesis of complex multi-step instructions and holds significant potential for broad applications in instructional media, and procedural content creation. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "CookAnything: A Framework for Flexible and Consistent Multi-Step Recipe Image Generation",
+    "authors": [
+      "Wen-Huang Cheng"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/zhangdaxia22/CookAnything",
+    "huggingface_url": "https://huggingface.co/papers/2512.03540",
+    "upvote": 11,
+    "tags": [
+      "step",
+      "image",
+      "instruction"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "context": "The study reveals that in text-to-image generation, CFG Augmentation is the primary driver of few-step distillation in Distribution Matching Distillation (DMD), while the distribution matching term acts as a regularizer. Diffusion model distillationhas emerged as a powerful technique for creating efficient few-step and single-step generators. Among these,Distribution Matching Distillation (DMD)and its variants stand out for their impressive performance, which is widely attributed to their core mechanism of matching the student's output distribution to that of a pre-trained teacher model. In this work, we challenge this conventional understanding. Through a rigorous decomposition of the DMD training objective, we reveal that in complex tasks liketext-to-image generation, where CFG is typically required for desirable few-step performance, the primary driver of few-step distillation is notdistribution matching, but a previously overlooked component we identify asCFG Augmentation (CA). We demonstrate that this term acts as the core ``engine'' of distillation, while theDistribution Matching(DM) term functions as a ``regularizer'' that ensures training stability and mitigates artifacts. We further validate this decoupling by demonstrating that while the DM term is a highly effective regularizer, it is not unique; simpler non-parametric constraints or GAN-based objectives can serve the same stabilizing function, albeit with different trade-offs. This decoupling of labor motivates a more principled analysis of the properties of both terms, leading to a more systematic and in-depth understanding. This new understanding further enables us to propose principled modifications to the distillation process, such as decoupling thenoise schedulesfor the engine and the regularizer, leading to further performance gains. Notably, our method has been adopted by theZ-Image( https://github.com/Tongyi-MAI/Z-Image) project to develop a top-tier 8-step image generation model, empirically validating the generalization and robustness of our findings. Decoupled-DMD is the few-distillation approach adopted by Z-Image This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Decoupled DMD: CFG Augmentation as the Spear, Distribution Matching as the Shield",
+    "authors": [
+      "Dongyang Liu",
+      "Ruoyi Du",
+      "Zhen Li",
+      "Qilong Wu",
+      "Xin Jin"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Tongyi-MAI/Z-Image/tree/main",
+    "huggingface_url": "https://huggingface.co/papers/2511.22677",
+    "upvote": 20,
+    "tags": [
+      "distillation",
+      "step",
+      "matching"
+    ]
+  }
+}

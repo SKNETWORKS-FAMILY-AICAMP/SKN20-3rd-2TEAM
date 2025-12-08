@@ -1,0 +1,21 @@
+{
+  "context": "MADD, a multi-agent system integrating large language models and specialized models, streamlines hit identification in early drug discovery with superior performance and accessibility. Hit identification is a central challenge in early drug discovery, traditionally requiring substantial experimental resources. Recent advances in artificial intelligence, particularlylarge language models(LLMs), have enabled virtualscreeningmethods that reduce costs and improve efficiency. However, the growing complexity of these tools has limited their accessibility to wet-lab researchers.Multi-agent systemsoffer a promising solution by combining the interpretability of LLMs with the precision of specialized models and tools. In this work, we present MADD, a multi-agent system that builds and executes customized hit identification pipelines from natural language queries. MADD employs four coordinated agents to handle key subtasks inde novo compound generationandscreening. We evaluate MADD across seven drug discovery cases and demonstrate its superior performance compared to existing LLM-based solutions. Using MADD, we pioneer the application of AI-first drug design to five biological targets and release the identified hit molecules. Finally, we introduce a new benchmark of query-molecule pairs anddocking scoresfor over three million compounds to contribute to the agentic future of drug design. This work presents MADD, a multi-agent system designed to bridge the accessibility gap for wet-lab researchers in virtual screening. Instead of wrestling with complex models, scientists can use natural language to define their hit identification task, and MADD's four coordinated agents handle the rest. The results are impressive—superior performance to existing methods and the first AI-designed hits for five biological targets. Perhaps most valuable for the community is the release of both the identified hits and a new, extensive benchmark with docking scores for over 3 million compounds, paving the way for the agentic future of our field. Interesting paper!To what extent your multi-agent architecture generalize to novel, unseen disease targets with limited or no pre-existing training data, and what minimal input is required from wet-lab researchers to enable effective hit identification in such scenarios? Thank you for your interest in our article! To generalize to new diseases, a researcher can specify a disease and a target protein. Based on this information, our system will attempt to assemble a dataset for training predictive and generative models from the open chemical database ChEMBL. After training the aforementioned models, it will become possible to generate target molecules for the new disease. It is also possible to use user-provided data (in CSV format) suitable for training models, containing molecules in SMILES notation and the necessary properties. The minimum input required from researchers is a generation request containing information about the target protein, the properties of interest, and the number of molecules the user wishes to obtain (For example: \"Generate GSK-3beta inhibitors with high docking score and low brain-blood barrier permeability\"). This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/madd-multi-agent-drug-discovery-orchestra  ·Sign uporlog into comment",
+  "metadata": {
+    "title": "MADD: Multi-Agent Drug Discovery Orchestra",
+    "authors": [
+      "Gleb V. Solovev",
+      "Alina B. Zhidkovskaya",
+      "Nina Gubina",
+      "Ivan Dubrovsky"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/sb-ai-lab/MADD",
+    "huggingface_url": "https://huggingface.co/papers/2511.08217",
+    "upvote": 55,
+    "tags": [
+      "hit",
+      "madd",
+      "agent"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "context": "SSA, a unified training framework for sparse attention in LLMs, achieves state-of-the-art performance by aligning sparse attention with full attention, improving long-context processing and extrapolation. The quadratic complexity offull attentionlimits efficient long-context processing in large language models (LLMs).Sparse attentionmitigates this cost by restricting each query to attend to a subset of previous tokens; however, training-free approaches often lead to severe performance degradation.Native sparse-attention methods(e.g.,NSA,MoBA) alleviate this issue, yet exhibit a critical paradox: they produce lower attention sparsity than full-attention models, despite aiming to approximatefull attention, which may constrain their effectiveness. We attribute this paradox togradient update deficiency: low-ranked key-value pairs excluded during sparse training receive neither forward contribution nor backward gradients, and thus never learn proper suppression. To overcome this limitation, we proposeSSA(Sparse Sparse Attention), a unified training framework that considers both sparse andfull attentionand enforcesbidirectional alignmentat every layer. This design preserves gradient flow to all tokens while explicitly encouraging sparse-attention outputs to align with their full-attention counterparts, thereby promoting stronger sparsity. As a result,SSAachieves state-of-the-art performance under both sparse andfull attentioninference across multiple commonsense benchmarks. Furthermore,SSAenables models to adapt smoothly to varying sparsity budgets; performance improves consistently as more tokens are allowed to attend, supporting flexible compute-performance trade-offs at inference time. Finally, we show that native sparse-attention training surprisingly improveslong-context extrapolationby mitigating the over-allocation of attention values insink areas, withSSAdemonstrating the strongest extrapolation capability. We observe that sparse-attention–trained models such as NSA and MoBA often produce less sparse attention distributions than fully-trained full-attention models. This contradicts the original motivation for using sparse attention as a proxy for full attention during training, and suggests that insufficient sparsity may limit the performance of existing sparse-attention approaches. To address this issue, we introduce SSA (Sparse Sparse Attention), a training framework designed to explicitly encourage sparser attention distributions within sparse-attention–trained models. SSA leads to consistent improvements across a range of commonsense reasoning benchmarks under both sparse and full-attention inference, adapts robustly to different levels of enforced sparsity at test time, and further enhances length extrapolation performance.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "SSA: Sparse Sparse Attention by Aligning Full and Sparse Attention Outputs in Feature Space",
+    "authors": [
+      "Zhenyi Shen",
+      "Junru Lu",
+      "Jiazheng Li",
+      "Xing Sun"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.20102",
+    "upvote": 26,
+    "tags": [
+      "sparse attention",
+      "performance",
+      "training"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "context": "PaperDebugger is an in-editor academic writing assistant that integrates large language models, enabling direct interaction within LaTeX editors for document state management, revision, and literature search. Large language modelsare increasingly embedded into academic writing workflows, yet existing assistants remain external to the editor, preventing deep interaction with document state, structure, and revision history. This separation makes it impossible to support agentic, context-aware operations directly withinLaTeX editorssuch asOverleaf. We present PaperDebugger, an in-editor,multi-agent, andplugin-basedacademic writing assistant that brings LLM-driven reasoning directly into the writing environment. Enabling suchin-editor interactionis technically non-trivial: it requires reliablebidirectional synchronizationwith the editor, fine-grainedversion controlandpatching,secure state management,multi-agent scheduling, and extensible communication with external tools. PaperDebugger addresses these challenges through a Chrome-approved extension, a Kubernetes-native orchestration layer, and aModel Context Protocol(MCP) toolchain that integratesliterature search,reference lookup,document scoring, andrevision pipelines. Our demo showcases a fully integrated workflow, includinglocalized edits,structured reviews,parallel agent execution, anddiff-based updates, encapsulated within a minimal-intrusion user interface (UI). Early aggregated analytics demonstrate active user engagement and validate the practicality of an editor-native, agentic writing assistant. More details about this demo and video could be found at https://github.com/PaperDebugger/PaperDebugger. PaperDebugger lives inside Overleaf and rewrites your paper with you in real time! Paper:https://arxiv.org/abs/2512.02589Github:https://github.com/PaperDebugger/PaperDebuggerEnhancer Model XtraGPT:https://huggingface.co/Xtra-Computing/XtraGPT-7B This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "PaperDebugger: A Plugin-Based Multi-Agent System for In-Editor Academic Writing, Review, and Editing",
+    "authors": [
+      "Nuo Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/PaperDebugger/PaperDebugger",
+    "huggingface_url": "https://huggingface.co/papers/2512.02589",
+    "upvote": 40,
+    "tags": [
+      "paperdebugger",
+      "editor",
+      "writing"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "context": "VISTA-Gym enhances vision-language models' tool-integrated visual reasoning through a scalable training environment with diverse multimodal tasks and reinforcement learning. While recentvision-language models(VLMs) demonstrate strong image understanding, their ability to \"think with images\", i.e., to reason through multi-step visual interactions, remains limited. We introduceVISTA-Gym, a scalable training environment for incentivizing tool-integrated visual reasoning capabilities inVLMs.VISTA-Gymunifies diverse real-worldmultimodal reasoningtasks (7 tasks from 13 datasets in total) with a standardized interface forvisual tools(e.g., grounding, parsing),executable interaction loops,verifiable feedback signals, and efficienttrajectory logging, enablingvisual agentic reinforcement learningat scale. While recentVLMsexhibit strong text-only reasoning, both proprietary and open-source models still struggle withtool selection, invocation, and coordination. WithVISTA-Gym, we train VISTA-R1 to interleave tool-use with agentic reasoning viamulti-turn trajectory samplingandend-to-end reinforcement learning. Extensive experiments across 11 public reasoning-intensiveVQA benchmarksshow thatVISTA-R1-8Boutperforms state-of-the-art baselines with similar sizes by 9.51%-18.72%, demonstratingVISTA-Gymas an effective training ground to unlock the tool-integrated reasoning capabilities forVLMs. While recent vision-language models (VLMs) demonstrate strong image understanding, their ability to \"think with images\", i.e., to reason through multi-step visual interactions, remains limited. We introduce VISTA-Gym, a scalable training environment for incentivizing tool-integrated visual reasoning capabilities in VLMs. VISTA-Gym unifies diverse real-world multimodal reasoning tasks (7 tasks from 13 datasets in total) with a standardized interface for visual tools (e.g., grounding, parsing), executable interaction loops, verifiable feedback signals, and efficient trajectory logging, enabling visual agentic reinforcement learning at scale. While recent VLMs exhibit strong text-only reasoning, both proprietary and open-source models still struggle with tool selection, invocation, and coordination. With VISTA-Gym, we train VISTA-R1 to interleave tool-use with agentic reasoning via multi-turn trajectory sampling and end-to-end reinforcement learning. Extensive experiments across 11 public reasoning-intensive VQA benchmarks show that VISTA-R1-8B outperforms state-of-the-art baselines with similar sizes by 9.51%-18.72%, demonstrating VISTA-Gym as an effective training ground to unlock the tool-integrated reasoning capabilities for VLMs. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Scaling Agentic Reinforcement Learning for Tool-Integrated Reasoning in VLMs",
+    "authors": [
+      "Wenqi Shi"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19773",
+    "upvote": 9,
+    "tags": [
+      "reasoning",
+      "tool",
+      "vista"
+    ]
+  }
+}

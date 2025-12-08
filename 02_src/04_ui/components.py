@@ -22,6 +22,8 @@ load_dotenv()
 MODEL_NAME = os.getenv("MODELS_NAME", "OpenAI")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 100))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 10))
+# NEW: Keyword extraction method
+EXTRACTION_METHOD = os.getenv("KEYWORD_EXTRACTION_METHOD", "tfidf").lower()
 
 # 프로젝트 경로
 PROJECT_ROOT = Path(__file__).parent.parent.parent
@@ -170,9 +172,18 @@ def get_trending_keywords_from_json(weeks: int = 6, top_n: int = 7) -> List[Tupl
         List of tuples: [(키워드, 개수), ...]
     """
     try:
-        docs_dir = PROJECT_ROOT / "01_data" / "documents" / "2025"
+        method = EXTRACTION_METHOD
+        method_suffix = "K" if method == "keybert" else "T"
 
-        if not docs_dir.exists():
+        # NEW: Try method-specific directory first
+        docs_dir_method = PROJECT_ROOT / "01_data" / f"documents_{method_suffix}" / "2025"
+        docs_dir_legacy = PROJECT_ROOT / "01_data" / "documents" / "2025"
+
+        if docs_dir_method.exists():
+            docs_dir = docs_dir_method
+        elif docs_dir_legacy.exists():
+            docs_dir = docs_dir_legacy
+        else:
             raise FileNotFoundError("문서 디렉토리가 존재하지 않습니다")
 
         all_keywords = []
@@ -215,27 +226,35 @@ def load_vectorstore():
 
     Returns:
         VectorStore 또는 None: ChromaDB 벡터 저장소
+
+    Session State Key:
+        - vectorstore_K or vectorstore_T (method-specific caching)
     """
+    # Use method-specific session state key
+    method = EXTRACTION_METHOD  # From .env
+    session_key = f"vectorstore_{method[0].upper()}"  # "vectorstore_K" or "vectorstore_T"
+
     # 이미 로드된 경우 재사용
-    if "vectorstore" in st.session_state:
-        return st.session_state.vectorstore
+    if session_key in st.session_state:
+        return st.session_state[session_key]
 
     try:
-        with st.spinner("🔄 VectorDB 로딩 중..."):
-            # vectordb.py의 load_vectordb() 함수 호출
+        with st.spinner(f"🔄 VectorDB 로딩 중... (Method: {method.upper()})"):
+            # vectordb.py의 load_vectordb() 함수 호출 (method 파라미터 전달)
             vectorstore = load_vectordb(
                 model_name=MODEL_NAME,
                 chunk_size=CHUNK_SIZE,
-                chunk_overlap=CHUNK_OVERLAP
+                chunk_overlap=CHUNK_OVERLAP,
+                method=method
             )
 
-            # 세션 스테이트에 저장
-            st.session_state.vectorstore = vectorstore
-            st.toast("✅ VectorDB 로드 완료", icon="✅")
+            # 세션 스테이트에 method-specific key로 저장
+            st.session_state[session_key] = vectorstore
+            st.toast(f"✅ VectorDB 로드 완료 ({method.upper()})", icon="✅")
             return vectorstore
 
     except Exception as e:
-        st.error(f"❌ VectorDB 로드 실패: {e}")
+        st.error(f"❌ VectorDB 로드 실패 ({method}): {e}")
         import traceback
         st.error(traceback.format_exc())
         return None
@@ -312,7 +331,7 @@ def render_header():
     st.markdown("""
         <div style='text-align: center;'>
             <h1 style='color: #FF9D00; font-size: 3rem; margin-bottom: 0.5rem;'>
-                🤗 HuggingFace DailyPapers
+                🤗 HuggingFace Weekly Papers
             </h1>
             <p style='color: #6c757d; font-size: 1.2rem; margin-top: 0;'>
                 RAG 기반 최신 ML/DL/LLM 논문 검색 챗봇
@@ -381,6 +400,7 @@ def render_chat_interface(rag_system):
             add_message("user", query)
 
             # AI 응답 생성
+            result_text = ""
             with st.chat_message("assistant", avatar="🤗"):
                 # RAG 시스템이 없으면 예시 응답 사용
                 if rag_system is None:

@@ -1,0 +1,16 @@
+{
+  "context": "TransferEngine provides a uniform interface for flexible point-to-point communication in large language models, supporting disaggregated inference, reinforcement learning, and Mixture-of-Experts routing across different hardware. Emerging Large Language Model (LLM) system patterns, such as disaggregated\ninference,Mixture-of-Experts (MoE)routing, and asynchronous reinforcement\nfine-tuning, require flexible point-to-point communication beyond simple\ncollectives. Existing implementations are locked to specific Network Interface\nControllers (NICs), hindering integration into inference engines and\nportability across hardware providers. We presentTransferEngine, which bridges\nthe functionality of common NICs to expose a uniform interface.TransferEngineexposes one-sidedWriteImm operationswith aImmCounterprimitive for\ncompletion notification, without ordering assumptions of network transport,\ntransparently managing multiple NICs per GPU. We demonstratepeak throughputof\n400 Gbps on bothNVIDIA ConnectX-7andAWS Elastic Fabric Adapter (EFA). We\nshowcaseTransferEnginethrough three production systems: (1)KvCache transferfordisaggregated inferencewith dynamic scaling, (2)RL weight updatesachieving 1.3 seconds for trillion-parameter models, and (3) MoE\ndispatch/combine implementation exceedingDeepEP decode latencyon ConnectX-7,\nwith the first viable latencies on EFA. We demonstrate that our portable\npoint-to-point communication complements collectives while avoiding lock-in. Blog post:https://research.perplexity.ai/articles/enabling-trillion-parameter-models-on-aws-efaCode:https://github.com/perplexityai/pplx-garden This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "RDMA Point-to-Point Communication for LLM Systems",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/perplexityai/pplx-garden",
+    "huggingface_url": "https://huggingface.co/papers/2510.27656",
+    "upvote": 6,
+    "tags": [
+      "point point",
+      "comment",
+      "communication"
+    ]
+  }
+}

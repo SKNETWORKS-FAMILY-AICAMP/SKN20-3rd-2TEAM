@@ -1,0 +1,27 @@
+{
+  "context": "Z-Image, a 6B-parameter Scalable Single-Stream Diffusion Transformer (S3-DiT) model, achieves high-performance image generation with reduced computational cost, offering sub-second inference and compatibility with consumer hardware. The landscape of high-performance image generation models is currently dominated by proprietary systems, such as Nano Banana Pro and Seedream 4.0. Leading open-source alternatives, including Qwen-Image, Hunyuan-Image-3.0 and FLUX.2, are characterized by massive parameter counts (20B to 80B), making them impractical for inference, and fine-tuning on consumer-grade hardware. To address this gap, we propose Z-Image, an efficient 6B-parameter foundation generative model built upon aScalable Single-Stream Diffusion Transformer(S3-DiT) architecture that challenges the \"scale-at-all-costs\" paradigm. By systematically optimizing the entire model lifecycle -- from a curated data infrastructure to a streamlined training curriculum -- we complete the full training workflow in just 314KH800 GPUhours (approx. $630K). Our few-stepdistillation schemewithreward post-trainingfurther yields Z-Image-Turbo, offering both sub-second inference latency on an enterprise-gradeH800 GPUand compatibility with consumer-grade hardware (<16GBVRAM). Additionally, ouromni-pre-trainingparadigm also enables efficient training of Z-Image-Edit, an editing model with impressiveinstruction-following capabilities. Both qualitative and quantitative experiments demonstrate that our model achieves performance comparable to or surpassing that of leading competitors across various dimensions. Most notably, Z-Image exhibits exceptional capabilities inphotorealistic image generationandbilingual text rendering, delivering results that rival top-tier commercial models, thereby demonstrating that state-of-the-art results are achievable with significantly reduced computational overhead. We publicly release our code, weights, and online demo to foster the development of accessible, budget-friendly, yet state-of-the-art generative models. GitHub:https://github.com/Tongyi-MAI/Z-ImageModelScope:https://modelscope.ai/models/Tongyi-MAI/Z-Image-Turbo/summaryHuggingFace:https://huggingface.co/Tongyi-MAI/Z-Image-TurboZ-Image gallry :https://modelscope.cn/studios/Tongyi-MAI/Z-Image-GalleryComfyUI:https://huggingface.co/Comfy-Org/z_image_turbo This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Hi, and thanks for the work on Z-Image — I’ve been having a lot of fun with it. I wanted to clarify something about adapter support: Does Z-Image currently support embedding / textual-inversion–style adapters (i.e., token-based adapters), or does it only support LoRA-style adapters at the moment? I'm trying to understand which adapter types the Z-Image architecture can make use of now, and which types might be possible in the future. If I train a new token embedding inQwen3-4Bfor a novel concept — for example<glimmerwolf>— using text like: A glimmerwolf is a luminous wolf-like creature with crystalline fur that glows softly in the dark, similar to bioluminescent jellyfish or frosted crystal. Glimmerwolves behave like normal wolves but leave shimmering mist trails as they move. Does Z-Image only receive the final learned embedding vector for<glimmerwolf>at inference time, or does the diffusion model benefit in any way from the semantic components(e.g.,wolf + glow + crystal + mist) that shaped that embedding during training? In other words: Is Z-Image conditioned solely on the resulting vector produced by Qwen3-4B, or does the model inherit any of the conceptual decomposition used during embedding training? Thanks! 您好，非常感谢 Z-Image 项目的出色工作——我一直在使用它，体验非常愉快。 我想澄清关于适配器（adapter）支持方面的一些问题： Z-Image 目前是否支持 embedding / textual-inversion（文本反演）类型的适配器（即基于 token 的适配器），还是目前仅支持 LoRA 类型的适配器？ 我希望了解 Z-Image 架构目前能够使用哪些适配器类型，以及未来可能支持哪些类型。 如果我在Qwen3-4B中为一个全新的概念训练一个新的 token embedding，例如<glimmerwolf>，并使用如下文本进行训练： Glimmerwolf（微光狼）是一种具有发光特性的狼状生物，它的晶体状皮毛会在黑暗中柔和地发光，类似于发光水母或磨砂晶体。微光狼的行为类似普通狼，但在移动时会留下闪烁的雾状轨迹。 那么在推理阶段： Z-Image 是否只会接收到<glimmerwolf>最终训练得到的 embedding 向量？还是说扩散模型也会从训练该 embedding 时所使用的语义成分中受益？（例如：狼 + 发光特性 + 晶体材质 + 雾效） 换句话说： Z-Image 是仅根据 Qwen3-4B 输出的最终向量进行条件化，还是会继承 embedding 训练过程中形成的语义分解信息？ 谢谢！ ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer",
+    "authors": [
+      "Huanqia Cai",
+      "Sihan Cao",
+      "Ruoyi Du",
+      "Dengyang Jiang",
+      "Xin Jin",
+      "Zhen Li",
+      "Zhong-Yu Li",
+      "Junhan Shi",
+      "Qilong Wu",
+      "Shilin Zhou"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Tongyi-MAI/Z-Image",
+    "huggingface_url": "https://huggingface.co/papers/2511.22699",
+    "upvote": 152,
+    "tags": [
+      "image",
+      "embedding",
+      "glimmerwolf"
+    ]
+  }
+}

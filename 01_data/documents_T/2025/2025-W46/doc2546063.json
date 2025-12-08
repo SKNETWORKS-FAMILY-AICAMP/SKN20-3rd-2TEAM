@@ -1,0 +1,19 @@
+{
+  "context": "DigiData and DigiData-Bench advance mobile control agents by providing a diverse, high-quality dataset and dynamic evaluation protocols, respectively. AI agents capable of controlling user interfaces have the potential to\ntransform human interaction with digital devices. To accelerate this\ntransformation, two fundamental building blocks are essential: high-quality\ndatasets that enable agents to achieve complex and human-relevant goals, and\nrobust evaluation methods that allow researchers and practitioners to rapidly\nenhance agent performance. In this paper, we introduceDigiData, a large-scale,\nhigh-quality, diverse, multi-modal dataset designed for training mobile control\nagents. Unlike existing datasets, which derive goals from unstructured\ninteractions,DigiDatais meticulously constructed through comprehensive\nexploration of app features, resulting in greater diversity and higher goal\ncomplexity. Additionally, we presentDigiData-Bench, a benchmark for evaluatingmobile control agentson real-world complex tasks. We demonstrate that the\ncommonly usedstep-accuracy metricfalls short in reliably assessing mobile\ncontrol agents and, to address this, we proposedynamic evaluation protocolsandAI-powered evaluationsas rigorous alternatives for agent assessment. Our\ncontributions aim to significantly advance the development of mobile control\nagents, paving the way for more intuitive and effective human-device\ninteractions. DigiData introduces a large, diverse multi-modal dataset and benchmark for training and evaluating mobile control agents with robust dynamic evaluation methods beyond step accuracy. Code:https://github.com/facebookresearch/DigiDataWebsite:https://facebookresearch.github.io/DigiData This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "DigiData: Training and Evaluating General-Purpose Mobile Control Agents",
+    "authors": [
+      "Yuxuan Sun",
+      "Shengyi Qian"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/facebookresearch/digidata",
+    "huggingface_url": "https://huggingface.co/papers/2511.07413",
+    "upvote": 5,
+    "tags": [
+      "control agent",
+      "mobile control",
+      "digidata"
+    ]
+  }
+}

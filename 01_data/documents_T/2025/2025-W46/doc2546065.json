@@ -1,0 +1,19 @@
+{
+  "context": "A novel framework MPJudge assesses music-induced paintings by integrating music features into a visual encoder using a modulation-based fusion mechanism, outperforming existing emotion recognition models. Music induced painting is a unique artistic practice, where visual artworks\nare created under the influence of music. Evaluating whether a painting\nfaithfully reflects the music that inspired it poses a challenging perceptual\nassessment task. Existing methods primarily rely on emotion recognition models\nto assess the similarity between music and painting, but such models introduce\nconsiderable noise and overlook broader perceptual cues beyond emotion. To\naddress these limitations, we propose a novel framework for music induced\npainting assessment that directly modelsperceptual coherencebetween music and\nvisual art. We introduceMPD, the first large scale dataset of music painting\npairs annotated by domain experts based onperceptual coherence. To better\nhandle ambiguous cases, we further collect pairwise preference annotations.\nBuilding on this dataset, we presentMPJudge, a model that integrates music\nfeatures into a visual encoder via a modulation based fusion mechanism. To\neffectively learn from ambiguous cases, we adoptDirect Preference Optimizationfor training. Extensive experiments demonstrate that our method outperforms\nexisting approaches. Qualitative results further show that our model more\naccurately identifies music relevant regions in paintings. Music induced painting is a unique artistic practice, where visual artworks are created under the influence of music. Evaluating whether a painting faithfully reflects the music that inspired it poses a challenging perceptual assessment task. Existing methods primarily rely on emotion recognition models to assess the similarity between music and painting, but such models introduce considerable noise and overlook broader perceptual cues beyond emotion. To address these limitations, we propose a novel framework for music induced painting assessment that directly models perceptual coherence between music and visual art. We introduce MPD, the first large scale dataset of music painting pairs annotated by domain experts based on perceptual coherence. To better handle ambiguous cases, we further collect pairwise preference annotations. Building on this dataset, we present MPJudge, a model that integrates music features into a visual encoder via a modulation based fusion mechanism. To effectively learn from ambiguous cases, we adopt Direct Preference Optimization for training. Extensive experiments demonstrate that our method outperforms existing approaches. Qualitative results further show that our model more accurately identifies music relevant regions in paintings. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "MPJudge: Towards Perceptual Assessment of Music-Induced Paintings",
+    "authors": [
+      "Shiqi Jiang",
+      "Tianyi Liang"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.07137",
+    "upvote": 5,
+    "tags": [
+      "music",
+      "painting",
+      "visual"
+    ]
+  }
+}

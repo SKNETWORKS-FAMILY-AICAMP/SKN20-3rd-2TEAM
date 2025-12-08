@@ -1,0 +1,16 @@
+{
+  "context": "LUT-LLM, an FPGA accelerator, improves LLM inference efficiency by shifting computation to memory-based operations, achieving lower latency and higher energy efficiency compared to GPUs. The rapid progress of large language models (LLMs) has advanced numerous\napplications, yet efficient single-batch inference remains vital for on-device\nintelligence. WhileFPGAsoffer fine-grained data control and high energy\nefficiency, recent GPU optimizations have narrowed their advantage, especially\nunder arithmetic-based computation. To overcome this, we leverageFPGAs'\nabundant on-chip memory to shift LLM inference from arithmetic- to memory-based\ncomputation throughtable lookups. We presentLUT-LLM, the first FPGA\naccelerator enabling 1B+ LLM inference viavector-quantized memory operations.\nOur analysis identifiesactivation-weight co-quantizationas the most effective\nscheme, supported by (1)bandwidth-aware parallel centroid search, (2)efficient 2D table lookups, and (3) aspatial-temporal hybrid designminimizing\ndata caching. Implemented on anAMD V80 FPGAfor a customizedQwen 3 1.7Bmodel,LUT-LLMachieves 1.66x lower latency thanAMD MI210and 1.72x higher\nenergy efficiency thanNVIDIA A100, scaling to 32B models with 2.16x efficiency\ngain over A100. Code will be released soon. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "LUT-LLM: Efficient Large Language Model Inference with Memory-based\n  Computations on FPGAs",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.06174",
+    "upvote": 5,
+    "tags": [
+      "llm",
+      "efficiency",
+      "memory"
+    ]
+  }
+}

@@ -4,27 +4,35 @@ import re
 import time
 import requests
 from typing import List, Dict
+from dotenv import load_dotenv
 
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 
 import nltk
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 from keybert import KeyBERT
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # NLTK 불용어 다운로드
 try:
     nltk.data.find("corpora/stopwords")
     nltk.data.find("corpora/wordnet")
+    nltk.data.find("corpora/omw-1.4")
 except LookupError:
     print("[PREPARE] NLTK 데이터 다운로드 중...")
     nltk.download("stopwords", quiet=True)
     nltk.download("wordnet", quiet=True)
+    nltk.download("omw-1.4", quiet=True)
 
 # HTTP 헤더 설정
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0 Safari/537.36"
 }
+
+load_dotenv()
+KEYWORD_METHOD = os.getenv("KEYWORD_EXTRACTION_METHOD").lower()
 
 # 불용어 로드
 nltk_stopwords = set(stopwords.words('english'))
@@ -46,7 +54,7 @@ all_stopwords = nltk_stopwords.union(custom_stopwords)
 
 
 # KeyBERT를 사용하여 keyword 추출
-def extract_keywords(text: str, top_n: int = 3) -> List[str]:
+def extract_keywords_keybert(text: str, top_n: int = 3) -> List[str]:
     """
     KeyBERT를 사용한 키워드 추출
 
@@ -85,6 +93,95 @@ def extract_keywords(text: str, top_n: int = 3) -> List[str]:
     except Exception as e:
         print(f"[WARNING]  키워드 추출 실패: {e}")
         return [f"keyword{i+1}" for i in range(top_n)]
+
+
+# TF-IDF를 사용하여 keyword 추출
+def extract_keywords_tfidf(text: str, top_n: int = 3) -> List[str]:
+    """
+    TF-IDF 기반 키워드 추출 (with lemmatization)
+
+    Args:
+        text: 논문 Abstract
+        top_n: 추출할 키워드 개수
+
+    Returns:
+        키워드 리스트
+    """
+    # 1. Validate input
+    if not text or len(text.split()) < 10:
+        return [f"keyword{i+1}" for i in range(top_n)]
+
+    try:
+        # 2. Lemmatization preprocessing
+        lemmatizer = WordNetLemmatizer()
+        tokens = re.findall(r'\b[a-z]{3,}\b', text.lower())
+        lemmatized_tokens = [lemmatizer.lemmatize(token) for token in tokens]
+        preprocessed_text = ' '.join(lemmatized_tokens)
+
+        # 3. TF-IDF vectorization
+        vectorizer = TfidfVectorizer(
+            max_features=50,
+            ngram_range=(1, 2),  # Match KeyBERT
+            stop_words=list(all_stopwords),
+            token_pattern=r'\b[a-z]{3,}\b',
+            max_df=1,
+            min_df=0.85
+        )
+
+        tfidf_matrix = vectorizer.fit_transform([preprocessed_text])
+        feature_names = vectorizer.get_feature_names_out()
+        scores = tfidf_matrix.toarray()[0]
+
+        # 4. Extract top N*2 candidates
+        top_indices = scores.argsort()[-top_n*2:][::-1]
+        candidates = [(feature_names[i], scores[i]) for i in top_indices if scores[i] > 0]
+
+        if not candidates:
+            return [f"keyword{i+1}" for i in range(top_n)]
+
+        # 5. Remove substring duplicates (e.g., "transformer" vs "transformer architecture")
+        unique_keywords = []
+        for keyword, score in candidates:
+            if not any(keyword in existing for existing in unique_keywords):
+                unique_keywords = [kw for kw in unique_keywords if kw not in keyword]
+                unique_keywords.append(keyword)
+            if len(unique_keywords) >= top_n:
+                break
+
+        # 6. Fill with defaults if needed
+        while len(unique_keywords) < top_n:
+            unique_keywords.append(f"keyword{len(unique_keywords)+1}")
+
+        return unique_keywords[:top_n]
+
+    except Exception as e:
+        print(f"[WARNING] TF-IDF 키워드 추출 실패: {e}")
+        return [f"keyword{i+1}" for i in range(top_n)]
+
+
+# Unified keyword extraction function
+def extract_keywords(text: str, top_n: int = 3, method: str = "keybert") -> List[str]:
+    """
+    키워드 추출 (KeyBERT 또는 TF-IDF)
+
+    Args:
+        text: 논문 Abstract
+        top_n: 추출할 키워드 개수
+        method: "keybert" 또는 "tfidf"
+
+    Returns:
+        키워드 리스트
+
+    Raises:
+        ValueError: method가 "keybert" 또는 "tfidf"가 아닌 경우
+    """
+    if method not in ["keybert", "tfidf"]:
+        raise ValueError(f"Invalid method: {method}. Must be 'keybert' or 'tfidf'")
+
+    if method == "keybert":
+        return extract_keywords_keybert(text, top_n)
+    else:
+        return extract_keywords_tfidf(text, top_n)
 
 
 def get_with_retry(url: str, max_retries: int = 3):
@@ -213,7 +310,7 @@ def fetch_paper_details(paper_url: str) -> Dict[str, any]:
     }
 
 
-def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
+def save_paper_json(paper_data: Dict, year: int, week: int, index: int, method: str = "keybert") -> str:
     """
     논문 데이터를 JSON 파일로 저장
 
@@ -229,12 +326,14 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
         year: 연도 (예: 2025)
         week: 주차 (1~52)
         index: 논문 번호 (0부터 시작)
+        method: "keybert" 또는 "tfidf" (저장 디렉토리 결정)
 
     Returns:
         str: 저장된 파일 ID (예: doc2545001)
 
     File Structure:
-        01_data/documents/{year}/{year}-W{week}/doc{YY}{ww}{NNN}.json
+        - KeyBERT: 01_data/documents_K/{year}/{year}-W{week}/doc{YY}{ww}{NNN}.json
+        - TF-IDF:  01_data/documents_T/{year}/{year}-W{week}/doc{YY}{ww}{NNN}.json
 
     JSON Format:
         {
@@ -256,8 +355,9 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
     doc_id = f"doc{year % 100:02d}{week:02d}{index+1:03d}"
     filename = f"{doc_id}.json"
 
-    # 디렉토리 생성
-    save_dir = f"01_data/documents/{year}/{week_str}"
+    # 디렉토리 생성 (method-specific)
+    method_suffix = "K" if method == "keybert" else "T"
+    save_dir = f"01_data/documents_{method_suffix}/{year}/{week_str}"
     os.makedirs(save_dir, exist_ok=True)
 
     # JSON 데이터 구조
@@ -283,17 +383,19 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int) -> str:
 
 
 # 메인 함수
-def crawl_weekly_papers(year: int, week: int):
+def crawl_weekly_papers(year: int, week: int, method: str = "keybert"):
     """
     특정 주차의 HuggingFace DailyPapers 크롤링
 
     Args:
         year: 연도
         week: 주차
+        method: "keybert" 또는 "tfidf" (키워드 추출 방법)
     """
     week_str = f"{year}-W{week:02d}"
+    method_name = "KeyBERT" if method == "keybert" else "TF-IDF"
     print(f"\n{'='*60}")
-    print(f"[START] {week_str} 크롤링 시작")
+    print(f"[START] {week_str} 크롤링 시작 (Method: {method_name})")
     print(f"{'='*60}")
 
     # 1. Weekly 페이지에서 논문 목록 추출
@@ -319,8 +421,8 @@ def crawl_weekly_papers(year: int, week: int):
             fail_count += 1
             continue
 
-        # KeyBERT로 키워드 추출
-        keywords = extract_keywords(details["context"], top_n=3)
+        # 키워드 추출 (method 파라미터 사용)
+        keywords = extract_keywords(details["context"], top_n=3, method=method)
 
         # 데이터 저장
         paper_data = {
@@ -334,7 +436,7 @@ def crawl_weekly_papers(year: int, week: int):
         }
 
         try:
-            doc_id = save_paper_json(paper_data, year, week, index)
+            doc_id = save_paper_json(paper_data, year, week, index, method=method)
             success_count += 1
         except Exception as e:
             print(f"\n[FATAL] {doc_id} 저장 실패: {e}")
@@ -360,7 +462,7 @@ if __name__ == "__main__":
     # 크롤링 실행 예시 (2025년 45~49주차)
     for week in range(45, 50):
         try:
-            crawl_weekly_papers(year=2025, week=week)
+            crawl_weekly_papers(year=2025, week=week, method=KEYWORD_METHOD)
         except Exception as e:
             print(f"\n[FATAL] W{week:02d} 크롤링 실패: {e}")
 

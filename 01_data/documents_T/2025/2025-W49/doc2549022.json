@@ -1,0 +1,20 @@
+{
+  "context": "A unified inference-time framework addresses core limitations of autoregressive video diffusion models, enabling infinite-horizon, controllable, and cinematic video generation. Currentautoregressive video diffusion modelsare constrained by three core bottlenecks: (i) the finite temporal horizon imposed by the base model's3D Rotary Positional Embedding(3D-RoPE), (ii) slow prompt responsiveness in maintaining fine-grained action control during long-form rollouts, and (iii) the inability to realize discontinuous cinematic transitions within a single generation stream. We introduce infty-RoPE, a unified inference-time framework that addresses all three limitations through three interconnected components:Block-Relativistic RoPE,KV Flush, andRoPE Cut.Block-Relativistic RoPEreformulates temporal encoding as a moving local reference frame, where each newly generated latent block is rotated relative to the base model's maximum frame horizon while earlier blocks are rotated backward to preserve relative temporal geometry. This relativistic formulation eliminates fixed temporal positions, enabling continuous video generation far beyond the base positional limits. To obtain fine-grained action control without re-encoding,KV Flushrenews the KV cache by retaining only two latent frames, the global sink and the last generated latent frame, thereby ensuring immediate prompt responsiveness. Finally,RoPE Cutintroduces controlled discontinuities in temporal RoPE coordinates, enabling multi-cut scene transitions within a single continuous rollout. Together, these components establish infty-RoPE as a training-free foundation for infinite-horizon, controllable, and cinematic video diffusion. Comprehensive experiments show that infty-RoPE consistently surpasses previous autoregressive models in overallVBench scores. 2026 will be the year of autoregressive video models. As we wrap up 2025, we ask a critical question: How far can a diffusion model distilled with Self-Forcing on only 5-second, 16-FPS videos be pushed into long-form video generation without any supervision? We introduce Infinity-RoPE, a training-free, plug-and-play relativistic RoPE formulation compatible with any Self-Forcing variant performing self-rollouts. Infinity-RoPE enables long video generation far beyond the base model’s temporal RoPE limit, supports full action control and dynamic scene changes, including scene cuts, within a single continuous generation stream. Project Page:https://infinity-rope.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Infinity-RoPE: Action-Controllable Infinite Video Generation Emerges From Autoregressive Self-Rollout",
+    "authors": [
+      "Tuna Han Salih Meral",
+      "Adil Kaan Akan",
+      "Kaan Oktay"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.20649",
+    "upvote": 43,
+    "tags": [
+      "rope",
+      "video",
+      "temporal"
+    ]
+  }
+}

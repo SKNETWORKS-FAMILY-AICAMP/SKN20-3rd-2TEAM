@@ -1,0 +1,19 @@
+{
+  "context": "DraCo, a novel interleaved reasoning paradigm, enhances text-to-image generation by integrating both textual and visual content, generating low-resolution drafts, verifying semantic alignment, and refining images with super-resolution to address challenges in textual planning and rare attribute generation. Recentunified multimodal large language models(MLLMs) have shown impressive capabilities, incorporatingchain-of-thought(CoT) reasoning for enhancedtext-to-image generation. However, existing approaches remain limited, either treating the model merely as a standalone generator or relying on abstract textual planning. To this end, we proposeDraft-as-CoT(DraCo), a novelinterleaved reasoningparadigm that fully leverages both textual and visual contents in CoT for better planning and verification. Our method first generates alow-resolution draft imageas preview, providing more concrete and structuralvisual planningand guidance. Then, we employ the model's inherent understanding capability to verify potentialsemantic misalignmentsbetween the draft and input prompt, and performs refinement through selective corrections withsuper-resolution. In this way, our approach addresses two fundamental challenges: the coarse-grained nature of textual planning and the difficulty in generating rare attribute combinations. To support training, we curateDraCo-240K, aiming to enhance three atomic capabilities spanning general correction, instance manipulation, and layout reorganization. Supported byDraCo-CFG, a specializedclassifier-free guidance(CFG) strategy forinterleaved reasoning,DraCoachieves a tremendous increase onGenEval(+8%),Imagine-Bench(+0.91), andGenEval++(+3%), significantly outperforming direct generation and other generation methods empowered by CoT. 🔥 Project Page:https://github.com/CaraJ7/DraCo This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "DraCo: Draft as CoT for Text-to-Image Preview and Rare Concept Generation",
+    "authors": [
+      "Dongzhi Jiang",
+      "Haodong Li"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/CaraJ7/DraCo",
+    "huggingface_url": "https://huggingface.co/papers/2512.05112",
+    "upvote": 9,
+    "tags": [
+      "generation",
+      "textual",
+      "resolution"
+    ]
+  }
+}

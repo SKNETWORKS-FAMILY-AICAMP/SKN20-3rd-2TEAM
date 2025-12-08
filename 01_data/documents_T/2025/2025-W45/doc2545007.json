@@ -1,0 +1,20 @@
+{
+  "context": "ThinkMorph, a unified model fine-tuned on interleaved reasoning traces, enhances multimodal reasoning by generating coherent text-image steps, achieving significant performance gains and demonstrating emergent capabilities. Multimodal reasoningrequires iterative coordination between language and\nvision, yet it remains unclear what constitutes a meaningful interleaved chain\nof thought. We posit that text and image thoughts should function as\ncomplementary, rather than isomorphic, modalities that mutually advance\nreasoning. Guided by this principle, we buildThinkMorph, a unified model\nfine-tuned on 24K high-qualityinterleaved reasoning tracesspanning tasks with\nvarying visual engagement.ThinkMorphlearns to generate progressive text-image\nreasoning steps that concretely manipulate visual content while maintaining\ncoherent verbal logic. It delivers large gains on vision-centric benchmarks\n(averaging 34.7% over the base model) and generalizes to out-of-domain tasks,\nmatching or surpassing larger and proprietary VLMs. Beyond performance,ThinkMorphexhibits emergentmultimodal intelligence, including unseen visual\nmanipulation skills, adaptive switching betweenreasoning modes, and better\ntest-time scaling through diversified multimodal thoughts.These findings\nsuggest promising directions for characterizing the emergent capabilities of\nunified models formultimodal reasoning. Multimodal reasoning requires iterative coordination between language and vision, yet it remains unclear what constitutes a meaningful interleaved chain of thought. We posit that text and image thoughts should function as complementary, rather than isomorphic, modalities that mutually advance reasoning. Guided by this principle, we build ThinkMorph, a unified model fine-tuned on 24K high-quality interleaved reasoning traces spanning tasks with varying visual engagement. ThinkMorph learns to generate progressive text-image reasoning steps that concretely manipulate visual content while maintaining coherent verbal logic. It delivers large gains on vision-centric benchmarks (averaging 34.7% over the base model) and generalizes to out-of-domain tasks, matching or surpassing larger and proprietary VLMs. Beyond performance, ThinkMorph exhibits emergent multimodal intelligence, including unseen visual manipulation skills, adaptive switching between reasoning modes, and better test-time scaling through diversified multimodal thoughts.These findings suggest promising directions for characterizing the emergent capabilities of unified models for multimodal reasoning. ThinkMorph MultiModal Reasoning on Vision-centric Tasks: The four tasks we interleave: Result: +86.67% Nav, +38.75% Jigsaw, +34.74% avg. Representative Emergent Properties in Interleaved Reasoning: ThinkMorph generalizes to out-of-domain benchmarks: @librarian-botrecommend This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ThinkMorph: Emergent Properties in Multimodal Interleaved\n  Chain-of-Thought Reasoning",
+    "authors": [
+      "Jiawei Gu",
+      "Yunzhuo Hao",
+      "Huichen Will Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/ThinkMorph/ThinkMorph",
+    "huggingface_url": "https://huggingface.co/papers/2510.27492",
+    "upvote": 81,
+    "tags": [
+      "reasoning",
+      "multimodal",
+      "thinkmorph"
+    ]
+  }
+}

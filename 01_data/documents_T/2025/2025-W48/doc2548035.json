@@ -1,0 +1,18 @@
+{
+  "context": "Video-R4, a video reasoning LMM, uses iterative visual rumination to improve text-rich video QA by selecting, zooming, and re-encoding frames, achieving state-of-the-art results on various QA tasks. Understanding text-rich videos requires reading small, transient textual cues that often demand repeated inspection. Yet mostvideo QA modelsrely on single-pass perception over fixedframes, leading to hallucinations and failures on fine-grained evidence. Inspired by how humans pause, zoom, and re-read critical regions, we introduceVideo-R4(Reinforcing Text-Rich Video Reasoning withVisual Rumination), a video reasoningLMMthat performsvisual rumination: iteratively selectingframes, zooming into informative regions,re-encodingretrieved pixels, and updating itsreasoning state. We construct two datasets with executable rumination trajectories:Video-R4-CoT-17kfor supervised practice andVideo-R4-RL-30kfor reinforcement learning. We propose amulti-stage rumination learningframework that progressively finetunes a 7BLMMto learn atomic and mixing visual operations viaSFTandGRPO-based RL.Video-R4-7B achieves state-of-the-art results onM4-ViteVQAand further generalizes tomulti-page document QA,slides QA, andgeneric video QA, demonstrating that iterative rumination is an effective paradigm for pixel-grounded multimodal reasoning. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Video-R4: Reinforcing Text-Rich Video Reasoning with Visual Rumination",
+    "authors": [
+      "Hang Hua"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/yunlong10/Video-R4",
+    "huggingface_url": "https://huggingface.co/papers/2511.17490",
+    "upvote": 21,
+    "tags": [
+      "video",
+      "rumination",
+      "reasoning"
+    ]
+  }
+}

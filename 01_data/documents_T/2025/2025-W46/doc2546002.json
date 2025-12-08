@@ -1,0 +1,24 @@
+{
+  "context": "VibeThinker-1.5B, a 1.5B-parameter model using the Spectrum-to-Signal Principle, achieves superior reasoning capabilities compared to larger models at a significantly lower cost. Challenging the prevailing consensus that small models inherently lack robust\nreasoning, this report introducesVibeThinker-1.5B, a 1.5B-parameter dense\nmodel developed via ourSpectrum-to-Signal Principle(SSP). This challenges the\nprevailing approach of scaling model parameters to enhance capabilities, as\nseen in models likeDeepSeek R1(671B) andKimi k2(>1T). The SSP framework\nfirst employs aTwo-Stage Diversity-Exploring Distillation(SFT) to generate a\nbroad spectrum of solutions, followed byMaxEnt-Guided Policy Optimization(RL)\nto amplify the correct signal. With a total training cost of only $7,800,VibeThinker-1.5Bdemonstrates superior reasoning capabilities compared to\nclosed-source models likeMagistral MediumandClaude Opus 4, and performs on\npar with open-source models likeGPT OSS-20B Medium. Remarkably, it surpasses\nthe 400x largerDeepSeek R1on three math benchmarks:AIME24(80.3 vs. 79.8),AIME25(74.4 vs. 70.0), andHMMT25(50.4 vs. 41.7). This is a substantial\nimprovement over its base model (6.7, 4.3, and 0.6, respectively). OnLiveCodeBench V6, it scores 51.1, outperformingMagistral Medium's 50.3 and its\nbase model's 0.0. These findings demonstrate that small models can achieve\nreasoning capabilities comparable to large models, drastically reducing\ntraining and inference costs and thereby democratizing advanced AI research. Through the innovative Spectrum-to-Signal Principle (SSP) training methodology, the 1.5B-parameter VibeThinker-1.5B surpasses giant models hundreds of times larger across multiple reasoning benchmarks, demonstrating at an extremely low cost that small models can also achieve top-tier reasoning capabilities. GitHubhttps://github.com/WeiboAI/VibeThinker     An extreme test that if 1.5B model can achieve strong reasoning ability A simple evaluation (Still recommend you to test this model with competitive math / python algorithm tasks) There is no point of testing LLMs, even math-specific ones with such tasks. LLMs won't and are not supposed to be used like this. Please stop testing them like this, use calculator or tool instead.VibeThinker is an astonishing model. I've already tested it on writing some algorithms and, despite it's size, it handles it very well. Though, code optimization problem is still unsolvable in any meaningful way. Nice work! Would you kindly share more details, such as RL training curve and SFT/RL performance? This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/tiny-model-big-logic-diversity-driven-optimization-elicits-large-model-reasoning-ability-in-vibethinker-15b Is the end to end training code available somewhere? If not, do you plan to release it? Thanks for your work. Any plans for similar capable multimodal model ? any ablation about mgpo vs grpo？ ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model\n  Reasoning Ability in VibeThinker-1.5B",
+    "authors": [
+      "Sen Xu",
+      "Yi Zhou",
+      "Jixin Min",
+      "Zhibin Yin",
+      "Shixi Liu",
+      "Lianyu Pang",
+      "Junlin Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/WeiboAI/VibeThinker",
+    "huggingface_url": "https://huggingface.co/papers/2511.06221",
+    "upvote": 128,
+    "tags": [
+      "reasoning",
+      "vibethinker",
+      "capability"
+    ]
+  }
+}

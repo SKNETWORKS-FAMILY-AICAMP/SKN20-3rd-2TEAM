@@ -1,0 +1,18 @@
+{
+  "context": "Time-to-Move (TTM) is a plug-and-play framework for motion- and appearance-controlled video generation using image-to-video (I2V) diffusion models, offering precise control over video content without requiring additional training. Diffusion-based video generationcan create realistic videos, yet existing image- and text-based conditioning fails to offer precise motion control. Prior methods formotion-conditioned synthesistypically require model-specific fine-tuning, which is computationally expensive and restrictive. We introduceTime-to-Move (TTM), a training-free, plug-and-play framework for motion- and appearance-controlled video generation with image-to-video (I2V) diffusion models. Our key insight is to use crude reference animations obtained through user-friendly manipulations such as cut-and-drag or depth-based reprojection. Motivated by SDEdit's use of coarse layout cues for image editing, we treat the crude animations as coarse motion cues and adapt the mechanism to the video domain. We preserve appearance with image conditioning and introducedual-clock denoising, a region-dependent strategy that enforces strong alignment in motion-specified regions while allowing flexibility elsewhere, balancing fidelity to user intent with natural dynamics. This lightweight modification of the sampling process incurs no additional training or runtime cost and is compatible with any backbone. Extensive experiments on object and camera motion benchmarks show that TTM matches or exceeds existing training-based baselines in realism and motion control. Beyond this, TTM introduces a unique capability: precise appearance control throughpixel-level conditioning, exceeding the limits of text-only prompting. Visit our project page for video examples and code: https://time-to-move.github.io/. A training-free, plug-and-play motion- and appearance-controlled video generation method using dual-clock denoising on image-to-video diffusion models with crude motion cues. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising",
+    "authors": [
+      "Noam Rotstein"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/time-to-move/TTM",
+    "huggingface_url": "https://huggingface.co/papers/2511.08633",
+    "upvote": 53,
+    "tags": [
+      "video",
+      "motion",
+      "image"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "context": "Vision models outperform Graph Neural Networks on tasks requiring global structural understanding and scale-invariant reasoning, as demonstrated by the new GraphAbstract benchmark. Graph Neural Networksoperate through bottom-upmessage-passing,\nfundamentally differing from human visual perception, which intuitively\ncaptures global structures first. We investigate the underappreciated potential\nofvision modelsfor graph understanding, finding they achieve performance\ncomparable to GNNs on established benchmarks while exhibiting distinctly\ndifferent learning patterns. These divergent behaviors, combined with\nlimitations of existing benchmarks that conflate domain features with\ntopological understanding, motivate our introduction ofGraphAbstract. This\nbenchmark evaluates models' ability to perceiveglobal graph propertiesas\nhumans do: recognizingorganizational archetypes, detectingsymmetry, sensingconnectivity strength, and identifyingcritical elements. Our results reveal\nthatvision modelssignificantly outperform GNNs on tasks requiring holistic\nstructural understanding and maintain generalizability across varying graph\nscales, while GNNs struggle with global pattern abstraction and degrade with\nincreasing graph size. This work demonstrates thatvision modelspossess\nremarkable yet underutilized capabilities for graph structural understanding,\nparticularly for problems requiring global topological awareness andscale-invariant reasoning. These findings open new avenues to leverage this\nunderappreciated potential for developing more effective graph foundation\nmodels for tasks dominated by holistic pattern recognition. Very interesting work!  👍👍👍 👍👍👍 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "The Underappreciated Power of Vision Models for Graph Structural\n  Understanding",
+    "authors": [
+      "Xinjian Zhao",
+      "Wei Pang",
+      "Xiangru Jian"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.24788",
+    "upvote": 35,
+    "tags": [
+      "graph",
+      "understanding",
+      "global"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "context": "ViSAudio, an end-to-end framework using conditional flow matching, generates high-quality binaural audio from silent video, providing spatial immersion and consistency across various acoustic conditions. Despite progress in video-to-audio generation, the field focuses predominantly on mono output, lacking spatial immersion. Existing binaural approaches remain constrained by a two-stage pipeline that first generates mono audio and then performs spatialization, often resulting in error accumulation and spatio-temporal inconsistencies. To address this limitation, we introduce the task of end-to-endbinaural spatial audio generationdirectly from silent video. To support this task, we present theBiAudio dataset, comprising approximately 97K video-binaural audio pairs spanning diverse real-world scenes and camera rotation trajectories, constructed through a semi-automated pipeline. Furthermore, we propose ViSAudio, an end-to-end framework that employsconditional flow matchingwith adual-branch audio generation architecture, where two dedicated branches model theaudio latent flows. Integrated with aconditional spacetime module, it balances consistency between channels while preserving distinctive spatial characteristics, ensuring precisespatio-temporal alignmentbetween audio and the input video. Comprehensive experiments demonstrate that ViSAudio outperforms existing state-of-the-art methods across both objective metrics and subjective evaluations, generating high-quality binaural audio with spatial immersion that adapts effectively to viewpoint changes, sound-source motion, and diverse acoustic environments. Project website: https://kszpxxzmc.github.io/ViSAudio-project. Website:https://kszpxxzmc.github.io/ViSAudio-project/Paper:https://arxiv.org/abs/2512.03036Code:https://github.com/kszpxxzmc/ViSAudio This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "ViSAudio: End-to-End Video-Driven Binaural Spatial Audio Generation",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/kszpxxzmc/ViSAudio",
+    "huggingface_url": "https://huggingface.co/papers/2512.03036",
+    "upvote": 20,
+    "tags": [
+      "visaudio",
+      "spatial",
+      "video"
+    ]
+  }
+}

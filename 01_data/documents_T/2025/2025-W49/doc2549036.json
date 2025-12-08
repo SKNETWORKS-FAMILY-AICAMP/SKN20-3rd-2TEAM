@@ -1,0 +1,16 @@
+{
+  "context": "Semantic-First Diffusion (SFD) enhances image generation by asynchronously denoising semantic and texture latents, improving convergence and quality. Latent Diffusion Models(LDMs) inherently follow a coarse-to-fine generation process, where high-level semantic structure is generated slightly earlier than fine-grained texture. This indicates the preceding semantics potentially benefit texture generation by providing a semantic anchor. Recent advances have integrated semantic priors from pretrained visual encoders to further enhance LDMs, yet they still denoise semantic and VAE-encoded texture synchronously, neglecting such ordering. Observing these, we propose Semantic-First Diffusion (SFD), a latent diffusion paradigm that explicitly prioritizes semantic formation.SFDfirst constructs composite latents by combining a compact semantic latent, which is extracted from a pretrained visual encoder via a dedicatedSemantic VAE, with the texture latent. The core ofSFDis to denoise the semantic and texture latents asynchronously using separatenoise schedules: semantics precede textures by a temporal offset, providing clearer high-level guidance for texture refinement and enabling natural coarse-to-fine generation. OnImageNet256x256 with guidance,SFDachievesFID1.06 (LightningDiT-XL) andFID1.04 (1.0B LightningDiT-XXL), while achieving up to 100x faster convergence than the original DiT.SFDalso improves existing methods likeReDiandVA-VAE, demonstrating the effectiveness of asynchronous, semantics-led modeling. Project page and code: https://yuemingpan.github.io/SFD.github.io/. Why denoise synchronously? SFD introduces an asynchronous paradigm where Semantics lead Texture. Time to rethink the generation ordering in LDMs! Paper:https://arxiv.org/abs/2512.04926Github:https://github.com/yuemingPAN/SFD This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Semantics Lead the Way: Harmonizing Semantic and Texture Modeling with Asynchronous Latent Diffusion",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/yuemingPAN/SFD",
+    "huggingface_url": "https://huggingface.co/papers/2512.04926",
+    "upvote": 33,
+    "tags": [
+      "semantic",
+      "texture",
+      "sfd"
+    ]
+  }
+}

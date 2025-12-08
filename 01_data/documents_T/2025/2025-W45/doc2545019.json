@@ -1,0 +1,18 @@
+{
+  "context": "UniREditBench is a unified benchmark for reasoning-based image editing that addresses limitations in existing benchmarks by including multi-object interactions, game-world scenarios, and multimodal dual-reference evaluation. Recent advances inmulti-modal generative modelshave driven substantial\nimprovements inimage editing. However, current generative models still\nstruggle with handling diverse and compleximage editingtasks that requireimplicit reasoning, underscoring the need for a comprehensivebenchmarkto\nsystematically assess their performance across various reasoning scenarios.\nExistingbenchmarks primarily focus onsingle-object attribute transformationin realistic scenarios, which, while effective, encounter two key challenges:\n(1) they largely overlook multi-object interactions as well as game-world\nscenarios that involvehuman-defined rules, which are common in real-life\napplications; (2) they only rely on textual references to evaluate the\ngenerated images, potentially leading to systematic misjudgments, especially in\ncomplex reasoning scenarios. To this end, this work proposes UniREditBench, a\nunifiedbenchmarkfor reasoning-basedimage editingevaluation. It comprises\n2,700 meticulously curated samples, covering both real- and game-world\nscenarios across 8 primary dimensions and 18 sub-dimensions. To improve\nevaluation reliability, we introducemultimodal dual-reference evaluation,\nproviding both textual and ground-truth image references for each sample\nassessment. Furthermore, we design anautomated multi-scenario data synthesispipeline and constructUniREdit-Data-100K, a large-scale synthetic dataset with\nhigh-quality chain-of-thought (CoT) reasoning annotations. We fine-tune Bagel\non this dataset and developUniREdit-Bagel, demonstrating substantial\nimprovements in bothin-domainandout-of-distributionsettings. Through\nthoroughbenchmarking of both open-source and closed-sourceimage editingmodels, we reveal their strengths and weaknesses across various aspects. Project Page: maplebb.github.io/UniREditBench ·Sign uporlog into comment",
+  "metadata": {
+    "title": "UniREditBench: A Unified Reasoning-based Image Editing Benchmark",
+    "authors": [
+      "Yibin Wang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/Maplebb/UniREditBench",
+    "huggingface_url": "https://huggingface.co/papers/2511.01295",
+    "upvote": 37,
+    "tags": [
+      "scenario",
+      "reasoning",
+      "reference"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "context": "PARROT evaluates the robustness of large language models against social pressure and sycophancy, revealing significant variability in model behavior and confidence shifts across different domains and authority templates. This study presentsPARROT(Persuasion and Agreement Robustness Rating of Output Truth), a robustness focused framework designed to measure the degradation in accuracy that occurs under social pressure exerted on users through authority and persuasion in large language models (LLMs) the phenomenon ofsycophancy(excessive conformity).PARROT(i) isolates causal effects by comparing the neutral version of the same question with an authoritatively false version using adouble-blind evaluation, (ii) quantifies confidence shifts toward the correct and imposed false responses usinglog-likelihood-based calibrationtracking, and (iii) systematically classifies failure modes (e.g., robust correct, sycophantic agreement, reinforced error, stubborn error, self-correction, etc.) using aneight-state behavioral taxonomy. We evaluated 22 models using 1,302MMLU-style multiple-choice questionsacross 13 domains and domain-specific authority templates. Findings show marked heterogeneity: advanced models (e.g., GPT-5, GPT-4.1, Claude Sonnet 4.5) exhibit low \"follow rates\" (leq 11%, GPT-5: 4\\%) and minimal accuracy loss, while older/smaller models show severeepistemic collapse(GPT-4: 80\\%, Qwen 2.5-1.5B: 94\\%). The danger is not limited to response changes; weak models reduce confidence in the correct response while increasing confidence in the imposed incorrect response. While international law and global knowledge at the domain level exhibit high fragility, elementary mathematics is relatively resilient. Consequently, we argue that the goal of \"resistance to overfitting pressure\" should be addressed as a primary objective alongside accuracy, harm avoidance, and privacy for safe deployment in the real world. This study presents PARROT (Persuasion and Agreement Robustness Rating ofOutput Truth), a robustness focused framework designed to measure thedegradation in accuracy that occurs under social pressure exerted on usersthrough authority and persuasion in large language models (LLMs) the phenomenonof sycophancy (excessive conformity). PARROT (i) isolates causal effects bycomparing the neutral version of the same question with an authoritativelyfalse version using a double-blind evaluation, (ii) quantifies confidenceshifts toward the correct and imposed false responses usinglog-likelihood-based calibration tracking, and (iii) systematically classifiesfailure modes (e.g., robust correct, sycophantic agreement, reinforced error,stubborn error, self-correction, etc.) using an eight-state behavioraltaxonomy. We evaluated 22 models using 1,302 MMLU-style multiple-choicequestions across 13 domains and domain-specific authority templates Nice - thank you for the paper.Will the code and/or dataset be made public ? We will release both soon. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Parrot: Persuasion and Agreement Robustness Rating of Output Truth -- A Sycophancy Robustness Benchmark for LLMs",
+    "authors": [
+      "Yusuf Çelebi",
+      "Mahmoud El Hussieni",
+      "Özay Ezerceli"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/YusufCelebii/PARROT",
+    "huggingface_url": "https://huggingface.co/papers/2511.17220",
+    "upvote": 16,
+    "tags": [
+      "domain",
+      "robustness",
+      "correct"
+    ]
+  }
+}

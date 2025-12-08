@@ -1,0 +1,20 @@
+{
+  "context": "A simulation framework improves autonomous driving by generating diverse, high-fidelity driving scenarios, leading to better generalization and robustness in real-world testing. Achieving fully autonomous driving systems requires learning rational decisions in a wide span of scenarios, including safety-critical and out-of-distribution ones. However, such cases are underrepresented in real-world corpus collected by human experts. To complement for the lack of data diversity, we introduce a novel and scalable simulation framework capable of synthesizing massive unseen states upon existing driving logs. Our pipeline utilizes advancedneural renderingwith areactive environmentto generate high-fidelity multi-view observations controlled by the perturbed ego trajectory. Furthermore, we develop apseudo-expert trajectory generationmechanism for these newly simulated states to provide action supervision. Upon the synthesized data, we find that a simpleco-training strategyon both real-world and simulated samples can lead to significant improvements in both robustness and generalization for various planning methods on challenging real-world benchmarks, up to +6.8EPDMSonnavhardand +2.9 onnavtest. More importantly, such policy improvement scales smoothly by increasing simulation data only, even without extra real-world data streaming in. We further reveal several crucial findings of such a sim-real learning system, which we termSimScale, including the design of pseudo-experts and the scaling properties for different policy architectures. Our simulation data and code would be released.  📜 [technical report] 🏠 [project page] 📑 [github] This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "SimScale: Learning to Drive via Real-World Simulation at Scale",
+    "authors": [
+      "Haochen Tian",
+      "Tianyu Li",
+      "Haochen Liu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/OpenDriveLab/SimScale",
+    "huggingface_url": "https://huggingface.co/papers/2511.23369",
+    "upvote": 37,
+    "tags": [
+      "real world",
+      "simulation",
+      "driving"
+    ]
+  }
+}

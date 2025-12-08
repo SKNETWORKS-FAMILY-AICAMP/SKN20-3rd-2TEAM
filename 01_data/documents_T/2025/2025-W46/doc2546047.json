@@ -1,0 +1,20 @@
+{
+  "context": "Superpositional Gradient Descent, a quantum-inspired optimizer, improves convergence and reduces final loss in large language model training compared to AdamW. Large language models (LLMs) are increasingly trained with classical\noptimization techniques like AdamW to improve convergence and generalization.\nHowever, the mechanisms by which quantum-inspired methods enhance classical\ntraining remain underexplored. We introduceSuperpositional Gradient Descent(SGD), a novel optimizer linking gradient updates withquantum superpositionby\ninjectingquantum circuit perturbations. We present a mathematical framework\nand implementhybrid quantum-classical circuitsinPyTorchandQiskit. On\nsyntheticsequence classificationandlarge-scale LLM fine-tuning,SGDconverges faster and yields lower final loss than AdamW. Despite promising\nresults, scalability and hardware constraints limit adoption. Overall, this\nwork provides new insights into the intersection of quantum computing and deep\nlearning, suggesting practical pathways for leveraging quantum principles to\ncontrol and enhance model behavior.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Superpositional Gradient Descent: Harnessing Quantum Principles for\n  Model Training",
+    "authors": [
+      "Ahmet Erdem Pamuk",
+      "Emir Kaan Özdemir",
+      "Şuayp Talha Kocabay"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/The-Aqua-Labs/Superpositional-Gradient-Descent",
+    "huggingface_url": "https://huggingface.co/papers/2511.01918",
+    "upvote": 11,
+    "tags": [
+      "quantum",
+      "gradient",
+      "adamw"
+    ]
+  }
+}

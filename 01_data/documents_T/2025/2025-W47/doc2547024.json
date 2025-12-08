@@ -1,0 +1,20 @@
+{
+  "context": "WEAVE introduces a comprehensive suite including a large dataset and a benchmark to assess and improve multi-turn, context-dependent image generation and editing in unified multimodal models. Recent advances inunified multimodal models(UMMs) have enabled impressive progress in visualcomprehensionandgeneration. However, existing datasets and benchmarks focus primarily on single-turn interactions, failing to capture the multi-turn, context-dependent nature of real-world image creation andediting. To address this gap, we presentWEAVE, the first suite for in-context interleaved cross-modalitycomprehensionandgeneration. Our suite consists of two complementary parts.WEAVE-100kis a large-scale dataset of 100Kinterleaved samplesspanning over 370Kdialogue turnsand 500K images, coveringcomprehension,editing, andgenerationtasks that require reasoning over historical context.WEAVEBenchis ahuman-annotated benchmarkwith 100 tasks based on 480 images, featuring a hybridVLM judgerevaluation framework based on both the reference image and the combination of the original image witheditinginstructions that assesses models' abilities inmulti-turn generation,visual memory, andworld-knowledge reasoningacross diverse domains. Experiments demonstrate that training onWEAVE-100kenablesvision comprehension,image editing, andcomprehension-generation collaborationcapabilities. Furthermore, it facilitates UMMs to developemergent visual-memory capabilities, while extensive evaluations onWEAVEBenchexpose the persistent limitations and challenges of current approaches in multi-turn, context-aware imagegenerationandediting. We believeWEAVEprovides a view and foundation for studying in-context interleavedcomprehensionandgenerationfor multi-modal community. WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation",
+    "authors": [
+      "Yongyuan Liang",
+      "Fengda Zhang",
+      "Weijia Wu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/weichow23/weave",
+    "huggingface_url": "https://huggingface.co/papers/2511.11434",
+    "upvote": 44,
+    "tags": [
+      "image",
+      "context",
+      "turn"
+    ]
+  }
+}

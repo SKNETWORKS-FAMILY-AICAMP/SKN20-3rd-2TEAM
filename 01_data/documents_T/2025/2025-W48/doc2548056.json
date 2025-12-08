@@ -1,0 +1,16 @@
+{
+  "context": "Terminal Velocity Matching (TVM) generalizes flow matching for high-fidelity generative modeling, achieving state-of-the-art performance on ImageNet with minimal computational steps. We proposeTerminal Velocity Matching(TVM), a generalization offlow matchingthat enables high-fidelity one- and few-step generative modeling. TVM models the transition between any twodiffusion timestepsand regularizes its behavior at its terminal time rather than at the initial time. We prove that TVM provides an upper bound on the2-Wasserstein distancebetween data and model distributions when the model isLipschitz continuous. However, sinceDiffusion Transformerslack this property, we introduce minimal architectural changes that achieve stable, single-stage training. To make TVM efficient in practice, we develop afused attention kernelthat supports backward passes onJacobian-Vector Products, which scale well with transformer architectures. OnImageNet-256x256, TVM achieves 3.29FIDwith a single function evaluation (NFE) and 1.99FIDwith 4 NFEs. It similarly achieves 4.32 1-NFEFIDand 2.94 4-NFEFIDonImageNet-512x512, representing state-of-the-art performance for one/few-step models from scratch. Generalizes flow matching to model transitions between diffusion timesteps, enabling single-stage training and state-of-the-art one/few-step image generation with efficient fused attention. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Terminal Velocity Matching",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.19797",
+    "upvote": 11,
+    "tags": [
+      "tvm",
+      "step",
+      "matching"
+    ]
+  }
+}

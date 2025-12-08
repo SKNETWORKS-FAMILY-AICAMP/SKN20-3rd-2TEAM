@@ -1,0 +1,16 @@
+{
+  "context": "A framework for evaluating diversity in text-to-image models through human assessment and systematic analysis of image embeddings. Despite advances in generation quality, currenttext-to-image (T2I) modelsoften lack diversity, generating homogeneous outputs. This work introduces a framework to address the need for robustdiversity evaluationin T2I models. Our framework systematically assesses diversity by evaluating individual concepts and their relevantfactors of variation. Key contributions include: (1) a novelhuman evaluation templatefor nuanced diversity assessment; (2) a curatedprompt setcovering diverse concepts with their identifiedfactors of variation(e.g. prompt: An image of an apple, factor of variation: color); and (3) a methodology for comparing models in terms of human annotations viabinomial tests.\n  Furthermore, we rigorously compare variousimage embeddingsfor diversity measurement. Notably, our principled approach enables ranking of T2I models by diversity, identifying categories where they particularly struggle. This research offers a robust methodology and insights, paving the way for improvements in T2I model diversity and metric development. Benchmarking Diversity in Image Generation via Attribute-Conditional Human Evaluation This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Benchmarking Diversity in Image Generation via Attribute-Conditional Human Evaluation",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.10547",
+    "upvote": 4,
+    "tags": [
+      "diversity",
+      "image",
+      "framework"
+    ]
+  }
+}

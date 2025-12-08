@@ -1,0 +1,18 @@
+{
+  "context": "TBCM, a self-contained trajectory-based distillation method, enhances diffusion model efficiency by eliminating external data dependency and improving knowledge transfer, achieving high-quality generation with reduced computational resources. Timestep distillationis an effective approach for improving the generation efficiency ofdiffusion models. TheConsistency Model(CM), as atrajectory-based framework, demonstrates significant potential due to its strong theoretical foundation and high-quality few-step generation. Nevertheless, currentcontinuous-time consistency distillationmethods still rely heavily on training data and computational resources, hindering their deployment in resource-constrained scenarios and limiting their scalability to diverse domains. To address this issue, we propose Trajectory-BackwardConsistency Model(TBCM), which eliminates the dependence on external training data by extractinglatent representationsdirectly from the teacher model's generation trajectory. Unlike conventional methods that requireVAE encodingand large-scale datasets, our self-contained distillation paradigm significantly improves both efficiency and simplicity. Moreover, the trajectory-extracted samples naturally bridge the distribution gap between training and inference, thereby enabling more effective knowledge transfer. Empirically, TBCM achieves 6.52FIDand 28.08CLIP scoreson MJHQ-30k underone-step generation, while reducing training time by approximately 40% compared to Sana-Sprint and saving a substantial amount of GPU memory, demonstrating superior efficiency without sacrificing quality. We further reveal thediffusion-generation space discrepancyincontinuous-time consistency distillationand analyze howsampling strategiesaffect distillation performance, offering insights for future distillation research. GitHub Link: https://github.com/hustvl/TBCM. Efficient Timestep Distillation Without Real Images. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Image-Free Timestep Distillation via Continuous-Time Consistency with Trajectory-Sampled Pairs",
+    "authors": [
+      "Bao Tang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/hustvl/TBCM",
+    "huggingface_url": "https://huggingface.co/papers/2511.20410",
+    "upvote": 2,
+    "tags": [
+      "generation",
+      "distillation",
+      "efficiency"
+    ]
+  }
+}

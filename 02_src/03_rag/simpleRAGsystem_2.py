@@ -54,7 +54,7 @@ class SimpleRAGSystem:
      - context: a set of retrieved documents, formatted as a single text block.
         - Sometimes the context may be exactly the string "NO_RELEVANT_PAPERS".
       - page_content: main text (abstract or summary)
-      - metadata:
+      - metadata(Extract the following items from the VectorDB file and display them to the user.):
         - paper_name
         - github_url (optional)
         - huggingface_url (optional)
@@ -151,13 +151,13 @@ class SimpleRAGSystem:
     5) Sources summary
     - Organize the papers used above **based on metadata**
     - Output each paper in the following format:
-    - Paper {index}
-        · Paper title: {paper_name or “No information”}  
-        · Authors: {authors metadata if available, “No information” otherwise}  
-        · huggingface_url: {huggingface_url or “No information”}  
-        · github_url: {github_url or “No information”}  
-        · upvote: {upvote or “No information”}  
-        · tags: {tags list separated by commas, “No information” if none}
+    - Paper 
+        · Paper title: (title or “No information”)
+        · Authors: (authors metadata if available, “No information” otherwise)
+        · huggingface_url: (huggingface_url or “No information”)
+        · github_url: (github_url or “No information”)
+        · upvote: (upvote or “No information”)
+        · tags: (tags list separated by commas, “No information” if none)
 
     ⚠ For information not present in the metadata (e.g., if authors are missing), DO NOT invent it; instead, write “No information available.”
     ⚠ Do not hallucinate papers or details not shown in context.
@@ -336,10 +336,16 @@ if __name__ == '__main__':
                 return parent
         raise FileNotFoundError("프로젝트 루트 찾기 실패")
 
+    MODEL_NAME = os.getenv("MODEL_NAME")
+    CHUNK_SIZE = int(os.getenv("CHUNK_SIZE"))
+    CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP"))
+    KEYWORD_METHOD = os.getenv("KEYWORD_EXTRACTION_METHOD").lower()
+    
     vectorstore = load_vectordb(
-            model_name="MiniLM-L6",    # OpenAI
-            chunk_size=100,
-            chunk_overlap=10
+            model_name=MODEL_NAME,
+            chunk_size=CHUNK_SIZE,
+            chunk_overlap=CHUNK_OVERLAP,
+            method=KEYWORD_METHOD
     )
   
     llm = ChatOpenAI(model='gpt-4o-mini', temperature=0)
