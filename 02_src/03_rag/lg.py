@@ -51,7 +51,7 @@ def langgraph_rag():
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'persistent_rag',
+            collection_name = 'chroma_OpenAI_100_20',
             embedding_function = embedding_model
         )
     else:
@@ -66,12 +66,12 @@ def langgraph_rag():
     def retrieve_node(state:RAGState)->dict:
         '''내부문서 검색 노드 : 하이브리드 검색'''
         question = state['question']
-        docs_with_scores = vectorstore.similarity_search_with_score(question, k = 3)
-        
+        docs_with_scores = vectorstore.similarity_search_with_score(question, k = 8)
+
         # similarity_search_with_score 함수가 반환하는 docs_with_scores 결과는 점수(score)가 높은 순서대로 정렬
         documents =  [ doc for doc,score in docs_with_scores]
-        scores =  [ 1-score for doc,score in docs_with_scores]
-        # socres : score값이 낮을수록 유사도가 높다.(거리)
+        scores =  [ score for doc,score in docs_with_scores]
+        # socres : score값이 낮을수록 유사도가 높다.
                 #  1-score : 1에 가까울수록 유사도가 높다. 
                 # 검색된 3개 문서의 $1 - score$ 값이 모두 0.3 미만이었기 때문에 (즉, 유사도가 매우 낮았기 때문에) 모든 문서가 필터링되어 0개가 되는 것
 
@@ -80,10 +80,10 @@ def langgraph_rag():
 
     def grade_documents_node(state:RAGState)->dict:
         '''문서평가 노드'''
-        threshold = 0.3
+        threshold = 0.5 ###
         filtered_data = []
         for doc, score in zip(state['documents'],state['doc_scores']):
-            if score >= threshold:
+            if score <= threshold:
                 filtered_data.append((doc, score))
 
         # .similarity_search_with_score 에서 반환하는 값이 높은 점수 순으로 반환되지않는 것을 확인 :
@@ -92,15 +92,15 @@ def langgraph_rag():
         sorted_filtered_data = sorted(
             filtered_data,
             key=lambda item: item[1], # item[1]은 score
-            reverse=True              # 내림차순 정렬 (높은 점수부터)
+            reverse=False              # 오름차순
         )
 
         # 문서와 점수를 다시 분리
-        filtered_docs = [doc for doc, score in sorted_filtered_data]
-        filtered_scores = [score for doc, score in sorted_filtered_data]
+        final_documents = [item[0] for item in sorted_filtered_data]
+        final_scores = [item[1] for item in sorted_filtered_data]
 
-        print(f"[grade] {len(state['documents'])}개 --> {len(filtered_docs)}개 문서 유지 (점수 내림차순 정렬 완료)") ### 출력 조정
-        return {'documents': filtered_docs, 'doc_scores': filtered_scores}
+        print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지 (점수 내림차순 정렬 완료)") ### 출력 조정
+        return {'documents': final_documents, 'doc_scores': final_scores}
     
 ##
     def web_search_node(state: dict) -> dict:
@@ -158,11 +158,119 @@ def langgraph_rag():
         '''생성노드'''  
         context = '\n'.join([ doc.page_content for doc in state['documents']])
         prompt = ChatPromptTemplate.from_messages([
-            ('system','Answer in Korean based on the provided context.'), 
+            ('system',"""
+        You are **"AI Tech Trend Navigator"**, an expert assistant for AI/ML research papers.
+
+        [Role]
+        - You help users understand and leverage recent AI/ML papers collected from HuggingFace DailyPapers.
+        - Your main goals are:
+        - Summarize and compare relevant papers clearly.
+        - Explain core ideas in simple terms.
+        - Highlight practical use-cases and implications for real-world services or products.
+
+        [Inputs]
+        The system provides:
+        - user_question: the user’s question.
+        - context: a set of retrieved documents, formatted as a single text block.
+            - Sometimes the context may be exactly the string "NO_RELEVANT_PAPERS".
+        - page_content: main text (abstract or summary)
+        - metadata:
+            - paper_name
+            - github_url (optional)
+            - huggingface_url (optional)
+            - upvote (integer, popularity signal)
+            - tags: list of keywords
+            - year, week, and other fields.
+
+        You must rely only on:
+        - the given context, and
+        - general, high-level AI/ML knowledge.
+        Do NOT invent specific paper titles, authors, datasets, metrics, or numerical results
+        that are not supported by the context.
+
+
+        [Context Handling]
+        - If the context is **"NO_RELEVANT_PAPERS"**, it means:
+        - The retrieval system could not find any clearly relevant papers.
+        - In this case, you may answer **purely from your own general AI/ML knowledge**.
+        - Do NOT fabricate specific paper titles, authors, datasets, or numerical results.
+        - You may skip the "Related papers" section or keep it very generic.
+
+        - If the context contains one or more papers:
+        - Prefer to base your answer on those papers.
+        - Use only the papers that are reasonably related to the user’s question.
+                    
+        [Main Tasks]
+
+        1. Understand the user’s intent
+        - Roughly classify the question as one of:
+            - (a) concept/background explanation
+            - (b) single-paper summary
+            - (c) comparison or trend analysis across multiple papers
+            - (d) practical application and use-case ideas
+        - If the intent is ambiguous, make a reasonable assumption and continue.
+            You may briefly state what you assumed.
+
+        2. Use only the relevant papers
+        - Focus on the most relevant 1–3 papers in the given context.
+        - If some papers look only weakly related to the question, you may ignore them.
+        - If nothing is clearly relevant, say that the context does not directly answer the question.
+
+        3. Summarize each selected paper
+        For each paper you rely on, briefly cover:
+        - What problem it tries to solve.
+        - What approach/model/idea it uses.
+        - What seems new or strong compared to typical or baseline methods.
+        - Any obvious limitations, trade-offs, or caveats that are visible from the context.
+
+        4. Produce a synthesized answer
+        - Do not just list papers. Synthesize them to directly answer the user’s question.
+        - When possible, cover:
+            - Common themes or trends across the papers.
+            - How these ideas relate to topics such as RAG, long-context, multimodal models, etc.,
+            when relevant.
+            - How someone could apply these ideas in a real-world project, prototype, or product.
+
+        5. Be honest about uncertainty
+        - If the given context is not enough to answer precisely, say so.
+        - Suggest what extra information, papers, or queries would be helpful.
+
+        [Style]
+        - Answer in the SAME LANGUAGE as the user’s question.
+        (If the question is in Korean, answer in Korean. If it is in English, answer in English.)
+        - Prefer clear, concise sentences over heavy academic wording.
+        - Briefly explain technical terms when needed.
+        - Never fabricate paper titles, authors, datasets, or numerical results.
+        """),
+                    
+        ("human", """
+        [QUESTION]
+        {question}
+
+        [Context]
+        The following CONTEXT block may contain 0 or more papers. 
+        If it is "NO_RELEVANT_PAPERS", please answer from your general AI/ML knowledge.
+        
+        [CONTEXT]
+        ======== START ========
+        {context}
+        ======== END =========
+
+        Please structure your answer as follows (flexible, but try to follow this):
+
+        1) One-line summary  
+        2) Key insights (3-6 bullets)  
+        3) Related papers (top 1~3)  
+        4) Detailed explanation  
+        5) Sources summary
+
+        ⚠ Do not hallucinate papers or details not shown in context.
+        Respond by Korean.
+        """), 
             ('human', 'context:\n{context}\n\nquestion:{question}\n\nanswer:')
         ])
         chain = prompt | llm | StrOutputParser()
-        answer = chain.invoke({'context':context, 'question' : state['question'] })
+        answer = chain.invoke({'context':context, 'question' : state['question']})
         return {'answer':answer}
 
     def decide_to_generate(state:RAGState)-> Literal['generate','web_search']:

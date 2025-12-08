@@ -44,7 +44,6 @@ def langgraph_rag():
         doc_scores : List[float]
         search_type : str
         answer : str
-        chat_history: str
 
     # 임베딩 모델 생성
     embedding_model = OpenAIEmbeddings(
@@ -57,7 +56,7 @@ def langgraph_rag():
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'persistent_rag',
+            collection_name = 'chroma_OpenAI_100_20',
             embedding_function = embedding_model
         )
     else:
@@ -339,9 +338,6 @@ def langgraph_rag():
         [QUESTION]
         {question}
         
-        [CHAT HISTORY]
-        {chat_history}
-
         [Context]
         The following CONTEXT block may contain 0 or more papers. 
         If it is "NO_RELEVANT_PAPERS", please answer from your general AI/ML knowledge.
@@ -364,7 +360,7 @@ def langgraph_rag():
         """)
         ])
         chain = prompt | llm | StrOutputParser()
-        answer = chain.invoke({'context':context, 'question' : state['question'],'chat_history': state['chat_history']})
+        answer = chain.invoke({'context':context, 'question' : state['question']})
         return {'answer':answer}
 
     def decide_to_generate(state:RAGState)-> Literal['generate','web_search']:
@@ -400,11 +396,7 @@ def langgraph_rag():
 if __name__ == '__main__':
     # 컴파일된 LangGraph 앱을 가져오기
     rag_app = langgraph_rag()
-
-    full_chat_history = ""
-    print("\n=== AI Tech Trend Navigator Chatbot ===")
-    print("종료하려면 'exit' 또는 'quit' 입력\n")
-
+    
     while True:
         try:
             user_question = input("You: ")
@@ -419,8 +411,7 @@ if __name__ == '__main__':
                 'documents': [],
                 'doc_scores': [],
                 'search_type': "",
-                'answer': "",
-                'chat_history': full_chat_history
+                'answer': ""
             }
 
             # LangGraph 앱 실행
@@ -434,8 +425,5 @@ if __name__ == '__main__':
             print(f"\nAssistant: {answer}")
             print(f" (검색유형: {search_type}, 참조문서: {doc_count}개)\n")
 
-            # 현재 질문과 답변을 대화 기록에 누적
-            full_chat_history += f"Human: {user_question}\n"
-            full_chat_history += f"Assistant: {answer}\n"
         except Exception as e:
             print(f"\n오류 발생: {e}\n")
