@@ -1,0 +1,12 @@
+{
+  "context": "Reinforcement Learning with Verifiable Rewards (RLVR) enhances evaluation metrics on combinatorial problems but often reinforces superficial heuristics rather than genuine reasoning strategies. Mathematical reasoning is a central challenge for large language models\n(LLMs), requiring not only correct answers but also faithful reasoning\nprocesses.Reinforcement Learning with Verifiable Rewards(RLVR) has emerged as\na promising approach for enhancing such capabilities; however, its ability to\nfoster genuine reasoning remains unclear. We investigateRLVRon twocombinatorial problemswith fullyverifiable solutions: Activity\nScheduling and theLongest Increasing Subsequence, using carefully\ncurated datasets withunique optima. Across multiplereward designs, we find\nthatRLVRimprovesevaluation metricsbut often by reinforcing superficial\nheuristics rather than acquiring new reasoning strategies. These findings\nhighlight the limits ofRLVRgeneralization, emphasizing the importance ofbenchmarksthat disentangle genuine mathematical reasoning from shortcut\nexploitation and providefaithful measures of progress. Code available at\nhttps://github.com/xashru/rlvr-seq-generalization. This paper investigates RLVR on two combinatorial problems with fully verifiable solutions: Activity Scheduling and the Longest Increasing Subsequence, using carefully curated datasets with unique optima. Across multiple reward designs, we find that RLVR improves evaluation metrics but often by reinforcing superficial heuristics rather than acquiring new reasoning strategies. Code:https://github.com/xashru/rlvr-seq-generalization ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "Limits of Generalization in RLVR: Two Case Studies in Mathematical\n  Reasoning",
+    "github_url": "https://github.com/xashru/rlvr-seq-generalization",
+    "huggingface_url": "https://huggingface.co/papers/2510.27044",
+    "upvote": 5,
+    "tag1": "reasoning",
+    "tag2": "rlvr",
+    "tag3": "genuine"
+  }
+}

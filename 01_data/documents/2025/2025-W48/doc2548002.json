@@ -1,12 +1,19 @@
 {
   "context": "GAM, a novel framework that employs JIT compilation principles, improves memory efficiency and task completion by leveraging a lightweight memorizer and researcher in conjunction with reinforcement learning. Memory is critical for AI agents, yet the widely-adopted static memory, aiming to create readily available memory in advance, is inevitably subject to severe information loss. To address this limitation, we propose a novel framework calledgeneral agentic memory(GAM).GAMfollows the principle of \"just-in time (JIT) compilation\" where it focuses on creating optimized contexts for its client at runtime while keeping only simple but useful memory during the offline stage. To this end,GAMemploys a duo-design with the following components. 1)Memorizer, which highlights key historical information using a lightweight memory, while maintaining complete historical information within auniversal page-store. 2)Researcher, which retrieves and integrates useful information from the page-store for its online request guided by the pre-constructed memory. This design allowsGAMto effectively leverage the agentic capabilities and test-time scalability of frontierlarge language models(LLMs), while also facilitating end-to-end performance optimization throughreinforcement learning. In our experimental study, we demonstrate thatGAMachieves substantial improvement on various memory-grounded task completion scenarios against existing memory systems. arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/general-agentic-memory-via-deep-research ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "General Agentic Memory Via Deep Research",
+    "title": "General Agentic Memory Via Deep Research",
+    "authors": [
+      "Shuqi Lu",
+      "Zheng Liu"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/VectorSpaceLab/general-agentic-memory",
     "huggingface_url": "https://huggingface.co/papers/2511.18423",
-    "upvote": 151,
-    "tag1": "memory",
-    "tag2": "information",
-    "tag3": "agentic"
+    "upvote": 154,
+    "tags": [
+      "available memory",
+      "ai agents",
+      "lightweight memorizer"
+    ]
   }
 }

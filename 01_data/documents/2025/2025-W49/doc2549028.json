@@ -1,12 +1,20 @@
 {
-  "context": "Wikontic is a multi-stage pipeline that constructs high-quality, ontology-consistent knowledge graphs from open-domain text, achieving state-of-the-art performance in information retention and efficiency. Knowledge graphs(KGs) provide structured, verifiable grounding forlarge language models(LLMs), but current LLM-based systems commonly use KGs as auxiliary structures for text retrieval, leaving their intrinsic quality underexplored. In this work, we propose Wikontic, a multi-stage pipeline that constructs KGs from open-domain text by extractingcandidate tripletswithqualifiers, enforcingWikidata-based type andrelation constraints, and normalizing entities to reduce duplication. The resulting KGs are compact, ontology-consistent, and well-connected; onMuSiQue, the correct answer entity appears in 96% of generated triplets. OnHotpotQA, our triplets-only setup achieves 76.0 F1, and onMuSiQue59.8 F1, matching or surpassing several retrieval-augmented generation baselines that still require textual context. In addition, Wikontic attains state-of-the-art information-retention performance on theMINE-1benchmark (86%), outperforming prior KG construction methods. Wikontic is also efficient at build time: KG construction uses less than 1,000 output tokens, about 3times fewer thanAriGraphand <1/20 ofGraphRAG. The proposed pipeline enhances the quality of the generated KG and offers a scalable solution for leveraging structured knowledge in LLMs.         This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "Geometrically-Constrained Agent (GCA) addresses the semantic-to-geometric gap in vision language models by decoupling semantic analysis and task solving with formal constraints, achieving state-of-the-art performance in spatial reasoning. Vision Language Models(VLMs) exhibit a fundamentalsemantic-to-geometric gapinspatial reasoning: they excel at qualitative semantic inference but their reasoning operates within a lossy semantic space, misaligned with high-fidelity geometry. Current paradigms fail to bridge this gap.Training-based methodssuffer from an ``oracle paradox,'' learning flawed spatial logic from imperfect oracles.Tool-integrated methodsconstrain the final computation but critically leave the VLM's planning process unconstrained, resulting in geometrically flawed plans. In this work, we proposeGeometrically-Constrained Agent(GCA), a training-free agentic paradigm that resolves this gap by introducing aformal task constraint. Specifically, we strategically decouples the VLM's role into two stages. First, acting as asemantic analyst, the VLM translates the user's ambiguous query into the formal, verifiable task constraint, which defines the reference frame and objective. Second, acting as atask solver, the VLM generates and executes tool calls strictly within thedeterministic boundsdefined by the constraint. This geometrically-constrained reasoning strategy successfully resolve thesemantic-to-geometric gap, yielding a robust and verifiable reasoning pathway forspatial reasoning. Comprehensive experiments demonstrate that GCA achieves SOTA performance on multiplespatial reasoning benchmarks, surpassing existing training-based andtool-integrated methodsby ~27%. Please see our homepage at https://gca-spatial-reasoning.github.io. HomePage:https://gca-spatial-reasoning.github.ioCode:https://github.com/gca-spatial-reasoning/gca This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Wikontic: Constructing Wikidata-Aligned, Ontology-Aware Knowledge Graphs with Large Language Models",
-    "github_url": "https://github.com/screemix/Wikontic",
-    "huggingface_url": "https://huggingface.co/papers/2512.00590",
-    "upvote": 29,
-    "tag1": "wikontic",
-    "tag2": "comment",
-    "tag3": "knowledge"
+    "title": "Geometrically-Constrained Agent for Spatial Reasoning",
+    "authors": [
+      "Zeren Chen",
+      "Zhijie Zheng",
+      "Lu Sheng"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/gca-spatial-reasoning/gca",
+    "huggingface_url": "https://huggingface.co/papers/2511.22659",
+    "upvote": 37,
+    "tags": [
+      "vlm planning",
+      "decoupling semantic",
+      "gapinspatial reasoning"
+    ]
   }
 }

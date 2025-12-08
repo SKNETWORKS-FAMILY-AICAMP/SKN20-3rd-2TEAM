@@ -1,0 +1,12 @@
+{
+  "context": "WebVIA is an agentic framework for generating executable and interactive UI code from design mockups, improving stability and accuracy over existing models. User interface (UI) development requires translating design mockups into functional code, a process that remains repetitive and labor-intensive. While recent Vision-Language Models (VLMs) automateUI-to-Code generation, they generate only static HTML/CSS/JavaScript layouts lacking interactivity. To address this, we proposeWebVIA, the first agentic framework forinteractive UI-to-Code generation and validation. The framework comprises three components: 1) anexploration agentto capture multi-state UI screenshots; 2) aUI2Code modelthat generates executable interactive code; 3) avalidation modulethat verifies the interactivity. Experiments demonstrate thatWebVIA-Agent achieves more stable and accurate UI exploration than general-purpose agents (e.g., Gemini-2.5-Pro). In addition, our fine-tunedWebVIA-UI2Code models exhibit substantial improvements in generating executable and interactive HTML/CSS/JavaScript code, outperforming their base counterparts across both interactive andstatic UI2Code benchmarks. Our code and models are available at https://zheny2751-dotcom.github.io/webvia.github.io/{https://webvia.github.io}.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation",
+    "github_url": "https://github.com/zheny2751-dotcom/WebVIA",
+    "huggingface_url": "https://huggingface.co/papers/2511.06251",
+    "upvote": 13,
+    "tag1": "code",
+    "tag2": "interactive",
+    "tag3": "comment"
+  }
+}

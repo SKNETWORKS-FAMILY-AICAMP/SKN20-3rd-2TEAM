@@ -1,0 +1,12 @@
+{
+  "context": "A new benchmark DiscoX and evaluation system Metric-S are introduced to assess discourse-level and expert-level Chinese-English translation, highlighting the challenges in achieving professional-grade machine translation. The evaluation ofdiscourse-level translationin expert domains remains inadequate, despite its centrality to knowledge dissemination and cross-lingual scholarly communication. While these translations demand discourse-level coherence and strict terminological precision, current evaluation methods predominantly focus on segment-levelaccuracyandfluency. To address this limitation, we introduceDiscoX, a new benchmark for discourse-level and expert-level Chinese-English translation. It comprises 200 professionally-curated texts from 7 domains, with an average length exceeding 1700 tokens. To evaluate performance onDiscoX, we also developMetric-S, areference-free systemthat provides fine-grained automatic assessments acrossaccuracy,fluency, andappropriateness.Metric-Sdemonstrates strong consistency withhuman judgments, significantly outperforming existing metrics. Our experiments reveal a remarkable performance gap: even the most advancedLLMsstill trail human experts on these tasks. This finding validates the difficulty ofDiscoXand underscores the challenges that remain in achievingprofessional-grade machine translation. The proposed benchmark and evaluation system provide a robust framework for more rigorous evaluation, facilitating future advancements in LLM-based translation. DiscoX benchmarks discourse-level Chinese–English translation in expert domains with 200 texts across seven domains, plus Metric-S for reference-free assessment; results show LLMs lag behind humans, highlighting translation challenges. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "paper_name": "DiscoX: Benchmarking Discourse-Level Translation task in Expert Domains",
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.10984",
+    "upvote": 4,
+    "tag1": "translation",
+    "tag2": "level",
+    "tag3": "evaluation"
+  }
+}

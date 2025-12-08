@@ -1,12 +1,16 @@
 {
   "context": "Budget-aware methods improve the scaling of tool-augmented agents by providing continuous budget awareness and adaptive planning, leading to better cost-performance trade-offs. Scaling test-time computation improves performance across different tasks on large language models (LLMs), which has also been extended to tool-augmented agents. For these agents, scaling involves not only \"thinking\" in tokens but also \"acting\" via tool calls. The number of tool calls directly bounds the agent's interaction with the external environment. However, we find that simply granting agents a larger tool-call budget fails to improve performance, as they lack \"budget awareness\" and quickly hit a performance ceiling. To address this, we study how to scale such agents effectively under explicit tool-call budgets, focusing on web search agents. We first introduce theBudget Tracker, a lightweight plug-in that provides the agent with continuous budget awareness, enabling simple yet effective scaling. We further developBATS(Budget Aware Test-time Scaling), an advanced framework that leverages this awareness to dynamically adapt its planning and verification strategy, deciding whether to \"dig deeper\" on a promising lead or \"pivot\" to new paths based on remaining resources. To analyze cost-performance scaling in a controlled manner, we formalize a unified cost metric that jointly accounts for token andtool consumption. We provide the first systematic study on budget-constrained agents, showing that budget-aware methods produce more favorable scaling curves and push thecost-performance Pareto frontier. Our work offers empirical insights toward a more transparent and principled understanding of scaling in tool-augmented agents. Introducing Budget Tracker, a simple, lightweight plug-in that provides the agent with tool call budget status, and enables more effective scaling behaviors: higher performance, lower cost.  When the agent knows its wallet size, it spends wiser. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Budget-Aware Tool-Use Enables Effective Agent Scaling",
+    "title": "Budget-Aware Tool-Use Enables Effective Agent Scaling",
+    "authors": [],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.17006",
     "upvote": 24,
-    "tag1": "agent",
-    "tag2": "budget",
-    "tag3": "scaling"
+    "tags": [
+      "introducing budget",
+      "tool calls",
+      "search agents"
+    ]
   }
 }

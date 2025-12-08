@@ -1,5 +1,9 @@
 # 🚀 CLAUDE.md: RAG 기반 ML/DL/LLM 스택 챗봇 프로토타입 개발 계획 (V2: HuggingFace DailyPapers)
 
+## 👥 팀원
+| <img src="" width="150"> <br> 김지은 |  <img src="" width="150"> <br> 박다정 |  <img src="" width="150"> <br> 오학성 |  <img src="" width="150"> <br> 정소영 |  <img src="" width="200"> <br> 황수현 |
+|:------:|:------:|:------:|:------:|:------:|
+
 ## 1\. 프로젝트 개요 및 목표
 
 ### 1.1. 개요

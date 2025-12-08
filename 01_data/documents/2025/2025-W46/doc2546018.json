@@ -1,12 +1,19 @@
 {
   "context": "Motif-2-12.7B combines architectural innovations and system optimizations to enhance efficiency and performance in large language models. We introduce Motif-2-12.7B, a new open-weight foundation model that pushes the efficiency frontier of large language models by combining architectural innovation with system-level optimization. Designed for scalable language understanding and robust instruction generalization under constrained compute budgets, Motif-2-12.7B builds upon Motif-2.6B with the integration ofGrouped Differential Attention (GDA), which improves representational efficiency by disentangling signal and noise-control attention pathways. The model is pre-trained on 5.5 trillion tokens spanning diverse linguistic, mathematical, scientific, and programming domains using acurriculum-driven data schedulerthat gradually changes the data composition ratio. The training system leverages theMuonClip optimizeralongside custom high-performance kernels, includingfused PolyNorm activationsand theParallel Muon algorithm, yielding significant throughput and memory efficiency gains in large-scale distributed environments. Post-training employs a three-stage supervised fine-tuning pipeline that successively enhances general instruction adherence, compositional understanding, and linguistic precision. Motif-2-12.7B demonstrates competitive performance across diverse benchmarks, showing that thoughtful architectural scaling and optimized training design can rival the capabilities of much larger models. strong model with cool arch/infra optimization! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Motif 2 12.7B technical report",
+    "title": "Motif 2 12.7B technical report",
+    "authors": [
+      "Junhyeok Lee",
+      "Wai Ting Cheung"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.07464",
     "upvote": 38,
-    "tag1": "motif",
-    "tag2": "efficiency",
-    "tag3": "architectural"
+    "tags": [
+      "control attention",
+      "scalable language",
+      "precision motif"
+    ]
   }
 }

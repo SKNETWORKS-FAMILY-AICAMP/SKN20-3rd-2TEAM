@@ -1,12 +1,18 @@
 {
   "context": "SpatialThinker, a 3D-aware MLLM trained with RL, enhances spatial understanding by integrating structured spatial grounding and multi-step reasoning, outperforming existing models on spatial VQA and real-world benchmarks. Multimodal large language models (MLLMs) have achieved remarkable progress in vision-language tasks, but they continue to struggle withspatial understanding. Existing spatialMLLMsoften rely on explicit3D inputsorarchitecture-specific modifications, and remain constrained bylarge-scale datasetsorsparse supervision. To address these limitations, we introduceSpatialThinker, a 3D-aware MLLM trained with RL to integrate structuredspatial groundingwith multi-step reasoning. The model simulates human-like spatial perception by constructing ascene graphof task-relevant objects and spatial relations, and reasoning towards an answer via densespatial rewards.SpatialThinkerconsists of two key contributions: (1) adata synthesis pipelinethat generatesSTVQA-7K, a high-quality spatial VQA dataset, and (2)online RLwith amulti-objective dense spatial rewardenforcingspatial grounding.SpatialThinker-7B outperforms supervised fine-tuning and the sparse RL baseline onspatial understandingand real-world VQA benchmarks, nearly doubling the base-model gain compared to sparse RL, and surpassing GPT-4o. These results showcase the effectiveness of combining spatial supervision withreward-aligned reasoningin enabling robust 3Dspatial understandingwith limited data and advancingMLLMstowards human-levelvisual reasoning. We introduce SpatialThinker, a 3D-aware reasoning MLLM trained with dense spatial rewards via RL on 7K synthetic VQA dataset we generate, STVQA-7K. SpatialThinker achieves 2x the gains of vanilla RL and surpasses GPT-4o on several tasks. 🌟 SpatialThinker integrates scene graph-based grounding with online RL for spatial reasoning, achieving strong performance with only 7K training samples versus millions required by existing methods.🌟 We introduce STVQA-7K, a high-quality spatial VQA dataset grounded in scene graphs, along with a scalable data generation pipeline up to 108k samples.🌟 We design a dense, lexicographically gated multi-objective reward that guides regionally focused spatial reasoning, achieving superior in- and out-of-distribution generalization across spatial, generic VQA, and real-world benchmarks, and outperforming conventional RL and SFT baselines, open-sourced generalist and spatial MLLMs, and proprietary models. Project Page:https://hunarbatra.com/SpatialThinker/arXiV:https://arxiv.org/abs/2511.07403GitHub:https://github.com/hunarbatra/SpatialThinker This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards",
+    "title": "SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards",
+    "authors": [
+      "Hunar Batra"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/hunarbatra/SpatialThinker",
     "huggingface_url": "https://huggingface.co/papers/2511.07403",
     "upvote": 13,
-    "tag1": "spatial",
-    "tag2": "reasoning",
-    "tag3": "spatialthinker"
+    "tags": [
+      "explicit3d inputsorarchitecture",
+      "rewardenforcingspatial grounding",
+      "spatial mllms"
+    ]
   }
 }

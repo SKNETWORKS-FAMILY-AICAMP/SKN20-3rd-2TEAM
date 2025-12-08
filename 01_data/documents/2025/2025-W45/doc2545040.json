@@ -1,12 +1,18 @@
 {
   "context": "A framework combining a diagnostic benchmark, data synthesis, and a modality pyramid curriculum achieves state-of-the-art zero-shot generalization in video retrieval. The prevailing video retrieval paradigm is structurally misaligned, as narrow\nbenchmarks incentivize correspondingly limited data and single-task training.\nTherefore, universal capability is suppressed due to the absence of a\ndiagnostic evaluation that defines and demands multi-dimensional\ngeneralization. To break this cycle, we introduce a framework built on the\nco-design of evaluation, data, and modeling. First, we establish the Universal\nVideo Retrieval Benchmark (UVRB), a suite of 16 datasets designed not only to\nmeasure performance but also to diagnose critical capability gaps across tasks\nand domains. Second, guided byUVRB's diagnostics, we introduce a scalable\nsynthesis workflow that generates 1.55 million high-quality pairs to populate\nthe semantic space required for universality. Finally, we devise the Modality\nPyramid, a curriculum that trains ourGeneral Video Embedder(GVE) by\nexplicitly leveraging the latent interconnections within our diverse data.\nExtensive experiments showGVEachieves state-of-the-art zero-shot\ngeneralization onUVRB. In particular, our analysis reveals that popular\nbenchmarks are poor predictors of general ability and that partially relevant\nretrieval is a dominant but overlooked scenario. Overall, our co-designed\nframework provides a practical path to escape the limited scope and advance\ntoward truly universal video retrieval. A state-of-the-art video embedding model for universal video retrieval across diverse tasks and domains via multimodal curriculum learning on large-scale synthesized data . ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Towards Universal Video Retrieval: Generalizing Video Embedding via\n  Synthesized Multimodal Pyramid Curriculum",
+    "title": "Towards Universal Video Retrieval: Generalizing Video Embedding via\n  Synthesized Multimodal Pyramid Curriculum",
+    "authors": [
+      "Zhuoning Guo"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2510.27571",
     "upvote": 17,
-    "tag1": "video retrieval",
-    "tag2": "keyword2",
-    "tag3": "keyword3"
+    "tags": [
+      "pyramid curriculum",
+      "ourgeneral video",
+      "retrieval benchmark"
+    ]
   }
 }

@@ -1,12 +1,21 @@
 {
   "context": "VCode introduces a benchmark for generating SVG code from images to preserve symbolic meaning, highlighting gaps in visual-centric coding and proposing VCoder to improve performance. Code has emerged as a precise and executable medium for reasoning and action\nin the agent era. Yet, progress has largely focused on language-centric tasks\nsuch as program synthesis and debugging, leaving visual-centric coding\nunderexplored. Inspired by how humans reason over sketches, we advocateSVGcode as a compact, interpretable, and executable visual representation. We\nintroduceVCode, a benchmark that reframesmultimodal understandingas code\ngeneration: given an image, a model must produceSVGthat preserves symbolic\nmeaning for downstream reasoning.VCodecovers three domains - general\ncommonsense (MM-Vet), professional disciplines (MMMU), and visual-centric\nperception (CV-Bench). To assess symbolic fidelity, we proposeCodeVQA, a novel\nevaluation protocol in which a policy model answers questions over renderedSVGs; correct answers indicate faithful symbolic preservation. Empirically,\nfrontierVLMsstruggle to generate faithfulSVGs, revealing a persistent gap\nbetween language-centric and visual-centric coding. To close this gap, we\nintroduceVCoder, an agentic framework that augmentsVLMsalong two axes: (i)Thinking with Revision, which iteratively analyzes discrepancies and refinesSVGcode; and (ii)Acting with Visual Tools, where detectors and parsers supply\nstructured cues such as objects, shapes, and text beyond the model's intrinsic\ncapacity. Across benchmarks, frontierVLMswith strong reasoning capabilities\nscore well overall yet remain limited inprofessional knowledgeand 3D\nreasoning.VCoderdelivers a 12.3-point overall gain over the top-performing\nClaude-4-Opus. Human studies show that both humans andVLMsperform worse on\nrenderedSVGs, their consistency reveals the promise of symbolic visual\nrepresentation. The benchmark and code are available at\nhttps://github.com/CSU-JPG/VCode. TL;DR:SVG code as Symbolic Visual RepresentationProject Page:https://csu-jpg.github.io/VCode/Github:https://github.com/CSU-JPG/VCode  It's pretty crazy that we can generate extremely high-quality and high-resolution 3d meshes using e.g. Hunyan 3d, but struggle to generate simple representative SVGs. It shouldn't be this way, something is wrong.Of course, Hunyan is a diffusion model, and was trained on a corpus of millions of 3d meshes, and it's evident that LLMs were not trained on SVG generation at all. But it's too big of a gap in performance. arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/vcode-a-multimodal-coding-benchmark-with-svg-as-symbolic-visual-representation ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual\n  Representation",
+    "title": "VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual\n  Representation",
+    "authors": [
+      "Kevin Qinghong Lin",
+      "Hangyu Ran",
+      "Dantong Zhu",
+      "Dongxing Mao"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/CSU-JPG/VCode/tree/main",
     "huggingface_url": "https://huggingface.co/papers/2511.02778",
-    "upvote": 101,
-    "tag1": "visual",
-    "tag2": "symbolic",
-    "tag3": "centric"
+    "upvote": 102,
+    "tags": [
+      "coding benchmark",
+      "reasoning vcodecovers",
+      "acting visual"
+    ]
   }
 }

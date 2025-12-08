@@ -1,12 +1,19 @@
 {
   "context": "EvoVLA, a self-supervised VLA framework, enhances long-horizon robotic manipulation by addressing stage hallucination through triplet contrastive learning, pose-based exploration, and long-horizon memory, achieving improved success rates and sample efficiency on both simulated and real-world tasks. Long-horizon robotic manipulation remains challenging for Vision-Language-Action (VLA) models despite recent progress in zero-shot generalization and simulation-to-real-world transfer. Current VLA models suffer from stage hallucination, where agents exploit coarse evaluation signals to shortcut multi-step tasks, reporting high progress without truly completing them. We present EvoVLA, a self-supervised VLA framework that addresses this issue through three complementary components:Stage-Aligned Reward(SAR), which usestriplet contrastive learningwithGemini-generated hard negativesto prevent visual shortcuts;Pose-Based Object Exploration(POE), which grounds curiosity inrelative object-gripper poseinstead of raw pixels; andLong-Horizon Memory, which usesselective context retentionandgated fusionto stabilize intrinsic shaping during extended rollouts. Extensive evaluations onDiscoverse-L, a long-horizon manipulation benchmark with three multi-stage tasks, show that EvoVLA improves average task success by 10.2 percentage points over the strongest baseline (OpenVLA-OFT), reaching 69.2 percent. EvoVLA also achieves one-and-a-half times better sample efficiency and reduces stage hallucination from 38.5 percent to 14.8 percent. Real-world deployment on physical robots reaches an average success rate of 54.6 percent across four manipulation tasks, outperformingOpenVLA-OFTby 11 points, demonstrating effectivesim-to-real transferand strong generalization. Code: https://github.com/AIGeeksGroup/EvoVLA. Website: https://aigeeksgroup.github.io/EvoVLA. https://aigeeksgroup.github.io/EvoVLA/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "EvoVLA: Self-Evolving Vision-Language-Action Model",
+    "title": "EvoVLA: Self-Evolving Vision-Language-Action Model",
+    "authors": [
+      "Zida Yang",
+      "Zeyu Zhang"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/AIGeeksGroup/EvoVLA",
     "huggingface_url": "https://huggingface.co/papers/2511.16166",
     "upvote": 4,
-    "tag1": "evovla",
-    "tag2": "horizon",
-    "tag3": "stage"
+    "tags": [
+      "shot generalization",
+      "exploration long",
+      "stage evovla"
+    ]
   }
 }

@@ -1,12 +1,18 @@
 {
-  "context": "A new framework, Thinking-while-Generating (TwiG), integrates interleaved textual reasoning during visual generation, enhancing context-awareness and semantic richness through zero-shot prompting, supervised fine-tuning, and reinforcement learning. Recent advances invisual generationhave increasingly explored the integration of reasoning capabilities. They incorporatetextual reasoning, i.e., think, either before (aspre-planning) or after (aspost-refinement) the generation process, yet they lack on-the-fly multimodal interaction during the generation itself. In this preliminary study, we introduceThinking-while-Generating(TwiG), the first interleaved framework that enables co-evolvingtextual reasoningthroughout thevisual generationprocess. As visual content is progressively generating,textual reasoningis interleaved to both guide upcoming local regions and reflect on previously synthesized ones. This dynamic interplay produces more context-aware and semantically rich visual outputs. To unveil the potential of this framework, we investigate three candidate strategies,zero-shot prompting,supervised fine-tuning(SFT) on our curatedTwiG-50K dataset, andreinforcement learning(RL) via a customizedTwiG-GRPOstrategy, each offering unique insights into the dynamics of interleaved reasoning. We hope this work inspires further research into interleavingtextual reasoningfor enhancedvisual generation. Code will be released at: https://github.com/ZiyuGuo99/Thinking-while-Generating. The first Interleaved framework for textual reasoning within the visual generation process This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "ARC-Chapter is a large-scale video chaptering model that improves performance through extensive training data and a new evaluation metric, demonstrating superior results and transferability. The proliferation of hour-long videos (e.g., lectures, podcasts, documentaries) has intensified demand for efficient content structuring. However, existing approaches are constrained by small-scale training with annotations that are typical short and coarse, restricting generalization to nuanced transitions in long videos. We introduce ARC-Chapter, the first large-scalevideo chapteringmodel trained on over million-level long video chapters, featuring bilingual, temporally grounded, and hierarchical chapter annotations. To achieve this goal, we curated a bilingual English-Chinese chapter dataset via a structured pipeline that unifiesASR transcripts,scene texts,visual captionsintomulti-level annotations, from short title to long summaries. We demonstrate clear performance improvements with data scaling, both in data volume and label intensity. Moreover, we design a new evaluation metric termedGRACE, which incorporates many-to-one segment overlaps and semantic similarity, better reflecting real-world chaptering flexibility. Extensive experiments demonstrate that ARC-Chapter establishes a new state-of-the-art by a significant margin, outperforming the previous best by 14.0% inF1 scoreand 11.3% inSODA score. Moreover, ARC-Chapter shows excellent transferability, improving the state-of-the-art on downstream tasks likedense video captioningon YouCook2. ARC-Chapter is a large-scale model from Tencent ARC Lab for deep video understanding and structured chapter generation. ARC-Chapter automatically analyzes videos that have a clear narrative or semantic structure, segmenting them into meaningful chapters, identifying precise timestamps, and generating summaries for each part. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
-    "github_url": "https://github.com/ZiyuGuo99/Thinking-while-Generating",
-    "huggingface_url": "https://huggingface.co/papers/2511.16671",
-    "upvote": 15,
-    "tag1": "generation",
-    "tag2": "interleaved",
-    "tag3": "reasoning"
+    "title": "ARC-Chapter: Structuring Hour-Long Videos into Navigable Chapters and Hierarchical Summaries",
+    "authors": [
+      "Junfu Pu"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/TencentARC/ARC-Chapter",
+    "huggingface_url": "https://huggingface.co/papers/2511.14349",
+    "upvote": 16,
+    "tags": [
+      "long video",
+      "chapteringmodel trained",
+      "curated bilingual"
+    ]
   }
 }

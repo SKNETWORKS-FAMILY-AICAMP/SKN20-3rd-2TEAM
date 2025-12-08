@@ -1,12 +1,20 @@
 {
   "context": "A novel extraction pipeline using a language model improves web data quality, significantly enhancing the performance of large language models trained on extracted corpora. While web data quality is crucial for largelanguage models, most curation efforts focus on filtering and deduplication,treating HTML-to-text extraction as a fixed pre-processing step. Existing web corpora rely on heuristic-based extractors like Trafilatura, which struggle to preserve document structure and frequently corrupt structured elements such as formulas, codes, and tables. We hypothesize that improving extraction quality can be as impactful as aggressive filtering strategies for downstream performance. We introduce MinerU-HTML, a novel extraction pipeline that reformulates content extraction as asequence labelingproblem solved by a 0.6B-parameterlanguage model. Unlike text-density heuristics, MinerU-HTML leveragessemantic understandingand employs atwo-stage formatting pipelinethat explicitly categorizes semantic elements before converting toMarkdown. Crucially, its model-based approach is inherently scalable, whereas heuristic methods offer limited improvement pathways. On MainWebBench, our benchmark of 7,887 annotated web pages, MinerU-HTML achieves 81.8\\%ROUGE-N F1compared to Trafilatura's 63.6\\%, with exceptionalstructured element preservation(90.9\\% for code blocks, 94.0\\% for formulas). Using MinerU-HTML, we construct AICC (AI-ready Common Crawl), a 7.3-trillion tokenmultilingual corpusfrom two Common Crawl snapshots. In controlledpretraining experimentswhere AICC and Trafilatura-extracted TfCC undergo identical filtering, models trained on AICC (62B tokens) achieve 50.8\\% average accuracy across 13benchmarks, outperforming TfCC by 1.08pp-providing direct evidence that extraction quality significantly impacts model capabilities. AICC also surpassesRefinedWebandFineWebon keybenchmarks. We publicly release MainWebBench, MinerU-HTML, and AICC, demonstrating thatHTML extractionis a critical, often underestimated component of web corpus construction. MinerU-HTML provides significantly higher-quality HTML extraction, achieving 81.8% ROUGE-N F1 and over 90% structured element preservation, which leads to models trained on its 62B-token AICC corpus outperforming Trafilatura-based baselines by 1.08 percentage points across 13 benchmarks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "AICC: Parse HTML Finer, Make Models Better -- A 7.3T AI-Ready Corpus Built by a Model-Based HTML Parser",
+    "title": "AICC: Parse HTML Finer, Make Models Better -- A 7.3T AI-Ready Corpus Built by a Model-Based HTML Parser",
+    "authors": [
+      "Ren Ma",
+      "Jiantao Qiu",
+      "Zengjie Hu"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.16397",
     "upvote": 7,
-    "tag1": "html",
-    "tag2": "extraction",
-    "tag3": "aicc"
+    "tags": [
+      "extraction quality",
+      "largelanguage models",
+      "annotated web"
+    ]
   }
 }

@@ -1,12 +1,20 @@
 {
-  "context": "ImageCritic addresses detail inconsistency in image generation through reference-guided post-editing, using attention alignment loss and a detail encoder. Previous works have explored various customized generation tasks given a reference image, but they still face limitations in generating consistent fine-grained details. In this paper, our aim is to solve the inconsistency problem of generated images by applying areference-guided post-editingapproach and present our ImageCritic. We first construct a dataset of reference-degraded-target triplets obtained viaVLM-based selectionand explicit degradation, which effectively simulates the common inaccuracies or inconsistencies observed in existing generation models. Furthermore, building on a thorough examination of the model'sattention mechanismsand intrinsic representations, we accordingly devise anattention alignment lossand adetail encoderto precisely rectify inconsistencies. ImageCritic can be integrated into an agent framework to automatically detect inconsistencies and correct them with multi-round andlocal editingin complex scenarios. Extensive experiments demonstrate that ImageCritic can effectively resolve detail-related issues in various customized generation scenarios, providing significant improvements over existing methods. Project Page:https://ouyangziheng.github.io/ImageCritic-Page/Code:https://github.com/HVision-NKU/ImageCriticDemo:https://huggingface.co/spaces/ziheng1234/ImageCriticData:https://huggingface.co/datasets/ziheng1234/Critic-10K   This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "DualCamCtrl is a diffusion model for camera-controlled video generation that uses a dual-branch framework and Semantic Guided Mutual Alignment to improve consistency and disentangle appearance and geometry modeling. This paper presents DualCamCtrl, a novel end-to-enddiffusion modelforcamera-controlled video generation. Recent works have advanced this field by representing camera poses asray-based conditions, yet they often lack sufficient scene understanding and geometric awareness. DualCamCtrl specifically targets this limitation by introducing adual-branch frameworkthat mutually generates camera-consistentRGBanddepth sequences. To harmonize these two modalities, we further propose theSemantic Guided Mutual Alignment(SIGMA) mechanism, which performsRGB-depth fusionin a semantics-guided and mutually reinforced manner. These designs collectively enable DualCamCtrl to better disentangleappearance and geometry modeling, generating videos that more faithfully adhere to the specified camera trajectories. Additionally, we analyze and reveal the distinct influence of depth and camera poses acrossdenoising stagesand further demonstrate that early and late stages play complementary roles in forming global structure and refining local details. Extensive experiments demonstrate that DualCamCtrl achieves more consistentcamera-controlled video generation, with over 40\\% reduction incamera motion errorscompared with prior methods. Our project page: https://soyouthinkyoucantell.github.io/dualcamctrl-page/ 📄 Paper:https://arxiv.org/pdf/2511.23127 🔗 arXiv:https://arxiv.org/abs/2511.23127 💻 Code:https://github.com/EnVision-Research/DualCamCtrl 🤗 HuggingFace:https://huggingface.co/FayeHongfeiZhang/DualCamCtrl This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "The Consistency Critic: Correcting Inconsistencies in Generated Images via Reference-Guided Attentive Alignment",
-    "github_url": "https://github.com/HVision-NKU/ImageCritic",
-    "huggingface_url": "https://huggingface.co/papers/2511.20614",
-    "upvote": 36,
-    "tag1": "imagecritic",
-    "tag2": "inconsistency",
-    "tag3": "detail"
+    "title": "DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation",
+    "authors": [
+      "Hongfei Zhang",
+      "Harold Haodong Chen",
+      "Yuqi Zhang"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/EnVision-Research/DualCamCtrl",
+    "huggingface_url": "https://huggingface.co/papers/2511.23127",
+    "upvote": 41,
+    "tags": [
+      "depth fusionin",
+      "camera trajectories",
+      "dualcamctrl automated"
+    ]
   }
 }

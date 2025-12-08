@@ -1,12 +1,19 @@
 {
   "context": "LongCat-Flash-Omni, a 560 billion parameter omni-modal model, achieves real-time audio-visual interaction through curriculum-inspired training and modality-decoupled parallelism. We introduce LongCat-Flash-Omni, a state-of-the-art open-source omni-modal\nmodel with 560 billion parameters, excelling at real-time audio-visual\ninteraction. By adopting acurriculum-inspired progressive trainingstrategy\nthat transitions from simpler to increasingly complex modality sequence\nmodeling tasks, LongCat-Flash-Omni attains comprehensive multimodal\ncapabilities while maintaining strong unimodal capability. Building upon\nLongCat-Flash, which adopts a high-performance Shortcut-connected\nMixture-of-Experts (MoE) architecture withzero-computation experts,\nLongCat-Flash-Omni integrates efficientmultimodal perceptionand speech\nreconstruction modules. Despite its immense size of 560B parameters (with 27B\nactivated), LongCat-Flash-Omni achieves low-latency real-time audio-visual\ninteraction. For training infrastructure, we developed a modality-decoupled\nparallelism scheme specifically designed to manage the data and model\nheterogeneity inherent in large-scale multimodal training. This innovative\napproach demonstrates exceptional efficiency by sustaining over 90% of thethroughputachieved by text-only training. Extensive evaluations show that\nLongCat-Flash-Omni achieves state-of-the-art performance on omni-modal\nbenchmarks among open-source models. Furthermore, it delivers highly\ncompetitive results across a wide range of modality-specific tasks, including\ntext, image, andvideo understanding, as well asaudio understandingand\ngeneration. We provide a comprehensive overview of the model architecture\ndesign, training procedures, and data strategies, and open-source the model to\nfoster future research and development in the community. We introduce LongCat-Flash-Omni, a state-of-the-art open-source omni-modal model with 560 billion parameters, excelling at real-time audio-visual interaction. By adopting a curriculum-inspired progressive training strategy that transitions from simpler to increasingly complex modality sequence modeling tasks, LongCat-Flash-Omni attains comprehensive multimodal capabilities while maintaining strong unimodal capability. Building upon LongCat-Flash, which adopts a high-performance Shortcut-connected Mixture-of-Experts (MoE) architecture with zero-computation experts, LongCat-Flash-Omni integrates efficient multimodal perception and speech reconstruction modules. Despite its immense size of 560B parameters (with 27B activated), LongCat-Flash-Omni achieves low-latency real-time audio-visual interaction. For training infrastructure, we developed a modality-decoupled parallelism scheme specifically designed to manage the data and model heterogeneity inherent in large-scale multimodal training. This innovative approach demonstrates exceptional efficiency by sustaining over 90% of the throughput achieved by text-only training. Extensive evaluations show that LongCat-Flash-Omni achieves state-of-the-art performance on omni-modal benchmarks among open-source models. Furthermore, it delivers highly competitive results across a wide range of modality-specific tasks, including text, image, and video understanding, as well as audio understanding and generation. We provide a comprehensive overview of the model architecture design, training procedures, and data strategies, and open-source the model to foster future research and development in the community. ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "LongCat-Flash-Omni Technical Report",
+    "title": "LongCat-Flash-Omni Technical Report",
+    "authors": [
+      "Chen Chen",
+      "Fengjiao Chen"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.00279",
     "upvote": 22,
-    "tag1": "omni",
-    "tag2": "flash",
-    "tag3": "longcat"
+    "tags": [
+      "speech reconstruction",
+      "longcat flash",
+      "modal benchmarks"
+    ]
   }
 }

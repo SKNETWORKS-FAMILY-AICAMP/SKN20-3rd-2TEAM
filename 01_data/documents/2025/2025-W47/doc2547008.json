@@ -1,12 +1,19 @@
 {
   "context": "Think-at-Hard (TaH) dynamically refines only hard tokens in LLMs using a neural decider and LoRA, improving reasoning performance with minimal additional parameters or iterations. Improving reasoning capabilities of Large Language Models (LLMs), especially under parameter constraints, is crucial for real-world applications. Prior work proposesrecurrent transformers, which allocate a fixed number of extra iterations per token to improve generation quality. After the first, standard forward pass, instead of verbalization, last-layer hidden states are fed back as inputs for additional iterations to refine token predictions. Yet we identify a latent overthinking phenomenon: easy token predictions that are already correct after the first pass are sometimes revised into errors in additional iterations. To address this, we proposeThink-at-Hard (TaH), adynamic latent thinkingmethod that iterates deeper only at hard tokens. It employs a lightweight neural decider to trigger latent iterations only at tokens that are likely incorrect after the standard forward pass. During latent iterations,Low-Rank Adaptation(LoRA) modules shift the LLM objective from general next-token prediction to focused hard-token refinement. We further introduce aduo-causal attentionmechanism that extends attention from the token sequence dimension to an additional iteration depth dimension. This enablescross-iteration information flowwhile maintaining fullsequential parallelism. Experiments show that TaH boosts LLM reasoning performance across five challenging benchmarks while maintaining the same parameter count. Compared with baselines that iterate twice for all output tokens, TaH delivers 8.1-11.3% accuracy gains while exempting 94% of tokens from the second iteration. Against strong single-iteration Qwen3 models finetuned with the same data, it also delivers 4.0-5.0% accuracy gains. When allowing less than 3% additional parameters fromLoRAand the iteration decider, the gains increase to 8.5-12.6% and 5.3-5.4%, respectively. Our code is available at https://github.com/thu-nics/TaH. Think-at-Hard (TaH) improves LLM reasoning by running extra latent iterations only on hard tokens instead of all tokens. A lightweight decider and duo-causal attention enable targeted refinement while keeping full parallelism. TaH outperforms fixed two-iteration baselines by 8–11% while skipping 94% of second iterations, and also beats strong single-iteration Qwen3 models by 4–5%. Nice work This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/think-at-hard-selective-latent-iterations-to-improve-reasoning-language-models ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models",
+    "title": "Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models",
+    "authors": [
+      "Tianyu Fu",
+      "Yichen You"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/thu-nics/TaH",
     "huggingface_url": "https://huggingface.co/papers/2511.08577",
-    "upvote": 103,
-    "tag1": "iteration",
-    "tag2": "token",
-    "tag3": "hard"
+    "upvote": 104,
+    "tags": [
+      "improves llm",
+      "attention token",
+      "latent iterations"
+    ]
   }
 }

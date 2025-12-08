@@ -1,12 +1,21 @@
 {
   "context": "Video generation models use the first frame as a conceptual memory buffer, enabling robust customization with minimal training examples. What role does the first frame play invideo generation models? Traditionally, it's viewed as the spatial-temporal starting point of a video, merely a seed for subsequent animation. In this work, we reveal a fundamentally different perspective: video models implicitly treat the first frame as aconceptual memory bufferthat stores visual entities for later reuse during generation. Leveraging this insight, we show that it's possible to achieve robust and generalized video content customization in diverse scenarios, using only 20-50 training examples without architectural changes or large-scale finetuning. This unveils a powerful, overlooked capability ofvideo generation modelsforreference-based video customization. Github:https://github.com/zli12321/FFGO-Video-Customization Project Page:http://firstframego.github.io      This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "First Frame Is the Place to Go for Video Content Customization",
+    "title": "First Frame Is the Place to Go for Video Content Customization",
+    "authors": [
+      "Jingxi Chen",
+      "Zongxia Li",
+      "Zhichao Liu",
+      "Fuxiao Liu"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/zli12321/FFGO-Video-Customization?tab=readme-ov-file",
     "huggingface_url": "https://huggingface.co/papers/2511.15700",
     "upvote": 52,
-    "tag1": "video",
-    "tag2": "customization",
-    "tag3": "generation"
+    "tags": [
+      "aconceptual memory",
+      "generation modelsforreference",
+      "video customization"
+    ]
   }
 }

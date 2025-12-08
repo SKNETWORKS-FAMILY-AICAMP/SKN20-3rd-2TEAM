@@ -1,12 +1,18 @@
 {
   "context": "A physically-grounded visual backbone, $Φ$eat, is introduced to capture material identity through self-supervised training, demonstrating robust features invariant to external physical factors. Foundation models have emerged as effective backbones for many vision tasks. However, current self-supervised features entangle high-level semantics with low-level physical factors, such as geometry and illumination, hindering their use in tasks requiring explicit physical reasoning. In this paper, we introduce Φeat, a novelphysically-grounded visual backbonethat encourages a representation sensitive tomaterial identity, includingreflectance cuesandgeometric mesostructure. Our key idea is to employ a pretraining strategy that contrastsspatial cropsandphysical augmentationsof the same material under varying shapes and lighting conditions. While similar data have been used in high-end supervised tasks such asintrinsic decompositionormaterial estimation, we demonstrate that a pureself-supervised trainingstrategy, without explicit labels, already provides a strong prior for tasks requiring robust features invariant to external physical factors. We evaluate the learned representations through feature similarity analysis and material selection, showing that Φeat captures physically-grounded structure beyond semantic grouping. These findings highlight the promise of unsupervised physical feature learning as a foundation forphysics-aware perceptionin vision and graphics. These findings highlight the promise of unsupervised physical feature learning as a foundation forphysics-aware perceptionin vision and graphics.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Φeat: Physically-Grounded Feature Representation",
+    "title": "Φeat: Physically-Grounded Feature Representation",
+    "authors": [
+      "Giuseppe Vecchio"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.11270",
     "upvote": 10,
-    "tag1": "feature",
-    "tag2": "physical",
-    "tag3": "supervised"
+    "tags": [
+      "capture material",
+      "features entangle",
+      "novelphysically grounded"
+    ]
   }
 }

@@ -1,12 +1,18 @@
 {
-  "context": "CogIP-Bench evaluates MLLMs on image cognitive properties, revealing a gap that post-training can bridge, enhancing human-like perception and improving creative tasks. WhileMultimodal Large Language Models(MLLMs) are adept at answering what is in an image-identifying objects and describing scenes-they often lack the ability to understand how an image feels to a human observer. This gap is most evident when considering subjective cognitive properties, such as what makes an image memorable, funny, aesthetically pleasing, or emotionally evocative. To systematically address this challenge, we introduceCogIP-Bench, a comprehensive benchmark for evaluating MLLMs on suchimage cognitive properties. Our evaluation reveals a significant gap: current models are poorly aligned withhuman perceptionof these nuanced properties. We then demonstrate that apost-training phasecan effectively bridge this gap, significantly enhancing the model's alignment with human judgments. Furthermore, we show that this learnedcognitive alignmentis not merely predictive but also transferable to downstream creative tasks. By integrating our cognitively-aligned MLLM into animage generation pipeline, we can guide the synthesis process to produce images that better embody desired traits, such as being more memorable or visually appealing. Our work provides a benchmark to measure this human-like perception, a post-training pipeline to enhance it, and a demonstration that this alignment unlocks more human-centric AI. Project page with codes/datasets/models:https://follen-cry.github.io/MLLM-Cognition-project-page/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "A new VLN agent framework, SeeNav-Agent, improves navigation performance by reducing visual hallucinations and enhancing planning through dual-view visual prompts and step-level reinforcement fine-tuning with SRGPO. Existing Vision-Language Navigation (VLN) agents based onLarge Vision-Language Models (LVLMs)often suffer from perception errors, reasoning errors, and planning errors, which significantly hinder their navigation performance. To address these limitations, a novelVLN agentframework, named SeeNav-Agent, is proposed in this work. First, to reduceperception hallucinationsof the visual module of theVLN agent, adual-view Visual Prompt (VP)technique is introduced in the input space, which can also improve the agent's understanding of current spatial states. Subsequently, a novelstep-level Reinforcement Fine-Tuning (RFT)method,Step Reward Group Policy Optimization (SRGPO), is designed for the post-training ofVLN agents. In SRGPO, we first define verifiable process rewards for the navigation task, and then perform efficient step-level advantage estimation by randomly grouping different navigation steps. SRGPO provides dense reward signals for the reinforcement learning process of theVLN agentand enhances its planning capability. Experimental results on theEmbodiedBench Navigation benchmarkindicate that by introducing the zero-shot VP module, theGPT-4.1achieves anavigation success rateof 86.7%, surpassing the current best LVLM by approximately 20 percentage points (pp). Through post-training based on SRGPO, theQwen2.5-VL-3Bmodel reaches anavigation success rateof 72.3%, outperforming the best existing LVLM model by 5.6 pp. Moreover, compared to RFT algorithms such asGRPOandGiGPO, the proposed SRGPO demonstrates significant improvements in training stability, convergence efficiency, and generalization capability. 🎯 Code:https://github.com/WzcTHU/SeeNav-Agent🤗 Model:https://huggingface.co/wangzc9865/SeeNav-Agent ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "From Pixels to Feelings: Aligning MLLMs with Human Cognitive Perception of Images",
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.22805",
-    "upvote": 3,
-    "tag1": "human",
-    "tag2": "image",
-    "tag3": "gap"
+    "title": "SeeNav-Agent: Enhancing Vision-Language Navigation with Visual Prompt and Step-Level Policy Optimization",
+    "authors": [
+      "Zichuan Lin"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/WzcTHU/SeeNav-Agent",
+    "huggingface_url": "https://huggingface.co/papers/2512.02631",
+    "upvote": 6,
+    "tags": [
+      "step reward",
+      "navigation performance",
+      "novelvln agentframework"
+    ]
   }
 }

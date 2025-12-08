@@ -1,12 +1,19 @@
 {
-  "context": "A physics-grounded post-training framework using verifiable rewards improves physical realism and motion quality in video diffusion models. Recentvideo diffusion modelscan synthesize visually compelling clips, yet often violate basic physical laws-objects float, accelerations drift, and collisions behave inconsistently-revealing a persistent gap between visual realism and physical realism. We proposeNewtonRewards, the first physics-grounded post-training framework for video generation based onverifiable rewards. Instead of relying on human or VLM feedback,NewtonRewardsextracts measurable proxies from generated videos using frozen utility models:optical flowserves as a proxy for velocity, whilehigh-level appearance featuresserve as a proxy for mass. These proxies enable explicit enforcement of Newtonian structure through two complementary rewards: aNewtonian kinematic constraintenforcing constant-acceleration dynamics, and amass conservation rewardpreventing trivial, degenerate solutions. We evaluateNewtonRewardson fiveNewtonian Motion Primitives(free fall, horizontal/parabolic throw, and ramp sliding down/up) using our newly constructed large-scale benchmark,NewtonBench-60K. Across all primitives in visual and physics metrics,NewtonRewardsconsistently improves physical plausibility,motion smoothness, andtemporal coherenceover prior post-training methods. It further maintains strong performance under out-of-distribution shifts in height, speed, and friction. Our results show that physics-groundedverifiable rewardsoffer a scalable path toward physics-aware video generation. Project page:https://cvlab-stonybrook.github.io/NewtonRewards This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "context": "TUNA, a unified multimodal model, uses a cascaded VAE and representation encoder for end-to-end multimodal understanding and generation, outperforming decoupled models and achieving state-of-the-art results across various benchmarks. Unified multimodal models(UMMs) aim to jointly performmultimodal understandingand generation within a single framework. We presentTUNA, a native UMM that builds a unified continuous visual representation by cascading aVAE encoderwith arepresentation encoder. This unified representation space allows end-to-end processing of images and videos for both understanding and generation tasks. Compared to priorUMMswith decoupled representations,TUNA's unified visual space avoidsrepresentation format mismatchesintroduced by separate encoders, outperforming decoupled alternatives in both understanding and generation. Moreover, we observe that stronger pretrainedrepresentation encoders consistently yield better performance across all multimodal tasks, highlighting the importance of therepresentation encoder. Finally, in this unified setting, jointly training on both understanding and generation data allows the two tasks to benefit from each other rather than interfere. Our extensive experiments onmultimodal understandingand generation benchmarks show thatTUNAachieves state-of-the-art results in image andvideo understanding, image andvideo generation, andimage editing, demonstrating the effectiveness and scalability of its unified representation design. @taesiriThx for sharing! Could you also attach this video?  Oops! Sorry@Yuren— unfortunately, Hugging Face doesn't allow editing the thumbnail video. If you'd like, I can reach out to someone on the Hugging Face team to remove the paper so you can resubmit it. Just let me know! Oops! Sorry@Yuren— unfortunately, Hugging Face doesn't allow editing the thumbnail video. If you'd like, I can reach out to someone on the Hugging Face team to remove the paper so you can resubmit it. Just let me know! never mind:) it's ok This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "What about gravity in video generation? Post-Training Newton's Laws with Verifiable Rewards",
-    "github_url": "https://github.com/cvlab-stonybrook/NewtonRewards",
-    "huggingface_url": "https://huggingface.co/papers/2512.00425",
-    "upvote": 41,
-    "tag1": "physic",
-    "tag2": "physical",
-    "tag3": "proxy"
+    "title": "TUNA: Taming Unified Visual Representations for Native Unified Multimodal Models",
+    "authors": [
+      "Weiming Ren",
+      "Shoufa Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.02014",
+    "upvote": 47,
+    "tags": [
+      "andvideo understanding",
+      "multimodal highlighting",
+      "encoder unified"
+    ]
   }
 }

@@ -1,12 +1,18 @@
 {
   "context": "Kinematify is an automated framework that synthesizes articulated objects from RGB images or textual descriptions, addressing challenges in inferring kinematic topologies and estimating joint parameters. A deep understanding of kinematic structures and movable components is\nessential for enabling robots to manipulate objects and model their own\narticulated forms. Such understanding is captured througharticulated objects,\nwhich are essential for tasks such as physical simulation,motion planning, andpolicy learning. However, creating these models, particularly for objects with\nhighdegrees of freedom(DoF), remains a significant challenge. Existing\nmethods typically rely on motion sequences or strong assumptions from\nhand-curated datasets, which hinders scalability. In this paper, we introduce\nKinematify, an automated framework that synthesizesarticulated objectsdirectly from arbitrary RGB images or textual descriptions. Our method\naddresses two core challenges: (i) inferring kinematic topologies for high-DoF\nobjects and (ii) estimating joint parameters from static geometry. To achieve\nthis, we combineMCTS searchfor structural inference with geometry-driven\noptimization for joint reasoning, producing physically consistent and\nfunctionally valid descriptions. We evaluate Kinematify on diverse inputs from\nboth synthetic and real-world environments, demonstrating improvements inregistrationandkinematic topology accuracyover prior work. homepage:https://sites.google.com/deemos.com/kinematifyspace:https://huggingface.co/spaces/DEEMOSTECH/Kinematifyvideo:https://youtu.be/OP77iaCM4us  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Kinematify: Open-Vocabulary Synthesis of High-DoF Articulated Objects",
+    "title": "Kinematify: Open-Vocabulary Synthesis of High-DoF Articulated Objects",
+    "authors": [
+      "Jiawei Wang"
+    ],
+    "publication_year": 2025,
     "github_url": "",
     "huggingface_url": "https://huggingface.co/papers/2511.01294",
     "upvote": 13,
-    "tag1": "object",
-    "tag2": "automated",
-    "tag3": "challenge"
+    "tags": [
+      "deep understanding",
+      "objects rgb",
+      "synthesizes articulated"
+    ]
   }
 }

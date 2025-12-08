@@ -1,12 +1,18 @@
 {
   "context": "ProphRL enhances Vision-Language-Action policies through a learned world model and reinforcement learning tailored to flow-based action heads, improving data efficiency and optimization stability. Vision-Language-Action(VLA) policies excel in aligning language, perception, and robot control. However, most VLAs are trained purely byimitation, which overfits to demonstrations, and is brittle under distribution shift.Reinforcement learning(RL) directly optimizes task reward and thus addresses this misalignment, but real-robot interaction is expensive and conventional simulators are hard to engineer and transfer. We address both data efficiency and optimization stability in VLA post-training via a learnedworld modeland an RL procedure tailored to flow-based action heads. Specifically, we introduceProphet, a unified action-to-video robot actuation pretrained across large-scale, heterogeneous robot data to learn reusable action-outcome dynamics. It is able to few-shot adapt to new robots, objects, and environments, yielding arollout-ready simulator. UponProphet, we reinforce action policies withFlow-action-GRPO(FA-GRPO), which adapts Flow-GRPO to operate on VLA actions, and withFlowScale, a stepwise reweighting that rescales per-step gradients in the flow head. Together,Prophet, FA-GRPO, andFlowScaleconstituteProphRL, a practical, data- and compute-efficient path to VLA post-training. Experiments show 5-17% success gains on public benchmarks and 24-30% gains on real robots across different VLA variants. Prophet: an action-conditioned world model for robot manipulation.FlowScale: RL to reliably improve VLA policies in imagination. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
   "metadata": {
-    "paper_name": "Reinforcing Action Policies by Prophesying",
+    "title": "Reinforcing Action Policies by Prophesying",
+    "authors": [
+      "Jiahui Zhang"
+    ],
+    "publication_year": 2025,
     "github_url": "https://github.com/LogosRoboticsGroup/ProphRL",
     "huggingface_url": "https://huggingface.co/papers/2511.20633",
     "upvote": 3,
-    "tag1": "action",
-    "tag2": "robot",
-    "tag3": "vla"
+    "tags": [
+      "action policies",
+      "learning rl",
+      "world robot"
+    ]
   }
 }
