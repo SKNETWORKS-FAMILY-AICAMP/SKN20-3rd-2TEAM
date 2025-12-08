@@ -109,7 +109,7 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
         raise ValueError("embedding_model이 지정되지 선택되지 않았습니다.")
 
 
-def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 10):
+def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 10, method: str = KEYWORD_METHOD) -> Chroma:
     """
     저장된 Chroma 벡터 데이터베이스를 로드하고 샘플 데이터를 출력합니다.
 
@@ -146,10 +146,12 @@ def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
             raise
 
     # Chroma 벡터스토어 로드
+    method_suffix = "K" if method == "keybert" else "T"
+    collection_name = f"chroma_{model_name}_{chunk_size}_{chunk_overlap}_{method_suffix}"
     vectorstore = Chroma(
         persist_directory=VECTORDB_DIR,
         embedding_function=embedding_function,
-        collection_name=f"chroma_{model_name}_{chunk_size}_{chunk_overlap}",
+        collection_name=collection_name,
     )
     print("[SUCCESS] VectorDB 로딩 완료\n")
 
@@ -170,8 +172,8 @@ if __name__ == "__main__":
     # 메인 실행 블록: 벡터 DB 생성 및 로드 테스트
 
     # OpenAI 임베딩을 사용하여 벡터 DB 저장
-    vectordb_save(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP)
+    vectordb_save(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP, KEYWORD_METHOD)
     
     # 저장된 벡터 DB 로드 및 확인
-    load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP)
+    load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP, KEYWORD_METHOD)
     
