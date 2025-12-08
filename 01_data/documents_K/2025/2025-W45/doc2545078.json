@@ -1,0 +1,18 @@
+{
+  "context": "RiddleBench, a benchmark of 1,737 puzzles, reveals fundamental weaknesses in state-of-the-art language models, including hallucination cascades and poor self-correction, highlighting the need for more robust reasoning capabilities. Large Language Modelshave demonstrated strong performance on many\nestablishedreasoning benchmarks. However, these benchmarks primarily evaluatestructured skillslikequantitative problem-solving, leaving a gap in assessing\nflexible,multifaceted reasoningabilities that are central to human\nintelligence. These abilities require integratinglogical deductionwithspatial awarenessandconstraint satisfaction, which current evaluations do not\nmeasure well. To address this, we introduceRiddleBench, a benchmark of 1,737\nchallenging puzzles in English designed to probe these core reasoning\ncapabilities. Evaluation of state-of-the-art models onRiddleBenchshows\nfundamental weaknesses. Even top proprietary models like Gemini 2.5 Pro, o3,\nand Claude 4 Sonnet achieve accuracy just above 60% (60.30%, 63.37%, and\n63.16%). Analysis further reveals deep failures, including hallucination\ncascades (accepting flawed reasoning from other models) and poor\nself-correction due to a strongself-confirmation bias. Their reasoning is also\nfragile, with performance degrading significantly when constraints are\nreordered or irrelevant information is introduced.RiddleBenchfunctions as a\ndiagnostic tool for these issues and as a resource for guiding the development\nof more robust and reliable language models. Added paper This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "RiddleBench: A New Generative Reasoning Benchmark for LLMs",
+    "authors": [
+      "Deepon Halder"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2510.24932",
+    "upvote": 5,
+    "tags": [
+      "reasoning also",
+      "introduced riddlebenchfunctions",
+      "reliable language"
+    ]
+  }
+}

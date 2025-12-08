@@ -1,0 +1,18 @@
+{
+  "context": "Optimal linear blockwise transforms for joint weight-activation quantization improve upon standard orthogonal transforms like the Hadamard transform by incorporating data statistics. Quantizationtolow bitwidthis a standard approach for deploying large language models, however, a few extreme weights and activations stretch thedynamic rangeand reduce the effective resolution of the quantizer. A common mitigation approach is to apply some fixed orthogonal transforms, such asHadamard matrices, beforequantization, which typically reduces thedynamic range. Yet, these transforms ignore the statistics of the data, and their optimality is currently not understood. In this work, we derive, for the first time, closed-form optimal linear blockwise transforms for joint weight-activationquantizationusing standarddata-free quantizersfor common numerical formats. Specifically, we provide derivations of the optimal adaptive (data-aware) transforms forround-to-nearest(RTN),AbsMax-scaled block quantizersfor both integer and floating-point formats. The resulting construction, which we callWUSH, combines a Hadamard backbone with a data-dependent component based onsecond-order moments, yielding a non-orthogonal transform that is provably optimal under mild assumptions and remains structured for efficient implementation. Preliminary experimental results show that our approach consistently improves upon the Hadamard transform for common formats. Quantization to low bitwidth is a standard approach for deploying large language models, however, a few extreme weights and activations stretch the dynamic range and reduce the effective resolution of the quantizer. A common mitigation approach is to apply some fixed orthogonal transforms, such as Hadamard matrices, before quantization, which typically reduces the dynamic range. Yet, these transforms ignore the statistics of the data, and their optimality is currently not understood. In this work, we derive, for the first time, closed-form optimal linear blockwise transforms for joint weight-activation quantization using standard data-free quantizers for common numerical formats. Specifically, we provide derivations of the optimal adaptive (data-aware) transforms for round-to-nearest (RTN), AbsMax-scaled block quantizers for both integer and floating-point formats. The resulting construction, which we call WUSH, combines a Hadamard backbone with a data-dependent component based on second-order moments, yielding a non-orthogonal transform that is provably optimal under mild assumptions and remains structured for efficient implementation. Preliminary experimental results show that our approach consistently improves upon the Hadamard transform for common formats. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "WUSH: Near-Optimal Adaptive Transforms for LLM Quantization",
+    "authors": [
+      "Jiale Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.00956",
+    "upvote": 17,
+    "tags": [
+      "block quantizersfor",
+      "weight activationquantizationusing",
+      "orthogonal transforms"
+    ]
+  }
+}

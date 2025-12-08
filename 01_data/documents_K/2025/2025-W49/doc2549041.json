@@ -1,0 +1,19 @@
+{
+  "context": "OneThinker, an all-in-one multimodal reasoning model, unifies image and video understanding across various tasks using RL and demonstrates strong performance and knowledge transfer. Reinforcement learning(RL) has recently achieved remarkable success in eliciting visual reasoning withinMultimodal Large Language Models(MLLMs). However, existing approaches typically train separate models for different tasks and treatimage and video reasoningas disjoint domains. This results in limited scalability toward a multimodal reasoning generalist, which restricts practical versatility and hinders potential knowledge sharing across tasks and modalities. To this end, we propose OneThinker, an all-in-one reasoning model that unifies image and video understanding across diverse fundamental visual tasks, includingquestion answering,captioning,spatial and temporal grounding,tracking, andsegmentation. To achieve this, we construct the OneThinker-600k training corpus covering all these tasks and employ commercial models for CoT annotation, resulting in OneThinker-SFT-340k for SFT cold start. Furthermore, we proposeEMA-GRPOto handlereward heterogeneityin multi-task RL bytrackingtask-wise moving averages of reward standard deviations for balanced optimization. Extensive experiments on diverse visual benchmarks show that OneThinker delivers strong performance on 31 benchmarks, across 10 fundamental visual understanding tasks. Moreover, it exhibits effective knowledge transfer between certain tasks and preliminaryzero-shot generalizationability, marking a step toward a unified multimodal reasoning generalist. All code, model, and data are released. Project page:https://github.com/tulerfeng/OneThinker This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "OneThinker: All-in-one Reasoning Model for Image and Video",
+    "authors": [
+      "Kaituo Feng",
+      "Dian Zheng"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/tulerfeng/OneThinker",
+    "huggingface_url": "https://huggingface.co/papers/2512.03043",
+    "upvote": 28,
+    "tags": [
+      "captioning spatial",
+      "reasoning withinmultimodal",
+      "benchmarks onethinker"
+    ]
+  }
+}

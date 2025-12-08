@@ -1,0 +1,18 @@
+{
+  "context": "UltraImage, a framework for high-fidelity image generation, addresses content repetition and quality degradation by correcting dominant frequency periodicity and using entropy-guided adaptive attention concentration, enabling high-resolution image generation without low-resolution guidance. Recentimage diffusion transformersachieve high-fidelity generation, but struggle to generate images beyond these scales, suffering from content repetition and quality degradation. In this work, we present UltraImage, a principled framework that addresses both issues. Throughfrequency-wise analysisofpositional embeddings, we identify that repetition arises from the periodicity of the dominant frequency, whose period aligns with the training resolution. We introduce a recursivedominant frequency correctionto constrain it within a single period after extrapolation. Furthermore, we find that quality degradation stems from diluted attention and thus proposeentropy-guided adaptive attention concentration, which assigns higher focus factors to sharpen local attention for fine detail and lower ones to global attention patterns to preserve structural consistency. Experiments show that UltraImage consistently outperforms prior methods onQwen-ImageandFlux(around 4K) across threegeneration scenarios, reducing repetition and improvingvisual fidelity. Moreover, UltraImage can generate images up to 6K*6K without low-resolution guidance from a training resolution of 1328p, demonstrating its extreme extrapolation capability. Project page is available at https://thu-ml.github.io/ultraimage.github.io/{https://thu-ml.github.io/ultraimage.github.io/}. Project page is available athttps://thu-ml.github.io/ultraimage.github.io/. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "UltraImage: Rethinking Resolution Extrapolation in Image Diffusion Transformers",
+    "authors": [
+      "Hongzhou Zhu"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.04504",
+    "upvote": 14,
+    "tags": [
+      "attention fine",
+      "degradation ultraimage",
+      "repetition improvingvisual"
+    ]
+  }
+}

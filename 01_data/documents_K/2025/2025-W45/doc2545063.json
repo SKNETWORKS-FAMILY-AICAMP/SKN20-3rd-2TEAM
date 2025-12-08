@@ -1,0 +1,19 @@
+{
+  "context": "LTD-Bench evaluates large language models' spatial reasoning by requiring them to generate visual outputs, revealing significant limitations in their ability to map language to spatial concepts. Current evaluation paradigms forlarge language models(LLMs) represent a\ncritical blind spot in AI research--relying on opaque numerical metrics that\nconceal fundamental limitations inspatial reasoningwhile providing no\nintuitive understanding of model capabilities. This deficiency creates a\ndangerous disconnect between reported performance and practical abilities,\nparticularly for applications requiring physical world understanding. We\nintroduceLTD-Bench, a breakthrough benchmark that transforms LLM evaluation\nfrom abstract scores to directly observable visual outputs by requiring models\nto generate drawings throughdot matricesorexecutable code. This approach\nmakesspatial reasoninglimitations immediately apparent even to non-experts,\nbridging the fundamental gap between statistical performance and intuitive\nassessment.LTD-Benchimplements a comprehensive methodology with complementary\ngeneration tasks (testingspatial imagination) and recognition tasks (assessingspatial perception) across three progressively challenging difficulty levels,\nmethodically evaluating both directions of the critical language-spatial\nmapping. Our extensive experiments with state-of-the-art models expose an\nalarming capability gap: even LLMs achieving impressive results on traditional\nbenchmarks demonstrate profound deficiencies in establishing bidirectional\nmappings between language and spatial concept--a fundamental limitation that\nundermines their potential as genuineworld models. Furthermore,LTD-Bench's\nvisual outputs enable powerfuldiagnostic analysis, offering a potential\napproach to investigate model similarity. How to evaluate llms when we can’t trust benchmark numbers anymore? Answer from LTD-Bench:Let them draw.  ·Sign uporlog into comment",
+  "metadata": {
+    "title": "LTD-Bench: Evaluating Large Language Models by Letting Them Draw",
+    "authors": [
+      "Yulei Qin",
+      "Xing Sun"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.02347",
+    "upvote": 8,
+    "tags": [
+      "language models",
+      "reasoninglimitations immediately",
+      "generate visual"
+    ]
+  }
+}

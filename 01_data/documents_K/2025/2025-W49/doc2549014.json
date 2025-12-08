@@ -1,0 +1,19 @@
+{
+  "context": "Deep Research systems integrate LLMs with external tools to enhance problem-solving capabilities, involving query planning, information acquisition, memory management, and answer generation. Large language models(LLMs) have rapidly evolved from text generators into powerful problem solvers. Yet, many open tasks demand critical thinking, multi-source, and verifiable outputs, which are beyond single-shotpromptingor standard retrieval-augmented generation. Recently, numerous studies have exploredDeep Research(DR), which aims to combine thereasoning capabilitiesofLLMswith external tools, such assearch engines, thereby empoweringLLMsto act asresearch agentscapable of completing complex, open-ended tasks. This survey presents a comprehensive and systematic overview ofdeep researchsystems, including a clear roadmap, foundational components, practical implementation techniques, important challenges, and future directions. Specifically, our main contributions are as follows: (i) we formalize athree-stage roadmapand distinguishdeep researchfrom related paradigms; (ii) we introduce four key components:query planning,information acquisition,memory management, andanswer generation, each paired with fine-grainedsub-taxonomies; (iii) we summarize optimization techniques, includingprompting,supervised fine-tuning, andagentic reinforcement learning; and (iv) we consolidateevaluation criteriaandopen challenges, aiming to guide and facilitate future development. As the field ofdeep researchcontinues to evolve rapidly, we are committed to continuously updating this survey to reflect the latest progress in this area. github:https://github.com/mangopy/Deep-Research-Survey Thanks for amazing work This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Deep Research: A Systematic Survey",
+    "authors": [
+      "Shiyu Ni",
+      "Run-Ze Fan"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/mangopy/Deep-Research-Survey",
+    "huggingface_url": "https://huggingface.co/papers/2512.02038",
+    "upvote": 57,
+    "tags": [
+      "text generators",
+      "query planning",
+      "deep research"
+    ]
+  }
+}

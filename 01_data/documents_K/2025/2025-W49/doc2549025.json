@@ -1,0 +1,20 @@
+{
+  "context": "The proposed AnyTalker framework generates high-quality multi-person talking videos by extending Diffusion Transformer with identity-aware attention, leveraging single-person videos for training, and using a specialized dataset for evaluation. Recently,multi-person video generationhas started to gain prominence. While a few preliminary works have explored audio-driven multi-person talking video generation, they often face challenges due to the high costs of diverse multi-person data collection and the difficulty of driving multiple identities with coherentinteractivity. To address these challenges, we propose AnyTalker, a multi-person generation framework that features an extensiblemulti-stream processingarchitecture. Specifically, we extendDiffusion Transformer's attention block with a novelidentity-aware attentionmechanism that iteratively processes identity-audio pairs, allowing arbitrary scaling of drivable identities. Besides, training multi-person generative models demands massive multi-person data. Our proposed training pipeline depends solely on single-person videos to learn multi-person speaking patterns and refinesinteractivitywith only a few real multi-person clips. Furthermore, we contribute a targeted metric anddatasetdesigned to evaluate the naturalness andinteractivityof the generated multi-person videos. Extensive experiments demonstrate that AnyTalker achieves remarkablelip synchronization,visual quality, and naturalinteractivity, striking a favorable balance between data costs and identity scalability. Recently, multi-person video generation has started to gain prominence. While a few preliminary works have explored audio-driven multi-person talking video generation, they often face challenges due to the high costs of diverse multi-person data collection and the difficulty of driving multiple identities with coherent interactivity. To address these challenges, we propose AnyTalker, a multi-person generation framework that features an extensible multi-stream processing architecture. Specifically, we extend Diffusion Transformer's attention block with a novel identity-aware attention mechanism that iteratively processes identity-audio pairs, allowing arbitrary scaling of drivable identities. Besides, training multi-person generative models demands massive multi-person data. Our proposed training pipeline depends solely on single-person videos to learn multi-person speaking patterns and refines interactivity with only a few real multi-person clips. Furthermore, we contribute a targeted metric and dataset designed to evaluate the naturalness and interactivity of the generated multi-person videos. Extensive experiments demonstrate that AnyTalker achieves remarkable lip synchronization, visual quality, and natural interactivity, striking a favorable balance between data costs and identity scalability. Great work!! Great work!!!!!!!!!!!!! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement",
+    "authors": [
+      "Yiying Liu",
+      "Shuiyang Mao",
+      "Wenhan Luo"
+    ],
+    "publication_year": 2025,
+    "github_url": "https://github.com/HKUST-C4G/AnyTalker",
+    "huggingface_url": "https://huggingface.co/papers/2511.23475",
+    "upvote": 41,
+    "tags": [
+      "anytalker multi",
+      "attention leveraging",
+      "person video"
+    ]
+  }
+}

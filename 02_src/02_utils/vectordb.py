@@ -22,6 +22,7 @@ load_dotenv()
 MODEL_NAME = os.getenv("MODEL_NAME", "OpenAI")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 100))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 10))
+KEYWORD_METHOD = os.getenv("KEYWORD_EXTRACTION_METHOD").lower()
 
 
 # 저장경로 설정
@@ -42,7 +43,7 @@ embedding_models = {
 }
 
 
-def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 10):
+def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 10, method: str = KEYWORD_METHOD):
     """
     문서 청크를 임베딩하여 Chroma 벡터 데이터베이스에 저장합니다.
 
@@ -59,7 +60,7 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
         Exception: 모델 로딩 실패 시
     """
     # pkl 파일에서 문서 청크 로드
-    documents = load_chunks_from_pkl(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+    documents = load_chunks_from_pkl(chunk_size=chunk_size, chunk_overlap=chunk_overlap, method=KEYWORD_METHOD)
 
     # 메타데이터 전처리를 위한 청크 리스트
     chunks = []
@@ -95,13 +96,15 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
 
     # VectorStore 생성 및 저장
     if model:
+        method_suffix = "K" if method == "keybert" else "T"
+        collection_name = f"chroma_{model_name}_{chunk_size}_{chunk_overlap}_{method_suffix}"
         vectorstore = Chroma.from_documents(
             documents=chunks,
-            collection_name=f"chroma_{model_name}_{chunk_size}_{chunk_overlap}",
+            collection_name=collection_name,
             embedding=model,
             persist_directory=VECTORDB_DIR,
         )
-        print(f"[SUCCESS] vectordb 'chroma_{model_name}_{chunk_size}_{chunk_overlap}' 저장 완료")
+        print(f"[SUCCESS] vectordb '{collection_name}' 저장 완료")
     else:
         raise ValueError("embedding_model이 지정되지 선택되지 않았습니다.")
 

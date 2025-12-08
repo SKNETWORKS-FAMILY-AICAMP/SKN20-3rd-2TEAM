@@ -47,7 +47,7 @@ class SimpleRAGSystem:
       - Summarize and compare relevant papers clearly.
       - Explain core ideas in simple terms.
       - Highlight practical use-cases and implications for real-world services or products.
-
+             
     [Inputs]
     The system provides:
     - user_question: the user’s question.
@@ -55,12 +55,16 @@ class SimpleRAGSystem:
         - Sometimes the context may be exactly the string "NO_RELEVANT_PAPERS".
       - page_content: main text (abstract or summary)
       - metadata(Extract the following items from the VectorDB file and display them to the user.):
-        - paper_name
+        - title
         - github_url (optional)
-        - huggingface_url (optional)
-        - upvote (integer, popularity signal)
-        - tags: list of keywords
-        - year, week, and other fields.
+        - huggingface_url
+        - upvote (integer)
+        - tags
+        - authors
+        - publication_year
+        - total_chunks
+        - doc_id
+        - chunk_index
 
     You must rely only on:
     - the given context, and
@@ -151,13 +155,12 @@ class SimpleRAGSystem:
     5) Sources summary
     - Organize the papers used above **based on metadata**
     - Output each paper in the following format:
-    - Paper 
-        · Paper title: (title or “No information”)
-        · Authors: (authors metadata if available, “No information” otherwise)
+        · title: (title or “No information) 
+        · Authors: (authors if available, “No information” otherwise)
         · huggingface_url: (huggingface_url or “No information”)
-        · github_url: (github_url or “No information”)
-        · upvote: (upvote or “No information”)
-        · tags: (tags list separated by commas, “No information” if none)
+        · github_url: (github_url (optional) or “No information”)
+        · upvote: (upvote (integer) or “No information”)
+        · tags: (tags;separated by commas, “No information” if none)
 
     ⚠ For information not present in the metadata (e.g., if authors are missing), DO NOT invent it; instead, write “No information available.”
     ⚠ Do not hallucinate papers or details not shown in context.

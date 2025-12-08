@@ -1,0 +1,18 @@
+{
+  "context": "PixelDiT is a single-stage, end-to-end diffusion model that operates directly in pixel space, overcoming the limitations of latent-space modeling by using a dual-level transformer architecture and achieving competitive performance in image and text-to-image generation. Latent-space modelinghas been the standard forDiffusion Transformers(DiTs). However, it relies on a two-stage pipeline where thepretrained autoencoderintroduces lossy reconstruction, leading to error accumulation while hindering joint optimization. To address these issues, we proposePixelDiT, a single-stage, end-to-end model that eliminates the need for the autoencoder and learns the diffusion process directly in thepixel space.PixelDiTadopts afully transformer-based architectureshaped by a dual-level design: apatch-level DiTthat captures global semantics and apixel-level DiTthat refines texture details, enabling efficient training of a pixel-space diffusion model while preserving fine details. Our analysis reveals that effective pixel-leveltoken modelingis essential to the success of pixel diffusion.PixelDiTachieves 1.61FIDonImageNet256x256, surpassing existing pixel generative models by a large margin. We further extendPixelDiTto text-to-image generation and pretrain it at the 1024x1024 resolution inpixel space. It achieves 0.74 onGenEvaland 83.5 onDPG-bench, approaching the best latent diffusion models. Project Page:https://pixeldit.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "PixelDiT: Pixel Diffusion Transformers for Image Generation",
+    "authors": [
+      "Yongsheng Yu"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2511.20645",
+    "upvote": 25,
+    "tags": [
+      "thepixel space",
+      "need autoencoder",
+      "learns diffusion"
+    ]
+  }
+}

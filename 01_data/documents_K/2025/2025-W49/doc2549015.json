@@ -1,0 +1,19 @@
+{
+  "context": "TUNA, a unified multimodal model, uses a cascaded VAE and representation encoder for end-to-end multimodal understanding and generation, outperforming decoupled models and achieving state-of-the-art results across various benchmarks. Unified multimodal models(UMMs) aim to jointly performmultimodal understandingand generation within a single framework. We presentTUNA, a native UMM that builds a unified continuous visual representation by cascading aVAE encoderwith arepresentation encoder. This unified representation space allows end-to-end processing of images and videos for both understanding and generation tasks. Compared to priorUMMswith decoupled representations,TUNA's unified visual space avoidsrepresentation format mismatchesintroduced by separate encoders, outperforming decoupled alternatives in both understanding and generation. Moreover, we observe that stronger pretrainedrepresentation encoders consistently yield better performance across all multimodal tasks, highlighting the importance of therepresentation encoder. Finally, in this unified setting, jointly training on both understanding and generation data allows the two tasks to benefit from each other rather than interfere. Our extensive experiments onmultimodal understandingand generation benchmarks show thatTUNAachieves state-of-the-art results in image andvideo understanding, image andvideo generation, andimage editing, demonstrating the effectiveness and scalability of its unified representation design. @taesiriThx for sharing! Could you also attach this video?  Oops! Sorry@Yuren— unfortunately, Hugging Face doesn't allow editing the thumbnail video. If you'd like, I can reach out to someone on the Hugging Face team to remove the paper so you can resubmit it. Just let me know! Oops! Sorry@Yuren— unfortunately, Hugging Face doesn't allow editing the thumbnail video. If you'd like, I can reach out to someone on the Hugging Face team to remove the paper so you can resubmit it. Just let me know! never mind:) it's ok This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "TUNA: Taming Unified Visual Representations for Native Unified Multimodal Models",
+    "authors": [
+      "Weiming Ren",
+      "Shoufa Chen"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.02014",
+    "upvote": 54,
+    "tags": [
+      "andvideo understanding",
+      "multimodal highlighting",
+      "encoder unified"
+    ]
+  }
+}

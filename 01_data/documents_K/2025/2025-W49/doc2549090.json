@@ -1,0 +1,20 @@
+{
+  "context": "Jina-VLM, a 2.4B parameter vision-language model, achieves top performance in multilingual visual question answering using a SigLIP2 vision encoder and Qwen3 language backbone with an attention-pooling connector. We present Jina-VLM, a 2.4B parameter vision-language model that achieves state-of-the-artmultilingual visual question answeringamong open 2B-scale VLMs. The model couples aSigLIP2vision encoder with aQwen3language backbone through anattention-pooling connectorthat enablestoken-efficient processingofarbitrary-resolution images. Across standardVQA benchmarksand multilingual evaluations, Jina-VLM outperforms comparable models while preserving competitivetext-only performance. our latest multilingual vlm model at 2b size, about to release soon we take 2 apache-2.0 components, combine them and release as cc-by-nc Bravo. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Do they have released the code? ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Jina-VLM: Small Multilingual Vision Language Model",
+    "authors": [
+      "Andreas Koukounas",
+      "Georgios Mastrapas",
+      "Han Xiao"
+    ],
+    "publication_year": 2025,
+    "github_url": "",
+    "huggingface_url": "https://huggingface.co/papers/2512.04032",
+    "upvote": 9,
+    "tags": [
+      "question answering",
+      "aqwen3language",
+      "siglip2 vision"
+    ]
+  }
+}

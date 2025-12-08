@@ -1,0 +1,16 @@
+{
+  "context": "Controllable Layer Decomposition (CLD) enables fine-grained and controllable separation of raster images into RGBA layers, surpassing existing methods in quality and practical use. This work presentsControllable Layer Decomposition(CLD), a method for achieving fine-grained and controllable multi-layer separation of raster images. In practical workflows, designers typically generate and edit each RGBA layer independently before compositing them into a final raster image. However, this process is irreversible: once composited, layer-level editing is no longer possible. Existing methods commonly rely onimage mattingandinpainting, but remain limited in controllability and segmentation precision. To address these challenges, we propose two key modules:LayerDecompose-DiT(LD-DiT), which decouples image elements into distinct layers and enables fine-grained control; andMulti-Layer Conditional Adapter(MLCA), which injects target image information into multi-layer tokens to achieve preciseconditional generation. To enable a comprehensive evaluation, we build a new benchmark and introducetailored evaluation metrics. Experimental results show thatCLDconsistently outperforms existing methods in bothdecomposition qualityand controllability. Furthermore, the separated layers produced byCLDcan be directly manipulated in commonly used design tools such as PowerPoint, highlighting its practical value and applicability in real-world creative workflows. The experiment checkpoints are releasedhere This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+  "metadata": {
+    "title": "Controllable Layer Decomposition for Reversible Multi-Layer Image Generation",
+    "authors": [],
+    "publication_year": 2025,
+    "github_url": "https://github.com/monkek123King/CLD",
+    "huggingface_url": "https://huggingface.co/papers/2511.16249",
+    "upvote": 8,
+    "tags": [
+      "edit rgba",
+      "layerdecompose",
+      "controllability segmentation"
+    ]
+  }
+}
