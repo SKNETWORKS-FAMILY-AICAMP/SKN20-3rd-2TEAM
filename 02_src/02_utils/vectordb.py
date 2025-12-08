@@ -12,9 +12,8 @@ from dotenv import load_dotenv
 import torch
 from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
-
 from chunking import load_chunks_from_pkl
 
 # 환경 변수 로드

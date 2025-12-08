@@ -51,7 +51,7 @@ def langgraph_rag():
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'chroma_OpenAI_100_20',
+            collection_name = 'chroma_OpenAI_200_20',
             embedding_function = embedding_model
         )
     else:
@@ -80,26 +80,17 @@ def langgraph_rag():
 
     def grade_documents_node(state:RAGState)->dict:
         '''문서평가 노드'''
-        threshold = 0.5 ###
+        threshold = 0.6 ###
         filtered_data = []
         for doc, score in zip(state['documents'],state['doc_scores']):
-            if score <= threshold:
+            if score >= threshold:
                 filtered_data.append((doc, score))
 
-        # .similarity_search_with_score 에서 반환하는 값이 높은 점수 순으로 반환되지않는 것을 확인 :
-            #  높은 점수순으로 문서정렬 로직 추가하는 코드
-        # sorted() 함수를 사용하여 두 번째 요소(score, 인덱스 1)를 기준으로 내림차순(reverse=True) 정렬
-        sorted_filtered_data = sorted(
-            filtered_data,
-            key=lambda item: item[1], # item[1]은 score
-            reverse=False              # 오름차순
-        )
-
         # 문서와 점수를 다시 분리
-        final_documents = [item[0] for item in sorted_filtered_data]
-        final_scores = [item[1] for item in sorted_filtered_data]
+        final_documents = [item[0] for item in filtered_data]
+        final_scores = [item[1] for item in filtered_data]
 
-        print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지 (점수 내림차순 정렬 완료)") ### 출력 조정
+        print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지") ### 출력 조정
         return {'documents': final_documents, 'doc_scores': final_scores}
     
 ##

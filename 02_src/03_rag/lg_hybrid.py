@@ -56,7 +56,7 @@ def langgraph_rag():
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'chroma_OpenAI_100_20',
+            collection_name = 'chroma_OpenAI_200_20',
             embedding_function = embedding_model
         )
     else:
@@ -179,20 +179,20 @@ def langgraph_rag():
             'search_type' : 'hybrid'
         }
 
-    def grade_documents_node(state:RAGState)->dict:
-        '''문서평가 노드'''
-        threshold = 0.16
-        filtered_data = []
-        for doc, score in zip(state['documents'],state['doc_scores']):
-            if score >= threshold:
-                filtered_data.append((doc, score))
+    # def grade_documents_node(state:RAGState)->dict:
+    #     '''문서평가 노드'''
+    #     threshold = 0.16
+    #     filtered_data = []
+    #     for doc, score in zip(state['documents'],state['doc_scores']):
+    #         if score >= threshold:
+    #             filtered_data.append((doc, score))
 
-        # 문서와 점수를 다시 분리
-        filtered_docs = [doc for doc, score in filtered_data]
-        filtered_scores = [score for doc, score in filtered_data]
+    #     # 문서와 점수를 다시 분리
+    #     filtered_docs = [doc for doc, score in filtered_data]
+    #     filtered_scores = [score for doc, score in filtered_data]
 
-        print(f"[grade] {len(state['documents'])}개 --> {len(filtered_docs)}개 문서 유지 (임계값 필터링 완료)") ### 출력 나오게
-        return {'documents': filtered_docs, 'doc_scores': filtered_scores}
+    #     print(f"[grade] {len(state['documents'])}개 --> {len(filtered_docs)}개 문서 유지 (임계값 필터링 완료)") ### 출력 나오게
+    #     return {'documents': filtered_docs, 'doc_scores': filtered_scores}
     
     def web_search_node(state: dict) -> dict:
         '''웹검색 노드: Tavily를 사용하여 질문에 대한 최신 웹 검색 결과를 가져옵니다.'''
@@ -375,14 +375,14 @@ def langgraph_rag():
     # 그래프 구축(add_node  add_edge  add_conditional_edges)
     graph = StateGraph(RAGState)
     graph.add_node('retriever',retrieve_node)
-    graph.add_node('grade',grade_documents_node)
+    #graph.add_node('grade',grade_documents_node)
     graph.add_node('web_search',web_search_node)
     graph.add_node('generate',generate_node)
 
     graph.add_edge(START, 'retriever')
-    graph.add_edge('retriever', 'grade')
+    #graph.add_edge('retriever', 'grade')
     graph.add_conditional_edges(
-        'grade',
+        'retriever',
         decide_to_generate,
         { 'generate':'generate', 'web_search': 'web_search'}
     )
