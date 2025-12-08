@@ -20,7 +20,7 @@ load_dotenv()
 
 # 컴포넌트 임포트 
 try:
-    from components import (
+    from components_1 import (
         load_vectorstore,
         load_rag_system,
         init_session_state,
