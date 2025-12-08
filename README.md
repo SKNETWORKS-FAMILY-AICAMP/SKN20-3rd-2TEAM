@@ -1,4 +1,4 @@
-# 🚀 HuggingFace WeeklyPapers 기반 ML/DL/LLM 스택 RAG 챗봇 
+# 🤗 HuggingFace WeeklyPapers 기반 ML/DL/LLM 스택 RAG 챗봇 
 ## 👥 팀원
 | <img src="" width="150"> <br> 김지은 |  <img src="" width="150"> <br> 박다정 |  <img src="" width="150"> <br> 오학성 |  <img src="" width="150"> <br> 정소영 |  <img src="" width="200"> <br> 황수현 |
 |:------:|:------:|:------:|:------:|:------:|
@@ -18,36 +18,67 @@
       * Streamlit 대화형 챗봇 UI
       * 키워드 기반 논문 검색 및 요약 제공
 
-### 1.2. 전체 시스템 구조
+### 1.2. 전체 프로젝트 구조
+### 프로젝트 디렉토리 구조
 
+```bash
+SKN20-3rd-2TEAM/
+├── 01_data/                        # 데이터 및 벡터 저장소
+│   ├── chunks/                     # 청킹된 문서(.pkl 등)
+│   ├── documents_T/                # TF-IDF 기반으로 추출된 논문 JSON
+│   ├── documents_K/                # KeyBERT 기반으로 추출된 논문 JSON
+│   └── vector_db/                  # Chroma VectorDB 파일
+│
+├── 02_src/                         # 모든 소스 코드
+│   ├── 01_data_collection/         # 데이터 수집(크롤링) 단계
+│   │   └── crawling.py             # HuggingFace DailyPapers 크롤러
+│   │
+│   ├── 02_utils/                   # 공통 유틸 및 전처리/인덱싱 도구
+│   │   ├── chunking.py             # JSON → LangChain Document → 청킹 → .pkl 저장
+│   │   ├── evaluate_embeddings.py  # 임베딩 모델별 성능/품질 비교 실험 스크립트
+│   │   └── vectordb.py             # 청크 → 임베딩 → Chroma VectorDB 생성/로드
+│   │
+│   ├── 03_rag/                     # RAG 코어 로직
+│   │   └── simpleRAGsystem_2.py    # Retriever + LLM 조합 RAG 시스템 (ask_with_sources 등)
+│   │
+│   ├── 04_ui/                      # 프론트엔드 / 서비스 레이어
+│   │   ├── app.py                  # Streamlit 메인 앱 엔트리 포인트
+│   │   └── components.py           # UI 컴포넌트, 세션 상태, VectorDB/RAG 로딩, 키워드 UI 등
+│   │
+│   └── 05_explain/                 # 실험/구현 설명 문서
+│       ├── crawling.md             # 크롤링 설계, 파이프라인, 예외 처리 설명
+│       ├── evaluate_embeddings_results.md  # 임베딩 비교 실험 결과 및 분석
+│       └── utils.md                # chunking/vectordb 등 유틸 모듈 설명 및 사용법
+│
+├── MDimages/                       # README 및 문서에 사용하는 이미지/다이어그램
+│   # 예: 아키텍처 다이어그램, UI 스크린샷, 결과 그래프 등
+│
+├── .env                            # 환경 변수 설정 파일 (API 키, CHUNK_SIZE 등)
+├── README.md                       # 프로젝트 설명 문서
+└── requirements.txt                # Python 라이브러리 설치 목록
+```
+----- 
 ### 시스템 아키텍처
-<img src="MDimages/SystemArchitecture.png" width="70%"> 
+<img src="MDimages/SystemArchitecture.png" width="85%"> 
 
+----- 
 ### 데이터 파이프라인
 
-1. **크롤링** (`crawling.py`)
+1. **크롤링 및 JSON 저장** (`crawling.py`)
    - HuggingFace WeeklyPapers에서 논문 메타데이터 수집
-
-2. **JSON 저장**
    - 수집된 논문 정보를 JSON 형식으로 저장
 
-3. **청킹** (`chunking.py`)
+2. **청킹** (`chunking.py`)
    - 논문 텍스트를 검색에 적합한 크기로 분할
 
-4. **임베딩 및 VectorDB 저장** (`vectordb.py`)
+3. **임베딩 및 VectorDB 저장** (`vectordb.py`)
    - 청크를 벡터로 변환하여 Chroma VectorDB에 저장
 
-5. **RAG 시스템** (`simpleRAGsystem_2.py`)
+4. **RAG 시스템** (`simpleRAGsystem_2.py`)
    - LangChain 기반 Retriever와 RAG 파이프라인 구성
 
-6. **UI** (`app.py`)
+5. **UI** (`app.py`)
    - Streamlit을 통한 대화형 인터페이스 제공
-
-
-| 패턴 | 주요 라이브러리 | 설명 |
-| :--- | :--- | :--- |
-| **RAG** | `langchain`, `langchain_chroma` | HuggingFace WeeklyPapers 데이터를 외부 지식으로 활용하여 검색 정확도를 향상. |
-| **Agent/Flow** | `langgraph` | 챗봇의 검색, 필터링, 응답 생성 등의 논리적 흐름을 정의. |
 
 -----
 
@@ -61,7 +92,7 @@
 | **LLM 프레임워크** | LangChain / LangGraph | RAG 파이프라인 구축 |
 | **Vector DB** | ChromaDB | 임베딩 벡터 저장 및 검색 |
 | **크롤링** | BeautifulSoup4 | 웹 스크래핑 |
-| **키워드 추출** | KeyBERT | 논문 키워드 자동 추출 |
+| **불용어 제거 후 키워드 추출** | NLTK + KeyBERT / TF-IDF | 논문 불용어 제거 후 키워드 자동 추출 |
 | **LLM API** | OpenAI ChatCompletion | 자연어 생성 및 응답 |
 
 ### 🎨 Frontend
@@ -122,7 +153,7 @@ HuggingFace WeeklyPapers에서 주간 논문 데이터를 자동으로 수집합
   "context": "논문 초록 및 커뮤니티 댓글 전체 텍스트",
   "metadata": {
     "title": "논문 제목",
-    "authors": ["저자1", "저자2", ...],
+    "authors": ["저자1", "저자2", "..."],
     "publication_year": 2025,
     "github_url": "GitHub 저장소 URL",
     "huggingface_url": "HuggingFace 논문 페이지 URL",
@@ -154,8 +185,8 @@ CHUNK_OVERLAP=20
 
 | 파라미터 | 설명 | 기본값 |
 |---------|------|--------|
-| `CHUNK_SIZE` | 청크당 최대 문자 수 | 200 |
-| `CHUNK_OVERLAP` | 청크 간 중복 문자 수 | 20 |
+| `CHUNK_SIZE` | 청크당 최대 문자 수 | 100 |
+| `CHUNK_OVERLAP` | 청크 간 중복 문자 수 | 10 |
 
 ---
 
@@ -167,12 +198,15 @@ CHUNK_OVERLAP=20
 
 #### 지원 임베딩 모델
 
-| 모델 | 설명 |
+| 모델 | 특징 |
 |------|------|
-| **OpenAI** | `text-embedding-3-small` - 고성능 (API 키 필요) |
-| **MiniLM-L6** | 경량 빠른 모델 |
+| **MiniLM-L6** | 경량 고속 범용 모델 |
+| **MPNet** | 고품질 범용 임베딩 |
+| **MsMarco** | 검색 최적화 모델 |
 | **SPECTER** | 과학 논문 특화 |
-| **BGE-M3** | 다국어 고성능 |
+| **OpenAI** | 고성능 임베딩 (API 키 필요) |
+| **BGE-M3** | 다국어 지원 고성능 |
+| **Paraphrase-Multi** | 다국어 의역 검색 |
 
 #### 주요 기능
 
@@ -213,7 +247,7 @@ vectorstore = load_vectordb(model_name="OpenAI", chunk_size=100, chunk_overlap=1
 
 -----
 
-## 4\. 응답 전략 및 출력 형식
+## 4. 응답 전략 및 출력 형식
 
 ### 4.1. 시스템 프롬프트 (System Prompt)
 
@@ -244,7 +278,7 @@ vectorstore = load_vectordb(model_name="OpenAI", chunk_size=100, chunk_overlap=1
 * (구현 예정)*
 -----
 
-## 5. 향후 개발 계획 (TODO List)
+## . 향후 개발 계획 (TODO List)
 
   * **[P2]** HuggingFace 데이터 수집 로직을 주간 **Batch 스케줄링**으로 전환.
   * **[P2]** Streamlit UI 상단에 **상위 N개 트렌드 키워드**를 시각적으로 노출하고, **클릭 시 관련 논문 자동 조회** 기능 구현.

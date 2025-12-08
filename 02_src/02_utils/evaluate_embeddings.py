@@ -10,8 +10,7 @@
 4. sentence-transformers/allenai-specter (scientific papers)
 5. OpenAI text-embedding-3-small
 6. BAAI/bge-m3
-7. Jina-embeddings (Jina v2)
-8. paraphrase-multilingual-mpnet-base-v2
+7. paraphrase-multilingual-mpnet-base-v2
 
 평가 방법:
 - 테스트 쿼리에 대한 검색 성능 측정
@@ -130,14 +129,14 @@ TEST_QUERIES = [
 
 def init_models() -> Dict[str, any]:
     """
-    8개 임베딩 모델 초기화
+    7개 임베딩 모델 초기화
 
     Returns:
         Dict[str, embedding_model]: 모델명 -> 임베딩 모델 객체
     """
     models = {}
 
-    logger.info("[모델 초기화] 8개 임베딩 모델 로딩 시작...")
+    logger.info("[모델 초기화] 7개 임베딩 모델 로딩 시작...")
     logger.info(f"[GPU 사용 여부] {'cuda' if torch.cuda.is_available() else 'cpu'}")
 
     # 1. all-MiniLM-L6-v2 (384 dim, 빠름)
@@ -205,18 +204,7 @@ def init_models() -> Dict[str, any]:
     except Exception as e:
         logger.error(f"✗ BGE-M3 로딩 실패: {e}")
 
-    # 7. 'jinaai/jina-embeddings-v2-base-en'
-    try:
-        models["Jina-v2"] = AutoModel.from_pretrained(
-            "jinaai/jina-embeddings-v2-base-en",
-            trust_remote_code=True,
-            device="cuda" if torch.cuda.is_available() else "cpu",
-        )
-        logger.info("✓ Jina-v2 로딩 완료")
-    except Exception as e:
-        logger.error(f"✗ Jina-v2 로딩 실패: {e}")
-
-    # 8. paraphrase-multilingual-mpnet-base-v2 (768 dim, 다국어 지원)
+    # 7. paraphrase-multilingual-mpnet-base-v2 (768 dim, 다국어 지원)
     try:
         models["Paraphrase-Multi"] = HuggingFaceEmbeddings(
             model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
