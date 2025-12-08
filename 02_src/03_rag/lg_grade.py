@@ -72,7 +72,7 @@ def langgraph_rag():
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'chroma_OpenAI_200_20',
+            collection_name = 'chroma_OpenAI_200_20_K',
             embedding_function = embedding_model
         )
     else:
@@ -81,7 +81,7 @@ def langgraph_rag():
 
     # 3-1) 검색 노드
     def retrieve_node(state:RAGState)->dict:
-        '''내부문서 검색 노드 : 하이브리드 검색'''
+        '''내부 문서 검색 노드 : 질문과 문서 임베딩 간 코사인 유사도 기반 검색'''
         question = state['question']
         docs_with_scores = vectorstore.similarity_search_with_score(question, k = 8)
 

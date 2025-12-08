@@ -1,3 +1,17 @@
+# 내일 수정할 예정 :
+# 1) grade 노드에서 threshold를 search_type에 따라 조정
+#    - 내부 문서(hybrid/retrank)는 BASE_THRESHOLD 사용
+#    - 웹 검색(web)은 BASE_THRESHOLD를 더 높여서 필터링 강화
+#
+# 2) 기준치를 넘는 문서가 없으면 generate 단계로 바로 가지 않고
+#    - "조회할 수 없습니다" 같은 안전 문구를 반환하도록 처리
+#    - 할루시네이션 방지 목적
+#
+# 3) 웹 검색 후 rerank + grade를 적용했지만
+#    - 완전히 관련 없는 질문("그냥 바나나")에도 문서가 반환되는 경우 발생
+#    - 이를 막기 위해 문서 관련성/점수 하한값 검증 필요
+#    - 즉, relevance가 낮으면 문서 배제 후 사용자에게 관련 문서 없음 안내
+
 # pip install langgraph
 # pip install langchain-community
 # pip install tavily-python
@@ -58,13 +72,12 @@ def langgraph_rag():
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'chroma_OpenAI_200_20',
+            collection_name = 'chroma_OpenAI_200_20_K',
             embedding_function = embedding_model
         )
     else:
         raise ValueError('이전단계 chroma_db_reg2 디렉터리 생성 필요')
     
-    # 2. BM25 Retriever를 위한 전체 문서 준비 (추가된 부분)
     # Chroma에서 모든 문서를 가져옵니다. (BM25 인덱스 생성용)
     print(" [BM25] BM25 Retriever를 위한 전체 문서 로드 및 인덱스 생성 시작...")
     
@@ -80,7 +93,7 @@ def langgraph_rag():
         raise ValueError('Chroma DB에 문서가 없습니다. BM25 인덱스 생성이 불가합니다.')
 
     # BM25 Retriever 초기화 (전체 문서를 사용하여 인덱스 생성)
-    # **주의:** 문서가 많으면 이 단계에서 메모리를 많이 사용하고 시간이 오래 걸립니다.
+    # 주의: 문서가 많으면 이 단계에서 메모리를 많이 사용하고 시간이 오래 걸립니다.
     bm25_retriever = BM25Retriever.from_documents(all_documents)
     bm25_retriever.k = 3 # BM25 검색 결과 개수 설정
     
@@ -90,7 +103,7 @@ def langgraph_rag():
         search_kwargs = {'k' : 3}
     )
     
-    # Reranker 모델 로드 (전역 로딩 권장)
+    # Reranker 모델 로드
     reranker_model = CrossEncoder("BAAI/bge-reranker-base")
 
     # 하단 노드함수에 들어갈 고유키 생성 함수 : vector_docs에 고유키로 사용할만한 id항목이 있지만, 무조건 하나의 문서에 id가 있도록 할겸
@@ -184,6 +197,7 @@ def langgraph_rag():
 
     def rerank_documents_node(state: RAGState) -> dict:
         """
+        retriever에서 반환한
         topK 문서를 질문과의 연관성 점수 기반으로 재정렬하는 노드
         """
         question = state["question"]
@@ -205,12 +219,50 @@ def langgraph_rag():
         reranked_documents = [doc for doc, _ in ranked]
         reranked_scores = [score for _, score in ranked]
 
-        print(f"[rerank] Rerank 완료 → 최상위 문서: {reranked_documents[0].metadata.get('source','unknown')}") ###
+        print(f"[rerank] Rerank 완료 → 최상위 문서: {reranked_documents[0].metadata.get('source','unknown')}") #### 출력되도록 수정 필요
         return {
             "documents": reranked_documents,
-            "doc_scores": reranked_scores
+            "doc_scores": reranked_scores,
+            #'search_type' : 'rerank'
         }
 
+    def grade_documents_node(state:RAGState)->dict:
+        '''문서평가 노드'''
+        threshold = 0.018 ### 하이퍼파라미터
+        filtered_data = []
+        for doc, score in zip(state['documents'],state['doc_scores']):
+            if score >= threshold: ### = 여부 하이퍼파라미터
+                filtered_data.append((doc, score))
+
+        # 문서와 점수를 다시 분리
+        final_documents = [item[0] for item in filtered_data]
+        final_scores = [item[1] for item in filtered_data]
+
+        print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지") ### 출력 조정
+        return {'documents': final_documents, 'doc_scores': final_scores}
+    # def grade_documents_node(state: RAGState): <-- 수정 중
+    #     '''search_type이 web이거나 hybrid인지에 따라 threshold값 조정하고 문서 평가'''
+    #     docs = state['documents']
+    #     scores = state['doc_scores']
+    #     search_type = state['search_type']
+
+    #     BASE_THRESHOLD = 0.0018
+    #     threshold = BASE_THRESHOLD * (2 if search_type == 'web' else 1)
+
+    #     final_docs = []
+    #     final_scores = []
+    #     for d, s in zip(docs, scores):
+    #         if s <= threshold:
+    #             final_docs.append(d)
+    #             final_scores.append(s)
+
+    #     print(f"[grade] {search_type} | threshold={threshold:.6f} | {len(docs)}개 → {len(final_docs)}개 유지")
+
+    #     return {
+    #         "documents": final_docs,
+    #         "doc_scores": final_scores,
+    #         "search_type": search_type #^
+    #     }
     
     def web_search_node(state: dict) -> dict:
         '''웹검색 노드: Tavily를 사용하여 질문에 대한 최신 웹 검색 결과를 가져옵니다.'''
@@ -387,20 +439,37 @@ def langgraph_rag():
 
     # 그래프 구축(add_node  add_edge  add_conditional_edges)
     graph = StateGraph(RAGState)
-    graph.add_node('retriever',retrieve_node)
+    graph.add_node('retriever', retrieve_node)
     graph.add_node('rerank', rerank_documents_node)
-    graph.add_node('web_search',web_search_node)
-    graph.add_node('generate',generate_node)
+    graph.add_node('grade', grade_documents_node)
+    graph.add_node('web_search', web_search_node)
+    graph.add_node('generate', generate_node)
 
+    # 1. 시작 → retriever
     graph.add_edge(START, 'retriever')
+
+    # 2. retriever → rerank
     graph.add_edge('retriever', 'rerank')
+
+    # 3. rerank → grade
+    graph.add_edge('rerank', 'grade')
+
+    # 4. grade 이후 조건 분기
     graph.add_conditional_edges(
-        'retriever',
+        'grade',
         decide_to_generate,
-        { 'generate':'generate', 'web_search': 'web_search'}
+        {
+            'generate': 'generate',      # 문서 충분시 llm을 사용하여 답변생성
+            'web_search': 'web_search'   # 문서 부족시 웹검색
+        }
     )
+
+    # 5. web_search → rerank (웹 결과 정렬)
     graph.add_edge('web_search', 'rerank')
-    graph.add_edge('rerank', 'generate')
+    # graph.add_edge('web_search', 'grade')
+    # graph.add_edge('grade', 'rerank')
+
+    # 6. generate → END
     graph.add_edge('generate', END)
 
     # 그래프 컴파일

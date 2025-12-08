@@ -56,17 +56,16 @@ def langgraph_rag():
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'chroma_OpenAI_200_20',
+            collection_name = 'chroma_OpenAI_200_20_K',
             embedding_function = embedding_model
         )
     else:
         raise ValueError('이전단계 chroma_db_reg2 디렉터리 생성 필요')
     
-    # 2. BM25 Retriever를 위한 전체 문서 준비 (추가된 부분)
     # Chroma에서 모든 문서를 가져옵니다. (BM25 인덱스 생성용)
     print(" [BM25] BM25 Retriever를 위한 전체 문서 로드 및 인덱스 생성 시작...")
     
-    # Chroma._collection.get()을 사용하여 Document 리스트를 직접 구성합니다.
+    # Chroma._collection.get()을 사용하여 Document 리스트를 직접 구성합니다. #### 수정할만한부분
     collection_data = vectorstore._collection.get(include=['documents', 'metadatas'])
     
     # LangChain Document 객체 리스트로 변환
@@ -78,7 +77,7 @@ def langgraph_rag():
         raise ValueError('Chroma DB에 문서가 없습니다. BM25 인덱스 생성이 불가합니다.')
 
     # BM25 Retriever 초기화 (전체 문서를 사용하여 인덱스 생성)
-    # **주의:** 문서가 많으면 이 단계에서 메모리를 많이 사용하고 시간이 오래 걸립니다.
+    # 주의: 문서가 많으면 이 단계에서 메모리를 많이 사용하고 시간이 오래 걸립니다. #### 수정할만한부분
     bm25_retriever = BM25Retriever.from_documents(all_documents)
     bm25_retriever.k = 3 # BM25 검색 결과 개수 설정
     
@@ -182,7 +181,7 @@ def langgraph_rag():
         threshold = 0.018 ### 하이퍼파라미터
         filtered_data = []
         for doc, score in zip(state['documents'],state['doc_scores']):
-            if score > threshold: ### = 여부 하이퍼파라미터
+            if score >= threshold: ### = 여부 하이퍼파라미터
                 filtered_data.append((doc, score))
 
         # 문서와 점수를 다시 분리
@@ -379,7 +378,8 @@ def langgraph_rag():
         decide_to_generate,
         { 'generate':'generate', 'web_search': 'web_search'}
     )
-    graph.add_edge('web_search', 'generate')
+    graph.add_edge('web_search', 'grade')
+    graph.add_edge('grade', 'generate')
     graph.add_edge('generate', END)
 
     # 그래프 컴파일
