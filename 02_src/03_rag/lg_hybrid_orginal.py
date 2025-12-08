@@ -135,7 +135,7 @@ def langgraph_rag():
         
         # 1. 벡터 검색 결과 처리
         for rank, doc in enumerate(vector_docs):
-            # 고유키 지정 : 벡터 검색 결과 Document 내부 id 사용
+            # 고유키 지정 : 제작한 고유 ID 사용
             doc_key = get_doc_hash_key(doc)
             
             # 키와 Document 객체 매핑 저장
@@ -146,7 +146,7 @@ def langgraph_rag():
             
         # 2. BM25 검색 결과 처리
         for rank, doc in enumerate(bm25_docs):
-            # 고유키 지정 : 벡터 검색 결과 Document 내부 id 사용
+            # 고유키 지정 : 제작한 고유 ID 사용
             doc_key = get_doc_hash_key(doc)
 
             # 키와 Document 객체 매핑 저장
@@ -166,10 +166,8 @@ def langgraph_rag():
         scores =[]
         for doc_key, score in sorted_items[:3]:
             # doc_map을 사용하여 Document 객체를 찾아와 docs 리스트에 추가
-            # 점수 정규화
-            normalized_score = score
             docs.append(doc_map[doc_key]) 
-            scores.append(normalized_score)
+            scores.append(score)
 
         print(f" [retrieve] 하이브리드 검색 결과 {len(docs)}개 문서와 점수 추출 완료.")
         
@@ -184,7 +182,7 @@ def langgraph_rag():
         threshold = 0.018 ### 하이퍼파라미터
         filtered_data = []
         for doc, score in zip(state['documents'],state['doc_scores']):
-            if score > threshold:
+            if score > threshold: ### = 여부 하이퍼파라미터
                 filtered_data.append((doc, score))
 
         # 문서와 점수를 다시 분리
