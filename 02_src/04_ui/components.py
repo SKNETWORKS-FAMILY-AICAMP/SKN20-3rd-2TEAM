@@ -7,16 +7,21 @@ Streamlit UI 컴포넌트 모듈
 - UI 렌더링 (헤더, 채팅, 사이드바)
 """
 
+import os
 import streamlit as st
 from pathlib import Path
 from typing import List, Tuple
 import sys
 import json
+from dotenv import load_dotenv
 from collections import Counter
-from langchain_openai import OpenAIEmbeddings
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_chroma import Chroma
 from langchain_openai import ChatOpenAI
+
+# 환경 변수 로드
+load_dotenv()
+MODEL_NAME = os.getenv("MODELS_NAME", "OpenAI")
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 100))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 10))
 
 # 프로젝트 경로
 PROJECT_ROOT = Path(__file__).parent.parent.parent
@@ -28,7 +33,7 @@ sys.path.insert(0, str(SRC_DIR / "02_utils"))
 from vectordb import load_vectordb
 
 # SimpleRAGSystem 임포트
-sys.path.insert(0, str(SRC_DIR / "04_rag"))
+sys.path.insert(0, str(SRC_DIR / "03_rag"))
 from simpleRAGsystem_2 import SimpleRAGSystem
 
 # HuggingFace 스타일 CSS
@@ -219,9 +224,9 @@ def load_vectorstore():
         with st.spinner("🔄 VectorDB 로딩 중..."):
             # vectordb.py의 load_vectordb() 함수 호출
             vectorstore = load_vectordb(
-                model_name="MiniLM-L6",
-                chunk_size=100,
-                chunk_overlap=10
+                model_name=MODEL_NAME,
+                chunk_size=CHUNK_SIZE,
+                chunk_overlap=CHUNK_OVERLAP
             )
 
             # 세션 스테이트에 저장

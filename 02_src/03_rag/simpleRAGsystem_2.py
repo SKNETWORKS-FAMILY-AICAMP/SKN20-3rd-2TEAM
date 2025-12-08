@@ -1,28 +1,22 @@
 import os
 import warnings
 import sys
-import pickle    # chunk, vectorDB 저장한것 사용
 from dotenv import load_dotenv
+
+# 필수 라이브러리 로드
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from pathlib import Path
 
 # 경고메세지 삭제
 warnings.filterwarnings('ignore')
 load_dotenv()
 
 # openapi key 확인
-api_key = os.getenv('OPENAI_API_KEY')
-if not api_key:
+API_KEY = os.getenv('OPENAI_API_KEY')
+if not API_KEY:
     raise ValueError('.env확인,  key없음')
-
-# 필수 라이브러리 로드
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain_chroma import Chroma
-from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough, RunnableParallel
-from langchain_core.documents import Document
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-import time
-from pathlib import Path
 
 # vectordb 모듈 import
 SRC_DIR=Path(__file__).parent.parent

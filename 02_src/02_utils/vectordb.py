@@ -19,6 +19,9 @@ from chunking import load_chunks_from_pkl
 
 # 환경 변수 로드
 load_dotenv()
+MODEL_NAME = os.getenv("MODEL_NAME", "OpenAI")
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 100))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 10))
 
 
 # 저장경로 설정
@@ -164,9 +167,8 @@ if __name__ == "__main__":
     # 메인 실행 블록: 벡터 DB 생성 및 로드 테스트
 
     # OpenAI 임베딩을 사용하여 벡터 DB 저장
-    vectordb_save("OpenAI", 100, 10)
-    # vectordb_save("MiniLM-L6", 100, 10)  # HuggingFace 모델 사용 예시
-
+    vectordb_save(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP)
+    
     # 저장된 벡터 DB 로드 및 확인
-    load_vectordb("OpenAI", 100, 10)
-    # load_vectordb("MiniLM-L6", 100, 10)
+    load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP)
+    

@@ -1,11 +1,12 @@
+import os
 import json
 import pickle
 from pathlib import Path
 from typing import List
+from dotenv import load_dotenv
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
 
 # 전역 경로 설정
 # 프로젝트 경로
@@ -15,6 +16,10 @@ CHUNKS_DIR = PROJECT_ROOT / "01_data" / "chunks"
 
 # 문서 분리 기준
 DEFAULT_SEPARATORS = ["\n\n", "\n", ". ", " ", ""]
+
+load_dotenv()
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 100))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 10))
 
 
 def load_json_files(use_weeks: int = 6) -> List[Document]:
@@ -275,14 +280,14 @@ def load_chunks_from_pkl(
 
 if __name__ == "__main__":
     # 기본 설정으로 청킹 실행
-    filepath = chunk_and_save(use_weeks=6, chunk_size=100, chunk_overlap=10)
+    filepath = chunk_and_save(use_weeks=6, chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
 
     # 생성된 청크 확인
     print("\n" + "=" * 60)
     print("[SAMPLE] 청크 샘플 미리보기 (첫 3개)")
     print("=" * 60)
 
-    chunks = load_chunks_from_pkl(chunk_size=100, chunk_overlap=10)
+    chunks = load_chunks_from_pkl(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
 
     for i, chunk in enumerate(chunks[:3]):
         print(f"\n--- 청크 #{i+1} ---")
