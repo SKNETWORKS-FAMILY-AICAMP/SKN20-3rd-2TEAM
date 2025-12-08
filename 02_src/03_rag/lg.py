@@ -1,16 +1,14 @@
-# 목차
-# 0. 필요 라이브러리 불러오기 및 환경 세팅
-# 1. 환경 설정 및 상수 정의
-# 2. STATE : RAG State 및 초기화 함수
-# 3. NODES : LangGraph 노드 함수 정의
-# 4. 조건 분기 함수 구축
-# 5. 랭그래프 구축
-# 6. 메인 실행 블록
-
+# pip install langgraph
+# pip install langchain-community
+# pip install tavily-python
+from langgraph.graph import StateGraph, START, END# 필요라이브러리 설치
 import os
 import warnings
+warnings.filterwarnings("ignore")
+
 from pathlib import Path
-from typing import List, Literal, TypedDict
+from typing import List, Literal
+from typing_extensions import TypedDict
 from dotenv import load_dotenv
 
 # LangChain 관련 임포트
@@ -24,256 +22,294 @@ from langchain_community.retrievers import TavilySearchAPIRetriever
 # LangGraph 관련 임포트
 from langgraph.graph import StateGraph, START, END
 
-# 경고 무시
-warnings.filterwarnings("ignore")
-
-# 환경 변수 로드
+# 환경설정
 load_dotenv()
 
-if not os.environ.get('OPENAI_API_KEY') or not os.environ.get('TAVILY_API_KEY'):
-    # Tavily는 웹 검색 노드에 필요합니다.
-    # OPENAI_API_KEY가 없는 경우에만 에러를 발생시키는 원래 로직을 유지합니다.
-    if not os.environ.get('OPENAI_API_KEY'):
-        raise ValueError('OPENAI_API_KEY 환경 변수가 설정되지 않았습니다.')
-    
-# 모델 및 설정 상수
-LLM_MODEL = 'gpt-4o-mini'
-EMBEDDING_MODEL = 'text-embedding-3-small'
-TEMPERATURE = 0.0
-SIMILARITY_THRESHOLD = 0.6  # 문서 평가를 위한 유사도 임계값
-INTERNAL_DOC_K = 8         # 내부 문서 검색 갯수
-WEB_SEARCH_K = 5           # 웹 검색 문서 갯수
+if not os.environ.get('OPENAI_API_KEY'):
+    raise ValueError('key check')
 
-# 벡터 DB 경로 설정
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent 
-PERSIST_DIR = PROJECT_ROOT / "01_data" / "vector_db"
-COLLECTION_NAME = 'chroma_OpenAI_200_20'
+def langgraph_rag():
+    # llm모델 초기화 및 생성
+    llm = ChatOpenAI(model='gpt-4o-mini',temperature=0)
 
+    ## State 클래스 정의
+    class RAGState(TypedDict):
+        question:str
+        documents : List[Document]
+        doc_scores : List[float]
+        search_type : str
+        answer : str
 
-# --- 2. RAG State 및 초기화 함수 ---
-
-class RAGState(TypedDict):
-    """
-    LangGraph 상태를 정의하는 TypedDict입니다.
-    """
-    question: str
-    documents: List[Document]
-    doc_scores: List[float]
-    search_type: str
-    answer: str
-
-def initialize_vectorstore():
-    """
-    Chroma 벡터 저장소를 초기화하고 반환합니다.
-    """
-    if not os.path.exists(PERSIST_DIR):
-        raise ValueError(f'이전 단계에서 벡터 DB 디렉터리를 생성해야 합니다: {PERSIST_DIR}')
-
-    embedding_model = OpenAIEmbeddings(model=EMBEDDING_MODEL)
-    vectorstore = Chroma(
-        persist_directory=str(PERSIST_DIR),
-        collection_name=COLLECTION_NAME,
-        embedding_function=embedding_model
+    # 임베딩 모델 생성
+    embedding_model = OpenAIEmbeddings(
+        model = 'text-embedding-3-small'
     )
-    return vectorstore, embedding_model
 
-
-# --- 3. LangGraph 노드 함수 정의 ---
-
-def retrieve_node(state: RAGState, vectorstore: Chroma) -> dict:
-    """내부 문서 검색 노드: 하이브리드 검색을 수행합니다."""
-    question = state['question']
-    
-    # 유사도 점수와 함께 문서 검색 (점수 높은 순서로 정렬됨)
-    docs_with_scores = vectorstore.similarity_search_with_score(question, k=INTERNAL_DOC_K)
-
-    documents = [doc for doc, score in docs_with_scores]
-    scores = [score for doc, score in docs_with_scores]
-
-    print(f" [retriever] {len(documents)}개 문서 검색됨")
-    return {'documents': documents, 'doc_scores': scores, 'search_type': 'internal'}
-
-def grade_documents_node(state: RAGState) -> dict:
-    """문서 평가 노드: 유사도 임계값을 기준으로 문서를 필터링합니다."""
-    filtered_data = []
-    
-    # 임계값보다 높은 점수의 문서만 유지
-    for doc, score in zip(state['documents'], state['doc_scores']):
-        if score >= SIMILARITY_THRESHOLD:
-            filtered_data.append((doc, score))
-
-    final_documents = [item[0] for item in filtered_data]
-    final_scores = [item[1] for item in filtered_data]
-
-    print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지 (임계값: {SIMILARITY_THRESHOLD:.2f})")
-    return {'documents': final_documents, 'doc_scores': final_scores}
-
-def web_search_node(state: RAGState) -> dict:
-    """웹 검색 노드: Tavily를 사용하여 최신 웹 검색 결과를 가져옵니다."""
-    
-    # Tavily Retriever 초기화 및 검색 실행
-    retriever = TavilySearchAPIRetriever(k=WEB_SEARCH_K)
-    search_results: List[Document] = retriever.invoke(state['question'])
-
-    processed_documents: List[Document] = []
-    for i, doc in enumerate(search_results):
-        # 웹 검색 결과 Document의 메타데이터를 통일성 있게 가공
-        processed_doc = Document(
-            page_content=doc.page_content, 
-            metadata={
-                'paper_name': doc.metadata.get('title', 'web_search_tavily_unknown'),
-                'source': doc.metadata.get('source', 'web_search_tavily_unknown'), 
-                'source_type': 'web',
-                'index': i,
-                'doc_score': doc.metadata.get('score', 0.0) # 점수가 없는 경우 기본값
-            }
+    # 벡터 DB가져오기
+    project_root = Path(__file__).resolve().parent.parent.parent 
+    persist_dir = project_root / "01_data" / "vector_db"
+    if os.path.exists(persist_dir):
+        vectorstore = Chroma(
+            persist_directory = persist_dir,
+            collection_name = 'chroma_OpenAI_200_20',
+            embedding_function = embedding_model
         )
-        processed_documents.append(processed_doc)
-        
-    print(f" [web_search] {len(processed_documents)}개 웹 문서 검색됨")
-    return {
-        'documents': processed_documents, 
-        'search_type': 'web'
-    }
-
-def generate_node(state: RAGState, llm: ChatOpenAI) -> dict:
-    """생성 노드: 검색된 문맥과 질문을 기반으로 최종 답변을 생성합니다.""" 
-    
-    # 검색된 문서가 없으면 "NO_RELEVANT_PAPERS" 문맥 사용
-    if not state['documents']:
-        context = "NO_RELEVANT_PAPERS"
     else:
-        context = '\n'.join([doc.page_content for doc in state['documents']])
+        raise ValueError('이전단계 chroma_db_reg2 디렉터리 생성 필요')
+
+    ## Node 함수 + 조건 분기 함수 생성
+        # 검색 노드
+        # 문서평가 노드
+        # 웹검색 노드
+        # 생성 노드
+        # 조건 분기 함수
+    def retrieve_node(state:RAGState)->dict:
+        '''내부문서 검색 노드 : 하이브리드 검색'''
+        question = state['question']
+        docs_with_scores = vectorstore.similarity_search_with_score(question, k = 8)
+
+        # similarity_search_with_score 함수가 반환하는 docs_with_scores 결과는 점수(score)가 높은 순서대로 정렬
+        documents =  [ doc for doc,score in docs_with_scores]
+        scores =  [ score for doc,score in docs_with_scores]
+
+        print(f' [retriever] {len(documents)}개 문서 검색됨')        
+        return {'documents': documents, 'doc_scores':scores, 'search_type':'internal'}   # state 업데이트
+
+    def grade_documents_node(state:RAGState)->dict:
+        '''문서평가 노드'''
+        threshold = 0.7 ### 하이퍼파라미터
+        filtered_data = []
+        for doc, score in zip(state['documents'],state['doc_scores']):
+            if score >= threshold:
+                filtered_data.append((doc, score))
+
+        # 문서와 점수를 다시 분리
+        final_documents = [item[0] for item in filtered_data]
+        final_scores = [item[1] for item in filtered_data]
+
+        print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지")
+        return {'documents': final_documents, 'doc_scores': final_scores}
     
-    # --- 프롬프트 정의 (역할 및 출력 구조는 원본 유지) ---
-    system_prompt = (
-        "You are **\"AI Tech Trend Navigator\"**, an expert assistant for AI/ML research papers.\n\n"
-        "[Role]\n"
-        "- You help users understand and leverage recent AI/ML papers collected from HuggingFace DailyPapers.\n"
-        "- Your main goals are:\n"
-        "- Summarize and compare relevant papers clearly.\n"
-        "- Explain core ideas in simple terms.\n"
-        "- Highlight practical use-cases and implications for real-world services or products.\n\n"
-        "[Context Handling]\n"
-        "- If the context is **\"NO_RELEVANT_PAPERS\"**, answer purely from your general AI/ML knowledge.\n"
-        "- Do NOT fabricate specific paper titles, authors, datasets, or numerical results.\n"
-        "- If the context contains papers, prefer to base your answer on them.\n\n"
-        "[Style]\n"
-        "- Answer in the **SAME LANGUAGE** as the user's question (Korean).\n"
-        "- Prefer clear, concise sentences.\n"
-        "- Never fabricate paper titles, authors, datasets, or numerical results.\n"
-    )
+    def web_search_node(state: dict) -> dict:
+        '''웹검색 노드: Tavily를 사용하여 질문에 대한 최신 웹 검색 결과를 가져옵니다.'''
+        
+        # Tavily Retriever 생성 및 초기화, 검색 문서 갯수 5개 (k : 5) 설정
+        retriever = TavilySearchAPIRetriever(k=5)
+        
+        # 웹 검색 실행
+        # Tavily Retriever는 LangChain의 Document 객체 리스트를 반환
+        # tavily 웹검색 반환값 : <class 'langchain_core.documents.base.Document'>
+        # page_content
+        # source
+        # score
+        # images
+        
+        # 주어진 질문에서 Tavily Retriever 웹검색 실행
+        search_results: List[Document] = retriever.invoke(state['question'])
 
-    human_prompt = (
-        "[QUESTION]\n{question}\n\n"
-        "[CONTEXT]\n======== START ========\n{context}\n======== END =========\n\n"
-        "Please structure your answer as follows (flexible, but try to follow this):\n\n"
-        "1) One-line summary \n"
-        "2) Key insights (3-6 bullets) \n"
-        "3) Related papers (top 1~3) \n"
-        "4) Detailed explanation \n"
-        "5) Sources summary\n\n"
-        "⚠ Do not hallucinate papers or details not shown in context.\n"
-        "Respond by Korean.\n"
-    )
-
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", system_prompt),
-        ("human", human_prompt)
-    ])
+        # 처리한 검색결과 를 저장할 객체 생성
+        processed_documents: List[Document] = []
+        for i, doc in enumerate(search_results):
+            # 검색 결과 Document의 내용을 확인하고 출처(source)를 추가합니다.
+            # LangChain Document는 'metadata' 속성에 출처(source) 정보(예: URL)가 이미 포함되어 있다. (101 줄 참고)
+            source_url = doc.metadata.get('source', 'web_search_tavily_unknown')
+            paper_name = doc.metadata.get('title', 'web_search_tavily_unknown')
+            doc_score = doc.metadata.get('score', 'web_search_tavily_unknown')
+            # 새로운 Document 객체 생성 및 메타데이터 형식 통일
+            web_doc = Document(
+                page_content=doc.page_content, 
+                metadata={
+                    # 내부 문서와 유사한 키를 사용하거나, 새 키를 정의
+                    'paper_name': paper_name,
+                    'source': source_url, 
+                    
+                    # 추가적인 식별 키
+                    'source_type': 'web',
+                    'index': i,
+                    'doc_score': doc_score
+                }
+            )
+            processed_documents.append(web_doc)
+        
+        return {
+            'documents': processed_documents, 
+            'search_type': 'web'
+        }
     
-    chain = prompt | llm | StrOutputParser()
-    answer = chain.invoke({'context': context, 'question': state['question']})
-    
-    return {'answer': answer}
+    def generate_node(state:RAGState)->dict: ### 하이퍼파라미터 영역 : 프롬프트 부분
+        '''생성노드'''  
+        context = '\n'.join([ doc.page_content for doc in state['documents']])
+        prompt = ChatPromptTemplate.from_messages([
+            ('system',"""
+        You are **"AI Tech Trend Navigator"**, an expert assistant for AI/ML research papers.
+
+        [Role]
+        - You help users understand and leverage recent AI/ML papers collected from HuggingFace DailyPapers.
+        - Your main goals are:
+        - Summarize and compare relevant papers clearly.
+        - Explain core ideas in simple terms.
+        - Highlight practical use-cases and implications for real-world services or products.
+
+        [Inputs]
+        The system provides:
+        - user_question: the user’s question.
+        - context: a set of retrieved documents, formatted as a single text block.
+            - Sometimes the context may be exactly the string "NO_RELEVANT_PAPERS".
+        - page_content: main text (abstract or summary)
+        - metadata:
+            - paper_name
+            - github_url (optional)
+            - huggingface_url (optional)
+            - upvote (integer, popularity signal)
+            - tags: list of keywords
+            - year, week, and other fields.
+
+        You must rely only on:
+        - the given context, and
+        - general, high-level AI/ML knowledge.
+        Do NOT invent specific paper titles, authors, datasets, metrics, or numerical results
+        that are not supported by the context.
 
 
-# --- 4. 조건 분기 함수 구축 ---
+        [Context Handling]
+        - If the context is **"NO_RELEVANT_PAPERS"**, it means:
+        - The retrieval system could not find any clearly relevant papers.
+        - In this case, you may answer **purely from your own general AI/ML knowledge**.
+        - Do NOT fabricate specific paper titles, authors, datasets, or numerical results.
+        - You may skip the "Related papers" section or keep it very generic.
 
-def decide_to_generate(state: RAGState) -> Literal['generate', 'web_search']:
-    """조건부 분기 함수: 내부 문서가 없으면 웹 검색으로, 있으면 생성으로 분기합니다."""
-    
-    if state['documents'] and len(state['documents']) > 0:
-        print(f" [decide] {len(state['documents'])}개 문서 있음. -> generate")
-        return 'generate'
-    else: 
-        print(f" [decide] 0개 문서 확인. (내부 문서 유사도 낮음) -> 웹 서칭을 합니다.")
-        return 'web_search'
+        - If the context contains one or more papers:
+        - Prefer to base your answer on those papers.
+        - Use only the papers that are reasonably related to the user’s question.
+                    
+        [Main Tasks]
 
-# --- 5. 랭그래프 구축 ---
-def build_rag_graph():
-    """LangGraph RAG 그래프를 구축하고 컴파일합니다."""
-    # LLM 초기화
-    llm = ChatOpenAI(model=LLM_MODEL, temperature=TEMPERATURE)
-    
-    # 벡터스토어 초기화
-    vectorstore, _ = initialize_vectorstore()
+        1. Understand the user’s intent
+        - Roughly classify the question as one of:
+            - (a) concept/background explanation
+            - (b) single-paper summary
+            - (c) comparison or trend analysis across multiple papers
+            - (d) practical application and use-case ideas
+        - If the intent is ambiguous, make a reasonable assumption and continue.
+            You may briefly state what you assumed.
 
-    # 노드 함수를 람다로 래핑하여 인자를 주입 (LangGraph의 노드 인자 타입 맞추기 위함)
-    retriever_node_with_vs = lambda state: retrieve_node(state, vectorstore)
-    generate_node_with_llm = lambda state: generate_node(state, llm)
+        2. Use only the relevant papers
+        - Focus on the most relevant 1–3 papers in the given context.
+        - If some papers look only weakly related to the question, you may ignore them.
+        - If nothing is clearly relevant, say that the context does not directly answer the question.
 
-    # 그래프 구축
+        3. Summarize each selected paper
+        For each paper you rely on, briefly cover:
+        - What problem it tries to solve.
+        - What approach/model/idea it uses.
+        - What seems new or strong compared to typical or baseline methods.
+        - Any obvious limitations, trade-offs, or caveats that are visible from the context.
+
+        4. Produce a synthesized answer
+        - Do not just list papers. Synthesize them to directly answer the user’s question.
+        - When possible, cover:
+            - Common themes or trends across the papers.
+            - How these ideas relate to topics such as RAG, long-context, multimodal models, etc.,
+            when relevant.
+            - How someone could apply these ideas in a real-world project, prototype, or product.
+
+        5. Be honest about uncertainty
+        - If the given context is not enough to answer precisely, say so.
+        - Suggest what extra information, papers, or queries would be helpful.
+
+        [Style]
+        - Answer in the SAME LANGUAGE as the user’s question.
+        (If the question is in Korean, answer in Korean. If it is in English, answer in English.)
+        - Prefer clear, concise sentences over heavy academic wording.
+        - Briefly explain technical terms when needed.
+        - Never fabricate paper titles, authors, datasets, or numerical results.
+        """),
+                    
+        ("human", """
+        [QUESTION]
+        {question}
+
+        [Context]
+        The following CONTEXT block may contain 0 or more papers. 
+        If it is "NO_RELEVANT_PAPERS", please answer from your general AI/ML knowledge.
+        
+        [CONTEXT]
+        ======== START ========
+        {context}
+        ======== END =========
+
+        Please structure your answer as follows (flexible, but try to follow this):
+
+        1) One-line summary  
+        2) Key insights (3-6 bullets)  
+        3) Related papers (top 1~3)  
+        4) Detailed explanation  
+        5) Sources summary
+
+        ⚠ Do not hallucinate papers or details not shown in context.
+        Respond by Korean.
+        """), 
+            ('human', 'context:\n{context}\n\nquestion:{question}\n\nanswer:')
+        ])
+        chain = prompt | llm | StrOutputParser()
+        answer = chain.invoke({'context':context, 'question' : state['question']})
+        return {'answer':answer}
+
+    def decide_to_generate(state:RAGState)-> Literal['generate','web_search']:
+        '''조건부 분기 함수 : 문서내에 참고할 내용이 없다면 web으로 검색한다.'''    
+        if state['documents'] and len(state['documents']) > 0:
+            print(f" [decide] {len(state['documents'])}개 문서 있음. -> generate")
+            return 'generate'
+        else: # 검색된 문서가 0개인경우, len(state['documents'] == 0
+            print(f" [decide] 0개 문서 확인. (내부 문서 유사도 낮음) -> 웹 서칭을 합니다.")
+            return 'web_search'
+
+    # 그래프 구축(add_node  add_edge  add_conditional_edges)
     graph = StateGraph(RAGState)
-    graph.add_node('retriever', retriever_node_with_vs)
-    graph.add_node('grade', grade_documents_node)
-    graph.add_node('web_search', web_search_node)
-    graph.add_node('generate', generate_node_with_llm)
+    graph.add_node('retriever',retrieve_node)
+    graph.add_node('grade',grade_documents_node)
+    graph.add_node('web_search',web_search_node)
+    graph.add_node('generate',generate_node)
 
-    # 엣지 정의
     graph.add_edge(START, 'retriever')
     graph.add_edge('retriever', 'grade')
-    
-    # 조건부 엣지 정의
     graph.add_conditional_edges(
         'grade',
         decide_to_generate,
-        { 'generate': 'generate', 'web_search': 'web_search'}
+        { 'generate':'generate', 'web_search': 'web_search'}
     )
-    
     graph.add_edge('web_search', 'generate')
     graph.add_edge('generate', END)
 
     # 그래프 컴파일
     app = graph.compile()
-    
-    print("\n[INFO] LangGraph RAG 앱 컴파일 완료.")
-    
-    # RAG 워크플로우 다이어그램 (추가 정보 가독성 증진을 위해 삽입)
-    
-    
     return app
 
-
-# --- 6. 메인 실행 블록 ---
-
 if __name__ == '__main__':
-    try:
-        # 컴파일된 LangGraph 앱을 가져오기
-        rag_app = build_rag_graph()
+    # 컴파일된 LangGraph 앱을 가져오기
+    rag_app = langgraph_rag()
 
-        print("\n=== 챗봇 시작: AI Tech Trend Navigator ===")
-        print(f" (LLM: {LLM_MODEL}, 임계값: {SIMILARITY_THRESHOLD})")
-        print("종료하려면 'exit' 또는 'quit' 입력\n")
+    print("\n=== AI Tech Trend Navigator Chatbot ===")
+    print("종료하려면 'exit' 또는 'quit' 입력\n")
 
-        while True:
+    while True:
+        try:
             user_question = input("You: ")
 
             if user_question.lower() in ["exit", "quit"]:
                 print("챗봇 종료!")
                 break
 
-            # RAGState 초기 상태 정의
-            initial_state = RAGState(
-                question=user_question,
-                documents=[],
-                doc_scores=[],
-                search_type="",
-                answer=""
-            )
+            # RAGState 초기 상태 정의 (매번 새 질문으로 처리)
+            initial_state = {
+                'question': user_question,
+                'documents': [],
+                'doc_scores': [],
+                'search_type': "",
+                'answer': ""
+            }
 
             # LangGraph 앱 실행
-            # .invoke()를 사용하여 전체 워크플로우를 실행하고 최종 상태를 얻습니다.
             result = rag_app.invoke(initial_state)
             
             # 결과 출력
@@ -282,9 +318,7 @@ if __name__ == '__main__':
             doc_count = len(result.get('documents', []))
 
             print(f"\nAssistant: {answer}")
-            print(f" (검색 유형: **{search_type}**, 참조 문서: **{doc_count}**개)\n")
+            print(f" (검색유형: {search_type}, 참조문서: {doc_count}개)\n")
             
-    except ValueError as ve:
-        print(f"\n[오류] 설정 오류: {ve}")
-    except Exception as e:
-        print(f"\n[오류] 예상치 못한 오류 발생: {e}")
+        except Exception as e:
+            print(f"\n오류 발생: {e}\n")
