@@ -169,7 +169,7 @@ def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
         embedding_function=embedding_function,
         collection_name=collection_name,
     )
-    print("[SUCCESS] VectorDB 로딩 완료\n")
+    print(f"[SUCCESS] VectorDB 로딩 완료 {collection_name}\n")
 
     # 컬렉션에서 문서와 메타데이터 가져오기
     docs = vectorstore._collection.get(include=["documents", "metadatas"])
