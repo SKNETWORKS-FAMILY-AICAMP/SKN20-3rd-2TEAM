@@ -22,8 +22,6 @@ load_dotenv()
 MODEL_NAME = os.getenv("MODELS_NAME", "OpenAI")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 100))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 10))
-# NEW: Keyword extraction method
-EXTRACTION_METHOD = os.getenv("KEYWORD_EXTRACTION_METHOD", "tfidf").lower()
 
 # 프로젝트 경로 
 PROJECT_ROOT = Path(__file__).parent.parent.parent
@@ -160,29 +158,24 @@ HUGGINGFACE_STYLE = """
 
 # ==================== 키워드 추출 ====================
 
-def get_trending_keywords_from_json(weeks: int = 6, top_n: int = 7) -> List[Tuple[str, int]]:
+def get_trending_keywords_from_json(weeks: int = 10, top_n: int = 7) -> List[Tuple[str, int]]:
     """
     최근 N주간의 JSON 데이터에서 트렌딩 키워드 추출
 
     Args:
-        weeks: 분석할 최근 주 수 (기본값: 6)
+        weeks: 분석할 최근 주 수 (기본값: 10)
         top_n: 반환할 상위 키워드 개수 (기본값: 7)
 
     Returns:
         List of tuples: [(키워드, 개수), ...]
     """
     try:
-        method = EXTRACTION_METHOD
-        method_suffix = "K" if method == "keybert" else "T"
-
         # NEW: Try method-specific directory first
-        docs_dir_method = PROJECT_ROOT / "01_data" / f"documents_{method_suffix}" / "2025"
-        docs_dir_legacy = PROJECT_ROOT / "01_data" / "documents" / "2025"
+        docs_dir_method = PROJECT_ROOT / "01_data" / "documents" / "2025"
+        
 
         if docs_dir_method.exists():
             docs_dir = docs_dir_method
-        elif docs_dir_legacy.exists():
-            docs_dir = docs_dir_legacy
         else:
             raise FileNotFoundError("문서 디렉토리가 존재하지 않습니다")
 
@@ -230,31 +223,28 @@ def load_vectorstore():
     Session State Key:
         - vectorstore_K or vectorstore_T (method-specific caching)
     """
-    # Use method-specific session state key
-    method = EXTRACTION_METHOD  # From .env 
-    session_key = f"vectorstore_{method[0].upper()}"  # "vectorstore_K" or "vectorstore_T"
+    session_key = "vectorstore"
 
     # 이미 로드된 경우 재사용
     if session_key in st.session_state:
         return st.session_state[session_key]
 
     try:
-        with st.spinner(f"🔄 VectorDB 로딩 중... (Method: {method.upper()})"):
+        with st.spinner(f"🔄 VectorDB 로딩 중..."):
             # vectordb.py의 load_vectordb() 함수 호출 (method 파라미터 전달)
             vectorstore = load_vectordb(
                 model_name=MODEL_NAME,
                 chunk_size=CHUNK_SIZE,
-                chunk_overlap=CHUNK_OVERLAP,
-                method=method
+                chunk_overlap=CHUNK_OVERLAP
             )
 
             # 세션 스테이트에 method-specific key로 저장
             st.session_state[session_key] = vectorstore
-            st.toast(f"✅ VectorDB 로드 완료 ({method.upper()})", icon="✅")
+            st.toast(f"✅ VectorDB 로드 완료", icon="✅")
             return vectorstore
 
     except Exception as e:
-        st.error(f"❌ VectorDB 로드 실패 ({method}): {e}")
+        st.error(f"❌ VectorDB 로드 실패 : {e}")
         import traceback
         st.error(traceback.format_exc())
         return None

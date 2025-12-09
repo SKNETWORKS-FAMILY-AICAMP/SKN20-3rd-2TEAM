@@ -209,7 +209,7 @@ CHUNK_OVERLAP=20
 | **bge-m3** | 다국어 지원 고성능 |
 | **paraphrase-multilingual-mpnet-base-v2** | 다국어 의역 검색 |
 
-**OpenAI 모델** (OPEN API 키 필요)
+**OpenAI 모델** (OPENAI API 키 필요)
 
 | 모델명 | 특징 |
 |--------|------|

@@ -342,13 +342,11 @@ if __name__ == '__main__':
     MODEL_NAME = os.getenv("MODEL_NAME")
     CHUNK_SIZE = int(os.getenv("CHUNK_SIZE"))
     CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP"))
-    KEYWORD_METHOD = os.getenv("KEYWORD_EXTRACTION_METHOD").lower()
     
     vectorstore = load_vectordb(
             model_name=MODEL_NAME,
             chunk_size=CHUNK_SIZE,
-            chunk_overlap=CHUNK_OVERLAP,
-            method=KEYWORD_METHOD
+            chunk_overlap=CHUNK_OVERLAP
     )
   
     llm = ChatOpenAI(model='gpt-4o-mini', temperature=0)
