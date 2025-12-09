@@ -111,7 +111,7 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
             return
 
     # VectorStore 생성 및 저장
-    if model:
+    if model: 
         collection_name = f"chroma_{model_name}_{chunk_size}_{chunk_overlap}_C"
         vectorstore = Chroma.from_documents(
             documents=chunks,

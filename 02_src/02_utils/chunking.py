@@ -10,7 +10,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # 전역 경로 설정
 # 프로젝트 경로
-PROJECT_ROOT = Path(__file__).parent.parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent # SKN20-3RD-2TEAM
 DATA_DIR = PROJECT_ROOT / "01_data"
 CHUNKS_DIR = DATA_DIR / "chunks"
 

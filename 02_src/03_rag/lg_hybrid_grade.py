@@ -56,7 +56,7 @@ def langgraph_rag():
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'chroma_OpenAI_200_20_K',
+            collection_name = 'chroma_OpenAI_200_30_C',
             embedding_function = embedding_model
         )
     else:
