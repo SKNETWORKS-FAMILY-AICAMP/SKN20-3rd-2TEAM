@@ -5,7 +5,7 @@
 
 ## 1. 프로젝트 개요 및 목표
 
-### 1.1. 개요
+### 1.1 개요
 
   * **프로젝트명:** HuggingFace WeeklyPapers 기반 최신 ML/DL/LLM 논문 트렌드 RAG 챗봇
   * **목적:** **RAG (Retrieval-Augmented Generation)** 패턴을 숙달하고, HuggingFace WeeklyPapers 데이터를 자동 수집하여,
@@ -18,7 +18,7 @@
       * Streamlit 대화형 챗봇 UI
       * 키워드 기반 논문 검색 및 요약 제공
 
-### 1.2. 전체 프로젝트 구조
+### 1.2 전체 프로젝트 구조
 ### 프로젝트 디렉토리 구조
 
 ```bash
@@ -111,7 +111,7 @@ SKN20-3rd-2TEAM/
 
 ## 3. 주요 기능
 
-### 4.1 📥 데이터 수집 (크롤링)
+### 3.1 📥 데이터 수집 (크롤링)
 
 **파일**: `crawling.py`
 
@@ -198,15 +198,22 @@ CHUNK_OVERLAP=20
 
 #### 지원 임베딩 모델
 
-| 모델 | 특징 |
-|------|------|
-| **MiniLM-L6** | 경량 고속 범용 모델 |
-| **MPNet** | 고품질 범용 임베딩 |
-| **MsMarco** | 검색 최적화 모델 |
-| **SPECTER** | 과학 논문 특화 |
-| **OpenAI** | 고성능 임베딩 (API 키 필요) |
-| **BGE-M3** | 다국어 지원 고성능 |
-| **Paraphrase-Multi** | 다국어 의역 검색 |
+**HuggingFace 모델** (로컬 실행 가능)
+
+| 모델명 | 특징 |
+|--------|------|
+| **all-MiniLM-L6-v** | 경량 고속 범용 모델 |
+| **all-mpnet-base-v2** | 고품질 범용 임베딩 |
+| **msmarco-MiniLM-L-6-v3** | 검색 최적화 |
+| **allenai-specter** | 과학 논문 특화 |
+| **bge-m3** | 다국어 지원 고성능 |
+| **paraphrase-multilingual-mpnet-base-v2** | 다국어 의역 검색 |
+
+**OpenAI 모델** (OPEN API 키 필요)
+
+| 모델명 | 특징 |
+|--------|------|
+| **text-embedding-3-small** | 고성능 임베딩 |
 
 #### 주요 기능
 
@@ -260,12 +267,12 @@ vectorstore = load_vectordb(model_name="OpenAI", chunk_size=100, chunk_overlap=1
 3. 논문 검색 결과 제공 시, 반드시 아래의 **출력 형식**을 준수합니다.
 4. 답변 시, 논문에 대한 설명은 간결하고 명확하게 제공하며, 핵심 키워드를 함께 언급합니다."
 ```
-* (구현 예정)*
+* *(구현 예정)*
 
 ### 4.2. 논문 검색 결과 출력 형식
 
 ```markdown
-### 📚 트렌드 논문 검색 결과 (by HuggingFace DailyPapers)
+### 📚 트렌드 논문 검색 결과 (by HuggingFace WeeklyPapers)
 
 * **논문 이름(Title):** [논문 이름]
     * **요약 안내:** [Abstract 기반의 간결한 핵심 요약]
@@ -275,7 +282,7 @@ vectorstore = load_vectordb(model_name="OpenAI", chunk_size=100, chunk_overlap=1
     * **요약 안내:** [Abstract 기반의 간결한 핵심 요약]
     * **링크:** [[GitHub 주소 또는 HuggingFace 논문 링크](링크 URL)]
 ```
-* (구현 예정)*
+* *(구현 예정)*
 -----
 
 ## . 향후 개발 계획 (TODO List)
