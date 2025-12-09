@@ -94,7 +94,7 @@ If context contains papers:
 Paper Output Format:
 1) One-line summary
 2) Key insights (3~6 bullets)
-3) Related papers (only titles)
+3) Matched papers (only title from md.get("title"))
 4) Detailed explanation
 5) Sources summary
    For each used paper:
@@ -217,6 +217,8 @@ snippet:
             else:
                 authors = raw_authors or "No information"
 
+            title = md.get("title") or "No information"
+            authors = md.get("authors") or "No information"
             huggingface_url = md.get("huggingface_url") or "No information"
             github_url = md.get("github_url") or "No information"
             upvote = md.get("upvote") or "No information"
