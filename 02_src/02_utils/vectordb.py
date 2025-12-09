@@ -1,8 +1,10 @@
 """
 VectorDB 관리 모듈
 
-이 모듈은 문서 청크를 임베딩하여 Chroma 벡터 데이터베이스에 저장하고 로드하는 기능을 제공합니다.
+이 모듈은 문서 청크(.pkl)를 로드한 뒤, 클러스터링 결과(cluster_id)를 메타데이터에 부착하여
+Chroma 벡터 데이터베이스로 저장·로드하는 기능을 제공합니다.
 다양한 임베딩 모델을 지원하며, OpenAI와 HuggingFace 모델을 사용할 수 있습니다.
+
 """
 
 import os
@@ -78,7 +80,6 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
 
         # List로 되어있는 metadata를 쉼표와 공백으로 구분 된 문자열로 변환
         metadata["authors"] = ", ".join(metadata["authors"])
-        # metadata["tags"] = ", ".join(metadata["tags"])
 
         # doc_id를 기반으로 cluster_id 추가
         doc_id = metadata.get("doc_id", "")
