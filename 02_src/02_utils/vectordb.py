@@ -78,7 +78,7 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
 
         # List로 되어있는 metadata를 쉼표와 공백으로 구분 된 문자열로 변환
         metadata["authors"] = ", ".join(metadata["authors"])
-        metadata["tags"] = ", ".join(metadata["tags"])
+        # metadata["tags"] = ", ".join(metadata["tags"])
 
         # doc_id를 기반으로 cluster_id 추가
         doc_id = metadata.get("doc_id", "")

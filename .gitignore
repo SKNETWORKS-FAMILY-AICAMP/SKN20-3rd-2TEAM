@@ -64,3 +64,4 @@ models/
 01_data/embeddings/
 01_data/vector_db/
 *.backup
+01_data/vector_db.zip
