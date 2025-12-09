@@ -12,12 +12,11 @@ load_dotenv()
 SRC_DIR = Path(__file__).parent  # 04_ui 폴더
 PROJECT_ROOT = SRC_DIR.parent.parent  # SKN20-3rd-2TEAM 폴더
 
-# 필요한 모듈 경로 추가
-sys.path.insert(0, str(PROJECT_ROOT / "02_utils"))
-sys.path.insert(0, str(SRC_DIR.parent / "03_rag"))
-
-# 모듈 임포트
+# 필요한 모듈 경로 추가 및 모듈 임포트
+sys.path.insert(0, str(SRC_DIR.parent / "02_utils"))
 from vectordb import load_vectordb
+
+sys.path.insert(0, str(SRC_DIR.parent / "03_rag"))
 from simpleRAGsystem_5 import SimpleRAGSystem
 
 # Flask 앱 생성
