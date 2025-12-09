@@ -1,12 +1,11 @@
 {
-  "context": "AlphaQuanter, a single-agent framework using reinforcement learning, achieves top performance in automated trading by learning dynamic policies and proactively acquiring information. While Large Language Model (LLM) agents show promise in automated trading,\nthey still face critical limitations. Prominent multi-agent frameworks often\nsuffer from inefficiency, produce inconsistent signals, and lack the end-to-end\noptimization required to learn a coherent strategy from market feedback. To\naddress this, we introduce AlphaQuanter, a single-agent framework that usesreinforcement learning(RL) to learn adynamic policyover a transparent,\ntool-augmenteddecision workflow, which empowers a single agent to autonomously\norchestrate tools and proactively acquire information on demand, establishing a\ntransparent and auditable reasoning process. Extensive experiments demonstrate\nthat AlphaQuanter achieves state-of-the-art performance on key financial\nmetrics. Moreover, itsinterpretable reasoningreveals sophisticated\nstrategies, offering novel and valuable insights for human traders. Our code\nfor data acquisition and agent training is publicly available at:\nhttps://github.com/AlphaQuanter/AlphaQuanter This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "AlphaQuanter: An End-to-End Tool-Orchestrated Agentic Reinforcement\n  Learning Framework for Stock Trading",
-    "authors": [],
-    "publication_year": 2025,
-    "github_url": "https://github.com/AlphaQuanter/AlphaQuanter",
-    "huggingface_url": "https://huggingface.co/papers/2510.14264",
-    "upvote": 9,
-    "tags": []
-  }
+    "context": "AlphaQuanter, a single-agent framework using reinforcement learning, achieves top performance in automated trading by learning dynamic policies and proactively acquiring information. While Large Language Model (LLM) agents show promise in automated trading,\nthey still face critical limitations. Prominent multi-agent frameworks often\nsuffer from inefficiency, produce inconsistent signals, and lack the end-to-end\noptimization required to learn a coherent strategy from market feedback. To\naddress this, we introduce AlphaQuanter, a single-agent framework that usesreinforcement learning(RL) to learn adynamic policyover a transparent,\ntool-augmenteddecision workflow, which empowers a single agent to autonomously\norchestrate tools and proactively acquire information on demand, establishing a\ntransparent and auditable reasoning process. Extensive experiments demonstrate\nthat AlphaQuanter achieves state-of-the-art performance on key financial\nmetrics. Moreover, itsinterpretable reasoningreveals sophisticated\nstrategies, offering novel and valuable insights for human traders. Our code\nfor data acquisition and agent training is publicly available at:\nhttps://github.com/AlphaQuanter/AlphaQuanter This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "AlphaQuanter: An End-to-End Tool-Orchestrated Agentic Reinforcement\n  Learning Framework for Stock Trading",
+        "authors": [],
+        "publication_year": 2025,
+        "github_url": "https://github.com/AlphaQuanter/AlphaQuanter",
+        "huggingface_url": "https://huggingface.co/papers/2510.14264",
+        "upvote": 9
+    }
 }

@@ -1,14 +1,13 @@
 {
-  "context": "ImageCritic addresses detail inconsistency in image generation through reference-guided post-editing, using attention alignment loss and a detail encoder. Previous works have explored various customized generation tasks given a reference image, but they still face limitations in generating consistent fine-grained details. In this paper, our aim is to solve the inconsistency problem of generated images by applying areference-guided post-editingapproach and present our ImageCritic. We first construct a dataset of reference-degraded-target triplets obtained viaVLM-based selectionand explicit degradation, which effectively simulates the common inaccuracies or inconsistencies observed in existing generation models. Furthermore, building on a thorough examination of the model'sattention mechanismsand intrinsic representations, we accordingly devise anattention alignment lossand adetail encoderto precisely rectify inconsistencies. ImageCritic can be integrated into an agent framework to automatically detect inconsistencies and correct them with multi-round andlocal editingin complex scenarios. Extensive experiments demonstrate that ImageCritic can effectively resolve detail-related issues in various customized generation scenarios, providing significant improvements over existing methods. Project Page:https://ouyangziheng.github.io/ImageCritic-Page/Code:https://github.com/HVision-NKU/ImageCriticDemo:https://huggingface.co/spaces/ziheng1234/ImageCriticData:https://huggingface.co/datasets/ziheng1234/Critic-10K   This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "The Consistency Critic: Correcting Inconsistencies in Generated Images via Reference-Guided Attentive Alignment",
-    "authors": [
-      "Ziheng Ouyang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/HVision-NKU/ImageCritic",
-    "huggingface_url": "https://huggingface.co/papers/2511.20614",
-    "upvote": 38,
-    "tags": []
-  }
+    "context": "ImageCritic addresses detail inconsistency in image generation through reference-guided post-editing, using attention alignment loss and a detail encoder. Previous works have explored various customized generation tasks given a reference image, but they still face limitations in generating consistent fine-grained details. In this paper, our aim is to solve the inconsistency problem of generated images by applying areference-guided post-editingapproach and present our ImageCritic. We first construct a dataset of reference-degraded-target triplets obtained viaVLM-based selectionand explicit degradation, which effectively simulates the common inaccuracies or inconsistencies observed in existing generation models. Furthermore, building on a thorough examination of the model'sattention mechanismsand intrinsic representations, we accordingly devise anattention alignment lossand adetail encoderto precisely rectify inconsistencies. ImageCritic can be integrated into an agent framework to automatically detect inconsistencies and correct them with multi-round andlocal editingin complex scenarios. Extensive experiments demonstrate that ImageCritic can effectively resolve detail-related issues in various customized generation scenarios, providing significant improvements over existing methods. Project Page:https://ouyangziheng.github.io/ImageCritic-Page/Code:https://github.com/HVision-NKU/ImageCriticDemo:https://huggingface.co/spaces/ziheng1234/ImageCriticData:https://huggingface.co/datasets/ziheng1234/Critic-10K   This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "The Consistency Critic: Correcting Inconsistencies in Generated Images via Reference-Guided Attentive Alignment",
+        "authors": [
+            "Ziheng Ouyang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/HVision-NKU/ImageCritic",
+        "huggingface_url": "https://huggingface.co/papers/2511.20614",
+        "upvote": 38
+    }
 }

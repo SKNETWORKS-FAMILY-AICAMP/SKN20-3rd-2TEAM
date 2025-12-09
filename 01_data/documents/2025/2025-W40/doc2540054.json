@@ -1,17 +1,16 @@
 {
-  "context": "EasySteer is a unified framework for efficient and extensible steering of large language models, offering significant speedups and improved functionality over existing methods. Large language model (LLM) steering has emerged as a promising paradigm for\ncontrolling model behavior at inference time through targeted manipulation ofhidden states, offering a lightweight alternative to expensive retraining.\nHowever, existing steering frameworks suffer from critical limitations:\ncomputational inefficiency, limited extensibility, and restricted functionality\nthat hinder both research progress and practical deployment. We present\nEasySteer, a unified framework for high-performance, extensible LLM steering\nbuilt onvLLM. Our system featuresmodular architecturewith pluggable\ninterfaces for both analysis-based andlearning-based methods, fine-grained\nparameter control, pre-computedsteering vectorsfor eight application domains,\nand an interactive demonstration system. Through deep integration withvLLM's\noptimized inference engine, EasySteer achieves 5.5-11.4times speedup over\nexisting frameworks. Extensive experiments demonstrate its effectiveness inoverthinking mitigation,hallucination reduction, and other key applications.\nEasySteer transforms steering from research technique to production-ready\ncapability, establishing critical infrastructure fordeployable, controllable\nlanguage models. We are happy to introduce EasySteer: A Unified Framework for High-Performance andExtensible LLM Steering. Github:https://github.com/ZJU-REAL/EasySteer This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "EasySteer: A Unified Framework for High-Performance and Extensible LLM\n  Steering",
-    "authors": [
-      "Haolei Xu",
-      "Xinyu Mei",
-      "Yuchen Yan",
-      "Yongliang Shen"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/ZJU-REAL/EasySteer",
-    "huggingface_url": "https://huggingface.co/papers/2509.25175",
-    "upvote": 30,
-    "tags": []
-  }
+    "context": "EasySteer is a unified framework for efficient and extensible steering of large language models, offering significant speedups and improved functionality over existing methods. Large language model (LLM) steering has emerged as a promising paradigm for\ncontrolling model behavior at inference time through targeted manipulation ofhidden states, offering a lightweight alternative to expensive retraining.\nHowever, existing steering frameworks suffer from critical limitations:\ncomputational inefficiency, limited extensibility, and restricted functionality\nthat hinder both research progress and practical deployment. We present\nEasySteer, a unified framework for high-performance, extensible LLM steering\nbuilt onvLLM. Our system featuresmodular architecturewith pluggable\ninterfaces for both analysis-based andlearning-based methods, fine-grained\nparameter control, pre-computedsteering vectorsfor eight application domains,\nand an interactive demonstration system. Through deep integration withvLLM's\noptimized inference engine, EasySteer achieves 5.5-11.4times speedup over\nexisting frameworks. Extensive experiments demonstrate its effectiveness inoverthinking mitigation,hallucination reduction, and other key applications.\nEasySteer transforms steering from research technique to production-ready\ncapability, establishing critical infrastructure fordeployable, controllable\nlanguage models. We are happy to introduce EasySteer: A Unified Framework for High-Performance andExtensible LLM Steering. Github:https://github.com/ZJU-REAL/EasySteer This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "EasySteer: A Unified Framework for High-Performance and Extensible LLM\n  Steering",
+        "authors": [
+            "Haolei Xu",
+            "Xinyu Mei",
+            "Yuchen Yan",
+            "Yongliang Shen"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/ZJU-REAL/EasySteer",
+        "huggingface_url": "https://huggingface.co/papers/2509.25175",
+        "upvote": 30
+    }
 }

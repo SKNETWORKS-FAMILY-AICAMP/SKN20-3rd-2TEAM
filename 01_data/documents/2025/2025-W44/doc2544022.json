@@ -1,14 +1,13 @@
 {
-  "context": "Video-As-Prompt (VAP) uses a reference video to guide a frozen Video Diffusion Transformer via a Mixture-of-Transformers expert, achieving state-of-the-art results in semantic-controlled video generation with strong zero-shot generalization. Unified, generalizable semantic control in video generation remains a\ncritical open challenge. Existing methods either introduce artifacts by\nenforcing inappropriate pixel-wise priors from structure-based controls, or\nrely on non-generalizable, condition-specific finetuning or task-specific\narchitectures. We introduceVideo-As-Prompt(VAP), a new paradigm that reframes\nthis problem as in-context generation. VAP leverages a reference video as a\ndirect semantic prompt, guiding a frozenVideo Diffusion Transformer(DiT) via\na plug-and-playMixture-of-Transformers(MoT) expert. This architecture\npreventscatastrophic forgettingand is guided by a temporally biased position\nembedding that eliminates spurious mapping priors for robust context retrieval.\nTo power this approach and catalyze future research, we builtVAP-Data, the\nlargest dataset for semantic-controlled video generation with over 100K paired\nvideos across 100 semantic conditions. As a single unified model, VAP sets a\nnew state-of-the-art for open-source methods, achieving a 38.7% user preference\nrate that rivals leading condition-specific commercial models. VAP's strongzero-shot generalizationand support for various downstream applications mark a\nsignificant advance toward general-purpose, controllable video generation. Text prompts still not giving you the video you really want?Then stop relying on text — use a video as the prompt! Introducing Video-As-Prompt — the first unified framework for semantic-controllable video generation. Project Page:https://bytedance.github.io/Video-As-Prompt/Code:https://github.com/bytedance/Video-As-PromptDataset:https://huggingface.co/datasets/BianYx/VAP-DataModel:https://huggingface.co/collections/ByteDance/video-as-promptDemo Video:https://www.youtube.com/watch?v=S3zpLIMOU4c very poor results ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Video-As-Prompt: Unified Semantic Control for Video Generation",
-    "authors": [
-      "Yuxuan Bian"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/bytedance/Video-As-Prompt",
-    "huggingface_url": "https://huggingface.co/papers/2510.20888",
-    "upvote": 45,
-    "tags": []
-  }
+    "context": "Video-As-Prompt (VAP) uses a reference video to guide a frozen Video Diffusion Transformer via a Mixture-of-Transformers expert, achieving state-of-the-art results in semantic-controlled video generation with strong zero-shot generalization. Unified, generalizable semantic control in video generation remains a\ncritical open challenge. Existing methods either introduce artifacts by\nenforcing inappropriate pixel-wise priors from structure-based controls, or\nrely on non-generalizable, condition-specific finetuning or task-specific\narchitectures. We introduceVideo-As-Prompt(VAP), a new paradigm that reframes\nthis problem as in-context generation. VAP leverages a reference video as a\ndirect semantic prompt, guiding a frozenVideo Diffusion Transformer(DiT) via\na plug-and-playMixture-of-Transformers(MoT) expert. This architecture\npreventscatastrophic forgettingand is guided by a temporally biased position\nembedding that eliminates spurious mapping priors for robust context retrieval.\nTo power this approach and catalyze future research, we builtVAP-Data, the\nlargest dataset for semantic-controlled video generation with over 100K paired\nvideos across 100 semantic conditions. As a single unified model, VAP sets a\nnew state-of-the-art for open-source methods, achieving a 38.7% user preference\nrate that rivals leading condition-specific commercial models. VAP's strongzero-shot generalizationand support for various downstream applications mark a\nsignificant advance toward general-purpose, controllable video generation. Text prompts still not giving you the video you really want?Then stop relying on text — use a video as the prompt! Introducing Video-As-Prompt — the first unified framework for semantic-controllable video generation. Project Page:https://bytedance.github.io/Video-As-Prompt/Code:https://github.com/bytedance/Video-As-PromptDataset:https://huggingface.co/datasets/BianYx/VAP-DataModel:https://huggingface.co/collections/ByteDance/video-as-promptDemo Video:https://www.youtube.com/watch?v=S3zpLIMOU4c very poor results ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Video-As-Prompt: Unified Semantic Control for Video Generation",
+        "authors": [
+            "Yuxuan Bian"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/bytedance/Video-As-Prompt",
+        "huggingface_url": "https://huggingface.co/papers/2510.20888",
+        "upvote": 45
+    }
 }

@@ -1,17 +1,16 @@
 {
-  "context": "DiP, a pixel space diffusion framework, combines a Diffusion Transformer and a Patch Detailer Head to achieve computational efficiency and high-quality image generation without using VAEs. Diffusion modelsface a fundamental trade-off between generation quality and computational efficiency.Latent Diffusion Models (LDMs)offer an efficient solution but suffer from potential information loss and non-end-to-end training. In contrast, existingpixel space modelsbypass VAEs but are computationally prohibitive for high-resolution synthesis. To resolve this dilemma, we propose DiP, an efficient pixel space diffusion framework. DiP decouples generation into a global and a local stage: aDiffusion Transformer (DiT)backbone operates on large patches for efficient global structure construction, while a co-trained lightweightPatch Detailer Headleverages contextual features to restore fine-grained local details. This synergistic design achieves computational efficiency comparable to LDMs without relying on a VAE. DiP is accomplished with up to 10times faster inference speeds than previous method while increasing the total number of parameters by only 0.3%, and achieves an 1.79FID scoreon ImageNet 256times256. Novel Pixel-Space Diffusion Framework: We propose DiP, an end-to-end pixel-level diffusion framework. By eliminating the dependency on VAEs, DiP successfully alleviates the long-standing trade-off between computational efficiency and generation quality. Extreme Efficiency Enhancement: By reducing sequence length, DiP achieves an inference speed 10× faster than the previous state-of-the-art pixel-level method (PixelFlow-XL). Furthermore, it maintains a computational cost comparable to mainstream LDMs, enabling highly efficient pixel-level generation. High Performance with Negligible Overhead: The introduction of a lightweight Patch Detailer Head adds only 0.3% to the total parameter count while significantly enhancing the fidelity of fine-grained image details. State-of-the-Art (SOTA) Generation Quality: On the ImageNet 256×256 benchmark, DiP achieves a remarkable FID of 1.79, outperforming leading latent-based models such as DiT-XL and SiT-XL. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Seems similar tohttps://huggingface.co/papers/2511.19365? ·Sign uporlog into comment",
-  "metadata": {
-    "title": "DiP: Taming Diffusion Models in Pixel Space",
-    "authors": [
-      "Zhennan Chen",
-      "Junwei Zhu",
-      "Chengjie Wang",
-      "Ying Tai"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.18822",
-    "upvote": 25,
-    "tags": []
-  }
+    "context": "DiP, a pixel space diffusion framework, combines a Diffusion Transformer and a Patch Detailer Head to achieve computational efficiency and high-quality image generation without using VAEs. Diffusion modelsface a fundamental trade-off between generation quality and computational efficiency.Latent Diffusion Models (LDMs)offer an efficient solution but suffer from potential information loss and non-end-to-end training. In contrast, existingpixel space modelsbypass VAEs but are computationally prohibitive for high-resolution synthesis. To resolve this dilemma, we propose DiP, an efficient pixel space diffusion framework. DiP decouples generation into a global and a local stage: aDiffusion Transformer (DiT)backbone operates on large patches for efficient global structure construction, while a co-trained lightweightPatch Detailer Headleverages contextual features to restore fine-grained local details. This synergistic design achieves computational efficiency comparable to LDMs without relying on a VAE. DiP is accomplished with up to 10times faster inference speeds than previous method while increasing the total number of parameters by only 0.3%, and achieves an 1.79FID scoreon ImageNet 256times256. Novel Pixel-Space Diffusion Framework: We propose DiP, an end-to-end pixel-level diffusion framework. By eliminating the dependency on VAEs, DiP successfully alleviates the long-standing trade-off between computational efficiency and generation quality. Extreme Efficiency Enhancement: By reducing sequence length, DiP achieves an inference speed 10× faster than the previous state-of-the-art pixel-level method (PixelFlow-XL). Furthermore, it maintains a computational cost comparable to mainstream LDMs, enabling highly efficient pixel-level generation. High Performance with Negligible Overhead: The introduction of a lightweight Patch Detailer Head adds only 0.3% to the total parameter count while significantly enhancing the fidelity of fine-grained image details. State-of-the-Art (SOTA) Generation Quality: On the ImageNet 256×256 benchmark, DiP achieves a remarkable FID of 1.79, outperforming leading latent-based models such as DiT-XL and SiT-XL. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Seems similar tohttps://huggingface.co/papers/2511.19365? ·Sign uporlog into comment",
+    "metadata": {
+        "title": "DiP: Taming Diffusion Models in Pixel Space",
+        "authors": [
+            "Zhennan Chen",
+            "Junwei Zhu",
+            "Chengjie Wang",
+            "Ying Tai"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.18822",
+        "upvote": 25
+    }
 }

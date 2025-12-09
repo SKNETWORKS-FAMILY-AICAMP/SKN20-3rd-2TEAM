@@ -1,16 +1,15 @@
 {
-  "context": "Ideation diversity significantly enhances the performance of AI research agents across various models and scaffolds on the MLE-bench benchmark. AI research agentsoffer the promise to accelerate scientific progress by automating the design, implementation, and training of machine learning models. However, the field is still in its infancy, and the key factors driving the success or failure ofagent trajectoriesare not fully understood. We examine the role thatideation diversityplays in agent performance. First, we analyseagent trajectoriesonMLE-bench, a well-known benchmark to evaluateAI research agents, across different models andagent scaffolds. Our analysis reveals that different models andagent scaffoldsyield varying degrees ofideation diversity, and that higher-performing agents tend to have increasedideation diversity. Further, we run a controlled experiment where we modify the degree ofideation diversity, demonstrating that higherideation diversityresults in stronger performance. Finally, we strengthen our results by examining additional evaluation metrics beyond the standard medal-based scoring ofMLE-bench, showing that our findings still hold across other agent performance metrics. The analysis reveals that different models and agent scaffolds yield varying degrees of ideation diversity, and that higher-performing agents tend to have increased ideation diversity. There is also a  controlled experiment where degree of ideation diversity is varied and it demonstrates that higher ideation diversity results in stronger performance. We also propose additional evaluation metrics beyond the standard medal-based scoring of MLE-bench. impressive results! any chance of a code release? This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "What Does It Take to Be a Good AI Research Agent? Studying the Role of Ideation Diversity",
-    "authors": [
-      "Alexis Audran-Reiss",
-      "Amar Budhiraja",
-      "Bhavul Gauri"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.15593",
-    "upvote": 55,
-    "tags": []
-  }
+    "context": "Ideation diversity significantly enhances the performance of AI research agents across various models and scaffolds on the MLE-bench benchmark. AI research agentsoffer the promise to accelerate scientific progress by automating the design, implementation, and training of machine learning models. However, the field is still in its infancy, and the key factors driving the success or failure ofagent trajectoriesare not fully understood. We examine the role thatideation diversityplays in agent performance. First, we analyseagent trajectoriesonMLE-bench, a well-known benchmark to evaluateAI research agents, across different models andagent scaffolds. Our analysis reveals that different models andagent scaffoldsyield varying degrees ofideation diversity, and that higher-performing agents tend to have increasedideation diversity. Further, we run a controlled experiment where we modify the degree ofideation diversity, demonstrating that higherideation diversityresults in stronger performance. Finally, we strengthen our results by examining additional evaluation metrics beyond the standard medal-based scoring ofMLE-bench, showing that our findings still hold across other agent performance metrics. The analysis reveals that different models and agent scaffolds yield varying degrees of ideation diversity, and that higher-performing agents tend to have increased ideation diversity. There is also a  controlled experiment where degree of ideation diversity is varied and it demonstrates that higher ideation diversity results in stronger performance. We also propose additional evaluation metrics beyond the standard medal-based scoring of MLE-bench. impressive results! any chance of a code release? This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "What Does It Take to Be a Good AI Research Agent? Studying the Role of Ideation Diversity",
+        "authors": [
+            "Alexis Audran-Reiss",
+            "Amar Budhiraja",
+            "Bhavul Gauri"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.15593",
+        "upvote": 55
+    }
 }

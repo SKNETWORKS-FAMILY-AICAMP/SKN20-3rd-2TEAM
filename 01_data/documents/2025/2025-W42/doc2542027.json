@@ -1,15 +1,14 @@
 {
-  "context": "Multimodal Prompt Optimizer (MPO) extends prompt optimization to handle multiple data types, improving performance over text-only methods in various applications. Large Language Models(LLMs) have shown remarkable success, and theirmultimodal expansions(MLLMs) further unlock capabilities spanning images,\nvideos, and other modalities beyond text. However, despite this shift, prompt\noptimization approaches, designed to reduce the burden of manual prompt\ncrafting while maximizing performance, remain confined to text, ultimately\nlimiting the full potential of MLLMs. Motivated by this gap, we introduce the\nnew problem of multimodalprompt optimization, which expands the prior\ndefinition ofprompt optimizationto the multimodal space defined by the pairs\nof textual and non-textual prompts. To tackle this problem, we then propose theMultimodal Prompt Optimizer(MPO), a unified framework that not only performs\nthe joint optimization of multimodal prompts through alignment-preserving\nupdates but also guides the selection process of candidate prompts by\nleveraging earlier evaluations as priors in a Bayesian-based selection\nstrategy. Through extensive experiments across diverse modalities that go\nbeyond text, such as images, videos, and even molecules, we demonstrate that\nMPO outperforms leading text-only optimization methods, establishing multimodalprompt optimizationas a crucial step to realizing the potential of MLLMs. We introduce the problem of multimodal prompt optimization and propose the multimodal prompt optimizer, to harness the full capacity of multimodal large language models beyond text. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for\n  MLLMs",
-    "authors": [
-      "Yumin Choi",
-      "Dongki Kim"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/Dozi01/MPO",
-    "huggingface_url": "https://huggingface.co/papers/2510.09201",
-    "upvote": 49,
-    "tags": []
-  }
+    "context": "Multimodal Prompt Optimizer (MPO) extends prompt optimization to handle multiple data types, improving performance over text-only methods in various applications. Large Language Models(LLMs) have shown remarkable success, and theirmultimodal expansions(MLLMs) further unlock capabilities spanning images,\nvideos, and other modalities beyond text. However, despite this shift, prompt\noptimization approaches, designed to reduce the burden of manual prompt\ncrafting while maximizing performance, remain confined to text, ultimately\nlimiting the full potential of MLLMs. Motivated by this gap, we introduce the\nnew problem of multimodalprompt optimization, which expands the prior\ndefinition ofprompt optimizationto the multimodal space defined by the pairs\nof textual and non-textual prompts. To tackle this problem, we then propose theMultimodal Prompt Optimizer(MPO), a unified framework that not only performs\nthe joint optimization of multimodal prompts through alignment-preserving\nupdates but also guides the selection process of candidate prompts by\nleveraging earlier evaluations as priors in a Bayesian-based selection\nstrategy. Through extensive experiments across diverse modalities that go\nbeyond text, such as images, videos, and even molecules, we demonstrate that\nMPO outperforms leading text-only optimization methods, establishing multimodalprompt optimizationas a crucial step to realizing the potential of MLLMs. We introduce the problem of multimodal prompt optimization and propose the multimodal prompt optimizer, to harness the full capacity of multimodal large language models beyond text. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for\n  MLLMs",
+        "authors": [
+            "Yumin Choi",
+            "Dongki Kim"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/Dozi01/MPO",
+        "huggingface_url": "https://huggingface.co/papers/2510.09201",
+        "upvote": 49
+    }
 }

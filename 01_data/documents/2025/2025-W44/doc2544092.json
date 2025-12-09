@@ -1,14 +1,13 @@
 {
-  "context": "The proposed method reformulates reasoning in Large Vision-Language Models as posterior inference using amortized variational inference and a sparse reward function, improving effectiveness, generalization, and interpretability. Chain-of-thought(CoT) reasoning is critical for improving the\ninterpretability and reliability ofLarge Vision-Language Models(LVLMs).\nHowever, existing training algorithms such asSFT,PPO, andGRPOmay not\ngeneralize well across unseen reasoning tasks and heavily rely on a biased\nreward model. To address this challenge, we reformulate reasoning in LVLMs asposterior inferenceand propose a scalable training algorithm based onamortized variational inference. By leveraging diversity-seeking reinforcement\nlearning algorithms, we introduce a novelsparse reward functionfortoken-level learning signalsthat encourage diverse, high-likelihood latent\nCoT, overcomingdeterministic samplinglimitations and avoidingreward hacking.\nAdditionally, we implement aBayesian inference-scaling strategythat replaces\ncostly Best-of-N and Beam Search with amarginal likelihoodto efficiently rank\noptimal rationales and answers. We empirically demonstrate that the proposed\nmethod enhances the state-of-the-art LVLMs on sevenreasoning benchmarks, in\nterms of effectiveness, generalization, and interpretability. Neurips2025 ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Latent Chain-of-Thought for Visual Reasoning",
-    "authors": [
-      "Hang Hua"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/heliossun/LaCoT",
-    "huggingface_url": "https://huggingface.co/papers/2510.23925",
-    "upvote": 9,
-    "tags": []
-  }
+    "context": "The proposed method reformulates reasoning in Large Vision-Language Models as posterior inference using amortized variational inference and a sparse reward function, improving effectiveness, generalization, and interpretability. Chain-of-thought(CoT) reasoning is critical for improving the\ninterpretability and reliability ofLarge Vision-Language Models(LVLMs).\nHowever, existing training algorithms such asSFT,PPO, andGRPOmay not\ngeneralize well across unseen reasoning tasks and heavily rely on a biased\nreward model. To address this challenge, we reformulate reasoning in LVLMs asposterior inferenceand propose a scalable training algorithm based onamortized variational inference. By leveraging diversity-seeking reinforcement\nlearning algorithms, we introduce a novelsparse reward functionfortoken-level learning signalsthat encourage diverse, high-likelihood latent\nCoT, overcomingdeterministic samplinglimitations and avoidingreward hacking.\nAdditionally, we implement aBayesian inference-scaling strategythat replaces\ncostly Best-of-N and Beam Search with amarginal likelihoodto efficiently rank\noptimal rationales and answers. We empirically demonstrate that the proposed\nmethod enhances the state-of-the-art LVLMs on sevenreasoning benchmarks, in\nterms of effectiveness, generalization, and interpretability. Neurips2025 ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Latent Chain-of-Thought for Visual Reasoning",
+        "authors": [
+            "Hang Hua"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/heliossun/LaCoT",
+        "huggingface_url": "https://huggingface.co/papers/2510.23925",
+        "upvote": 9
+    }
 }

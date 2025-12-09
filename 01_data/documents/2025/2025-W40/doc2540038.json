@@ -1,15 +1,14 @@
 {
-  "context": "ToolUniverse is an ecosystem that standardizes and integrates tools, models, and data for AI scientists, enabling automated refinement, creation, and composition of workflows. AI scientistsare emerging computational systems that serve as collaborative\npartners in discovery. These systems remain difficult to build because they are\nbespoke, tied to rigid workflows, and lack shared environments that unify\ntools, data, and analyses into a common ecosystem. In omics, unified ecosystems\nhave transformed research by enabling interoperability, reuse, and\ncommunity-driven development;AI scientistsrequire comparable infrastructure.\nWe presentToolUniverse, an ecosystem for buildingAI scientistsfrom any\nlanguage or reasoning model, whether open or closed.TOOLUNIVERSEstandardizes\nhowAI scientistsidentify and call tools, integrating more than 600 machine\nlearning models,datasets,APIs, andscientific packagesfordata analysis,knowledge retrieval, andexperimental design. It automatically refines tool\ninterfaces for correct use byAI scientists, creates new tools from natural\nlanguage descriptions, iteratively optimizestool specifications, and composes\ntools intoagentic workflows. In a case study ofhypercholesterolemia,ToolUniversewas used to create an AI scientist to identify a potent analog of\na drug with favorable predicted properties. The open-sourceToolUniverseis\navailable at https://aiscientist.tools. Website:https://aiscientist.tools/Code:https://github.com/mims-harvard/ToolUniverse This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Democratizing AI scientists using ToolUniverse",
-    "authors": [
-      "Zhenglun Kong",
-      "Reza Shamji"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/mims-harvard/ToolUniverse",
-    "huggingface_url": "https://huggingface.co/papers/2509.23426",
-    "upvote": 39,
-    "tags": []
-  }
+    "context": "ToolUniverse is an ecosystem that standardizes and integrates tools, models, and data for AI scientists, enabling automated refinement, creation, and composition of workflows. AI scientistsare emerging computational systems that serve as collaborative\npartners in discovery. These systems remain difficult to build because they are\nbespoke, tied to rigid workflows, and lack shared environments that unify\ntools, data, and analyses into a common ecosystem. In omics, unified ecosystems\nhave transformed research by enabling interoperability, reuse, and\ncommunity-driven development;AI scientistsrequire comparable infrastructure.\nWe presentToolUniverse, an ecosystem for buildingAI scientistsfrom any\nlanguage or reasoning model, whether open or closed.TOOLUNIVERSEstandardizes\nhowAI scientistsidentify and call tools, integrating more than 600 machine\nlearning models,datasets,APIs, andscientific packagesfordata analysis,knowledge retrieval, andexperimental design. It automatically refines tool\ninterfaces for correct use byAI scientists, creates new tools from natural\nlanguage descriptions, iteratively optimizestool specifications, and composes\ntools intoagentic workflows. In a case study ofhypercholesterolemia,ToolUniversewas used to create an AI scientist to identify a potent analog of\na drug with favorable predicted properties. The open-sourceToolUniverseis\navailable at https://aiscientist.tools. Website:https://aiscientist.tools/Code:https://github.com/mims-harvard/ToolUniverse This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Democratizing AI scientists using ToolUniverse",
+        "authors": [
+            "Zhenglun Kong",
+            "Reza Shamji"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/mims-harvard/ToolUniverse",
+        "huggingface_url": "https://huggingface.co/papers/2509.23426",
+        "upvote": 39
+    }
 }

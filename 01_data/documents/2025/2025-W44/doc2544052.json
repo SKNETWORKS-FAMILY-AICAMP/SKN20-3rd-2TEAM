@@ -1,15 +1,14 @@
 {
-  "context": "Batch speculative decoding improves LLM inference throughput by managing ragged tensors to maintain output equivalence and reduce realignment overhead. Speculative decodingspeeds up LLM inference by using a smalldraft modelto\npropose multiple tokens that atarget modelverifies in parallel. Extending\nthis idea to batches is essential for production serving, but it introduces theragged tensor problem: sequences in the same batch accept different numbers of\ndraft tokens, breaking right-alignment and corruptingposition IDs, attention\nmasks, andKV-cache state. We show that several existing batch implementations\nviolateoutput equivalence-the fundamental requirement that speculative\ndecoding must produce identical token sequences to standard autoregressive\ngeneration. These violations occur precisely due to improper handling of theragged tensor problem. In response, we (1) characterize the synchronization\nrequirements that guarantee correctness, (2) present a correctness-first batchspeculative decodingEQSPECthat exposes realignment as consuming 40% of\noverhead, and (3) introduceEXSPEC, which maintains a sliding pool of sequences\nand dynamically forms same-length groups, to reduce the realignment overhead\nwhile preserving per-sequence speculative speedups. On theSpecBenchdataset,\nacrossVicuna-7B/68M,Qwen3-8B/0.6B, andGLM-4-9B/0.6Btarget/draft pairs, our\napproach achieves up to 3times throughput improvement at batch size 8\ncompared to batch size 1, with efficient scaling through batch size 8, while\nmaintaining 95%output equivalence. Our method requires no custom kernels and\nintegrates cleanly with existing inference stacks. Our code is available at\nhttps://github.com/eBay/spec_dec. This paper shows that existing batch speculative decoding implementations violate output equivalence due to improper handling of the \"ragged tensor problem\" (where sequences accept different numbers of draft tokens), and proposes EQSPEC, a correctness-first solution, along with EXSPEC, which uses a sliding pool of sequences to maintain correctness while improving efficiency. ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Batch Speculative Decoding Done Right",
-    "authors": [
-      "Ranran Haoran Zhang",
-      "Soumik Dey"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/eBay/spec_dec",
-    "huggingface_url": "https://huggingface.co/papers/2510.22876",
-    "upvote": 23,
-    "tags": []
-  }
+    "context": "Batch speculative decoding improves LLM inference throughput by managing ragged tensors to maintain output equivalence and reduce realignment overhead. Speculative decodingspeeds up LLM inference by using a smalldraft modelto\npropose multiple tokens that atarget modelverifies in parallel. Extending\nthis idea to batches is essential for production serving, but it introduces theragged tensor problem: sequences in the same batch accept different numbers of\ndraft tokens, breaking right-alignment and corruptingposition IDs, attention\nmasks, andKV-cache state. We show that several existing batch implementations\nviolateoutput equivalence-the fundamental requirement that speculative\ndecoding must produce identical token sequences to standard autoregressive\ngeneration. These violations occur precisely due to improper handling of theragged tensor problem. In response, we (1) characterize the synchronization\nrequirements that guarantee correctness, (2) present a correctness-first batchspeculative decodingEQSPECthat exposes realignment as consuming 40% of\noverhead, and (3) introduceEXSPEC, which maintains a sliding pool of sequences\nand dynamically forms same-length groups, to reduce the realignment overhead\nwhile preserving per-sequence speculative speedups. On theSpecBenchdataset,\nacrossVicuna-7B/68M,Qwen3-8B/0.6B, andGLM-4-9B/0.6Btarget/draft pairs, our\napproach achieves up to 3times throughput improvement at batch size 8\ncompared to batch size 1, with efficient scaling through batch size 8, while\nmaintaining 95%output equivalence. Our method requires no custom kernels and\nintegrates cleanly with existing inference stacks. Our code is available at\nhttps://github.com/eBay/spec_dec. This paper shows that existing batch speculative decoding implementations violate output equivalence due to improper handling of the \"ragged tensor problem\" (where sequences accept different numbers of draft tokens), and proposes EQSPEC, a correctness-first solution, along with EXSPEC, which uses a sliding pool of sequences to maintain correctness while improving efficiency. ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Batch Speculative Decoding Done Right",
+        "authors": [
+            "Ranran Haoran Zhang",
+            "Soumik Dey"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/eBay/spec_dec",
+        "huggingface_url": "https://huggingface.co/papers/2510.22876",
+        "upvote": 23
+    }
 }

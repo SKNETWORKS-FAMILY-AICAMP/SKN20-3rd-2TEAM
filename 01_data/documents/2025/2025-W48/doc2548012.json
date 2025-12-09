@@ -1,22 +1,21 @@
 {
-  "context": "Reinforcement Learning with Evolving Rubrics (RLER) enables training of deep research models for long-form tasks, outperforming existing models and proprietary systems while being more cost-effective. Deep research modelsperform multi-step research to produce long-form, well-attributed answers. However, most opendeep research modelsare trained on easily verifiable short-form QA tasks viareinforcement learning with verifiable rewards (RLVR), which does not extend to realistic long-form tasks. We address this withReinforcement Learning with Evolving Rubrics (RLER), in which we construct and maintain rubrics that co-evolve with the policy model during training; this allows the rubrics to incorporate information that the model has newly explored and to provide discriminative, on-policy feedback. Using RLER, we developDeep Research Tulu (DR Tulu-8B), the first open model that is directly trained for open-ended,long-form deep research. Across fourlong-form deep researchbenchmarks in science, healthcare and general domains, DR Tulu substantially outperforms existing opendeep research models, and matches or exceeds proprietary deep research systems, while being significantly smaller and cheaper per query. To facilitate future research, we release all data, models, and code, including our newMCP-based agent infrastructurefor deep research systems. Check out our models and data here:https://huggingface.co/collections/rl-research/dr-tuluNote we just a released a newly updated model that outperforms our previous checkpoint! You can also check out our code for training, evaluation, and running the model in an interactive CLI here:https://github.com/rlresearch/dr-tulu tell me about it This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research",
-    "authors": [
-      "Akari Asai",
-      "Shannon Zejiang Shen",
-      "Hamish Ivison",
-      "Jingming Zhuo",
-      "Tyler Murray",
-      "Sewon Min",
-      "Pradeep Dasigi",
-      "Faeze Brahman",
-      "Pang Wei Koh"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/rlresearch/dr-tulu",
-    "huggingface_url": "https://huggingface.co/papers/2511.19399",
-    "upvote": 54,
-    "tags": []
-  }
+    "context": "Reinforcement Learning with Evolving Rubrics (RLER) enables training of deep research models for long-form tasks, outperforming existing models and proprietary systems while being more cost-effective. Deep research modelsperform multi-step research to produce long-form, well-attributed answers. However, most opendeep research modelsare trained on easily verifiable short-form QA tasks viareinforcement learning with verifiable rewards (RLVR), which does not extend to realistic long-form tasks. We address this withReinforcement Learning with Evolving Rubrics (RLER), in which we construct and maintain rubrics that co-evolve with the policy model during training; this allows the rubrics to incorporate information that the model has newly explored and to provide discriminative, on-policy feedback. Using RLER, we developDeep Research Tulu (DR Tulu-8B), the first open model that is directly trained for open-ended,long-form deep research. Across fourlong-form deep researchbenchmarks in science, healthcare and general domains, DR Tulu substantially outperforms existing opendeep research models, and matches or exceeds proprietary deep research systems, while being significantly smaller and cheaper per query. To facilitate future research, we release all data, models, and code, including our newMCP-based agent infrastructurefor deep research systems. Check out our models and data here:https://huggingface.co/collections/rl-research/dr-tuluNote we just a released a newly updated model that outperforms our previous checkpoint! You can also check out our code for training, evaluation, and running the model in an interactive CLI here:https://github.com/rlresearch/dr-tulu tell me about it This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research",
+        "authors": [
+            "Akari Asai",
+            "Shannon Zejiang Shen",
+            "Hamish Ivison",
+            "Jingming Zhuo",
+            "Tyler Murray",
+            "Sewon Min",
+            "Pradeep Dasigi",
+            "Faeze Brahman",
+            "Pang Wei Koh"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/rlresearch/dr-tulu",
+        "huggingface_url": "https://huggingface.co/papers/2511.19399",
+        "upvote": 54
+    }
 }

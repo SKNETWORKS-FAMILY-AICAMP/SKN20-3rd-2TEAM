@@ -1,12 +1,11 @@
 {
-  "context": "Forecasting performance of Large Language Models varies significantly across different domains and question types, influenced by context and external knowledge. Large Language Models(LLMs) demonstrate partialforecasting competenceacross social, political, and economic events. Yet, their predictive ability varies sharply withdomain structureandprompt framing. We investigate how forecasting performance varies with differentmodel familiesonreal-world questionsabout events that happened beyond themodel cutoff date. We analyze howcontext,question type, andexternal knowledgeaffectaccuracyandcalibration, and how adding factual newscontextmodifiesbelief formationandfailure modes. Our results show that forecasting ability is highly variable as it depends on what, and how, we ask. LLMs forecasting ability on real world questions from prediction markets (such as polymarket) varies significantly by category. While addition of news helps, it also adds certain failure modes such as definition drift, recency bias and rumour anchoring This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Future Is Unevenly Distributed: Forecasting Ability of LLMs Depends on What We're Asking",
-    "authors": [],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.18394",
-    "upvote": 1,
-    "tags": []
-  }
+    "context": "Forecasting performance of Large Language Models varies significantly across different domains and question types, influenced by context and external knowledge. Large Language Models(LLMs) demonstrate partialforecasting competenceacross social, political, and economic events. Yet, their predictive ability varies sharply withdomain structureandprompt framing. We investigate how forecasting performance varies with differentmodel familiesonreal-world questionsabout events that happened beyond themodel cutoff date. We analyze howcontext,question type, andexternal knowledgeaffectaccuracyandcalibration, and how adding factual newscontextmodifiesbelief formationandfailure modes. Our results show that forecasting ability is highly variable as it depends on what, and how, we ask. LLMs forecasting ability on real world questions from prediction markets (such as polymarket) varies significantly by category. While addition of news helps, it also adds certain failure modes such as definition drift, recency bias and rumour anchoring This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Future Is Unevenly Distributed: Forecasting Ability of LLMs Depends on What We're Asking",
+        "authors": [],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.18394",
+        "upvote": 1
+    }
 }

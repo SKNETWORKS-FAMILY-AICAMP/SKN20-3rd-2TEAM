@@ -1,14 +1,13 @@
 {
-  "context": "Reasoning models enhance performance across various tasks, surpassing instruction fine-tuned models in reasoning-intensive and open-ended tasks, despite higher computational costs. Large Language Models (LLMs) with reasoning capabilities have achieved\nstate-of-the-art performance on a wide range of tasks. Despite its empirical\nsuccess, the tasks and model scales at which reasoning becomes effective, as\nwell as its training and inference costs, remain underexplored. In this work,\nwe rely on asynthetic data distillationframework to conduct a large-scale\nsupervised study. We compareInstruction Fine-Tuning(IFT) andreasoning modelsof varying sizes, on a wide range of math-centric and general-purpose tasks,\nevaluating bothmultiple-choiceandopen-ended formats. Our analysis reveals\nthat reasoning consistently improves model performance, often matching or\nsurpassing significantly larger IFT systems. Notably, while IFT remains\nPareto-optimal in training and inference costs,reasoning modelsbecome\nincreasingly valuable as model size scales, overcoming IFT performance limits\non reasoning-intensive and open-ended tasks. ⭐ ⭐ ⭐ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "When Does Reasoning Matter? A Controlled Study of Reasoning's\n  Contribution to Model Performance",
-    "authors": [
-      "Nicolas Boizard"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2509.22193",
-    "upvote": 37,
-    "tags": []
-  }
+    "context": "Reasoning models enhance performance across various tasks, surpassing instruction fine-tuned models in reasoning-intensive and open-ended tasks, despite higher computational costs. Large Language Models (LLMs) with reasoning capabilities have achieved\nstate-of-the-art performance on a wide range of tasks. Despite its empirical\nsuccess, the tasks and model scales at which reasoning becomes effective, as\nwell as its training and inference costs, remain underexplored. In this work,\nwe rely on asynthetic data distillationframework to conduct a large-scale\nsupervised study. We compareInstruction Fine-Tuning(IFT) andreasoning modelsof varying sizes, on a wide range of math-centric and general-purpose tasks,\nevaluating bothmultiple-choiceandopen-ended formats. Our analysis reveals\nthat reasoning consistently improves model performance, often matching or\nsurpassing significantly larger IFT systems. Notably, while IFT remains\nPareto-optimal in training and inference costs,reasoning modelsbecome\nincreasingly valuable as model size scales, overcoming IFT performance limits\non reasoning-intensive and open-ended tasks. ⭐ ⭐ ⭐ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "When Does Reasoning Matter? A Controlled Study of Reasoning's\n  Contribution to Model Performance",
+        "authors": [
+            "Nicolas Boizard"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2509.22193",
+        "upvote": 37
+    }
 }

@@ -1,16 +1,15 @@
 {
-  "context": "Conditioning text-to-image generative models on multiple reward models during training improves image quality and training efficiency. Currenttext-to-image generative modelsare trained on large uncurated\ndatasets to enable diverse generation capabilities. However, this does not\nalign well with user preferences. Recently,reward modelshave been\nspecifically designed to perform post-hoc selection of generated images and\nalign them to a reward, typically user preference. This discarding of\ninformative data together with the optimizing for a single reward tend to harm\ndiversity, semantic fidelity and efficiency. Instead of this post-processing,\nwe propose to condition the model on multiplereward modelsduring training to\nlet the model learn user preferences directly. We show that this not only\ndramatically improves the visual quality of the generated images but it also\nsignificantly speeds up the training. Our proposed method, called MIRO,\nachieves state-of-the-art performances on theGenEval compositional benchmarkand user-preference scores (PickAScore,ImageReward,HPSv2). Project page:https://nicolas-dufour.github.io/miro/ Nice work! I’d like to highlight our ICML 2024 paper, RiC (https://arxiv.org/pdf/2402.10207), which already applies multi-reward conditional training to both text-to-text and text-to-image models (see Section 4.4). Hi@Ray2333.Thanks for the pointer, we will add it to the references.I however want to point that our paper focus on improving the pretraining (not fine-tuning) through multi-reward conditioning! ·Sign uporlog into comment",
-  "metadata": {
-    "title": "MIRO: MultI-Reward cOnditioned pretraining improves T2I quality and\n  efficiency",
-    "authors": [
-      "Nicolas Dufour",
-      "Lucas Degeorge",
-      "Arijit Ghosh"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.25897",
-    "upvote": 16,
-    "tags": []
-  }
+    "context": "Conditioning text-to-image generative models on multiple reward models during training improves image quality and training efficiency. Currenttext-to-image generative modelsare trained on large uncurated\ndatasets to enable diverse generation capabilities. However, this does not\nalign well with user preferences. Recently,reward modelshave been\nspecifically designed to perform post-hoc selection of generated images and\nalign them to a reward, typically user preference. This discarding of\ninformative data together with the optimizing for a single reward tend to harm\ndiversity, semantic fidelity and efficiency. Instead of this post-processing,\nwe propose to condition the model on multiplereward modelsduring training to\nlet the model learn user preferences directly. We show that this not only\ndramatically improves the visual quality of the generated images but it also\nsignificantly speeds up the training. Our proposed method, called MIRO,\nachieves state-of-the-art performances on theGenEval compositional benchmarkand user-preference scores (PickAScore,ImageReward,HPSv2). Project page:https://nicolas-dufour.github.io/miro/ Nice work! I’d like to highlight our ICML 2024 paper, RiC (https://arxiv.org/pdf/2402.10207), which already applies multi-reward conditional training to both text-to-text and text-to-image models (see Section 4.4). Hi@Ray2333.Thanks for the pointer, we will add it to the references.I however want to point that our paper focus on improving the pretraining (not fine-tuning) through multi-reward conditioning! ·Sign uporlog into comment",
+    "metadata": {
+        "title": "MIRO: MultI-Reward cOnditioned pretraining improves T2I quality and\n  efficiency",
+        "authors": [
+            "Nicolas Dufour",
+            "Lucas Degeorge",
+            "Arijit Ghosh"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.25897",
+        "upvote": 16
+    }
 }

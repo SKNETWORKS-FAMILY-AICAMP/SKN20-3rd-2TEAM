@@ -1,15 +1,14 @@
 {
-  "context": "LLMs do not consistently generalize across different task difficulties, indicating the need for a broad range of difficulty levels in both training and evaluation datasets. We investigate how welllarge language models(LLMs) generalize across differenttask difficulties, a key question for effectivedata curationandevaluation. Existing research is mixed regarding whether training on easier or harder data leads to better results, and whether those gains come on easier or harder test data. We address this question by conducting a systematicevaluationofLLMs'generalizationacross models, datasets, and fine-grained groups of example difficulty. We rank examples in six datasets using the outputs of thousands of differentLLMsandItem Response Theory(IRT), a well-established difficulty metric in educational testing. Unlike prior work, our difficulty ratings are therefore determined solely by the abilities of many differentLLMs, excluding human opinions of difficulty. With a more objective, larger-scale, and finer-grained analysis, we show thatcross-difficulty generalizationis often limited; training on either easy or hard data cannot achieve consistent improvements across the full range of difficulties. These results show the importance of having a range of difficulties in both training andevaluationdata forLLMs, and that taking shortcuts with respect to difficulty is risky. Github:https://github.com/BatsResearch/Cross-DifficultyDataset:https://huggingface.co/datasets/BatsResearch/Cross-Difficulty This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Revisiting Generalization Across Difficulty Levels: It's Not So Easy",
-    "authors": [
-      "Yeganeh Kordi",
-      "Nihal V. Nayak"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/BatsResearch/Cross-Difficulty",
-    "huggingface_url": "https://huggingface.co/papers/2511.21692",
-    "upvote": 15,
-    "tags": []
-  }
+    "context": "LLMs do not consistently generalize across different task difficulties, indicating the need for a broad range of difficulty levels in both training and evaluation datasets. We investigate how welllarge language models(LLMs) generalize across differenttask difficulties, a key question for effectivedata curationandevaluation. Existing research is mixed regarding whether training on easier or harder data leads to better results, and whether those gains come on easier or harder test data. We address this question by conducting a systematicevaluationofLLMs'generalizationacross models, datasets, and fine-grained groups of example difficulty. We rank examples in six datasets using the outputs of thousands of differentLLMsandItem Response Theory(IRT), a well-established difficulty metric in educational testing. Unlike prior work, our difficulty ratings are therefore determined solely by the abilities of many differentLLMs, excluding human opinions of difficulty. With a more objective, larger-scale, and finer-grained analysis, we show thatcross-difficulty generalizationis often limited; training on either easy or hard data cannot achieve consistent improvements across the full range of difficulties. These results show the importance of having a range of difficulties in both training andevaluationdata forLLMs, and that taking shortcuts with respect to difficulty is risky. Github:https://github.com/BatsResearch/Cross-DifficultyDataset:https://huggingface.co/datasets/BatsResearch/Cross-Difficulty This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Revisiting Generalization Across Difficulty Levels: It's Not So Easy",
+        "authors": [
+            "Yeganeh Kordi",
+            "Nihal V. Nayak"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/BatsResearch/Cross-Difficulty",
+        "huggingface_url": "https://huggingface.co/papers/2511.21692",
+        "upvote": 15
+    }
 }

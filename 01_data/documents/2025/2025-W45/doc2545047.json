@@ -1,14 +1,13 @@
 {
-  "context": "Higher-order Linear Attention (HLA) is a scalable, causal, and efficient mechanism for long-context autoregressive language models, combining attention-like mixing with recurrent architecture efficiency. The quadratic cost ofscaled dot-product attentionis a central obstacle to\nscaling autoregressive language models to long contexts.Linear-time attentionandState Space Models (SSMs)provide scalable alternatives but are typically\nrestricted to first-order or kernel-based approximations, which can limit\nexpressivity. We introduceHigher-order Linear Attention (HLA), a causal,\nstreaming mechanism that realizes higher interactions via compact prefix\nsufficient statistics. In the second-order case, HLA maintains a constant-size\nstate and computes per-token outputs in linear time without materializing any\nn times n matrices. We giveclosed-form streaming identities, a strictly\ncausal masked variant using two additional summaries, and a chunk-parallel\ntraining scheme based onassociative scansthat reproduces the activations of aserial recurrenceexactly. We further outline extensions to third and higher\norders. Collectively, these results position HLA as a principled, scalable\nbuilding block that combines attention-like, data-dependent mixing with the\nefficiency of modern recurrent architectures. Project Page:\nhttps://github.com/yifanzhang-pro/HLA. The quadratic cost of scaled dot-product attention is a central obstacle to scaling autoregressivelanguage models to long contexts. Linear-time attention and State Space Models (SSMs) providescalable alternatives but are typically restricted to first-order or kernel-based approximations,which can limit expressivity. We introduce Higher-order Linear Attention (HLA), a causal,streaming mechanism that realizes higher interactions via compact prefix sufficient statistics. Inthe second-order case,HLA maintains a constant-size state and computes per-token outputs inlinear time without materializing any n×n matrices. Project Page:https://github.com/yifanzhang-pro/HLA ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Higher-order Linear Attention",
-    "authors": [
-      "Yifan Zhang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/yifanzhang-pro/HLA",
-    "huggingface_url": "https://huggingface.co/papers/2510.27258",
-    "upvote": 14,
-    "tags": []
-  }
+    "context": "Higher-order Linear Attention (HLA) is a scalable, causal, and efficient mechanism for long-context autoregressive language models, combining attention-like mixing with recurrent architecture efficiency. The quadratic cost ofscaled dot-product attentionis a central obstacle to\nscaling autoregressive language models to long contexts.Linear-time attentionandState Space Models (SSMs)provide scalable alternatives but are typically\nrestricted to first-order or kernel-based approximations, which can limit\nexpressivity. We introduceHigher-order Linear Attention (HLA), a causal,\nstreaming mechanism that realizes higher interactions via compact prefix\nsufficient statistics. In the second-order case, HLA maintains a constant-size\nstate and computes per-token outputs in linear time without materializing any\nn times n matrices. We giveclosed-form streaming identities, a strictly\ncausal masked variant using two additional summaries, and a chunk-parallel\ntraining scheme based onassociative scansthat reproduces the activations of aserial recurrenceexactly. We further outline extensions to third and higher\norders. Collectively, these results position HLA as a principled, scalable\nbuilding block that combines attention-like, data-dependent mixing with the\nefficiency of modern recurrent architectures. Project Page:\nhttps://github.com/yifanzhang-pro/HLA. The quadratic cost of scaled dot-product attention is a central obstacle to scaling autoregressivelanguage models to long contexts. Linear-time attention and State Space Models (SSMs) providescalable alternatives but are typically restricted to first-order or kernel-based approximations,which can limit expressivity. We introduce Higher-order Linear Attention (HLA), a causal,streaming mechanism that realizes higher interactions via compact prefix sufficient statistics. Inthe second-order case,HLA maintains a constant-size state and computes per-token outputs inlinear time without materializing any n×n matrices. Project Page:https://github.com/yifanzhang-pro/HLA ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Higher-order Linear Attention",
+        "authors": [
+            "Yifan Zhang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/yifanzhang-pro/HLA",
+        "huggingface_url": "https://huggingface.co/papers/2510.27258",
+        "upvote": 14
+    }
 }

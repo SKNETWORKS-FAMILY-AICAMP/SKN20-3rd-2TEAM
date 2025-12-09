@@ -1,16 +1,15 @@
 {
-  "context": "Chunk-GRPO, a chunk-level optimization approach for text-to-image generation, improves preference alignment and image quality by addressing inaccurate advantage attribution and neglecting temporal dynamics. Group Relative Policy Optimization(GRPO) has shown strong potential forflow-matching-basedtext-to-image(T2I) generation, but it faces two key\nlimitations: inaccurate advantage attribution, and the neglect of temporal\ndynamics of generation. In this work, we argue that shifting the optimization\nparadigm from the step level to the chunk level can effectively alleviate these\nissues. Building on this idea, we propose Chunk-GRPO, the firstchunk-levelGRPO-based approach forT2Igeneration. The insight is to group consecutive\nsteps into coherent 'chunk's that capture the intrinsictemporal dynamicsof\nflow matching, and to optimize policies at the chunk level. In addition, we\nintroduce an optionalweighted sampling strategyto further enhance\nperformance. Extensive experiments show that ChunkGRPOachieves superior\nresults in both preference alignment and image quality, highlighting the\npromise ofchunk-leveloptimization forGRPO-based methods. 你好，我给你们发送了邮件，请问可以联络我吗？我想接入kolors。我的wx：djxiaoxixi 好的，我微信上联系你。 ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Sample By Step, Optimize By Chunk: Chunk-Level GRPO For Text-to-Image\n  Generation",
-    "authors": [
-      "Penghui Du",
-      "Bo Li",
-      "Kai Wu"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.21583",
-    "upvote": 30,
-    "tags": []
-  }
+    "context": "Chunk-GRPO, a chunk-level optimization approach for text-to-image generation, improves preference alignment and image quality by addressing inaccurate advantage attribution and neglecting temporal dynamics. Group Relative Policy Optimization(GRPO) has shown strong potential forflow-matching-basedtext-to-image(T2I) generation, but it faces two key\nlimitations: inaccurate advantage attribution, and the neglect of temporal\ndynamics of generation. In this work, we argue that shifting the optimization\nparadigm from the step level to the chunk level can effectively alleviate these\nissues. Building on this idea, we propose Chunk-GRPO, the firstchunk-levelGRPO-based approach forT2Igeneration. The insight is to group consecutive\nsteps into coherent 'chunk's that capture the intrinsictemporal dynamicsof\nflow matching, and to optimize policies at the chunk level. In addition, we\nintroduce an optionalweighted sampling strategyto further enhance\nperformance. Extensive experiments show that ChunkGRPOachieves superior\nresults in both preference alignment and image quality, highlighting the\npromise ofchunk-leveloptimization forGRPO-based methods. 你好，我给你们发送了邮件，请问可以联络我吗？我想接入kolors。我的wx：djxiaoxixi 好的，我微信上联系你。 ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Sample By Step, Optimize By Chunk: Chunk-Level GRPO For Text-to-Image\n  Generation",
+        "authors": [
+            "Penghui Du",
+            "Bo Li",
+            "Kai Wu"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.21583",
+        "upvote": 30
+    }
 }

@@ -1,18 +1,17 @@
 {
-  "context": "Vlaser, a Vision-Language-Action Model, integrates high-level reasoning with low-level control for embodied agents, achieving state-of-the-art performance in embodied reasoning tasks and competitive results in robot benchmarks. While significant research has focused on developingembodied reasoningcapabilities usingVision-Language Models(VLMs) or integrating advanced VLMs\ninto Vision-Language-Action (VLA) models for end-to-end robot control, few\nstudies directly address the critical gap between upstream VLM-based reasoning\nand downstream VLA policy learning. In this work, we take an initial step\ntoward bridgingembodied reasoningwith VLA policy learning by introducingVlaser- a Vision-Language-Action Model with synergisticembodied reasoningcapability, which is a foundational vision-language model designed to integrate\nhigh-level reasoning with low-level control for embodied agents. Built upon the\nhigh-qualityVlaser-6M dataset,Vlaserachieves state-of-the-art performance\nacross a range ofembodied reasoningbenchmarks - includingspatial reasoning,embodied grounding,embodied QA, andtask planning. Furthermore, we\nsystematically examine how different VLM initializations affect supervised VLA\nfine-tuning, offering novel insights into mitigating thedomain shiftbetween\ninternet-scale pre-training data and embodied-specific policy learning data.\nBased on these insights, our approach achieves state-of-the-art results on theWidowX benchmarkand competitive performance on theGoogle Robot benchmark. Hi, everyone, please see our latest paper: Vlaser: Vision-Language-Action Model with Synergistic Embodied Reasoning, which achieves top-tier results on embodied reasoning capability and discusses the transfer learning from VLMs to VLAs. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Vlaser: Vision-Language-Action Model with Synergistic Embodied Reasoning",
-    "authors": [
-      "Ganlin Yang",
-      "Tianyi Zhang",
-      "Haoran Hao",
-      "Guanzhou Chen",
-      "Yao Mu"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/OpenGVLab/Vlaser/",
-    "huggingface_url": "https://huggingface.co/papers/2510.11027",
-    "upvote": 21,
-    "tags": []
-  }
+    "context": "Vlaser, a Vision-Language-Action Model, integrates high-level reasoning with low-level control for embodied agents, achieving state-of-the-art performance in embodied reasoning tasks and competitive results in robot benchmarks. While significant research has focused on developingembodied reasoningcapabilities usingVision-Language Models(VLMs) or integrating advanced VLMs\ninto Vision-Language-Action (VLA) models for end-to-end robot control, few\nstudies directly address the critical gap between upstream VLM-based reasoning\nand downstream VLA policy learning. In this work, we take an initial step\ntoward bridgingembodied reasoningwith VLA policy learning by introducingVlaser- a Vision-Language-Action Model with synergisticembodied reasoningcapability, which is a foundational vision-language model designed to integrate\nhigh-level reasoning with low-level control for embodied agents. Built upon the\nhigh-qualityVlaser-6M dataset,Vlaserachieves state-of-the-art performance\nacross a range ofembodied reasoningbenchmarks - includingspatial reasoning,embodied grounding,embodied QA, andtask planning. Furthermore, we\nsystematically examine how different VLM initializations affect supervised VLA\nfine-tuning, offering novel insights into mitigating thedomain shiftbetween\ninternet-scale pre-training data and embodied-specific policy learning data.\nBased on these insights, our approach achieves state-of-the-art results on theWidowX benchmarkand competitive performance on theGoogle Robot benchmark. Hi, everyone, please see our latest paper: Vlaser: Vision-Language-Action Model with Synergistic Embodied Reasoning, which achieves top-tier results on embodied reasoning capability and discusses the transfer learning from VLMs to VLAs. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Vlaser: Vision-Language-Action Model with Synergistic Embodied Reasoning",
+        "authors": [
+            "Ganlin Yang",
+            "Tianyi Zhang",
+            "Haoran Hao",
+            "Guanzhou Chen",
+            "Yao Mu"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/OpenGVLab/Vlaser/",
+        "huggingface_url": "https://huggingface.co/papers/2510.11027",
+        "upvote": 21
+    }
 }

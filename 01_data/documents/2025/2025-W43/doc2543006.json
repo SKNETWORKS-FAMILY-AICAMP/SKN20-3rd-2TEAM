@@ -1,18 +1,17 @@
 {
-  "context": "World-in-World evaluates generative world models in closed-loop environments, emphasizing task success over visual quality and revealing insights into controllability, data scaling, and compute allocation. Generative world models(WMs) can now simulate worlds with striking visual\nrealism, which naturally raises the question of whether they can endow embodied\nagents withpredictive perceptionfordecision making. Progress on this\nquestion has been limited by fragmented evaluation: most existing benchmarks\nadoptopen-loop protocolsthat emphasizevisual qualityin isolation, leaving\nthe core issue of embodied utility unresolved, i.e., doWMs actually help\nagents succeed at embodied tasks? To address this gap, we introduce\nWorld-in-World, the first open platform that benchmarksWMs in a closed-loop\nworld that mirrors realagent-environment interactions. World-in-World provides\naunified online planning strategyand a standardizedaction API, enabling\nheterogeneousWMs fordecision making. We curate four closed-loop environments\nthat rigorously evaluate diverseWMs, prioritizetask successas the primary\nmetric, and move beyond the common focus onvisual quality; we also present the\nfirstdata scaling lawfor world models in embodied settings. Our study\nuncovers three surprises: (1)visual qualityalone does not guarantee task\nsuccess,controllabilitymatters more; (2) scaling post-training withaction-observation datais more effective than upgrading the pretrained video\ngenerators; and (3) allocating moreinference-time computeallowsWMs to\nsubstantially improve closed-loop performance.  arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/world-in-world-world-models-in-a-closed-loop-world This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "World-in-World: World Models in a Closed-Loop World",
-    "authors": [
-      "Taiming Lu",
-      "Arda Uzunoglu",
-      "Shunchi Zhang",
-      "Daniel Khashabi",
-      "Jieneng Chen"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/World-In-World/world-in-world",
-    "huggingface_url": "https://huggingface.co/papers/2510.18135",
-    "upvote": 90,
-    "tags": []
-  }
+    "context": "World-in-World evaluates generative world models in closed-loop environments, emphasizing task success over visual quality and revealing insights into controllability, data scaling, and compute allocation. Generative world models(WMs) can now simulate worlds with striking visual\nrealism, which naturally raises the question of whether they can endow embodied\nagents withpredictive perceptionfordecision making. Progress on this\nquestion has been limited by fragmented evaluation: most existing benchmarks\nadoptopen-loop protocolsthat emphasizevisual qualityin isolation, leaving\nthe core issue of embodied utility unresolved, i.e., doWMs actually help\nagents succeed at embodied tasks? To address this gap, we introduce\nWorld-in-World, the first open platform that benchmarksWMs in a closed-loop\nworld that mirrors realagent-environment interactions. World-in-World provides\naunified online planning strategyand a standardizedaction API, enabling\nheterogeneousWMs fordecision making. We curate four closed-loop environments\nthat rigorously evaluate diverseWMs, prioritizetask successas the primary\nmetric, and move beyond the common focus onvisual quality; we also present the\nfirstdata scaling lawfor world models in embodied settings. Our study\nuncovers three surprises: (1)visual qualityalone does not guarantee task\nsuccess,controllabilitymatters more; (2) scaling post-training withaction-observation datais more effective than upgrading the pretrained video\ngenerators; and (3) allocating moreinference-time computeallowsWMs to\nsubstantially improve closed-loop performance.  arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/world-in-world-world-models-in-a-closed-loop-world This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "World-in-World: World Models in a Closed-Loop World",
+        "authors": [
+            "Taiming Lu",
+            "Arda Uzunoglu",
+            "Shunchi Zhang",
+            "Daniel Khashabi",
+            "Jieneng Chen"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/World-In-World/world-in-world",
+        "huggingface_url": "https://huggingface.co/papers/2510.18135",
+        "upvote": 90
+    }
 }

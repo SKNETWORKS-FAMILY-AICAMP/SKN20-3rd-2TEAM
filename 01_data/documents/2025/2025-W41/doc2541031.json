@@ -1,14 +1,13 @@
 {
-  "context": "A comprehensive evaluation of hybrid language models combining self-attention with structured state space models, analyzing inter-layer and intra-layer fusion strategies, and providing design recommendations. Recent progress in large language models demonstrates that hybrid\narchitectures--combiningself-attention mechanismswith structured state space\nmodels likeMamba--can achieve a compelling balance between modeling quality\nand computational efficiency, particularly for long-context tasks. While these\nhybrid models show promising performance, systematic comparisons of\nhybridization strategies and analyses on the key factors behind their\neffectiveness have not been clearly shared to the community. In this work, we\npresent a holistic evaluation ofhybrid architecturesbased on inter-layer\n(sequential) or intra-layer (parallel) fusion. We evaluate these designs from a\nvariety of perspectives:language modeling performance, long-context\ncapabilities,scaling analysis, and training andinference efficiency. By\ninvestigating the core characteristics of theircomputational primitive, we\nidentify the most critical elements for each hybridization strategy and further\npropose optimal design recipes for both hybrid models. Our comprehensive\nanalysis provides practical guidance and valuable insights for developing\nhybrid language models, facilitating the optimization of architectural\nconfigurations. ArXiv:https://arxiv.org/pdf/2510.04800.Code and detailed results will be released later. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Hybrid Architectures for Language Models: Systematic Analysis and Design\n  Insights",
-    "authors": [
-      "Sangmin Bae"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.04800",
-    "upvote": 36,
-    "tags": []
-  }
+    "context": "A comprehensive evaluation of hybrid language models combining self-attention with structured state space models, analyzing inter-layer and intra-layer fusion strategies, and providing design recommendations. Recent progress in large language models demonstrates that hybrid\narchitectures--combiningself-attention mechanismswith structured state space\nmodels likeMamba--can achieve a compelling balance between modeling quality\nand computational efficiency, particularly for long-context tasks. While these\nhybrid models show promising performance, systematic comparisons of\nhybridization strategies and analyses on the key factors behind their\neffectiveness have not been clearly shared to the community. In this work, we\npresent a holistic evaluation ofhybrid architecturesbased on inter-layer\n(sequential) or intra-layer (parallel) fusion. We evaluate these designs from a\nvariety of perspectives:language modeling performance, long-context\ncapabilities,scaling analysis, and training andinference efficiency. By\ninvestigating the core characteristics of theircomputational primitive, we\nidentify the most critical elements for each hybridization strategy and further\npropose optimal design recipes for both hybrid models. Our comprehensive\nanalysis provides practical guidance and valuable insights for developing\nhybrid language models, facilitating the optimization of architectural\nconfigurations. ArXiv:https://arxiv.org/pdf/2510.04800.Code and detailed results will be released later. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Hybrid Architectures for Language Models: Systematic Analysis and Design\n  Insights",
+        "authors": [
+            "Sangmin Bae"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.04800",
+        "upvote": 36
+    }
 }

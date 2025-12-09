@@ -1,14 +1,13 @@
 {
-  "context": "Two novel test-time scaling strategies, Test-Time Augmentation and Test-Time Adaptation, improve small vision-language models' performance without compromising computational efficiency. SmallVision-Language Models(VLMs) provide a computationally efficient\nalternative to larger models, at the cost of weaker generalization abilities\nand downstream task performance. These shortcomings could be addressed by\ntest-time scaling techniques, but existing methods are typically\ncomputationally demanding, contradicting the resource-efficient design goals of\nsmall models. To address these limitations, we propose two novel and efficient\ntest-time scaling strategies that leverage the model-internal features rather\nthan external supervision: (i)Test-Time Augmentation(TTAug), which generates\nmultiple augmented inputs and aggregates outputs at thetoken levelwithoutparameter updates, and (ii)Test-Time Adaptation(TTAdapt), which adapts model\nparameters during inference usingconsensus-based pseudolabelsfrom TTAug.\nThrough extensive experiments across nine benchmarks, we demonstrate consistent\nperformance improvements while maintaining computational efficiency suitable\nforresource-constrained environments. The generality of our approach is\ndemonstrated both within models at different scales and across different VLMs\nwithout additional tuning. We propose two efficient and effective methods improving multimodal small language models at test-time: TTAug (input augmentation + token-level aggregation) and TTAdapt (parameter adaptation via pseudolabels). 🌐 Project Page:https://monurcan.github.io/efficient_test_time_scaling💻 Code:https://github.com/monurcan/efficient_test_time_scaling This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Efficient Test-Time Scaling for Small Vision-Language Models",
-    "authors": [
-      "Mehmet Onurcan Kaya"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/monurcan/efficient_test_time_scaling",
-    "huggingface_url": "https://huggingface.co/papers/2510.03574",
-    "upvote": 9,
-    "tags": []
-  }
+    "context": "Two novel test-time scaling strategies, Test-Time Augmentation and Test-Time Adaptation, improve small vision-language models' performance without compromising computational efficiency. SmallVision-Language Models(VLMs) provide a computationally efficient\nalternative to larger models, at the cost of weaker generalization abilities\nand downstream task performance. These shortcomings could be addressed by\ntest-time scaling techniques, but existing methods are typically\ncomputationally demanding, contradicting the resource-efficient design goals of\nsmall models. To address these limitations, we propose two novel and efficient\ntest-time scaling strategies that leverage the model-internal features rather\nthan external supervision: (i)Test-Time Augmentation(TTAug), which generates\nmultiple augmented inputs and aggregates outputs at thetoken levelwithoutparameter updates, and (ii)Test-Time Adaptation(TTAdapt), which adapts model\nparameters during inference usingconsensus-based pseudolabelsfrom TTAug.\nThrough extensive experiments across nine benchmarks, we demonstrate consistent\nperformance improvements while maintaining computational efficiency suitable\nforresource-constrained environments. The generality of our approach is\ndemonstrated both within models at different scales and across different VLMs\nwithout additional tuning. We propose two efficient and effective methods improving multimodal small language models at test-time: TTAug (input augmentation + token-level aggregation) and TTAdapt (parameter adaptation via pseudolabels). 🌐 Project Page:https://monurcan.github.io/efficient_test_time_scaling💻 Code:https://github.com/monurcan/efficient_test_time_scaling This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Efficient Test-Time Scaling for Small Vision-Language Models",
+        "authors": [
+            "Mehmet Onurcan Kaya"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/monurcan/efficient_test_time_scaling",
+        "huggingface_url": "https://huggingface.co/papers/2510.03574",
+        "upvote": 9
+    }
 }

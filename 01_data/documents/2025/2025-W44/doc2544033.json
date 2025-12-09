@@ -1,15 +1,14 @@
 {
-  "context": "Action Coherence Guidance (ACG) improves action coherence in Vision-Language-Action (VLA) models during test time, enhancing performance in diverse manipulation tasks. Diffusion andflow matching modelshave emerged as powerful robot policies,\nenablingVision-Language-Action (VLA) modelsto generalize across diverse\nscenes and instructions. Yet, when trained viaimitation learning, their high\ngenerative capacity makes them sensitive to noise in human demonstrations:\njerks, pauses, and jitter which reduceaction coherence. Reduced action\ncoherence causes instability andtrajectory driftduring deployment, failures\nthat are catastrophic in fine-grained manipulation where precision is crucial.\nIn this paper, we presentAction Coherence Guidance (ACG)for VLA models, a\ntraining-free test-time guidance algorithm that improvesaction coherenceand\nthereby yields performance gains. Evaluated onRoboCasa,DexMimicGen, and\nreal-worldSO-101 tasks, ACG consistently improvesaction coherenceand boosts\nsuccess rates across diverse manipulation tasks. Code and project page are\navailable at https://github.com/DAVIAN-Robotics/ACG and\nhttps://DAVIAN-Robotics.github.io/ACG , respectively. Ever seen your GR00T-N1-2B or any flow-based VLA make your robot jitter, pause, or drift mid-action?That’s what we call action incoherence. We introduceAction Coherence Guidance (ACG) — a training-free, test-time algorithm that smooths action trajectories for flow-based VLA models.It directly modifies the denoising flow, enforcing temporal coherence without retraining. We’re also releasingpost-trained GR00T-N1-2B models, training and rollout scriptsfor RoboCasa and DexMG. Paper:https://arxiv.org/abs/2510.22201Project Page:https://DAVIAN-Robotics.github.io/ACGHugging Face:https://huggingface.co/DAVIAN-RoboticsGitHub:https://github.com/DAVIAN-Robotics/ACGYoutube:https://www.youtube.com/watch?v=Fi6VpnPETYUX:https://x.com/mpark1999/status/1983001022969852018 where is the pi0 code? ·Sign uporlog into comment",
-  "metadata": {
-    "title": "ACG: Action Coherence Guidance for Flow-based VLA models",
-    "authors": [
-      "Minho Park",
-      "Kinam Kim"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/DAVIAN-Robotics/ACG",
-    "huggingface_url": "https://huggingface.co/papers/2510.22201",
-    "upvote": 36,
-    "tags": []
-  }
+    "context": "Action Coherence Guidance (ACG) improves action coherence in Vision-Language-Action (VLA) models during test time, enhancing performance in diverse manipulation tasks. Diffusion andflow matching modelshave emerged as powerful robot policies,\nenablingVision-Language-Action (VLA) modelsto generalize across diverse\nscenes and instructions. Yet, when trained viaimitation learning, their high\ngenerative capacity makes them sensitive to noise in human demonstrations:\njerks, pauses, and jitter which reduceaction coherence. Reduced action\ncoherence causes instability andtrajectory driftduring deployment, failures\nthat are catastrophic in fine-grained manipulation where precision is crucial.\nIn this paper, we presentAction Coherence Guidance (ACG)for VLA models, a\ntraining-free test-time guidance algorithm that improvesaction coherenceand\nthereby yields performance gains. Evaluated onRoboCasa,DexMimicGen, and\nreal-worldSO-101 tasks, ACG consistently improvesaction coherenceand boosts\nsuccess rates across diverse manipulation tasks. Code and project page are\navailable at https://github.com/DAVIAN-Robotics/ACG and\nhttps://DAVIAN-Robotics.github.io/ACG , respectively. Ever seen your GR00T-N1-2B or any flow-based VLA make your robot jitter, pause, or drift mid-action?That’s what we call action incoherence. We introduceAction Coherence Guidance (ACG) — a training-free, test-time algorithm that smooths action trajectories for flow-based VLA models.It directly modifies the denoising flow, enforcing temporal coherence without retraining. We’re also releasingpost-trained GR00T-N1-2B models, training and rollout scriptsfor RoboCasa and DexMG. Paper:https://arxiv.org/abs/2510.22201Project Page:https://DAVIAN-Robotics.github.io/ACGHugging Face:https://huggingface.co/DAVIAN-RoboticsGitHub:https://github.com/DAVIAN-Robotics/ACGYoutube:https://www.youtube.com/watch?v=Fi6VpnPETYUX:https://x.com/mpark1999/status/1983001022969852018 where is the pi0 code? ·Sign uporlog into comment",
+    "metadata": {
+        "title": "ACG: Action Coherence Guidance for Flow-based VLA models",
+        "authors": [
+            "Minho Park",
+            "Kinam Kim"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/DAVIAN-Robotics/ACG",
+        "huggingface_url": "https://huggingface.co/papers/2510.22201",
+        "upvote": 36
+    }
 }

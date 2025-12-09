@@ -1,16 +1,15 @@
 {
-  "context": "A data-generation framework using 3D simulators improves spatial reasoning in multimodal language models with efficient training on simulated data. Despite impressive high-level video comprehension,multimodal language modelsstruggle withspatial reasoningacross time and space. While current spatial\ntraining approaches rely on real-world video data, obtaining diverse footage\nwith precise spatial annotations remains a bottleneck. To alleviate this\nbottleneck, we present SIMS-V -- a systematic data-generation framework that\nleverages the privileged information of3D simulatorsto create spatially-richvideo training dataformultimodal language models. Using this framework, we\ninvestigate which properties of simulated data drive effective real-world\ntransfer throughsystematic ablationsofquestion types, mixes, and scales. We\nidentify a minimal set of three question categories (metric measurement,perspective-dependent reasoning, andtemporal tracking) that prove most\neffective for developing transferable spatial intelligence, outperforming\ncomprehensive coverage despite using fewerquestion types. These insights\nenable highly efficient training: our 7B-parametervideo LLMfine-tuned on just\n25K simulated examples outperforms the larger 72B baseline and achieves\ncompetitive performance with proprietary models on rigorous real-world spatial\nreasoning benchmarks. Our approach demonstrates robust generalization,\nmaintaining performance on general video understanding while showing\nsubstantial improvements on embodied and real-world spatial tasks. https://ellisbrown.github.io/sims-v/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "SIMS-V: Simulated Instruction-Tuning for Spatial Video Understanding",
-    "authors": [
-      "Ellis Brown",
-      "Arijit Ray",
-      "Saining Xie"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2511.04668",
-    "upvote": 4,
-    "tags": []
-  }
+    "context": "A data-generation framework using 3D simulators improves spatial reasoning in multimodal language models with efficient training on simulated data. Despite impressive high-level video comprehension,multimodal language modelsstruggle withspatial reasoningacross time and space. While current spatial\ntraining approaches rely on real-world video data, obtaining diverse footage\nwith precise spatial annotations remains a bottleneck. To alleviate this\nbottleneck, we present SIMS-V -- a systematic data-generation framework that\nleverages the privileged information of3D simulatorsto create spatially-richvideo training dataformultimodal language models. Using this framework, we\ninvestigate which properties of simulated data drive effective real-world\ntransfer throughsystematic ablationsofquestion types, mixes, and scales. We\nidentify a minimal set of three question categories (metric measurement,perspective-dependent reasoning, andtemporal tracking) that prove most\neffective for developing transferable spatial intelligence, outperforming\ncomprehensive coverage despite using fewerquestion types. These insights\nenable highly efficient training: our 7B-parametervideo LLMfine-tuned on just\n25K simulated examples outperforms the larger 72B baseline and achieves\ncompetitive performance with proprietary models on rigorous real-world spatial\nreasoning benchmarks. Our approach demonstrates robust generalization,\nmaintaining performance on general video understanding while showing\nsubstantial improvements on embodied and real-world spatial tasks. https://ellisbrown.github.io/sims-v/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "SIMS-V: Simulated Instruction-Tuning for Spatial Video Understanding",
+        "authors": [
+            "Ellis Brown",
+            "Arijit Ray",
+            "Saining Xie"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2511.04668",
+        "upvote": 4
+    }
 }

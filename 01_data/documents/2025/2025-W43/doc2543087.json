@@ -1,14 +1,13 @@
 {
-  "context": "LayerComposer provides interactive control over spatial composition and scalability in multi-subject text-to-image generation through a layered canvas and locking mechanism. Despite their impressive visual fidelity, existing personalized generative\nmodels lack interactive control over spatial composition and scale poorly to\nmultiple subjects. To address these limitations, we present LayerComposer, an\ninteractive framework for personalized, multi-subjecttext-to-image generation.\nOur approach introduces two main contributions: (1) alayered canvas, a novel\nrepresentation in which each subject is placed on a distinct layer, enabling\nocclusion-free composition; and (2) alocking mechanismthat preserves selected\nlayers with high fidelity while allowing the remaining layers to adapt flexibly\nto the surrounding context. Similar to professional image-editing software, the\nproposedlayered canvasallows users to place, resize, or lock input subjects\nthrough intuitive layer manipulation. Our versatilelocking mechanismrequires\nno architectural changes, relying instead on inherentpositional embeddingscombined with a new complementarydata sampling strategy. Extensive experiments\ndemonstrate that LayerComposer achieves superiorspatial controland identity\npreservation compared to the state-of-the-art methods in multi-subject\npersonalized image generation. LayerComposerintroduces an interactive, Photoshop-like text-to-image generation framework that lets users place, resize, and lock multiple personalized subjects on separate layers, enabling scalable, high-fidelity, and spatially controlled multi-subject image synthesis. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "LayerComposer: Interactive Personalized T2I via Spatially-Aware Layered\n  Canvas",
-    "authors": [
-      "Yusuf Dalva"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.20820",
-    "upvote": 9,
-    "tags": []
-  }
+    "context": "LayerComposer provides interactive control over spatial composition and scalability in multi-subject text-to-image generation through a layered canvas and locking mechanism. Despite their impressive visual fidelity, existing personalized generative\nmodels lack interactive control over spatial composition and scale poorly to\nmultiple subjects. To address these limitations, we present LayerComposer, an\ninteractive framework for personalized, multi-subjecttext-to-image generation.\nOur approach introduces two main contributions: (1) alayered canvas, a novel\nrepresentation in which each subject is placed on a distinct layer, enabling\nocclusion-free composition; and (2) alocking mechanismthat preserves selected\nlayers with high fidelity while allowing the remaining layers to adapt flexibly\nto the surrounding context. Similar to professional image-editing software, the\nproposedlayered canvasallows users to place, resize, or lock input subjects\nthrough intuitive layer manipulation. Our versatilelocking mechanismrequires\nno architectural changes, relying instead on inherentpositional embeddingscombined with a new complementarydata sampling strategy. Extensive experiments\ndemonstrate that LayerComposer achieves superiorspatial controland identity\npreservation compared to the state-of-the-art methods in multi-subject\npersonalized image generation. LayerComposerintroduces an interactive, Photoshop-like text-to-image generation framework that lets users place, resize, and lock multiple personalized subjects on separate layers, enabling scalable, high-fidelity, and spatially controlled multi-subject image synthesis. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "LayerComposer: Interactive Personalized T2I via Spatially-Aware Layered\n  Canvas",
+        "authors": [
+            "Yusuf Dalva"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.20820",
+        "upvote": 9
+    }
 }

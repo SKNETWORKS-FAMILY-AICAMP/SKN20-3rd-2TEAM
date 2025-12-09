@@ -1,19 +1,18 @@
 {
-  "context": "MUSE, a novel agent framework with a hierarchical Memory Module, enables continuous learning and self-evolution, achieving state-of-the-art performance on long-horizon productivity tasks using a lightweight model. Large Language Modelshave demonstrated remarkable capabilities across\ndiverse domains, yet significant challenges persist when deploying them as AI\nagents for real-worldlong-horizon tasks. ExistingLLM agentssuffer from a\ncritical limitation: they are test-time static and cannot learn from\nexperience, lacking the ability to accumulate knowledge and continuously\nimprove on the job. To address this challenge, we propose MUSE, a novel agent\nframework that introduces anexperience-driven,self-evolving systemcentered\naround ahierarchical Memory Module. MUSE organizes diverse levels of\nexperience and leverages them to plan and executelong-horizon tasksacross\nmultiple applications. After each sub-task execution, the agent autonomously\nreflects on its trajectory, converting the raw trajectory into structured\nexperience and integrating it back into the Memory Module. This mechanism\nenables the agent to evolve beyond its static pretrained parameters, fosteringcontinuous learningandself-evolution. We evaluate MUSE on the long-horizon\nproductivity benchmark TAC. It achieves new SOTA performance by a significant\nmargin using only a lightweightGemini-2.5 Flash model. Sufficient Experiments\ndemonstrate that as the agent autonomously accumulates experience, it exhibits\nincreasingly superior task completion capabilities, as well as robustcontinuous learningandself-evolutioncapabilities. Moreover, the accumulated\nexperience from MUSE exhibits strong generalization properties, enablingzero-shot improvementon new tasks. MUSE establishes a new paradigm for AI\nagents capable of real-world productivity task automation. We built a self-improving agent that can continuously evolve by reflecting on past execution trajectories and learning from experience. It achieved SOTA and showed increasing performance on long-horizon productivity benchmark TAC. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Learning on the Job: An Experience-Driven Self-Evolving Agent for\n  Long-Horizon Tasks",
-    "authors": [
-      "Cheng Yang",
-      "Xuemeng Yang",
-      "Licheng Wen",
-      "Daocheng Fu",
-      "Jianbiao Mei",
-      "Yufan Shen"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.08002",
-    "upvote": 23,
-    "tags": []
-  }
+    "context": "MUSE, a novel agent framework with a hierarchical Memory Module, enables continuous learning and self-evolution, achieving state-of-the-art performance on long-horizon productivity tasks using a lightweight model. Large Language Modelshave demonstrated remarkable capabilities across\ndiverse domains, yet significant challenges persist when deploying them as AI\nagents for real-worldlong-horizon tasks. ExistingLLM agentssuffer from a\ncritical limitation: they are test-time static and cannot learn from\nexperience, lacking the ability to accumulate knowledge and continuously\nimprove on the job. To address this challenge, we propose MUSE, a novel agent\nframework that introduces anexperience-driven,self-evolving systemcentered\naround ahierarchical Memory Module. MUSE organizes diverse levels of\nexperience and leverages them to plan and executelong-horizon tasksacross\nmultiple applications. After each sub-task execution, the agent autonomously\nreflects on its trajectory, converting the raw trajectory into structured\nexperience and integrating it back into the Memory Module. This mechanism\nenables the agent to evolve beyond its static pretrained parameters, fosteringcontinuous learningandself-evolution. We evaluate MUSE on the long-horizon\nproductivity benchmark TAC. It achieves new SOTA performance by a significant\nmargin using only a lightweightGemini-2.5 Flash model. Sufficient Experiments\ndemonstrate that as the agent autonomously accumulates experience, it exhibits\nincreasingly superior task completion capabilities, as well as robustcontinuous learningandself-evolutioncapabilities. Moreover, the accumulated\nexperience from MUSE exhibits strong generalization properties, enablingzero-shot improvementon new tasks. MUSE establishes a new paradigm for AI\nagents capable of real-world productivity task automation. We built a self-improving agent that can continuously evolve by reflecting on past execution trajectories and learning from experience. It achieved SOTA and showed increasing performance on long-horizon productivity benchmark TAC. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Learning on the Job: An Experience-Driven Self-Evolving Agent for\n  Long-Horizon Tasks",
+        "authors": [
+            "Cheng Yang",
+            "Xuemeng Yang",
+            "Licheng Wen",
+            "Daocheng Fu",
+            "Jianbiao Mei",
+            "Yufan Shen"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.08002",
+        "upvote": 23
+    }
 }

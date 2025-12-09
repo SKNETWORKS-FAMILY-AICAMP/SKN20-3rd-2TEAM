@@ -1,17 +1,16 @@
 {
-  "context": "A unified framework, A$^2$FM, combines reasoning and agentic capabilities in large language models, improving efficiency and accuracy across benchmarks by adaptively routing queries and optimizing policy. Large language models split into two families:reasoning-centric LLMs, which\nstrengthen internal chain-of-thought reasoning but cannot invoke external\ntools, andagentic LLMs, which learn to interact with environments and leverage\ntools but often lag in deep reasoning. This divide arises from fundamentally\ndifferent training objectives, leading to mismatched strengths and inefficiency\non simple queries, where both families tend to overthink or over-call tools. In\nthis work, we present Adaptive Agent Foundation Model (A^2FM), a unified\nframework that follows a route-then-align principle: the model first learnstask-aware routingand then alignsmode-specific trajectoriesunder a shared\nbackbone. To address the inefficiency gap, we introduce a third\nmode-instant-that handles simple queries directly, preventing unnecessary\nreasoning or tool calls while complementing the agentic and reasoning modes. To\njointly enhance accuracy and efficiency, we propose Adaptive Policy\nOptimization (APO), which enforces adaptive sampling across modes and applies acost-regularized reward. On the 32B scale, A^2FM achieves 13.4% onBrowseComp, 70.4% onAIME25, and 16.7% onHLE, setting newSOTAamong\ncomparable models and performing competitively with frontier LLMs across\nagentic, reasoning, and general benchmarks. Notably, theadaptive executionachieves a cost of pass of only $0.00487 per correct answer-cutting cost by\n45.2% relative to reasoning and 33.5% relative to agentic, thus delivering\nsubstantially higher cost efficiency while maintaining comparable accuracy.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Thanks, very interesting ·Sign uporlog into comment",
-  "metadata": {
-    "title": "A^2FM: An Adaptive Agent Foundation Model for Tool-Aware Hybrid\n  Reasoning",
-    "authors": [
-      "Tianrui Qin",
-      "King Zhu",
-      "Minghao Liu",
-      "Ge Zhang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/OPPO-PersonalAI/Adaptive_Agent_Foundation_Models",
-    "huggingface_url": "https://huggingface.co/papers/2510.12838",
-    "upvote": 24,
-    "tags": []
-  }
+    "context": "A unified framework, A$^2$FM, combines reasoning and agentic capabilities in large language models, improving efficiency and accuracy across benchmarks by adaptively routing queries and optimizing policy. Large language models split into two families:reasoning-centric LLMs, which\nstrengthen internal chain-of-thought reasoning but cannot invoke external\ntools, andagentic LLMs, which learn to interact with environments and leverage\ntools but often lag in deep reasoning. This divide arises from fundamentally\ndifferent training objectives, leading to mismatched strengths and inefficiency\non simple queries, where both families tend to overthink or over-call tools. In\nthis work, we present Adaptive Agent Foundation Model (A^2FM), a unified\nframework that follows a route-then-align principle: the model first learnstask-aware routingand then alignsmode-specific trajectoriesunder a shared\nbackbone. To address the inefficiency gap, we introduce a third\nmode-instant-that handles simple queries directly, preventing unnecessary\nreasoning or tool calls while complementing the agentic and reasoning modes. To\njointly enhance accuracy and efficiency, we propose Adaptive Policy\nOptimization (APO), which enforces adaptive sampling across modes and applies acost-regularized reward. On the 32B scale, A^2FM achieves 13.4% onBrowseComp, 70.4% onAIME25, and 16.7% onHLE, setting newSOTAamong\ncomparable models and performing competitively with frontier LLMs across\nagentic, reasoning, and general benchmarks. Notably, theadaptive executionachieves a cost of pass of only $0.00487 per correct answer-cutting cost by\n45.2% relative to reasoning and 33.5% relative to agentic, thus delivering\nsubstantially higher cost efficiency while maintaining comparable accuracy.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Thanks, very interesting ·Sign uporlog into comment",
+    "metadata": {
+        "title": "A^2FM: An Adaptive Agent Foundation Model for Tool-Aware Hybrid\n  Reasoning",
+        "authors": [
+            "Tianrui Qin",
+            "King Zhu",
+            "Minghao Liu",
+            "Ge Zhang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/OPPO-PersonalAI/Adaptive_Agent_Foundation_Models",
+        "huggingface_url": "https://huggingface.co/papers/2510.12838",
+        "upvote": 24
+    }
 }

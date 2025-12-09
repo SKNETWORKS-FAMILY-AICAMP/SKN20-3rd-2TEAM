@@ -1,15 +1,14 @@
 {
-  "context": "RLEV, a reinforcement learning method, aligns LLM optimization with human value signals, improving value-weighted accuracy and learning value-sensitive termination policies. We proposeReinforcement Learning with Explicit Human Values (RLEV), a method\nthat alignsLarge Language Model (LLM)optimization directly with quantifiable\nhumanvalue signals. While Reinforcement Learning with Verifiable Rewards\n(RLVR) effectively trains models in objective domains using binary correctness\nrewards, it overlooks that not all tasks are equally significant. RLEV extends\nthis framework by incorporating human-definedvalue signalsdirectly into thereward function. Usingexam-style datawith explicit ground-truth value labels,\nRLEV consistently outperforms correctness-only baselines across multiple RL\nalgorithms and model scales. Crucially, RLEV policies not only improvevalue-weighted accuracybut also learn avalue-sensitive termination policy:\nconcise for low-value prompts, thorough for high-value ones. We demonstrate\nthis behavior stems from value-weightedgradient amplificationonend-of-sequence tokens.Ablation studiesconfirm the gain is causally linked tovalue alignment. RLEV remains robust undernoisy value signals, such as\ndifficulty-based labels, demonstrating that optimizing for an explicit utility\nfunction offers a practical path to aligning LLMs with human priorities. We propose Reinforcement Learning with Explicit Human Values (RLEV), a method that aligns Large Language Model (LLM) optimization directly with quantifiable human value signals. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Every Question Has Its Own Value: Reinforcement Learning with Explicit\n  Human Values",
-    "authors": [
-      "Yulai Zhao",
-      "Kishan Panaganti"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.20187",
-    "upvote": 18,
-    "tags": []
-  }
+    "context": "RLEV, a reinforcement learning method, aligns LLM optimization with human value signals, improving value-weighted accuracy and learning value-sensitive termination policies. We proposeReinforcement Learning with Explicit Human Values (RLEV), a method\nthat alignsLarge Language Model (LLM)optimization directly with quantifiable\nhumanvalue signals. While Reinforcement Learning with Verifiable Rewards\n(RLVR) effectively trains models in objective domains using binary correctness\nrewards, it overlooks that not all tasks are equally significant. RLEV extends\nthis framework by incorporating human-definedvalue signalsdirectly into thereward function. Usingexam-style datawith explicit ground-truth value labels,\nRLEV consistently outperforms correctness-only baselines across multiple RL\nalgorithms and model scales. Crucially, RLEV policies not only improvevalue-weighted accuracybut also learn avalue-sensitive termination policy:\nconcise for low-value prompts, thorough for high-value ones. We demonstrate\nthis behavior stems from value-weightedgradient amplificationonend-of-sequence tokens.Ablation studiesconfirm the gain is causally linked tovalue alignment. RLEV remains robust undernoisy value signals, such as\ndifficulty-based labels, demonstrating that optimizing for an explicit utility\nfunction offers a practical path to aligning LLMs with human priorities. We propose Reinforcement Learning with Explicit Human Values (RLEV), a method that aligns Large Language Model (LLM) optimization directly with quantifiable human value signals. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Every Question Has Its Own Value: Reinforcement Learning with Explicit\n  Human Values",
+        "authors": [
+            "Yulai Zhao",
+            "Kishan Panaganti"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.20187",
+        "upvote": 18
+    }
 }

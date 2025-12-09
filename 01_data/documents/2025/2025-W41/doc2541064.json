@@ -1,14 +1,13 @@
 {
-  "context": "Native end-to-end training of Multimodal Large Language Models (MLLMs) achieves competitive performance with a balanced design and scaling relationship between visual encoders and LLMs. Compositional traininghas been the de-facto paradigm in existing Multimodal\nLarge Language Models (MLLMs), where pre-trained vision encoders are connected\nwith pre-trainedLLMsthroughcontinuous multimodal pre-training. However, the\nmultimodalscaling propertyof this paradigm remains difficult to explore due\nto the separated training. In this paper, we focus on the native training of\nMLLMsin an end-to-end manner and systematically study its design space andscaling propertyunder a practical setting, i.e., data constraint. Through\ncareful study of various choices in MLLM, we obtain the optimalmeta-architecturethat best balances performance and training cost. After that,\nwe further explore the scaling properties of the native MLLM and indicate the\npositively correlated scaling relationship betweenvisual encodersandLLMs.\nBased on these findings, we propose a native MLLM calledNaViL, combined with a\nsimple and cost-effective recipe. Experimental results on 14 multimodal\nbenchmarks confirm the competitive performance ofNaViLagainst existing MLLMs.\nBesides that, our findings and results provide in-depth insights for the future\nstudy of native MLLMs. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "NaViL: Rethinking Scaling Properties of Native Multimodal Large Language\n  Models under Data Constraints",
-    "authors": [
-      "Changyao Tian"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/OpenGVLab/NaViL",
-    "huggingface_url": "https://huggingface.co/papers/2510.08565",
-    "upvote": 19,
-    "tags": []
-  }
+    "context": "Native end-to-end training of Multimodal Large Language Models (MLLMs) achieves competitive performance with a balanced design and scaling relationship between visual encoders and LLMs. Compositional traininghas been the de-facto paradigm in existing Multimodal\nLarge Language Models (MLLMs), where pre-trained vision encoders are connected\nwith pre-trainedLLMsthroughcontinuous multimodal pre-training. However, the\nmultimodalscaling propertyof this paradigm remains difficult to explore due\nto the separated training. In this paper, we focus on the native training of\nMLLMsin an end-to-end manner and systematically study its design space andscaling propertyunder a practical setting, i.e., data constraint. Through\ncareful study of various choices in MLLM, we obtain the optimalmeta-architecturethat best balances performance and training cost. After that,\nwe further explore the scaling properties of the native MLLM and indicate the\npositively correlated scaling relationship betweenvisual encodersandLLMs.\nBased on these findings, we propose a native MLLM calledNaViL, combined with a\nsimple and cost-effective recipe. Experimental results on 14 multimodal\nbenchmarks confirm the competitive performance ofNaViLagainst existing MLLMs.\nBesides that, our findings and results provide in-depth insights for the future\nstudy of native MLLMs. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "NaViL: Rethinking Scaling Properties of Native Multimodal Large Language\n  Models under Data Constraints",
+        "authors": [
+            "Changyao Tian"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/OpenGVLab/NaViL",
+        "huggingface_url": "https://huggingface.co/papers/2510.08565",
+        "upvote": 19
+    }
 }

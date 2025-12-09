@@ -1,14 +1,13 @@
 {
-  "context": "A new dataset and model for document layout generation address the scarcity of diverse layouts and improve performance across multiple domains. Document AI has advanced rapidly and is attracting increasing attention. Yet,\nwhile most efforts have focused ondocument layout analysis(DLA), its\ngenerative counterpart,document layout generation, remains underexplored. A\nmajor obstacle lies in the scarcity of diverse layouts: academic papers with\nManhattan-style structures dominate existing studies, while open-world genres\nsuch as newspapers and magazines remain severely underrepresented. To address\nthis gap, we curateOmniLayout-1M, the first million-scale dataset of diverse\ndocument layouts, covering six common document types and comprising\ncontemporary layouts collected from multiple sources. Moreover, since existing\nmethods struggle in complex domains and often fail to arrange long sequences\ncoherently, we introduceOmniLayout-LLM, a 0.5B model with designed two-stageCoarse-to-Fine learningparadigm: 1) learning universal layout principles fromOmniLayout-1Mwith coarse category definitions, and 2) transferring the\nknowledge to a specific domain with fine-grained annotations. Extensive\nexperiments demonstrate that our approach achieves strong performance on\nmultiple domains in M^{6}Doc dataset, substantially surpassing both existing\nlayout generation experts and several latest general-purpose LLMs. Our code,\nmodels, and dataset will be publicly released. ·Sign uporlog into comment",
-  "metadata": {
-    "title": "OmniLayout: Enabling Coarse-to-Fine Learning with LLMs for Universal\n  Document Layout Generation",
-    "authors": [
-      "Hengrui Kang"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.26213",
-    "upvote": 9,
-    "tags": []
-  }
+    "context": "A new dataset and model for document layout generation address the scarcity of diverse layouts and improve performance across multiple domains. Document AI has advanced rapidly and is attracting increasing attention. Yet,\nwhile most efforts have focused ondocument layout analysis(DLA), its\ngenerative counterpart,document layout generation, remains underexplored. A\nmajor obstacle lies in the scarcity of diverse layouts: academic papers with\nManhattan-style structures dominate existing studies, while open-world genres\nsuch as newspapers and magazines remain severely underrepresented. To address\nthis gap, we curateOmniLayout-1M, the first million-scale dataset of diverse\ndocument layouts, covering six common document types and comprising\ncontemporary layouts collected from multiple sources. Moreover, since existing\nmethods struggle in complex domains and often fail to arrange long sequences\ncoherently, we introduceOmniLayout-LLM, a 0.5B model with designed two-stageCoarse-to-Fine learningparadigm: 1) learning universal layout principles fromOmniLayout-1Mwith coarse category definitions, and 2) transferring the\nknowledge to a specific domain with fine-grained annotations. Extensive\nexperiments demonstrate that our approach achieves strong performance on\nmultiple domains in M^{6}Doc dataset, substantially surpassing both existing\nlayout generation experts and several latest general-purpose LLMs. Our code,\nmodels, and dataset will be publicly released. ·Sign uporlog into comment",
+    "metadata": {
+        "title": "OmniLayout: Enabling Coarse-to-Fine Learning with LLMs for Universal\n  Document Layout Generation",
+        "authors": [
+            "Hengrui Kang"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.26213",
+        "upvote": 9
+    }
 }

@@ -1,15 +1,14 @@
 {
-  "context": "SAFE, a selective ensembling framework for large language models, improves long-form generation by considering tokenization mismatch and consensus in probability distributions, leading to better accuracy and efficiency. EnsemblingLarge Language Models (LLMs)has gained attention as a promising\napproach to surpass the performance of individual models by leveraging their\ncomplementary strengths. In particular, aggregating models' next-token\nprobability distributions to select the next token has been shown to be\neffective in various tasks. However, while successful for short-form answers,\nits application tolong-form generationremains underexplored. In this paper,\nwe show that using existing ensemble methods inlong-form generationrequires a\ncareful choice ofensemblingpositions, since the standard practice ofensemblingat every token often degrades performance. We identify two key\nfactors for determining these positions:tokenization mismatchacross models\nandconsensusin theirnext-token probability distributions. Based on this, we\npropose SAFE, (Stable And Fast LLMEnsembling), a framework that selectively\nensembles by jointly considering these factors. To further improve stability,\nwe introduce aprobability sharpeningstrategy that consolidates probabilities\nspread across multiple sub-word tokens representing the same word into a single\nrepresentative token. Our experiments on diverse benchmarks, includingMATH500andBBH, demonstrate that SAFE outperforms existing methods in both accuracy\nand efficiency, with gains achieved even whenensemblingfewer than 1% of\ntokens. We propose a novel LLM ensemble framework that identifies the appropriate token-level points for applying ensembling, thereby improving both accuracy and efficiency in LLM collaboration. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "When to Ensemble: Identifying Token-Level Points for Stable and Fast LLM\n  Ensembling",
-    "authors": [
-      "Heecheol Yun",
-      "Kwangmin Ki"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.15346",
-    "upvote": 33,
-    "tags": []
-  }
+    "context": "SAFE, a selective ensembling framework for large language models, improves long-form generation by considering tokenization mismatch and consensus in probability distributions, leading to better accuracy and efficiency. EnsemblingLarge Language Models (LLMs)has gained attention as a promising\napproach to surpass the performance of individual models by leveraging their\ncomplementary strengths. In particular, aggregating models' next-token\nprobability distributions to select the next token has been shown to be\neffective in various tasks. However, while successful for short-form answers,\nits application tolong-form generationremains underexplored. In this paper,\nwe show that using existing ensemble methods inlong-form generationrequires a\ncareful choice ofensemblingpositions, since the standard practice ofensemblingat every token often degrades performance. We identify two key\nfactors for determining these positions:tokenization mismatchacross models\nandconsensusin theirnext-token probability distributions. Based on this, we\npropose SAFE, (Stable And Fast LLMEnsembling), a framework that selectively\nensembles by jointly considering these factors. To further improve stability,\nwe introduce aprobability sharpeningstrategy that consolidates probabilities\nspread across multiple sub-word tokens representing the same word into a single\nrepresentative token. Our experiments on diverse benchmarks, includingMATH500andBBH, demonstrate that SAFE outperforms existing methods in both accuracy\nand efficiency, with gains achieved even whenensemblingfewer than 1% of\ntokens. We propose a novel LLM ensemble framework that identifies the appropriate token-level points for applying ensembling, thereby improving both accuracy and efficiency in LLM collaboration. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "When to Ensemble: Identifying Token-Level Points for Stable and Fast LLM\n  Ensembling",
+        "authors": [
+            "Heecheol Yun",
+            "Kwangmin Ki"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.15346",
+        "upvote": 33
+    }
 }

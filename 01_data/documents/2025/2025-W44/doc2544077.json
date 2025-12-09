@@ -1,16 +1,15 @@
 {
-  "context": "SPICE, a reinforcement learning framework, uses self-play in a corpus environment to continuously improve a model's reasoning capabilities through adversarial dynamics and document grounding. Self-improving systems require environmental interaction for continuous\nadaptation. We introduce SPICE (Self-PlayIn Corpus Environments), areinforcement learningframework where a single model acts in two roles: aChallengerthat mines documents from a large corpus to generate diverse\nreasoning tasks, and aReasonerthat solves them. Throughadversarial dynamics,\ntheChallengercreates anautomatic curriculumat the frontier of theReasoner's capability, whilecorpus groundingprovides the rich,\nnear-inexhaustible external signal necessary for sustained improvement. Unlike\nexisting ungroundedself-playmethods that offer more limited benefits, SPICE\nachieves consistent gains across mathematical (+8.9%) and general reasoning\n(+9.8%) benchmarks on multiplemodel families. Our analysis reveals how\ndocument grounding is a key ingredient in SPICE to continuously generate its\nown increasingly challenging goals and achieve them, enabling sustainedself-improvement. Self-improving systems require environmental interaction for continuous adaptation. We introduce SPICE (Self-Play In Corpus Environments), a reinforcement learning framework where a single model acts in two roles: a Challenger that mines documents from a large corpus to generate diverse reasoning tasks, and a Reasoner that solves them. Through adversarial dynamics, the Challenger creates an automatic curriculum at the frontier of the Reasoner's capability, while corpus grounding provides the rich, near-inexhaustible external signal necessary for sustained improvement. Unlike existing ungrounded self-play methods that offer more limited benefits, SPICE achieves consistent gains across mathematical (+8.9%) and general reasoning (+9.8%) benchmarks on multiple model families. Our analysis reveals how document grounding is a key ingredient in SPICE to continuously generate its own increasingly challenging goals and achieve them, enabling sustained self-improvement. ·Sign uporlog into comment",
-  "metadata": {
-    "title": "SPICE: Self-Play In Corpus Environments Improves Reasoning",
-    "authors": [
-      "Bo Liu",
-      "Chuanyang Jin",
-      "Jack Lanchantin"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.24684",
-    "upvote": 15,
-    "tags": []
-  }
+    "context": "SPICE, a reinforcement learning framework, uses self-play in a corpus environment to continuously improve a model's reasoning capabilities through adversarial dynamics and document grounding. Self-improving systems require environmental interaction for continuous\nadaptation. We introduce SPICE (Self-PlayIn Corpus Environments), areinforcement learningframework where a single model acts in two roles: aChallengerthat mines documents from a large corpus to generate diverse\nreasoning tasks, and aReasonerthat solves them. Throughadversarial dynamics,\ntheChallengercreates anautomatic curriculumat the frontier of theReasoner's capability, whilecorpus groundingprovides the rich,\nnear-inexhaustible external signal necessary for sustained improvement. Unlike\nexisting ungroundedself-playmethods that offer more limited benefits, SPICE\nachieves consistent gains across mathematical (+8.9%) and general reasoning\n(+9.8%) benchmarks on multiplemodel families. Our analysis reveals how\ndocument grounding is a key ingredient in SPICE to continuously generate its\nown increasingly challenging goals and achieve them, enabling sustainedself-improvement. Self-improving systems require environmental interaction for continuous adaptation. We introduce SPICE (Self-Play In Corpus Environments), a reinforcement learning framework where a single model acts in two roles: a Challenger that mines documents from a large corpus to generate diverse reasoning tasks, and a Reasoner that solves them. Through adversarial dynamics, the Challenger creates an automatic curriculum at the frontier of the Reasoner's capability, while corpus grounding provides the rich, near-inexhaustible external signal necessary for sustained improvement. Unlike existing ungrounded self-play methods that offer more limited benefits, SPICE achieves consistent gains across mathematical (+8.9%) and general reasoning (+9.8%) benchmarks on multiple model families. Our analysis reveals how document grounding is a key ingredient in SPICE to continuously generate its own increasingly challenging goals and achieve them, enabling sustained self-improvement. ·Sign uporlog into comment",
+    "metadata": {
+        "title": "SPICE: Self-Play In Corpus Environments Improves Reasoning",
+        "authors": [
+            "Bo Liu",
+            "Chuanyang Jin",
+            "Jack Lanchantin"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.24684",
+        "upvote": 15
+    }
 }

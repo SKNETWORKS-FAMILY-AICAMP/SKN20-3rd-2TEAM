@@ -1,16 +1,15 @@
 {
-  "context": "Quantile Advantage Estimation stabilizes reinforcement learning with verifiable rewards by addressing entropy issues and improving performance on large language models. Reinforcement Learning with Verifiable Rewards(RLVR) strengthens LLM\nreasoning, but training often oscillates between {entropy collapse} and\n{entropy explosion}. We trace both hazards to the mean baseline used invalue-free RL(e.g.,GRPOandDAPO), which improperly penalizes\nnegative-advantage samples under reward outliers. We propose {Quantile\nAdvantage Estimation} (QAE), replacing the mean with a group-wise K-quantile\nbaseline. QAE induces a response-level, two-regime gate: on hard queries (p <=\n1 - K) it reinforces rare successes, while on easy queries (p > 1 - K) it\ntargets remaining failures. Under first-order softmax updates, we prove\n{two-sided entropy safety}, giving lower and upper bounds on one-step entropy\nchange that curb explosion and prevent collapse. Empirically, this minimal\nmodification stabilizes entropy, sparsifies credit assignment (with tuned K,\nroughly 80% of responses receive zero advantage), and yields sustainedpass@1gains on Qwen3-8B/14B-Base acrossAIME2024/2025 andAMC2023. These results\nidentify {baseline design} -- rather than token-level heuristics -- as the\nprimary mechanism for scaling RLVR. Problem.In value-free RL for LLM reasoning (e.g., GRPO/DAPO), training often oscillates betweenentropy explosion(over-random updates driven by negative advantages) andentropy collapse(premature determinism), hurting scaling. Observation.Thegroup meanbaseline is brittle under reward outliers: it inflates the baseline and turns many plausible responses intonegative advantage, amplifying instability. Method (QAE).Replace the mean with aK-quantilebaseline per query group. This induces atwo-regime gate: A single (K) controls how many responses receivenon-zero advantage, balancing exploration/exploitation and yieldingtwo-sided entropy safetyunder first-order softmax updates.    This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Quantile Advantage Estimation for Entropy-Safe Reasoning",
-    "authors": [
-      "Junkang Wu",
-      "Kexin Huang",
-      "Xiang Wang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/junkangwu/QAE",
-    "huggingface_url": "https://huggingface.co/papers/2509.22611",
-    "upvote": 118,
-    "tags": []
-  }
+    "context": "Quantile Advantage Estimation stabilizes reinforcement learning with verifiable rewards by addressing entropy issues and improving performance on large language models. Reinforcement Learning with Verifiable Rewards(RLVR) strengthens LLM\nreasoning, but training often oscillates between {entropy collapse} and\n{entropy explosion}. We trace both hazards to the mean baseline used invalue-free RL(e.g.,GRPOandDAPO), which improperly penalizes\nnegative-advantage samples under reward outliers. We propose {Quantile\nAdvantage Estimation} (QAE), replacing the mean with a group-wise K-quantile\nbaseline. QAE induces a response-level, two-regime gate: on hard queries (p <=\n1 - K) it reinforces rare successes, while on easy queries (p > 1 - K) it\ntargets remaining failures. Under first-order softmax updates, we prove\n{two-sided entropy safety}, giving lower and upper bounds on one-step entropy\nchange that curb explosion and prevent collapse. Empirically, this minimal\nmodification stabilizes entropy, sparsifies credit assignment (with tuned K,\nroughly 80% of responses receive zero advantage), and yields sustainedpass@1gains on Qwen3-8B/14B-Base acrossAIME2024/2025 andAMC2023. These results\nidentify {baseline design} -- rather than token-level heuristics -- as the\nprimary mechanism for scaling RLVR. Problem.In value-free RL for LLM reasoning (e.g., GRPO/DAPO), training often oscillates betweenentropy explosion(over-random updates driven by negative advantages) andentropy collapse(premature determinism), hurting scaling. Observation.Thegroup meanbaseline is brittle under reward outliers: it inflates the baseline and turns many plausible responses intonegative advantage, amplifying instability. Method (QAE).Replace the mean with aK-quantilebaseline per query group. This induces atwo-regime gate: A single (K) controls how many responses receivenon-zero advantage, balancing exploration/exploitation and yieldingtwo-sided entropy safetyunder first-order softmax updates.    This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Quantile Advantage Estimation for Entropy-Safe Reasoning",
+        "authors": [
+            "Junkang Wu",
+            "Kexin Huang",
+            "Xiang Wang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/junkangwu/QAE",
+        "huggingface_url": "https://huggingface.co/papers/2509.22611",
+        "upvote": 118
+    }
 }

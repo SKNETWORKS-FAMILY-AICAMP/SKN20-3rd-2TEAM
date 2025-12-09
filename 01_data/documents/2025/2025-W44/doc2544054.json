@@ -1,17 +1,16 @@
 {
-  "context": "A ZPD-guided data synthesis approach enhances large language model capabilities by training them on frontier tasks with automated guidance, achieving state-of-the-art results. Training large language model agents on tasks at the frontier of their\ncapabilities is key to unlocking advanced reasoning. We introduce a data\nsynthesis approach inspired by the educational theory of the Zone of Proximal\nDevelopment (ZPD), which defines this frontier as tasks an LLM cannot solve\nalone but can master with guidance. To operationalize this, we present theAgentFrontier Engine, an automated pipeline that synthesizeshigh-quality,multidisciplinary datasituated precisely within the LLM's ZPD. This engine\nsupports bothcontinued pre-trainingwith knowledge-intensive data and targeted\npost-training oncomplex reasoning tasks. From the same framework, we derive\ntheZPD Exam, a dynamic and automated benchmark designed to evaluate agent\ncapabilities on these frontier tasks. We trainAgentFrontier-30B-A3Bmodel on\nour synthesized data, which achieves state-of-the-art results on demanding\nbenchmarks likeHumanity's Last Exam, even surpassing some leading proprietary\nagents. Our work demonstrates that a ZPD-guided approach to data synthesis\noffers a scalable and effective path toward building more capable LLM agents. Training large language model agents on tasks at the frontier of their capabilities is key to unlocking advanced reasoning. We introduce a data synthesis approach inspired by the educational theory of the Zone of Proximal Development (ZPD), which defines this frontier as tasks an LLM cannot solve alone but can master with guidance. To operationalize this, we present the AgentFrontier Engine, an automated pipeline that synthesizes high-quality, multidisciplinary data situated precisely within the LLM's ZPD. This engine supports both continued pre-training with knowledge-intensive data and targeted post-training on complex reasoning tasks. From the same framework, we derive the ZPD Exam, a dynamic and automated benchmark designed to evaluate agent capabilities on these frontier tasks. We train AgentFrontier-30B-A3B model on our synthesized data, which achieves state-of-the-art results on demanding benchmarks like Humanity's Last Exam, even surpassing some leading proprietary agents. Our work demonstrates that a ZPD-guided approach to data synthesis offers a scalable and effective path toward building more capable LLM agents. Check our projects athttps://github.com/Alibaba-NLP/DeepResearch ·Sign uporlog into comment",
-  "metadata": {
-    "title": "AgentFrontier: Expanding the Capability Frontier of LLM Agents with\n  ZPD-Guided Data Synthesis",
-    "authors": [
-      "Xuanzhong Chen",
-      "Guoxin Chen",
-      "Liangcai Su",
-      "Xinyu Wang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/Alibaba-NLP/DeepResearch",
-    "huggingface_url": "https://huggingface.co/papers/2510.24695",
-    "upvote": 22,
-    "tags": []
-  }
+    "context": "A ZPD-guided data synthesis approach enhances large language model capabilities by training them on frontier tasks with automated guidance, achieving state-of-the-art results. Training large language model agents on tasks at the frontier of their\ncapabilities is key to unlocking advanced reasoning. We introduce a data\nsynthesis approach inspired by the educational theory of the Zone of Proximal\nDevelopment (ZPD), which defines this frontier as tasks an LLM cannot solve\nalone but can master with guidance. To operationalize this, we present theAgentFrontier Engine, an automated pipeline that synthesizeshigh-quality,multidisciplinary datasituated precisely within the LLM's ZPD. This engine\nsupports bothcontinued pre-trainingwith knowledge-intensive data and targeted\npost-training oncomplex reasoning tasks. From the same framework, we derive\ntheZPD Exam, a dynamic and automated benchmark designed to evaluate agent\ncapabilities on these frontier tasks. We trainAgentFrontier-30B-A3Bmodel on\nour synthesized data, which achieves state-of-the-art results on demanding\nbenchmarks likeHumanity's Last Exam, even surpassing some leading proprietary\nagents. Our work demonstrates that a ZPD-guided approach to data synthesis\noffers a scalable and effective path toward building more capable LLM agents. Training large language model agents on tasks at the frontier of their capabilities is key to unlocking advanced reasoning. We introduce a data synthesis approach inspired by the educational theory of the Zone of Proximal Development (ZPD), which defines this frontier as tasks an LLM cannot solve alone but can master with guidance. To operationalize this, we present the AgentFrontier Engine, an automated pipeline that synthesizes high-quality, multidisciplinary data situated precisely within the LLM's ZPD. This engine supports both continued pre-training with knowledge-intensive data and targeted post-training on complex reasoning tasks. From the same framework, we derive the ZPD Exam, a dynamic and automated benchmark designed to evaluate agent capabilities on these frontier tasks. We train AgentFrontier-30B-A3B model on our synthesized data, which achieves state-of-the-art results on demanding benchmarks like Humanity's Last Exam, even surpassing some leading proprietary agents. Our work demonstrates that a ZPD-guided approach to data synthesis offers a scalable and effective path toward building more capable LLM agents. Check our projects athttps://github.com/Alibaba-NLP/DeepResearch ·Sign uporlog into comment",
+    "metadata": {
+        "title": "AgentFrontier: Expanding the Capability Frontier of LLM Agents with\n  ZPD-Guided Data Synthesis",
+        "authors": [
+            "Xuanzhong Chen",
+            "Guoxin Chen",
+            "Liangcai Su",
+            "Xinyu Wang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/Alibaba-NLP/DeepResearch",
+        "huggingface_url": "https://huggingface.co/papers/2510.24695",
+        "upvote": 22
+    }
 }

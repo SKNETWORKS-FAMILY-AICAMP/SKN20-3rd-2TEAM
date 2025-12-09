@@ -1,14 +1,13 @@
 {
-  "context": "InstanceGrounded Geometry Transformer (IGGT) unifies 3D reconstruction and instance-level understanding using a unified transformer and 3D-Consistent Contrastive Learning, supported by a new dataset InsScene-15K. Humans naturally perceive the geometric structure and semantic content of a\n3D world as intertwined dimensions, enabling coherent and accurate\nunderstanding of complex scenes. However, most prior approaches prioritize\ntraining large geometry models for low-level3D reconstructionand treat\nhigh-level spatial understanding in isolation, overlooking the crucial\ninterplay between these two fundamental aspects of 3D-scene analysis, thereby\nlimiting generalization and leading to poor performance in downstream 3D\nunderstanding tasks. Recent attempts have mitigated this issue by simply\naligning 3D models with specific language models, thus restricting perception\nto the aligned model's capacity and limiting adaptability to downstream tasks.\nIn this paper, we proposeInstanceGrounded Geometry Transformer(IGGT), an\nend-to-end large unified transformer to unify the knowledge for both spatial\nreconstruction andinstance-level contextual understanding. Specifically, we\ndesign a3D-Consistent Contrastive Learningstrategy that guidesIGGTto encode\na unified representation with geometric structures and instance-grounded\nclustering through only 2D visual inputs. This representation supports\nconsistent lifting of 2D visual inputs into a coherent3D scenewith explicitly\ndistinctobject instances. To facilitate this task, we further constructInsScene-15K, a large-scale dataset with high-quality RGB images, poses, depth\nmaps, and 3D-consistent instance-level mask annotations with a novel data\ncuration pipeline. Code:https://github.com/lifuguan/IGGT_official ·Sign uporlog into comment",
-  "metadata": {
-    "title": "IGGT: Instance-Grounded Geometry Transformer for Semantic 3D\n  Reconstruction",
-    "authors": [
-      "Hao Li"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/lifuguan/IGGT_official",
-    "huggingface_url": "https://huggingface.co/papers/2510.22706",
-    "upvote": 39,
-    "tags": []
-  }
+    "context": "InstanceGrounded Geometry Transformer (IGGT) unifies 3D reconstruction and instance-level understanding using a unified transformer and 3D-Consistent Contrastive Learning, supported by a new dataset InsScene-15K. Humans naturally perceive the geometric structure and semantic content of a\n3D world as intertwined dimensions, enabling coherent and accurate\nunderstanding of complex scenes. However, most prior approaches prioritize\ntraining large geometry models for low-level3D reconstructionand treat\nhigh-level spatial understanding in isolation, overlooking the crucial\ninterplay between these two fundamental aspects of 3D-scene analysis, thereby\nlimiting generalization and leading to poor performance in downstream 3D\nunderstanding tasks. Recent attempts have mitigated this issue by simply\naligning 3D models with specific language models, thus restricting perception\nto the aligned model's capacity and limiting adaptability to downstream tasks.\nIn this paper, we proposeInstanceGrounded Geometry Transformer(IGGT), an\nend-to-end large unified transformer to unify the knowledge for both spatial\nreconstruction andinstance-level contextual understanding. Specifically, we\ndesign a3D-Consistent Contrastive Learningstrategy that guidesIGGTto encode\na unified representation with geometric structures and instance-grounded\nclustering through only 2D visual inputs. This representation supports\nconsistent lifting of 2D visual inputs into a coherent3D scenewith explicitly\ndistinctobject instances. To facilitate this task, we further constructInsScene-15K, a large-scale dataset with high-quality RGB images, poses, depth\nmaps, and 3D-consistent instance-level mask annotations with a novel data\ncuration pipeline. Code:https://github.com/lifuguan/IGGT_official ·Sign uporlog into comment",
+    "metadata": {
+        "title": "IGGT: Instance-Grounded Geometry Transformer for Semantic 3D\n  Reconstruction",
+        "authors": [
+            "Hao Li"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/lifuguan/IGGT_official",
+        "huggingface_url": "https://huggingface.co/papers/2510.22706",
+        "upvote": 39
+    }
 }

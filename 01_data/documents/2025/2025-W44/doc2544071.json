@@ -1,14 +1,13 @@
 {
-  "context": "A survey of multimodal spatial reasoning tasks and models, focusing on large language models, post-training techniques, explainability, architecture, and emerging modalities like audio and egocentric video. Humans possess spatial reasoning abilities that enable them to understand\nspaces through multimodal observations, such as vision and sound. Largemultimodal reasoning modelsextend these abilities by learning to perceive and\nreason, showing promising performance across diverse spatial tasks. However,\nsystematic reviews and publicly available benchmarks for these models remain\nlimited. In this survey, we provide a comprehensive review of multimodal\nspatial reasoning tasks with large models, categorizing recent progress in\nmultimodallarge language models(MLLMs) and introducing open benchmarks for\nevaluation. We begin by outlining general spatial reasoning, focusing onpost-training techniques,explainability, andarchitecture. Beyond classical 2D\ntasks, we examinespatial relationship reasoning, scene and layout\nunderstanding, as well asvisual question answeringandgrounding in 3D space.\nWe also review advances inembodied AI, includingvision-language navigationandaction models. Additionally, we consider emerging modalities such asaudioandegocentric video, which contribute to novel spatial understanding through\nnew sensors. We believe this survey establishes a solid foundation and offers\ninsights into the growing field of multimodal spatial reasoning. Updated\ninformation about this survey, codes and implementation of the open benchmarks\ncan be found at https://github.com/zhengxuJosh/Awesome-Spatial-Reasoning. link:https://github.com/zhengxuJosh/Awesome-Multimodal-Spatial-Reasoning ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Multimodal Spatial Reasoning in the Large Model Era: A Survey and\n  Benchmarks",
-    "authors": [
-      "Zixin Zhang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/zhengxuJosh/Awesome-Multimodal-Spatial-Reasoning",
-    "huggingface_url": "https://huggingface.co/papers/2510.25760",
-    "upvote": 16,
-    "tags": []
-  }
+    "context": "A survey of multimodal spatial reasoning tasks and models, focusing on large language models, post-training techniques, explainability, architecture, and emerging modalities like audio and egocentric video. Humans possess spatial reasoning abilities that enable them to understand\nspaces through multimodal observations, such as vision and sound. Largemultimodal reasoning modelsextend these abilities by learning to perceive and\nreason, showing promising performance across diverse spatial tasks. However,\nsystematic reviews and publicly available benchmarks for these models remain\nlimited. In this survey, we provide a comprehensive review of multimodal\nspatial reasoning tasks with large models, categorizing recent progress in\nmultimodallarge language models(MLLMs) and introducing open benchmarks for\nevaluation. We begin by outlining general spatial reasoning, focusing onpost-training techniques,explainability, andarchitecture. Beyond classical 2D\ntasks, we examinespatial relationship reasoning, scene and layout\nunderstanding, as well asvisual question answeringandgrounding in 3D space.\nWe also review advances inembodied AI, includingvision-language navigationandaction models. Additionally, we consider emerging modalities such asaudioandegocentric video, which contribute to novel spatial understanding through\nnew sensors. We believe this survey establishes a solid foundation and offers\ninsights into the growing field of multimodal spatial reasoning. Updated\ninformation about this survey, codes and implementation of the open benchmarks\ncan be found at https://github.com/zhengxuJosh/Awesome-Spatial-Reasoning. link:https://github.com/zhengxuJosh/Awesome-Multimodal-Spatial-Reasoning ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Multimodal Spatial Reasoning in the Large Model Era: A Survey and\n  Benchmarks",
+        "authors": [
+            "Zixin Zhang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/zhengxuJosh/Awesome-Multimodal-Spatial-Reasoning",
+        "huggingface_url": "https://huggingface.co/papers/2510.25760",
+        "upvote": 16
+    }
 }

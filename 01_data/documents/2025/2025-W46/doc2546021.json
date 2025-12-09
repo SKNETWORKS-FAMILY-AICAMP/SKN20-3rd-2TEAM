@@ -1,16 +1,15 @@
 {
-  "context": "KL-Adaptive Stability Sampling (KLASS) accelerates diffusion-based generation by identifying stable predictions, achieving significant speedups and quality improvements across various domains. Masked diffusion modelshave demonstrated competitive results on various\ntasks includinglanguage generation. However, due to its iterative refinement\nprocess, the inference is often bottlenecked by slow and staticsampling speed.\nTo overcome this problem, we introduce `KL-Adaptive Stability Sampling'\n(KLASS), a fast yet effective sampling method that exploitstoken-levelKL\ndivergence to identify stable, high-confidence predictions. By unmasking\nmultiple tokens in each iteration without any additional model training, our\napproach speeds up generation significantly while maintaining sample quality.\nOn reasoning benchmarks, KLASS achieves up to 2.78times wall-clock speedups\nwhile improving performance over standardgreedy decoding, attaining\nstate-of-the-art results among diffusion-based samplers. We further validate\nKLASS across diverse domains, including text, image, andmolecular generation,\nshowing its effectiveness as a broadly applicable sampler across different\nmodels. TL;DR: We propose KLASS, a sampling method that leverages token-level KL divergence dynamics to identify stable tokens for early unmasking, achieving significant inference speedups for masked diffusion LMs while maintaining and even improving generation quality. paper:https://arxiv.org/abs/2511.05664code:https://github.com/shkim0116/KLASS This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "KLASS: KL-Guided Fast Inference in Masked Diffusion Models",
-    "authors": [
-      "Seo Hyun Kim",
-      "Sunwoo Hong",
-      "Youngrok Park"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/shkim0116/KLASS",
-    "huggingface_url": "https://huggingface.co/papers/2511.05664",
-    "upvote": 35,
-    "tags": []
-  }
+    "context": "KL-Adaptive Stability Sampling (KLASS) accelerates diffusion-based generation by identifying stable predictions, achieving significant speedups and quality improvements across various domains. Masked diffusion modelshave demonstrated competitive results on various\ntasks includinglanguage generation. However, due to its iterative refinement\nprocess, the inference is often bottlenecked by slow and staticsampling speed.\nTo overcome this problem, we introduce `KL-Adaptive Stability Sampling'\n(KLASS), a fast yet effective sampling method that exploitstoken-levelKL\ndivergence to identify stable, high-confidence predictions. By unmasking\nmultiple tokens in each iteration without any additional model training, our\napproach speeds up generation significantly while maintaining sample quality.\nOn reasoning benchmarks, KLASS achieves up to 2.78times wall-clock speedups\nwhile improving performance over standardgreedy decoding, attaining\nstate-of-the-art results among diffusion-based samplers. We further validate\nKLASS across diverse domains, including text, image, andmolecular generation,\nshowing its effectiveness as a broadly applicable sampler across different\nmodels. TL;DR: We propose KLASS, a sampling method that leverages token-level KL divergence dynamics to identify stable tokens for early unmasking, achieving significant inference speedups for masked diffusion LMs while maintaining and even improving generation quality. paper:https://arxiv.org/abs/2511.05664code:https://github.com/shkim0116/KLASS This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "KLASS: KL-Guided Fast Inference in Masked Diffusion Models",
+        "authors": [
+            "Seo Hyun Kim",
+            "Sunwoo Hong",
+            "Youngrok Park"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/shkim0116/KLASS",
+        "huggingface_url": "https://huggingface.co/papers/2511.05664",
+        "upvote": 35
+    }
 }

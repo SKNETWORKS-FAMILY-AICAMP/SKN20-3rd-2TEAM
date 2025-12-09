@@ -1,14 +1,13 @@
 {
-  "context": "The Sandwiched Policy Gradient method improves reinforcement learning for diffusion large language models by using both upper and lower bounds of log-likelihood, outperforming ELBO-based methods. Diffusion large language models(dLLMs) are emerging as an efficient\nalternative toautoregressive modelsdue to their ability to decode multiple\ntokens in parallel. However, aligningdLLMswith human preferences or\ntask-specific rewards viareinforcement learning(RL) is challenging because\ntheir intractablelog-likelihoodprecludes the direct application of standardpolicy gradient methods. While prior work uses surrogates like the evidence\nlower bound (ELBO), these one-sided approximations can introduce significant\npolicy gradient bias. To address this, we propose the Sandwiched Policy\nGradient (SPG) that leverages both an upper and a lower bound of the truelog-likelihood. Experiments show thatSPGsignificantly outperforms baselines\nbased onELBOor one-step estimation. Specifically,SPGimproves the accuracy\nover state-of-the-artRLmethods fordLLMsby 3.6% inGSM8K, 2.6% inMATH500,\n18.4% inCountdownand 27.0% inSudoku. tl dr: We propose a new policy gradient algorithm for dLLMs, SPG, which reduces bias by optimizing sandwiched variational bounds based on reward and utilizes a block-wise masking technique to improve training efficiency and stability. SPG achieves state-of-the-art RL performance on mathematical and logical reasoning benchmarks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "SPG: Sandwiched Policy Gradient for Masked Diffusion Language Models",
-    "authors": [
-      "Shannon Zejiang Shen"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/facebookresearch/SPG",
-    "huggingface_url": "https://huggingface.co/papers/2510.09541",
-    "upvote": 14,
-    "tags": []
-  }
+    "context": "The Sandwiched Policy Gradient method improves reinforcement learning for diffusion large language models by using both upper and lower bounds of log-likelihood, outperforming ELBO-based methods. Diffusion large language models(dLLMs) are emerging as an efficient\nalternative toautoregressive modelsdue to their ability to decode multiple\ntokens in parallel. However, aligningdLLMswith human preferences or\ntask-specific rewards viareinforcement learning(RL) is challenging because\ntheir intractablelog-likelihoodprecludes the direct application of standardpolicy gradient methods. While prior work uses surrogates like the evidence\nlower bound (ELBO), these one-sided approximations can introduce significant\npolicy gradient bias. To address this, we propose the Sandwiched Policy\nGradient (SPG) that leverages both an upper and a lower bound of the truelog-likelihood. Experiments show thatSPGsignificantly outperforms baselines\nbased onELBOor one-step estimation. Specifically,SPGimproves the accuracy\nover state-of-the-artRLmethods fordLLMsby 3.6% inGSM8K, 2.6% inMATH500,\n18.4% inCountdownand 27.0% inSudoku. tl dr: We propose a new policy gradient algorithm for dLLMs, SPG, which reduces bias by optimizing sandwiched variational bounds based on reward and utilizes a block-wise masking technique to improve training efficiency and stability. SPG achieves state-of-the-art RL performance on mathematical and logical reasoning benchmarks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "SPG: Sandwiched Policy Gradient for Masked Diffusion Language Models",
+        "authors": [
+            "Shannon Zejiang Shen"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/facebookresearch/SPG",
+        "huggingface_url": "https://huggingface.co/papers/2510.09541",
+        "upvote": 14
+    }
 }

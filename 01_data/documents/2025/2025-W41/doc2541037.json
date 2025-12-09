@@ -1,14 +1,13 @@
 {
-  "context": "A memory framework combining short-term and long-term memory in neural networks improves long-sequence modeling efficiency and performance. Long-sequence modeling faces a fundamental trade-off between the efficiency\nof compressive fixed-size memory inRNN-like modelsand the fidelity of\nlossless growing memory inattention-based Transformers. Inspired by theMulti-Store Modelin cognitive science, we introduce a memory framework of\nartificial neural networks. Our method maintains asliding windowof the\nTransformer'sKV cacheas lossless short-term memory, while a learnable module\ntermedArtificial Hippocampus Network (AHN)recurrently compresses\nout-of-window information into a fixed-size compact long-term memory. To\nvalidate this framework, we instantiate AHNs using modern RNN-like\narchitectures, includingMamba2,DeltaNet, andGated DeltaNet. Extensive\nexperiments on long-context benchmarksLV-EvalandInfiniteBenchdemonstrate\nthat AHN-augmented models consistently outperformsliding windowbaselines and\nachieve performance comparable or even superior to full-attention models, while\nsubstantially reducing computational and memory requirements. For instance,\naugmenting the Qwen2.5-3B-Instruct with AHNs reducesinference FLOPsby 40.5%\nandmemory cacheby 74.0%, while improving its average score onLV-Eval(128k\nsequence length) from 4.41 to 5.88. Code is available at:\nhttps://github.com/ByteDance-Seed/AHN. Models:https://huggingface.co/collections/ByteDance-Seed/ahn-68e6130d08ed0f5a1b622829Code:https://github.com/ByteDance-Seed/AHN This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Artificial Hippocampus Networks for Efficient Long-Context Modeling",
-    "authors": [
-      "Weihao Yu"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/ByteDance-Seed/AHN",
-    "huggingface_url": "https://huggingface.co/papers/2510.07318",
-    "upvote": 30,
-    "tags": []
-  }
+    "context": "A memory framework combining short-term and long-term memory in neural networks improves long-sequence modeling efficiency and performance. Long-sequence modeling faces a fundamental trade-off between the efficiency\nof compressive fixed-size memory inRNN-like modelsand the fidelity of\nlossless growing memory inattention-based Transformers. Inspired by theMulti-Store Modelin cognitive science, we introduce a memory framework of\nartificial neural networks. Our method maintains asliding windowof the\nTransformer'sKV cacheas lossless short-term memory, while a learnable module\ntermedArtificial Hippocampus Network (AHN)recurrently compresses\nout-of-window information into a fixed-size compact long-term memory. To\nvalidate this framework, we instantiate AHNs using modern RNN-like\narchitectures, includingMamba2,DeltaNet, andGated DeltaNet. Extensive\nexperiments on long-context benchmarksLV-EvalandInfiniteBenchdemonstrate\nthat AHN-augmented models consistently outperformsliding windowbaselines and\nachieve performance comparable or even superior to full-attention models, while\nsubstantially reducing computational and memory requirements. For instance,\naugmenting the Qwen2.5-3B-Instruct with AHNs reducesinference FLOPsby 40.5%\nandmemory cacheby 74.0%, while improving its average score onLV-Eval(128k\nsequence length) from 4.41 to 5.88. Code is available at:\nhttps://github.com/ByteDance-Seed/AHN. Models:https://huggingface.co/collections/ByteDance-Seed/ahn-68e6130d08ed0f5a1b622829Code:https://github.com/ByteDance-Seed/AHN This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Artificial Hippocampus Networks for Efficient Long-Context Modeling",
+        "authors": [
+            "Weihao Yu"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/ByteDance-Seed/AHN",
+        "huggingface_url": "https://huggingface.co/papers/2510.07318",
+        "upvote": 30
+    }
 }

@@ -1,14 +1,13 @@
 {
-  "context": "Empirical analysis of Masked Diffusion Language Models (DLMs) reveals distinct attention sinking phenomena and robustness compared to Autoregressive Models (ARMs). Masked Diffusion Language Models(DLMs) have recently emerged as a promising\nalternative to traditionalAutoregressive Models(ARMs).DLMsemploytransformer encoderswithbidirectional attention, enabling parallel token\ngeneration while maintaining competitive performance. Although their efficiency\nand effectiveness have been extensively studied, the internal mechanisms that\ngovernDLMsremain largely unexplored. In this work, we conduct an empirical\nanalysis of DLMattention patterns, focusing on theattention sinkingphenomenon, an effect previously observed in various transformer-based\narchitectures. Our findings reveal thatDLMsalso exhibit attention sinks, but\nwith distinct characteristics. First, unlike inARMs, the sink positions inDLMstend to shift throughout the generation process, displaying a dynamic\nbehaviour. Second, whileARMsare highly sensitive to the removal of attention\nsinks,DLMsremain robust: masking sinks leads to only a minor degradation in\nperformance. These results provide new insights into the inner workings of\ndiffusion-based language models and highlight fundamental differences in how\nthey allocate and utilize attention compared toautoregressive models. You can also view and share the original posthttps://x.com/devoto_alessio/status/1980668506979848249 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Attention Sinks in Diffusion Language Models",
-    "authors": [
-      "Maximo Eduardo Rulli"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.15731",
-    "upvote": 48,
-    "tags": []
-  }
+    "context": "Empirical analysis of Masked Diffusion Language Models (DLMs) reveals distinct attention sinking phenomena and robustness compared to Autoregressive Models (ARMs). Masked Diffusion Language Models(DLMs) have recently emerged as a promising\nalternative to traditionalAutoregressive Models(ARMs).DLMsemploytransformer encoderswithbidirectional attention, enabling parallel token\ngeneration while maintaining competitive performance. Although their efficiency\nand effectiveness have been extensively studied, the internal mechanisms that\ngovernDLMsremain largely unexplored. In this work, we conduct an empirical\nanalysis of DLMattention patterns, focusing on theattention sinkingphenomenon, an effect previously observed in various transformer-based\narchitectures. Our findings reveal thatDLMsalso exhibit attention sinks, but\nwith distinct characteristics. First, unlike inARMs, the sink positions inDLMstend to shift throughout the generation process, displaying a dynamic\nbehaviour. Second, whileARMsare highly sensitive to the removal of attention\nsinks,DLMsremain robust: masking sinks leads to only a minor degradation in\nperformance. These results provide new insights into the inner workings of\ndiffusion-based language models and highlight fundamental differences in how\nthey allocate and utilize attention compared toautoregressive models. You can also view and share the original posthttps://x.com/devoto_alessio/status/1980668506979848249 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Attention Sinks in Diffusion Language Models",
+        "authors": [
+            "Maximo Eduardo Rulli"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.15731",
+        "upvote": 48
+    }
 }

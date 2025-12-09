@@ -1,14 +1,13 @@
 {
-  "context": "A study on the serving performance and behavior of reasoning large language models (RLLMs) reveals distinct differences from traditional LLMs and evaluates the effectiveness of various inference optimization techniques. Thereasoning large language model(RLLM) has been proven competitive in\nsolving complex reasoning tasks such as mathematics, coding, compared to\ngeneral LLM. However, theserving performanceand behavior ofRLLMremains\nunexplored, which may undermine the deployment and utilization ofRLLMin\nreal-world scenario. To close this gap, in this paper, we conduct a\ncomprehensive study ofRLLMservice. We first perform a pilot study on\ncomparing theserving performancebetweenRLLMand traditional LLM and reveal\nthat there are several distinct differences regardingserving behavior: (1)\nsignificantmemory usageand fluctuations; (2)straggler requests; (3) adaptive\nrunning time; (4)domain preference. Then we further investigate whether\nexisting inference optimization techniques are valid forRLLM. Our main\ntakeaways are thatmodel quantizationmethods andspeculative decodingcan\nimprove service system efficiency with small compromise toRLLMaccuracy, whileprefix caching,KV cache quantizationmay even degrade accuracy or serving\nperformance for smallRLLM. Lastly, we conduct evaluation under real world\nworkload modeled byGamma distributionto verify our findings. Empirical\nresults of real world workload evaluation across different dataset are aligned\nwith our main findings regardingRLLMserving. We hope our work can provide the\nresearch community and industry with insights to advanceRLLMinference\nserving. We hope our work can provide the research community and industry with insightful perspectives tohelp advance studies in efficient RLLM serving. To the best of our knowledge, we are the first todissect the RLLM serving performance. ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Reasoning Language Model Inference Serving Unveiled: An Empirical Study",
-    "authors": [
-      "Qi Li"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.18672",
-    "upvote": 7,
-    "tags": []
-  }
+    "context": "A study on the serving performance and behavior of reasoning large language models (RLLMs) reveals distinct differences from traditional LLMs and evaluates the effectiveness of various inference optimization techniques. Thereasoning large language model(RLLM) has been proven competitive in\nsolving complex reasoning tasks such as mathematics, coding, compared to\ngeneral LLM. However, theserving performanceand behavior ofRLLMremains\nunexplored, which may undermine the deployment and utilization ofRLLMin\nreal-world scenario. To close this gap, in this paper, we conduct a\ncomprehensive study ofRLLMservice. We first perform a pilot study on\ncomparing theserving performancebetweenRLLMand traditional LLM and reveal\nthat there are several distinct differences regardingserving behavior: (1)\nsignificantmemory usageand fluctuations; (2)straggler requests; (3) adaptive\nrunning time; (4)domain preference. Then we further investigate whether\nexisting inference optimization techniques are valid forRLLM. Our main\ntakeaways are thatmodel quantizationmethods andspeculative decodingcan\nimprove service system efficiency with small compromise toRLLMaccuracy, whileprefix caching,KV cache quantizationmay even degrade accuracy or serving\nperformance for smallRLLM. Lastly, we conduct evaluation under real world\nworkload modeled byGamma distributionto verify our findings. Empirical\nresults of real world workload evaluation across different dataset are aligned\nwith our main findings regardingRLLMserving. We hope our work can provide the\nresearch community and industry with insights to advanceRLLMinference\nserving. We hope our work can provide the research community and industry with insightful perspectives tohelp advance studies in efficient RLLM serving. To the best of our knowledge, we are the first todissect the RLLM serving performance. ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Reasoning Language Model Inference Serving Unveiled: An Empirical Study",
+        "authors": [
+            "Qi Li"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.18672",
+        "upvote": 7
+    }
 }

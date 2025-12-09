@@ -1,14 +1,13 @@
 {
-  "context": "Function tokens in large language models activate predictive features during inference and guide memory consolidation during pre-training by predicting subsequent content tokens. The remarkable success oflarge language models(LLMs) stems from their\nability to consolidate vast amounts of knowledge into the memory during\npre-training and to retrieve it from the memory during inference, enabling\nadvanced capabilities such as knowledge memorization, instruction-following and\nreasoning. However, the mechanisms ofmemory retrievaland consolidation in\nLLMs remain poorly understood. In this paper, we propose the function token\nhypothesis to explain the workings of LLMs: During inference,function tokensactivate the most predictive features from context and govern next token\nprediction (memory retrieval). During pre-training, predicting the next tokens\n(usuallycontent tokens) that followfunction tokensincreases the number of\nlearned features of LLMs and updates the model parameters (memory\nconsolidation).Function tokenshere roughly correspond to function words in\nlinguistics, including punctuation marks, articles, prepositions, and\nconjunctions, in contrast tocontent tokens. We provide extensive experimental\nevidence supporting this hypothesis. Usingbipartite graph analysis, we show\nthat a small number offunction tokensactivate the majority of features. Case\nstudies further reveal howfunction tokensactivate the most predictive\nfeatures from context to directnext token prediction. We also find that during\npre-training, the training loss is dominated by predicting the next content\ntokens followingfunction tokens, which forces thefunction tokensto select\nthe most predictive features from context. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Memory Retrieval and Consolidation in Large Language Models through\n  Function Tokens",
-    "authors": [
-      "Shaohua Zhang"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.08203",
-    "upvote": 9,
-    "tags": []
-  }
+    "context": "Function tokens in large language models activate predictive features during inference and guide memory consolidation during pre-training by predicting subsequent content tokens. The remarkable success oflarge language models(LLMs) stems from their\nability to consolidate vast amounts of knowledge into the memory during\npre-training and to retrieve it from the memory during inference, enabling\nadvanced capabilities such as knowledge memorization, instruction-following and\nreasoning. However, the mechanisms ofmemory retrievaland consolidation in\nLLMs remain poorly understood. In this paper, we propose the function token\nhypothesis to explain the workings of LLMs: During inference,function tokensactivate the most predictive features from context and govern next token\nprediction (memory retrieval). During pre-training, predicting the next tokens\n(usuallycontent tokens) that followfunction tokensincreases the number of\nlearned features of LLMs and updates the model parameters (memory\nconsolidation).Function tokenshere roughly correspond to function words in\nlinguistics, including punctuation marks, articles, prepositions, and\nconjunctions, in contrast tocontent tokens. We provide extensive experimental\nevidence supporting this hypothesis. Usingbipartite graph analysis, we show\nthat a small number offunction tokensactivate the majority of features. Case\nstudies further reveal howfunction tokensactivate the most predictive\nfeatures from context to directnext token prediction. We also find that during\npre-training, the training loss is dominated by predicting the next content\ntokens followingfunction tokens, which forces thefunction tokensto select\nthe most predictive features from context. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Memory Retrieval and Consolidation in Large Language Models through\n  Function Tokens",
+        "authors": [
+            "Shaohua Zhang"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.08203",
+        "upvote": 9
+    }
 }

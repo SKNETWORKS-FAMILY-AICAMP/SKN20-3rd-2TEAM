@@ -1,17 +1,16 @@
 {
-  "context": "Feedback-conditional policy (FCP) enables LLMs to learn from verbal feedback by treating it as a conditioning signal, improving expressiveness over scalar rewards. LLMsare often trained withRLfrom human orAI feedback, yet such methods\ntypically compress nuanced feedback intoscalar rewards, discarding much of\ntheir richness and inducing scale imbalance. We propose treating verbal\nfeedback as a conditioning signal. Inspired bylanguage priorsin text-to-image\ngeneration, which enable novel outputs from unseen prompts, we introduce thefeedback-conditional policy(FCP). FCP learns directly from response-feedback\npairs, approximating the feedback-conditional posterior through maximum\nlikelihood training onoffline data. We further develop anonline bootstrappingstage where the policy generates under positive conditions and receives fresh\nfeedback to refine itself. This reframes feedback-driven learning asconditional generationrather thanreward optimization, offering a more\nexpressive way forLLMsto directly learn from verbal feedback. Our code is\navailable at https://github.com/sail-sg/feedback-conditional-policy. LLMs are often trained with RL from human or AI feedback, yet such methods typically compress nuanced feedback into scalar rewards, discarding much of their richness and inducing scale imbalance. We propose treating verbal feedback as a conditioning signal. Inspired by language priors in text-to-image generation, which enable novel outputs from unseen prompts, we introduce the feedback-conditional policy (FCP). FCP learns directly from response-feedback pairs, approximating the feedback-conditional posterior through maximum likelihood training on offline data. We further develop an online bootstrapping stage where the policy generates under positive conditions and receives fresh feedback to refine itself. This reframes feedback-driven learning as conditional generation rather than reward optimization, offering a more expressive way for LLMs to directly learn from verbal feedback. Our code is available atthis https URL. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Explain ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Language Models Can Learn from Verbal Feedback Without Scalar Rewards",
-    "authors": [
-      "Renjie Luo",
-      "Zichen Liu",
-      "Wenhu Chen",
-      "Tianyu Pang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/sail-sg/feedback-conditional-policy",
-    "huggingface_url": "https://huggingface.co/papers/2509.22638",
-    "upvote": 70,
-    "tags": []
-  }
+    "context": "Feedback-conditional policy (FCP) enables LLMs to learn from verbal feedback by treating it as a conditioning signal, improving expressiveness over scalar rewards. LLMsare often trained withRLfrom human orAI feedback, yet such methods\ntypically compress nuanced feedback intoscalar rewards, discarding much of\ntheir richness and inducing scale imbalance. We propose treating verbal\nfeedback as a conditioning signal. Inspired bylanguage priorsin text-to-image\ngeneration, which enable novel outputs from unseen prompts, we introduce thefeedback-conditional policy(FCP). FCP learns directly from response-feedback\npairs, approximating the feedback-conditional posterior through maximum\nlikelihood training onoffline data. We further develop anonline bootstrappingstage where the policy generates under positive conditions and receives fresh\nfeedback to refine itself. This reframes feedback-driven learning asconditional generationrather thanreward optimization, offering a more\nexpressive way forLLMsto directly learn from verbal feedback. Our code is\navailable at https://github.com/sail-sg/feedback-conditional-policy. LLMs are often trained with RL from human or AI feedback, yet such methods typically compress nuanced feedback into scalar rewards, discarding much of their richness and inducing scale imbalance. We propose treating verbal feedback as a conditioning signal. Inspired by language priors in text-to-image generation, which enable novel outputs from unseen prompts, we introduce the feedback-conditional policy (FCP). FCP learns directly from response-feedback pairs, approximating the feedback-conditional posterior through maximum likelihood training on offline data. We further develop an online bootstrapping stage where the policy generates under positive conditions and receives fresh feedback to refine itself. This reframes feedback-driven learning as conditional generation rather than reward optimization, offering a more expressive way for LLMs to directly learn from verbal feedback. Our code is available atthis https URL. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend Explain ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Language Models Can Learn from Verbal Feedback Without Scalar Rewards",
+        "authors": [
+            "Renjie Luo",
+            "Zichen Liu",
+            "Wenhu Chen",
+            "Tianyu Pang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/sail-sg/feedback-conditional-policy",
+        "huggingface_url": "https://huggingface.co/papers/2509.22638",
+        "upvote": 70
+    }
 }

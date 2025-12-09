@@ -1,19 +1,18 @@
 {
-  "context": "Re-examining the exploration-exploitation trade-off in Reinforcement Learning for Verifiable Rewards through hidden-state analysis reveals opportunities for simultaneous enhancement using Effective Rank and its derivatives, leading to improved performance in diverse benchmarks. A prevailing view inReinforcement Learning for Verifiable Rewards(RLVR)\ninterprets recent progress through the lens of an exploration-exploitation\ntrade-off, a perspective largely shaped bytoken-level metrics. We re-examine\nthis perspective, proposing that this perceived trade-off may not be a\nfundamental constraint but rather an artifact of the measurement level. To\ninvestigate this, we shift the analysis to the semantically rich hidden-state\nspace, adoptingEffective Rank(ER) to quantify exploration and proposing its\nnovel first- and second-order derivatives, namedEffective Rank Velocity(ERV)\nandEffective Rank Acceleration(ERA), to capture exploitation dynamics. Our\nanalysis reveals that at the hidden-state level, exploration and exploitation\ncould be decoupled (Sec. 4). This finding reveals an opportunity to enhance\nboth capacities simultaneously. This insight motivates our method,Velocity-Exploiting Rank-Learning(VERL), the first to operationalize the\nprinciple of synergistic exploration-exploitation enhancement by directly\nshaping theRL advantage function. The key innovation is leveraging the\ntheoretically stable ERA as apredictive meta-controllerto create a\nsynergistic,dual-channel incentive structure. Instead of forcing a trade-off,\nVERL prospectively amplifies rewards for exploration to preempt overconfidence\nand reinforces exploitative gains to consolidate reasoning. Experiments across\ndiverse LLMs and reasoning benchmarks show consistent gains, including up to\n21.4% absolute accuracy improvement on the challengingGaokao 2024 dataset. In this paper, we shift the analysis of RLVR to the semantically rich hidden-state space, adopting Effective Rank (ER) to quantify exploration and proposing its novel first- and second-order derivatives, named Effective Rank Velocity (ERV) and Effective Rank Acceleration (ERA), to capture exploitation dynamics. Our analysis reveals that at the hidden-state level, exploration and exploitation could be decoupled. This finding reveals an opportunity to enhance both capacities simultaneously. This insight motivates our method, Velocity-Exploiting Rank-Learning (VERL), the first to operationalize the principle of synergistic exploration-exploitation enhancement by directly shaping the RL advantage function. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Beyond the Exploration-Exploitation Trade-off: A Hidden State Approach\n  for LLM Reasoning in RLVR",
-    "authors": [
-      "Fanding Huang",
-      "Guanbo Huang",
-      "Xiao Fan",
-      "Xiao Liang",
-      "Xiao Chen",
-      "Jingyan Jiang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/hf618/VERL",
-    "huggingface_url": "https://huggingface.co/papers/2509.23808",
-    "upvote": 47,
-    "tags": []
-  }
+    "context": "Re-examining the exploration-exploitation trade-off in Reinforcement Learning for Verifiable Rewards through hidden-state analysis reveals opportunities for simultaneous enhancement using Effective Rank and its derivatives, leading to improved performance in diverse benchmarks. A prevailing view inReinforcement Learning for Verifiable Rewards(RLVR)\ninterprets recent progress through the lens of an exploration-exploitation\ntrade-off, a perspective largely shaped bytoken-level metrics. We re-examine\nthis perspective, proposing that this perceived trade-off may not be a\nfundamental constraint but rather an artifact of the measurement level. To\ninvestigate this, we shift the analysis to the semantically rich hidden-state\nspace, adoptingEffective Rank(ER) to quantify exploration and proposing its\nnovel first- and second-order derivatives, namedEffective Rank Velocity(ERV)\nandEffective Rank Acceleration(ERA), to capture exploitation dynamics. Our\nanalysis reveals that at the hidden-state level, exploration and exploitation\ncould be decoupled (Sec. 4). This finding reveals an opportunity to enhance\nboth capacities simultaneously. This insight motivates our method,Velocity-Exploiting Rank-Learning(VERL), the first to operationalize the\nprinciple of synergistic exploration-exploitation enhancement by directly\nshaping theRL advantage function. The key innovation is leveraging the\ntheoretically stable ERA as apredictive meta-controllerto create a\nsynergistic,dual-channel incentive structure. Instead of forcing a trade-off,\nVERL prospectively amplifies rewards for exploration to preempt overconfidence\nand reinforces exploitative gains to consolidate reasoning. Experiments across\ndiverse LLMs and reasoning benchmarks show consistent gains, including up to\n21.4% absolute accuracy improvement on the challengingGaokao 2024 dataset. In this paper, we shift the analysis of RLVR to the semantically rich hidden-state space, adopting Effective Rank (ER) to quantify exploration and proposing its novel first- and second-order derivatives, named Effective Rank Velocity (ERV) and Effective Rank Acceleration (ERA), to capture exploitation dynamics. Our analysis reveals that at the hidden-state level, exploration and exploitation could be decoupled. This finding reveals an opportunity to enhance both capacities simultaneously. This insight motivates our method, Velocity-Exploiting Rank-Learning (VERL), the first to operationalize the principle of synergistic exploration-exploitation enhancement by directly shaping the RL advantage function. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Beyond the Exploration-Exploitation Trade-off: A Hidden State Approach\n  for LLM Reasoning in RLVR",
+        "authors": [
+            "Fanding Huang",
+            "Guanbo Huang",
+            "Xiao Fan",
+            "Xiao Liang",
+            "Xiao Chen",
+            "Jingyan Jiang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/hf618/VERL",
+        "huggingface_url": "https://huggingface.co/papers/2509.23808",
+        "upvote": 47
+    }
 }

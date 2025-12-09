@@ -1,16 +1,15 @@
 {
-  "context": "MOSS-Speech is a speech-to-speech large language model that directly processes and generates speech without text intermediates, achieving state-of-the-art performance in spoken question answering and competitive text performance. Spoken dialogue systems often rely on cascaded pipelines that transcribe,\nprocess, and resynthesize speech. While effective, this design discards\nparalinguistic cues and limits expressivity. Recent end-to-end methods reduce\nlatency and better preserve these cues, yet still rely on text intermediates,\ncreating a fundamental bottleneck. We present MOSS-Speech, a truespeech-to-speech large language modelthat directly understands and generates\nspeech without relying on text guidance. Our approach combines a modality-based\nlayer-splitting architecture with afrozen pre-training strategy, preserving\nthe reasoning and knowledge of pretrained text LLMs while adding native speech\ncapabilities. Experiments show that our model achieves state-of-the-art results\ninspoken question answeringand delivers comparable speech-to-speech\nperformance relative to existing text-guided systems, while still maintaining\ncompetitive text performance. By narrowing the gap between text-guided and\ndirect speech generation, our work establishes a new paradigm for expressive\nand efficient end-to-end speech interaction. True Speech-to-speech Model This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "MOSS-Speech: Towards True Speech-to-Speech Models Without Text Guidance",
-    "authors": [
-      "Zhe Xu",
-      "Qinyuan Cheng",
-      "Mingshu Chen"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/OpenMOSS/MOSS-Speech",
-    "huggingface_url": "https://huggingface.co/papers/2510.00499",
-    "upvote": 19,
-    "tags": []
-  }
+    "context": "MOSS-Speech is a speech-to-speech large language model that directly processes and generates speech without text intermediates, achieving state-of-the-art performance in spoken question answering and competitive text performance. Spoken dialogue systems often rely on cascaded pipelines that transcribe,\nprocess, and resynthesize speech. While effective, this design discards\nparalinguistic cues and limits expressivity. Recent end-to-end methods reduce\nlatency and better preserve these cues, yet still rely on text intermediates,\ncreating a fundamental bottleneck. We present MOSS-Speech, a truespeech-to-speech large language modelthat directly understands and generates\nspeech without relying on text guidance. Our approach combines a modality-based\nlayer-splitting architecture with afrozen pre-training strategy, preserving\nthe reasoning and knowledge of pretrained text LLMs while adding native speech\ncapabilities. Experiments show that our model achieves state-of-the-art results\ninspoken question answeringand delivers comparable speech-to-speech\nperformance relative to existing text-guided systems, while still maintaining\ncompetitive text performance. By narrowing the gap between text-guided and\ndirect speech generation, our work establishes a new paradigm for expressive\nand efficient end-to-end speech interaction. True Speech-to-speech Model This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "MOSS-Speech: Towards True Speech-to-Speech Models Without Text Guidance",
+        "authors": [
+            "Zhe Xu",
+            "Qinyuan Cheng",
+            "Mingshu Chen"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/OpenMOSS/MOSS-Speech",
+        "huggingface_url": "https://huggingface.co/papers/2510.00499",
+        "upvote": 19
+    }
 }

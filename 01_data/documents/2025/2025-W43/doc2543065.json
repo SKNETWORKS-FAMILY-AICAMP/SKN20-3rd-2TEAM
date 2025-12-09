@@ -1,14 +1,13 @@
 {
-  "context": "Research investigates the impact of speaker emotion on the safety of large audio-language models, revealing inconsistencies and vulnerabilities that require targeted alignment strategies. Large audio-language models(LALMs) extendtext-based LLMswith auditory\nunderstanding, offering new opportunities formultimodal applications. While\ntheir perception, reasoning, and task performance have been widely studied,\ntheir safety alignment under paralinguistic variation remains underexplored.\nThis work systematically investigates the role ofspeaker emotion. We construct\na dataset ofmalicious speech instructionsexpressed across multiple emotions\nand intensities, and evaluate several state-of-the-artLALMs. Our results\nreveal substantial safety inconsistencies: different emotions elicit varying\nlevels ofunsafe responses, and the effect of intensity is non-monotonic, with\nmedium expressions often posing the greatest risk. These findings highlight an\noverlooked vulnerability inLALMsand call foralignment strategiesexplicitly\ndesigned to ensurerobustnessunder emotional variation, a prerequisite for\ntrustworthy deployment in real-world settings. Code will be available athttps://github.com/WoZhenDeShenMeDouBuZhidao/LALM-emotional-vulnerability This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Investigating Safety Vulnerabilities of Large Audio-Language Models\n  Under Speaker Emotional Variations",
-    "authors": [
-      "Chih-Kai Yang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/WoZhenDeShenMeDouBuZhidao/LALM-emotional-vulnerability",
-    "huggingface_url": "https://huggingface.co/papers/2510.16893",
-    "upvote": 17,
-    "tags": []
-  }
+    "context": "Research investigates the impact of speaker emotion on the safety of large audio-language models, revealing inconsistencies and vulnerabilities that require targeted alignment strategies. Large audio-language models(LALMs) extendtext-based LLMswith auditory\nunderstanding, offering new opportunities formultimodal applications. While\ntheir perception, reasoning, and task performance have been widely studied,\ntheir safety alignment under paralinguistic variation remains underexplored.\nThis work systematically investigates the role ofspeaker emotion. We construct\na dataset ofmalicious speech instructionsexpressed across multiple emotions\nand intensities, and evaluate several state-of-the-artLALMs. Our results\nreveal substantial safety inconsistencies: different emotions elicit varying\nlevels ofunsafe responses, and the effect of intensity is non-monotonic, with\nmedium expressions often posing the greatest risk. These findings highlight an\noverlooked vulnerability inLALMsand call foralignment strategiesexplicitly\ndesigned to ensurerobustnessunder emotional variation, a prerequisite for\ntrustworthy deployment in real-world settings. Code will be available athttps://github.com/WoZhenDeShenMeDouBuZhidao/LALM-emotional-vulnerability This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Investigating Safety Vulnerabilities of Large Audio-Language Models\n  Under Speaker Emotional Variations",
+        "authors": [
+            "Chih-Kai Yang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/WoZhenDeShenMeDouBuZhidao/LALM-emotional-vulnerability",
+        "huggingface_url": "https://huggingface.co/papers/2510.16893",
+        "upvote": 17
+    }
 }

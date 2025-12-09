@@ -1,22 +1,21 @@
 {
-  "context": "BEAR is a comprehensive benchmark evaluating multimodal large language models' embodied capabilities, and BEAR-Agent enhances these models by integrating pretrained vision models, improving performance across various tasks. Embodied capabilitiesrefer to a suite of fundamental abilities for an agent\nto perceive, comprehend, and interact with the physical world. While multimodal\nlarge language models (MLLMs) show promise as embodied agents, a thorough and\nsystematic evaluation of theirembodied capabilitiesremains underexplored, as\nexisting benchmarks primarily focus on specific domains such as planning or\nspatial understanding. To bridge this gap, we introduceBEAR, a comprehensive\nand fine-grained benchmark that evaluates MLLMs on atomic embodied\ncapabilities.BEARcomprises 4,469 interleavedimage-video-text entriesacross\n14 domains in 6 categories, including tasks from low-level pointing, trajectory\nunderstanding,spatial reasoning, to high-level planning. Extensive evaluation\nresults of 20 representative MLLMs reveal their persistent limitations across\nall domains ofembodied capabilities. To tackle the shortfall, we proposeBEAR-Agent, a multimodal conversable agent that integrates pretrained vision\nmodels to strengthen MLLM perception,3D understanding, and planning\ncapabilities. It substantially enhances MLLM performance across diverseembodied capabilitiesonBEAR, yielding a 9.12% absolute gain and a relative\nimprovement of 17.5% on GPT-5. Furthermore, our experiments indicate that\nimproving MLLMembodied capabilitiescan benefit embodied tasks in simulated\nenvironments. Project website: https://bear-official66.github.io/ 🔥Embodied agents need to perceive, reason and interact with its environment?❓Would you like to know how your multimodal language model perform on embodied abilities? 🧠We propose BEAR🐻！BEAR is the first mllm benchmark on atomic embodied capabilities! 🔥🔥🔥It includes 14 skills across 6 categories, with 4,469 interleaved qa pairs! 🔍 Our results of 20 representative language models indicate the consistent limitations of mllm on embodied capabilities! We also provide detailed failure analysis in order for model improvements! 😈 To further improve the performance of language models on embodied capabilities, we propose BEAR-Agent🤖，a multimodal conversable agent 🪄✨🛸 to improve the model's zero-shot capabilities on BEAR! We will release our code on Github page ⌛️⚽️， and we will update further results on it!🙏 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "BEAR: Benchmarking and Enhancing Multimodal Language Models for Atomic\n  Embodied Capabilities",
-    "authors": [
-      "Yu Qi",
-      "Haibo Zhao",
-      "Siyuan Ma",
-      "Ziyan Chen",
-      "Yaokun Han",
-      "Yijian Huang",
-      "Kai Cheng",
-      "Jiazheng Liu",
-      "Jiayi Zhang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/yqi19/BEAR-official",
-    "huggingface_url": "https://huggingface.co/papers/2510.08759",
-    "upvote": 46,
-    "tags": []
-  }
+    "context": "BEAR is a comprehensive benchmark evaluating multimodal large language models' embodied capabilities, and BEAR-Agent enhances these models by integrating pretrained vision models, improving performance across various tasks. Embodied capabilitiesrefer to a suite of fundamental abilities for an agent\nto perceive, comprehend, and interact with the physical world. While multimodal\nlarge language models (MLLMs) show promise as embodied agents, a thorough and\nsystematic evaluation of theirembodied capabilitiesremains underexplored, as\nexisting benchmarks primarily focus on specific domains such as planning or\nspatial understanding. To bridge this gap, we introduceBEAR, a comprehensive\nand fine-grained benchmark that evaluates MLLMs on atomic embodied\ncapabilities.BEARcomprises 4,469 interleavedimage-video-text entriesacross\n14 domains in 6 categories, including tasks from low-level pointing, trajectory\nunderstanding,spatial reasoning, to high-level planning. Extensive evaluation\nresults of 20 representative MLLMs reveal their persistent limitations across\nall domains ofembodied capabilities. To tackle the shortfall, we proposeBEAR-Agent, a multimodal conversable agent that integrates pretrained vision\nmodels to strengthen MLLM perception,3D understanding, and planning\ncapabilities. It substantially enhances MLLM performance across diverseembodied capabilitiesonBEAR, yielding a 9.12% absolute gain and a relative\nimprovement of 17.5% on GPT-5. Furthermore, our experiments indicate that\nimproving MLLMembodied capabilitiescan benefit embodied tasks in simulated\nenvironments. Project website: https://bear-official66.github.io/ 🔥Embodied agents need to perceive, reason and interact with its environment?❓Would you like to know how your multimodal language model perform on embodied abilities? 🧠We propose BEAR🐻！BEAR is the first mllm benchmark on atomic embodied capabilities! 🔥🔥🔥It includes 14 skills across 6 categories, with 4,469 interleaved qa pairs! 🔍 Our results of 20 representative language models indicate the consistent limitations of mllm on embodied capabilities! We also provide detailed failure analysis in order for model improvements! 😈 To further improve the performance of language models on embodied capabilities, we propose BEAR-Agent🤖，a multimodal conversable agent 🪄✨🛸 to improve the model's zero-shot capabilities on BEAR! We will release our code on Github page ⌛️⚽️， and we will update further results on it!🙏 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "BEAR: Benchmarking and Enhancing Multimodal Language Models for Atomic\n  Embodied Capabilities",
+        "authors": [
+            "Yu Qi",
+            "Haibo Zhao",
+            "Siyuan Ma",
+            "Ziyan Chen",
+            "Yaokun Han",
+            "Yijian Huang",
+            "Kai Cheng",
+            "Jiazheng Liu",
+            "Jiayi Zhang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/yqi19/BEAR-official",
+        "huggingface_url": "https://huggingface.co/papers/2510.08759",
+        "upvote": 46
+    }
 }

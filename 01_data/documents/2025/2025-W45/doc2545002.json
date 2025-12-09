@@ -1,16 +1,15 @@
 {
-  "context": "Diffusion language models outperform autoregressive models in low-data settings due to any-order modeling, iterative bidirectional denoising, and Monte Carlo augmentation, and maintain advantages even at scale. Under strictly controlled pre-training settings, we observe a Crossover: when\nunique data is limited,diffusion language models(DLMs) consistently surpass\nautoregressive (AR) models by training for more epochs. The crossover shifts\nlater with more or higher-quality data, earlier with larger models, and\npersists across dense and sparse architectures. We attribute the gains to three\ncompounding factors: (1)any-order modeling, (2) super-dense compute fromiterative bidirectional denoising, and (3) built-inMonte Carlo augmentation;\ninput or parameter noise improves AR under data constraint but cannot close the\ngap. At scale, a 1.7B DLM trained with a ~1.5T-token compute budget on 10B\nunique Python tokens overtakes an AR coder trained with strictly matched\nsettings. In addition, a 1B-parameter DLM achieves > 56% accuracy onHellaSwagand > 33% onMMLUusing only 1B tokens, without any special tricks, just by\nrepeating standard pre-training data. We also show that rising validation\ncross-entropy does not imply degraded downstream performance in this regime. The first work empirically showing diffusion language models have much higher data potential compared with autoregressive ones at scale (up to 8B parameters, 1.5T tokens, 480 epochs). Clear crossovers are seen across model sizes, data budgets, data qualities, model sparsities, etc. Work from the same series: Quokka (large-scale DLM scaling law):https://github.com/JinjieNi/QuokkaOpenMoE 2 (MoE DLM):https://github.com/JinjieNi/OpenMoE2  High starting point, zero gains from added diversity—yet they’re hyping \"Super Data Learners\". I think you are describing the AR model dude? This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/diffusion-language-models-are-super-data-learners ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Diffusion Language Models are Super Data Learners",
-    "authors": [
-      "Jinjie Ni",
-      "Qian Liu",
-      "Longxu Dou"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/JinjieNi/dlms-are-super-data-learners",
-    "huggingface_url": "https://huggingface.co/papers/2511.03276",
-    "upvote": 124,
-    "tags": []
-  }
+    "context": "Diffusion language models outperform autoregressive models in low-data settings due to any-order modeling, iterative bidirectional denoising, and Monte Carlo augmentation, and maintain advantages even at scale. Under strictly controlled pre-training settings, we observe a Crossover: when\nunique data is limited,diffusion language models(DLMs) consistently surpass\nautoregressive (AR) models by training for more epochs. The crossover shifts\nlater with more or higher-quality data, earlier with larger models, and\npersists across dense and sparse architectures. We attribute the gains to three\ncompounding factors: (1)any-order modeling, (2) super-dense compute fromiterative bidirectional denoising, and (3) built-inMonte Carlo augmentation;\ninput or parameter noise improves AR under data constraint but cannot close the\ngap. At scale, a 1.7B DLM trained with a ~1.5T-token compute budget on 10B\nunique Python tokens overtakes an AR coder trained with strictly matched\nsettings. In addition, a 1B-parameter DLM achieves > 56% accuracy onHellaSwagand > 33% onMMLUusing only 1B tokens, without any special tricks, just by\nrepeating standard pre-training data. We also show that rising validation\ncross-entropy does not imply degraded downstream performance in this regime. The first work empirically showing diffusion language models have much higher data potential compared with autoregressive ones at scale (up to 8B parameters, 1.5T tokens, 480 epochs). Clear crossovers are seen across model sizes, data budgets, data qualities, model sparsities, etc. Work from the same series: Quokka (large-scale DLM scaling law):https://github.com/JinjieNi/QuokkaOpenMoE 2 (MoE DLM):https://github.com/JinjieNi/OpenMoE2  High starting point, zero gains from added diversity—yet they’re hyping \"Super Data Learners\". I think you are describing the AR model dude? This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend arXiv explained breakdown of this paper 👉https://arxivexplained.com/papers/diffusion-language-models-are-super-data-learners ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Diffusion Language Models are Super Data Learners",
+        "authors": [
+            "Jinjie Ni",
+            "Qian Liu",
+            "Longxu Dou"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/JinjieNi/dlms-are-super-data-learners",
+        "huggingface_url": "https://huggingface.co/papers/2511.03276",
+        "upvote": 124
+    }
 }

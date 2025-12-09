@@ -1,15 +1,14 @@
 {
-  "context": "Thought templates enhance long-context language models by structuring evidence combination and guiding multi-hop inference, leading to consistent performance improvements across various benchmarks. RecentLong-Context Language Models(LCLMs) can process hundreds of thousands\nof tokens in a single prompt, enabling new opportunities for\nknowledge-intensivemulti-hop reasoningby integrating large sets of retrieved\ndocuments or, in some cases, directly all necessary information. However,\nsimply feeding more documents into the context window fails to capture how\nevidence should be connected. We address this gap withthought templates, which\nrecast reasoning asreusable thought caches, derived from prior problem solving\ntraces, structuring how evidence is combined and guiding multi-hop inference\nwith factual documents. To keep these templates effective, we propose an update\nstrategy that iteratively refines templates derived from training data throughnatural-language feedback. Across diverse benchmarks and LCLM families, our\napproach delivers consistent gains over strong baselines in bothretrieval-basedandretrieval-freesettings. Furthermore, we show that\noptimized templates can be distilled into smaller open-source models,\ndemonstrating its broad applicability and transparent reasoning reuse. We refer\nto our framework as Thought Template Augmented LCLMs (ToTAL). We build and leverage reusable reasoning templates with iterative refinement to improve factual multi-hop reasoning in long-context settings. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "When Thoughts Meet Facts: Reusable Reasoning for Long-Context LMs",
-    "authors": [
-      "Soyeong Jeong",
-      "Taehee Jung"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.07499",
-    "upvote": 48,
-    "tags": []
-  }
+    "context": "Thought templates enhance long-context language models by structuring evidence combination and guiding multi-hop inference, leading to consistent performance improvements across various benchmarks. RecentLong-Context Language Models(LCLMs) can process hundreds of thousands\nof tokens in a single prompt, enabling new opportunities for\nknowledge-intensivemulti-hop reasoningby integrating large sets of retrieved\ndocuments or, in some cases, directly all necessary information. However,\nsimply feeding more documents into the context window fails to capture how\nevidence should be connected. We address this gap withthought templates, which\nrecast reasoning asreusable thought caches, derived from prior problem solving\ntraces, structuring how evidence is combined and guiding multi-hop inference\nwith factual documents. To keep these templates effective, we propose an update\nstrategy that iteratively refines templates derived from training data throughnatural-language feedback. Across diverse benchmarks and LCLM families, our\napproach delivers consistent gains over strong baselines in bothretrieval-basedandretrieval-freesettings. Furthermore, we show that\noptimized templates can be distilled into smaller open-source models,\ndemonstrating its broad applicability and transparent reasoning reuse. We refer\nto our framework as Thought Template Augmented LCLMs (ToTAL). We build and leverage reusable reasoning templates with iterative refinement to improve factual multi-hop reasoning in long-context settings. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "When Thoughts Meet Facts: Reusable Reasoning for Long-Context LMs",
+        "authors": [
+            "Soyeong Jeong",
+            "Taehee Jung"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.07499",
+        "upvote": 48
+    }
 }

@@ -1,14 +1,13 @@
 {
-  "context": "Behavior Best-of-N (bBoN) improves the reliability and success rates of computer-use agents by generating and selecting among multiple rollouts using behavior narratives, achieving state-of-the-art performance on OSWorld and strong generalization to different operating systems. Computer-use agents (CUAs) hold promise for automating everyday digital\ntasks, but their unreliability and high variance hinder their application to\nlong-horizon, complex tasks. We introduceBehavior Best-of-N(bBoN), a method\nthat scales over agents by generating multiplerolloutsand selecting among\nthem usingbehavior narrativesthat describe the agents'rollouts. It enables\nboth wide exploration and principledtrajectory selection, substantially\nimproving robustness and success rates. OnOSWorld, ourbBoNscaling method\nestablishes a new state of the art (SoTA) at 69.9%, significantly outperforming\nprior methods and approaching human-level performance at 72%, with\ncomprehensive ablations validating key design choices. We further demonstrate\nstrong generalization results to different operating systems onWindowsAgentArenaandAndroidWorld. Crucially, our results highlight the\nunreasonable effectiveness of scaling CUAs, when you do it right: effective\nscaling requires structured trajectory understanding and selection, andbBoNprovides a practical framework to achieve this. 📄 Paper:http://arxiv.org/abs/2510.02250💻 Code:http://github.com/simular-ai/Agent-S📝 Blog:http://simular.ai/articles/agent-s3 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "The Unreasonable Effectiveness of Scaling Agents for Computer Use",
-    "authors": [
-      "Xin Eric Wang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/simular-ai/Agent-S/",
-    "huggingface_url": "https://huggingface.co/papers/2510.02250",
-    "upvote": 24,
-    "tags": []
-  }
+    "context": "Behavior Best-of-N (bBoN) improves the reliability and success rates of computer-use agents by generating and selecting among multiple rollouts using behavior narratives, achieving state-of-the-art performance on OSWorld and strong generalization to different operating systems. Computer-use agents (CUAs) hold promise for automating everyday digital\ntasks, but their unreliability and high variance hinder their application to\nlong-horizon, complex tasks. We introduceBehavior Best-of-N(bBoN), a method\nthat scales over agents by generating multiplerolloutsand selecting among\nthem usingbehavior narrativesthat describe the agents'rollouts. It enables\nboth wide exploration and principledtrajectory selection, substantially\nimproving robustness and success rates. OnOSWorld, ourbBoNscaling method\nestablishes a new state of the art (SoTA) at 69.9%, significantly outperforming\nprior methods and approaching human-level performance at 72%, with\ncomprehensive ablations validating key design choices. We further demonstrate\nstrong generalization results to different operating systems onWindowsAgentArenaandAndroidWorld. Crucially, our results highlight the\nunreasonable effectiveness of scaling CUAs, when you do it right: effective\nscaling requires structured trajectory understanding and selection, andbBoNprovides a practical framework to achieve this. 📄 Paper:http://arxiv.org/abs/2510.02250💻 Code:http://github.com/simular-ai/Agent-S📝 Blog:http://simular.ai/articles/agent-s3 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "The Unreasonable Effectiveness of Scaling Agents for Computer Use",
+        "authors": [
+            "Xin Eric Wang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/simular-ai/Agent-S/",
+        "huggingface_url": "https://huggingface.co/papers/2510.02250",
+        "upvote": 24
+    }
 }

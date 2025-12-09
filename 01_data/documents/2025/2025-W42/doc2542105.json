@@ -1,14 +1,13 @@
 {
-  "context": "AnyUp is a feature-agnostic upsampling method that generalizes across different vision features and resolutions without requiring re-training. We introduce AnyUp, a method forfeature upsamplingthat can be applied to\nanyvision featureat any resolution, without encoder-specific training.\nExisting learning-based upsamplers for features likeDINOorCLIPneed to be\nre-trained for everyfeature extractorand thus do not generalize to different\nfeature types at inference time. In this work, we propose aninference-timefeature-agnosticupsampling architectureto alleviate this limitation and\nimprove upsampling quality. In our experiments, AnyUp sets a new state of the\nart for upsampled features, generalizes to different feature types, and\npreservesfeature semanticswhile being efficient and easy to apply to a wide\nrange ofdownstream tasks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "AnyUp: Universal Feature Upsampling",
-    "authors": [
-      "Thomas Wimmer"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/wimmerth/anyup",
-    "huggingface_url": "https://huggingface.co/papers/2510.12764",
-    "upvote": 11,
-    "tags": []
-  }
+    "context": "AnyUp is a feature-agnostic upsampling method that generalizes across different vision features and resolutions without requiring re-training. We introduce AnyUp, a method forfeature upsamplingthat can be applied to\nanyvision featureat any resolution, without encoder-specific training.\nExisting learning-based upsamplers for features likeDINOorCLIPneed to be\nre-trained for everyfeature extractorand thus do not generalize to different\nfeature types at inference time. In this work, we propose aninference-timefeature-agnosticupsampling architectureto alleviate this limitation and\nimprove upsampling quality. In our experiments, AnyUp sets a new state of the\nart for upsampled features, generalizes to different feature types, and\npreservesfeature semanticswhile being efficient and easy to apply to a wide\nrange ofdownstream tasks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "AnyUp: Universal Feature Upsampling",
+        "authors": [
+            "Thomas Wimmer"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/wimmerth/anyup",
+        "huggingface_url": "https://huggingface.co/papers/2510.12764",
+        "upvote": 11
+    }
 }

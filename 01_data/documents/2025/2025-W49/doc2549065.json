@@ -1,14 +1,13 @@
 {
-  "context": "Splannequin is a regularization technique that improves the visual quality of frozen 3D scenes synthesized from monocular videos by addressing artifacts in dynamic Gaussian splatting. Synthesizing high-fidelity frozen 3D scenes from monocular Mannequin-Challenge (MC) videos is a unique problem distinct from standard dynamic scene reconstruction. Instead of focusing on modeling motion, our goal is to create a frozen scene while strategically preserving subtle dynamics to enable user-controlled instant selection. To achieve this, we introduce a novel application ofdynamic Gaussian splatting: the scene is modeled dynamically, which retains nearby temporal variation, and a static scene is rendered by fixing the model's time parameter. However, under this usage, monocular capture with sparse temporal supervision introduces artifacts like ghosting and blur for Gaussians that become unobserved or occluded at weakly supervised timestamps. We propose Splannequin, an architecture-agnostic regularization that detects two states ofGaussian primitives, hidden and defective, and appliestemporal anchoring. Under predominantly forward camera motion,hidden statesare anchored to their recent well-observed past states, whiledefective statesare anchored to future states with stronger supervision. Our method integrates into existing dynamic Gaussian pipelines via simpleloss terms, requires no architectural changes, and adds zeroinference overhead. This results in markedly improved visual quality, enabling high-fidelity, user-selectable frozen-time renderings, validated by a 96% user preference. Project page: https://chien90190.github.io/splannequin/ Splannequin transforms imperfect Mannequin-Challenge videos into completely frozen videos. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Splannequin: Freezing Monocular Mannequin-Challenge Footage with Dual-Detection Splatting",
-    "authors": [
-      "Hao-Jen Chien"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2512.05113",
-    "upvote": 16,
-    "tags": []
-  }
+    "context": "Splannequin is a regularization technique that improves the visual quality of frozen 3D scenes synthesized from monocular videos by addressing artifacts in dynamic Gaussian splatting. Synthesizing high-fidelity frozen 3D scenes from monocular Mannequin-Challenge (MC) videos is a unique problem distinct from standard dynamic scene reconstruction. Instead of focusing on modeling motion, our goal is to create a frozen scene while strategically preserving subtle dynamics to enable user-controlled instant selection. To achieve this, we introduce a novel application ofdynamic Gaussian splatting: the scene is modeled dynamically, which retains nearby temporal variation, and a static scene is rendered by fixing the model's time parameter. However, under this usage, monocular capture with sparse temporal supervision introduces artifacts like ghosting and blur for Gaussians that become unobserved or occluded at weakly supervised timestamps. We propose Splannequin, an architecture-agnostic regularization that detects two states ofGaussian primitives, hidden and defective, and appliestemporal anchoring. Under predominantly forward camera motion,hidden statesare anchored to their recent well-observed past states, whiledefective statesare anchored to future states with stronger supervision. Our method integrates into existing dynamic Gaussian pipelines via simpleloss terms, requires no architectural changes, and adds zeroinference overhead. This results in markedly improved visual quality, enabling high-fidelity, user-selectable frozen-time renderings, validated by a 96% user preference. Project page: https://chien90190.github.io/splannequin/ Splannequin transforms imperfect Mannequin-Challenge videos into completely frozen videos. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Splannequin: Freezing Monocular Mannequin-Challenge Footage with Dual-Detection Splatting",
+        "authors": [
+            "Hao-Jen Chien"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2512.05113",
+        "upvote": 16
+    }
 }

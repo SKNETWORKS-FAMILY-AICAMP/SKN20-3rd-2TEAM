@@ -1,14 +1,13 @@
 {
-  "context": "ReDiff, a refining-enhanced diffusion framework, addresses train-inference discrepancies in discrete diffusion models by enabling the model to identify and correct its own errors, improving coherence and factual accuracy in generated content. Discrete diffusion modelshave emerged as a promising direction for\nvision-language tasks, offeringbidirectional context modelingand theoretical\nparallelization. However, their practical application is severely hindered by atrain-inference discrepancy, which leads tocatastrophic error cascades:\ninitial token errors duringparallel decodingpollute the generation context,\ntriggering a chain reaction of compounding errors and leading to syntactic\nerrors andsemantic hallucinations. To address this fundamental challenge, we\nreframe the generation process from passive denoising to active refining. We\nintroduceReDiff, arefining-enhanced diffusion frameworkthat teaches the\nmodel to identify and correct its own errors. Our approach features a two-stage\ntraining process: first, we instill a foundational revision capability by\ntraining the model to revisesynthetic errors; second, we implement a novelonline self-correction loopwhere the model is explicitly trained to revise its\nown flawed drafts by learning from an expert's corrections. This mistake-driven\nlearning endows the model with the crucial ability to revisit and refine its\nalready generated output, effectively breaking the error cascade. Extensive\nexperiments demonstrate thatReDiffsignificantly improves the coherence and\nfactual accuracy of generated content, enabling stable and efficient parallel\ngeneration far superior to traditional denoising methods. Our codes and models\nare available at https://rediff-hku.github.io/. We propose ReDiff, a refining-enhanced diffusion framework that teaches the model to identify and correct its own errors during generation, improving the coherence and factual accuracy of generated content. nice work! ·Sign uporlog into comment",
-  "metadata": {
-    "title": "From Denoising to Refining: A Corrective Framework for Vision-Language\n  Diffusion Model",
-    "authors": [
-      "Teng Wang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/jiyt17/ReDiff",
-    "huggingface_url": "https://huggingface.co/papers/2510.19871",
-    "upvote": 29,
-    "tags": []
-  }
+    "context": "ReDiff, a refining-enhanced diffusion framework, addresses train-inference discrepancies in discrete diffusion models by enabling the model to identify and correct its own errors, improving coherence and factual accuracy in generated content. Discrete diffusion modelshave emerged as a promising direction for\nvision-language tasks, offeringbidirectional context modelingand theoretical\nparallelization. However, their practical application is severely hindered by atrain-inference discrepancy, which leads tocatastrophic error cascades:\ninitial token errors duringparallel decodingpollute the generation context,\ntriggering a chain reaction of compounding errors and leading to syntactic\nerrors andsemantic hallucinations. To address this fundamental challenge, we\nreframe the generation process from passive denoising to active refining. We\nintroduceReDiff, arefining-enhanced diffusion frameworkthat teaches the\nmodel to identify and correct its own errors. Our approach features a two-stage\ntraining process: first, we instill a foundational revision capability by\ntraining the model to revisesynthetic errors; second, we implement a novelonline self-correction loopwhere the model is explicitly trained to revise its\nown flawed drafts by learning from an expert's corrections. This mistake-driven\nlearning endows the model with the crucial ability to revisit and refine its\nalready generated output, effectively breaking the error cascade. Extensive\nexperiments demonstrate thatReDiffsignificantly improves the coherence and\nfactual accuracy of generated content, enabling stable and efficient parallel\ngeneration far superior to traditional denoising methods. Our codes and models\nare available at https://rediff-hku.github.io/. We propose ReDiff, a refining-enhanced diffusion framework that teaches the model to identify and correct its own errors during generation, improving the coherence and factual accuracy of generated content. nice work! ·Sign uporlog into comment",
+    "metadata": {
+        "title": "From Denoising to Refining: A Corrective Framework for Vision-Language\n  Diffusion Model",
+        "authors": [
+            "Teng Wang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/jiyt17/ReDiff",
+        "huggingface_url": "https://huggingface.co/papers/2510.19871",
+        "upvote": 29
+    }
 }

@@ -1,15 +1,14 @@
 {
-  "context": "MASPRM, a process reward model for multi-agent systems, enhances inference performance by guiding beam search and MCTS, improving exact match scores on GSM8K and MATH datasets. Practical deployment ofMulti-Agent Systems (MAS)demands strong test-time\nperformance, motivating methods that guide inference-time search and\nselectively spend compute to improve quality. We present the Multi-Agent System\nProcess Reward Model (MASPRM). It assigns per-action, per-agent values to\npartial inter-agent transcripts and acts as aninference-time controller.\nMASPRM is trained frommulti-agent Monte Carlo Tree Search (MCTS)rollouts\nwithout requiring step-level human annotations, by propagating returns to local\ntargets. At inference, MASPRM guides step-levelbeam searchandMCTS, focusing\ncomputation on promising branches and pruning early. On GSM8K and MATH,\nMASPRM-guided decoding with anoutcome reward model (ORM)applied to the final\nanswer, improvesexact match (EM)over a single straight-through MAS pass by\n+30.7 and +22.9 points, respectively. A MASPRM trained on GSM8K transfers\nzero-shot to MATH without retraining, adding 8.4 EM points at the same\nbudget. MASPRM is a plug-in value model that estimates per-agent progress and\ncomplements verifier-style decoders, enabling more reliable, compute-aware\nmulti-agent reasoning. Code: https://github.com/milad1378yz/MASPRM MASPRM: Multi Agent System Process Reward Model ·Sign uporlog into comment",
-  "metadata": {
-    "title": "MASPRM: Multi-Agent System Process Reward Model",
-    "authors": [
-      "Milad Yazdani",
-      "Mahdi Mostajabdaveh"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/milad1378yz/MASPRM",
-    "huggingface_url": "https://huggingface.co/papers/2510.24803",
-    "upvote": 12,
-    "tags": []
-  }
+    "context": "MASPRM, a process reward model for multi-agent systems, enhances inference performance by guiding beam search and MCTS, improving exact match scores on GSM8K and MATH datasets. Practical deployment ofMulti-Agent Systems (MAS)demands strong test-time\nperformance, motivating methods that guide inference-time search and\nselectively spend compute to improve quality. We present the Multi-Agent System\nProcess Reward Model (MASPRM). It assigns per-action, per-agent values to\npartial inter-agent transcripts and acts as aninference-time controller.\nMASPRM is trained frommulti-agent Monte Carlo Tree Search (MCTS)rollouts\nwithout requiring step-level human annotations, by propagating returns to local\ntargets. At inference, MASPRM guides step-levelbeam searchandMCTS, focusing\ncomputation on promising branches and pruning early. On GSM8K and MATH,\nMASPRM-guided decoding with anoutcome reward model (ORM)applied to the final\nanswer, improvesexact match (EM)over a single straight-through MAS pass by\n+30.7 and +22.9 points, respectively. A MASPRM trained on GSM8K transfers\nzero-shot to MATH without retraining, adding 8.4 EM points at the same\nbudget. MASPRM is a plug-in value model that estimates per-agent progress and\ncomplements verifier-style decoders, enabling more reliable, compute-aware\nmulti-agent reasoning. Code: https://github.com/milad1378yz/MASPRM MASPRM: Multi Agent System Process Reward Model ·Sign uporlog into comment",
+    "metadata": {
+        "title": "MASPRM: Multi-Agent System Process Reward Model",
+        "authors": [
+            "Milad Yazdani",
+            "Mahdi Mostajabdaveh"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/milad1378yz/MASPRM",
+        "huggingface_url": "https://huggingface.co/papers/2510.24803",
+        "upvote": 12
+    }
 }

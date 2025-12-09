@@ -1,15 +1,14 @@
 {
-  "context": "J-Detector, a neural detector with linguistic and LLM-enhanced features, effectively identifies LLM-generated judgments based on scores and candidate content, addressing biases and vulnerabilities in sensitive scenarios. Large Language Model(LLM)-based judgments leverage powerful LLMs to\nefficiently evaluatecandidate contentand providejudgment scores. However,\nthe inherentbiasesand vulnerabilities of LLM-generated judgments raise\nconcerns, underscoring the urgent need for distinguishing them in sensitive\nscenarios like academic peer reviewing. In this work, we propose and formalize\nthe task ofjudgment detectionand systematically investigate thedetectabilityof LLM-generated judgments. Unlike LLM-generated text detection, judgment\ndetection relies solely onjudgment scoresand candidates, reflecting\nreal-world scenarios where textual feedback is often unavailable in the\ndetection process. Our preliminary analysis shows that existing LLM-generated\ntext detection methods perform poorly given their incapability to capture the\ninteraction betweenjudgment scoresandcandidate content-- an aspect crucial\nfor effectivejudgment detection. Inspired by this, we introduce\nJ-Detector, a lightweight and transparentneural detectoraugmented\nwith explicitly extracted linguistic andLLM-enhanced featuresto link LLM\njudges'biaseswith candidates' properties for accurate detection. Experiments\nacross diverse datasets demonstrate the effectiveness of J-Detector\nand show how its interpretability enables quantifyingbiasesin LLM judges.\nFinally, we analyze key factors affecting thedetectabilityof LLM-generated\njudgments and validate the practical utility ofjudgment detectionin\nreal-world scenarios. Code:https://github.com/David-Li0406/Judgment-DetectionData:https://huggingface.co/datasets/wjldw/JD-BenchWebsite:https://llm-as-a-judge.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Who's Your Judge? On the Detectability of LLM-Generated Judgments",
-    "authors": [
-      "Dawei Li",
-      "Chengshuai Zhao"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/David-Li0406/Judgment-Detection",
-    "huggingface_url": "https://huggingface.co/papers/2509.25154",
-    "upvote": 29,
-    "tags": []
-  }
+    "context": "J-Detector, a neural detector with linguistic and LLM-enhanced features, effectively identifies LLM-generated judgments based on scores and candidate content, addressing biases and vulnerabilities in sensitive scenarios. Large Language Model(LLM)-based judgments leverage powerful LLMs to\nefficiently evaluatecandidate contentand providejudgment scores. However,\nthe inherentbiasesand vulnerabilities of LLM-generated judgments raise\nconcerns, underscoring the urgent need for distinguishing them in sensitive\nscenarios like academic peer reviewing. In this work, we propose and formalize\nthe task ofjudgment detectionand systematically investigate thedetectabilityof LLM-generated judgments. Unlike LLM-generated text detection, judgment\ndetection relies solely onjudgment scoresand candidates, reflecting\nreal-world scenarios where textual feedback is often unavailable in the\ndetection process. Our preliminary analysis shows that existing LLM-generated\ntext detection methods perform poorly given their incapability to capture the\ninteraction betweenjudgment scoresandcandidate content-- an aspect crucial\nfor effectivejudgment detection. Inspired by this, we introduce\nJ-Detector, a lightweight and transparentneural detectoraugmented\nwith explicitly extracted linguistic andLLM-enhanced featuresto link LLM\njudges'biaseswith candidates' properties for accurate detection. Experiments\nacross diverse datasets demonstrate the effectiveness of J-Detector\nand show how its interpretability enables quantifyingbiasesin LLM judges.\nFinally, we analyze key factors affecting thedetectabilityof LLM-generated\njudgments and validate the practical utility ofjudgment detectionin\nreal-world scenarios. Code:https://github.com/David-Li0406/Judgment-DetectionData:https://huggingface.co/datasets/wjldw/JD-BenchWebsite:https://llm-as-a-judge.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Who's Your Judge? On the Detectability of LLM-Generated Judgments",
+        "authors": [
+            "Dawei Li",
+            "Chengshuai Zhao"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/David-Li0406/Judgment-Detection",
+        "huggingface_url": "https://huggingface.co/papers/2509.25154",
+        "upvote": 29
+    }
 }

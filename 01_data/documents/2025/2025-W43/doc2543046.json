@@ -1,14 +1,13 @@
 {
-  "context": "The paper advocates for an empiricist approach to evaluating language models, emphasizing frequency of use over traditional theoretical frameworks. Linguistic commentary on LLMs, heavily influenced by the theoretical\nframeworks of de Saussure and Chomsky, is often speculative and unproductive.\nCritics challenge whether LLMs can legitimately model language, citing the need\nfor \"deep structure\" or \"grounding\" to achieve an idealized linguistic\n\"competence.\" We argue for a radical shift in perspective towards the\nempiricist principles of Witold Ma\\'nczak, a prominent general and historical\nlinguist. He defines language not as a \"system of signs\" or a \"computational\nsystem of the brain\" but as the totality of all that is said and written. Above\nall, he identifies frequency of use of particular language elements as\nlanguage's primary governing principle. Using his framework, we challenge prior\ncritiques of LLMs and provide a constructive guide for designing, evaluating,\nand interpreting language models. LLMs are imperfect, not because they fail to model language, but because they only model language. IMO this is paper title of the year 🔥 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Language Models Model Language",
-    "authors": [
-      "Łukasz Borchmann"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.12766",
-    "upvote": 24,
-    "tags": []
-  }
+    "context": "The paper advocates for an empiricist approach to evaluating language models, emphasizing frequency of use over traditional theoretical frameworks. Linguistic commentary on LLMs, heavily influenced by the theoretical\nframeworks of de Saussure and Chomsky, is often speculative and unproductive.\nCritics challenge whether LLMs can legitimately model language, citing the need\nfor \"deep structure\" or \"grounding\" to achieve an idealized linguistic\n\"competence.\" We argue for a radical shift in perspective towards the\nempiricist principles of Witold Ma\\'nczak, a prominent general and historical\nlinguist. He defines language not as a \"system of signs\" or a \"computational\nsystem of the brain\" but as the totality of all that is said and written. Above\nall, he identifies frequency of use of particular language elements as\nlanguage's primary governing principle. Using his framework, we challenge prior\ncritiques of LLMs and provide a constructive guide for designing, evaluating,\nand interpreting language models. LLMs are imperfect, not because they fail to model language, but because they only model language. IMO this is paper title of the year 🔥 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Language Models Model Language",
+        "authors": [
+            "Łukasz Borchmann"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.12766",
+        "upvote": 24
+    }
 }

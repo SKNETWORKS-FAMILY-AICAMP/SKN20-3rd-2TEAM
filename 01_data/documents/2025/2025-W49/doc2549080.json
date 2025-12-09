@@ -1,14 +1,13 @@
 {
-  "context": "Audio-video joint denoising improves video generation quality by regularizing video dynamics through audio as a privileged signal, as demonstrated by the AVFullDiT architecture. Recent audio-video generative systems suggest that coupling modalities benefits not only audio-video synchrony but also the video modality itself. We pose a fundamental question: Does audio-videojoint denoisingtraining improve video generation, even when we only care about video quality? To study this, we introduce a parameter-efficientAudio-Video Full DiT(AVFullDiT) architecture that leverages pre-trainedtext-to-video(T2V) andtext-to-audio(T2A) modules forjoint denoising. We train (i) aT2AVmodel withAVFullDiTand (ii) aT2V-only counterpart under identical settings. Our results provide the first systematic evidence that audio-videojoint denoisingcan deliver more than synchrony. We observe consistent improvements on challenging subsets featuring large and object contact motions. We hypothesize that predicting audio acts as a privileged signal, encouraging the model to internalize causal relationships between visual events and their acoustic consequences (e.g., collision times impact sound), which in turn regularizes video dynamics. Our findings suggest thatcross-modal co-trainingis a promising approach to developing stronger, more physically groundedworld models. Code and dataset will be made publicly available. arXiv:https://arxiv.org/abs/2512.02457 Project:https://jianzongwu.github.io/projects/does-hearing-help-seeing/ Code:https://github.com/jianzongwu/Does-Hearing-Help-Seeing This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Does Hearing Help Seeing? Investigating Audio-Video Joint Denoising for Video Generation",
-    "authors": [
-      "Qingyu Shi"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/jianzongwu/Does-Hearing-Help-Seeing",
-    "huggingface_url": "https://huggingface.co/papers/2512.02457",
-    "upvote": 12,
-    "tags": []
-  }
+    "context": "Audio-video joint denoising improves video generation quality by regularizing video dynamics through audio as a privileged signal, as demonstrated by the AVFullDiT architecture. Recent audio-video generative systems suggest that coupling modalities benefits not only audio-video synchrony but also the video modality itself. We pose a fundamental question: Does audio-videojoint denoisingtraining improve video generation, even when we only care about video quality? To study this, we introduce a parameter-efficientAudio-Video Full DiT(AVFullDiT) architecture that leverages pre-trainedtext-to-video(T2V) andtext-to-audio(T2A) modules forjoint denoising. We train (i) aT2AVmodel withAVFullDiTand (ii) aT2V-only counterpart under identical settings. Our results provide the first systematic evidence that audio-videojoint denoisingcan deliver more than synchrony. We observe consistent improvements on challenging subsets featuring large and object contact motions. We hypothesize that predicting audio acts as a privileged signal, encouraging the model to internalize causal relationships between visual events and their acoustic consequences (e.g., collision times impact sound), which in turn regularizes video dynamics. Our findings suggest thatcross-modal co-trainingis a promising approach to developing stronger, more physically groundedworld models. Code and dataset will be made publicly available. arXiv:https://arxiv.org/abs/2512.02457 Project:https://jianzongwu.github.io/projects/does-hearing-help-seeing/ Code:https://github.com/jianzongwu/Does-Hearing-Help-Seeing This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Does Hearing Help Seeing? Investigating Audio-Video Joint Denoising for Video Generation",
+        "authors": [
+            "Qingyu Shi"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/jianzongwu/Does-Hearing-Help-Seeing",
+        "huggingface_url": "https://huggingface.co/papers/2512.02457",
+        "upvote": 12
+    }
 }

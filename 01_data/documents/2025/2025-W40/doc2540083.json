@@ -1,15 +1,14 @@
 {
-  "context": "VitaBench is a benchmark for evaluating LLM-based agents in complex, real-world interactive tasks using a diverse set of tools and scenarios. AsLLM-based agentsare increasingly deployed in real-life scenarios,\nexisting benchmarks fail to capture their inherent complexity of handling\nextensive information, leveraging diverse resources, and managing dynamic user\ninteractions. To address this gap, we introduceVitaBench, a challenging\nbenchmark that evaluates agents on versatileinteractive tasksgrounded inreal-world settings. Drawing from daily applications infood delivery, in-store\nconsumption, andonline travel services,VitaBenchpresents agents with the\nmost complexlife-serving simulation environmentto date, comprising 66 tools.\nThrough a framework that eliminatesdomain-specific policies, we enableflexible compositionof these scenarios and tools, yielding 100 cross-scenario\ntasks (main results) and 300single-scenario tasks. Each task is derived from\nmultiplereal user requestsand requires agents to reason across temporal andspatial dimensions, utilizecomplex tool sets, proactively clarify ambiguous\ninstructions, and trackshifting user intentthroughout multi-turn\nconversations. Moreover, we propose arubric-based sliding window evaluator,\nenabling robust assessment of diverse solution pathways in complex environments\nandstochastic interactions. Our comprehensive evaluation reveals that even the\nmost advanced models achieve only 30% success rate oncross-scenario tasks, and\nless than 50% success rate on others. Overall, we believeVitaBenchwill serve\nas a valuable resource for advancing the development of AI agents in practical\nreal-world applications. The code, dataset, and leaderboard are available at\nhttps://vitabench.github.io/ The code, dataset, and leaderboard are available athttps://vitabench.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "VitaBench: Benchmarking LLM Agents with Versatile Interactive Tasks in\n  Real-world Applications",
-    "authors": [
-      "Wei He",
-      "Yunke Zhao"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/meituan/vitabench",
-    "huggingface_url": "https://huggingface.co/papers/2509.26490",
-    "upvote": 19,
-    "tags": []
-  }
+    "context": "VitaBench is a benchmark for evaluating LLM-based agents in complex, real-world interactive tasks using a diverse set of tools and scenarios. AsLLM-based agentsare increasingly deployed in real-life scenarios,\nexisting benchmarks fail to capture their inherent complexity of handling\nextensive information, leveraging diverse resources, and managing dynamic user\ninteractions. To address this gap, we introduceVitaBench, a challenging\nbenchmark that evaluates agents on versatileinteractive tasksgrounded inreal-world settings. Drawing from daily applications infood delivery, in-store\nconsumption, andonline travel services,VitaBenchpresents agents with the\nmost complexlife-serving simulation environmentto date, comprising 66 tools.\nThrough a framework that eliminatesdomain-specific policies, we enableflexible compositionof these scenarios and tools, yielding 100 cross-scenario\ntasks (main results) and 300single-scenario tasks. Each task is derived from\nmultiplereal user requestsand requires agents to reason across temporal andspatial dimensions, utilizecomplex tool sets, proactively clarify ambiguous\ninstructions, and trackshifting user intentthroughout multi-turn\nconversations. Moreover, we propose arubric-based sliding window evaluator,\nenabling robust assessment of diverse solution pathways in complex environments\nandstochastic interactions. Our comprehensive evaluation reveals that even the\nmost advanced models achieve only 30% success rate oncross-scenario tasks, and\nless than 50% success rate on others. Overall, we believeVitaBenchwill serve\nas a valuable resource for advancing the development of AI agents in practical\nreal-world applications. The code, dataset, and leaderboard are available at\nhttps://vitabench.github.io/ The code, dataset, and leaderboard are available athttps://vitabench.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "VitaBench: Benchmarking LLM Agents with Versatile Interactive Tasks in\n  Real-world Applications",
+        "authors": [
+            "Wei He",
+            "Yunke Zhao"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/meituan/vitabench",
+        "huggingface_url": "https://huggingface.co/papers/2509.26490",
+        "upvote": 19
+    }
 }

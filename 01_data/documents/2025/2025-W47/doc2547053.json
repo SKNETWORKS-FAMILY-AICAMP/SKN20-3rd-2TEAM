@@ -1,14 +1,13 @@
 {
-  "context": "MHR combines ATLAS's skeleton/shape paradigm with a modern rig to provide expressive, anatomically plausible human animation for AR/VR and graphics. We present MHR, aparametric human body modelthat combines thedecoupled skeleton/shapeparadigm ofATLASwith a flexible, modern rig andpose corrective systeminspired by theMomentum library. Our model enables expressive, anatomically plausible human animation, supportingnon-linear pose correctives, and is designed for robust integration inAR/VRandgraphics pipelines. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "MHR: Momentum Human Rig",
-    "authors": [
-      "Jeongseok Lee"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/facebookresearch/MHR",
-    "huggingface_url": "https://huggingface.co/papers/2511.15586",
-    "upvote": 13,
-    "tags": []
-  }
+    "context": "MHR combines ATLAS's skeleton/shape paradigm with a modern rig to provide expressive, anatomically plausible human animation for AR/VR and graphics. We present MHR, aparametric human body modelthat combines thedecoupled skeleton/shapeparadigm ofATLASwith a flexible, modern rig andpose corrective systeminspired by theMomentum library. Our model enables expressive, anatomically plausible human animation, supportingnon-linear pose correctives, and is designed for robust integration inAR/VRandgraphics pipelines. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "MHR: Momentum Human Rig",
+        "authors": [
+            "Jeongseok Lee"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/facebookresearch/MHR",
+        "huggingface_url": "https://huggingface.co/papers/2511.15586",
+        "upvote": 13
+    }
 }

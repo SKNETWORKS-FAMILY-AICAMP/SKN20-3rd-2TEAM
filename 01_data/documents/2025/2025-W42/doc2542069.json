@@ -1,15 +1,14 @@
 {
-  "context": "LLMs can enhance decision-making in digital environments but struggle with long-horizon simulations due to hallucination and static knowledge. R-WoM improves performance by integrating external, up-to-date knowledge. Large Language Models(LLMs) can serve asworld modelsto enhance agent\ndecision-making in digital environments by simulating future states and\npredicting action outcomes, potentially eliminating costly trial-and-error\nexploration. However, this capability is fundamentally limited by LLMs'\ntendency toward hallucination and their reliance on static training knowledge,\nwhich can lead to compounding errors that inhibit long-horizon simulations. To\nsystematically investigate whether LLMs are appropriate for world modeling, we\nprobe two core capabilities ofworld models--future state predictionand reward\nestimation--through three tasks:next-state identification, full-procedure\nplanning alignment, andmilestone transition recognition. Our analysis shows\nthat while LLMs effectively capture immediate next states and identify\nmeaningful state transitions, their performance rapidly degrades infull-procedure planning. This highlights LLMs' limitations in reliably modeling\nenvironment dynamics over long horizons. To address these limitations, we\npropose theRetrieval-augmented World Model(R-WoM), which grounds LLM\nsimulations by incorporating factual, up-to-date knowledge retrieved from\nexternal tutorials. Experiments show thatR-WoMachieves substantial\nimprovements of up to 25.3% (OSWorld) and 18.1% (WebArena) compared to\nbaselines, with particular advantages in longer-horizon simulations. Arxiv:https://arxiv.org/pdf/2510.11892 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "R-WoM: Retrieval-augmented World Model For Computer-use Agents",
-    "authors": [
-      "Kai Mei",
-      "Shuaichen Chang"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.11892",
-    "upvote": 21,
-    "tags": []
-  }
+    "context": "LLMs can enhance decision-making in digital environments but struggle with long-horizon simulations due to hallucination and static knowledge. R-WoM improves performance by integrating external, up-to-date knowledge. Large Language Models(LLMs) can serve asworld modelsto enhance agent\ndecision-making in digital environments by simulating future states and\npredicting action outcomes, potentially eliminating costly trial-and-error\nexploration. However, this capability is fundamentally limited by LLMs'\ntendency toward hallucination and their reliance on static training knowledge,\nwhich can lead to compounding errors that inhibit long-horizon simulations. To\nsystematically investigate whether LLMs are appropriate for world modeling, we\nprobe two core capabilities ofworld models--future state predictionand reward\nestimation--through three tasks:next-state identification, full-procedure\nplanning alignment, andmilestone transition recognition. Our analysis shows\nthat while LLMs effectively capture immediate next states and identify\nmeaningful state transitions, their performance rapidly degrades infull-procedure planning. This highlights LLMs' limitations in reliably modeling\nenvironment dynamics over long horizons. To address these limitations, we\npropose theRetrieval-augmented World Model(R-WoM), which grounds LLM\nsimulations by incorporating factual, up-to-date knowledge retrieved from\nexternal tutorials. Experiments show thatR-WoMachieves substantial\nimprovements of up to 25.3% (OSWorld) and 18.1% (WebArena) compared to\nbaselines, with particular advantages in longer-horizon simulations. Arxiv:https://arxiv.org/pdf/2510.11892 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "R-WoM: Retrieval-augmented World Model For Computer-use Agents",
+        "authors": [
+            "Kai Mei",
+            "Shuaichen Chang"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.11892",
+        "upvote": 21
+    }
 }

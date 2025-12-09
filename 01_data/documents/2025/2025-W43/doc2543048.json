@@ -1,15 +1,14 @@
 {
-  "context": "Loopholing Discrete Diffusion Models (LDDMs) enhance text generation by preserving distributional information through a deterministic latent pathway, reducing perplexity and improving coherence and performance on reasoning tasks. Discrete diffusion modelsoffer a promising alternative to autoregressive\ngeneration throughparallel decoding, but they suffer from asampling wall:\nonce categorical sampling occurs, rich distributional information collapses\nintoone-hot vectorsand cannot be propagated across steps, forcing subsequent\nsteps to operate with limited information. To mitigate this problem, we\nintroduceLoopholing, a novel and simple mechanism that preserves this\ninformation via adeterministic latent pathway, leading toLoopholingDiscrete\nDiffusion Models (LDDMs). Trained efficiently with a self-conditioning\nstrategy, LDDMs achieve substantial gains-reducinggenerative perplexityby up\nto 61% over prior baselines, closing (and in some cases surpassing) the gap\nwithautoregressive models, and producing morecoherent text. Applied to\nreasoning tasks, LDDMs also improve performance onarithmetic benchmarkssuch\nasCountdownandGame of 24. These results also indicate thatloopholingmitigatesidle stepsandoscillations, providing a scalable path toward\nhigh-qualitynon-autoregressive text generation. In discrete diffusion, the predicted distribution—which encodes plausible candidates and their relative likelihoods—often collapses into one-hot tokens. This forces generation to depend on one-hot tokens that carry limited information. To address this, we introduce loopholing, a mechanism that deterministically carries a latent across steps and reduces reliance on sampling. This simple change yields more natural, coherent text and better performance on reasoning tasks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Loopholing Discrete Diffusion: Deterministic Bypass of the Sampling Wall",
-    "authors": [
-      "Mingyu Jo",
-      "Justin Deschenaux"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.19304",
-    "upvote": 23,
-    "tags": []
-  }
+    "context": "Loopholing Discrete Diffusion Models (LDDMs) enhance text generation by preserving distributional information through a deterministic latent pathway, reducing perplexity and improving coherence and performance on reasoning tasks. Discrete diffusion modelsoffer a promising alternative to autoregressive\ngeneration throughparallel decoding, but they suffer from asampling wall:\nonce categorical sampling occurs, rich distributional information collapses\nintoone-hot vectorsand cannot be propagated across steps, forcing subsequent\nsteps to operate with limited information. To mitigate this problem, we\nintroduceLoopholing, a novel and simple mechanism that preserves this\ninformation via adeterministic latent pathway, leading toLoopholingDiscrete\nDiffusion Models (LDDMs). Trained efficiently with a self-conditioning\nstrategy, LDDMs achieve substantial gains-reducinggenerative perplexityby up\nto 61% over prior baselines, closing (and in some cases surpassing) the gap\nwithautoregressive models, and producing morecoherent text. Applied to\nreasoning tasks, LDDMs also improve performance onarithmetic benchmarkssuch\nasCountdownandGame of 24. These results also indicate thatloopholingmitigatesidle stepsandoscillations, providing a scalable path toward\nhigh-qualitynon-autoregressive text generation. In discrete diffusion, the predicted distribution—which encodes plausible candidates and their relative likelihoods—often collapses into one-hot tokens. This forces generation to depend on one-hot tokens that carry limited information. To address this, we introduce loopholing, a mechanism that deterministically carries a latent across steps and reduces reliance on sampling. This simple change yields more natural, coherent text and better performance on reasoning tasks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Loopholing Discrete Diffusion: Deterministic Bypass of the Sampling Wall",
+        "authors": [
+            "Mingyu Jo",
+            "Justin Deschenaux"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.19304",
+        "upvote": 23
+    }
 }

@@ -1,18 +1,17 @@
 {
-  "context": "A new evaluation framework, DITING, and a reasoning-driven multi-agent evaluation framework, AgentEval, are introduced to assess the quality of web novel translations, revealing that Chinese-trained LLMs outperform larger foreign models. Large language models(LLMs) have substantially advancedmachine translation(MT), yet their effectiveness in translatingweb novelsremains unclear.\nExisting benchmarks rely on surface-level metrics that fail to capture the\ndistinctive traits of this genre. To address these gaps, we introduceDITING,\nthe first comprehensive evaluation framework for web novel translation,\nassessing narrative andcultural fidelityacross six dimensions: idiom\ntranslation,lexical ambiguity,terminology localization,tense consistency,zero-pronoun resolution, andcultural safety, supported by over 18K\nexpert-annotated Chinese-English sentence pairs. We further proposeAgentEval,\nareasoning-drivenmulti-agent evaluationframework that simulates expert\ndeliberation to assess translation quality beyond lexical overlap, achieving\nthe highest correlation with human judgments among seven tested automatic\nmetrics. To enable metric comparison, we developMetricAlign, ameta-evaluationdataset of 300 sentence pairs annotated with error labels and scalar quality\nscores. Comprehensive evaluation of fourteen open, closed, and commercial\nmodels reveals that Chinese-trained LLMs surpass larger foreign counterparts,\nand thatDeepSeek-V3delivers the most faithful and stylistically coherent\ntranslations. Our work establishes a new paradigm for exploring LLM-based web\nnovel translation and provides public resources to advance future research.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel\n  Translation",
-    "authors": [
-      "Enze Zhang",
-      "Jiaying Wang",
-      "Mengxi Xiao",
-      "Jifei Liu",
-      "Ziyan Kuang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/WHUNextGen/DITING",
-    "huggingface_url": "https://huggingface.co/papers/2510.09116",
-    "upvote": 96,
-    "tags": []
-  }
+    "context": "A new evaluation framework, DITING, and a reasoning-driven multi-agent evaluation framework, AgentEval, are introduced to assess the quality of web novel translations, revealing that Chinese-trained LLMs outperform larger foreign models. Large language models(LLMs) have substantially advancedmachine translation(MT), yet their effectiveness in translatingweb novelsremains unclear.\nExisting benchmarks rely on surface-level metrics that fail to capture the\ndistinctive traits of this genre. To address these gaps, we introduceDITING,\nthe first comprehensive evaluation framework for web novel translation,\nassessing narrative andcultural fidelityacross six dimensions: idiom\ntranslation,lexical ambiguity,terminology localization,tense consistency,zero-pronoun resolution, andcultural safety, supported by over 18K\nexpert-annotated Chinese-English sentence pairs. We further proposeAgentEval,\nareasoning-drivenmulti-agent evaluationframework that simulates expert\ndeliberation to assess translation quality beyond lexical overlap, achieving\nthe highest correlation with human judgments among seven tested automatic\nmetrics. To enable metric comparison, we developMetricAlign, ameta-evaluationdataset of 300 sentence pairs annotated with error labels and scalar quality\nscores. Comprehensive evaluation of fourteen open, closed, and commercial\nmodels reveals that Chinese-trained LLMs surpass larger foreign counterparts,\nand thatDeepSeek-V3delivers the most faithful and stylistically coherent\ntranslations. Our work establishes a new paradigm for exploring LLM-based web\nnovel translation and provides public resources to advance future research.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel\n  Translation",
+        "authors": [
+            "Enze Zhang",
+            "Jiaying Wang",
+            "Mengxi Xiao",
+            "Jifei Liu",
+            "Ziyan Kuang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/WHUNextGen/DITING",
+        "huggingface_url": "https://huggingface.co/papers/2510.09116",
+        "upvote": 96
+    }
 }

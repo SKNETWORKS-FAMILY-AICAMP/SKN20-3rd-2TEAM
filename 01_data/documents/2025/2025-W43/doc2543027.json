@@ -1,14 +1,13 @@
 {
-  "context": "Emergent misalignment occurs in in-context learning across multiple models and datasets, with misaligned responses increasing with the number of examples provided. Recent work has shown that narrow finetuning can produce broadly misaligned\nLLMs, a phenomenon termedemergent misalignment(EM). While concerning, these\nfindings were limited to finetuning and activation steering, leaving outin-context learning(ICL). We therefore ask: does EM emerge in ICL? We find\nthat it does: across three datasets, three frontier models produce broadly\nmisaligned responses at rates between 2% and 17% given 64 narrow in-context\nexamples, and up to 58% with 256 examples. We also examine mechanisms of EM by\neliciting step-by-step reasoning (while leaving in-context examples unchanged).\nManual analysis of the resultingchain-of-thoughtshows that 67.5% of\nmisaligned traces explicitly rationalize harmful outputs by adopting a reckless\nor dangerous ''persona'', echoing prior results on finetuning-induced EM. We show that Emergent Misalignment extends to in-context learning paradigm. Would be glad to discuss practical implications of this! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Emergent Misalignment via In-Context Learning: Narrow in-context\n  examples can produce broadly misaligned LLMs",
-    "authors": [
-      "Elena Tutubalina"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.11288",
-    "upvote": 48,
-    "tags": []
-  }
+    "context": "Emergent misalignment occurs in in-context learning across multiple models and datasets, with misaligned responses increasing with the number of examples provided. Recent work has shown that narrow finetuning can produce broadly misaligned\nLLMs, a phenomenon termedemergent misalignment(EM). While concerning, these\nfindings were limited to finetuning and activation steering, leaving outin-context learning(ICL). We therefore ask: does EM emerge in ICL? We find\nthat it does: across three datasets, three frontier models produce broadly\nmisaligned responses at rates between 2% and 17% given 64 narrow in-context\nexamples, and up to 58% with 256 examples. We also examine mechanisms of EM by\neliciting step-by-step reasoning (while leaving in-context examples unchanged).\nManual analysis of the resultingchain-of-thoughtshows that 67.5% of\nmisaligned traces explicitly rationalize harmful outputs by adopting a reckless\nor dangerous ''persona'', echoing prior results on finetuning-induced EM. We show that Emergent Misalignment extends to in-context learning paradigm. Would be glad to discuss practical implications of this! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Emergent Misalignment via In-Context Learning: Narrow in-context\n  examples can produce broadly misaligned LLMs",
+        "authors": [
+            "Elena Tutubalina"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.11288",
+        "upvote": 48
+    }
 }

@@ -1,15 +1,14 @@
 {
-  "context": "MotionRAG enhances video generation by integrating motion priors from reference videos using a retrieval-augmented framework, improving motion realism with negligible computational overhead. Image-to-video generation has made remarkable progress with the advancements\nindiffusion models, yet generating videos with realistic motion remains highly\nchallenging. This difficulty arises from the complexity of accurately modeling\nmotion, which involves capturing physical constraints, object interactions, and\ndomain-specific dynamics that are not easily generalized across diverse\nscenarios. To address this, we proposeMotionRAG, a retrieval-augmented\nframework that enhances motion realism by adapting motion priors from relevant\nreference videos throughContext-Aware Motion Adaptation (CAMA). The key\ntechnical innovations include: (i) a retrieval-based pipeline extracting\nhigh-level motion features usingvideo encoderandspecialized resamplersto\ndistill semantic motion representations; (ii) an in-context learning approach\nfor motion adaptation implemented through acausal transformer architecture;\n(iii) anattention-based motion injection adapterthat seamlessly integrates\ntransferred motion features into pretrained videodiffusion models. Extensive\nexperiments demonstrate that our method achieves significant improvements\nacross multiple domains and various base models, all with negligible\ncomputational overhead during inference. Furthermore, our modular design\nenableszero-shot generalizationto new domains by simply updating the\nretrieval database without retraining any components. This research enhances\nthe core capability of video generation systems by enabling the effective\nretrieval and transfer of motion priors, facilitating the synthesis of\nrealistic motion dynamics.   This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "MotionRAG: Motion Retrieval-Augmented Image-to-Video Generation",
-    "authors": [
-      "Chenhui Zhu",
-      "Shuai Wang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/MCG-NJU/MotionRAG",
-    "huggingface_url": "https://huggingface.co/papers/2509.26391",
-    "upvote": 21,
-    "tags": []
-  }
+    "context": "MotionRAG enhances video generation by integrating motion priors from reference videos using a retrieval-augmented framework, improving motion realism with negligible computational overhead. Image-to-video generation has made remarkable progress with the advancements\nindiffusion models, yet generating videos with realistic motion remains highly\nchallenging. This difficulty arises from the complexity of accurately modeling\nmotion, which involves capturing physical constraints, object interactions, and\ndomain-specific dynamics that are not easily generalized across diverse\nscenarios. To address this, we proposeMotionRAG, a retrieval-augmented\nframework that enhances motion realism by adapting motion priors from relevant\nreference videos throughContext-Aware Motion Adaptation (CAMA). The key\ntechnical innovations include: (i) a retrieval-based pipeline extracting\nhigh-level motion features usingvideo encoderandspecialized resamplersto\ndistill semantic motion representations; (ii) an in-context learning approach\nfor motion adaptation implemented through acausal transformer architecture;\n(iii) anattention-based motion injection adapterthat seamlessly integrates\ntransferred motion features into pretrained videodiffusion models. Extensive\nexperiments demonstrate that our method achieves significant improvements\nacross multiple domains and various base models, all with negligible\ncomputational overhead during inference. Furthermore, our modular design\nenableszero-shot generalizationto new domains by simply updating the\nretrieval database without retraining any components. This research enhances\nthe core capability of video generation systems by enabling the effective\nretrieval and transfer of motion priors, facilitating the synthesis of\nrealistic motion dynamics.   This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "MotionRAG: Motion Retrieval-Augmented Image-to-Video Generation",
+        "authors": [
+            "Chenhui Zhu",
+            "Shuai Wang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/MCG-NJU/MotionRAG",
+        "huggingface_url": "https://huggingface.co/papers/2509.26391",
+        "upvote": 21
+    }
 }

@@ -1,17 +1,16 @@
 {
-  "context": "An automated engine evaluates the factuality of review points in AI conference papers, demonstrating moderate agreement with human experts and higher accuracy at the premise level. Peer review serves as a backbone of academic research, but in most AI\nconferences, the review quality is degrading as the number of submissions\nexplodes. To reliably detect low-quality reviews, we define misinformed review\npoints as either \"weaknesses\" in a review that contain incorrect premises, or\n\"questions\" in a review that can be already answered by the paper. We verify\nthat 15.2% ofweaknessesand 26.4% ofquestionsare misinformed and introduceReviewScoreindicating if a review point is misinformed. To evaluate the\nfactuality of each premise ofweaknesses, we propose anautomated enginethat\nreconstructs every explicit and implicit premise from a weakness. We build a\nhuman expert-annotatedReviewScoredataset to check the ability of LLMs to\nautomateReviewScoreevaluation. Then, we measurehuman-model agreementsonReviewScoreusing eight currentstate-of-the-art LLMsand verify moderate\nagreements. We also prove that evaluatingpremise-level factualityshows\nsignificantly higher agreements than evaluatingweakness-level factuality. A\nthorough disagreement analysis further supports a potential of fully automatedReviewScoreevaluation. We introduce ReviewScore, a new evaluation of peer review quality, focusing on detecting misinformed review points. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "ReviewScore: Misinformed Peer Review Detection with Large Language\n  Models",
-    "authors": [
-      "Hyun Ryu",
-      "Doohyuk Jang",
-      "Joowon Kim",
-      "Yoonjeon Kim"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2509.21679",
-    "upvote": 63,
-    "tags": []
-  }
+    "context": "An automated engine evaluates the factuality of review points in AI conference papers, demonstrating moderate agreement with human experts and higher accuracy at the premise level. Peer review serves as a backbone of academic research, but in most AI\nconferences, the review quality is degrading as the number of submissions\nexplodes. To reliably detect low-quality reviews, we define misinformed review\npoints as either \"weaknesses\" in a review that contain incorrect premises, or\n\"questions\" in a review that can be already answered by the paper. We verify\nthat 15.2% ofweaknessesand 26.4% ofquestionsare misinformed and introduceReviewScoreindicating if a review point is misinformed. To evaluate the\nfactuality of each premise ofweaknesses, we propose anautomated enginethat\nreconstructs every explicit and implicit premise from a weakness. We build a\nhuman expert-annotatedReviewScoredataset to check the ability of LLMs to\nautomateReviewScoreevaluation. Then, we measurehuman-model agreementsonReviewScoreusing eight currentstate-of-the-art LLMsand verify moderate\nagreements. We also prove that evaluatingpremise-level factualityshows\nsignificantly higher agreements than evaluatingweakness-level factuality. A\nthorough disagreement analysis further supports a potential of fully automatedReviewScoreevaluation. We introduce ReviewScore, a new evaluation of peer review quality, focusing on detecting misinformed review points. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "ReviewScore: Misinformed Peer Review Detection with Large Language\n  Models",
+        "authors": [
+            "Hyun Ryu",
+            "Doohyuk Jang",
+            "Joowon Kim",
+            "Yoonjeon Kim"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2509.21679",
+        "upvote": 63
+    }
 }

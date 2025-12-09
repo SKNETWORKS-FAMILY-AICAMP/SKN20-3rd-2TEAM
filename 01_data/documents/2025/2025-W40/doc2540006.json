@@ -1,20 +1,19 @@
 {
-  "context": "MinerU2.5, a 1.2B-parameter document parsing vision-language model, achieves state-of-the-art recognition accuracy with computational efficiency through a coarse-to-fine parsing strategy. We introduce MinerU2.5, a 1.2B-parameterdocument parsingvision-language\nmodel that achieves state-of-the-art recognition accuracy while maintaining\nexceptional computational efficiency. Our approach employs acoarse-to-fine,two-stage parsingstrategy that decouples globallayout analysisfrom localcontent recognition. In the first stage, the model performs efficient layout\nanalysis ondownsampled imagesto identify structural elements, circumventing\nthecomputational overheadof processing high-resolution inputs. In the second\nstage, guided by the global layout, it performs targetedcontent recognitiononnative-resolution cropsextracted from the original image, preserving\nfine-grained details in dense text, complex formulas, and tables. To support\nthis strategy, we developed a comprehensivedata enginethat generates diverse,\nlarge-scale training corpora for bothpretrainingandfine-tuning. Ultimately,\nMinerU2.5 demonstrates strongdocument parsingability, achievingstate-of-the-art performanceon multiple benchmarks, surpassing both\ngeneral-purpose and domain-specific models across various recognition tasks,\nwhile maintaining significantly lowercomputational overhead. We introduce MinerU2.5, a 1.2B-parameter document parsing vision-language model that achieves state-of-the-art recognition accuracy while maintaining exceptional computational efficiency. Our approach employs a coarse-to-fine, two-stage parsing strategy that decouples global layout analysis from local content recognition. In the first stage, the model performs efficient layout analysis on downsampled images to identify structural elements, circumventing the computational overhead of processing high-resolution inputs. In the second stage, guided by the global layout, it performs targeted content recognition on native-resolution crops extracted from the original image, preserving fine-grained details in dense text, complex formulas, and tables. To support this strategy, we developed a comprehensive data engine that generates diverse, large-scale training corpora for both pretraining and fine-tuning. Ultimately, MinerU2.5 demonstrates strong document parsing ability, achieving state-of-the-art performance on multiple benchmarks, surpassing both general-purpose and domain-specific models across various recognition tasks, while maintaining significantly lower computational overhead. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-    "authors": [
-      "Junbo Niu",
-      "Zheng Liu",
-      "Zhuangcheng Gu",
-      "Bin Wang",
-      "Linke Ouyang",
-      "Tianyao He",
-      "Yuefeng Sun"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/opendatalab/MinerU",
-    "huggingface_url": "https://huggingface.co/papers/2509.22186",
-    "upvote": 136,
-    "tags": []
-  }
+    "context": "MinerU2.5, a 1.2B-parameter document parsing vision-language model, achieves state-of-the-art recognition accuracy with computational efficiency through a coarse-to-fine parsing strategy. We introduce MinerU2.5, a 1.2B-parameterdocument parsingvision-language\nmodel that achieves state-of-the-art recognition accuracy while maintaining\nexceptional computational efficiency. Our approach employs acoarse-to-fine,two-stage parsingstrategy that decouples globallayout analysisfrom localcontent recognition. In the first stage, the model performs efficient layout\nanalysis ondownsampled imagesto identify structural elements, circumventing\nthecomputational overheadof processing high-resolution inputs. In the second\nstage, guided by the global layout, it performs targetedcontent recognitiononnative-resolution cropsextracted from the original image, preserving\nfine-grained details in dense text, complex formulas, and tables. To support\nthis strategy, we developed a comprehensivedata enginethat generates diverse,\nlarge-scale training corpora for bothpretrainingandfine-tuning. Ultimately,\nMinerU2.5 demonstrates strongdocument parsingability, achievingstate-of-the-art performanceon multiple benchmarks, surpassing both\ngeneral-purpose and domain-specific models across various recognition tasks,\nwhile maintaining significantly lowercomputational overhead. We introduce MinerU2.5, a 1.2B-parameter document parsing vision-language model that achieves state-of-the-art recognition accuracy while maintaining exceptional computational efficiency. Our approach employs a coarse-to-fine, two-stage parsing strategy that decouples global layout analysis from local content recognition. In the first stage, the model performs efficient layout analysis on downsampled images to identify structural elements, circumventing the computational overhead of processing high-resolution inputs. In the second stage, guided by the global layout, it performs targeted content recognition on native-resolution crops extracted from the original image, preserving fine-grained details in dense text, complex formulas, and tables. To support this strategy, we developed a comprehensive data engine that generates diverse, large-scale training corpora for both pretraining and fine-tuning. Ultimately, MinerU2.5 demonstrates strong document parsing ability, achieving state-of-the-art performance on multiple benchmarks, surpassing both general-purpose and domain-specific models across various recognition tasks, while maintaining significantly lower computational overhead. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+        "authors": [
+            "Junbo Niu",
+            "Zheng Liu",
+            "Zhuangcheng Gu",
+            "Bin Wang",
+            "Linke Ouyang",
+            "Tianyao He",
+            "Yuefeng Sun"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/opendatalab/MinerU",
+        "huggingface_url": "https://huggingface.co/papers/2509.22186",
+        "upvote": 136
+    }
 }

@@ -1,14 +1,13 @@
 {
-  "context": "A video-to-4D shape generation framework uses temporal attention, time-aware point sampling, and noise sharing to produce dynamic 3D representations from videos, enhancing temporal stability and perceptual fidelity. Video-conditioned 4D shape generation aims to recover time-varying 3D\ngeometry and view-consistent appearance directly from an input video. In this\nwork, we introduce a native video-to-4D shape generation framework that\nsynthesizes a singledynamic 3D representationend-to-end from the video. Our\nframework introduces three key components based on large-scale pre-trained 3D\nmodels: (i) atemporal attentionthat conditions generation on all frames while\nproducing a time-indexed dynamic representation; (ii) a time-aware point\nsampling and4D latent anchoringthat promote temporally consistent geometry\nand texture; and (iii)noise sharingacross frames to enhance temporal\nstability. Our method accurately capturesnon-rigid motion,volume changes, and\neventopological transitionswithout per-frame optimization. Across diverse\nin-the-wild videos, our method improves robustness and perceptual fidelity and\nreduces failure modes compared with the baselines. Project page:https://shapegen4d.github.io/  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "ShapeGen4D: Towards High Quality 4D Shape Generation from Videos",
-    "authors": [
-      "Jiraphon Yenphraphai"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.06208",
-    "upvote": 18,
-    "tags": []
-  }
+    "context": "A video-to-4D shape generation framework uses temporal attention, time-aware point sampling, and noise sharing to produce dynamic 3D representations from videos, enhancing temporal stability and perceptual fidelity. Video-conditioned 4D shape generation aims to recover time-varying 3D\ngeometry and view-consistent appearance directly from an input video. In this\nwork, we introduce a native video-to-4D shape generation framework that\nsynthesizes a singledynamic 3D representationend-to-end from the video. Our\nframework introduces three key components based on large-scale pre-trained 3D\nmodels: (i) atemporal attentionthat conditions generation on all frames while\nproducing a time-indexed dynamic representation; (ii) a time-aware point\nsampling and4D latent anchoringthat promote temporally consistent geometry\nand texture; and (iii)noise sharingacross frames to enhance temporal\nstability. Our method accurately capturesnon-rigid motion,volume changes, and\neventopological transitionswithout per-frame optimization. Across diverse\nin-the-wild videos, our method improves robustness and perceptual fidelity and\nreduces failure modes compared with the baselines. Project page:https://shapegen4d.github.io/  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "ShapeGen4D: Towards High Quality 4D Shape Generation from Videos",
+        "authors": [
+            "Jiraphon Yenphraphai"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.06208",
+        "upvote": 18
+    }
 }

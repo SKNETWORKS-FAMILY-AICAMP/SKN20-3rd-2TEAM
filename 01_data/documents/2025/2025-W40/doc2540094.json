@@ -1,14 +1,13 @@
 {
-  "context": "WirelessMathLM, a compact model trained with domain-specific reinforcement learning, achieves high accuracy on wireless mathematics problems and transfers well to general mathematics benchmarks. Large language models(LLMs) excel at generalmathematical reasoning but fail\ncatastrophically on specialized technicalmathematics. In wireless\ncommunications, where problems require precise manipulation ofinformation-theoretic bounds,optimization constraints, andsignal processingformulations, even state-of-the-art models struggle to achieve competent\nperformance. We presentWirelessMathLM, demonstrating that compact models\n(0.5B-7B parameters) can match or exceed much larger models throughdomain-specific reinforcement learningwithverifiable rewards. Our key insight\nis that wirelessmathematics problems possess a unique property--verifiable\ncorrectness--that enables effective reinforcement learning without human\nfeedback. We constructWirelessMathBench-XL, a comprehensive benchmark of 4,027\nproblems from 970 papers. UsingGroup Relative Policy Optimization(GRPO) withbinary verification rewards, we train models directly from base checkpoints\nwithout supervised warm-start. Our 7B model achieves 39.5% accuracy onWirelessMathBench-XL, approaching GPT-4o (40.4%) while using about 100 times\nfewer parameters thanDeepSeek-R1(671B, 57.4%). Remarkably,GRPOtraining\nnearly doubles performance across all model scales (0.5B +11%, 3B +103%, 7B\n+81%), with positive transfer to generalmathematics benchmarks--our models\ngain +8.4 points on average acrossMATH,Minerva-Math,OlympiadBench,AMC, andAIMEwithout any training on these tasks. Project Homepage:https://lixin.ai/WirelessMathLM This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "WirelessMathLM: Teaching Mathematical Reasoning for LLMs in Wireless\n  Communications with Reinforcement Learning",
-    "authors": [
-      "Xin Li"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2509.23219",
-    "upvote": 18,
-    "tags": []
-  }
+    "context": "WirelessMathLM, a compact model trained with domain-specific reinforcement learning, achieves high accuracy on wireless mathematics problems and transfers well to general mathematics benchmarks. Large language models(LLMs) excel at generalmathematical reasoning but fail\ncatastrophically on specialized technicalmathematics. In wireless\ncommunications, where problems require precise manipulation ofinformation-theoretic bounds,optimization constraints, andsignal processingformulations, even state-of-the-art models struggle to achieve competent\nperformance. We presentWirelessMathLM, demonstrating that compact models\n(0.5B-7B parameters) can match or exceed much larger models throughdomain-specific reinforcement learningwithverifiable rewards. Our key insight\nis that wirelessmathematics problems possess a unique property--verifiable\ncorrectness--that enables effective reinforcement learning without human\nfeedback. We constructWirelessMathBench-XL, a comprehensive benchmark of 4,027\nproblems from 970 papers. UsingGroup Relative Policy Optimization(GRPO) withbinary verification rewards, we train models directly from base checkpoints\nwithout supervised warm-start. Our 7B model achieves 39.5% accuracy onWirelessMathBench-XL, approaching GPT-4o (40.4%) while using about 100 times\nfewer parameters thanDeepSeek-R1(671B, 57.4%). Remarkably,GRPOtraining\nnearly doubles performance across all model scales (0.5B +11%, 3B +103%, 7B\n+81%), with positive transfer to generalmathematics benchmarks--our models\ngain +8.4 points on average acrossMATH,Minerva-Math,OlympiadBench,AMC, andAIMEwithout any training on these tasks. Project Homepage:https://lixin.ai/WirelessMathLM This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "WirelessMathLM: Teaching Mathematical Reasoning for LLMs in Wireless\n  Communications with Reinforcement Learning",
+        "authors": [
+            "Xin Li"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2509.23219",
+        "upvote": 18
+    }
 }

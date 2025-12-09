@@ -1,15 +1,14 @@
 {
-  "context": "Orthogonal Sparse Autoencoders (OrtSAE) mitigate feature absorption and composition by enforcing orthogonality, leading to better feature discovery and improved performance on spurious correlation removal. Sparse autoencoders(SAEs) are a technique for sparse decomposition of neural\nnetwork activations into human-interpretable features. However, current SAEs\nsuffer fromfeature absorption, where specialized features capture instances of\ngeneral features creating representation holes, andfeature composition, where\nindependent features merge into composite representations. In this work, we\nintroduceOrthogonal SAE(OrtSAE), a novel approach aimed to mitigate these\nissues by enforcing orthogonality between the learned features. By implementing\na new training procedure that penalizes high pairwisecosine similaritybetween\nSAE features,OrtSAEpromotes the development ofdisentangled featureswhile\nscaling linearly with the SAE size, avoiding significant computational\noverhead. We trainOrtSAEacross different models and layers and compare it\nwith other methods. We find thatOrtSAEdiscovers 9% more distinct features,\nreducesfeature absorption(by 65%) and composition (by 15%), improves\nperformance onspurious correlation removal(+6%), and achieves on-par\nperformance for other downstream tasks compared to traditional SAEs. Orthogonal SAE (OrtSAE) is a new method that improves sparse autoencoders by enforcing orthogonality between learned features. This prevents features from merging together or creating gaps in representation. Compared to traditional SAEs, OrtSAE finds 9% more distinct features, reduces feature absorption by 65% and composition by 15%, and improves spurious correlation removal by 6%—all with minimal computational overhead. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "OrtSAE: Orthogonal Sparse Autoencoders Uncover Atomic Features",
-    "authors": [
-      "Alexey Dontsov",
-      "Elena Tutubalina"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2509.22033",
-    "upvote": 18,
-    "tags": []
-  }
+    "context": "Orthogonal Sparse Autoencoders (OrtSAE) mitigate feature absorption and composition by enforcing orthogonality, leading to better feature discovery and improved performance on spurious correlation removal. Sparse autoencoders(SAEs) are a technique for sparse decomposition of neural\nnetwork activations into human-interpretable features. However, current SAEs\nsuffer fromfeature absorption, where specialized features capture instances of\ngeneral features creating representation holes, andfeature composition, where\nindependent features merge into composite representations. In this work, we\nintroduceOrthogonal SAE(OrtSAE), a novel approach aimed to mitigate these\nissues by enforcing orthogonality between the learned features. By implementing\na new training procedure that penalizes high pairwisecosine similaritybetween\nSAE features,OrtSAEpromotes the development ofdisentangled featureswhile\nscaling linearly with the SAE size, avoiding significant computational\noverhead. We trainOrtSAEacross different models and layers and compare it\nwith other methods. We find thatOrtSAEdiscovers 9% more distinct features,\nreducesfeature absorption(by 65%) and composition (by 15%), improves\nperformance onspurious correlation removal(+6%), and achieves on-par\nperformance for other downstream tasks compared to traditional SAEs. Orthogonal SAE (OrtSAE) is a new method that improves sparse autoencoders by enforcing orthogonality between learned features. This prevents features from merging together or creating gaps in representation. Compared to traditional SAEs, OrtSAE finds 9% more distinct features, reduces feature absorption by 65% and composition by 15%, and improves spurious correlation removal by 6%—all with minimal computational overhead. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "OrtSAE: Orthogonal Sparse Autoencoders Uncover Atomic Features",
+        "authors": [
+            "Alexey Dontsov",
+            "Elena Tutubalina"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2509.22033",
+        "upvote": 18
+    }
 }

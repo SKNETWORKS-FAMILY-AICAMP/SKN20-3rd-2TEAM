@@ -1,17 +1,16 @@
 {
-  "context": "DocReward, a document reward model, evaluates and enhances the structural and stylistic quality of generated documents, outperforming GPT-4o and GPT-5 in both accuracy and human-preferred document generation. Recent advances in agentic workflows have enabled the automation of tasks\nsuch as professionaldocument generation. However, they primarily focus on\ntextual quality, neglecting visual structure and style, which are crucial for\nreadability and engagement. This gap arises mainly from the absence of suitable\nreward models to guide agentic workflows toward producing documents with\nstronger structural and stylistic quality. To address this, we proposeDocReward, adocument reward modelthat evaluates documents based on their\nstructure and style. We construct a multi-domain dataset DocPair of 117K paired\ndocuments, covering 32 domains and 267 document types, each including a high-\nand low-professionalism document with identical content but different structure\nand style. This enables the model to evaluate professionalism comprehensively,\nand in a textual-quality-agnostic way.DocRewardis trained using theBradley-Terry lossto score documents, penalizing predictions that contradict\nthe annotated ranking. To assess the performance of reward models, we create a\ntest dataset containing document bundles ranked by well-educated human\nevaluators. Notably,DocRewardoutperforms GPT-4o and GPT-5 in accuracy by 30.6\nand 19.4 percentage points, respectively, demonstrating its superiority over\nbaselines. In anextrinsic evaluationofdocument generation,DocRewardachieves a significantly higher win rate of 60.8%, compared to GPT-5's 37.7%\nwin rate, demonstrating its utility in guiding generation agents toward\nproducing human-preferred documents. Introducing DocReward, a document reward model that evaluates documents based on their structure and style. cool paper This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "DocReward: A Document Reward Model for Structuring and Stylizing",
-    "authors": [
-      "Junpeng Liu",
-      "Jiayu Ding",
-      "Li Dong",
-      "Lei Cui"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.11391",
-    "upvote": 27,
-    "tags": []
-  }
+    "context": "DocReward, a document reward model, evaluates and enhances the structural and stylistic quality of generated documents, outperforming GPT-4o and GPT-5 in both accuracy and human-preferred document generation. Recent advances in agentic workflows have enabled the automation of tasks\nsuch as professionaldocument generation. However, they primarily focus on\ntextual quality, neglecting visual structure and style, which are crucial for\nreadability and engagement. This gap arises mainly from the absence of suitable\nreward models to guide agentic workflows toward producing documents with\nstronger structural and stylistic quality. To address this, we proposeDocReward, adocument reward modelthat evaluates documents based on their\nstructure and style. We construct a multi-domain dataset DocPair of 117K paired\ndocuments, covering 32 domains and 267 document types, each including a high-\nand low-professionalism document with identical content but different structure\nand style. This enables the model to evaluate professionalism comprehensively,\nand in a textual-quality-agnostic way.DocRewardis trained using theBradley-Terry lossto score documents, penalizing predictions that contradict\nthe annotated ranking. To assess the performance of reward models, we create a\ntest dataset containing document bundles ranked by well-educated human\nevaluators. Notably,DocRewardoutperforms GPT-4o and GPT-5 in accuracy by 30.6\nand 19.4 percentage points, respectively, demonstrating its superiority over\nbaselines. In anextrinsic evaluationofdocument generation,DocRewardachieves a significantly higher win rate of 60.8%, compared to GPT-5's 37.7%\nwin rate, demonstrating its utility in guiding generation agents toward\nproducing human-preferred documents. Introducing DocReward, a document reward model that evaluates documents based on their structure and style. cool paper This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "DocReward: A Document Reward Model for Structuring and Stylizing",
+        "authors": [
+            "Junpeng Liu",
+            "Jiayu Ding",
+            "Li Dong",
+            "Lei Cui"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.11391",
+        "upvote": 27
+    }
 }

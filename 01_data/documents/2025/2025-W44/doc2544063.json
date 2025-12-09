@@ -1,16 +1,15 @@
 {
-  "context": "Optimizing the max@k metric through unbiased gradient estimates in RLVR improves the diversity and performance of Large Language Models in Best-of-N sampling scenarios. The application ofReinforcement Learning with Verifiable Rewards (RLVR)to\nmathematical and coding domains has demonstrated significant improvements in\nthe reasoning and problem-solving abilities ofLarge Language Models. Despite\nits success in single generation problem solving, the reinforcement learning\nfine-tuning process may harm the model's exploration ability, as reflected in\ndecreased diversity of generations and a resulting degradation of performance\nduringBest-of-N samplingfor large N values. In this work, we focus on\noptimizing themax@k metric, a continuous generalization ofpass@k. We derive\nan unbiasedon-policy gradient estimatefor direct optimization of this metric.\nFurthermore, we extend our derivations to theoff-policy updates, a common\nelement in modern RLVR algorithms, that allows better sample efficiency.\nEmpirically, we show that our objective effectively optimizesmax@k metricin\noff-policy scenarios, aligning the model with the Best-of-N inference strategy. We explore how the best-of-n sampling works on code tasks. ·Sign uporlog into comment",
-  "metadata": {
-    "title": "The Best of N Worlds: Aligning Reinforcement Learning with Best-of-N\n  Sampling via max@k Optimisation",
-    "authors": [
-      "Farid Bagirov",
-      "Evgeniy Glukhov",
-      "Egor Bogomolov"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.23393",
-    "upvote": 20,
-    "tags": []
-  }
+    "context": "Optimizing the max@k metric through unbiased gradient estimates in RLVR improves the diversity and performance of Large Language Models in Best-of-N sampling scenarios. The application ofReinforcement Learning with Verifiable Rewards (RLVR)to\nmathematical and coding domains has demonstrated significant improvements in\nthe reasoning and problem-solving abilities ofLarge Language Models. Despite\nits success in single generation problem solving, the reinforcement learning\nfine-tuning process may harm the model's exploration ability, as reflected in\ndecreased diversity of generations and a resulting degradation of performance\nduringBest-of-N samplingfor large N values. In this work, we focus on\noptimizing themax@k metric, a continuous generalization ofpass@k. We derive\nan unbiasedon-policy gradient estimatefor direct optimization of this metric.\nFurthermore, we extend our derivations to theoff-policy updates, a common\nelement in modern RLVR algorithms, that allows better sample efficiency.\nEmpirically, we show that our objective effectively optimizesmax@k metricin\noff-policy scenarios, aligning the model with the Best-of-N inference strategy. We explore how the best-of-n sampling works on code tasks. ·Sign uporlog into comment",
+    "metadata": {
+        "title": "The Best of N Worlds: Aligning Reinforcement Learning with Best-of-N\n  Sampling via max@k Optimisation",
+        "authors": [
+            "Farid Bagirov",
+            "Evgeniy Glukhov",
+            "Egor Bogomolov"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.23393",
+        "upvote": 20
+    }
 }

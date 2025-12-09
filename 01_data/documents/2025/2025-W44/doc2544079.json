@@ -1,14 +1,13 @@
 {
-  "context": "MergeMix, a training-time augmentation method, combines attention-aware image mixing and preference-driven training to improve vision-language alignment in multi-modal large language models with enhanced efficiency and accuracy. Vision-language alignment in multi-modal large language models (MLLMs)\ntypically relies onsupervised fine-tuning(SFT) orreinforcement learning(RL). SFT is stable and efficient but requires large-scale human annotations\nand cannot capture subtle preferences, while RL brings in a reward signal for\ntraining, but suffers from overhead and instability. These limitations\nhighlight a trade-off between scalability, robustness, and alignment quality.\nTo address this, we propose MergeMix, a training-time augmentation paradigm\nthat bridges SFT and RL. It first applies anattention-aware image mixingviatoken mergewith morecluster representationandspatial context, and then\npresents apreference-driven trainingparadigm for MLLMs by building preference\npairs with mixed images and raw images, and optimizing viaSimPO loss. As amixup augmentation, MergeMix enhancesattention consistencyand efficiency,\nsurpassing other heuristic-based methods in classification. Extensive\nexperiments demonstrate that MergeMix achieves competitive accuracy with\nimproved efficiency, providing a scalable approach to preference alignment in\nclassification and MLLMs.  TL;DR:We propose MergeMix,a unified Mixup-based augmentation method.It leverages the source matrix from Token Merge to generate mixed augmented samples with richer feature continuity for image classification, and utilizes these augmented samples for performance pair tuning to enhance the alignment capability of MLLMs. 🌐Webpage:https://github.com/JinXins/MergeMix_Web💻Codes:  ·Sign uporlog into comment",
-  "metadata": {
-    "title": "MergeMix: A Unified Augmentation Paradigm for Visual and Multi-Modal\n  Understanding",
-    "authors": [
-      "Siyuan Li"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/JinXins/MergeMix_Web",
-    "huggingface_url": "https://huggingface.co/papers/2510.23479",
-    "upvote": 14,
-    "tags": []
-  }
+    "context": "MergeMix, a training-time augmentation method, combines attention-aware image mixing and preference-driven training to improve vision-language alignment in multi-modal large language models with enhanced efficiency and accuracy. Vision-language alignment in multi-modal large language models (MLLMs)\ntypically relies onsupervised fine-tuning(SFT) orreinforcement learning(RL). SFT is stable and efficient but requires large-scale human annotations\nand cannot capture subtle preferences, while RL brings in a reward signal for\ntraining, but suffers from overhead and instability. These limitations\nhighlight a trade-off between scalability, robustness, and alignment quality.\nTo address this, we propose MergeMix, a training-time augmentation paradigm\nthat bridges SFT and RL. It first applies anattention-aware image mixingviatoken mergewith morecluster representationandspatial context, and then\npresents apreference-driven trainingparadigm for MLLMs by building preference\npairs with mixed images and raw images, and optimizing viaSimPO loss. As amixup augmentation, MergeMix enhancesattention consistencyand efficiency,\nsurpassing other heuristic-based methods in classification. Extensive\nexperiments demonstrate that MergeMix achieves competitive accuracy with\nimproved efficiency, providing a scalable approach to preference alignment in\nclassification and MLLMs.  TL;DR:We propose MergeMix,a unified Mixup-based augmentation method.It leverages the source matrix from Token Merge to generate mixed augmented samples with richer feature continuity for image classification, and utilizes these augmented samples for performance pair tuning to enhance the alignment capability of MLLMs. 🌐Webpage:https://github.com/JinXins/MergeMix_Web💻Codes:  ·Sign uporlog into comment",
+    "metadata": {
+        "title": "MergeMix: A Unified Augmentation Paradigm for Visual and Multi-Modal\n  Understanding",
+        "authors": [
+            "Siyuan Li"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/JinXins/MergeMix_Web",
+        "huggingface_url": "https://huggingface.co/papers/2510.23479",
+        "upvote": 14
+    }
 }

@@ -1,14 +1,13 @@
 {
-  "context": "Neighborhood Attention Filtering (NAF) upsamples features from Vision Foundation Models without retraining, achieving state-of-the-art performance across tasks with high efficiency. Vision Foundation Models (VFMs)extractspatially downsampled representations, posing challenges for pixel-level tasks. Existingupsampling approachesface a fundamental trade-off:classical filtersare fast and broadly applicable but rely on fixed forms, while modern upsamplers achieve superior accuracy through learnable, VFM-specific forms at the cost of retraining for each VFM. We introduceNeighborhood Attention Filtering (NAF), which bridges this gap by learning adaptive spatial-and-content weights throughCross-Scale Neighborhood AttentionandRotary Position Embeddings (RoPE), guided solely by the high-resolution input image. NAF operates zero-shot: it upsamples features from any VFM without retraining, making it the first VFM-agnostic architecture to outperform VFM-specific upsamplers and achieve state-of-the-art performance across multiple downstream tasks. It maintains high efficiency, scaling to 2K feature maps and reconstructing intermediate-resolution maps at 18 FPS. Beyondfeature upsampling, NAF demonstrates strong performance onimage restoration, highlighting its versatility. Code and checkpoints are available at https://github.com/valeoai/NAF. Hi,I am excited to share my latest work. Do not hesitate to reach me if you have any question.  We open-sourced everything: training, evaluation, weights, demos in the github repository:https://github.com/valeoai/NAF?tab=readme-ov-file cool paper! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "NAF: Zero-Shot Feature Upsampling via Neighborhood Attention Filtering",
-    "authors": [
-      "Loick Chambon"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/valeoai/NAF",
-    "huggingface_url": "https://huggingface.co/papers/2511.18452",
-    "upvote": 2,
-    "tags": []
-  }
+    "context": "Neighborhood Attention Filtering (NAF) upsamples features from Vision Foundation Models without retraining, achieving state-of-the-art performance across tasks with high efficiency. Vision Foundation Models (VFMs)extractspatially downsampled representations, posing challenges for pixel-level tasks. Existingupsampling approachesface a fundamental trade-off:classical filtersare fast and broadly applicable but rely on fixed forms, while modern upsamplers achieve superior accuracy through learnable, VFM-specific forms at the cost of retraining for each VFM. We introduceNeighborhood Attention Filtering (NAF), which bridges this gap by learning adaptive spatial-and-content weights throughCross-Scale Neighborhood AttentionandRotary Position Embeddings (RoPE), guided solely by the high-resolution input image. NAF operates zero-shot: it upsamples features from any VFM without retraining, making it the first VFM-agnostic architecture to outperform VFM-specific upsamplers and achieve state-of-the-art performance across multiple downstream tasks. It maintains high efficiency, scaling to 2K feature maps and reconstructing intermediate-resolution maps at 18 FPS. Beyondfeature upsampling, NAF demonstrates strong performance onimage restoration, highlighting its versatility. Code and checkpoints are available at https://github.com/valeoai/NAF. Hi,I am excited to share my latest work. Do not hesitate to reach me if you have any question.  We open-sourced everything: training, evaluation, weights, demos in the github repository:https://github.com/valeoai/NAF?tab=readme-ov-file cool paper! This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "NAF: Zero-Shot Feature Upsampling via Neighborhood Attention Filtering",
+        "authors": [
+            "Loick Chambon"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/valeoai/NAF",
+        "huggingface_url": "https://huggingface.co/papers/2511.18452",
+        "upvote": 2
+    }
 }

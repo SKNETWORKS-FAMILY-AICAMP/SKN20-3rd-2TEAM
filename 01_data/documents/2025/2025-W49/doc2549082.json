@@ -1,14 +1,13 @@
 {
-  "context": "LLMs can encode and apply high-level relational concepts in analogical reasoning but face limitations, particularly when relational information is missing or when transferring to new entities. Analogical reasoningis at the core of human cognition, serving as an important foundation for a variety of intellectual activities. While prior work has shown thatLLMscan representtask patternsandsurface-level concepts, it remains unclear whether these models can encodehigh-level relational conceptsand apply them to novel situations through structured comparisons. In this work, we explore this fundamental aspect usingproportional and story analogies, and identify three key findings. First,LLMseffectively encode the underlying relationships between analogous entities; both attributive andrelational informationpropagate throughmid-upper layersin correct cases, whereas reasoning failures reflect missingrelational informationwithin these layers. Second, unlike humans,LLMsoften struggle not only whenrelational informationis missing, but also when attempting to apply it to new entities. In such cases, strategically patchinghidden representationsat criticaltoken positionscan facilitate information transfer to a certain extent. Lastly, successfulanalogical reasoninginLLMsis marked by strongstructural alignmentbetween analogous situations, whereas failures often reflect degraded or misplaced alignment. Overall, our findings reveal thatLLMsexhibit emerging but limited capabilities in encoding and applyinghigh-level relational concepts, highlighting both parallels and gaps with human cognition. This paper investigates the internal mechanism of how LLMs perform analogical reasoning. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "The Curious Case of Analogies: Investigating Analogical Reasoning in Large Language Models",
-    "authors": [
-      "Taewhoo Lee"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/dmis-lab/analogical-reasoning",
-    "huggingface_url": "https://huggingface.co/papers/2511.20344",
-    "upvote": 12,
-    "tags": []
-  }
+    "context": "LLMs can encode and apply high-level relational concepts in analogical reasoning but face limitations, particularly when relational information is missing or when transferring to new entities. Analogical reasoningis at the core of human cognition, serving as an important foundation for a variety of intellectual activities. While prior work has shown thatLLMscan representtask patternsandsurface-level concepts, it remains unclear whether these models can encodehigh-level relational conceptsand apply them to novel situations through structured comparisons. In this work, we explore this fundamental aspect usingproportional and story analogies, and identify three key findings. First,LLMseffectively encode the underlying relationships between analogous entities; both attributive andrelational informationpropagate throughmid-upper layersin correct cases, whereas reasoning failures reflect missingrelational informationwithin these layers. Second, unlike humans,LLMsoften struggle not only whenrelational informationis missing, but also when attempting to apply it to new entities. In such cases, strategically patchinghidden representationsat criticaltoken positionscan facilitate information transfer to a certain extent. Lastly, successfulanalogical reasoninginLLMsis marked by strongstructural alignmentbetween analogous situations, whereas failures often reflect degraded or misplaced alignment. Overall, our findings reveal thatLLMsexhibit emerging but limited capabilities in encoding and applyinghigh-level relational concepts, highlighting both parallels and gaps with human cognition. This paper investigates the internal mechanism of how LLMs perform analogical reasoning. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "The Curious Case of Analogies: Investigating Analogical Reasoning in Large Language Models",
+        "authors": [
+            "Taewhoo Lee"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/dmis-lab/analogical-reasoning",
+        "huggingface_url": "https://huggingface.co/papers/2511.20344",
+        "upvote": 12
+    }
 }

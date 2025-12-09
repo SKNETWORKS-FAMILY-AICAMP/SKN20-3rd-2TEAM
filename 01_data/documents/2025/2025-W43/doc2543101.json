@@ -1,14 +1,13 @@
 {
-  "context": "MusicRFM uses Recursive Feature Machines to enable real-time, fine-grained control over pre-trained music models by steering their internal activations, improving musical note accuracy with minimal impact on prompt fidelity. Controllable music generation remains a significant challenge, with existing\nmethods often requiring model retraining or introducing audible artifacts. We\nintroduce MusicRFM, a framework that adaptsRecursive Feature Machines(RFMs)\nto enable fine-grained, interpretable control over frozen, pre-trained music\nmodels by directly steering their internal activations.RFMsanalyze a model's\ninternal gradients to produce interpretable \"concept directions\", or specific\naxes in theactivation spacethat correspond to musical attributes like notes\nor chords. We first train lightweight RFM probes to discover these directions\nwithinMusicGen'shidden states; then, during inference, we inject them back\ninto the model to guide the generation process in real-time without per-step\noptimization. We present advanced mechanisms for this control, including\ndynamic, time-varying schedules and methods for thesimultaneous enforcementof\nmultiplemusical properties. Our method successfully navigates the trade-off\nbetween control and generation quality: we can increase the accuracy of\ngenerating a target musical note from 0.23 to 0.82, whiletext prompt adherenceremains within approximately 0.02 of the unsteered baseline, demonstrating\neffective control with minimal impact on prompt fidelity. We release code to\nencourage further exploration onRFMsin the music domain. Audio Demo:https://astradzhao.github.io/MusicRFMPage/Code:https://github.com/astradzhao/music-rfm This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Steering Autoregressive Music Generation with Recursive Feature Machines",
-    "authors": [
-      "Zachary Novack"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/astradzhao/music-rfm",
-    "huggingface_url": "https://huggingface.co/papers/2510.19127",
-    "upvote": 7,
-    "tags": []
-  }
+    "context": "MusicRFM uses Recursive Feature Machines to enable real-time, fine-grained control over pre-trained music models by steering their internal activations, improving musical note accuracy with minimal impact on prompt fidelity. Controllable music generation remains a significant challenge, with existing\nmethods often requiring model retraining or introducing audible artifacts. We\nintroduce MusicRFM, a framework that adaptsRecursive Feature Machines(RFMs)\nto enable fine-grained, interpretable control over frozen, pre-trained music\nmodels by directly steering their internal activations.RFMsanalyze a model's\ninternal gradients to produce interpretable \"concept directions\", or specific\naxes in theactivation spacethat correspond to musical attributes like notes\nor chords. We first train lightweight RFM probes to discover these directions\nwithinMusicGen'shidden states; then, during inference, we inject them back\ninto the model to guide the generation process in real-time without per-step\noptimization. We present advanced mechanisms for this control, including\ndynamic, time-varying schedules and methods for thesimultaneous enforcementof\nmultiplemusical properties. Our method successfully navigates the trade-off\nbetween control and generation quality: we can increase the accuracy of\ngenerating a target musical note from 0.23 to 0.82, whiletext prompt adherenceremains within approximately 0.02 of the unsteered baseline, demonstrating\neffective control with minimal impact on prompt fidelity. We release code to\nencourage further exploration onRFMsin the music domain. Audio Demo:https://astradzhao.github.io/MusicRFMPage/Code:https://github.com/astradzhao/music-rfm This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Steering Autoregressive Music Generation with Recursive Feature Machines",
+        "authors": [
+            "Zachary Novack"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/astradzhao/music-rfm",
+        "huggingface_url": "https://huggingface.co/papers/2510.19127",
+        "upvote": 7
+    }
 }

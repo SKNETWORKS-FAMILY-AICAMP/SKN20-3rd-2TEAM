@@ -1,18 +1,17 @@
 {
-  "context": "A specialized model combining supervised fine-tuning and Reinforcement Learning with Verifiable Rewards achieves competitive performance in automated environment setup tasks. Environment setup-the process of configuring the system to work with a\nspecific software project-represents a persistent challenge in Software\nEngineering (SE). Automated environment setup methods could assist developers\nby providing fully configured environments for arbitrary repositories without\nmanual effort. This also helps SE researchers to scale execution-based\nbenchmarks. However, recent studies reveal that even state-of-the-art Large\nLanguage Models (LLMs) achieve limited success in automating this task. To\naddress this limitation, we tune a specialized model for environment setup. We\ncombinesupervised fine-tuningfor generating correctBash scriptsandReinforcement Learning with Verifiable Rewards(RLVR) to adapt it to the task\nof environment setup. OnEnvBench-Python, our method enablesQwen3-8B(a model\nrunnable on consumer hardware) to perform on par with larger models-Qwen3-32BandGPT-4o. The training code and model checkpoints are available online:\nhttps://github.com/JetBrains-Research/PIPer. 💸 Environment setup is costly in time & resources.🤖 Existing LLMs need large models and are expensive to run.🛠️ Our approach fine-tunes a smaller model (Qwen3-8B) with SFT + RLVR.⚡ Achieves on-par performance with bigger models (Qwen3-32B, GPT-4o) at a fraction of the cost. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "PIPer: On-Device Environment Setup via Online Reinforcement Learning",
-    "authors": [
-      "Alexander Kovrigin",
-      "Aleksandra Eliseeva",
-      "Konstantin Grotov",
-      "Egor Bogomolov",
-      "Yaroslav Zharov"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/JetBrains-Research/PIPer",
-    "huggingface_url": "https://huggingface.co/papers/2509.25455",
-    "upvote": 37,
-    "tags": []
-  }
+    "context": "A specialized model combining supervised fine-tuning and Reinforcement Learning with Verifiable Rewards achieves competitive performance in automated environment setup tasks. Environment setup-the process of configuring the system to work with a\nspecific software project-represents a persistent challenge in Software\nEngineering (SE). Automated environment setup methods could assist developers\nby providing fully configured environments for arbitrary repositories without\nmanual effort. This also helps SE researchers to scale execution-based\nbenchmarks. However, recent studies reveal that even state-of-the-art Large\nLanguage Models (LLMs) achieve limited success in automating this task. To\naddress this limitation, we tune a specialized model for environment setup. We\ncombinesupervised fine-tuningfor generating correctBash scriptsandReinforcement Learning with Verifiable Rewards(RLVR) to adapt it to the task\nof environment setup. OnEnvBench-Python, our method enablesQwen3-8B(a model\nrunnable on consumer hardware) to perform on par with larger models-Qwen3-32BandGPT-4o. The training code and model checkpoints are available online:\nhttps://github.com/JetBrains-Research/PIPer. 💸 Environment setup is costly in time & resources.🤖 Existing LLMs need large models and are expensive to run.🛠️ Our approach fine-tunes a smaller model (Qwen3-8B) with SFT + RLVR.⚡ Achieves on-par performance with bigger models (Qwen3-32B, GPT-4o) at a fraction of the cost. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "PIPer: On-Device Environment Setup via Online Reinforcement Learning",
+        "authors": [
+            "Alexander Kovrigin",
+            "Aleksandra Eliseeva",
+            "Konstantin Grotov",
+            "Egor Bogomolov",
+            "Yaroslav Zharov"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/JetBrains-Research/PIPer",
+        "huggingface_url": "https://huggingface.co/papers/2509.25455",
+        "upvote": 37
+    }
 }

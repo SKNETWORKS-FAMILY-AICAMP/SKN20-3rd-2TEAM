@@ -1,15 +1,14 @@
 {
-  "context": "VISTA, a multi-agent system, iteratively refines user prompts to enhance video quality and alignment with user intent, outperforming existing methods. Despite rapid advances intext-to-video synthesis, generated video quality\nremains critically dependent on precise user prompts. Existing test-time\noptimization methods, successful in other domains, struggle with the\nmulti-faceted nature of video. In this work, we introduce VISTA (Video\nIterative Self-improvemenT Agent), a novelmulti-agent systemthat autonomously\nimproves video generation through refining prompts in aniterative loop. VISTA\nfirst decomposes a user idea into astructured temporal plan. After generation,\nthe best video is identified through a robustpairwise tournament. This winning\nvideo is then critiqued by a trio of specialized agents focusing on visual,\naudio, andcontextual fidelity. Finally, areasoning agentsynthesizes this\nfeedback to introspectively rewrite and enhance the prompt for the next\ngeneration cycle. Experiments on single- andmulti-scene video generationscenarios show that while prior methods yield inconsistent gains, VISTA\nconsistently improves video quality and alignment with user intent, achieving\nup to 60% pairwise win rate against state-of-the-art baselines. Human\nevaluators concur, preferring VISTA outputs in 66.4% of comparisons. Happy to share our work Self-Improving Video Generation Agent:https://g-vista.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "VISTA: A Test-Time Self-Improving Video Generation Agent",
-    "authors": [
-      "Do Xuan Long",
-      "Xingchen Wan"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.15831",
-    "upvote": 20,
-    "tags": []
-  }
+    "context": "VISTA, a multi-agent system, iteratively refines user prompts to enhance video quality and alignment with user intent, outperforming existing methods. Despite rapid advances intext-to-video synthesis, generated video quality\nremains critically dependent on precise user prompts. Existing test-time\noptimization methods, successful in other domains, struggle with the\nmulti-faceted nature of video. In this work, we introduce VISTA (Video\nIterative Self-improvemenT Agent), a novelmulti-agent systemthat autonomously\nimproves video generation through refining prompts in aniterative loop. VISTA\nfirst decomposes a user idea into astructured temporal plan. After generation,\nthe best video is identified through a robustpairwise tournament. This winning\nvideo is then critiqued by a trio of specialized agents focusing on visual,\naudio, andcontextual fidelity. Finally, areasoning agentsynthesizes this\nfeedback to introspectively rewrite and enhance the prompt for the next\ngeneration cycle. Experiments on single- andmulti-scene video generationscenarios show that while prior methods yield inconsistent gains, VISTA\nconsistently improves video quality and alignment with user intent, achieving\nup to 60% pairwise win rate against state-of-the-art baselines. Human\nevaluators concur, preferring VISTA outputs in 66.4% of comparisons. Happy to share our work Self-Improving Video Generation Agent:https://g-vista.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "VISTA: A Test-Time Self-Improving Video Generation Agent",
+        "authors": [
+            "Do Xuan Long",
+            "Xingchen Wan"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.15831",
+        "upvote": 20
+    }
 }

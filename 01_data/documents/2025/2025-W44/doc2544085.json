@@ -1,14 +1,13 @@
 {
-  "context": "RECALL is a representation-aware framework for continual learning in large language models that merges models without historical data, preserving domain-general features and adapting to task-specific knowledge. We unveil that internal representations inlarge language models(LLMs) serve\nas reliable proxies of learned knowledge, and proposeRECALL, a novelrepresentation-awaremodel merging framework forcontinual learningwithout\naccess to historical data.RECALLcomputesinter-model similarityfromlayer-wise hidden representationsover clustered typical samples, and performsadaptive,hierarchical parameter fusionto align knowledge across models. This\ndesign enables the preservation ofdomain-general featuresin shallow layers\nwhile allowingtask-specific adaptationin deeper layers. Unlike prior methods\nthat require task labels or incur performance trade-offs,RECALLachieves\nseamless multi-domain integration and strong resistance to catastrophic\nforgetting. Extensive experiments across fiveNLP tasksand multiple continual\nlearning scenarios show thatRECALLoutperforms baselines in both knowledge\nretention and generalization, providing a scalable and data-free solution for\nevolvingLLMs. ·Sign uporlog into comment",
-  "metadata": {
-    "title": "RECALL: REpresentation-aligned Catastrophic-forgetting ALLeviation via\n  Hierarchical Model Merging",
-    "authors": [
-      "Bowen Wang"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.20479",
-    "upvote": 11,
-    "tags": []
-  }
+    "context": "RECALL is a representation-aware framework for continual learning in large language models that merges models without historical data, preserving domain-general features and adapting to task-specific knowledge. We unveil that internal representations inlarge language models(LLMs) serve\nas reliable proxies of learned knowledge, and proposeRECALL, a novelrepresentation-awaremodel merging framework forcontinual learningwithout\naccess to historical data.RECALLcomputesinter-model similarityfromlayer-wise hidden representationsover clustered typical samples, and performsadaptive,hierarchical parameter fusionto align knowledge across models. This\ndesign enables the preservation ofdomain-general featuresin shallow layers\nwhile allowingtask-specific adaptationin deeper layers. Unlike prior methods\nthat require task labels or incur performance trade-offs,RECALLachieves\nseamless multi-domain integration and strong resistance to catastrophic\nforgetting. Extensive experiments across fiveNLP tasksand multiple continual\nlearning scenarios show thatRECALLoutperforms baselines in both knowledge\nretention and generalization, providing a scalable and data-free solution for\nevolvingLLMs. ·Sign uporlog into comment",
+    "metadata": {
+        "title": "RECALL: REpresentation-aligned Catastrophic-forgetting ALLeviation via\n  Hierarchical Model Merging",
+        "authors": [
+            "Bowen Wang"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.20479",
+        "upvote": 11
+    }
 }

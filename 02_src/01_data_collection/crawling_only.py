@@ -173,7 +173,6 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int, save_dir
             "github_url": "GitHub URL",
             "huggingface_url": "HuggingFace URL",
             "upvote": 123,
-            "tags": []  # 빈 리스트로 저장
           }
         }
     """
@@ -197,7 +196,6 @@ def save_paper_json(paper_data: Dict, year: int, week: int, index: int, save_dir
             "github_url": paper_data["github_url"],
             "huggingface_url": paper_data["huggingface_url"],
             "upvote": paper_data["upvote"],
-            "tags": [],  # 빈 리스트로 저장
         },
     }
 

@@ -1,14 +1,13 @@
 {
-  "context": "Skyfall-GS creates large-scale, high-quality 3D urban scenes using satellite imagery and diffusion models, offering real-time exploration and improved geometry and texture consistency. Synthesizing large-scale, explorable, and geometrically accurate 3D urban\nscenes is a challenging yet valuable task in providing immersive and embodied\napplications. The challenges lie in the lack of large-scale and high-quality\nreal-world 3D scans for training generalizable generative models. In this\npaper, we take an alternative route to create large-scale 3D scenes by\nsynergizing the readily available satellite imagery that supplies realistic\ncoarse geometry and the open-domaindiffusion modelfor creating high-quality\nclose-up appearances. We proposeSkyfall-GS, the first city-block\nscale 3D scene creation framework without costly 3D annotations, also featuring\nreal-time, immersive 3D exploration. We tailor a curriculum-driven iterative\nrefinement strategy to progressively enhancegeometric completenessandphotorealistic textures. Extensive experiments demonstrate thatSkyfall-GSprovides improvedcross-view consistent geometryand more realistic textures\ncompared to state-of-the-art approaches. Project page:\nhttps://skyfall-gs.jayinnn.dev/ TL;DR: Skyfall-GS converts satellite images to explorable 3D urban scenes using diffusion models, with real-time rendering performance. See our project page for more 3D visualizations:https://skyfall-gs.jayinnn.dev/!  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite\n  Imagery",
-    "authors": [
-      "Jie-Ying Lee"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/jayin92/skyfall-gs",
-    "huggingface_url": "https://huggingface.co/papers/2510.15869",
-    "upvote": 46,
-    "tags": []
-  }
+    "context": "Skyfall-GS creates large-scale, high-quality 3D urban scenes using satellite imagery and diffusion models, offering real-time exploration and improved geometry and texture consistency. Synthesizing large-scale, explorable, and geometrically accurate 3D urban\nscenes is a challenging yet valuable task in providing immersive and embodied\napplications. The challenges lie in the lack of large-scale and high-quality\nreal-world 3D scans for training generalizable generative models. In this\npaper, we take an alternative route to create large-scale 3D scenes by\nsynergizing the readily available satellite imagery that supplies realistic\ncoarse geometry and the open-domaindiffusion modelfor creating high-quality\nclose-up appearances. We proposeSkyfall-GS, the first city-block\nscale 3D scene creation framework without costly 3D annotations, also featuring\nreal-time, immersive 3D exploration. We tailor a curriculum-driven iterative\nrefinement strategy to progressively enhancegeometric completenessandphotorealistic textures. Extensive experiments demonstrate thatSkyfall-GSprovides improvedcross-view consistent geometryand more realistic textures\ncompared to state-of-the-art approaches. Project page:\nhttps://skyfall-gs.jayinnn.dev/ TL;DR: Skyfall-GS converts satellite images to explorable 3D urban scenes using diffusion models, with real-time rendering performance. See our project page for more 3D visualizations:https://skyfall-gs.jayinnn.dev/!  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite\n  Imagery",
+        "authors": [
+            "Jie-Ying Lee"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/jayin92/skyfall-gs",
+        "huggingface_url": "https://huggingface.co/papers/2510.15869",
+        "upvote": 46
+    }
 }

@@ -1,15 +1,14 @@
 {
-  "context": "ChemMAS, a multi-agent system, improves reaction condition recommendation by providing interpretable rationales, outperforming existing methods in accuracy and explainability. The chemical reaction recommendation is to select proper reaction condition\nparameters for chemical reactions, which is pivotal to accelerating chemical\nscience. With the rapid development of large language models (LLMs), there is\ngrowing interest in leveraging their reasoning and planning capabilities for\nreaction condition recommendation. Despite their success, existing methods\nrarely explain the rationale behind the recommended reaction conditions,\nlimiting their utility in high-stakes scientific workflows. In this work, we\npropose ChemMAS, amulti-agent systemthat reframes condition prediction as anevidence-based reasoningtask. ChemMAS decomposes the task into mechanistic\ngrounding,multi-channel recall,constraint-aware agentic debate, and rationale\naggregation. Each decision is backed by interpretable justifications grounded\nin chemical knowledge and retrieved precedents. Experiments show that ChemMAS\nachieves 20-35% gains over domain-specific baselines and outperforms\ngeneral-purpose LLMs by 10-15% in Top-1 accuracy, while offering falsifiable,\nhuman-trustable rationales, which establishes a new paradigm forexplainable AIin scientific discovery. From What to Why: A Multi-Agent System for Evidence-based Chemical Reaction Condition Reasoning This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "From What to Why: A Multi-Agent System for Evidence-based Chemical\n  Reaction Condition Reasoning",
-    "authors": [
-      "Cheng Yang",
-      "Haiyuan Wan"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2509.23768",
-    "upvote": 48,
-    "tags": []
-  }
+    "context": "ChemMAS, a multi-agent system, improves reaction condition recommendation by providing interpretable rationales, outperforming existing methods in accuracy and explainability. The chemical reaction recommendation is to select proper reaction condition\nparameters for chemical reactions, which is pivotal to accelerating chemical\nscience. With the rapid development of large language models (LLMs), there is\ngrowing interest in leveraging their reasoning and planning capabilities for\nreaction condition recommendation. Despite their success, existing methods\nrarely explain the rationale behind the recommended reaction conditions,\nlimiting their utility in high-stakes scientific workflows. In this work, we\npropose ChemMAS, amulti-agent systemthat reframes condition prediction as anevidence-based reasoningtask. ChemMAS decomposes the task into mechanistic\ngrounding,multi-channel recall,constraint-aware agentic debate, and rationale\naggregation. Each decision is backed by interpretable justifications grounded\nin chemical knowledge and retrieved precedents. Experiments show that ChemMAS\nachieves 20-35% gains over domain-specific baselines and outperforms\ngeneral-purpose LLMs by 10-15% in Top-1 accuracy, while offering falsifiable,\nhuman-trustable rationales, which establishes a new paradigm forexplainable AIin scientific discovery. From What to Why: A Multi-Agent System for Evidence-based Chemical Reaction Condition Reasoning This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "From What to Why: A Multi-Agent System for Evidence-based Chemical\n  Reaction Condition Reasoning",
+        "authors": [
+            "Cheng Yang",
+            "Haiyuan Wan"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2509.23768",
+        "upvote": 48
+    }
 }

@@ -1,16 +1,15 @@
 {
-  "context": "Self-evolving agents based on Large Language Models can deviate in unintended ways, leading to various risks such as safety misalignment and vulnerability introduction, necessitating new safety paradigms. Advances inLarge Language Models(LLMs) have enabled a new class ofself-evolving agentsthat autonomously improve through interaction with the\nenvironment, demonstrating strong capabilities. However, self-evolution also\nintroduces novel risks overlooked by current safety research. In this work, we\nstudy the case where an agent's self-evolution deviates in unintended ways,\nleading to undesirable or even harmful outcomes. We refer to this asMisevolution. To provide a systematic investigation, we evaluatemisevolutionalong four keyevolutionary pathways: model, memory, tool, and workflow. Our\nempirical findings reveal thatmisevolutionis a widespread risk, affecting\nagents built even on top-tier LLMs (e.g., Gemini-2.5-Pro). Different emergent\nrisks are observed in the self-evolutionary process, such as the degradation ofsafety alignmentaftermemory accumulation, or the unintended introduction of\nvulnerabilities intool creationand reuse. To our knowledge, this is the first\nstudy to systematically conceptualizemisevolutionand provide empirical\nevidence of its occurrence, highlighting an urgent need for new safety\nparadigms forself-evolving agents. Finally, we discuss potential mitigation\nstrategies to inspire further research on building safer and more trustworthyself-evolving agents. Our code and data are available at\nhttps://github.com/ShaoShuai0605/Misevolution. Warning: this paper includes\nexamples that may be offensive or harmful in nature. We systematically propose and investigate the phenomenon of \"Misevolution\" for the first time. It refers to the case that self-evolving agents may \"go astray\" during the process of self-evolution, leading to unexpected risks and vulnerabilities on their own, even in the absence of external attacks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents",
-    "authors": [
-      "Qihan Ren",
-      "Boyi Wei",
-      "Jingyi Yang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/ShaoShuai0605/Misevolution",
-    "huggingface_url": "https://huggingface.co/papers/2509.26354",
-    "upvote": 17,
-    "tags": []
-  }
+    "context": "Self-evolving agents based on Large Language Models can deviate in unintended ways, leading to various risks such as safety misalignment and vulnerability introduction, necessitating new safety paradigms. Advances inLarge Language Models(LLMs) have enabled a new class ofself-evolving agentsthat autonomously improve through interaction with the\nenvironment, demonstrating strong capabilities. However, self-evolution also\nintroduces novel risks overlooked by current safety research. In this work, we\nstudy the case where an agent's self-evolution deviates in unintended ways,\nleading to undesirable or even harmful outcomes. We refer to this asMisevolution. To provide a systematic investigation, we evaluatemisevolutionalong four keyevolutionary pathways: model, memory, tool, and workflow. Our\nempirical findings reveal thatmisevolutionis a widespread risk, affecting\nagents built even on top-tier LLMs (e.g., Gemini-2.5-Pro). Different emergent\nrisks are observed in the self-evolutionary process, such as the degradation ofsafety alignmentaftermemory accumulation, or the unintended introduction of\nvulnerabilities intool creationand reuse. To our knowledge, this is the first\nstudy to systematically conceptualizemisevolutionand provide empirical\nevidence of its occurrence, highlighting an urgent need for new safety\nparadigms forself-evolving agents. Finally, we discuss potential mitigation\nstrategies to inspire further research on building safer and more trustworthyself-evolving agents. Our code and data are available at\nhttps://github.com/ShaoShuai0605/Misevolution. Warning: this paper includes\nexamples that may be offensive or harmful in nature. We systematically propose and investigate the phenomenon of \"Misevolution\" for the first time. It refers to the case that self-evolving agents may \"go astray\" during the process of self-evolution, leading to unexpected risks and vulnerabilities on their own, even in the absence of external attacks. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents",
+        "authors": [
+            "Qihan Ren",
+            "Boyi Wei",
+            "Jingyi Yang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/ShaoShuai0605/Misevolution",
+        "huggingface_url": "https://huggingface.co/papers/2509.26354",
+        "upvote": 17
+    }
 }

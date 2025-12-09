@@ -1,18 +1,17 @@
 {
-  "context": "Ditto framework addresses data scarcity in instruction-based video editing by generating a large dataset and using a curriculum learning strategy to train Editto, achieving superior instruction-following ability. Instruction-based video editing promises to democratize content creation, yet\nits progress is severely hampered by the scarcity of large-scale, high-quality\ntraining data. We introduce Ditto, a holistic framework designed to tackle this\nfundamental challenge. At its heart, Ditto features a novel data generation\npipeline that fuses the creative diversity of a leadingimage editorwith anin-context video generator, overcoming the limited scope of existing models. To\nmake this process viable, our framework resolves the prohibitive cost-quality\ntrade-off by employing an efficient,distilled model architectureaugmented by\natemporal enhancer, which simultaneously reduces computational overhead and\nimprovestemporal coherence. Finally, to achieve full scalability, this entire\npipeline is driven by anintelligent agentthat crafts diverse instructions and\nrigorously filters the output, ensuring quality control at scale. Using this\nframework, we invested over 12,000 GPU-days to build Ditto-1M, a new dataset of\none million high-fidelity video editing examples. We trained our model, Editto,\non Ditto-1M with acurriculum learning strategy. The results demonstrate\nsuperiorinstruction-following abilityand establish a new state-of-the-art in\ninstruction-based video editing. Project page:https://editto.netCode:https://github.com/EzioBy/DittoDataset:https://huggingface.co/datasets/QingyanBai/Ditto-1M This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Scaling Instruction-Based Video Editing with a High-Quality Synthetic\n  Dataset",
-    "authors": [
-      "Qingyan Bai",
-      "Qiuyu Wang",
-      "Yue Yu",
-      "Wen Wang",
-      "Yanhong Zeng"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/EzioBy/Ditto",
-    "huggingface_url": "https://huggingface.co/papers/2510.15742",
-    "upvote": 50,
-    "tags": []
-  }
+    "context": "Ditto framework addresses data scarcity in instruction-based video editing by generating a large dataset and using a curriculum learning strategy to train Editto, achieving superior instruction-following ability. Instruction-based video editing promises to democratize content creation, yet\nits progress is severely hampered by the scarcity of large-scale, high-quality\ntraining data. We introduce Ditto, a holistic framework designed to tackle this\nfundamental challenge. At its heart, Ditto features a novel data generation\npipeline that fuses the creative diversity of a leadingimage editorwith anin-context video generator, overcoming the limited scope of existing models. To\nmake this process viable, our framework resolves the prohibitive cost-quality\ntrade-off by employing an efficient,distilled model architectureaugmented by\natemporal enhancer, which simultaneously reduces computational overhead and\nimprovestemporal coherence. Finally, to achieve full scalability, this entire\npipeline is driven by anintelligent agentthat crafts diverse instructions and\nrigorously filters the output, ensuring quality control at scale. Using this\nframework, we invested over 12,000 GPU-days to build Ditto-1M, a new dataset of\none million high-fidelity video editing examples. We trained our model, Editto,\non Ditto-1M with acurriculum learning strategy. The results demonstrate\nsuperiorinstruction-following abilityand establish a new state-of-the-art in\ninstruction-based video editing. Project page:https://editto.netCode:https://github.com/EzioBy/DittoDataset:https://huggingface.co/datasets/QingyanBai/Ditto-1M This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Scaling Instruction-Based Video Editing with a High-Quality Synthetic\n  Dataset",
+        "authors": [
+            "Qingyan Bai",
+            "Qiuyu Wang",
+            "Yue Yu",
+            "Wen Wang",
+            "Yanhong Zeng"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/EzioBy/Ditto",
+        "huggingface_url": "https://huggingface.co/papers/2510.15742",
+        "upvote": 50
+    }
 }

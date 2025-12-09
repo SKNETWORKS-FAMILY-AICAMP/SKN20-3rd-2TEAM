@@ -1,16 +1,15 @@
 {
-  "context": "Edit-R1, a post-training framework using Diffusion Negative-aware Finetuning and a Multimodal Large Language Model, achieves state-of-the-art results in instruction-based image editing by addressing overfitting and lack of a universal reward model. Instruction-based image editing has achieved remarkable progress; however,\nmodels solely trained via supervised fine-tuning often overfit to annotated\npatterns, hindering their ability to explore and generalize beyond training\ndistributions. To this end, we introduce Edit-R1, a novel post-training\nframework for instruction-based image editing based on policy optimization.\nSpecifically, we utilizeDiffusion Negative-aware Finetuning(DiffusionNFT), a\nlikelihood-free policy optimization method consistent with theflow matchingforward process, thereby enabling the use ofhigher-order samplersand more\nefficient training. Another key challenge here is the absence of a universal\nreward model, resulting from the diverse nature of editing instructions and\ntasks. To bridge this gap, we employ aMultimodal Large Language Model(MLLM)\nas a unified, training-free reward model, leveraging its output logits to\nprovide fine-grained feedback. Furthermore, we carefully design a low-variance\ngroup filtering mechanism to reduceMLLMscoring noise and stabilize\noptimization.UniWorld-V2, trained with this framework, achieves\nstate-of-the-art results on theImgEditandGEdit-Benchbenchmarks,\nscoring 4.49 and 7.83, respectively. Crucially, our framework is\nmodel-agnostic, delivering substantial performance gains when applied to\ndiverse base models like Qwen-Image-Edit and FLUX-Kontext, demonstrating its\nwide applicability. Code and models are publicly available at\nhttps://github.com/PKU-YuanGroup/UniWorld-V2. Model:https://huggingface.co/collections/chestnutlzj/edit-r1-68dc3ecce74f5d37314d59f4Code:https://github.com/PKU-YuanGroup/UniWorld-V2 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Uniworld-V2: Reinforce Image Editing with Diffusion Negative-aware\n  Finetuning and MLLM Implicit Feedback",
-    "authors": [
-      "Qihui Zhang",
-      "Bin Lin",
-      "Shenghai Yuan"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/PKU-YuanGroup/UniWorld-V2",
-    "huggingface_url": "https://huggingface.co/papers/2510.16888",
-    "upvote": 21,
-    "tags": []
-  }
+    "context": "Edit-R1, a post-training framework using Diffusion Negative-aware Finetuning and a Multimodal Large Language Model, achieves state-of-the-art results in instruction-based image editing by addressing overfitting and lack of a universal reward model. Instruction-based image editing has achieved remarkable progress; however,\nmodels solely trained via supervised fine-tuning often overfit to annotated\npatterns, hindering their ability to explore and generalize beyond training\ndistributions. To this end, we introduce Edit-R1, a novel post-training\nframework for instruction-based image editing based on policy optimization.\nSpecifically, we utilizeDiffusion Negative-aware Finetuning(DiffusionNFT), a\nlikelihood-free policy optimization method consistent with theflow matchingforward process, thereby enabling the use ofhigher-order samplersand more\nefficient training. Another key challenge here is the absence of a universal\nreward model, resulting from the diverse nature of editing instructions and\ntasks. To bridge this gap, we employ aMultimodal Large Language Model(MLLM)\nas a unified, training-free reward model, leveraging its output logits to\nprovide fine-grained feedback. Furthermore, we carefully design a low-variance\ngroup filtering mechanism to reduceMLLMscoring noise and stabilize\noptimization.UniWorld-V2, trained with this framework, achieves\nstate-of-the-art results on theImgEditandGEdit-Benchbenchmarks,\nscoring 4.49 and 7.83, respectively. Crucially, our framework is\nmodel-agnostic, delivering substantial performance gains when applied to\ndiverse base models like Qwen-Image-Edit and FLUX-Kontext, demonstrating its\nwide applicability. Code and models are publicly available at\nhttps://github.com/PKU-YuanGroup/UniWorld-V2. Model:https://huggingface.co/collections/chestnutlzj/edit-r1-68dc3ecce74f5d37314d59f4Code:https://github.com/PKU-YuanGroup/UniWorld-V2 This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Uniworld-V2: Reinforce Image Editing with Diffusion Negative-aware\n  Finetuning and MLLM Implicit Feedback",
+        "authors": [
+            "Qihui Zhang",
+            "Bin Lin",
+            "Shenghai Yuan"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/PKU-YuanGroup/UniWorld-V2",
+        "huggingface_url": "https://huggingface.co/papers/2510.16888",
+        "upvote": 21
+    }
 }

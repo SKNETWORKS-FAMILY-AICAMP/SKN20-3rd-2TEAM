@@ -1,22 +1,21 @@
 {
-  "context": "HunyuanImage 3.0, a multimodal model with an autoregressive framework, achieves state-of-the-art performance in image generation and text-image alignment using a Mixture-of-Experts architecture with over 80 billion parameters. We present HunyuanImage 3.0, a nativemultimodal modelthat unifies\nmultimodal understanding and generation within anautoregressive framework,\nwith its image generation module publicly available. The achievement of\nHunyuanImage 3.0 relies on several key components, including meticulous data\ncuration, advanced architecture design, a nativeChain-of-Thoughts schema,progressive model pre-training,aggressive model post-training, and an\nefficient infrastructure that enables large-scale training and inference. With\nthese advancements, we successfully trained aMixture-of-Experts (MoE)model\ncomprising over 80 billion parameters in total, with 13 billion parameters\nactivated per token during inference, making it the largest and most powerful\nopen-source image generative model to date. We conducted extensive experiments\nand the results of automatic and human evaluation oftext-image alignmentandvisual qualitydemonstrate that HunyuanImage 3.0 rivals previous\nstate-of-the-art models. By releasing the code and weights of HunyuanImage 3.0,\nwe aim to enable the community to explore new ideas with a state-of-the-art\nfoundation model, fostering a dynamic and vibrant multimodal ecosystem. All\nopen source assets are publicly available at\nhttps://github.com/Tencent-Hunyuan/HunyuanImage-3.0 We present HunyuanImage 3.0, a native multimodal model that unifies multimodal understanding and generation within an autoregressive framework, with its image generation module publicly available. The achievement of HunyuanImage 3.0 relies on several key components, including meticulous data curation, advanced architecture design, a native Chain-of-Thoughts schema, progressive model pre-training, aggressive model post-training, and an efficient infrastructure that enables large-scale training and inference. With these advancements, we successfully trained a Mixture-of-Experts (MoE) model comprising over 80 billion parameters in total, with 13 billion parameters activated per token during inference, making it the largest and most powerful open-source image generative model to date. We conducted extensive experiments and the results of automatic and human evaluation of text-image alignment and visual quality demonstrate that HunyuanImage 3.0 rivals previous state-of-the-art models. By releasing the code and weights of HunyuanImage 3.0, we aim to enable the community to explore new ideas with a state-of-the-art foundation model, fostering a dynamic and vibrant multimodal ecosystem. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "HunyuanImage 3.0 Technical Report",
-    "authors": [
-      "Siyu Cao",
-      "Hangting Chen",
-      "Peng Chen",
-      "Yiji Cheng",
-      "Zhengkai Jiang",
-      "Weijie Kong",
-      "Changlin Li",
-      "Donghao Li",
-      "Junzhe Li"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
-    "huggingface_url": "https://huggingface.co/papers/2509.23951",
-    "upvote": 21,
-    "tags": []
-  }
+    "context": "HunyuanImage 3.0, a multimodal model with an autoregressive framework, achieves state-of-the-art performance in image generation and text-image alignment using a Mixture-of-Experts architecture with over 80 billion parameters. We present HunyuanImage 3.0, a nativemultimodal modelthat unifies\nmultimodal understanding and generation within anautoregressive framework,\nwith its image generation module publicly available. The achievement of\nHunyuanImage 3.0 relies on several key components, including meticulous data\ncuration, advanced architecture design, a nativeChain-of-Thoughts schema,progressive model pre-training,aggressive model post-training, and an\nefficient infrastructure that enables large-scale training and inference. With\nthese advancements, we successfully trained aMixture-of-Experts (MoE)model\ncomprising over 80 billion parameters in total, with 13 billion parameters\nactivated per token during inference, making it the largest and most powerful\nopen-source image generative model to date. We conducted extensive experiments\nand the results of automatic and human evaluation oftext-image alignmentandvisual qualitydemonstrate that HunyuanImage 3.0 rivals previous\nstate-of-the-art models. By releasing the code and weights of HunyuanImage 3.0,\nwe aim to enable the community to explore new ideas with a state-of-the-art\nfoundation model, fostering a dynamic and vibrant multimodal ecosystem. All\nopen source assets are publicly available at\nhttps://github.com/Tencent-Hunyuan/HunyuanImage-3.0 We present HunyuanImage 3.0, a native multimodal model that unifies multimodal understanding and generation within an autoregressive framework, with its image generation module publicly available. The achievement of HunyuanImage 3.0 relies on several key components, including meticulous data curation, advanced architecture design, a native Chain-of-Thoughts schema, progressive model pre-training, aggressive model post-training, and an efficient infrastructure that enables large-scale training and inference. With these advancements, we successfully trained a Mixture-of-Experts (MoE) model comprising over 80 billion parameters in total, with 13 billion parameters activated per token during inference, making it the largest and most powerful open-source image generative model to date. We conducted extensive experiments and the results of automatic and human evaluation of text-image alignment and visual quality demonstrate that HunyuanImage 3.0 rivals previous state-of-the-art models. By releasing the code and weights of HunyuanImage 3.0, we aim to enable the community to explore new ideas with a state-of-the-art foundation model, fostering a dynamic and vibrant multimodal ecosystem. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "HunyuanImage 3.0 Technical Report",
+        "authors": [
+            "Siyu Cao",
+            "Hangting Chen",
+            "Peng Chen",
+            "Yiji Cheng",
+            "Zhengkai Jiang",
+            "Weijie Kong",
+            "Changlin Li",
+            "Donghao Li",
+            "Junzhe Li"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
+        "huggingface_url": "https://huggingface.co/papers/2509.23951",
+        "upvote": 21
+    }
 }

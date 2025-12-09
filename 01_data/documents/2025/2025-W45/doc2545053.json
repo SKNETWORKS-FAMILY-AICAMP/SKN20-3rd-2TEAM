@@ -1,15 +1,14 @@
 {
-  "context": "Retaining and up-weighting moderately easy problems in RLVR pipelines for LLMs reduces output verbosity without explicit length penalization. Large language models (LLMs)trained forstep-by-step reasoningoften become\nexcessively verbose, raisinginference cost. Standard Reinforcement Learning\nwith Verifiable Rewards (RLVR) pipelines filter out ``easy'' problems for\ntraining efficiency, leaving the model to train primarily on harder problems\nthat require longer reasoning chains. This skews theoutput length distributionupward, resulting in a model that conflates ``thinking longer'' with\n``thinking better''. In this work, we show that retaining and modestly\nup-weighting moderately easy problems acts as an implicit length regularizer.\nExposing the model to solvable short-chain tasks constrains its output\ndistribution and prevents runaway verbosity. The result is\n\\emph{emergent brevityfor free}: the model learns to solve harder\nproblems without inflating the output length,  despite the absence of\nany explicit length penalization. RLVR experiments using this approach onQwen3-4B-Thinking-2507(with a 16k token limit) achieve baselinepass@1 AIME25 accuracywhile generating solutions that are, on average, nearly\ntwice as short. The code is available at\nhttps://github.com/MBZUAI-Paris/Frugal-AI{GitHub}, with datasets and\nmodels on\nhttps://huggingface.co/collections/MBZUAI-Paris/k2-think-mini-68dcfa8b114686a4bd3dc2bc{Hugging\nFace}. TL;DR: 🤖 Faster. Smarter. Frugal. and BETTER!Our open-source RL-trained math model reduces verbosity by ~2× without losing accuracy (actually improving on some hard reasoning benchmarks like Omni-Hard) showing that easy problems can implicitly regularize length during RL. Codeis publicly available onGithub. Model and Dataare publicly available onHugging Face.  ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Shorter but not Worse: Frugal Reasoning via Easy Samples as Length\n  Regularizers in Math RLVR",
-    "authors": [
-      "Abdelaziz Bounhar",
-      "Guokan Shang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/MBZUAI-Paris/Frugal-AI-Math",
-    "huggingface_url": "https://huggingface.co/papers/2511.01937",
-    "upvote": 12,
-    "tags": []
-  }
+    "context": "Retaining and up-weighting moderately easy problems in RLVR pipelines for LLMs reduces output verbosity without explicit length penalization. Large language models (LLMs)trained forstep-by-step reasoningoften become\nexcessively verbose, raisinginference cost. Standard Reinforcement Learning\nwith Verifiable Rewards (RLVR) pipelines filter out ``easy'' problems for\ntraining efficiency, leaving the model to train primarily on harder problems\nthat require longer reasoning chains. This skews theoutput length distributionupward, resulting in a model that conflates ``thinking longer'' with\n``thinking better''. In this work, we show that retaining and modestly\nup-weighting moderately easy problems acts as an implicit length regularizer.\nExposing the model to solvable short-chain tasks constrains its output\ndistribution and prevents runaway verbosity. The result is\n\\emph{emergent brevityfor free}: the model learns to solve harder\nproblems without inflating the output length,  despite the absence of\nany explicit length penalization. RLVR experiments using this approach onQwen3-4B-Thinking-2507(with a 16k token limit) achieve baselinepass@1 AIME25 accuracywhile generating solutions that are, on average, nearly\ntwice as short. The code is available at\nhttps://github.com/MBZUAI-Paris/Frugal-AI{GitHub}, with datasets and\nmodels on\nhttps://huggingface.co/collections/MBZUAI-Paris/k2-think-mini-68dcfa8b114686a4bd3dc2bc{Hugging\nFace}. TL;DR: 🤖 Faster. Smarter. Frugal. and BETTER!Our open-source RL-trained math model reduces verbosity by ~2× without losing accuracy (actually improving on some hard reasoning benchmarks like Omni-Hard) showing that easy problems can implicitly regularize length during RL. Codeis publicly available onGithub. Model and Dataare publicly available onHugging Face.  ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Shorter but not Worse: Frugal Reasoning via Easy Samples as Length\n  Regularizers in Math RLVR",
+        "authors": [
+            "Abdelaziz Bounhar",
+            "Guokan Shang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/MBZUAI-Paris/Frugal-AI-Math",
+        "huggingface_url": "https://huggingface.co/papers/2511.01937",
+        "upvote": 12
+    }
 }

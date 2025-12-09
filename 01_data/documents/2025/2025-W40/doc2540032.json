@@ -1,16 +1,15 @@
 {
-  "context": "F2LLM, a suite of large language models, achieves high embedding performance with efficient fine-tuning from foundation models using open-source datasets. We introduce F2LLM - Foundation to Feature Large Language Models, a suite of\nstate-of-the-artembedding modelsin three sizes: 0.6B, 1.7B, and 4B. Unlike\nprevious top-rankingembedding modelsthat require massive contrastive\npretraining, sophisticatedtraining pipelines, and costly synthetic training\ndata, F2LLM is directly finetuned fromfoundation modelson 6 millionquery-document-negative tuplescurated from open-source, non-synthetic\ndatasets, striking a strong balance between training cost, model size, and\nembedding performance. On theMTEB English leaderboard, F2LLM-4B ranks 2nd\namong models with approximately 4B parameters and 7th overall, while F2LLM-1.7B\nranks 1st among models in the 1B-2B size range. To facilitate future research\nin the field, we release the models, training dataset, and code, positioning\nF2LLM as a strong, reproducible, and budget-friendly baseline for future works. We present F2LLM, a family of fully open embedding models that strike a strong balance between training cost, model size, and embedding performance, serving as a strong, reproducible, and budget-friendly baseline for developing embedding models in the future. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "F2LLM Technical Report: Matching SOTA Embedding Performance with 6\n  Million Open-Source Data",
-    "authors": [
-      "Ziyin Zhang",
-      "Zihan Liao",
-      "Hang Yu"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/codefuse-ai/CodeFuse-Embeddings/tree/main/F2LLM",
-    "huggingface_url": "https://huggingface.co/papers/2510.02294",
-    "upvote": 45,
-    "tags": []
-  }
+    "context": "F2LLM, a suite of large language models, achieves high embedding performance with efficient fine-tuning from foundation models using open-source datasets. We introduce F2LLM - Foundation to Feature Large Language Models, a suite of\nstate-of-the-artembedding modelsin three sizes: 0.6B, 1.7B, and 4B. Unlike\nprevious top-rankingembedding modelsthat require massive contrastive\npretraining, sophisticatedtraining pipelines, and costly synthetic training\ndata, F2LLM is directly finetuned fromfoundation modelson 6 millionquery-document-negative tuplescurated from open-source, non-synthetic\ndatasets, striking a strong balance between training cost, model size, and\nembedding performance. On theMTEB English leaderboard, F2LLM-4B ranks 2nd\namong models with approximately 4B parameters and 7th overall, while F2LLM-1.7B\nranks 1st among models in the 1B-2B size range. To facilitate future research\nin the field, we release the models, training dataset, and code, positioning\nF2LLM as a strong, reproducible, and budget-friendly baseline for future works. We present F2LLM, a family of fully open embedding models that strike a strong balance between training cost, model size, and embedding performance, serving as a strong, reproducible, and budget-friendly baseline for developing embedding models in the future. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "F2LLM Technical Report: Matching SOTA Embedding Performance with 6\n  Million Open-Source Data",
+        "authors": [
+            "Ziyin Zhang",
+            "Zihan Liao",
+            "Hang Yu"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/codefuse-ai/CodeFuse-Embeddings/tree/main/F2LLM",
+        "huggingface_url": "https://huggingface.co/papers/2510.02294",
+        "upvote": 45
+    }
 }

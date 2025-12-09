@@ -1,24 +1,23 @@
 {
-  "context": "VideoScore2 is a multi-dimensional, interpretable framework for evaluating text-to-video generation, assessing visual quality, alignment, and consistency with detailed rationales. Recent advances intext-to-video generationhave produced increasingly\nrealistic and diverse content, yet evaluating such videos remains a fundamental\nchallenge due to their multi-faceted nature encompassingvisual quality,semantic alignment, andphysical consistency. Existing evaluators and reward\nmodels are limited to single opaque scores, lack interpretability, or provide\nonly coarse analysis, making them insufficient for capturing the comprehensive\nnature of video quality assessment. We presentVideoScore2, a\nmulti-dimensional, interpretable, and human-aligned framework that explicitly\nevaluatesvisual quality, text-to-video alignment, and physical/common-sense\nconsistency while producing detailed chain-of-thought rationales. Our model is\ntrained on a large-scale datasetVideoFeedback2containing 27,168\nhuman-annotated videos with both scores and reasoning traces across three\ndimensions, using a two-stage pipeline ofsupervised fine-tuningfollowed byreinforcement learningwithGroup Relative Policy Optimization (GRPO)to\nenhance analytical robustness. Extensive experiments demonstrate thatVideoScore2achieves superior performance with 44.35 (+5.94) accuracy on our\nin-domain benchmarkVideoScore-Bench-v2and 50.37 (+4.32) average performance\nacross four out-of-domain benchmarks (VideoGenReward-Bench,VideoPhy2, etc),\nwhile providing interpretable assessments that bridge the gap between\nevaluation and controllable generation through effective reward modeling forBest-of-N sampling. Project Page: https://tiger-ai-lab.github.io/VideoScore2/ Recent advances in text-to-video generation have produced increasingly realistic and diverse content, yet evaluating such videos remains a fundamental challenge due to their multi-faceted nature encompassing visual quality, semantic alignment, and physical consistency. Existing evaluators and reward models are limited to single opaque scores, lack interpretability, or provide only coarse analysis, making them insufficient for capturing the comprehensive nature of video quality assessment. We present VideoScore2, a multi-dimensional, interpretable, and human-aligned framework that explicitly evaluates visual quality, text-to-video alignment, and physical/common-sense consistency while producing detailed chain-of-thought rationales. Our model is trained on a large-scale dataset VideoFeedback2 containing 27,168 human-annotated videos with both scores and reasoning traces across three dimensions, using a two-stage pipeline of supervised fine-tuning followed by reinforcement learning with Group Relative Policy Optimization (GRPO) to enhance analytical robustness. Extensive experiments demonstrate that VideoScore2 achieves superior performance with 44.35 (+5.94) accuracy on our in-domain benchmark VideoScore-Bench-v2 and 50.37 (+4.32) average performance across four out-of-domain benchmarks (VideoGenReward-Bench, VideoPhy2, etc), while providing interpretable assessments that bridge the gap between evaluation and controllable generation through effective reward modeling for Best-of-N sampling.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "VideoScore2: Think before You Score in Generative Video Evaluation",
-    "authors": [
-      "Xuan He",
-      "Dongfu Jiang",
-      "Ping Nie",
-      "Minghao Liu",
-      "Chun Ye",
-      "Yi Lu",
-      "Keming Wu",
-      "Quy Duc Do",
-      "Zhuofeng Li",
-      "Yuxuan Zhang",
-      "Ge Zhang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/TIGER-AI-Lab/VideoScore2/",
-    "huggingface_url": "https://huggingface.co/papers/2509.22799",
-    "upvote": 25,
-    "tags": []
-  }
+    "context": "VideoScore2 is a multi-dimensional, interpretable framework for evaluating text-to-video generation, assessing visual quality, alignment, and consistency with detailed rationales. Recent advances intext-to-video generationhave produced increasingly\nrealistic and diverse content, yet evaluating such videos remains a fundamental\nchallenge due to their multi-faceted nature encompassingvisual quality,semantic alignment, andphysical consistency. Existing evaluators and reward\nmodels are limited to single opaque scores, lack interpretability, or provide\nonly coarse analysis, making them insufficient for capturing the comprehensive\nnature of video quality assessment. We presentVideoScore2, a\nmulti-dimensional, interpretable, and human-aligned framework that explicitly\nevaluatesvisual quality, text-to-video alignment, and physical/common-sense\nconsistency while producing detailed chain-of-thought rationales. Our model is\ntrained on a large-scale datasetVideoFeedback2containing 27,168\nhuman-annotated videos with both scores and reasoning traces across three\ndimensions, using a two-stage pipeline ofsupervised fine-tuningfollowed byreinforcement learningwithGroup Relative Policy Optimization (GRPO)to\nenhance analytical robustness. Extensive experiments demonstrate thatVideoScore2achieves superior performance with 44.35 (+5.94) accuracy on our\nin-domain benchmarkVideoScore-Bench-v2and 50.37 (+4.32) average performance\nacross four out-of-domain benchmarks (VideoGenReward-Bench,VideoPhy2, etc),\nwhile providing interpretable assessments that bridge the gap between\nevaluation and controllable generation through effective reward modeling forBest-of-N sampling. Project Page: https://tiger-ai-lab.github.io/VideoScore2/ Recent advances in text-to-video generation have produced increasingly realistic and diverse content, yet evaluating such videos remains a fundamental challenge due to their multi-faceted nature encompassing visual quality, semantic alignment, and physical consistency. Existing evaluators and reward models are limited to single opaque scores, lack interpretability, or provide only coarse analysis, making them insufficient for capturing the comprehensive nature of video quality assessment. We present VideoScore2, a multi-dimensional, interpretable, and human-aligned framework that explicitly evaluates visual quality, text-to-video alignment, and physical/common-sense consistency while producing detailed chain-of-thought rationales. Our model is trained on a large-scale dataset VideoFeedback2 containing 27,168 human-annotated videos with both scores and reasoning traces across three dimensions, using a two-stage pipeline of supervised fine-tuning followed by reinforcement learning with Group Relative Policy Optimization (GRPO) to enhance analytical robustness. Extensive experiments demonstrate that VideoScore2 achieves superior performance with 44.35 (+5.94) accuracy on our in-domain benchmark VideoScore-Bench-v2 and 50.37 (+4.32) average performance across four out-of-domain benchmarks (VideoGenReward-Bench, VideoPhy2, etc), while providing interpretable assessments that bridge the gap between evaluation and controllable generation through effective reward modeling for Best-of-N sampling.  This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "VideoScore2: Think before You Score in Generative Video Evaluation",
+        "authors": [
+            "Xuan He",
+            "Dongfu Jiang",
+            "Ping Nie",
+            "Minghao Liu",
+            "Chun Ye",
+            "Yi Lu",
+            "Keming Wu",
+            "Quy Duc Do",
+            "Zhuofeng Li",
+            "Yuxuan Zhang",
+            "Ge Zhang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/TIGER-AI-Lab/VideoScore2/",
+        "huggingface_url": "https://huggingface.co/papers/2509.22799",
+        "upvote": 25
+    }
 }

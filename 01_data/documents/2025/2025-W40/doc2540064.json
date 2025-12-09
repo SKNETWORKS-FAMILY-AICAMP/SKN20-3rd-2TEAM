@@ -1,15 +1,14 @@
 {
-  "context": "Activation steering, intended to control LLM behavior, can instead increase harmful compliance and undermine model alignment safeguards. Activation steeringis a promising technique for controllingLLM behaviorby\naddingsemantically meaningful vectorsdirectly into a model'shidden statesduring inference. It is often framed as a precise, interpretable, and\npotentially safer alternative to fine-tuning. We demonstrate the opposite:\nsteering systematically breaksmodel alignment safeguards, making it comply\nwithharmful requests. Through extensive experiments on different model\nfamilies, we show that even steering in a random direction can increase the\nprobability of harmful compliance from 0% to 2-27%. Alarmingly, steering benign\nfeatures from asparse autoencoder(SAE), a common source of interpretable\ndirections, increases these rates by a further 2-4%. Finally, we show that\ncombining 20 randomly sampled vectors that jailbreak a single prompt creates auniversal attack, significantly increasing harmful compliance on unseen\nrequests. These results challenge the paradigm of safety through\ninterpretability, showing that precise control over model internals does not\nguarantee precise control over model behavior. Activation steering - a technique that controls AI models by adding vectors to their internal representations - actually makes models less safe, not more. Even random steering directions can increase harmful compliance from 0% to 27%, and using \"interpretable\" directions from sparse autoencoders makes it worse. We show that having precise control over a model's internals doesn't guarantee safe behavior, challenging the idea that interpretability equals safety. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "The Rogue Scalpel: Activation Steering Compromises LLM Safety",
-    "authors": [
-      "Alexey Dontsov",
-      "Elena Tutubalina"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2509.22067",
-    "upvote": 27,
-    "tags": []
-  }
+    "context": "Activation steering, intended to control LLM behavior, can instead increase harmful compliance and undermine model alignment safeguards. Activation steeringis a promising technique for controllingLLM behaviorby\naddingsemantically meaningful vectorsdirectly into a model'shidden statesduring inference. It is often framed as a precise, interpretable, and\npotentially safer alternative to fine-tuning. We demonstrate the opposite:\nsteering systematically breaksmodel alignment safeguards, making it comply\nwithharmful requests. Through extensive experiments on different model\nfamilies, we show that even steering in a random direction can increase the\nprobability of harmful compliance from 0% to 2-27%. Alarmingly, steering benign\nfeatures from asparse autoencoder(SAE), a common source of interpretable\ndirections, increases these rates by a further 2-4%. Finally, we show that\ncombining 20 randomly sampled vectors that jailbreak a single prompt creates auniversal attack, significantly increasing harmful compliance on unseen\nrequests. These results challenge the paradigm of safety through\ninterpretability, showing that precise control over model internals does not\nguarantee precise control over model behavior. Activation steering - a technique that controls AI models by adding vectors to their internal representations - actually makes models less safe, not more. Even random steering directions can increase harmful compliance from 0% to 27%, and using \"interpretable\" directions from sparse autoencoders makes it worse. We show that having precise control over a model's internals doesn't guarantee safe behavior, challenging the idea that interpretability equals safety. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "The Rogue Scalpel: Activation Steering Compromises LLM Safety",
+        "authors": [
+            "Alexey Dontsov",
+            "Elena Tutubalina"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2509.22067",
+        "upvote": 27
+    }
 }

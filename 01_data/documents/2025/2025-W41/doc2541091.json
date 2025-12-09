@@ -1,14 +1,13 @@
 {
-  "context": "DGPO, a new online RL algorithm, enhances diffusion models by learning from group-level preferences, enabling the use of efficient deterministic ODE samplers and achieving faster training and superior performance. While reinforcement learning methods such as Group Relative Preference\nOptimization (GRPO) have significantly enhanced Large Language Models, adapting\nthem todiffusion modelsremains challenging. In particular,GRPOdemands astochastic policy, yet the most cost-effective diffusion samplers are based ondeterministic ODEs. Recent work addresses this issue by using inefficientSDE-based samplersto induce stochasticity, but this reliance on model-agnosticGaussian noiseleads to slow convergence. To resolve this conflict, we proposeDirect Group Preference Optimization(DGPO), a new online RL algorithm that\ndispenses with thepolicy-gradient frameworkentirely.DGPOlearns directly\nfromgroup-level preferences, which utilize relative information of samples\nwithin groups. This design eliminates the need for inefficient stochastic\npolicies, unlocking the use of efficient deterministic ODE samplers and faster\ntraining. Extensive results show thatDGPOtrains around 20 times faster than\nexisting state-of-the-art methods and achieves superior performance on both\nin-domain andout-of-domain reward metrics. Code is available at\nhttps://github.com/Luo-Yihong/DGPO. DGPO is a new online RL algorithm that learns directly from group-level preferences instead of employing the policy-gradient framework. Extensive results show that DGPO trains around 20 times faster than existing state-of-the-art methods and achieves superior performance on both in-domain and out-of-domain reward metrics. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Reinforcing Diffusion Models by Direct Group Preference Optimization",
-    "authors": [
-      "Yihong Luo"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/Luo-Yihong/DGPO",
-    "huggingface_url": "https://huggingface.co/papers/2510.08425",
-    "upvote": 11,
-    "tags": []
-  }
+    "context": "DGPO, a new online RL algorithm, enhances diffusion models by learning from group-level preferences, enabling the use of efficient deterministic ODE samplers and achieving faster training and superior performance. While reinforcement learning methods such as Group Relative Preference\nOptimization (GRPO) have significantly enhanced Large Language Models, adapting\nthem todiffusion modelsremains challenging. In particular,GRPOdemands astochastic policy, yet the most cost-effective diffusion samplers are based ondeterministic ODEs. Recent work addresses this issue by using inefficientSDE-based samplersto induce stochasticity, but this reliance on model-agnosticGaussian noiseleads to slow convergence. To resolve this conflict, we proposeDirect Group Preference Optimization(DGPO), a new online RL algorithm that\ndispenses with thepolicy-gradient frameworkentirely.DGPOlearns directly\nfromgroup-level preferences, which utilize relative information of samples\nwithin groups. This design eliminates the need for inefficient stochastic\npolicies, unlocking the use of efficient deterministic ODE samplers and faster\ntraining. Extensive results show thatDGPOtrains around 20 times faster than\nexisting state-of-the-art methods and achieves superior performance on both\nin-domain andout-of-domain reward metrics. Code is available at\nhttps://github.com/Luo-Yihong/DGPO. DGPO is a new online RL algorithm that learns directly from group-level preferences instead of employing the policy-gradient framework. Extensive results show that DGPO trains around 20 times faster than existing state-of-the-art methods and achieves superior performance on both in-domain and out-of-domain reward metrics. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Reinforcing Diffusion Models by Direct Group Preference Optimization",
+        "authors": [
+            "Yihong Luo"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/Luo-Yihong/DGPO",
+        "huggingface_url": "https://huggingface.co/papers/2510.08425",
+        "upvote": 11
+    }
 }

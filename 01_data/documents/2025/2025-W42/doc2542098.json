@@ -1,14 +1,13 @@
 {
-  "context": "SwarmSys, a distributed multi-agent framework inspired by swarm intelligence, enhances scalability and adaptability in long-horizon reasoning through specialized roles and self-organizing mechanisms. Large language model (LLM) agents have shown remarkable reasoning abilities.\nHowever, existing multi-agent frameworks often rely on fixed roles or\ncentralized control, limiting scalability and adaptability in long-horizon\nreasoning. We introduceSwarmSys, a closed-loop framework for distributed\nmulti-agent reasoning inspired byswarm intelligence. Coordination inSwarmSysemerges through iterative interactions among three specialized roles,Explorers,Workers, andValidators, that continuously cycle through\nexploration, exploitation, and validation. To enable scalable and adaptive\ncollaboration, we integrateadaptive agentandevent profiles, embedding-based\nprobabilistic matching, and apheromone-inspired reinforcement mechanism,\nsupporting dynamic task allocation andself-organizing convergencewithout\nglobal supervision. Acrosssymbolic reasoning,research synthesis, andscientific programmingtasks,SwarmSysconsistently outperforms baselines,\nimproving both accuracy and reasoning stability. These findings highlight\nswarm-inspired coordination as a promising paradigm for scalable, robust, and\nadaptive multi-agent reasoning, suggesting that coordination scaling may rival\nmodel scaling in advancing LLM intelligence. We introduce SwarmSys, a closed-loop framework for distributed multi-agent reasoning inspired by swarm intelligence. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "SwarmSys: Decentralized Swarm-Inspired Agents for Scalable and Adaptive\n  Reasoning",
-    "authors": [
-      "Hongjun Liu"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.10047",
-    "upvote": 13,
-    "tags": []
-  }
+    "context": "SwarmSys, a distributed multi-agent framework inspired by swarm intelligence, enhances scalability and adaptability in long-horizon reasoning through specialized roles and self-organizing mechanisms. Large language model (LLM) agents have shown remarkable reasoning abilities.\nHowever, existing multi-agent frameworks often rely on fixed roles or\ncentralized control, limiting scalability and adaptability in long-horizon\nreasoning. We introduceSwarmSys, a closed-loop framework for distributed\nmulti-agent reasoning inspired byswarm intelligence. Coordination inSwarmSysemerges through iterative interactions among three specialized roles,Explorers,Workers, andValidators, that continuously cycle through\nexploration, exploitation, and validation. To enable scalable and adaptive\ncollaboration, we integrateadaptive agentandevent profiles, embedding-based\nprobabilistic matching, and apheromone-inspired reinforcement mechanism,\nsupporting dynamic task allocation andself-organizing convergencewithout\nglobal supervision. Acrosssymbolic reasoning,research synthesis, andscientific programmingtasks,SwarmSysconsistently outperforms baselines,\nimproving both accuracy and reasoning stability. These findings highlight\nswarm-inspired coordination as a promising paradigm for scalable, robust, and\nadaptive multi-agent reasoning, suggesting that coordination scaling may rival\nmodel scaling in advancing LLM intelligence. We introduce SwarmSys, a closed-loop framework for distributed multi-agent reasoning inspired by swarm intelligence. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "SwarmSys: Decentralized Swarm-Inspired Agents for Scalable and Adaptive\n  Reasoning",
+        "authors": [
+            "Hongjun Liu"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.10047",
+        "upvote": 13
+    }
 }

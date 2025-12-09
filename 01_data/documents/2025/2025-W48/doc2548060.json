@@ -1,17 +1,16 @@
 {
-  "context": "Multi-Crit evaluates multimodal models on following diverse criteria with metrics for pluralistic adherence, criterion-switching flexibility, and recognizing preference conflicts, revealing gaps in model capabilities. Large multimodal models (LMMs) are increasingly adopted as judges inmultimodal evaluation systemsdue to their stronginstruction followingand consistency withhuman preferences. However, their ability to follow diverse, fine-grained evaluation criteria remains underexplored. We develop Multi-Crit, a benchmark for evaluating multimodal judges on their capacity to followpluralistic criteriaand produce reliablecriterion-level judgments. Covering bothopen-ended generationandverifiable reasoning tasks, Multi-Crit is built through a rigorous data curation pipeline that gathers challenging response pairs withmulti-criterion human annotations. It further introduces three novel metrics for systematically assessing pluralistic adherence, criterion-switching flexibility, and the ability to recognize criterion-level preference conflicts. Comprehensive analysis of 25LMMsreveals that 1) proprietary models still struggle to maintain consistent adherence topluralistic criteria--especially in open-ended evaluation; 2) open-source models lag further behind in flexibly following diverse criteria; and 3) critic fine-tuning withholistic judgment signalsenhancesvisual groundingbut fails to generalize to pluralistic criterion-level judgment. Additional analyses onreasoning fine-tuning,test-time scaling, andboundary consistencybetween open-source and proprietary models further probe the limits of current multimodal judges. As a pioneering study, Multi-Crit lays the foundation for building reliable and steerable multimodal AI evaluation. Happy to share our recent work on benchmarking large multimodal models (LMMs) as judges in their ability to follow pluralistic, fine-grained evaluation criteria. Our paper is titled “Multi-Crit: Benchmarking Multimodal Judges on Pluralistic Criteria-Following.” Paper:https://arxiv.org/abs/2511.21662Project Page:https://multi-crit.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Multi-Crit: Benchmarking Multimodal Judges on Pluralistic Criteria-Following",
-    "authors": [
-      "Tianyi Xiong",
-      "Yi Ge",
-      "Pranav Kulkarni",
-      "Xiyao Wang"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/tyxiong23/Multi-Crit",
-    "huggingface_url": "https://huggingface.co/papers/2511.21662",
-    "upvote": 10,
-    "tags": []
-  }
+    "context": "Multi-Crit evaluates multimodal models on following diverse criteria with metrics for pluralistic adherence, criterion-switching flexibility, and recognizing preference conflicts, revealing gaps in model capabilities. Large multimodal models (LMMs) are increasingly adopted as judges inmultimodal evaluation systemsdue to their stronginstruction followingand consistency withhuman preferences. However, their ability to follow diverse, fine-grained evaluation criteria remains underexplored. We develop Multi-Crit, a benchmark for evaluating multimodal judges on their capacity to followpluralistic criteriaand produce reliablecriterion-level judgments. Covering bothopen-ended generationandverifiable reasoning tasks, Multi-Crit is built through a rigorous data curation pipeline that gathers challenging response pairs withmulti-criterion human annotations. It further introduces three novel metrics for systematically assessing pluralistic adherence, criterion-switching flexibility, and the ability to recognize criterion-level preference conflicts. Comprehensive analysis of 25LMMsreveals that 1) proprietary models still struggle to maintain consistent adherence topluralistic criteria--especially in open-ended evaluation; 2) open-source models lag further behind in flexibly following diverse criteria; and 3) critic fine-tuning withholistic judgment signalsenhancesvisual groundingbut fails to generalize to pluralistic criterion-level judgment. Additional analyses onreasoning fine-tuning,test-time scaling, andboundary consistencybetween open-source and proprietary models further probe the limits of current multimodal judges. As a pioneering study, Multi-Crit lays the foundation for building reliable and steerable multimodal AI evaluation. Happy to share our recent work on benchmarking large multimodal models (LMMs) as judges in their ability to follow pluralistic, fine-grained evaluation criteria. Our paper is titled “Multi-Crit: Benchmarking Multimodal Judges on Pluralistic Criteria-Following.” Paper:https://arxiv.org/abs/2511.21662Project Page:https://multi-crit.github.io/ This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Multi-Crit: Benchmarking Multimodal Judges on Pluralistic Criteria-Following",
+        "authors": [
+            "Tianyi Xiong",
+            "Yi Ge",
+            "Pranav Kulkarni",
+            "Xiyao Wang"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/tyxiong23/Multi-Crit",
+        "huggingface_url": "https://huggingface.co/papers/2511.21662",
+        "upvote": 10
+    }
 }

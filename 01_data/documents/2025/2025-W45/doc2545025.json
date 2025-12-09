@@ -1,15 +1,14 @@
 {
-  "context": "Using FP16 precision in reinforcement learning fine-tuning of large language models improves stability, convergence, and performance by addressing numerical mismatches. Reinforcement learning(RL) fine-tuning oflarge language models(LLMs) often\nsuffers from instabilitydue to thenumerical mismatchbetween the training andinference policies. While prior work has attempted to mitigate this issue\nthrough algorithmic corrections or engineering alignments, we show that its\nroot cause lies in thefloating point precisionitself. The widely adoptedBF16, despite its large dynamic range, introduces large rounding errors that\nbreaks the consistency between training and inference. In this work, we\ndemonstrate that simply reverting toFP16effectively eliminates this\nmismatch. The change is simple, fully supported by modern frameworks with only\na few lines of code change, and requires no modification to the model\narchitecture or learning algorithm. Our results suggest that usingFP16uniformly yields more stable optimization, fasterconvergence, and strongerperformanceacross diverse tasks, algorithms and frameworks. We hope these\nfindings motivate a broader reconsideration of precision trade-offs in RL\nfine-tuning.   ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Defeating the Training-Inference Mismatch via FP16",
-    "authors": [
-      "Penghui Qi",
-      "Xiangxin Zhou"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/sail-sg/Precision-RL",
-    "huggingface_url": "https://huggingface.co/papers/2510.26788",
-    "upvote": 29,
-    "tags": []
-  }
+    "context": "Using FP16 precision in reinforcement learning fine-tuning of large language models improves stability, convergence, and performance by addressing numerical mismatches. Reinforcement learning(RL) fine-tuning oflarge language models(LLMs) often\nsuffers from instabilitydue to thenumerical mismatchbetween the training andinference policies. While prior work has attempted to mitigate this issue\nthrough algorithmic corrections or engineering alignments, we show that its\nroot cause lies in thefloating point precisionitself. The widely adoptedBF16, despite its large dynamic range, introduces large rounding errors that\nbreaks the consistency between training and inference. In this work, we\ndemonstrate that simply reverting toFP16effectively eliminates this\nmismatch. The change is simple, fully supported by modern frameworks with only\na few lines of code change, and requires no modification to the model\narchitecture or learning algorithm. Our results suggest that usingFP16uniformly yields more stable optimization, fasterconvergence, and strongerperformanceacross diverse tasks, algorithms and frameworks. We hope these\nfindings motivate a broader reconsideration of precision trade-offs in RL\nfine-tuning.   ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Defeating the Training-Inference Mismatch via FP16",
+        "authors": [
+            "Penghui Qi",
+            "Xiangxin Zhou"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/sail-sg/Precision-RL",
+        "huggingface_url": "https://huggingface.co/papers/2510.26788",
+        "upvote": 29
+    }
 }

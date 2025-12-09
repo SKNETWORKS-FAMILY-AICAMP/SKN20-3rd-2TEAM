@@ -1,17 +1,16 @@
 {
-  "context": "A unified evaluation across diverse domains shows that generative outcome reward models outperform process reward models and discriminative outcome reward models in assessing large language model reliability. The reliability oflarge language models(LLMs) during test-time scaling is\noften assessed withexternal verifiersorreward modelsthat\ndistinguish correct reasoning from flawed logic. Prior work generally assumes\nthatprocess reward models(PRMs), which score every intermediate reasoning\nstep, outperformoutcome reward models(ORMs) that assess only the final\nanswer. This view is based mainly on evidence from narrow, math-adjacent\ndomains. We present the first unified evaluation of four reward model variants,discriminative ORMand PRM (\\DisORM, \\DisPRM) andgenerative ORMand PRM\n(\\GenORM, \\GenPRM), across 14 diverse domains. Contrary to conventional wisdom,\nwe find that (i) \\DisORM performs on par with \\DisPRM, (ii) \\GenPRM is not\ncompetitive, and (iii) overall, \\GenORM is the most robust, yielding\nsignificant and consistent gains across every tested domain. We attribute this\nto PRM-style stepwise scoring, which inheritslabel noisefrom LLM\nauto-labeling and has difficulty evaluating long reasoning trajectories,\nincluding those involvingself-correcting reasoning. Our theoretical analysis\nshows thatstep-wise aggregationcompounds errors as reasoning length grows,\nand our empirical observations confirm this effect. These findings challenge\nthe prevailing assumption that fine-grained supervision is always better and\nsupport generative outcome verification formulti-domain deployment. We\npublicly release our code, datasets, and checkpoints at\nhttps://github.com/db-Lee/Multi-RM{\\small\\texttt{https://github.com/db-Lee/Multi-RM}}\nto facilitate future research in multi-domain settings. Rethinking Reward Models for Multi-Domain Test-Time Scaling This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Rethinking Reward Models for Multi-Domain Test-Time Scaling",
-    "authors": [
-      "Dong Bok Lee",
-      "Sangwoo Park",
-      "Dominik Wagner",
-      "Jiongdao Jin"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/db-Lee/Multi-RM",
-    "huggingface_url": "https://huggingface.co/papers/2510.00492",
-    "upvote": 27,
-    "tags": []
-  }
+    "context": "A unified evaluation across diverse domains shows that generative outcome reward models outperform process reward models and discriminative outcome reward models in assessing large language model reliability. The reliability oflarge language models(LLMs) during test-time scaling is\noften assessed withexternal verifiersorreward modelsthat\ndistinguish correct reasoning from flawed logic. Prior work generally assumes\nthatprocess reward models(PRMs), which score every intermediate reasoning\nstep, outperformoutcome reward models(ORMs) that assess only the final\nanswer. This view is based mainly on evidence from narrow, math-adjacent\ndomains. We present the first unified evaluation of four reward model variants,discriminative ORMand PRM (\\DisORM, \\DisPRM) andgenerative ORMand PRM\n(\\GenORM, \\GenPRM), across 14 diverse domains. Contrary to conventional wisdom,\nwe find that (i) \\DisORM performs on par with \\DisPRM, (ii) \\GenPRM is not\ncompetitive, and (iii) overall, \\GenORM is the most robust, yielding\nsignificant and consistent gains across every tested domain. We attribute this\nto PRM-style stepwise scoring, which inheritslabel noisefrom LLM\nauto-labeling and has difficulty evaluating long reasoning trajectories,\nincluding those involvingself-correcting reasoning. Our theoretical analysis\nshows thatstep-wise aggregationcompounds errors as reasoning length grows,\nand our empirical observations confirm this effect. These findings challenge\nthe prevailing assumption that fine-grained supervision is always better and\nsupport generative outcome verification formulti-domain deployment. We\npublicly release our code, datasets, and checkpoints at\nhttps://github.com/db-Lee/Multi-RM{\\small\\texttt{https://github.com/db-Lee/Multi-RM}}\nto facilitate future research in multi-domain settings. Rethinking Reward Models for Multi-Domain Test-Time Scaling This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Rethinking Reward Models for Multi-Domain Test-Time Scaling",
+        "authors": [
+            "Dong Bok Lee",
+            "Sangwoo Park",
+            "Dominik Wagner",
+            "Jiongdao Jin"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/db-Lee/Multi-RM",
+        "huggingface_url": "https://huggingface.co/papers/2510.00492",
+        "upvote": 27
+    }
 }

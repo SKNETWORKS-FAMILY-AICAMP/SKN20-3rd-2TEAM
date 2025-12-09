@@ -1,15 +1,14 @@
 {
-  "context": "mxbai-edge-colbert-v0 models, with 17M and 32M parameters, demonstrate superior retrieval performance on short-text and long-context benchmarks compared to ColBERTv2. In this work, we introducemxbai-edge-colbert-v0models, at two different\nparameter counts: 17M and 32M. As part of our research, we conduct numerous\nexperiments to improveretrievalandlate-interaction models, which we intend\nto distill into smaller models as proof-of-concepts. Our ultimate aim is to\nsupportretrievalat all scales, from large-scaleretrievalwhich lives in the\ncloud to models that can run locally, on any device.mxbai-edge-colbert-v0is a\nmodel that we hope will serve as a solid foundation backbone for all future\nexperiments, representing the first version of a long series of small\nproof-of-concepts. As part of the development ofmxbai-edge-colbert-v0, we\nconducted multipleablation studies, of which we report the results. In terms\nof downstream performance,mxbai-edge-colbert-v0is a particularly capable\nsmall model, outperformingColBERTv2on common short-text benchmarks (BEIR) and\nrepresenting a large step forward inlong-context tasks, with unprecedented\nefficiency. Our latest tech report: A comprehensive tech report on how to tech a model from its language model pre-training weights, to being a capable single-vector embedding, then finally to being a ColBERT model that can outperform 8B parameter models on long-context retrieval tasks with just 0.017B parameters. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "Fantastic (small) Retrievers and How to Train Them:\n  mxbai-edge-colbert-v0 Tech Report",
-    "authors": [
-      "Rikiya Takehi",
-      "Benjamin Clavié"
-    ],
-    "publication_year": 2025,
-    "github_url": "",
-    "huggingface_url": "https://huggingface.co/papers/2510.14880",
-    "upvote": 17,
-    "tags": []
-  }
+    "context": "mxbai-edge-colbert-v0 models, with 17M and 32M parameters, demonstrate superior retrieval performance on short-text and long-context benchmarks compared to ColBERTv2. In this work, we introducemxbai-edge-colbert-v0models, at two different\nparameter counts: 17M and 32M. As part of our research, we conduct numerous\nexperiments to improveretrievalandlate-interaction models, which we intend\nto distill into smaller models as proof-of-concepts. Our ultimate aim is to\nsupportretrievalat all scales, from large-scaleretrievalwhich lives in the\ncloud to models that can run locally, on any device.mxbai-edge-colbert-v0is a\nmodel that we hope will serve as a solid foundation backbone for all future\nexperiments, representing the first version of a long series of small\nproof-of-concepts. As part of the development ofmxbai-edge-colbert-v0, we\nconducted multipleablation studies, of which we report the results. In terms\nof downstream performance,mxbai-edge-colbert-v0is a particularly capable\nsmall model, outperformingColBERTv2on common short-text benchmarks (BEIR) and\nrepresenting a large step forward inlong-context tasks, with unprecedented\nefficiency. Our latest tech report: A comprehensive tech report on how to tech a model from its language model pre-training weights, to being a capable single-vector embedding, then finally to being a ColBERT model that can outperform 8B parameter models on long-context retrieval tasks with just 0.017B parameters. This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "Fantastic (small) Retrievers and How to Train Them:\n  mxbai-edge-colbert-v0 Tech Report",
+        "authors": [
+            "Rikiya Takehi",
+            "Benjamin Clavié"
+        ],
+        "publication_year": 2025,
+        "github_url": "",
+        "huggingface_url": "https://huggingface.co/papers/2510.14880",
+        "upvote": 17
+    }
 }

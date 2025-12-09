@@ -1,15 +1,14 @@
 {
-  "context": "AION-1, a family of large-scale multimodal foundation models, integrates diverse astronomical data using tokenization and transformer-based modeling, achieving strong performance across various downstream tasks. While foundation models have shown promise across a variety of fields,\nastronomy still lacks a unified framework for joint modeling across its highly\ndiverse data modalities. In this paper, we present AION-1, a family of\nlarge-scalemultimodal foundation modelsfor astronomy. AION-1 integrates\nheterogeneous imaging, spectroscopic, and scalar data using a two-stage\narchitecture: modality-specifictokenizationfollowed bytransformer-basedmasked modelingofcross-modal token sequences. The model ispretrainedon five\nlarge-scale surveys: Legacy Survey, Hyper Suprime-Cam (HSC), Sloan Digital Sky\nSurvey (SDSS), Dark Energy Spectroscopic Instrument (DESI), and Gaia. These\nspan more than 200 million observations of stars, galaxies, and quasars. With a\nsingle frozen encoder, AION-1 achieves strong results on a broad suite of\ndownstream tasks, includinggalaxy and stellar property estimation, galaxy\nmorphology classification,similarity-based retrieval, galaxy image\nsegmentation, andspectral super-resolution. We release AION-1 model variants\nranging from 300 M to 3.1 B parameters. Beyond astronomy, AION-1 provides a\nscalable blueprint for multimodal scientific foundation models that can\nseamlessly integrate noisy, instrument-specific observations. All code,\ntokenizers,pretrainedweights, and a lightweight evaluation suite are released\nunder an open-source license. Project page:https://github.com/PolymathicAI/AION This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
-  "metadata": {
-    "title": "AION-1: Omnimodal Foundation Model for Astronomical Sciences",
-    "authors": [
-      "Francois Lanusse",
-      "Ollie Liu"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/PolymathicAI/AION",
-    "huggingface_url": "https://huggingface.co/papers/2510.17960",
-    "upvote": 29,
-    "tags": []
-  }
+    "context": "AION-1, a family of large-scale multimodal foundation models, integrates diverse astronomical data using tokenization and transformer-based modeling, achieving strong performance across various downstream tasks. While foundation models have shown promise across a variety of fields,\nastronomy still lacks a unified framework for joint modeling across its highly\ndiverse data modalities. In this paper, we present AION-1, a family of\nlarge-scalemultimodal foundation modelsfor astronomy. AION-1 integrates\nheterogeneous imaging, spectroscopic, and scalar data using a two-stage\narchitecture: modality-specifictokenizationfollowed bytransformer-basedmasked modelingofcross-modal token sequences. The model ispretrainedon five\nlarge-scale surveys: Legacy Survey, Hyper Suprime-Cam (HSC), Sloan Digital Sky\nSurvey (SDSS), Dark Energy Spectroscopic Instrument (DESI), and Gaia. These\nspan more than 200 million observations of stars, galaxies, and quasars. With a\nsingle frozen encoder, AION-1 achieves strong results on a broad suite of\ndownstream tasks, includinggalaxy and stellar property estimation, galaxy\nmorphology classification,similarity-based retrieval, galaxy image\nsegmentation, andspectral super-resolution. We release AION-1 model variants\nranging from 300 M to 3.1 B parameters. Beyond astronomy, AION-1 provides a\nscalable blueprint for multimodal scientific foundation models that can\nseamlessly integrate noisy, instrument-specific observations. All code,\ntokenizers,pretrainedweights, and a lightweight evaluation suite are released\nunder an open-source license. Project page:https://github.com/PolymathicAI/AION This is an automated message from theLibrarian Bot. I found the following papers similar to this paper. The following papers were recommended by the Semantic Scholar API Please give a thumbs up to this comment if you found it helpful! If you want recommendations for any Paper on Hugging Face checkoutthisSpace You can directly ask Librarian Bot for paper recommendations by tagging it in a comment:@librarian-botrecommend ·Sign uporlog into comment",
+    "metadata": {
+        "title": "AION-1: Omnimodal Foundation Model for Astronomical Sciences",
+        "authors": [
+            "Francois Lanusse",
+            "Ollie Liu"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/PolymathicAI/AION",
+        "huggingface_url": "https://huggingface.co/papers/2510.17960",
+        "upvote": 29
+    }
 }

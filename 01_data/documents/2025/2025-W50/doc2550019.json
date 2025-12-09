@@ -1,14 +1,13 @@
 {
-  "context": "TimesNet-Gen, a time-domain conditional generator with a station-specific latent bottleneck, effectively synthesizes site-specific strong ground motion records, outperforming a spectrogram-based conditional VAE baseline. Effective earthquake risk reduction relies on accurate site-specific evaluations. This requires models that can represent the influence of local site conditions on ground motion characteristics. In this context, data driven approaches that learn site controlled signatures from recorded ground motions offer a promising direction. We address strong ground motion generation from time-domain accelerometer records and introduce theTimesNet-Gen, a time-domain conditional generator. The approach uses a station specificlatent bottleneck. We evaluate generation by comparingHVSR curvesandfundamental site-frequencyf_0 distributions between real and generated records per station, and summarize station specificity with a score based on the f_0 distribution confusion matrices.TimesNet-Genachieves strong station-wise alignment and compares favorably with a spectrogram-basedconditional VAEbaseline for site-specific strong motion synthesis. Our codes are available via https://github.com/brsylmz23/TimesNet-Gen. This work presents a transformer-based generative model for complex time-series signals, with experiments on seismic accelerometer data. Key idea:treat seismic waveforms as structured high-dimensional sequences and learn a latent trajectory that captures both physical dynamics and long-range temporal dependencies.  ·Sign uporlog into comment",
-  "metadata": {
-    "title": "TimesNet-Gen: Deep Learning-based Site Specific Strong Motion Generation",
-    "authors": [
-      "Baris Yilmaz"
-    ],
-    "publication_year": 2025,
-    "github_url": "https://github.com/brsylmz23/TimesNet-Gen/tree/main",
-    "huggingface_url": "https://huggingface.co/papers/2512.04694",
-    "upvote": 2,
-    "tags": []
-  }
+    "context": "TimesNet-Gen, a time-domain conditional generator with a station-specific latent bottleneck, effectively synthesizes site-specific strong ground motion records, outperforming a spectrogram-based conditional VAE baseline. Effective earthquake risk reduction relies on accurate site-specific evaluations. This requires models that can represent the influence of local site conditions on ground motion characteristics. In this context, data driven approaches that learn site controlled signatures from recorded ground motions offer a promising direction. We address strong ground motion generation from time-domain accelerometer records and introduce theTimesNet-Gen, a time-domain conditional generator. The approach uses a station specificlatent bottleneck. We evaluate generation by comparingHVSR curvesandfundamental site-frequencyf_0 distributions between real and generated records per station, and summarize station specificity with a score based on the f_0 distribution confusion matrices.TimesNet-Genachieves strong station-wise alignment and compares favorably with a spectrogram-basedconditional VAEbaseline for site-specific strong motion synthesis. Our codes are available via https://github.com/brsylmz23/TimesNet-Gen. This work presents a transformer-based generative model for complex time-series signals, with experiments on seismic accelerometer data. Key idea:treat seismic waveforms as structured high-dimensional sequences and learn a latent trajectory that captures both physical dynamics and long-range temporal dependencies.  ·Sign uporlog into comment",
+    "metadata": {
+        "title": "TimesNet-Gen: Deep Learning-based Site Specific Strong Motion Generation",
+        "authors": [
+            "Baris Yilmaz"
+        ],
+        "publication_year": 2025,
+        "github_url": "https://github.com/brsylmz23/TimesNet-Gen/tree/main",
+        "huggingface_url": "https://huggingface.co/papers/2512.04694",
+        "upvote": 2
+    }
 }
