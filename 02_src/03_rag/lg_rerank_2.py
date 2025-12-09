@@ -14,16 +14,17 @@
 # 5. 랭그래프 구축
 # 6. 메인 실행 블록
 
-# 내일 수정할 예정 :
-# 1) lg_rerank.py 말안되는 질문 하면 웹검색으로 넘어가고 무한루프 버그
+# 수정할 요소 :
+# 내부문서 최상위 문서 조회되도록 설정 : state['documents'][0].metadata['title']
+# 검색기능 grade 부분 검토
 
 # ------------ 0. 필요 라이브러리 불러오기 및 환경 세팅 ------------
 # pip install langgraph
 # pip install langchain-community
 # pip install tavily-python
-from langgraph.graph import StateGraph, START, END# 필요라이브러리 설치
 import os
 import warnings
+import sys
 warnings.filterwarnings("ignore")
 
 from pathlib import Path
@@ -43,6 +44,11 @@ from langchain_community.retrievers import TavilySearchAPIRetriever
 # LangGraph 관련 임포트
 from langgraph.graph import StateGraph, START, END
 
+# vectordb 모듈 import
+# SRC_DIR=Path(__file__).parent.parent
+# sys.path.insert(0, str(SRC_DIR / "02_utils"))
+# from vectordb import load_vectordb
+
 
 # ------------ 1. 환경 설정 및 상수 정의 ------------
 # 환경설정
@@ -58,9 +64,10 @@ def langgraph_rag():
 # ------------ 2. STATE : RAG State 및 초기화 함수 ------------
     # State 클래스 정의
     class RAGState(TypedDict):
+        # 필수 초기 상태 키
         question:str
-        documents : List[Document]
-        doc_scores : List[float]
+        documents : List[Document]   # retriever 또는 web_search 결과 (rerank 입력)
+        doc_scores : List[float]     # documents에 대한 초기 점수 (rerank 입력)
         search_type : str
         answer : str
 
@@ -95,7 +102,7 @@ def langgraph_rag():
         documents =  [ doc for doc,score in docs_with_scores]
         scores =  [ score for doc,score in docs_with_scores]
 
-        print(f' [retriever] {len(documents)}개 문서 검색됨')        
+        print(f' [retriever] {len(documents)}개 문서 검색합니다.')        
         return {'documents': documents, 'doc_scores':scores, 'search_type':'internal'}   # state 업데이트
     
     def rerank_documents_node(state: RAGState) -> dict:
@@ -122,28 +129,79 @@ def langgraph_rag():
         reranked_documents = [doc for doc, _ in ranked]
         reranked_scores = [score for _, score in ranked]
 
-        print(f"[rerank] Rerank 완료 → 최상위 문서: {reranked_documents[0].metadata.get('source','unknown')}") #### 출력되도록 수정 필요
-        return {
-            "documents": reranked_documents,
-            "doc_scores": reranked_scores,
-            #'search_type' : 'rerank'
-        }
+        # print(f"[rerank] Rerank 완료 → 최상위 문서: {reranked_documents[0].metadata.get("source","state['documents'][0].metadata['title']")}") #### 출력되도록 수정 필요
+        top_doc_title = reranked_documents[0].metadata.get("source") or state['documents'][0].metadata.get('title', 'Unknown')
+        print(f"[rerank] Rerank 완료 → 최상위 문서: {top_doc_title}")
+        
+        #^
+        state['documents'] = reranked_documents
+        state['doc_scores'] = reranked_scores
+        return state
+        # return {
+        #     "reranked_documents": reranked_documents,
+        #     "reranked_scores": reranked_scores,
+        #     #'search_type' : 'rerank'
+        # }
+        
 
     # 3-2) 문서평가 노드
-    def grade_documents_node(state:RAGState)->dict:
+    def grade_documents_node_internal(state:RAGState)->dict:
         '''문서평가 노드'''
         threshold = 0.7 ### 하이퍼파라미터
         filtered_data = []
         for doc, score in zip(state['documents'],state['doc_scores']):
-            if score >= threshold:
+            if score <= threshold:
                 filtered_data.append((doc, score))
 
         # 문서와 점수를 다시 분리
-        final_documents = [item[0] for item in filtered_data]
-        final_scores = [item[1] for item in filtered_data]
+        graded_documents_internal = [item[0] for item in filtered_data]
+        graded_documents_score_internal = [item[1] for item in filtered_data]
 
-        print(f"[grade] {len(state['documents'])}개 --> {len(final_documents)}개 문서 유지")
-        return {'documents': final_documents, 'doc_scores': final_scores}
+        print(f"[grade_1] {len(state['documents'])}개 --> {len(graded_documents_internal)}개 문서 유지")
+        
+        #^
+        state['documents'] = graded_documents_internal
+        state['doc_scores'] = graded_documents_score_internal
+        state['search_type'] = 'internal'
+        return state
+    
+    # def grade_documents_node_web(state:RAGState)->dict:
+    #     '''문서평가 노드'''
+    #     threshold = 0.3 ### 하이퍼파라미터, 0에 가까울수록 상위 문서
+    #     filtered_data = []
+    #     for doc, score in zip(state['documents'],state['doc_scores']):
+    #         if score <= threshold:
+    #             filtered_data.append((doc, score))
+
+    #     # 문서와 점수를 다시 분리
+    #     graded_documents_web = [item[0] for item in filtered_data]
+    #     graded_documents_score_web = [item[1] for item in filtered_data]
+
+    #     print(f"[grade_2] {len(state['documents'])}개 --> {len(graded_documents_web)}개 문서 유지")
+        
+    #     #^
+    #     state['documents'] = graded_documents_web
+    #     state['doc_scores'] = graded_documents_score_web
+    #     return state
+    def grade_documents_node_web(state: RAGState) -> dict:
+        '''웹 문서 평가 노드 (websearch 결과만 처리)'''
+        # 웹 검색 결과가 없으면 바로 return
+        if not state['documents'] or all(doc.metadata.get('source_type') != 'web' for doc in state['documents']):
+            print("[grade_2] 웹 문서 없음 → 건너뜀")
+            return state
+
+        threshold = 0.3
+        filtered_data = [
+            (doc, score)
+            for doc, score in zip(state['documents'], state['doc_scores'])
+            if score <= threshold and doc.metadata.get('source_type') == 'web'
+        ]
+
+        state['documents'] = [item[0] for item in filtered_data]
+        state['doc_scores'] = [item[1] for item in filtered_data]
+
+        print(f"[grade_2] {len(state['documents'])}개 문서 유지")
+        return state
     
     # 3-3) 웹검색 노드
     def web_search_node(state: dict) -> dict:
@@ -164,7 +222,7 @@ def langgraph_rag():
         search_results: List[Document] = retriever.invoke(state['question'])
 
         # 처리한 검색결과 를 저장할 객체 생성
-        processed_documents: List[Document] = []
+        websearch_documents: List[Document] = []
         for i, doc in enumerate(search_results):
             # 검색 결과 Document의 내용을 확인하고 출처(source)를 추가합니다.
             # LangChain Document는 'metadata' 속성에 출처(source) 정보(예: URL)가 이미 포함되어 있다. (101 줄 참고)
@@ -185,17 +243,18 @@ def langgraph_rag():
                     'doc_score': doc_score
                 }
             )
-            processed_documents.append(web_doc)
+            websearch_documents.append(web_doc)
         
-        return {
-            'documents': processed_documents, 
-            'search_type': 'web'
-        }
+        state['documents'] = websearch_documents
+        state['doc_scores'] = [doc.metadata.get('doc_score', 0) for doc in websearch_documents]
+        state['search_type'] = 'web'
+        return state
         
     # 3-4) 생성 노드
     def generate_node(state:RAGState)->dict: ### 하이퍼파라미터 영역 : 프롬프트 부분
         '''생성노드'''  
-        context = '\n'.join([ doc.page_content for doc in state['documents']])
+        # context_docs = state.get('graded_documents_internal', []) + state.get('graded_documents_web', [])
+        context = '\n'.join([doc.page_content for doc in state['documents']]) or "NO_RELEVANT_PAPERS"
         prompt = ChatPromptTemplate.from_messages([
             ('system',"""
         You are **"AI Tech Trend Navigator"**, an expert assistant for AI/ML research papers.
@@ -315,21 +374,45 @@ def langgraph_rag():
     # 조건 분기 함수
     def decide_to_generate(state:RAGState)-> Literal['generate','web_search']:
         '''조건부 분기 함수 : 문서내에 참고할 내용이 없다면 web으로 검색한다.'''    
-        if state['documents'] and len(state['documents']) > 0:
+        # if state['documents']:
+        #     print(f" [decide] {len(state['documents'])}개 문서 있음. -> generate")
+        #     return 'generate'
+        # else: # 검색된 문서가 0개인경우, len(state['documents'] == 0
+        #     print(f" [decide] 0개 문서 확인. (내부 문서 유사도 낮음) -> 웹 서칭을 합니다.")
+        #     return 'web_search'
+        if state['documents'] and state.get('search_type','internal') == 'internal':
             print(f" [decide] {len(state['documents'])}개 문서 있음. -> generate")
             return 'generate'
-        else: # 검색된 문서가 0개인경우, len(state['documents'] == 0
+        else:
             print(f" [decide] 0개 문서 확인. (내부 문서 유사도 낮음) -> 웹 서칭을 합니다.")
             return 'web_search'
+    
+    # 조건 분기 함수 2
+    def decide_grade2(state:RAGState) -> Literal['grade_2','skip_grade_2']:
+        """웹 검색 후 grade_2 실행 여부 결정"""
+        if state.get('search_type') == 'web' and state['documents']:
+            print(" [decide_grade2] 웹 문서 있음 -> grade_2 실행")
+            return 'grade_2'
+        else:
+            print(" [decide_grade2] 웹 문서 없음 -> grade_2 패스")
+            return 'skip_grade_2'
 
+    # 웹 검색이 없을 경우 출력 함수
+    def _no_web_results_node(state:RAGState) -> dict:
+        """웹검색 후 문서가 없을 때 처리"""
+        print(" [grade_2] 웹 검색 결과가 없습니다. 관련 문서 없음.")
+        state['answer'] = "웹 검색 결과가 없습니다."
+        return state
 # ------------ 5. 랭그래프 구축 ------------
         # 그래프 구축(add_node  add_edge  add_conditional_edges)
     graph = StateGraph(RAGState)
     graph.add_node('retriever', retrieve_node)
     graph.add_node('rerank', rerank_documents_node)
-    graph.add_node('grade', grade_documents_node)
+    graph.add_node('grade_1', grade_documents_node_internal)
+    graph.add_node('grade_2', grade_documents_node_web)
     graph.add_node('web_search', web_search_node)
     graph.add_node('generate', generate_node)
+    graph.add_node('_no_web_results', _no_web_results_node)
 
     # 1. 시작 → retriever
     graph.add_edge(START, 'retriever')
@@ -337,22 +420,50 @@ def langgraph_rag():
     # 2. retriever → rerank
     graph.add_edge('retriever', 'rerank')
 
-    # 3. rerank → grade
-    graph.add_edge('rerank', 'grade')
+    # 3. rerank → grade_1
+    graph.add_edge('rerank', 'grade_1')
 
     # 4. grade 이후 조건 분기
     graph.add_conditional_edges(
-        'grade',
-        decide_to_generate,
-        {
-            'generate': 'generate',      # 문서 충분시 llm을 사용하여 답변생성
-            'web_search': 'web_search'   # 문서 부족시 웹검색
-        }
+    'grade_1',
+    decide_to_generate,
+    {
+        'generate': 'generate',
+        'web_search': 'web_search'
+    }
     )
 
-    # 5. web_search → rerank (웹 결과 정렬)
-    graph.add_edge('web_search', 'rerank')
+    # 5. web_search 이후 grade_2 여부 분기
+    graph.add_conditional_edges(
+        'web_search',
+        decide_grade2,
+        {
+            'grade_2': 'grade_2',
+            'skip_grade_2': '_no_web_results'
+        }
+    )
+    # graph.add_conditional_edges(
+    #     'grade_1',
+    #     decide_to_generate,
+    #     {
+    #         'generate': 'generate',      # 문서 충분시 llm을 사용하여 답변생성
+    #         'web_search': 'web_search'   # 문서 부족시 웹검색
+    #     }
+    # )
 
+    # # 5. rerank 후 grade_2 여부 분기
+    # graph.add_conditional_edges(
+    # 'rerank',
+    # decide_grade2,
+    # {
+    #     'grade_2': 'grade_2',        # 웹 문서 있을 경우 grade_2
+    #     'skip_grade_2': '_no_web_results'   # 없으면 '웹 검색 결과가 없습니다.' 출력
+    # }
+    # )
+    
+    
+    graph.add_edge('grade_2', 'generate')
+    
     # 6. generate → END
     graph.add_edge('generate', END)
 
@@ -376,10 +487,13 @@ if __name__ == '__main__':
                 print("챗봇 종료!")
                 break
 
-            # RAGState 초기 상태 정의 (매번 새 질문으로 처리)
+            MODEL_NAME = os.getenv("MODELS_NAME", "OpenAI")
+            CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 100))
+            CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 10))
+            RAGState 초기 상태 정의 (매번 새 질문으로 처리)
             initial_state = {
                 'question': user_question,
-                'documents': [],
+                'documents': [],# load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP),
                 'doc_scores': [],
                 'search_type': "",
                 'answer': ""
