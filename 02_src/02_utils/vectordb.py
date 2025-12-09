@@ -16,13 +16,13 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from chunking import load_chunks_from_pkl
+from clustering import cluster_documents
 
 # 환경 변수 로드
 load_dotenv()
 MODEL_NAME = os.getenv("MODEL_NAME", "OpenAI")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 100))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 10))
-KEYWORD_METHOD = os.getenv("KEYWORD_EXTRACTION_METHOD").lower()
 
 
 # 저장경로 설정
@@ -43,14 +43,16 @@ embedding_models = {
 }
 
 
-def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 10, method: str = KEYWORD_METHOD):
+def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 10, use_weeks: int = 10):
     """
     문서 청크를 임베딩하여 Chroma 벡터 데이터베이스에 저장합니다.
+    클러스터링을 수행하여 각 청크에 cluster_id를 추가합니다.
 
     Args:
         model_name (str): 사용할 임베딩 모델의 이름 (embedding_models 딕셔너리의 키)
         chunk_size (int, optional): 청크 크기. 기본값은 100
         chunk_overlap (int, optional): 청크 간 겹치는 크기. 기본값은 10
+        use_weeks (int, optional): 클러스터링에 사용할 주차 수. 기본값은 10
 
     Returns:
         None
@@ -60,9 +62,16 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
         Exception: 모델 로딩 실패 시
     """
     # pkl 파일에서 문서 청크 로드
-    documents = load_chunks_from_pkl(chunk_size=chunk_size, chunk_overlap=chunk_overlap, method=KEYWORD_METHOD)
+    documents = load_chunks_from_pkl(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
 
-    # 메타데이터 전처리를 위한 청크 리스트
+    # 클러스터링 수행 (문서 단위)
+    print("\n" + "=" * 60)
+    print("[CLUSTERING] 문서 클러스터링 수행 중...")
+    print("=" * 60)
+    doc_cluster_map = cluster_documents(use_weeks=use_weeks)
+    print(f"[CLUSTERING] {len(doc_cluster_map)}개 문서에 대한 클러스터 매핑 완료")
+
+    # 메타데이터 전처리 및 cluster_id 추가
     chunks = []
     for doc in documents:
         metadata = doc.metadata.copy()
@@ -70,6 +79,13 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
         # List로 되어있는 metadata를 쉼표와 공백으로 구분 된 문자열로 변환
         metadata["authors"] = ", ".join(metadata["authors"])
         metadata["tags"] = ", ".join(metadata["tags"])
+
+        # doc_id를 기반으로 cluster_id 추가
+        doc_id = metadata.get("doc_id", "")
+        if doc_id in doc_cluster_map:
+            metadata["cluster_id"] = doc_cluster_map[doc_id]
+        else:
+            metadata["cluster_id"] = -1  # 클러스터 매핑 없는 경우
 
         chunks.append(Document(page_content=doc.page_content, metadata=metadata))
 
@@ -96,8 +112,7 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
 
     # VectorStore 생성 및 저장
     if model:
-        method_suffix = "K" if method == "keybert" else "T"
-        collection_name = f"chroma_{model_name}_{chunk_size}_{chunk_overlap}_{method_suffix}"
+        collection_name = f"chroma_{model_name}_{chunk_size}_{chunk_overlap}_C"
         vectorstore = Chroma.from_documents(
             documents=chunks,
             collection_name=collection_name,
@@ -105,11 +120,12 @@ def vectordb_save(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
             persist_directory=VECTORDB_DIR,
         )
         print(f"[SUCCESS] vectordb '{collection_name}' 저장 완료")
+        print(f"[INFO] 총 {len(chunks)}개 청크 저장 (cluster_id 포함)")
     else:
         raise ValueError("embedding_model이 지정되지 선택되지 않았습니다.")
 
 
-def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 10, method: str = KEYWORD_METHOD) -> Chroma:
+def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 10) -> Chroma:
     """
     저장된 Chroma 벡터 데이터베이스를 로드하고 샘플 데이터를 출력합니다.
 
@@ -146,8 +162,7 @@ def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
             raise
 
     # Chroma 벡터스토어 로드
-    method_suffix = "K" if method == "keybert" else "T"
-    collection_name = f"chroma_{model_name}_{chunk_size}_{chunk_overlap}_{method_suffix}"
+    collection_name = f"chroma_{model_name}_{chunk_size}_{chunk_overlap}_C"
     vectorstore = Chroma(
         persist_directory=VECTORDB_DIR,
         embedding_function=embedding_function,
@@ -171,9 +186,9 @@ def load_vectordb(model_name: str, chunk_size: int = 100, chunk_overlap: int = 1
 if __name__ == "__main__":
     # 메인 실행 블록: 벡터 DB 생성 및 로드 테스트
 
-    # OpenAI 임베딩을 사용하여 벡터 DB 저장
-    vectordb_save(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP, KEYWORD_METHOD)
-    
+    # 임베딩을 사용하여 벡터 DB 저장 (클러스터링 포함)
+    vectordb_save(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP, use_weeks=10)
+
     # 저장된 벡터 DB 로드 및 확인
-    load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP, KEYWORD_METHOD)
+    load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP)
     

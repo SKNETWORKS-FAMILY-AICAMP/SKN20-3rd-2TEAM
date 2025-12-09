@@ -154,13 +154,12 @@ def extract_keywords_tfidf(text: str, top_n: int = 3) -> List[str]:
 # Unified keyword extraction function
 def extract_keywords(text: str, title: str = "", top_n: int = 3, method: str = "keybert") -> List[str]:
     """
-    키워드 추출 (KeyBERT, TF-IDF, 또는 LLM)
+    키워드 추출 (KeyBERT, TF-IDF)
 
     Args:
         text: 논문 Abstract
-        title: 논문 제목 (LLM 메서드에서 사용)
         top_n: 추출할 키워드 개수
-        method: "keybert", "tfidf", 또는 "llm"
+        method: "keybert", "tfidf"
 
     Returns:
         키워드 리스트
@@ -168,19 +167,10 @@ def extract_keywords(text: str, title: str = "", top_n: int = 3, method: str = "
     Raises:
         ValueError: method가 유효하지 않은 경우
     """
-    if method not in ["keybert", "tfidf", "llm"]:
-        raise ValueError(f"Invalid method: {method}. Must be 'keybert', 'tfidf', or 'llm'")
-
-    if method == "llm":
-        try:
-            from llm_tag_extractor import LLMTagExtractor
-            extractor = LLMTagExtractor()
-            return extractor.extract_tags(title, text, top_n)
-        except Exception as e:
-            print(f"[ERROR] LLM tag extraction failed: {e}")
-            print("[INFO] Falling back to KeyBERT...")
-            return extract_keywords_keybert(text, top_n)
-    elif method == "keybert":
+    if method not in ["keybert", "tfidf"]:
+        raise ValueError(f"Invalid method: {method}. Must be 'keybert', 'tfidf'")
+    
+    if method == "keybert":
         return extract_keywords_keybert(text, top_n)
     else:
         return extract_keywords_tfidf(text, top_n)
