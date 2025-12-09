@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤗 HuggingFace Weekly Papers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .logo-section {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .logo-text {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .settings-section h3 {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background-color: #6366f1;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #4f46e5;
+        }
+
+        .btn-secondary {
+            background-color: #10b981;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #059669;
+        }
+
+        .stats-section {
+            margin-top: 20px;
+        }
+
+        .stats-section h3 {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat-card {
+            background-color: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .data-info {
+            background-color: #dbeafe;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #1e40af;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            color: #ff9500;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .chat-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 40px 40px 0 40px;
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 80px);
+            position: relative;
+        }
+
+        .messages-wrapper {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .welcome-message {
+            text-align: center;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+        }
+
+        .welcome-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-message h2 {
+            font-size: 28px;
+            color: #ff9500;
+            margin-bottom: 15px;
+        }
+
+        .welcome-message p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .welcome-message.hidden {
+            display: none;
+        }
+
+        .fixed-bottom {
+            position: sticky;
+            bottom: 0;
+            background-color: white;
+            padding: 20px 0;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .trending-keywords {
+            margin-bottom: 20px;
+        }
+
+        .trending-keywords h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .keyword-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .keyword-tag {
+            padding: 8px 16px;
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #374151;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .keyword-tag:hover {
+            background-color: #e5e7eb;
+            border-color: #d1d5db;
+        }
+
+        .keyword-tag.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .search-section {
+        }
+
+        .search-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: #6366f1;
+        }
+
+        .search-input:disabled {
+            background-color: #f3f4f6;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .search-btn {
+            padding: 15px 30px;
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .search-btn:hover:not(:disabled) {
+            background-color: #4f46e5;
+        }
+
+        .search-btn:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            min-height: 200px;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .message.user {
+            background-color: #f0f9ff;
+            margin-left: 50px;
+        }
+
+        .message.assistant {
+            background-color: #f9fafb;
+            margin-right: 50px;
+        }
+
+        .message-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .message-content {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-section">
+            <div class="logo-icon">🤗</div>
+            <div class="logo-text">HuggingFace Papers</div>
+        </div>
+
+        <div class="settings-section">
+            <h3>⚙️ 설정</h3>
+            <button class="btn btn-primary" onclick="startConversation()">
+                💬 대화 초기화
+            </button>
+            <button class="btn btn-secondary" onclick="clearHistory()">
+                🔄 계산 초기화
+            </button>
+        </div>
+
+        <div class="stats-section">
+            <h3>📊 통계</h3>
+            
+            <div class="stat-card">
+                <div class="stat-label">📄 논문 개수</div>
+                <div class="stat-value">506</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">✏️ 키워드 개수</div>
+                <div class="stat-value">1,449</div>
+            </div>
+
+            <div class="data-info">
+                💡 최근 6주간의 데이터
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>🤗 HuggingFace Weekly Papers</h1>
+            <p>RAG 기반 최신 ML/DL/LLM 논문 검색챗봇</p>
+        </div>
+
+        <div class="chat-container">
+            <div class="messages-wrapper">
+                <div class="welcome-message" id="welcomeMessage">
+                    <div class="welcome-icon">💬</div>
+                    <h2>대화를 시작해보세요!</h2>
+                    <p>
+                        최신의 트렌드 키워드를 선택하거나, 검색창에 원문을 입력하세요.<br>
+                        논문 트렌드나 검색 주제를 입력해보시기를 권장합니다.
+                    </p>
+                </div>
+
+                <div class="chat-messages" id="chatMessages"></div>
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="trending-keywords">
+                    <h3>🔥 트렌드 키워드</h3>
+                    <div class="keyword-tags" id="keywordTags">
+                        <span class="keyword-tag" onclick="searchKeyword('LLM')">LLM</span>
+                        <span class="keyword-tag" onclick="searchKeyword('Transformer')">Transformer</span>
+                        <span class="keyword-tag" onclick="searchKeyword('RAG')">RAG</span>
+                        <span class="keyword-tag" onclick="searchKeyword('Vision')">Vision</span>
+                        <span class="keyword-tag" onclick="searchKeyword('Diffusion')">Diffusion</span>
+                        <span class="keyword-tag" onclick="searchKeyword('Agent')">Agent</span>
+                        <span class="keyword-tag" onclick="searchKeyword('Multimodal')">Multimodal</span>
+                    </div>
+                </div>
+
+                <div class="search-section">
+                    <div class="search-container">
+                        <input 
+                            type="text" 
+                            class="search-input" 
+                            id="searchInput"
+                            placeholder="🔍 논문에 대해 질문하거나 키워드를 입력하세요..."
+                            onkeypress="handleKeyPress(event)"
+                        >
+                        <button class="search-btn" id="searchBtn" onclick="performSearch()">➤</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let chatHistory = [];
+        let isProcessing = false;
+        const API_URL = 'http://localhost:5000';  // Flask 서버 주소
+
+        function setInputDisabled(disabled) {
+            const searchInput = document.getElementById('searchInput');
+            const searchBtn = document.getElementById('searchBtn');
+            const keywordTags = document.querySelectorAll('.keyword-tag');
+            
+            searchInput.disabled = disabled;
+            searchBtn.disabled = disabled;
+            
+            keywordTags.forEach(tag => {
+                if (disabled) {
+                    tag.classList.add('disabled');
+                } else {
+                    tag.classList.remove('disabled');
+                }
+            });
+            
+            isProcessing = disabled;
+        }
+
+        async function startConversation() {
+            if (isProcessing) return;
+            
+            try {
+                const response = await fetch(`${API_URL}/api/clear`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    chatHistory = [];
+                    document.getElementById('chatMessages').innerHTML = '';
+                    document.getElementById('welcomeMessage').classList.remove('hidden');
+                    alert('대화가 초기화되었습니다.');
+                } else {
+                    alert('초기화 실패: ' + data.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('서버 연결 실패. Flask 서버가 실행 중인지 확인하세요.');
+            }
+        }
+
+        async function clearHistory() {
+            if (isProcessing) return;
+            
+            try {
+                const response = await fetch(`${API_URL}/api/clear`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    chatHistory = [];
+                    document.getElementById('chatMessages').innerHTML = '';
+                    document.getElementById('welcomeMessage').classList.remove('hidden');
+                    alert('계산이 초기화되었습니다.');
+                } else {
+                    alert('초기화 실패: ' + data.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('서버 연결 실패. Flask 서버가 실행 중인지 확인하세요.');
+            }
+        }
+
+        function searchKeyword(keyword) {
+            if (isProcessing) return;
+            
+            document.getElementById('searchInput').value = keyword;
+            performSearch();
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter' && !isProcessing) {
+                performSearch();
+            }
+        }
+
+        async function performSearch() {
+            if (isProcessing) return;
+            
+            const input = document.getElementById('searchInput');
+            const query = input.value.trim();
+            
+            if (!query) return;
+
+            // 입력 비활성화
+            setInputDisabled(true);
+
+            // 환영 메시지 숨기기
+            document.getElementById('welcomeMessage').classList.add('hidden');
+
+            addMessage('user', query);
+            input.value = '';
+
+            // 로딩 표시
+            const messagesDiv = document.getElementById('chatMessages');
+            messagesDiv.innerHTML += '<div class="loading">답변을 생성하는 중입니다...</div>';
+
+            try {
+                // 백엔드 API 호출
+                const response = await fetch(`${API_URL}/api/chat`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: query
+                    })
+                });
+
+                const data = await response.json();
+
+                // 로딩 제거
+                const loadingDiv = document.querySelector('.loading');
+                if (loadingDiv) loadingDiv.remove();
+
+                if (data.success) {
+                    addMessage('assistant', data.response);
+                } else {
+                    addMessage('assistant', '오류가 발생했습니다: ' + data.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                
+                // 로딩 제거
+                const loadingDiv = document.querySelector('.loading');
+                if (loadingDiv) loadingDiv.remove();
+                
+                addMessage('assistant', '서버 연결 실패. Flask 서버가 실행 중인지 확인하세요.\n에러: ' + error.message);
+            } finally {
+                // 입력 다시 활성화
+                setInputDisabled(false);
+                
+                // 검색 입력창에 포커스
+                document.getElementById('searchInput').focus();
+            }
+        }
+
+        function addMessage(role, content) {
+            const messagesDiv = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            
+            const label = role === 'user' ? 'You' : 'Assistant';
+            messageDiv.innerHTML = `
+                <div class="message-label">${label}:</div>
+                <div class="message-content">${content.replace(/\n/g, '<br>')}</div>
+            `;
+            
+            messagesDiv.appendChild(messageDiv);
+            
+            // 스크롤을 최신 메시지로
+            const messagesWrapper = document.querySelector('.messages-wrapper');
+            messagesWrapper.scrollTop = messagesWrapper.scrollHeight;
+
+            chatHistory.push({ role, content });
+        }
+    </script>
+</body>
+</html>
