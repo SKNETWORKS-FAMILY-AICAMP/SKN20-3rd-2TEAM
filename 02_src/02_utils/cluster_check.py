@@ -68,7 +68,7 @@ def print_cluster_info():
 
     # Print 5 keywords per line
     for i, (keyword, count) in enumerate(sorted_keywords):
-        print(f"{keyword:13s}: {count}", end="\t")
+        print(f"{keyword:14s}: {count}", end="\t")
         if i % 5 == 4:
             print()
 
