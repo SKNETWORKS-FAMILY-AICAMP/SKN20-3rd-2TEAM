@@ -18,6 +18,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
+from langchain_community.retrievers import BM25Retriever
+from langchain_core.documents import Document
+
 # ★ 변경: LangChain LLM (langgraph_test에서 사용하는 것과 동일 모델)
 from langchain_openai import ChatOpenAI
 
@@ -72,10 +75,14 @@ app.add_middleware(
 # LangGraph 앱을 저장할 전역 변수
 rag_application: Optional[object] = None
 
+# 리트리버를 저장할 전역 변수
+rag_application: Optional[object] = None
+
 # ★ 변경: langgraph_test용 전역 리소스
 vectorstore = None
 llm = None
 cluster_metadata_path: Optional[str] = None
+bm25_retriever = None
 
 
 # ============================================================================
@@ -131,6 +138,20 @@ async def startup_event():
               f"CHUNK_SIZE={CHUNK_SIZE}, CHUNK_OVERLAP={CHUNK_OVERLAP})")
         vectorstore = load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP)
         print("[SUCCESS] VectorStore 로딩 완료")
+
+            # ★★★ BM25 인덱스 생성
+        print("[LOAD] BM25 Retriever 초기화 중...")
+        collection_data = vectorstore._collection.get(include=['documents', 'metadatas'])
+        all_documents = [
+            Document(page_content=content, metadata=metadata)
+            for content, metadata in zip(collection_data['documents'], collection_data['metadatas'])
+        ]
+        if not all_documents:
+            raise ValueError("Chroma DB에 문서가 없습니다. BM25 인덱스를 만들 수 없습니다.")
+
+        bm25_retriever = BM25Retriever.from_documents(all_documents)
+        bm25_retriever.k = 3
+        print(f"[SUCCESS] BM25 인덱스 생성 완료: {len(all_documents)}개 문서")
 
         # LLM 초기화 (langgraph_test와 동일 모델)
         print("[LOAD] LLM 초기화 중...")
@@ -329,6 +350,7 @@ async def chat(request: ChatRequest) -> Dict:
             # 내부 리소스 주입
             "_vectorstore": vectorstore,
             "_llm": llm,
+            "_bm25_retriever": bm25_retriever,
             "_cluster_metadata_path": cluster_metadata_path,
         }
         
