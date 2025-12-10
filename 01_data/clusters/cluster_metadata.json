@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated_at": "2025-12-09T14:51:44.536745",
+    "generated_at": "2025-12-10T09:44:40.201230",
     "n_clusters": 18,
     "total_documents": 1031
   },
@@ -283,7 +283,7 @@
         "doc2540067",
         "doc2540104"
       ],
-      "density": 1.525382669139876,
+      "density": 1.5253826691398757,
       "radius": 0.7658964367001391,
       "keywords": [
         "video",
@@ -1140,7 +1140,7 @@
         "doc2540105"
       ],
       "density": 1.4410424472891958,
-      "radius": 0.8082886540279283,
+      "radius": 0.8082886540279282,
       "keywords": [
         "training",
         "attention",
