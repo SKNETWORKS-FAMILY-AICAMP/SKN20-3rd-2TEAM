@@ -108,13 +108,13 @@ async def startup_event():
         # 1. 경로 확인
         print(f"\n[INFO] 프로젝트 루트: {PROJECT_ROOT}")
         print(f"[INFO] RAG 경로: {RAG_PATH}")
-        print(f"[INFO] langgraph_test.py 존재: {(RAG_PATH / 'langgraph_test.py').exists()}")
+        print(f"[INFO] langgraph_test.py 존재: {(RAG_PATH / 'langgraph_test_1.py').exists()}")
 
         # 2. langgraph_test 모듈 임포트
         print("\n[STEP 1/4] langgraph_test 모듈 임포트 중...")
         try:
             # ★ 변경: lg_grade 대신 langgraph_test 사용
-            from langgraph_test import (
+            from langgraph_test_1 import (
                 build_langgraph_rag,
                 MODEL_NAME,
                 CHUNK_SIZE,
