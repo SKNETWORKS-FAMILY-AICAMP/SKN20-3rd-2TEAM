@@ -179,7 +179,7 @@ def translate_node(state: GraphState) -> dict:
     try:
         translate_prompt = ChatPromptTemplate.from_messages([
             ("system", '''You are a professional translator related to AI/ML/DL/LLM. Translate Korean into processed English for your research. 
-            For questions not related to AI/ML/DL/LLM, translate them into general language expressions without paraphrases or related terms.(Large Language Model).
+            For questions related to AI/ML/DL/LLM(Large Language Model), please translate the English letters into AI/ML/DL/LLM without distinguishing between uppercase and lowercase.
 
             e.g.
             레그 -> Rag,rag
