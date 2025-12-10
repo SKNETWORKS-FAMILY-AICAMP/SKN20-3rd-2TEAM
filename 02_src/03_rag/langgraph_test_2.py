@@ -412,9 +412,9 @@ def evaluate_document_relevance_node(state: GraphState) -> dict:
     # ✅ 수정: RRF 스코어 특성에 맞는 임계값
     # RRF with K=60: 1등 = 1/61 ≈ 0.0164, 2등 = 1/62 ≈ 0.0161
     # 두 검색 방법에서 모두 1등이면: 0.0164 * 2 = 0.0328
-    if best_score >= 0.020:  # 상위권에서 중복 발견
+    if best_score >= 0.022:  # 상위권에서 중복 발견
         level = "high"
-    elif best_score >= 0.015:  # 한쪽에서만 상위권
+    elif best_score >= 0.016:  # 한쪽에서만 상위권
         level = "medium"
     else:  # 낮은 순위
         level = "low"
@@ -770,25 +770,12 @@ Please structure your answer as follows (flexible, but try to follow this):
 1) One-line summary  
 2) Key insights (3-6 bullets)  
 3) Detailed explanation  
-4) Sources summary  
-    Organize the papers used above based on metadata:
-        [title: ...]
-            - authors: ...
-            - huggingface_url: ...
-            - github_url: ...
-            - 👍 23
-
-        [title: ...]
-            - authors: ...
-            - huggingface_url: ...
-            - github_url: ...
-            - 👍 10
 
 ⚠ For information not present in the metadata, write “No information available.”
 ⚠ Do not hallucinate papers or details not shown in context.
 ⚠ Regardless of the input language, ALWAYS respond in Korean.
-⚠ If you want to use bold, italics, and other text formatting elements, use ‘HTML’. Markdown formatting is not supported.
-    """)
+⚠ Do not use bold, italics, or other text formatting elements.
+   """)
     ])
 
     # 3) 체인 실행
@@ -912,7 +899,7 @@ def route_after_cluster_check(state: GraphState) -> Literal["generate", "web_sea
         density = cluster_info.get("density", 0.0)
 
         # HIGH 조건: 평균 점수 <= 0.9 AND 밀도 >= 1.0
-        if cluster_score <= 0.9 and density >= 1.0:
+        if cluster_score <= 0.8 and density >= 1.0:
             print(f"HIGH (score={cluster_score:.3f}, density={density:.3f}) → generate")
             return "generate"
         else:
