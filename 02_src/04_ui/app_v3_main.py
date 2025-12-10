@@ -18,6 +18,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
+from langchain_community.retrievers import BM25Retriever
+from langchain_core.documents import Document
+
 # ★ 변경: LangChain LLM (langgraph_test에서 사용하는 것과 동일 모델)
 from langchain_openai import ChatOpenAI
 
@@ -71,6 +74,7 @@ app.add_middleware(
 
 # LangGraph 앱을 저장할 전역 변수
 rag_application: Optional[object] = None
+bm25_retriever = None  # ✅ BM25 인덱스 전역 보관
 
 # ★ 변경: langgraph_test용 전역 리소스
 vectorstore = None
@@ -94,7 +98,7 @@ class ChatRequest(BaseModel):
 @app.on_event("startup")
 async def startup_event():
     """서버 시작 시 LangGraph RAG 시스템 로드"""
-    global rag_application, vectorstore, llm, cluster_metadata_path
+    global rag_application, vectorstore, llm, cluster_metadata_path, bm25_retriever
     
     print("\n" + "=" * 70)
     print("🚀 HuggingFace Papers RAG Server - Starting Up (langgraph_test 버전)")
@@ -131,6 +135,20 @@ async def startup_event():
               f"CHUNK_SIZE={CHUNK_SIZE}, CHUNK_OVERLAP={CHUNK_OVERLAP})")
         vectorstore = load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP)
         print("[SUCCESS] VectorStore 로딩 완료")
+
+        # ✅ BM25 Retriever 초기화 (langgraph_test.initialize_langgraph_system 로직과 동일)
+        print("[LOAD] BM25 Retriever 초기화 중...")
+        collection_data = vectorstore._collection.get(include=['documents', 'metadatas'])
+        all_documents = [
+            Document(page_content=content, metadata=metadata)
+            for content, metadata in zip(collection_data['documents'], collection_data['metadatas'])
+        ]
+        if not all_documents:
+            raise ValueError("Chroma DB에 문서가 없습니다. BM25 인덱스 생성이 불가합니다.")
+
+        bm25_retriever = BM25Retriever.from_documents(all_documents)
+        bm25_retriever.k = 3  # BM25 검색 결과 개수
+        print(f"[SUCCESS] BM25 인덱스 생성 완료: {len(all_documents)}개 문서")
 
         # LLM 초기화 (langgraph_test와 동일 모델)
         print("[LOAD] LLM 초기화 중...")
@@ -219,19 +237,23 @@ async def get_stats() -> Dict:
         
         # cluster_metadata.json에서 키워드 개수 확인
         metadata_path = CLUSTERS_DIR / "cluster_metadata.json"
+
+        with open(metadata_path, "r", encoding="utf-8") as f:
+            metadata_data = json.load(f)
+        keyword_count = metadata_data.get("_metadata", {}).get("n_clusters", 0)
         
-        if not metadata_path.exists():
-            keyword_count = 0
-        else:
-            with open(metadata_path, "r", encoding="utf-8") as f:
-                metadata = json.load(f)
+        # if not metadata_path.exists():
+        #     keyword_count = 0
+        # else:
+        #     with open(metadata_path, "r", encoding="utf-8") as f:
+        #         metadata = json.load(f)
             
-            # 모든 클러스터의 고유 키워드 수집
-            all_keywords = set()
-            for cluster_id, info in metadata.get("clusters", {}).items():
-                all_keywords.update(info.get("keywords", []))
+        #     # 모든 클러스터의 고유 키워드 수집
+        #     all_keywords = set()
+        #     for cluster_id, info in metadata.get("clusters", {}).items():
+        #         all_keywords.update(info.get("keywords", []))
             
-            keyword_count = len(all_keywords)
+        #     keyword_count = len(all_keywords)
         
         return {
             "paper_count": paper_count,
@@ -329,6 +351,7 @@ async def chat(request: ChatRequest) -> Dict:
             # 내부 리소스 주입
             "_vectorstore": vectorstore,
             "_llm": llm,
+            "_bm25_retriever": bm25_retriever,  # ✅ 추가
             "_cluster_metadata_path": cluster_metadata_path,
         }
         
