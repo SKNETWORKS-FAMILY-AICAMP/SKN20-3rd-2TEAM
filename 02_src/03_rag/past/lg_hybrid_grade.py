@@ -26,12 +26,173 @@ from langgraph.graph import StateGraph, START, END
 # 하이브리드 검색 관련 임포트
 from langchain_community.retrievers import BM25Retriever
 
+from langsmith import Client, wrappers, evaluate
+from openai import OpenAI
+
 # 환경설정
 load_dotenv()
 
 if not os.environ.get('OPENAI_API_KEY'):
 
     raise ValueError('key check')
+
+client = Client()
+
+dataset = client.create_dataset(
+    dataset_name="ds-pertinent-fiesta-38", description="A sample dataset in LangSmith."
+)
+examples = [
+    {
+        "inputs": {"question": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration"},
+        "outputs": {"answer": """title : ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+huggingface_url : https://huggingface.co/papers/2511.21689
+git_url : https://github.com/NVlabs/ToolOrchestra/
+upvote:99
+authors : Hongjin Su, Shizhe Diao, Ximing Lu"""},
+    },
+    {
+        "inputs": {"question": "RFT를 LVLMs (large video language models) 으로 확장하는 방법은 무엇이 있나요?"},
+        "outputs": {"answer": """title: VIDEOP2R: Video Understanding from Perception to Reasoning
+huggingface_url:https://huggingface.co/papers/2511.11113
+git_url: 없음
+authors : Yifan Jiang, Yueying Wang, Rui Zhao, Toufiq Parag
+upvote:111"""},
+    },
+    {
+        "inputs": {"question": "LLM에서 긴 문맥의 추론을 향상시키는 GSW (Generative Semantic Workspace)에 대한 논문이 있다면 소개시켜주세요"},
+        "outputs": {"answer": """title: Beyond Fact Retrieval: Episodic Memory for RAG with Generative Semantic Workspaces
+hugginfFace_url: https://huggingface.co/papers/2511.07587
+git_url: 없음
+Authors: Shreyas Rajesh, Pavan Holur, Chenda Duan, David Chong
+upvote:8"""}
+    },
+    {
+        "inputs": {"question": "GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents"},
+        "outputs": {"answer": """title: GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents
+huggingface_url: https://huggingface.co/papers/2511.04307
+git_url: 없음
+authors: Jian Mu, Chaoyun Zhang, Chiming Ni, Lu Wang
+upvote:14"""}
+    },
+    {
+        "inputs": {"question": "오디오 기반 애니메이션의 정체성을 유지하는 방법이 있나요?"},
+        "outputs": {"answer": """title: https://huggingface.co/papers/2510.23581
+huggingface_url : https://huggingface.co/papers/2510.23581
+git_url: 없음
+authors : Junyoung Seo, Rodrigo Mira, Alexandros Haliassos
+upvote:41"""}
+    },
+    {
+        "inputs": {"question": "core attention disaggregation 은 무엇인가요?"},
+        "outputs": {"answer": """title : Efficient Long-context Language Model Training by Core Attention Disaggregation
+huggingface_url: https://huggingface.co/papers/2510.18121
+git_url: 없음
+authors:Yonghao Zhuang, Junda Chen, Bo Pang, Yi Gu
+upvote:121"""}
+    },
+    {
+        "inputs": {"question": "LLM에서 환각탐지를 할 수 있는 데이터셋을 알려주세요"},
+        "outputs": {"answer": """title: When Models Lie, We Learn: Multilingual Span-Level Hallucination Detection with PsiloQA
+huggingface_url : https://huggingface.co/papers/2510.04849
+git_url : https://github.com/s-nlp/PsiloQA
+authors : Elisei Rykov, Kseniia Petrushina, Maksim Savkin"""}
+    },
+    {
+        "inputs": {"question": "LLM에서 캐시와 관련된 논문이 있나요?"},
+        "outputs": {"answer": """title: Cache-to-Cache: Direct Semantic Communication Between Large Language Models
+huggingface_url: https://huggingface.co/papers/2510.03215
+git_url: https://github.com/thu-nics/C2C
+authors: Tianyu Fu, Zihan Min, Hanling Zhang
+upvote: 97"""}
+    },
+    {
+        "inputs": {"question": "Adrian Kosowski 저자의 최근 논문이 있나요?"},
+        "outputs": {"answer": """title: The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain
+huggingface_url:https://huggingface.co/papers/2509.26507
+git_url: https://github.com/pathwaycom/bdh
+authors: Adrian Kosowski, Przemysław Uznański, Jan Chorowski
+upvote:535"""}
+    },
+    {
+        "inputs": {"question": "해리포터 줄거리 알려주세요"},
+        "outputs": {"answer": """해당없다"""}
+    },
+    {
+        "inputs": {"question": "최근 공개된 논문에서 좋아요수를 300개 이상 받은 논문은 몇개인가요? (5개 이하인경우, 5개 논문에 대해서 소개해주세요)"},
+        "outputs": {"answer": ""}
+    }
+
+]
+client.create_examples(dataset_id=dataset.id, examples=examples)
+
+# Wrap the OpenAI client for LangSmith tracing
+openai_client = wrappers.wrap_openai(OpenAI())
+
+
+# Define the application logic to evaluate.
+# Dataset inputs are automatically sent to this target function.
+def target(inputs: dict) -> dict:
+    """
+    LangGraph RAG 시스템을 사용하여 질문에 답변
+    """
+    # RAG 앱이 초기화되지 않았다면 초기화
+    global rag_app
+    if 'rag_app' not in globals():
+        rag_app = langgraph_rag()
+
+    # RAGState 초기 상태 정의
+    initial_state = {
+        'question': inputs["question"],
+        'documents': [],
+        'doc_scores': [],
+        'search_type': "",
+        'answer': ""
+    }
+
+    # RAG 시스템 실행
+    result = rag_app.invoke(initial_state)
+
+    return {"answer": result['answer']}
+
+# Define an LLM-as-a-judge evaluator to evaluate correctness of the output
+def correctness_evaluator(inputs: dict, outputs: dict, reference_outputs: dict):
+    """
+    LLM을 사용하여 답변의 정확성을 평가하는 함수
+    """
+    from langchain_openai import ChatOpenAI
+
+    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+
+    eval_prompt = f"""You are an expert evaluator. Compare the predicted answer with the reference answer.
+
+Question: {inputs.get('question', '')}
+Predicted Answer: {outputs.get('answer', '')}
+Reference Answer: {reference_outputs.get('answer', '')}
+
+Evaluate if the predicted answer is correct and relevant. Provide a score from 0 to 1 where:
+- 1.0 means perfect match or fully correct
+- 0.5 means partially correct
+- 0.0 means completely incorrect
+
+Respond with ONLY a JSON object: {{"score": <float>, "reasoning": "<explanation>"}}
+"""
+
+    try:
+        response = llm.invoke(eval_prompt)
+        import json
+        result = json.loads(response.content)
+        return {
+            "key": "correctness",
+            "score": result.get("score", 0.0),
+            "comment": result.get("reasoning", "")
+        }
+    except Exception as e:
+        print(f"평가 오류: {e}")
+        return {
+            "key": "correctness",
+            "score": 0.0,
+            "comment": f"평가 실패: {str(e)}"
+        }
 
 def langgraph_rag():
     # llm모델 초기화 및 생성
@@ -51,12 +212,12 @@ def langgraph_rag():
     )
 
     # 벡터 DB가져오기
-    project_root = Path(__file__).resolve().parent.parent.parent 
+    project_root = Path(__file__).resolve().parent.parent.parent.parent 
     persist_dir = project_root / "01_data" / "vector_db"
     if os.path.exists(persist_dir):
         vectorstore = Chroma(
             persist_directory = persist_dir,
-            collection_name = 'chroma_OpenAI_200_30_C',
+            collection_name = 'chroma_OpenAI_300_45_C',
             embedding_function = embedding_model
         )
     else:
@@ -387,9 +548,43 @@ def langgraph_rag():
     return app
 
 if __name__ == '__main__':
-    # 컴파일된 LangGraph 앱을 가져오기
+    # LangSmith 프로젝트 이름 설정
+    os.environ["LANGCHAIN_PROJECT"] = "lg_hybrid_grade_rag_evaluation"
+    os.environ["LANGCHAIN_TRACING_V2"] = "true"
+
+    # 컴파일된 LangGraph 앱을 전역 변수로 초기화
+    print("RAG 시스템 초기화 중...")
     rag_app = langgraph_rag()
-    
+    print("RAG 시스템 초기화 완료!\n")
+
+    # LangSmith 평가 실행
+    print("=" * 60)
+    print("LangSmith 평가 시작")
+    print("=" * 60)
+
+    experiment_results = evaluate(
+        target,
+        data=dataset,
+        evaluators=[correctness_evaluator],
+        experiment_prefix="lg_hybrid_grade",
+        metadata={
+            "model": "gpt-4o-mini",
+            "retrieval": "BM25 + Vector (RRF)",
+            "threshold": 0.018,
+            "vector_db": "chroma_OpenAI_300_45_C"
+        },
+    )
+
+    print("\n" + "=" * 60)
+    print("평가 완료!")
+    print("=" * 60)
+    print(f"실험 결과: {experiment_results}")
+    print("\nLangSmith 대시보드에서 상세 결과를 확인하세요:")
+    print("https://smith.langchain.com/")
+
+    # ===== 사용자 interactive 검색 모드 (주석처리됨) =====
+    # 아래 코드의 주석을 해제하면 대화형 모드로 사용 가능
+    """
     while True:
         try:
             user_question = input("You: ")
@@ -407,9 +602,15 @@ if __name__ == '__main__':
                 'answer': ""
             }
 
-            # LangGraph 앱 실행
-            result = rag_app.invoke(initial_state)
-            
+            # LangSmith로 추적하면서 LangGraph 앱 실행
+            from langsmith import traceable
+
+            @traceable(name="RAG_Query", run_type="chain")
+            def run_rag(state):
+                return rag_app.invoke(state)
+
+            result = run_rag(initial_state)
+
             # 결과 출력
             answer = result['answer']
             search_type = result.get('search_type', 'N/A')
@@ -420,3 +621,4 @@ if __name__ == '__main__':
 
         except Exception as e:
             print(f"\n오류 발생: {e}\n")
+    """

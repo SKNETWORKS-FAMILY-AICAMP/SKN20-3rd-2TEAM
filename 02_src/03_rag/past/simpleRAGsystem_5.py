@@ -10,6 +10,9 @@ from langchain_core.output_parsers import StrOutputParser
 from pathlib import Path
 from duckduckgo_search import DDGS  # pip install duckduckgo-search
 
+from langsmith import Client, wrappers, evaluate
+from openai import OpenAI
+
 # 경고메세지 삭제
 warnings.filterwarnings('ignore')
 load_dotenv()
@@ -20,10 +23,154 @@ if not API_KEY:
     raise ValueError('.env확인, key없음')
 
 # vectordb 모듈 import
-SRC_DIR = Path(__file__).parent.parent
+SRC_DIR = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(SRC_DIR / "02_utils"))
 from vectordb import load_vectordb
 
+client = Client()
+
+dataset = client.create_dataset(
+    dataset_name="ds-pertinent-fiesta-37", description="A sample dataset in LangSmith."
+)
+examples = [
+    {
+        "inputs": {"question": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration"},
+        "outputs": {"answer": """title : ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+huggingface_url : https://huggingface.co/papers/2511.21689
+git_url : https://github.com/NVlabs/ToolOrchestra/
+upvote:99
+authors : Hongjin Su, Shizhe Diao, Ximing Lu"""},
+    },
+    {
+        "inputs": {"question": "RFT를 LVLMs (large video language models) 으로 확장하는 방법은 무엇이 있나요?"},
+        "outputs": {"answer": """title: VIDEOP2R: Video Understanding from Perception to Reasoning
+huggingface_url:https://huggingface.co/papers/2511.11113
+git_url: 없음
+authors : Yifan Jiang, Yueying Wang, Rui Zhao, Toufiq Parag
+upvote:111"""},
+    },
+    {
+        "inputs": {"question": "LLM에서 긴 문맥의 추론을 향상시키는 GSW (Generative Semantic Workspace)에 대한 논문이 있다면 소개시켜주세요"},
+        "outputs": {"answer": """title: Beyond Fact Retrieval: Episodic Memory for RAG with Generative Semantic Workspaces
+hugginfFace_url: https://huggingface.co/papers/2511.07587
+git_url: 없음
+Authors: Shreyas Rajesh, Pavan Holur, Chenda Duan, David Chong
+upvote:8"""}
+    },
+    {
+        "inputs": {"question": "GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents"},
+        "outputs": {"answer": """title: GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents
+huggingface_url: https://huggingface.co/papers/2511.04307
+git_url: 없음
+authors: Jian Mu, Chaoyun Zhang, Chiming Ni, Lu Wang
+upvote:14"""}
+    },
+    {
+        "inputs": {"question": "오디오 기반 애니메이션의 정체성을 유지하는 방법이 있나요?"},
+        "outputs": {"answer": """title: https://huggingface.co/papers/2510.23581
+huggingface_url : https://huggingface.co/papers/2510.23581
+git_url: 없음
+authors : Junyoung Seo, Rodrigo Mira, Alexandros Haliassos
+upvote:41"""}
+    },
+    {
+        "inputs": {"question": "core attention disaggregation 은 무엇인가요?"},
+        "outputs": {"answer": """title : Efficient Long-context Language Model Training by Core Attention Disaggregation
+huggingface_url: https://huggingface.co/papers/2510.18121
+git_url: 없음
+authors:Yonghao Zhuang, Junda Chen, Bo Pang, Yi Gu
+upvote:121"""}
+    },
+    {
+        "inputs": {"question": "LLM에서 환각탐지를 할 수 있는 데이터셋을 알려주세요"},
+        "outputs": {"answer": """title: When Models Lie, We Learn: Multilingual Span-Level Hallucination Detection with PsiloQA
+huggingface_url : https://huggingface.co/papers/2510.04849
+git_url : https://github.com/s-nlp/PsiloQA
+authors : Elisei Rykov, Kseniia Petrushina, Maksim Savkin"""}
+    },
+    {
+        "inputs": {"question": "LLM에서 캐시와 관련된 논문이 있나요?"},
+        "outputs": {"answer": """title: Cache-to-Cache: Direct Semantic Communication Between Large Language Models
+huggingface_url: https://huggingface.co/papers/2510.03215
+git_url: https://github.com/thu-nics/C2C
+authors: Tianyu Fu, Zihan Min, Hanling Zhang
+upvote: 97"""}
+    },
+    {
+        "inputs": {"question": "Adrian Kosowski 저자의 최근 논문이 있나요?"},
+        "outputs": {"answer": """title: The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain
+huggingface_url:https://huggingface.co/papers/2509.26507
+git_url: https://github.com/pathwaycom/bdh
+authors: Adrian Kosowski, Przemysław Uznański, Jan Chorowski
+upvote:535"""}
+    },
+    {
+        "inputs": {"question": "해리포터 줄거리 알려주세요"},
+        "outputs": {"answer": """해당없다"""}
+    },
+    {
+        "inputs": {"question": "최근 공개된 논문에서 좋아요수를 300개 이상 받은 논문은 몇개인가요? (5개 이하인경우, 5개 논문에 대해서 소개해주세요)"},
+        "outputs": {"answer": ""}
+    }
+
+]
+client.create_examples(dataset_id=dataset.id, examples=examples)
+
+# Wrap the OpenAI client for LangSmith tracing
+openai_client = wrappers.wrap_openai(OpenAI())
+
+
+# Define the application logic to evaluate.
+# Dataset inputs are automatically sent to this target function.
+def target(inputs: dict) -> dict:
+    response = openai_client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "system", "content": "Answer the following question accurately"},
+            {"role": "user", "content": inputs["question"]},
+        ],
+    )
+    return {"answer": response.choices[0].message.content}
+
+# Define an LLM-as-a-judge evaluator to evaluate correctness of the output
+def correctness_evaluator(inputs: dict, outputs: dict, reference_outputs: dict):
+    """
+    LLM을 사용하여 답변의 정확성을 평가하는 함수
+    """
+    from langchain_openai import ChatOpenAI
+
+    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+
+    eval_prompt = f"""You are an expert evaluator. Compare the predicted answer with the reference answer.
+
+Question: {inputs.get('question', '')}
+Predicted Answer: {outputs.get('answer', '')}
+Reference Answer: {reference_outputs.get('answer', '')}
+
+Evaluate if the predicted answer is correct and relevant. Provide a score from 0 to 1 where:
+- 1.0 means perfect match or fully correct
+- 0.5 means partially correct
+- 0.0 means completely incorrect
+
+Respond with ONLY a JSON object: {{"score": <float>, "reasoning": "<explanation>"}}
+"""
+
+    try:
+        response = llm.invoke(eval_prompt)
+        import json
+        result = json.loads(response.content)
+        return {
+            "key": "correctness",
+            "score": result.get("score", 0.0),
+            "comment": result.get("reasoning", "")
+        }
+    except Exception as e:
+        print(f"평가 오류: {e}")
+        return {
+            "key": "correctness",
+            "score": 0.0,
+            "comment": f"평가 실패: {str(e)}"
+        }
 
 class SimpleRAGSystem:
     '''간단한 RAG 시스템 래퍼 클래스'''
@@ -460,18 +607,43 @@ if __name__ == '__main__':
     MODEL_NAME = os.getenv("MODEL_NAME")
     CHUNK_SIZE = int(os.getenv("CHUNK_SIZE"))
     CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP"))
-    
+
+    print("VectorDB 로딩 중...")
     vectorstore = load_vectordb(
         model_name=MODEL_NAME,
         chunk_size=CHUNK_SIZE,
         chunk_overlap=CHUNK_OVERLAP
     )
-  
+
     llm = ChatOpenAI(model='gpt-4o-mini', temperature=0)
     rag_system = SimpleRAGSystem(vectorstore, llm, retriever_k=5)
 
+    print("RAG 시스템 초기화 완료\n")
+
+    # target 함수를 RAG 시스템을 사용하도록 재정의
+    def rag_target(inputs: dict) -> dict:
+        """RAG 시스템을 사용하여 답변을 생성하는 target 함수"""
+        question = inputs["question"]
+        result = rag_system.ask(question, score_threshold=1.2)
+        return {"answer": result}
+
+    print("LangSmith 평가 실행 중...")
+    try:
+        experiment_results = evaluate(
+            rag_target,  # RAG 시스템을 사용하는 함수
+            data="ds-pertinent-fiesta-37",
+            evaluators=[correctness_evaluator],
+            experiment_prefix="experiment-rag-system",
+            max_concurrency=2,
+        )
+        print("평가 완료!")
+        print(f"실험 결과: {experiment_results}")
+    except Exception as e:
+        print(f"평가 중 오류 발생: {e}")
+        print("평가를 건너뛰고 챗봇 모드로 진행합니다.\n")
+
     # 테스트
-    print("=== 테스트 1: 논문 검색 ===")
+    print("\n=== 테스트 1: 논문 검색 ===")
     result = rag_system.ask_with_sources("transformer architecture", score_threshold=1.2)
     print(f"\n[답변]\n{result['answer']}\n")
     print(f"[출처 수]: {len(result['sources'])}")
@@ -485,6 +657,6 @@ if __name__ == '__main__':
             print("챗봇 종료!")
             break
 
-        # score_threshold 조정 가능 (기본값 1.0)
+        # score_threshold 조정 가능 (기본값 1.2)
         answer = rag_system.chat(user_msg, score_threshold=1.2)
         print(f"\nAssistant:\n{answer}\n")
