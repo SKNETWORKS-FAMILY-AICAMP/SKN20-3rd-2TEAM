@@ -179,11 +179,11 @@ def translate_node(state: GraphState) -> dict:
     try:
         translate_prompt = ChatPromptTemplate.from_messages([
             ("system", '''You are a professional translator related to AI/ML/DL/LLM. Translate Korean into processed English for your research. 
-            For questions not related to AI/ML/DL/LLM, translate them into general language expressions without paraphrases or related terms.
+            For questions not related to AI/ML/DL/LLM, translate them into general language expressions without paraphrases or related terms.(Large Language Model).
 
             e.g.
-            레그 -> Rag
-            래그 -> Rag
+            레그 -> Rag,rag
+            래그 -> Rag,rag
             랭체인 -> Langchain
             랭그래프 -> Langgraph 
             Output ONLY English text.'''),
@@ -795,7 +795,7 @@ def build_langgraph_rag():
     graph.add_edge("retrieve", "evaluate")
 
     graph.add_conditional_edges("topic_guard", route_after_topic_guard, {"retrieve": "retrieve", "reject": "reject"})
-    graph.add_conditional_edges("evaluate", route_after_evaluate, {"generate": "generate", "cluster_check": "cluster_check", "web_search": "web_search", "reject": "reject"})
+    graph.add_conditional_edges("evaluate", route_after_evaluate, {"generate": "generate", "cluster_check": "web_search", "web_search": "web_search", "reject": "reject"})
     graph.add_conditional_edges("cluster_check", route_after_cluster_check, {"generate": "generate", "web_search": "web_search"})
 
     graph.add_edge("web_search", "generate")
