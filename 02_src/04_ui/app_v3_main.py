@@ -101,7 +101,7 @@ class ChatRequest(BaseModel):
 @app.on_event("startup")
 async def startup_event():
     """서버 시작 시 LangGraph RAG 시스템 로드"""
-    global rag_application, vectorstore, llm, cluster_metadata_path
+    global rag_application, vectorstore, llm, cluster_metadata_path, bm25_retriever
     
     print("\n" + "=" * 70)
     print("🚀 HuggingFace Papers RAG Server - Starting Up (langgraph_test 버전)")
@@ -111,7 +111,7 @@ async def startup_event():
         # 1. 경로 확인
         print(f"\n[INFO] 프로젝트 루트: {PROJECT_ROOT}")
         print(f"[INFO] RAG 경로: {RAG_PATH}")
-        print(f"[INFO] langgraph_test.py 존재: {(RAG_PATH / 'langgraph_test.py').exists()}")
+        print(f"[INFO] langgraph_test.py 존재: {(RAG_PATH / 'langgraph_test-1.py').exists()}")
 
         # 2. langgraph_test 모듈 임포트
         print("\n[STEP 1/4] langgraph_test 모듈 임포트 중...")
@@ -139,7 +139,7 @@ async def startup_event():
         vectorstore = load_vectordb(MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP)
         print("[SUCCESS] VectorStore 로딩 완료")
 
-            # ★★★ BM25 인덱스 생성
+        # ✅ BM25 Retriever 초기화 (langgraph_test.initialize_langgraph_system 로직과 동일)
         print("[LOAD] BM25 Retriever 초기화 중...")
         collection_data = vectorstore._collection.get(include=['documents', 'metadatas'])
         all_documents = [
@@ -147,10 +147,10 @@ async def startup_event():
             for content, metadata in zip(collection_data['documents'], collection_data['metadatas'])
         ]
         if not all_documents:
-            raise ValueError("Chroma DB에 문서가 없습니다. BM25 인덱스를 만들 수 없습니다.")
+            raise ValueError("Chroma DB에 문서가 없습니다. BM25 인덱스 생성이 불가합니다.")
 
         bm25_retriever = BM25Retriever.from_documents(all_documents)
-        bm25_retriever.k = 3
+        bm25_retriever.k = 3  # BM25 검색 결과 개수
         print(f"[SUCCESS] BM25 인덱스 생성 완료: {len(all_documents)}개 문서")
 
         # LLM 초기화 (langgraph_test와 동일 모델)
