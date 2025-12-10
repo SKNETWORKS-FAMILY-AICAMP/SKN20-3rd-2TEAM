@@ -3,23 +3,26 @@
 | <img src="" width="150"> <br> 김지은 |  <img src="" width="150"> <br> 박다정 |  <img src="" width="150"> <br> 오학성 |  <img src="" width="150"> <br> 정소영 |  <img src="" width="200"> <br> 황수현 |
 |:------:|:------:|:------:|:------:|:------:|
 
-## 1. 프로젝트 개요 및 목표
+## 1. 프로젝트 소개 및 목표
 
-### 1.1 개요
+### 1.1 프로젝트 소개
 
-  * **프로젝트명:** HuggingFace WeeklyPapers 기반 최신 ML/DL/LLM 논문 트렌드 RAG 챗봇
-  * **목적:** **RAG (Retrieval-Augmented Generation)** 패턴을 숙달하고, HuggingFace WeeklyPapers 데이터를 자동 수집하여,
-  RAG(Retrieval-Augmented Generation) 구조와 LLM 기반 트렌드 분석 기능을 갖춘 AI 논문 검색 플랫폼을 구현하는 것을 목표로 한다.
-  * **핵심 기능:**
-      * 최신 ML/DL/LLM 논문 자동 수집 및 저장
-      * Abstract 기반 자동 키워드 추출
-      * VectorDB 기반 논문 검색
-      * LangGraph 기반 RAG Workflow
-      * Streamlit 대화형 챗봇 UI
-      * 키워드 기반 논문 검색 및 요약 제공
+이 프로젝트는 **HuggingFace Weekly Papers** 데이터를 자동으로 수집·분석하여,  
+최신 **ML/DL/LLM 논문 트렌드**를 질의응답 형태로 제공하는 **RAG 기반 논문 검색 챗봇**입니다.
+  - **핵심 기능:**
+  - HuggingFace Weekly Papers를 정기적으로 **크롤링**
+  - 논문 Abstract를 **청킹 + 임베딩 + 벡터DB 저장**
+  - **K-Means 클러스터링 + 클러스터 메타데이터**로 트렌드/토픽 구조화
+  - **LangGraph** 기반 RAG 라우팅으로 검색 전략 자동 선택
+  - **HTML/JS UI + FastAPI 백엔드**를 통한 웹 챗봇 제공
 
-### 1.2 전체 프로젝트 구조
-### 프로젝트 디렉토리 구조
+### 1.2 목표
+
+- RAG 파이프라인 전체(크롤링 → 전처리 → 벡터DB → RAG → UI)를 **직접 구현하고 이해하는 것**
+- **클러스터링 + 하이브리드 검색(BM25 + Vector + RRF)** 으로 검색 품질 향상
+- **RAG(Retrieval-Augmented Generation)** 구조와 LLM 기반 트렌드 분석 기능을 갖춘 AI 논문 검색 플랫폼을 구현하는 것을 목표
+
+## 2. 프로젝트 디렉토리 구조(수정해야하므ㅡㅡㅡㅡㅡㅡㅡㅡ)
 
 ```bash
 SKN20-3rd-2TEAM/
@@ -57,204 +60,189 @@ SKN20-3rd-2TEAM/
 ├── README.md                       # 프로젝트 설명 문서
 └── requirements.txt                # Python 라이브러리 설치 목록
 ```
------ 
-### 시스템 아키텍처
+
+## 3. 시스템 아키텍처(다시ㅡㅡㅡㅡㅡㅡㅡㅡ)
 <img src="MDimages/SystemArchitecture.png" width="85%"> 
 
------ 
-### 데이터 파이프라인
 
-1. **크롤링 및 JSON 저장** (`crawling.py`)
-   - HuggingFace WeeklyPapers에서 논문 메타데이터 수집
-   - 수집된 논문 정보를 JSON 형식으로 저장
+## 📊 데이터 파이프라인(폴더 이름 수정 해야함 ㅡㅡㅡㅡㅡㅡㅡㅡㅡ)
+
+1. **크롤링** (`crawling.py`)
+   - HuggingFace Weekly Papers에서 논문 메타데이터 수집
+   - Abstract, Authors, Upvote, GitHub/HF URL 등을 JSON으로 저장
 
 2. **청킹** (`chunking.py`)
-   - 논문 텍스트를 검색에 적합한 크기로 분할
+   - 수집된 논문을 검색 최적화 크기로 분할
+   - RecursiveCharacterTextSplitter 활용
 
-3. **임베딩 및 VectorDB 저장** (`vectordb.py`)
-   - 청크를 벡터로 변환하여 Chroma VectorDB에 저장
+3. **클러스터링 + 임베딩** (`vectordb.py`)
+   - K-Means 기반 논문 클러스터링 및 키워드 추출
+   - OpenAI/HuggingFace 임베딩 모델로 벡터화
+   - Chroma VectorDB 생성 및 저장
 
-4. **RAG 시스템** (`simpleRAGsystem_2.py`)
-   - LangChain 기반 Retriever와 RAG 파이프라인 구성
+4. **RAG 시스템** (`langgraph_test.py`)
+   - LangGraph 기반 Multi-Agent RAG 구축
+   - Hybrid Retrieval (Vector + BM25) 적용
 
-5. **UI** (`app.py`)
-   - Streamlit을 통한 대화형 인터페이스 제공
+5. **백엔드 + HTML UI** (`app_v3_main.py` + `app_v3.html`)
+   - FastAPI 백엔드로 RAG 시스템 서빙
+   - HTML/JS 프론트엔드로 대화형 인터페이스 제공
 
------
+## 4. 기술 스택
 
-## 2. 기술 스택
+### 🧩 Backend
 
-### 🔧 Backend
+| 구분 | 기술 | 설명 |
+|------|-------|-------|
+| **언어** | 🐍 Python 3.10 | 전체 파이프라인 구현 핵심 언어 |
+| **웹 프레임워크** | ⚡ FastAPI | 고성능 비동기 기반 API 서버 |
+| **LLM 엔진** | 🤖 OpenAI GPT-4o-mini | 최종 답변 생성 모델 |
+| **RAG Framework** | 🔗 LangChain / 🔀 LangGraph | 하이브리드 검색 + 조건부 라우팅 RAG |
+| **Vector DB** | 🗂️ ChromaDB | 문서 임베딩 저장·검색 |
+| **검색 엔진** | 🔍 BM25 + 🔎 Vector Search + 📈 RRF | 점수 융합 기반 상위 문서 검색 |
+| **임베딩 모델** | 🧬 OpenAI / 🤗 HuggingFace Embeddings | 범용·논문 특화·다국어 임베딩 |
+| **클러스터링** | 📊 Scikit-learn KMeans | 논문 주제 클러스터링 |
+| **전처리** | ✂️ NLTK · TF-IDF · KeyBERT · Lemmatization | 불용어 제거, 표제화, 키워드 추출 |
 
-| 카테고리 | 기술 | 설명 |
-|---------|------|------|
-| **언어** | Python 3.10.11 | 핵심 개발 언어 |
-| **LLM 프레임워크** | LangChain / LangGraph | RAG 파이프라인 구축 |
-| **Vector DB** | ChromaDB | 임베딩 벡터 저장 및 검색 |
-| **크롤링** | BeautifulSoup4 | 웹 스크래핑 |
-| **불용어 제거 후 키워드 추출** | NLTK + KeyBERT / TF-IDF | 논문 불용어 제거 후 키워드 자동 추출 |
-| **LLM API** | OpenAI ChatCompletion | 자연어 생성 및 응답 |
+---
 
 ### 🎨 Frontend
 
-| 기술 | 설명 |
-|------|------|
-| **Streamlit** | 대화형 웹 인터페이스 |
-| **Custom CSS** | HuggingFace 스타일 UI 디자인 |
+| 구분 | 기술 | 설명 |
+|------|-------|-------|
+| **UI 구조** | 🌐 HTML5 | 단일 페이지 챗봇 인터페이스 |
+| **스타일링** | 🎨 CSS (Custom) | 다크/라이트 테마 & 반응형 디자인 |
 
-### 📊 Data
+---
 
-- **데이터 소스**: HuggingFace WeeklyPapers
-- **수집 방식**: Weekly Abstract 자동 크롤링
-- **저장 형식**: JSON (데이터 정제 후)
------
+### 📊 Data & Storage
 
-## 3. 주요 기능
+| 구분 | 기술 | 핵심 개념 |
+|------|-------|------------|
+| **데이터 소스** | 📚 HuggingFace Weekly Papers | 매주 공개되는 최신 AI 논문 데이터를 수집하는 출처 |
+| **원본 저장** | 📝 JSON | 크롤링한 논문의 제목, 초록, 메타데이터 등등 그대로 담아 기본 저장 |
+| **청킹 결과** | 📁 PKL | 긴 텍스트를 검색하기 좋은 작은 조각들로 나눠 보관하는 중간 데이터 |
+| **클러스터 정보** | 🧩 JSON | 비슷한 내용의 논문들을 주제별로 묶고, 대표 키워드 등 특징을 정리한 정보 |
+| **벡터 저장소** | 🗄️ ChromaDB | 청킹된 문서를 임베딩 벡터 형태로 저장해 빠르게 검색할 수 있게 만드는 공간 |
 
-### 3.1 📥 데이터 수집 (크롤링)
+## 5. 모듈별 상세 설명
 
-**파일**: `crawling.py`
+### 📥 5.1 `crawling.py` — HuggingFace 논문 크롤링
 
-HuggingFace WeeklyPapers에서 주간 논문 데이터를 자동으로 수집합니다.
+**역할**  
+- Weekly Papers 페이지에서 최신 논문 데이터 자동 수집  
+- 논문 본문(`context`) + 메타데이터(`metadata`) 구조로 JSON 저장  
+- TF-IDF / KeyBERT 기반 키워드 추가(옵션)  
+- 이후 청킹·임베딩·클러스터링의 원본 데이터가 됨
 
-#### 수집 데이터
+**수집 JSON 구조**
 
 | 필드 | 설명 | 예시 |
 |------|------|------|
-| **Title** | 논문 제목 | Souper-Model: How Simple Arithmetic... |
-| **Context** | 논문 초록 및 커뮤니티 댓글 | Large Language Models (LLMs) have... |
-| **Authors** | 저자 목록 | Shalini Maiti, Amar Budhiraja, ... |
-| **Publication Year** | 발행 연도 | 2025 |
-| **GitHub URL** | 관련 코드 저장소 | https://github.com/facebookresearch/... |
-| **HuggingFace URL** | 논문 페이지 링크 | https://huggingface.co/papers/2511.13254 |
-| **Upvote** | 인기도 지표 | 134 |
-| **Tags** | KeyBERT 추출 키워드 (Top 3) | averaging approaches, soup category, ... |
-
-#### 주요 기능
-- HuggingFace WeeklyPapers URL 자동 크롤링
-- 논문 메타데이터 및 초록, 커뮤니티 반응 수집
-- KeyBERT 기반 논문 키워드(Top 3) 자동 추출
-- 체계적인 디렉토리 구조로 JSON 저장
-
-#### 저장 형식
-```
-01_data/documents/{year}/{year}-W{week}/docYYWWNNN.json
-```
-
-**예시**:
-```
-01_data/documents/2025/2025-W11/doc2511001.json
-01_data/documents/2025/2025-W11/doc2511002.json
-```
-
-#### JSON 구조
-```json
-{
-  "context": "논문 초록 및 커뮤니티 댓글 전체 텍스트",
-  "metadata": {
-    "title": "논문 제목",
-    "authors": ["저자1", "저자2", "..."],
-    "publication_year": 2025,
-    "github_url": "GitHub 저장소 URL",
-    "huggingface_url": "HuggingFace 논문 페이지 URL",
-    "upvote": 134,
-    "tags": ["키워드1", "키워드2", "키워드3"]
-  }
-}
-```
+| **context** | 논문 Abstract + 커뮤니티 텍스트 | "SAM 3 introduces a novel concept..." |
+| **metadata.title** | 논문 제목 | "SAM 3: Segment Anything with Concepts" |
+| **metadata.authors** | 저자 목록 | ["Nicolas Carion", "Laura Gustafson", ...] |
+| **metadata.publication_year** | 발행 연도 | 2025 |
+| **metadata.github_url** | GitHub 링크 | "https://github.com/facebookresearch/sam3" |
+| **metadata.huggingface_url** | HuggingFace 논문 링크 | "https://huggingface.co/papers/2511.16719" |
+| **metadata.upvote** | 추천 수 | 108 |
 ---
 
-### 3.2 ✂️ 문서 청킹
+### ✂️ 5.2 `chunking.py` — 텍스트 청킹
 
-**파일**: `chunking.py`
+**역할**  
+- 논문 JSON → 검색 최적화 청크로 분할  
+- 각 청크에 `doc_id`, `chunk_index`, `total_chunks` 메타데이터 추가  
+- `.pkl` 파일로 저장하여 VectorDB 구축에 사용
 
-수집된 JSON 문서를 검색에 최적화된 크기로 분할합니다.
+**환경 변수 (.env)**
 
-#### 처리 과정
-1. JSON 문서를 LangChain Document로 로딩
-2. `RecursiveCharacterTextSplitter` 기반 청킹
-3. PKL 형식으로 저장 → VectorDB 인덱싱에 사용
-
-#### 환경 변수 설정
-
-`.env` 파일에서 청킹 파라미터를 설정합니다:
 ```env
 CHUNK_SIZE=200
-CHUNK_OVERLAP=20
+CHUNK_OVERLAP=30
 ```
 
 | 파라미터 | 설명 | 기본값 |
 |---------|------|--------|
-| `CHUNK_SIZE` | 청크당 최대 문자 수 | 100 |
-| `CHUNK_OVERLAP` | 청크 간 중복 문자 수 | 10 |
-
+| **CHUNK_SIZE** | 청크당 최대 문자 수 | 200 |
+| **CHUNK_OVERLAP** | 청크 간 중복 문자 수 | 30 |
 ---
 
-### 3.3 🗄️ VectorDB 저장 및 로딩
+### 🧩 5.3 `clustering.py` — 자동 논문 클러스터링
+**역할:** 논문(문서) 전체를 K-Means로 주제 그룹으로 묶고, 클러스터 메타데이터 생성
 
-**파일**: `vectordb.py`
+**주요 기능**
+- 문서 임베딩 생성(OpenAI Embeddings + 캐시 관리)
+- 최적 클러스터 수 자동 탐색(Elbow 기반)
+- K-Means 클러스터링 수행
+- 클러스터별 대표 정보 생성  
+  - 대표 키워드(TF-IDF + Lemmatization)  
+  - 중심 문서(top papers)  
+  - 크기(size), 밀도(density), 평균 upvote  
+- 결과 저장  
+  - `cluster_assignments.json` (doc_id → cluster_id)  
+  - `cluster_metadata.json` (클러스터별 특징)
 
-청킹된 문서를 벡터화하여 ChromaDB에 저장하고 로드합니다.
-
-#### 지원 임베딩 모델
-
-**HuggingFace 모델** (로컬 실행 가능)
-
-| 모델명 | 특징 |
-|--------|------|
-| **all-MiniLM-L6-v** | 경량 고속 범용 모델 |
-| **all-mpnet-base-v2** | 고품질 범용 임베딩 |
-| **msmarco-MiniLM-L-6-v3** | 검색 최적화 |
-| **allenai-specter** | 과학 논문 특화 |
-| **bge-m3** | 다국어 지원 고성능 |
-| **paraphrase-multilingual-mpnet-base-v2** | 다국어 의역 검색 |
-
-**OpenAI 모델** (OPENAI API 키 필요)
-
-| 모델명 | 특징 |
-|--------|------|
-| **text-embedding-3-small** | 고성능 임베딩 |
-
-#### 주요 기능
-
-- **벡터 DB 저장**: PKL 청크 → 임베딩 → ChromaDB 저장
-- **벡터 DB 로드**: 저장된 컬렉션을 Retriever로 로드
-- GPU 자동 감지 및 활용
-
-#### 환경 변수
-```env
-MODEL_NAME=OpenAI
-CHUNK_SIZE=100
-CHUNK_OVERLAP=10
-```
-
-#### 사용 예시
-```python
-# VectorDB 생성
-vectordb_save(model_name="OpenAI", chunk_size=100, chunk_overlap=10)
-
-# VectorDB 로드
-vectorstore = load_vectordb(model_name="OpenAI", chunk_size=100, chunk_overlap=10)
-```
+**특징**
+- vectordb.py에서 자동 호출되어 VectorDB 생성 과정에 포함됨
 ---
 
-### 3.4 🤖 RAG 시스템
+### 🗄️ 5.4 `vectordb.py` — 임베딩 + VectorDB 생성/로드
 
-**파일**: `simpleRAGsystem_2.py`
+**위치:** `02_src/02_utils/vectordb.py`  
+**역할:** 청킹된 문서를 임베딩하고 Chroma VectorDB로 저장하거나 로드
 
-*(구현 예정)*
-
+**내부 흐름 (`vectordb_save`)**
+1. 청크 로드 (`load_chunks_from_pkl`)
+2. 클러스터링 수행 (`cluster_documents`)
+3. 각 청크에 `cluster_id` 메타데이터 부착
+4. 임베딩 모델 선택(OpenAI 또는 HuggingFace)
+5. Chroma VectorDB 생성 및 디스크 저장
 ---
 
-### 3.5 💬 Streamlit UI
+### 🤖 5.5 `langgraph_test.py` — LangGraph 기반 RAG 검색 엔진
 
-**파일**: `app.py`
+**위치:** `02_src/03_rag/langgraph_test.py`  
+**역할:** LangGraph로 구성된 RAG 워크플로를 생성하고, 질문에 대한 최종 답변을 생성
 
-*(구현 예정)*
+**핵심 구성 요소**
+- VectorDB + BM25 + RRF 하이브리드 검색
+- 클러스터 기반 라우팅 (cluster_similarity_check_node)
+- Tavily 기반 웹 검색 fallback
+- 최종 답변 생성(한글 요약 구조화)
 
------
+**주요 노드**
+| 노드명 | 역할 |
+|--------|-------|
+| **translate_node** | 한글 입력 시 영어로 변환하여 검색 성능 향상 |
+| **retrieve_node** | Vector + BM25 + RRF로 상위 문서 검색 |
+| **evaluate_document_relevance_node** | 문서 관련성(high/medium/low) 분류 |
+| **cluster_similarity_check_node** | medium일 경우 클러스터 내 문서 재검색 |
+| **web_search_node** | 내부 문서 부족 시 웹 검색 수행 |
+| **generate_final_answer_node** | 최종 한글 답변 생성(요약·인사이트·출처 포함) |
+| **reject_node** | 비관련 질문 시 정중한 안내 |
+---
 
-## 4. 응답 전략 및 출력 형식
+### 💬 5.6 `app_v3_main.py` & `app_v3.html` — 웹 서비스 UI/백엔드
+
+**UI 파일:** `02_src/04_ui/app_v3.html`  
+**API 서버:** `02_src/04_ui/app_v3_main.py`
+
+**백엔드 역할 (FastAPI)**
+- 서버 실행 시 LangGraph RAG 시스템 초기화
+- 제공 API  
+  - `POST /api/chat` → 질문 → RAG 엔진 답변 반환  
+  - `GET /api/stats` → 논문/청크/클러스터 통계  
+  - `GET /api/trending-keywords` → 클러스터 기반 인기 키워드 제공  
+
+**프론트 역할 (HTML/JS)**
+- Fetch API로 FastAPI와 통신
+- Chat UI 렌더링(메시지 버블, 출처 카드, 검색 타입 뱃지 등)
+- 트렌드 키워드 버튼 클릭 시 자동 질문 전송
+- 반응형 다크/라이트 테마 포함
+
+
+## 6. 응답 전략 및 출력 형식
 
 ### 4.1. 시스템 프롬프트 (System Prompt)
 

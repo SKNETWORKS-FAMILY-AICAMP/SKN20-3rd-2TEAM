@@ -412,12 +412,34 @@ def evaluate_document_relevance_node(state: GraphState) -> dict:
     # ✅ 수정: RRF 스코어 특성에 맞는 임계값
     # RRF with K=60: 1등 = 1/61 ≈ 0.0164, 2등 = 1/62 ≈ 0.0161
     # 두 검색 방법에서 모두 1등이면: 0.0164 * 2 = 0.0328
-    if best_score >= 0.022:  # 상위권에서 중복 발견
+    # # 보수적 기준 ============
+    # if best_score >= 0.025:  # 둘 다 상위권
+    #     level = "high"
+    # elif best_score >= 0.017:  # 한쪽 상위권 또는 둘 다 중위권
+    #     level = "medium"
+    # else:  # 낮은 순위
+    #     level = "low"
+    # # 균형잡힌 기준 ===========
+    # if best_score >= 0.020:  # 둘 중 한쪽 이상 상위권
+    #     level = "high"
+    # elif best_score >= 0.015:  # 한쪽이라도 중상위권
+    #     level = "medium"
+    # else:  # 둘 다 하위권
+    #     level = "low"
+    # ✅ 클로드 기반 수정된 임계값
+    if best_score >= 0.0325:  # HIGH: 양쪽 모두 상위 2위 이내
         level = "high"
-    elif best_score >= 0.016:  # 한쪽에서만 상위권
+    elif best_score >= 0.0156:  # MEDIUM: 한쪽 상위권 또는 양쪽 중위권
         level = "medium"
-    else:  # 낮은 순위
+    else:  # LOW: 양쪽 모두 5위 이하
         level = "low"
+    # 원본 ============
+    # if best_score >= 0.022:  # 상위권에서 중복 발견
+    #     level = "high"
+    # elif best_score >= 0.016:  # 한쪽에서만 상위권
+    #     level = "medium"
+    # else:  # 낮은 순위
+    #     level = "low"
 
     print(f"[evaluate] 최상위 RRF 스코어: {best_score:.6f} → {level.upper()}")
     
@@ -898,8 +920,8 @@ def route_after_cluster_check(state: GraphState) -> Literal["generate", "web_sea
         cluster_info = cluster_meta["clusters"].get(str(cluster_id), {})
         density = cluster_info.get("density", 0.0)
 
-        # HIGH 조건: 평균 점수 <= 0.9 AND 밀도 >= 1.0
-        if cluster_score <= 0.8 and density >= 1.0:
+        # ✅ 수정된 조건: 상위 40% 품질 클러스터만 사용
+        if cluster_score <= 0.85 and density >= 1.572:
             print(f"HIGH (score={cluster_score:.3f}, density={density:.3f}) → generate")
             return "generate"
         else:
