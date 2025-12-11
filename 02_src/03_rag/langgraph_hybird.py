@@ -5,7 +5,7 @@ LangGraph 기반 RAG 시스템 (최종 완성 버전 - Sources 포함)
 1. ✅ TypedDict import 오류 수정
 2. ✅ SAM3 문제 해결: 메타데이터 부스팅
 3. ✅ langchain 문제 해결: 스마트 라우팅
-4. ✅ "배아파, 뭐해?" 문제 해결: topic_guard_node
+4. ✅ 주제 문제 해결: topic_guard_node
 5. ✅ RRF/Cluster 임계값 최적화
 6. ✅ Sources 구성: 허깅페이스 URL, 웹 검색 URL 표시
 """
@@ -96,7 +96,7 @@ def extract_keywords(text: str) -> Set[str]:
         'transformer', 'attention', 'diffusion', 'gan', 'vae', 'bert', 
         'gpt', 'llama', 'sam', 'clip', 'vit', 'resnet', 'unet',
         'rag', 'retrieval', 'embedding', 'tokenizer', 'langchain',
-        'pytorch', 'tensorflow', 'huggingface'
+        'pytorch', 'tensorflow', 'huggingface', 'audio', 'model', 'paper', 'papers'
     }
     words = set(re.findall(r'\b\w+\b', text.lower()))
     keywords.update(words & tech_terms)
@@ -131,19 +131,36 @@ def is_ai_ml_related_by_llm(question: str, llm) -> bool:
         return False
 
     prompt = ChatPromptTemplate.from_messages([
-        ("system", """You are a classifier that determines whether a user's question relates to AI/ML/DL/LLM research, models, or tools.
+        ("system", """당신은 사용자의 질문이 AI/ML/DL/LLM 분야와 관련되어 있는지 판단하는 이진 분류기입니다.
 
-Return "YES" if the question is about:
-- AI/ML/DL/LLM models, architectures, algorithms
-- AI/ML/DL/LLM concepts, tools, libraries
-- AI/ML/DL/LLM applications, research papers
+**"YES"를 반환해야 하는 경우:**
+- **실제 존재하는** AI/ML/DL/LLM 모델 (GPT, Claude, BERT, LLaMA, Stable Diffusion, YOLO 등)
+-  **실제 존재하는** AI/ML/DL/LLM 프레임워크/도구 (PyTorch, TensorFlow, Hugging Face, LangChain, Ollama 등)
+- AI/ML/DL/LLM 플랫폼 (Hugging Face, Replicate, OpenAI API, Anthropic API 등)
+- AI/ML/DL/LLM 개념 (RAG, 파인튜닝, 임베딩, 어텐션, 프롬프팅, 양자화 등)
+- AI/ML/DL/LLM 아키텍처 (Transformer, CNN, RNN, GAN, Diffusion 등)
+- AI/ML/DL/LLM 학습/추론 (훈련, 추론, 배포, 최적화, 벤치마크 등)
+- AI/ML/DL/LLM 응용 (챗봇, 이미지 생성, 음성 인식, 추천 시스템 등)
+- AI/ML/DL/LLM 연구 (논문, 벤치마크, SOTA, arXiv 등)
+- AI/ML/DL/LLM 관련 데이터 처리 (데이터셋, 전처리, augmentation 등)
+- AI/ML/DL/LLM 용어 설명 요청 ("~란?", "~이 뭐야?" 등)
 
-Return "NO" if unrelated to AI/ML/DL/LLM:
-- Daily life, personal health
-- Daily conversation
-- Entertainment, sports, general knowledge
+**"NO"를 반환해야 하는 경우:**
+- 일상 대화, 개인적 고민, 건강, 인간관계
+- 엔터테인먼트, 스포츠, 뉴스, 일반 상식
+- AI/ML/DL/LLM과 무관한 수학, 통계, 과학
+- 비즈니스, 금융, 법률 (AI 응용이 아닌 경우)
 
-Output must be exactly: YES or NO."""),
+**애매한 경우 판단 기준:**
+- "AI/ML/DL/LLM을 위한 데이터 분석" → YES
+- "일반 데이터 분석" → NO
+- "신경망을 위한 수학" → YES
+- "일반 미적분학" → NO
+
+
+**중요:** 질문에 AI/ML/DL/LLM 관련 용어나 도구가 언급되면 YES로 판단하세요.
+
+**출력 형식:** "YES" 또는 "NO"만 출력하세요. 설명, 구두점, 추가 텍스트는 절대 포함하지 마세요."""),
         ("human", "{question}")
     ])
 
@@ -178,15 +195,30 @@ def translate_node(state: GraphState) -> dict:
     print(f"[translate] 한글 질문 - 영어로 번역 중...")
     try:
         translate_prompt = ChatPromptTemplate.from_messages([
-            ("system", '''You are a professional translator related to AI/ML/DL/LLM. Translate Korean into processed English for your research. 
-            For questions related to AI/ML/DL/LLM(Large Language Model), please translate the English letters into AI/ML/DL/LLM without distinguishing between uppercase and lowercase.
+            ("system", '''     "다음 규칙에 따라 사용자의 질의를 번역하라.\n"
+     "1. 입력이 한국어일 경우 영어로 번역한다.\n"
+     "2. 단순 번역이 아니라 AI, ML, 데이터, 모델명, 프레임워크, 학술 용어를 정확한 영어 기술 용어로 정규화한다.\n"
+     "   예) 레그/래그→RAG, 랭체인/langchain→LangChain, 랭그래프→LangGraph, 파인튜닝→fine-tuning,\n"
+     "       생성형 AI→generative AI, 허깅페이스→Hugging Face, 트랜스포머→Transformer,\n"
+     "       임베딩→embedding, 벡터디비→vector database, 파이토치→PyTorch\n"
+     "3. 의미, 기술적 맥락, 전문 용어는 그대로 유지하며 불필요한 의역을 하지 않는다.\n"
+     "4. 문장이 너무 길 경우 검색 성능을 위해 핵심 의미만 유지한 compact English query로 요약할 수 있다.\n"
+     "5. 알 수 없는 약어나 기술 용어도 맥락상 AI/ML 관련이면 그대로 유지한다. (예: GSW, XYZ 기법 등)\n"
+     "6. 출력은 오직 영어만 한다.
+             
+    **중요:** 질문의 주제가 무엇이든 상관없이 "번역"만 수행하세요. 
+            내용의 적절성 판단해서 임의로 번역을 수정하지마세요!!!!
+             
+    **예시:**
+    입력: "해리포터 줄거리 알려주세요"
+    출력: "Tell me the plot of Harry Potter"
 
-            e.g.
-            레그 -> Rag,rag
-            래그 -> Rag,rag
-            랭체인 -> Langchain
-            랭그래프 -> Langgraph 
-            Output ONLY English text.'''),
+    입력: "RAG 시스템 구축 방법"
+    출력: "How to build a RAG system"
+
+    입력: "트랜스포머 모델 설명해줘"
+    출력: "Explain the Transformer model
+             '''),
             ("human", "{korean_text}")
         ])
         chain = translate_prompt | llm | StrOutputParser()
@@ -288,7 +320,7 @@ def retrieve_node(state: GraphState) -> dict:
             doc_key = get_doc_hash_key(doc)
             if doc_key not in doc_map:
                 doc_map[doc_key] = doc
-            score = 1 / (RRF_K + rank + 1)
+            score = 1.5 / (RRF_K + rank + 1)
             fusion_scores[doc_key] = fusion_scores.get(doc_key, 0.0) + score
             if doc_key not in metadata_boosts:
                 metadata_boosts[doc_key] = calculate_metadata_boost(doc, query_keywords)
@@ -297,7 +329,7 @@ def retrieve_node(state: GraphState) -> dict:
             doc_key = get_doc_hash_key(doc)
             if doc_key not in doc_map:
                 doc_map[doc_key] = doc
-            score = 1 / (RRF_K + rank + 1)
+            score = 0.5 / (RRF_K + rank + 1)
             fusion_scores[doc_key] = fusion_scores.get(doc_key, 0.0) + score
             if doc_key not in metadata_boosts:
                 metadata_boosts[doc_key] = calculate_metadata_boost(doc, query_keywords)
@@ -795,7 +827,7 @@ def build_langgraph_rag():
     graph.add_edge("retrieve", "evaluate")
 
     graph.add_conditional_edges("topic_guard", route_after_topic_guard, {"retrieve": "retrieve", "reject": "reject"})
-    graph.add_conditional_edges("evaluate", route_after_evaluate, {"generate": "generate", "cluster_check": "web_search", "web_search": "web_search", "reject": "reject"})
+    graph.add_conditional_edges("evaluate", route_after_evaluate, {"generate": "generate", "cluster_check": "cluster_check", "web_search": "web_search", "reject": "reject"})
     graph.add_conditional_edges("cluster_check", route_after_cluster_check, {"generate": "generate", "web_search": "web_search"})
 
     graph.add_edge("web_search", "generate")
