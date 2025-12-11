@@ -1,7 +1,7 @@
 """
 FastAPI RAG Chatbot Server (Fixed Path Version)
 
-이 서버는 HTML 프론트엔드와 LangGraph RAG 시스템(langgraph_final.py)을 연결합니다.
+이 서버는 HTML 프론트엔드와 LangGraph RAG 시스템(langgraph_hybrid.py)을 연결합니다.
 - 통계 정보 제공
 - 트렌드 키워드 제공
 - LangGraph 기반 채팅 응답 (하이브리드 검색 + 웹 검색)
@@ -59,7 +59,7 @@ print(f"프로젝트 루트: {PROJECT_ROOT}")
 print(f"RAG 디렉토리: {RAG_DIR}")
 print(f"UTILS 디렉토리: {UTILS_DIR}")
 print(f"RAG 디렉토리 존재: {RAG_DIR.exists()}")
-print(f"langgraph_final.py 존재: {(RAG_DIR / 'langgraph_final.py').exists()}")
+print(f"langgraph_hybrid.py 존재: {(RAG_DIR / 'langgraph_hybrid.py').exists()}")
 print("=" * 70 + "\n")
 
 # ============================================================================
@@ -111,12 +111,12 @@ async def startup_event():
     print("=" * 70)
     
     try:
-        # langgraph_final 모듈 임포트 시도
-        print("\n[STEP 1/2] langgraph_final 모듈 임포트 중...")
+        # langgraph_hybrid 모듈 임포트 시도
+        print("\n[STEP 1/2] langgraph_hybrid 모듈 임포트 중...")
         
         try:
-            from langgraph_final import initialize_langgraph_system, get_system_status
-            print("✅ langgraph_final 모듈 임포트 성공")
+            from langgraph_hybrid import initialize_langgraph_system, get_system_status
+            print("✅ langgraph_hybrid 모듈 임포트 성공")
         except ModuleNotFoundError as e:
             print(f"❌ 모듈을 찾을 수 없습니다: {e}")
             print("\n[디버깅] sys.path 확인:")
@@ -230,7 +230,7 @@ async def serve_html():
 async def health_check():
     """헬스 체크"""
     try:
-        from langgraph_final import get_system_status
+        from langgraph_hybrid import get_system_status
         status = get_system_status()
         
         return {
@@ -337,7 +337,7 @@ async def chat(request: ChatRequest) -> Dict:
     """
     LangGraph RAG 기반 채팅 응답 생성
     
-    1. langgraph_final.ask_question() 호출
+    1. langgraph_hybrid.ask_question() 호출
     2. 최종 답변 및 검색 타입, 참조 문서 반환
     """
     if not system_initialized:
@@ -347,7 +347,7 @@ async def chat(request: ChatRequest) -> Dict:
         )
     
     try:
-        from langgraph_final import ask_question
+        from langgraph_hybrid import ask_question
         
         query = request.message
         print(f"\n{'='*70}")

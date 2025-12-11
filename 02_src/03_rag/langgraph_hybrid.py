@@ -662,54 +662,8 @@ Answer structure:
         "answer": answer,
         "sources": sources
     }
-    # sources: List[Dict[str, Any]] = []
     
-    # if documents:
-    #     print(f"[generate] Sources 구성 중... ({len(documents)}개 문서)")
-        
-    #     for i, doc in enumerate(documents[:5]):  # 최대 5개
-    #         meta = doc.metadata or {}
-    #         source_type = meta.get("source_type", "paper")
-            
-    #         if source_type == "web":
-    #             # 웹 검색 결과
-    #             sources.append({
-    #                 "type": "web",
-    #                 "title": meta.get("title", "웹 검색 결과"),
-    #                 "url": meta.get("source", ""),
-    #                 "score": meta.get("score", 0.5)
-    #             })
-    #             print(f"  [Source {i+1}] 웹: {meta.get('title', 'N/A')[:50]}")
-    #         else:
-    #             # 내부 논문
-    #             title = meta.get("title", meta.get("paper_name", "Unknown"))
-    #             hf_url = meta.get("huggingface_url", meta.get("source", ""))
-    #             gh_url = meta.get("github_url", "")
-    #             authors = meta.get("authors", "Unknown")
-    #             year = meta.get("publication_year", "Unknown")
-    #             upvote = meta.get("upvote", 0)
-    #             doc_id = meta.get("doc_id", "")
-                
-    #             sources.append({
-    #                 "type": "paper",
-    #                 "title": title,
-    #                 "huggingface_url": hf_url,
-    #                 "github_url": gh_url,
-    #                 "authors": authors,
-    #                 "year": year,
-    #                 "upvote": upvote,
-    #                 "doc_id": doc_id
-    #             })
-    #             print(f"  [Source {i+1}] 논문: {title[:50]}")
     
-    # print(f"[generate] 최종 Sources 개수: {len(sources)}")
-
-    # ✅ 답변 텍스트에는 출처를 추가하지 않음 (UI 참조자료 섹션에만 표시)
-    # return {
-    #     "answer": answer,
-    #     "sources": sources
-    # }
-
 def reject_node(state: GraphState) -> dict:
     """✅ 노드 7: 거부 응답"""
     print("\n" + "="*60)
@@ -720,16 +674,16 @@ def reject_node(state: GraphState) -> dict:
     is_ai_ml_related = state.get("is_ai_ml_related", False)
 
     if not is_ai_ml_related:
-        answer = f"""죄송합니다. "{question}"는 AI/ML 연구 논문과 관련이 없는 질문입니다.
+        answer = f"""죄송합니다. "{question}"는 AI/ML/DL/LLM 연구 논문과 관련이 없는 질문입니다.
 
 이 시스템은 다음과 같은 질문에 답변할 수 있습니다:
-• AI/ML 모델 및 아키텍처 (GPT, BERT, SAM, Diffusion 등)
-• AI/ML 개념 및 기술 (Transformer, Attention, Fine-tuning 등)
-• AI/ML 도구 및 라이브러리 (LangChain, Transformers, PyTorch 등)
-• 최근 AI/ML 연구 동향 및 논문
+• AI/ML/DL/LLM 모델 및 아키텍처 (GPT, BERT, SAM, Diffusion 등)
+• AI/ML/DL/LLM 개념 및 기술 (Transformer, Attention, Fine-tuning 등)
+• AI/ML/DL/LLM 도구 및 라이브러리 (LangChain, Transformers, PyTorch 등)
+• 최근 AI/ML/DL/LLM 연구 동향 및 논문
 
-AI/ML 관련 질문으로 다시 시도해주세요! 🤗"""
-        print(f"[reject] 비 AI/ML 질문 거부")
+AI/ML/DL/LLM 관련 질문으로 다시 시도해주세요! 🤗"""
+        print(f"[reject] 비 AI/ML/DL/LLM 질문 거부")
     else:
         answer = f"""죄송합니다. '{question}'와 관련된 적절한 문서를 찾지 못했습니다.
 
