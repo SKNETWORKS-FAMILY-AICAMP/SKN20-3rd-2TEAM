@@ -1,6 +1,6 @@
 # 🤗 HuggingFace WeeklyPapers 기반 AI/ML/DL/LLM 스택 RAG 챗봇 
 
-**팀명 : 안아조 검색해조 환각막아조 논문찾아조**
+**팀명 : 해조**
 
 ## 👥 팀원
 | <img src="MDimages/pic/지은.webp" width="170"> <br> 김지은 |  <img src="MDimages/pic/다정.webp" width="100"> <br> 박다정 |  <img src="MDimages/pic/학성.webp" width="150"> <br> 오학성 |  <img src="MDimages/pic/소영.webp" width="150"> <br> 정소영 |  <img src="MDimages/pic/수현.webp" width="100"> <br> 황수현 |
@@ -280,16 +280,18 @@ MODEL_NAME=OpenAI
 ### 5.3 📚 트렌드 논문 검색 결과 (by HuggingFace WeeklyPapers)
 
 <br>하이브리드 검색👇<br>
-<img src="MDimages/hybrid_sam.png" width="75%">
-<img src="MDimages/hybrid_llm_hallu.png" width="75%">
-<br>논문 제목 검색👇<br>
-<img src="MDimages/hybrid_title.png" width="75%"> 
+<img src="MDimages/hybrid_sam.png" width="90%">
+<img src="MDimages/hybrid_llm_hallu.png" width="90%">
+<br>논문 제목 그대로 검색👇<br>
+<img src="MDimages/hybrid_title.png" width="90%"> 
+<br>클러스터 검색👇<br>
+<img src="MDimages/cluster_search.png" width="90%"> 
 <br>거부 후 검색 방향 추천👇<br>
-<img src="MDimages/hybrid_reject.png" width="75%">
+<img src="MDimages/hybrid_reject.png" width="90%">
 <br>웹 검색👇<br>
-<img src="MDimages/web_langchain.png" width="75%">
+<img src="MDimages/web_langchain.png" width="90%">
 <br>응답 거부👇<br>
-<img src="MDimages/reject.png" width="75%">
+<img src="MDimages/reject.png" width="90%">
 
 
 
