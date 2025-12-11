@@ -65,6 +65,8 @@ SKN20-3rd-2TEAM/
 ├── .env                            # 환경 변수 설정 파일 (API 키, CHUNK_SIZE 등)
 ├── README.md                       # 프로젝트 설명 문서
 └── requirements.txt                # Python 라이브러리 설치 목록
+
+* past 폴더는 과거에 사용했던 파일이 담겨 있음
 ```
 
 ## 3. 시스템 아키텍처
