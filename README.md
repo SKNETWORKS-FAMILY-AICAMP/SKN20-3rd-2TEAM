@@ -3,7 +3,7 @@
 **팀명 : 안아조 검색해조 환각막아조 논문찾아조**
 
 ## 👥 팀원
-| <img src="MDimages/pic/지은.webp" width="170"> <br> 김지은 |  <img src="MDimages/pic/다정.webp" width="100"> <br> 박다정 |  <img src="MDimages/pic/학성.webp" width="150"> <br> 오학성 |  <img src="MDimages/pic/소영.webp" width="150"> <br> 정소영 |  <img src="MDimages/pic/수현.png" width="100"> <br> 황수현 |
+| <img src="MDimages/pic/지은.webp" width="170"> <br> 김지은 |  <img src="MDimages/pic/다정.webp" width="100"> <br> 박다정 |  <img src="MDimages/pic/학성.webp" width="150"> <br> 오학성 |  <img src="MDimages/pic/소영.webp" width="150"> <br> 정소영 |  <img src="MDimages/pic/수현.webp" width="100"> <br> 황수현 |
 |:------:|:------:|:------:|:------:|:------:|
 
 ## 1. 프로젝트 소개 및 목표
@@ -373,7 +373,7 @@ MODEL_NAME=OpenAI
 ---
 
 > #### 정소영
-> 정소영: 프롬프트를 작성하면서 랭그래프 코드의 전반적인 흐름을 읽어볼 수 있었던 것이 가장 좋았던 것 같습니다. 또한 팀원들 전부 훌륭해서 즐겁게 팀프로젝트를 했습니다. 그런 의미에서 우리 OpenAI 많이 사랑해주시고 코딩은 클로드랑 같이 하세요. ^^ 감사합니다
+> 프롬프트를 작성하면서 랭그래프 코드의 전반적인 흐름을 읽어볼 수 있었던 것이 가장 좋았던 것 같습니다. 또한 팀원들 전부 훌륭해서 즐겁게 팀프로젝트를 했습니다. 그런 의미에서 우리 OpenAI 많이 사랑해주시고 코딩은 클로드랑 같이 하세요. ^^ 감사합니다
 
 ---
 
