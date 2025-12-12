@@ -13,6 +13,9 @@ import sys
 from pathlib import Path
 from typing import List, Dict, Optional
 from collections import Counter
+import uvicorn
+import webbrowser
+from threading import Timer
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -143,6 +146,12 @@ async def startup_event():
             print("📡 API 문서: http://localhost:8000/docs")
             print("🌐 웹 인터페이스: http://localhost:8000")
             print("=" * 70 + "\n")
+            # 서버 시작 1초 후 브라우저 자동 열기
+            def open_browser():
+                webbrowser.open("http://localhost:8000")
+            
+            Timer(1.5, open_browser).start()
+
         else:
             print(f"\n❌ 초기화 실패: {result.get('message')}")
             raise Exception(result.get('message'))
@@ -164,11 +173,11 @@ async def serve_html():
     루트 경로 - HTML 인터페이스 제공
     """
     try:
-        # app_v3.html 파일 찾기 (여러 경로 시도)
+        # chatbot.html 파일 찾기 (여러 경로 시도)
         possible_paths = [
-            CURRENT_DIR / "app_v3.html",  # 같은 디렉토리
-            PROJECT_ROOT / "app_v3.html",  # 프로젝트 루트
-            CURRENT_DIR / "app_v4.html",   # v4 버전도 시도
+            CURRENT_DIR / "chatbot.html",  # 같은 디렉토리
+            PROJECT_ROOT / "chatbot.html",  # 프로젝트 루트
+            CURRENT_DIR / "chatbot.html",   # v4 버전도 시도
         ]
         
         html_path = None
@@ -195,7 +204,7 @@ async def serve_html():
                     <h1>🤗 HuggingFace Papers RAG Chatbot</h1>
                     <div class="info">
                         <p><strong>서버가 정상 작동 중입니다!</strong></p>
-                        <p>HTML 파일을 찾을 수 없습니다. app_v3.html 또는 app_v4.html을 다음 위치에 배치해주세요:</p>
+                        <p>HTML 파일을 찾을 수 없습니다. chatbot.html 또는 chatbot.html을 다음 위치에 배치해주세요:</p>
                         <ul>
                             <li>""" + str(CURRENT_DIR) + """</li>
                             <li>""" + str(PROJECT_ROOT) + """</li>
@@ -436,7 +445,6 @@ async def chat(request: ChatRequest) -> Dict:
 # ============================================================================
 
 if __name__ == "__main__":
-    import uvicorn
     
     print("\n" + "=" * 70)
     print("🤗 HuggingFace Papers RAG Server (Fixed Path Version)")
@@ -446,6 +454,7 @@ if __name__ == "__main__":
     print("Web Interface: http://localhost:8000")
     print("=" * 70 + "\n")
     
+
     uvicorn.run(
         app,
         host="0.0.0.0",
