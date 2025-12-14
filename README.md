@@ -70,7 +70,7 @@ SKN20-3rd-2TEAM/
 ```
 
 ## 3. 시스템 아키텍처
-<img src="MDimages/SystemArchitecture.png" width="85%"> 
+<img src="MDimages/SystemArchitecture.png" width="100%"> 
 
 
 ## 📊 데이터 파이프라인
@@ -382,6 +382,6 @@ MODEL_NAME=OpenAI
 ---
 
 > #### 황수현
-> 
+> 피드백의 피드백의 피드백의 피드백, 과도한 피드백은 더 큰 혼란을 가져다 줄 수 있으니 주시하시오.
 
 ---
